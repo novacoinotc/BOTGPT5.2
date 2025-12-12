@@ -56,9 +56,10 @@ export class GPTEngine {
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userPrompt },
         ],
-        temperature: 0.4, // Balanced between consistency and creativity
         response_format: { type: 'json_object' },
-        max_completion_tokens: 3000, // GPT-5.2 uses max_completion_tokens instead of max_tokens
+        max_completion_tokens: 3000,
+        // @ts-ignore - GPT-5.2 reasoning parameter
+        reasoning: { effort: 'medium' }, // GPT-5.2: low latency but good analysis
       });
 
       const content = response.choices[0]?.message?.content;
@@ -390,8 +391,9 @@ Ejemplo: "En RSI>70 con funding alto, esperar confirmación de reversión antes 
       const response = await this.client.chat.completions.create({
         model: this.model,
         messages: [{ role: 'user', content: prompt }],
-        max_tokens: 200,
-        temperature: 0.6,
+        max_completion_tokens: 200,
+        // @ts-ignore - GPT-5.2 reasoning parameter
+        reasoning: { effort: 'low' }, // Fast learning extraction
       });
 
       const lesson = response.choices[0]?.message?.content?.trim() || '';

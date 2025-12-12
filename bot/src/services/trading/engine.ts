@@ -471,12 +471,24 @@ export class TradingEngine extends EventEmitter {
     reason: 'tp' | 'sl' | 'manual' | 'timeout' | 'signal'
   ): Promise<void> {
     try {
-      // Create closing order
+      // Get symbol info for correct precision
+      const symbolInfo = await binanceClient.getSymbolInfo(position.symbol);
+      const lotSizeFilter = symbolInfo?.filters?.find((f: any) => f.filterType === 'LOT_SIZE');
+      const stepSize = lotSizeFilter ? parseFloat(lotSizeFilter.stepSize) : 0.001;
+      const precision = Math.max(0, -Math.log10(stepSize));
+
+      // Round quantity to valid step size
+      const roundedQty = parseFloat(
+        (Math.floor(position.quantity / stepSize) * stepSize).toFixed(precision)
+      );
+
+      // Create closing order with positionSide for hedge mode compatibility
       await binanceClient.createOrder({
         symbol: position.symbol,
         side: position.side === 'LONG' ? 'SELL' : 'BUY',
         type: 'MARKET',
-        quantity: position.quantity,
+        quantity: roundedQty,
+        positionSide: position.side, // Required for hedge mode
         reduceOnly: true,
       });
 

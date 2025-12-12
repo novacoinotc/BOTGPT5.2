@@ -95,19 +95,19 @@ export class BinanceClient {
 
   async getAccountInfo(): Promise<any> {
     const params = this.addSignature({});
-    const response = await this.client.get('/fapi/v2/account', { params });
+    const response = await this.client.get('/fapi/v3/account', { params }); // V3 for better performance
     return response.data;
   }
 
   async getBalance(): Promise<any[]> {
     const params = this.addSignature({});
-    const response = await this.client.get('/fapi/v2/balance', { params });
+    const response = await this.client.get('/fapi/v3/balance', { params }); // V3 for better performance
     return response.data;
   }
 
   async getPositions(): Promise<any[]> {
     const params = this.addSignature({});
-    const response = await this.client.get('/fapi/v2/positionRisk', { params });
+    const response = await this.client.get('/fapi/v3/positionRisk', { params }); // V3 returns only active positions
     return response.data.filter((p: any) => parseFloat(p.positionAmt) !== 0);
   }
 
