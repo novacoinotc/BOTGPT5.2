@@ -3,7 +3,7 @@ import { tradingEngine } from './services/trading/engine.js';
 import { config } from './config/index.js';
 
 console.log('=========================================');
-console.log('    GPT 5.2 SCALPING BOT - v1.0.0');
+console.log('    GPT 5.2 SCALPING BOT - v1.0.1');
 console.log('=========================================');
 console.log('');
 
