@@ -58,7 +58,7 @@ export class GPTEngine {
         ],
         temperature: 0.4, // Balanced between consistency and creativity
         response_format: { type: 'json_object' },
-        max_tokens: 3000,
+        max_completion_tokens: 3000, // GPT-5.2 uses max_completion_tokens instead of max_tokens
       });
 
       const content = response.choices[0]?.message?.content;

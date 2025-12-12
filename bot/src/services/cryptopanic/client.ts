@@ -1,6 +1,12 @@
 import axios, { AxiosInstance } from 'axios';
 import { config } from '../../config/index.js';
 
+// Simple cache to avoid rate limits
+interface CacheEntry<T> {
+  data: T;
+  timestamp: number;
+}
+
 interface NewsItem {
   id: number;
   title: string;
@@ -31,6 +37,8 @@ interface NewsResponse {
 
 export class CryptoPanicClient {
   private client: AxiosInstance;
+  private cache: Map<string, CacheEntry<NewsItem[]>> = new Map();
+  private readonly CACHE_TTL = 5 * 60 * 1000; // 5 minutes cache to avoid rate limits
 
   constructor() {
     this.client = axios.create({
@@ -42,12 +50,36 @@ export class CryptoPanicClient {
     });
   }
 
+  private getCacheKey(options: any): string {
+    return JSON.stringify(options);
+  }
+
+  private getFromCache(key: string): NewsItem[] | null {
+    const entry = this.cache.get(key);
+    if (entry && Date.now() - entry.timestamp < this.CACHE_TTL) {
+      return entry.data;
+    }
+    return null;
+  }
+
+  private setCache(key: string, data: NewsItem[]): void {
+    this.cache.set(key, { data, timestamp: Date.now() });
+  }
+
   async getNews(options: {
     currencies?: string[];
     filter?: 'rising' | 'hot' | 'bullish' | 'bearish' | 'important' | 'saved' | 'lol';
     kind?: 'news' | 'media' | 'all';
     limit?: number;
   } = {}): Promise<NewsItem[]> {
+    // Check cache first to avoid rate limits
+    const cacheKey = this.getCacheKey(options);
+    const cached = this.getFromCache(cacheKey);
+    if (cached) {
+      console.log('[CryptoPanic] Using cached news data');
+      return options.limit ? cached.slice(0, options.limit) : cached;
+    }
+
     try {
       const params: Record<string, any> = {};
 
@@ -66,9 +98,17 @@ export class CryptoPanicClient {
       const response = await this.client.get<NewsResponse>('/posts/', { params });
       const results = response.data.results || [];
 
+      // Cache the results
+      this.setCache(cacheKey, results);
+
       return options.limit ? results.slice(0, options.limit) : results;
-    } catch (error) {
-      console.error('[CryptoPanic] Error fetching news:', error);
+    } catch (error: any) {
+      // On rate limit, return empty array and log
+      if (error?.response?.status === 429) {
+        console.log('[CryptoPanic] Rate limited, using neutral sentiment');
+        return [];
+      }
+      console.error('[CryptoPanic] Error fetching news:', error?.message || error);
       return [];
     }
   }
