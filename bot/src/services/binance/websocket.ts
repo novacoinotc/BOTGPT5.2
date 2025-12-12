@@ -57,7 +57,43 @@ export class BinanceWebSocket extends EventEmitter {
   }
 
   private handleMessage(data: StreamData): void {
-    const [symbol, streamType] = data.stream.split('@');
+    // FIX: Properly parse streams with multiple @ (e.g., btcusdt@depth20@100ms)
+    const parts = data.stream.split('@');
+    const symbol = parts[0];
+    const streamType = parts.slice(1).join('@'); // Everything after first @ is the stream type
+
+    // Handle kline streams dynamically (kline_1m, kline_5m, kline_15m, kline_1h, etc.)
+    if (streamType.startsWith('kline_')) {
+      const kline = data.data.k;
+      this.emit('kline', {
+        symbol: symbol.toUpperCase(),
+        interval: kline.i,
+        open: parseFloat(kline.o),
+        high: parseFloat(kline.h),
+        low: parseFloat(kline.l),
+        close: parseFloat(kline.c),
+        volume: parseFloat(kline.v),
+        isClosed: kline.x,
+        timestamp: kline.t,
+      });
+      return;
+    }
+
+    // Handle depth streams (depth5@100ms, depth10@100ms, depth20@100ms, depth@100ms)
+    if (streamType.startsWith('depth')) {
+      this.emit('orderbook', {
+        symbol: symbol.toUpperCase(),
+        bids: data.data.b.map((b: string[]) => ({
+          price: parseFloat(b[0]),
+          quantity: parseFloat(b[1]),
+        })),
+        asks: data.data.a.map((a: string[]) => ({
+          price: parseFloat(a[0]),
+          quantity: parseFloat(a[1]),
+        })),
+      });
+      return;
+    }
 
     switch (streamType) {
       case 'aggTrade':
@@ -67,38 +103,6 @@ export class BinanceWebSocket extends EventEmitter {
           quantity: parseFloat(data.data.q),
           isBuyerMaker: data.data.m,
           timestamp: data.data.T,
-        });
-        break;
-
-      case 'kline_1m':
-      case 'kline_5m':
-      case 'kline_15m':
-        const kline = data.data.k;
-        this.emit('kline', {
-          symbol: symbol.toUpperCase(),
-          interval: kline.i,
-          open: parseFloat(kline.o),
-          high: parseFloat(kline.h),
-          low: parseFloat(kline.l),
-          close: parseFloat(kline.c),
-          volume: parseFloat(kline.v),
-          isClosed: kline.x,
-          timestamp: kline.t,
-        });
-        break;
-
-      case 'depth20@100ms':
-      case 'depth10@100ms':
-        this.emit('orderbook', {
-          symbol: symbol.toUpperCase(),
-          bids: data.data.b.map((b: string[]) => ({
-            price: parseFloat(b[0]),
-            quantity: parseFloat(b[1]),
-          })),
-          asks: data.data.a.map((a: string[]) => ({
-            price: parseFloat(a[0]),
-            quantity: parseFloat(a[1]),
-          })),
         });
         break;
 

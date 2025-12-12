@@ -57,9 +57,9 @@ export class GPTEngine {
           { role: 'user', content: userPrompt },
         ],
         response_format: { type: 'json_object' },
-        max_completion_tokens: 3000,
-        // @ts-ignore - GPT-5.2 reasoning parameter
-        reasoning: { effort: 'medium' }, // GPT-5.2: low latency but good analysis
+        max_completion_tokens: 5000, // Increased for detailed analysis
+        // GPT-5.2 reasoning parameter (efforts: none, minimal, low, medium, high, xhigh)
+        reasoning: { effort: 'medium' } as any, // Balance of speed and quality for scalping
       });
 
       const content = response.choices[0]?.message?.content;
