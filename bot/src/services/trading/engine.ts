@@ -46,16 +46,20 @@ export class TradingEngine extends EventEmitter {
     lastDecision: new Map(),
   };
 
-  private symbols: string[] = ['BTCUSDT', 'ETHUSDT'];
+  private symbols: string[] = [
+    'BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT',
+    'XRPUSDT', 'LINKUSDT', 'AVAXUSDT', 'DOGEUSDT',
+    'SUIUSDT', 'ARBUSDT', 'OPUSDT', 'INJUSDT'
+  ];
   private analysisInterval: NodeJS.Timeout | null = null;
   private positionCheckInterval: NodeJS.Timeout | null = null;
   private balanceUpdateInterval: NodeJS.Timeout | null = null;
 
-  // Configuration
+  // Configuration - SCALPING MODE
   private readonly MIN_CONFIDENCE = 45; // Lowered from 65 to allow more learning
   private readonly MAX_LEVERAGE = 10; // Max 10x as requested
-  private readonly MAX_POSITION_SIZE_PERCENT = 50; // Max 50% of capital per trade
-  private readonly MAX_HOLD_TIME_HOURS = 4; // Extended from 2 hours
+  private readonly MAX_POSITION_SIZE_PERCENT = 5; // Max 5% of capital per trade (scalping: many small trades)
+  private readonly MAX_HOLD_TIME_HOURS = 2; // Reduced to 2 hours for scalping
   private readonly MAX_TOTAL_EXPOSURE_PERCENT = 80; // Max 80% total capital in all positions
 
   async start(): Promise<void> {
