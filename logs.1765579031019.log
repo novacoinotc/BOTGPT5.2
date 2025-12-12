@@ -1,0 +1,963 @@
+2025-12-12T22:35:23.000000000Z [inf]  Starting Container
+2025-12-12T22:35:23.795222398Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-12T22:35:23.795228246Z [inf]  
+2025-12-12T22:35:23.795234103Z [inf]  > gpt-scalping-bot@1.0.0 start
+2025-12-12T22:35:23.795240648Z [inf]  > npm run start -w bot
+2025-12-12T22:35:23.795246492Z [inf]  
+2025-12-12T22:35:23.795252448Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-12T22:35:23.795261598Z [inf]  
+2025-12-12T22:35:23.795494984Z [inf]  > bot@1.0.0 start
+2025-12-12T22:35:23.795515906Z [inf]  > node dist/index.js
+2025-12-12T22:35:23.795522094Z [inf]  
+2025-12-12T22:35:23.844896838Z [inf]  =========================================
+2025-12-12T22:35:23.844902690Z [inf]      GPT 5.2 SCALPING BOT - v1.0.1
+2025-12-12T22:35:23.844908837Z [inf]  =========================================
+2025-12-12T22:35:23.844914926Z [inf]  
+2025-12-12T22:35:23.844921685Z [inf]  [Config] All required configurations present
+2025-12-12T22:35:23.844927663Z [inf]  [Config] Trading enabled: true
+2025-12-12T22:35:23.844935839Z [inf]  [Config] Max leverage: 10x
+2025-12-12T22:35:23.844941568Z [inf]  [Config] Max position size: 50%
+2025-12-12T22:35:23.844947040Z [inf]  [Config] Min confidence: 45%
+2025-12-12T22:35:23.844954415Z [inf]  [Config] Max hold time: 4h
+2025-12-12T22:35:23.845843172Z [inf]  [Main] Auto-starting trading bot...
+2025-12-12T22:35:23.845848633Z [inf]  [Engine] Starting trading bot...
+2025-12-12T22:35:23.845852822Z [inf]  [Engine] Min confidence: 45%
+2025-12-12T22:35:23.845857817Z [inf]  [Engine] Max leverage: 10x
+2025-12-12T22:35:23.860228206Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-12T22:35:23.860233204Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-12T22:35:23.860237597Z [inf]  [Server] Running on port 3001
+2025-12-12T22:35:24.808223420Z [inf]  [Engine] Account balance: $4682.72
+2025-12-12T22:35:24.808234492Z [inf]  [Engine] Available balance: $4682.72
+2025-12-12T22:35:24.892178129Z [inf]  [Engine] Found 0 open positions
+2025-12-12T22:35:24.900123171Z [inf]  [Engine] Bot started successfully
+2025-12-12T22:35:24.900132988Z [inf]  
+2025-12-12T22:35:24.900138352Z [inf]  [Main] Bot is ready!
+2025-12-12T22:35:24.900143490Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-12T22:35:24.900148934Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-12T22:35:24.900154439Z [inf]  
+2025-12-12T22:35:25.855776748Z [inf]  [WS] Connected to Binance
+2025-12-12T22:35:30.852362885Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852369478Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852375512Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852382619Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852388696Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852394191Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852399960Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852405529Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852412472Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852417918Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852423728Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852429275Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852434759Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852440506Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852445745Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852451840Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852457583Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852464229Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852470368Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852476418Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852487655Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852493686Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852837672Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852844507Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852849971Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852855897Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852878457Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852887622Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852894143Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852899481Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852904423Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.852909640Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.853002944Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.853011205Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.853019399Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.853027228Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.930803975Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.949851362Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.966042147Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:30.969089284Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:31.072306223Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:31.723830185Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:31.723835577Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:39.726389388Z [inf]  [Engine] INJUSDT: SELL (56%)
+2025-12-12T22:35:39.726395811Z [inf]  [Engine]   └─ Mercado en rango (ADX 24.1) y precio está pegado a la banda superior de Bollinger (upper 5.36) con m...
+2025-12-12T22:35:39.726400269Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-12T22:35:39.726404100Z [inf]  [Engine]   └─ SL: $5.40 | TP: $5.32
+2025-12-12T22:35:40.769543926Z [inf]  [Engine] XRPUSDT: HOLD (44%)
+2025-12-12T22:35:40.769548919Z [inf]  [Engine]   └─ El mercado está en régimen de rango con tendencia débil (ADX 17.7) y señales mixtas: precio apenas p...
+2025-12-12T22:35:41.826939181Z [inf]  [Engine] Opening SELL INJUSDT:
+2025-12-12T22:35:41.826944707Z [inf]  [Engine]   └─ Quantity: 105 @ ~$5.35
+2025-12-12T22:35:41.826950681Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-12T22:35:41.826956942Z [inf]  [Engine]   └─ Capital used: $140.48 (3%)
+2025-12-12T22:35:41.826963122Z [inf]  [Engine]   └─ Position value: $561.93
+2025-12-12T22:35:41.986181195Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:41.986188869Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:42.159529027Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:42.185006034Z [inf]  [Engine] SOLUSDT: SELL (58%)
+2025-12-12T22:35:42.185011404Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo bajista aprovechable para scalp: (1) Estructura de medias: precio deba...
+2025-12-12T22:35:42.185016964Z [inf]  [Engine]   └─ Size: 3% | Leverage: 5x
+2025-12-12T22:35:42.185023478Z [inf]  [Engine]   └─ SL: $133.28 | TP: $132.09
+2025-12-12T22:35:42.211367301Z [inf]  [Engine] BNBUSDT: SELL (58%)
+2025-12-12T22:35:42.211372670Z [inf]  [Engine]   └─ Contexto de scalping en rango con volatilidad baja (ATR 0.287%, BB width 0.83%, ADX 22): favorece me...
+2025-12-12T22:35:42.211378114Z [inf]  [Engine]   └─ Size: 3% | Leverage: 5x
+2025-12-12T22:35:42.211383337Z [inf]  [Engine]   └─ SL: $883.05 | TP: $879.55
+2025-12-12T22:35:42.732602428Z [inf]  [Engine] DOGEUSDT: HOLD (44%)
+2025-12-12T22:35:42.732608249Z [inf]  [Engine]   └─ No entro aún porque la señal es mixta y el edge es pequeño para scalping: (1) Tendencia/estructura: ...
+2025-12-12T22:35:42.732614046Z [inf]  [Engine] OPUSDT: HOLD (44%)
+2025-12-12T22:35:42.732619377Z [inf]  [Engine]   └─ El setup no cumple para scalping de alta probabilidad por 3 factores clave: (1) Spread 0.0326% > 0.0...
+2025-12-12T22:35:42.732624956Z [inf]  [Engine] ARBUSDT: HOLD (43%)
+2025-12-12T22:35:42.732630581Z [inf]  [Engine]   └─ El order book muestra dominio comprador (imbalance 47.8%) y hay un cruce MACD alcista inminente, per...
+2025-12-12T22:35:43.000994188Z [inf]  [Engine] Position opened: SHORT INJUSDT @ $0.00
+2025-12-12T22:35:43.001000171Z [inf]  [Engine]   └─ SL: $5.40 (Infinity%)
+2025-12-12T22:35:43.001006372Z [inf]  [Engine]   └─ TP: $5.32 (Infinity%)
+2025-12-12T22:35:43.987527481Z [inf]  [Engine]   └─ Contexto de rango y señal mixta. El precio está apenas por encima de EMA9/EMA21 (micro-sesgo alcista...
+2025-12-12T22:35:43.987528658Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.351, entryPrice=0
+2025-12-12T22:35:43.987556734Z [inf]  [Engine] SUIUSDT: HOLD (44%)
+2025-12-12T22:35:43.987562676Z [inf]  [Engine]   └─ SUIUSDT está en régimen de rango con ADX 20.9 (tendencia débil) y precio prácticamente en el POC (1....
+2025-12-12T22:35:43.987575023Z [inf]  [Engine] Opening SELL SOLUSDT:
+2025-12-12T22:35:43.987590240Z [inf]  [Engine]   └─ Position value: $702.41
+2025-12-12T22:35:43.987592632Z [inf]  [Engine]   └─ Capital used: $140.48 (3%)
+2025-12-12T22:35:43.987601123Z [inf]  [Engine] Opening SELL BNBUSDT:
+2025-12-12T22:35:43.987612976Z [inf]  [Engine]   └─ Quantity: 0.8 @ ~$881.85
+2025-12-12T22:35:43.987615765Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-12T22:35:43.987619331Z [inf]  [Engine]   └─ Quantity: 5.3 @ ~$132.47
+2025-12-12T22:35:43.987625096Z [inf]  [Engine]   └─ Capital used: $140.48 (3%)
+2025-12-12T22:35:43.987630325Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-12T22:35:43.987634759Z [inf]  [Engine]   └─ Position value: $702.41
+2025-12-12T22:35:43.987642349Z [inf]  [Engine] AVAXUSDT: HOLD (44%)
+2025-12-12T22:35:44.204227578Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:44.206965772Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:44.948629802Z [inf]  [Engine]   └─ Contexto de rango con sesgo bajista intradía: precio está por debajo de la SMA50 ($91010.94) y la al...
+2025-12-12T22:35:44.948640284Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:44.948648675Z [inf]  [Engine] ETHUSDT: SELL (62%)
+2025-12-12T22:35:44.948649707Z [inf]  [Engine]   └─ Size: 3% | Leverage: 5x
+2025-12-12T22:35:44.948657385Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo bajista para scalp: (1) Tendencia: alineación bajista perfecta (EMA9 <...
+2025-12-12T22:35:44.948658825Z [inf]  [Engine]   └─ SL: $90610.00 | TP: $89910.00
+2025-12-12T22:35:44.948665271Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-12T22:35:44.948672142Z [inf]  [Engine]   └─ SL: $3104.80 | TP: $3077.50
+2025-12-12T22:35:44.948683256Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:35:44.948694474Z [inf]  [Engine] BTCUSDT: SELL (58%)
+2025-12-12T22:35:44.948709768Z [inf]  [Engine] LINKUSDT: HOLD (44%)
+2025-12-12T22:35:44.948716857Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:44.948719951Z [inf]  [Engine]   └─ LINK está en régimen de rango con ADX 22.2 (tendencia débil) y el precio está comprimido dentro de B...
+2025-12-12T22:35:44.948725905Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.51, entryPrice=0
+2025-12-12T22:35:45.036897113Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:45.077235238Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.51, entryPrice=0
+2025-12-12T22:35:45.186435427Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:45.209773711Z [inf]  [Engine] Position opened: SHORT BNBUSDT @ $0.00
+2025-12-12T22:35:45.209792196Z [inf]  [Engine]   └─ SL: $883.05 (Infinity%)
+2025-12-12T22:35:45.209801791Z [inf]  [Engine]   └─ TP: $879.55 (Infinity%)
+2025-12-12T22:35:45.217280406Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.77651239, entryPrice=0
+2025-12-12T22:35:45.217284934Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.49, entryPrice=0
+2025-12-12T22:35:45.229562675Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.35295655, entryPrice=0
+2025-12-12T22:35:45.985651996Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.52, entryPrice=0
+2025-12-12T22:35:45.985656894Z [inf]  [Engine] Position opened: SHORT SOLUSDT @ $0.00
+2025-12-12T22:35:45.985661918Z [inf]  [Engine]   └─ SL: $133.28 (Infinity%)
+2025-12-12T22:35:45.985666565Z [inf]  [Engine]   └─ TP: $132.09 (Infinity%)
+2025-12-12T22:35:45.985680689Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:45.987666345Z [inf]  [Engine] Opening SELL ETHUSDT:
+2025-12-12T22:35:45.987670202Z [inf]  [Engine]   └─ Quantity: 0.176 @ ~$3089.93
+2025-12-12T22:35:45.987674465Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-12T22:35:45.987678432Z [inf]  [Engine]   └─ Capital used: $136.26 (3%)
+2025-12-12T22:35:45.987683086Z [inf]  [Engine]   └─ Position value: $545.03
+2025-12-12T22:35:46.096527165Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.351, entryPrice=0
+2025-12-12T22:35:46.118756658Z [inf]  [Engine] Opening SELL BTCUSDT:
+2025-12-12T22:35:46.118762730Z [inf]  [Engine]   └─ Quantity: 0.008 @ ~$90307.00
+2025-12-12T22:35:46.118770682Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-12T22:35:46.118776863Z [inf]  [Engine]   └─ Capital used: $136.26 (3%)
+2025-12-12T22:35:46.118782648Z [inf]  [Engine]   └─ Position value: $681.29
+2025-12-12T22:35:46.872438135Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:46.872449867Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:46.872506867Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:46.872517036Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.51, entryPrice=0
+2025-12-12T22:35:46.872527012Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:46.872527213Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:46.872534966Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:47.056147879Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.52, entryPrice=0
+2025-12-12T22:35:47.201806569Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.4, entryPrice=0
+2025-12-12T22:35:47.201810633Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.41, entryPrice=0
+2025-12-12T22:35:47.201815956Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.42, entryPrice=0
+2025-12-12T22:35:47.201820078Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.43, entryPrice=0
+2025-12-12T22:35:47.201823973Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.44, entryPrice=0
+2025-12-12T22:35:47.201827663Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.45, entryPrice=0
+2025-12-12T22:35:47.201831208Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.46, entryPrice=0
+2025-12-12T22:35:47.204730851Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.48, entryPrice=0
+2025-12-12T22:35:47.204743097Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.49, entryPrice=0
+2025-12-12T22:35:47.204760786Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.5, entryPrice=0
+2025-12-12T22:35:47.204772862Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.51, entryPrice=0
+2025-12-12T22:35:47.204780274Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.52, entryPrice=0
+2025-12-12T22:35:47.204787305Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.53, entryPrice=0
+2025-12-12T22:35:47.204793650Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.54, entryPrice=0
+2025-12-12T22:35:47.204799948Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:35:47.204806924Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:35:47.204813676Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.57, entryPrice=0
+2025-12-12T22:35:47.204821390Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:35:47.204828004Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.59, entryPrice=0
+2025-12-12T22:35:47.204835586Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.6, entryPrice=0
+2025-12-12T22:35:47.206689670Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.61, entryPrice=0
+2025-12-12T22:35:47.206697080Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.62, entryPrice=0
+2025-12-12T22:35:47.206703009Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.63, entryPrice=0
+2025-12-12T22:35:47.206707375Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.64, entryPrice=0
+2025-12-12T22:35:47.206713790Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.66, entryPrice=0
+2025-12-12T22:35:47.206718786Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.67, entryPrice=0
+2025-12-12T22:35:47.206723569Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.68, entryPrice=0
+2025-12-12T22:35:47.206728644Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.69, entryPrice=0
+2025-12-12T22:35:47.206732957Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.7, entryPrice=0
+2025-12-12T22:35:47.206737288Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.71, entryPrice=0
+2025-12-12T22:35:47.206742427Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.72, entryPrice=0
+2025-12-12T22:35:47.206746777Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:47.892716857Z [inf]  [Engine]   └─ SL: $3104.80 (Infinity%)
+2025-12-12T22:35:47.892729143Z [inf]  [Engine]   └─ TP: $3077.50 (Infinity%)
+2025-12-12T22:35:47.892737806Z [inf]  [Engine] Position opened: SHORT BTCUSDT @ $0.00
+2025-12-12T22:35:47.892746571Z [inf]  [Engine]   └─ SL: $90610.00 (Infinity%)
+2025-12-12T22:35:47.892754883Z [inf]  [Engine]   └─ TP: $89910.00 (Infinity%)
+2025-12-12T22:35:47.892772921Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:47.892781559Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:47.892863594Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:47.892868797Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:47.892874457Z [inf]  [Engine] Position opened: SHORT ETHUSDT @ $0.00
+2025-12-12T22:35:47.957518256Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.52, entryPrice=0
+2025-12-12T22:35:48.065905695Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:48.065917336Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:35:48.195164239Z [err]  [Engine] Invalid PnL calculation: currentPrice=90296.70444203, entryPrice=0
+2025-12-12T22:35:48.195170499Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:48.195176722Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.76714006, entryPrice=0
+2025-12-12T22:35:48.195216609Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.52, entryPrice=0
+2025-12-12T22:35:48.228843503Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.3529806, entryPrice=0
+2025-12-12T22:35:48.228856921Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:35:48.811568063Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.351, entryPrice=0
+2025-12-12T22:35:48.811572765Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:48.811578246Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:35:48.811578748Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:35:48.811586216Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:49.004230695Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:35:49.050420142Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:49.194144234Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.51, entryPrice=0
+2025-12-12T22:35:49.209027702Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:35:49.209032416Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:49.822989579Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.52, entryPrice=0
+2025-12-12T22:35:49.822996069Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:49.823002418Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.52, entryPrice=0
+2025-12-12T22:35:49.823008852Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.352, entryPrice=0
+2025-12-12T22:35:49.823015122Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:49.823021219Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.352, entryPrice=0
+2025-12-12T22:35:49.823027656Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:49.823033818Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:49.844691887Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:49.924359497Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:50.021664854Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:50.104749016Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:50.133449022Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:50.198235500Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:50.796309059Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:35:50.796466364Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:50.796473654Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:50.796480724Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:51.110386268Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:51.201716529Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:51.201723068Z [err]  [Engine] Invalid PnL calculation: currentPrice=90295.00250725, entryPrice=0
+2025-12-12T22:35:51.201728052Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.78910078, entryPrice=0
+2025-12-12T22:35:51.201732523Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:51.203958514Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.35248966, entryPrice=0
+2025-12-12T22:35:51.211414175Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.352, entryPrice=0
+2025-12-12T22:35:51.760181266Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:35:51.760188604Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:51.932192807Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:52.193414296Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.52, entryPrice=0
+2025-12-12T22:35:52.806877288Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:52.806884418Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:52.806888876Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:52.827252214Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:53.746916282Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:53.746921938Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:35:53.746927279Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:53.746932671Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:53.746938969Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:53.746945226Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:35:53.746951495Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:53.746956779Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.52, entryPrice=0
+2025-12-12T22:35:53.746962728Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:53.800131368Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:53.816046117Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:54.152023331Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:54.200794952Z [err]  [Engine] Invalid PnL calculation: currentPrice=90294.99750725, entryPrice=0
+2025-12-12T22:35:54.200803639Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:54.211569717Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.78663503, entryPrice=0
+2025-12-12T22:35:54.214876030Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:54.214883092Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.35259026, entryPrice=0
+2025-12-12T22:35:54.762218992Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:35:54.762230108Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:54.762238348Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:35:54.762246480Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:54.762253536Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:54.762359923Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:35:54.762363501Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.353, entryPrice=0
+2025-12-12T22:35:54.762368058Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:35:54.919641990Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:35:54.983623958Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:55.243617563Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:55.890833270Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:35:55.890900634Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:55.890907706Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:55.890916672Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:55.890924302Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:55.890931149Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:35:55.890938657Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:55.890947390Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:55.890953852Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:55.919314859Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:56.190903774Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:56.894054978Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:35:56.894093041Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:56.894110193Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:56.894116649Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:35:56.894123177Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:35:56.905758401Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:56.932210285Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:35:57.089790915Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:57.219032126Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:35:57.219037711Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:57.219043601Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.80848811, entryPrice=0
+2025-12-12T22:35:57.219049426Z [err]  [Engine] Invalid PnL calculation: currentPrice=90293.16551739, entryPrice=0
+2025-12-12T22:35:57.219055582Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:35:57.219061198Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.353, entryPrice=0
+2025-12-12T22:35:57.854900303Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:57.854912110Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:57.934290329Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:35:57.960529280Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:58.107312650Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:58.265527828Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:58.992940148Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:58.992947784Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:35:58.993041153Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:58.993051267Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:58.993058098Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:35:58.993064110Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:58.993070658Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:35:58.993076171Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:35:58.993081913Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:35:58.993088225Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:59.064332144Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:35:59.136395330Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:35:59.952044777Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:35:59.952050089Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:36:00.014206969Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:36:00.055875993Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53, entryPrice=0
+2025-12-12T22:36:00.055883920Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:36:00.055893346Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.353, entryPrice=0
+2025-12-12T22:36:00.135039765Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:36:00.223496870Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:36:00.223504615Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.81862509, entryPrice=0
+2025-12-12T22:36:00.223509543Z [err]  [Engine] Invalid PnL calculation: currentPrice=90292.75551739, entryPrice=0
+2025-12-12T22:36:00.223515376Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.53866669, entryPrice=0
+2025-12-12T22:36:00.223520203Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.353, entryPrice=0
+2025-12-12T22:36:00.275438539Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:36:00.874139129Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:00.874151167Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:00.874158329Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:00.874165326Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:00.874199606Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.353, entryPrice=0
+2025-12-12T22:36:00.874205433Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:36:00.874211002Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.353, entryPrice=0
+2025-12-12T22:36:00.874216541Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:00.922350190Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:36:00.975992345Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:01.099707613Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:36:01.273109538Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:36:01.273122761Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:36:01.273140245Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:36:01.273146237Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:36:01.284208427Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:36:01.284219020Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:36:01.877072611Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.72, entryPrice=0
+2025-12-12T22:36:01.877088434Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.71, entryPrice=0
+2025-12-12T22:36:01.877095451Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.68, entryPrice=0
+2025-12-12T22:36:01.877102203Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.66, entryPrice=0
+2025-12-12T22:36:01.877108778Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.65, entryPrice=0
+2025-12-12T22:36:01.877115156Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.64, entryPrice=0
+2025-12-12T22:36:01.877120826Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.63, entryPrice=0
+2025-12-12T22:36:01.877129000Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.62, entryPrice=0
+2025-12-12T22:36:01.877135095Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.6, entryPrice=0
+2025-12-12T22:36:01.877141714Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.59, entryPrice=0
+2025-12-12T22:36:01.877147895Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:36:01.877153493Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:01.877159908Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:01.877167885Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.354, entryPrice=0
+2025-12-12T22:36:01.877174782Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:01.877181962Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:01.877188988Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:01.877291998Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.74, entryPrice=0
+2025-12-12T22:36:01.877295723Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.73, entryPrice=0
+2025-12-12T22:36:01.976403047Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:02.110881283Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.353, entryPrice=0
+2025-12-12T22:36:02.778977645Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:02.779001601Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:02.779011582Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:02.779019623Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:02.779025449Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:02.779031216Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:02.779038593Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:36:02.899601343Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.354, entryPrice=0
+2025-12-12T22:36:02.899606069Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:02.899610633Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:02.932490177Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.353, entryPrice=0
+2025-12-12T22:36:02.932494997Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:02.932501624Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:02.932507501Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:36:02.933903625Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:03.025537546Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:36:03.130788306Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:03.190569352Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:03.190582577Z [err]  [Engine] Invalid PnL calculation: currentPrice=90290.83683877, entryPrice=0
+2025-12-12T22:36:03.190590191Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.83523218, entryPrice=0
+2025-12-12T22:36:03.193024989Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54890564, entryPrice=0
+2025-12-12T22:36:03.195121810Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.353, entryPrice=0
+2025-12-12T22:36:03.834516955Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:03.834523095Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:36:03.834529751Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:03.834536379Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:36:03.834542253Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:03.834550623Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:03.834557456Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:03.854373507Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:36:03.951109736Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:03.978613239Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:04.183007440Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:04.802838086Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:04.802845684Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:36:04.802853058Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:04.802863912Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:04.802869302Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.354, entryPrice=0
+2025-12-12T22:36:04.802875103Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:04.802880251Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:04.802886086Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.354, entryPrice=0
+2025-12-12T22:36:04.824271906Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:05.023417670Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:05.061239520Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:05.101442228Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:05.103077823Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.354, entryPrice=0
+2025-12-12T22:36:05.116919963Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:36:05.219920154Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:05.259062655Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.354, entryPrice=0
+2025-12-12T22:36:05.283814853Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-12T22:36:05.283821712Z [inf]  [Engine]   └─ Contexto de scalping en rango: ADX 23.1 confirma mercado lateral/débil, BB width 0.61% y ATR 0.303% ...
+2025-12-12T22:36:05.283829085Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-12T22:36:05.283833945Z [inf]  [Engine]   └─ SL: $89870.00 | TP: $90700.00
+2025-12-12T22:36:05.283839237Z [inf]  [Engine] BTCUSDT: Updated SL: $89870.00 | TP: $90700.00
+2025-12-12T22:36:05.899637387Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:05.899649066Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:05.899658212Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:05.899659757Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:05.899666824Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:05.899668082Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:05.899668444Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:36:05.899677108Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.354, entryPrice=0
+2025-12-12T22:36:05.899677343Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:05.899678181Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:05.899686392Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:05.899687703Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:05.899693356Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:05.918741972Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:06.201603629Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:06.201611768Z [err]  [Engine] Invalid PnL calculation: currentPrice=90290.84183877, entryPrice=0
+2025-12-12T22:36:06.201618545Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.83766314, entryPrice=0
+2025-12-12T22:36:06.201623872Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:06.203049608Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.354, entryPrice=0
+2025-12-12T22:36:06.214187838Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:06.808805359Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:36:06.808813431Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:06.914656387Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:36:07.044597153Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:07.048794822Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:36:07.856679727Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:36:07.856692862Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:07.856699687Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:07.856751317Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:07.856756990Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:07.856763323Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:07.856787272Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:08.056506217Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:08.144691174Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:36:08.194918029Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:08.910946865Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289, entryPrice=0
+2025-12-12T22:36:08.910951232Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.55, entryPrice=0
+2025-12-12T22:36:08.910955418Z [inf]  [Engine] 🧠 Learned: En entradas sin precio válido y baja confianza (<60%), no operar; validar datos y exigir confirmación antes del short
+2025-12-12T22:36:08.910959428Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:08.910963811Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:08.910968759Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:08.910972895Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:08.977125095Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:08.996066014Z [inf]  [Engine] ❌ Position closed: BTCUSDT | PnL: 0.00% ($-722.31) | Reason: sl
+2025-12-12T22:36:09.002661209Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:09.148926057Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:09.234047340Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:09.234056308Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:09.234062504Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55023124, entryPrice=0
+2025-12-12T22:36:09.234067846Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.354, entryPrice=0
+2025-12-12T22:36:09.307771378Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:09.840413045Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:36:09.840420984Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:10.281730227Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:10.281735204Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:10.281740290Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:10.292269537Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:10.293832372Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:10.897554344Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:10.897559381Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.57, entryPrice=0
+2025-12-12T22:36:10.897563384Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:11.171862694Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:11.218503426Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:11.805315349Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:36:11.805356046Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:12.205655943Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58464341, entryPrice=0
+2025-12-12T22:36:12.205660227Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:36:12.206994604Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54778243, entryPrice=0
+2025-12-12T22:36:12.210564023Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:12.212032811Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.354, entryPrice=0
+2025-12-12T22:36:12.873996345Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.57, entryPrice=0
+2025-12-12T22:36:12.874058876Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:12.874065808Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:12.874070482Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.355, entryPrice=0
+2025-12-12T22:36:12.874076325Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.356, entryPrice=0
+2025-12-12T22:36:12.874082562Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.357, entryPrice=0
+2025-12-12T22:36:12.874090831Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.56, entryPrice=0
+2025-12-12T22:36:12.906825791Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:36:13.064810068Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84, entryPrice=0
+2025-12-12T22:36:13.066656283Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.57, entryPrice=0
+2025-12-12T22:36:13.206729383Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:36:13.249871970Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.85, entryPrice=0
+2025-12-12T22:36:13.249876687Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.86, entryPrice=0
+2025-12-12T22:36:13.249881157Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.88, entryPrice=0
+2025-12-12T22:36:13.249885613Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.89, entryPrice=0
+2025-12-12T22:36:13.249890225Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.9, entryPrice=0
+2025-12-12T22:36:13.249894625Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.91, entryPrice=0
+2025-12-12T22:36:13.249899415Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.92, entryPrice=0
+2025-12-12T22:36:13.249903697Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.93, entryPrice=0
+2025-12-12T22:36:13.249909389Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.94, entryPrice=0
+2025-12-12T22:36:13.284334433Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:14.029239557Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:14.029245717Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:14.099669208Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.57, entryPrice=0
+2025-12-12T22:36:15.198349367Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:15.198354566Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:15.198360789Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:36:15.198365513Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:15.198371729Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:36:15.198377144Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:15.198383230Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:15.202240477Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.68322481, entryPrice=0
+2025-12-12T22:36:15.202245947Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.84377705, entryPrice=0
+2025-12-12T22:36:15.202250604Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55535985, entryPrice=0
+2025-12-12T22:36:15.222841691Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:36:15.222847818Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:15.222852902Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:36:15.238679628Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:36:15.293222540Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:15.305330222Z [inf]  [Engine] ETHUSDT: BUY (56%)
+2025-12-12T22:36:15.305334355Z [inf]  [Engine]   └─ Contexto mixto pero con setup de scalping favorable al rebote corto: (1) Régimen lateral y precio mu...
+2025-12-12T22:36:15.305338063Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-12T22:36:15.305343685Z [inf]  [Engine]   └─ SL: $3076.80 | TP: $3104.45
+2025-12-12T22:36:15.305348269Z [inf]  [Engine] ETHUSDT: Updated SL: $3076.80 | TP: $3104.45
+2025-12-12T22:36:16.057368196Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:16.057683747Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:36:16.057687788Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:16.057691929Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:16.057696205Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:16.057700491Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:16.057709147Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:16.057713574Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:16.057718042Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:16.057722123Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:16.057726227Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:16.207021732Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:36:16.938913504Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:36:16.938919990Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:36:16.938926424Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:16.938932640Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.57, entryPrice=0
+2025-12-12T22:36:16.938939539Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.57, entryPrice=0
+2025-12-12T22:36:17.194083851Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:17.194098407Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:17.284443684Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:36:17.346611795Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:17.354761875Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.58, entryPrice=0
+2025-12-12T22:36:17.938098622Z [err]  [Engine] Invalid PnL calculation: currentPrice=3090.57, entryPrice=0
+2025-12-12T22:36:17.938104627Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:17.938110068Z [inf]  [Engine] 🧠 Learned: En régimen ranging con RSI ~46, no shortear por imbalance solo; exigir ruptura y cierre bajo soporte antes de entrar
+2025-12-12T22:36:17.938114848Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:17.938121671Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:36:17.938126642Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:17.948404954Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:36:17.995369789Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:36:18.085662522Z [inf]  [Engine] ❌ Position closed: ETHUSDT | PnL: 0.00% ($-543.94) | Reason: sl
+2025-12-12T22:36:18.155160828Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:18.155167584Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:18.199541105Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.89116692, entryPrice=0
+2025-12-12T22:36:18.201971295Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:18.204213729Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:18.319712606Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59, entryPrice=0
+2025-12-12T22:36:18.961266870Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59, entryPrice=0
+2025-12-12T22:36:18.961274687Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:36:18.961281312Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:18.961288636Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:36:18.961296446Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:18.968114653Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:20.046661986Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59, entryPrice=0
+2025-12-12T22:36:20.046665836Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.6, entryPrice=0
+2025-12-12T22:36:20.046670183Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.6, entryPrice=0
+2025-12-12T22:36:20.136526017Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.6, entryPrice=0
+2025-12-12T22:36:20.246831358Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:20.275340518Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.6, entryPrice=0
+2025-12-12T22:36:21.018438602Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:21.045141922Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.6, entryPrice=0
+2025-12-12T22:36:21.045154755Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:21.052724620Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:21.153929963Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:21.988720009Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.6, entryPrice=0
+2025-12-12T22:36:21.988732918Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:21.988740661Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:21.988747789Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:21.989241742Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.91157323, entryPrice=0
+2025-12-12T22:36:21.989255040Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.6, entryPrice=0
+2025-12-12T22:36:21.989258669Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:21.989263134Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:22.052193165Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:22.249773394Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:22.999932181Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:22.999942491Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:22.999949115Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:22.999955670Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:23.324095486Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:24.046644418Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:24.207974832Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.91369924, entryPrice=0
+2025-12-12T22:36:24.207983624Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:24.209504385Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:24.934318116Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:24.934323962Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:25.009891687Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:25.009900958Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:25.020769711Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:25.081786645Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:25.143095523Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:25.147057518Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:25.223969803Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:25.293290272Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:26.009373434Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:26.009381238Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:26.009386985Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:26.009393445Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.63, entryPrice=0
+2025-12-12T22:36:26.009424869Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:26.009432086Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:26.198569661Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:26.352786871Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.63, entryPrice=0
+2025-12-12T22:36:26.382350618Z [inf]  [Engine] BNBUSDT: HOLD (44%)
+2025-12-12T22:36:26.382359843Z [inf]  [Engine]   └─ El precio está literalmente en el POC ($879.48) y muy cerca de la banda superior de Bollinger ($881....
+2025-12-12T22:36:26.899682571Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:26.966069019Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:26.966073839Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:26.966078314Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:26.966083033Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:26.966087829Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:26.989880376Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:27.149435899Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:27.202682258Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:27.210322638Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.93701147, entryPrice=0
+2025-12-12T22:36:27.210330809Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:27.210337963Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:27.961497791Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:29.193036069Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:29.193041663Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.62, entryPrice=0
+2025-12-12T22:36:29.193047647Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:29.322167680Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:29.322176474Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:29.389890972Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.61, entryPrice=0
+2025-12-12T22:36:29.400637826Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.6, entryPrice=0
+2025-12-12T22:36:30.030154896Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59, entryPrice=0
+2025-12-12T22:36:30.030161169Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59, entryPrice=0
+2025-12-12T22:36:30.030168307Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:30.030176224Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59, entryPrice=0
+2025-12-12T22:36:30.030184062Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:30.207282272Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59, entryPrice=0
+2025-12-12T22:36:30.217958569Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.92775119, entryPrice=0
+2025-12-12T22:36:30.217970141Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.60625988, entryPrice=0
+2025-12-12T22:36:30.225286454Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:30.233133402Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:31.117916302Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59, entryPrice=0
+2025-12-12T22:36:31.117926978Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:31.118024674Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:31.335950441Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:32.031173612Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:32.031179914Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:32.031185223Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:32.031192085Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:32.333243982Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:36:33.007081070Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59, entryPrice=0
+2025-12-12T22:36:33.202013516Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.93117575, entryPrice=0
+2025-12-12T22:36:33.205031195Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59039424, entryPrice=0
+2025-12-12T22:36:33.208069937Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.36168938, entryPrice=0
+2025-12-12T22:36:34.122562856Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:34.136450988Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:34.976781150Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:34.976788509Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:34.976794721Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:34.976801277Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:34.976808236Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:35.084678659Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:35.089477805Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:35.198850975Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:35.231056877Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:35.257638460Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:35.313839015Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:35.340947148Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:35.393153338Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:36.090647753Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:36.090653910Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:36.090660416Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:36.090667006Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:36.090673078Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:36.090678875Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:36.090685159Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:36.090691590Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:36:36.090698007Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:36.090703523Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:36:36.112067398Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:36.199259819Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.9366552, entryPrice=0
+2025-12-12T22:36:36.199386772Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.59196233, entryPrice=0
+2025-12-12T22:36:36.216847951Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.36298406, entryPrice=0
+2025-12-12T22:36:36.228265037Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:37.112285881Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:37.266552326Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:38.008378297Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:38.050565066Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:38.190528822Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:38.332815333Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:38.385681750Z [inf]  [Engine] BTCUSDT: HOLD (52%)
+2025-12-12T22:36:38.385686482Z [inf]  [Engine]   └─ Mercado en rango y con fuerza limitada: ADX 23.1 sugiere tendencia débil, y el precio está dentro de...
+2025-12-12T22:36:39.035063915Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:39.035070592Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:39.035076369Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:39.035082519Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:39.189530788Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.94882681, entryPrice=0
+2025-12-12T22:36:39.192959246Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57351789, entryPrice=0
+2025-12-12T22:36:39.192971459Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.3629409, entryPrice=0
+2025-12-12T22:36:39.319007833Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:40.090390205Z [inf]  [Engine] SOLUSDT: Updated SL: $133.34 | TP: $132.20
+2025-12-12T22:36:40.090467775Z [inf]  [Engine] SOLUSDT: SELL (56%)
+2025-12-12T22:36:40.090472879Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:40.090478674Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo bajista para scalp. 1) Tendencia: aunque el precio está ligeramente po...
+2025-12-12T22:36:40.090485274Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-12T22:36:40.090492504Z [inf]  [Engine]   └─ SL: $133.34 | TP: $132.20
+2025-12-12T22:36:40.299307340Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:40.390846967Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:41.042202921Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:41.042207854Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:41.042212455Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:41.042219523Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:41.042223579Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:41.370882457Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:41.999729052Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:42.064870569Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:42.099336881Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:42.199842574Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.94882681, entryPrice=0
+2025-12-12T22:36:42.199848347Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57143344, entryPrice=0
+2025-12-12T22:36:42.199854700Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.362957, entryPrice=0
+2025-12-12T22:36:42.951520193Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:42.951530920Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:43.322535665Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:44.111871997Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:44.111879483Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:44.214211760Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:45.120850042Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:45.120855692Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:36:45.199418603Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:45.201057366Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:45.204623494Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.36234152, entryPrice=0
+2025-12-12T22:36:45.204628659Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:45.357747310Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:46.174752654Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:46.174763385Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:46.370430507Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:46.443659178Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:47.127721238Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:47.127728039Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:47.127736700Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:47.291178801Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:47.381770170Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:47.428701543Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:48.090202987Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:36:48.092690835Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:48.209628620Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:48.209632582Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:48.209636312Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.3624783, entryPrice=0
+2025-12-12T22:36:49.012412844Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:49.012471483Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:49.012476456Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:49.251024361Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:49.411137645Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:49.430269108Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:50.014143284Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:50.014149033Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T22:36:50.014154501Z [inf]  [Engine]   └─ Régimen declarado de rango/lateral y BB width muy estrecho (1.07%) → probabilidad alta de chop alred...
+2025-12-12T22:36:50.014161382Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:50.014169767Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:50.014175242Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:50.091963072Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:50.091967540Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:50.091971698Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:50.091976115Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:50.129412982Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:50.176245337Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:50.335348054Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:50.483614210Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:51.205361315Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:51.205370208Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:51.213377372Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.3612802, entryPrice=0
+2025-12-12T22:36:51.291167738Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:51.426293872Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.58, entryPrice=0
+2025-12-12T22:36:52.002770731Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:52.163335360Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:53.065566430Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:53.365206684Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:36:53.389048711Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:54.089723726Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:54.089730406Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:54.089736207Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:54.089744964Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:54.203710744Z [inf]  [Engine] XRPUSDT: HOLD (44%)
+2025-12-12T22:36:54.203719881Z [inf]  [Engine]   └─ Régimen claramente lateral: ADX 17.7 confirma falta de tendencia y reduce el edge de continuidad. El...
+2025-12-12T22:36:54.209984169Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:54.209995933Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56664725, entryPrice=0
+2025-12-12T22:36:54.210003912Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.36007083, entryPrice=0
+2025-12-12T22:36:54.354092822Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:55.174967478Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:55.174989873Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:55.174997501Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:55.175050309Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:55.175066382Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:55.175255327Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:55.175281005Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:55.321697936Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:55.447415369Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:55.447425418Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:55.447430740Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:55.447437282Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:36:55.479912880Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:56.096205163Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:36:56.105313729Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:56.243196054Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:56.346981205Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:56.397694658Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:57.079076907Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:57.198192659Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:57.198197929Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56782549, entryPrice=0
+2025-12-12T22:36:57.205006383Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.35894833, entryPrice=0
+2025-12-12T22:36:57.213901537Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:57.265683562Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:36:57.417746884Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:58.354054514Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:58.354059375Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:58.480552630Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:59.234400939Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:36:59.252083973Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:36:59.437965930Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:00.250767464Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:37:00.250773520Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:37:00.250779740Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:00.250786896Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:37:00.250794115Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:00.250800426Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56506539, entryPrice=0
+2025-12-12T22:37:00.250806587Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.35912152, entryPrice=0
+2025-12-12T22:37:00.355708330Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:37:00.480603757Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:37:01.275711996Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:01.275717635Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:37:01.275723155Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:37:01.275728889Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:37:01.275734496Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:37:01.275740478Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:37:01.275746941Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:37:01.423652418Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:37:02.173845230Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:37:02.173850030Z [inf]  [Engine] BNBUSDT: HOLD (44%)
+2025-12-12T22:37:02.173854352Z [inf]  [Engine]   └─ Contexto mixto para scalp: (1) Régimen lateral con ADX 22 y BB width 0.84% → el precio se mueve poco...
+2025-12-12T22:37:02.173858476Z [inf]  [Engine] BNBUSDT: Updated SL: $885.60 | TP: $878.30
+2025-12-12T22:37:02.173862586Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:02.173867040Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:37:02.200824458Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:37:03.119599030Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.57, entryPrice=0
+2025-12-12T22:37:03.119603515Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:03.119607559Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:03.119611918Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:03.119616316Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:03.119620691Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.56, entryPrice=0
+2025-12-12T22:37:03.119624569Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:03.119630086Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:37:03.119634315Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:03.119638350Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:37:03.187772764Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.93610456, entryPrice=0
+2025-12-12T22:37:03.187779356Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.5643377, entryPrice=0
+2025-12-12T22:37:03.187784303Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.35816319, entryPrice=0
+2025-12-12T22:37:03.203204003Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:37:03.270008982Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:03.338536767Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:03.388915909Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:37:03.430199743Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:37:03.515467619Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:04.058019648Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:04.058034296Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:37:04.058040901Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:37:04.058046804Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:04.058053616Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:04.058114808Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:04.058121864Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:37:04.129038525Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:04.362504096Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:04.428984049Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:05.109317305Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:05.109326202Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:37:05.109331155Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:05.109359512Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:05.109372028Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-12T22:37:05.109372858Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:37:05.109379007Z [inf]  [Engine] BTCUSDT: BUY (56%)
+2025-12-12T22:37:05.109393410Z [inf]  [Engine]   └─ Contexto de rango con volatilidad baja (ATR 0.303%, BB width 0.61%, ADX 23.1), lo que favorece scalp...
+2025-12-12T22:37:05.109395237Z [inf]  [Engine]   └─ SL: $89930.00 | TP: $90455.00
+2025-12-12T22:37:05.109417233Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:05.109423734Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.358, entryPrice=0
+2025-12-12T22:37:05.121392186Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:05.180820001Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:37:05.185589051Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:05.239052800Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:05.279529830Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:37:05.387414353Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:37:05.480368638Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:37:06.075511781Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:37:06.075516582Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:06.075521754Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.96, entryPrice=0
+2025-12-12T22:37:06.075526983Z [inf]  [Engine] LINKUSDT: HOLD (44%)
+2025-12-12T22:37:06.075532208Z [inf]  [Engine]   └─ LINK está en régimen de rango con ADX 22.2 (tendencia débil) y BB Width 1.43% (compresión), lo que f...
+2025-12-12T22:37:06.100768324Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:06.184159711Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.93615935, entryPrice=0
+2025-12-12T22:37:06.184171565Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.5618638, entryPrice=0
+2025-12-12T22:37:06.188883338Z [err]  [Engine] Invalid PnL calculation: currentPrice=5.359, entryPrice=0
+2025-12-12T22:37:06.296080422Z [inf]  [Engine] Opening BUY BTCUSDT:
+2025-12-12T22:37:06.296089247Z [inf]  [Engine]   └─ Quantity: 0.006 @ ~$90289.00
+2025-12-12T22:37:06.296095950Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-12T22:37:06.296101379Z [inf]  [Engine]   └─ Capital used: $127.77 (3%)
+2025-12-12T22:37:06.296106963Z [inf]  [Engine]   └─ Position value: $511.09
+2025-12-12T22:37:06.302943005Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:37:06.310956063Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:06.470506634Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:06.470510848Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:06.470516211Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:07.153112741Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:07.153124859Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:37:07.153220627Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.55, entryPrice=0
+2025-12-12T22:37:07.153225429Z [err]  [Engine] Invalid PnL calculation: currentPrice=881.95, entryPrice=0
+2025-12-12T22:37:07.153232500Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:07.153236997Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:07.153244099Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:37:07.153276358Z [err]  [Engine] Invalid PnL calculation: currentPrice=90289.1, entryPrice=0
+2025-12-12T22:37:07.153282496Z [err]  [Engine] Invalid PnL calculation: currentPrice=132.54, entryPrice=0
+2025-12-12T22:37:07.292797872Z [inf]  [Engine] Position opened: LONG BTCUSDT @ $0.00
+2025-12-12T22:37:07.292806028Z [inf]  [Engine]   └─ SL: $89930.00 (Infinity%)
+2025-12-12T22:37:07.292812104Z [inf]  [Engine]   └─ TP: $90455.00 (Infinity%)

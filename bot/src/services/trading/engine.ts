@@ -129,13 +129,22 @@ export class TradingEngine extends EventEmitter {
     // Check existing positions
     const positions = await binanceClient.getPositions();
     for (const pos of positions) {
+      const entryPrice = parseFloat(pos.entryPrice);
+      const quantity = Math.abs(parseFloat(pos.positionAmt));
+
+      // Skip positions with invalid data (entryPrice=0 means no real position)
+      if (!entryPrice || entryPrice <= 0 || !quantity || quantity <= 0) {
+        console.log(`[Engine] Skipping invalid position ${pos.symbol}: entryPrice=${entryPrice}, qty=${quantity}`);
+        continue;
+      }
+
       const side = parseFloat(pos.positionAmt) > 0 ? 'LONG' : 'SHORT';
       this.state.currentPositions.set(pos.symbol, {
         symbol: pos.symbol,
         side,
-        entryPrice: parseFloat(pos.entryPrice),
-        quantity: Math.abs(parseFloat(pos.positionAmt)),
-        leverage: parseInt(pos.leverage),
+        entryPrice,
+        quantity,
+        leverage: parseInt(pos.leverage) || 1,
         stopLoss: 0, // Will be updated by GPT
         takeProfit: 0,
         entryTime: Date.now(),

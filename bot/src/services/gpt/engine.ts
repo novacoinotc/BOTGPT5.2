@@ -50,6 +50,7 @@ export class GPTEngine {
     const userPrompt = this.buildAnalysisPrompt(context);
 
     try {
+      // GPT-5.2 with reasoning_effort for optimized performance
       const response = await this.client.chat.completions.create({
         model: this.model,
         messages: [
@@ -57,7 +58,8 @@ export class GPTEngine {
           { role: 'user', content: userPrompt },
         ],
         response_format: { type: 'json_object' },
-      });
+        reasoning_effort: 'low', // 'none'|'low'|'medium'|'high' - low for fast scalping
+      } as any);
 
       const content = response.choices[0]?.message?.content;
       if (!content) {
@@ -390,7 +392,8 @@ Ejemplo: "En RSI>70 con funding alto, esperar confirmación de reversión antes 
       const response = await this.client.chat.completions.create({
         model: this.model,
         messages: [{ role: 'user', content: prompt }],
-      });
+        reasoning_effort: 'none', // Fast extraction, no deep reasoning needed
+      } as any);
 
       const lesson = response.choices[0]?.message?.content?.trim() || '';
 
