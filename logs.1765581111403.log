@@ -1,0 +1,1050 @@
+2025-12-12T23:10:54.181819714Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T23:10:54.224774986Z [err]  [GPT] Learning error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:54.224796129Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:54.224803188Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:54.224809989Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:54.224816643Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:54.224823284Z [err]      at async GPTEngine.learnFromTrade (/app/bot/dist/services/gpt/engine.js:346:30)
+2025-12-12T23:10:54.224829280Z [err]      at async TradingEngine.closePosition (/app/bot/dist/services/trading/engine.js:451:28)
+2025-12-12T23:10:54.224835840Z [err]      at async TradingEngine.checkPositionExit (/app/bot/dist/services/trading/engine.js:384:13) {
+2025-12-12T23:10:54.224841819Z [err]    status: 429,
+2025-12-12T23:10:54.224848986Z [err]    headers: {
+2025-12-12T23:10:54.224855104Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:54.224862100Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:54.224868208Z [err]      'cf-ray': '9ad0e5d47dd2ed3a-SJC',
+2025-12-12T23:10:54.224878642Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:54.224884963Z [err]      'content-length': '337',
+2025-12-12T23:10:54.224890899Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:54.224896393Z [err]      date: 'Fri, 12 Dec 2025 23:10:54 GMT',
+2025-12-12T23:10:54.224918059Z [err]      server: 'cloudflare',
+2025-12-12T23:10:54.224924075Z [err]      'set-cookie': '__cf_bm=83JS3S5zp1lNvHnTdakPLOtcMV6K5yMXcX3B0ed1YOA-1765581054-1.0.1.1-7TTRLaHI1gK_J5q22n7BF_743Dms7fJoMRfKudU0eXffswEJG4WJnVgqqco6OE6JCEnzUbWd2IBZgFoj.PI_UXAhhVYwTgJJ3yIfmdz9rTw; path=/; expires=Fri, 12-Dec-25 23:40:54 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=_oTgzOHRi.gc0YkkJOWmeaJdweC7O0ZW8OYJrea4cP8-1765581054215-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:54.226701019Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:54.226712847Z [err]  }
+2025-12-12T23:10:54.226714322Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:54.226722085Z [err]      vary: 'Origin',
+2025-12-12T23:10:54.226727750Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:54.226732182Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-12T23:10:54.226737049Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:54.226742347Z [err]      'x-request-id': 'req_194dd10c28f84d97b12f23d5dfe269e3'
+2025-12-12T23:10:54.226746852Z [err]    },
+2025-12-12T23:10:54.226752128Z [err]    request_id: 'req_194dd10c28f84d97b12f23d5dfe269e3',
+2025-12-12T23:10:54.226756571Z [err]    error: {
+2025-12-12T23:10:54.226761162Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:54.226765441Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:54.226769803Z [err]      param: null,
+2025-12-12T23:10:54.226774423Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:54.226778544Z [err]    },
+2025-12-12T23:10:54.226782902Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:54.226788317Z [err]    param: null,
+2025-12-12T23:10:54.266926822Z [inf]  [Engine] ✅ Position closed: ETHUSDT | PnL: +0.07% ($0.47) | Reason: tp
+2025-12-12T23:10:55.011123483Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:55.011130859Z [err]      'content-length': '337',
+2025-12-12T23:10:55.011135179Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:55.011140271Z [err]      date: 'Fri, 12 Dec 2025 23:10:54 GMT',
+2025-12-12T23:10:55.011145647Z [err]      server: 'cloudflare',
+2025-12-12T23:10:55.011148881Z [err]      at async GPTEngine.learnFromTrade (/app/bot/dist/services/gpt/engine.js:346:30)
+2025-12-12T23:10:55.011150652Z [err]      'set-cookie': '__cf_bm=Ec50uV8LdUVvibXtbT6iKoeokzhscOqVzopKYDif5BE-1765581054-1.0.1.1-mFTL9EYg.LB3442QY96QJykMXnI3CsJZ4IRAd_GJlp20Go6uKLWIYgA9l75ogePbqBB8kR2qrHCosAhHOR3IfbRV008G3_P498ou8zIO2NI; path=/; expires=Fri, 12-Dec-25 23:40:54 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=hbMpGHI8dNLDhHdnHKas.7ajxoO5OavDKnoK1c2xFB8-1765581054606-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:55.011162452Z [err]      at async TradingEngine.closePosition (/app/bot/dist/services/trading/engine.js:451:28)
+2025-12-12T23:10:55.011163318Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:55.011173165Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:55.011173469Z [err]      at async TradingEngine.checkPositionExit (/app/bot/dist/services/trading/engine.js:384:13) {
+2025-12-12T23:10:55.011183405Z [err]    status: 429,
+2025-12-12T23:10:55.011184151Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T23:10:55.011184195Z [err]      'cf-ray': '9ad0e5d6e9bced3a-SJC',
+2025-12-12T23:10:55.011190450Z [err]    headers: {
+2025-12-12T23:10:55.011193691Z [err]  [GPT] Learning error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:55.011199159Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:55.011203795Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:55.011209486Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:55.011215403Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:55.018121544Z [err]    request_id: 'req_b23fc29198154e72a1d42f12bc789d95',
+2025-12-12T23:10:55.018133976Z [err]    error: {
+2025-12-12T23:10:55.018143451Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:55.018150547Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:55.018161343Z [err]      param: null,
+2025-12-12T23:10:55.018163614Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:55.018168498Z [err]      vary: 'Origin',
+2025-12-12T23:10:55.018174293Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:55.018174305Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:55.018182499Z [err]    },
+2025-12-12T23:10:55.018185376Z [err]      'x-envoy-upstream-service-time': '2',
+2025-12-12T23:10:55.018190699Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:55.018191625Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:55.018197247Z [err]      'x-request-id': 'req_b23fc29198154e72a1d42f12bc789d95'
+2025-12-12T23:10:55.018199547Z [err]    param: null,
+2025-12-12T23:10:55.018203481Z [err]    },
+2025-12-12T23:10:55.018207889Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:55.018212844Z [err]  }
+2025-12-12T23:10:55.018219543Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T23:10:55.018225333Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T23:10:55.018230334Z [inf]  [Engine] ✅ Position closed: SUIUSDT | PnL: +0.02% ($0.10) | Reason: tp
+2025-12-12T23:10:55.018235309Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T23:10:55.078239683Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.078253556Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.121797429Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.130288109Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.130295437Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.130300078Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.132751226Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.132758353Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.134821267Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.143288106Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.151675261Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.151682383Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.151687416Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.151691970Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.158619446Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.158626936Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.168544174Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.168549762Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.168554369Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.168559128Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.175053436Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.175062280Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.175069109Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.176786148Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.184764015Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.193068907Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.193083754Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.208578397Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.219022899Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.219030864Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.219037029Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.237502659Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.237509704Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.239881200Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.241627252Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.243329892Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.244771900Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.287831401Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.287838597Z [inf]  [Engine] ✅ Position closed: ETHUSDT | PnL: +0.07% ($0.48) | Reason: tp
+2025-12-12T23:10:55.319275547Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.321091848Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:55.336398337Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:56.017485165Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:56.017495632Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T23:10:57.022649227Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.022653917Z [err]      'content-length': '337',
+2025-12-12T23:10:57.022656354Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.022663994Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.022673900Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.022675846Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.022682972Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.022690005Z [err]      date: 'Fri, 12 Dec 2025 23:10:56 GMT',
+2025-12-12T23:10:57.022693894Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.022705306Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.022705753Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.022717382Z [err]    status: 429,
+2025-12-12T23:10:57.022720084Z [err]      'set-cookie': '__cf_bm=Iph5ZzVbb8mXuhR2U9lGtL.Em8PRHprsAvn6RBgNfFQ-1765581056-1.0.1.1-NBBzuDcXo_iYWwsIPf6uhlyM7fYLHd1PJ9Upn2eMw4aw6OaEqbcTbzT_9T4mgiew11REkDuZ2Zf1N.zUjS0jqKM4jnu.KIeBWXQsFd_qpNo; path=/; expires=Fri, 12-Dec-25 23:40:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=0ec3Co87Qrh1MbJurjYvU.NIFPltdaNys6IiZ30ZRjA-1765581056739-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.022726436Z [err]    headers: {
+2025-12-12T23:10:57.022732835Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.022739562Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.022746845Z [err]      'cf-ray': '9ad0e5e4497aed3a-SJC',
+2025-12-12T23:10:57.022753406Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.026905732Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.026915836Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.026926675Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.026939659Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-12T23:10:57.026945370Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.026951913Z [err]      'x-request-id': 'req_9a07da34786d4d7980072646ca9833e5'
+2025-12-12T23:10:57.026958295Z [err]    },
+2025-12-12T23:10:57.026963624Z [err]    request_id: 'req_9a07da34786d4d7980072646ca9833e5',
+2025-12-12T23:10:57.026968945Z [err]    error: {
+2025-12-12T23:10:57.026974795Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.026981684Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.026989042Z [err]      param: null,
+2025-12-12T23:10:57.027001051Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.027005596Z [err]    },
+2025-12-12T23:10:57.027010038Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.027014383Z [err]    param: null,
+2025-12-12T23:10:57.027018907Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.027024584Z [err]  }
+2025-12-12T23:10:57.027029275Z [inf]  [Engine] LINKUSDT: HOLD (0%)
+2025-12-12T23:10:57.027035269Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.027040485Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.027045901Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.027257381Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.027264214Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.027270275Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.027275743Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.027285956Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.027291672Z [err]    status: 429,
+2025-12-12T23:10:57.027297113Z [err]    headers: {
+2025-12-12T23:10:57.027302717Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.027307972Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.027316648Z [err]      'cf-ray': '9ad0e5e51aebed3a-SJC',
+2025-12-12T23:10:57.027322410Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.027328411Z [err]      'content-length': '337',
+2025-12-12T23:10:57.027333627Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.027338612Z [err]      date: 'Fri, 12 Dec 2025 23:10:56 GMT',
+2025-12-12T23:10:57.027343798Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.027349095Z [err]      'set-cookie': '__cf_bm=MELhdfsEeuo0Yr5lJZP6gaI1OPQEFasd27TkOVN6Wq0-1765581056-1.0.1.1-UVDSyHsEtUI_jvnMk3gHha8OnQRMO4vyWtRL4UuGxA7QLj53AEdSCeJDThMyYB7SOKqW7iMtLHg9p1EuKdr2O3EnF5CVsHYbZUT6GeGZGT0; path=/; expires=Fri, 12-Dec-25 23:40:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=z2OqaPE1ezsB5nSMYtFUuxDCRWKqZPoGsfNDDohQV20-1765581056872-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.027354209Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.027360139Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.028475395Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.028481931Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-12T23:10:57.028487320Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.028493357Z [err]      'x-request-id': 'req_7ee3133ab6ea4744940d3c321cee3d4b'
+2025-12-12T23:10:57.028500399Z [err]    },
+2025-12-12T23:10:57.028507739Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.028508215Z [err]    request_id: 'req_7ee3133ab6ea4744940d3c321cee3d4b',
+2025-12-12T23:10:57.028522082Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.028531391Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.028542280Z [err]    error: {
+2025-12-12T23:10:57.028542476Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.028651137Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.028663661Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.028672485Z [err]      param: null,
+2025-12-12T23:10:57.028699091Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.028707284Z [err]    },
+2025-12-12T23:10:57.028712578Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.028717979Z [err]    param: null,
+2025-12-12T23:10:57.028724271Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.028731200Z [err]  }
+2025-12-12T23:10:57.028741360Z [inf]  [Engine] SOLUSDT: HOLD (0%)
+2025-12-12T23:10:57.028747620Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.030126084Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.030131141Z [err]      'set-cookie': '__cf_bm=E4HV2sjj1QqLbkx0XC22QhvfGEhU0bD50i1vYutAUvM-1765581056-1.0.1.1-uaB8PFsnyf3M_T4rRKYLIKv2qSvn7lolcxm65yTghSmNxd5KQ5HAVvFoqy4oMT7FXm_r99QmMnJhcJ65S0TYJJCDrZN_ovg7UoO8CL3.AN4; path=/; expires=Fri, 12-Dec-25 23:40:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=yLCbA3hs8NubJhDNmsncIWBB5EHeQIcxMsLORjA3i5Q-1765581056883-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.030135051Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.030141702Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.030142106Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.030151627Z [err]      'content-length': '337',
+2025-12-12T23:10:57.030152811Z [err]    status: 429,
+2025-12-12T23:10:57.030163182Z [err]    headers: {
+2025-12-12T23:10:57.030169157Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.030170720Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.030175540Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.030181600Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.030183042Z [err]      date: 'Fri, 12 Dec 2025 23:10:56 GMT',
+2025-12-12T23:10:57.030195418Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.030196164Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-12T23:10:57.030202083Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.030208165Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.030209982Z [err]      'cf-ray': '9ad0e5e52cc9fbec-SJC',
+2025-12-12T23:10:57.030216082Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.031863136Z [err]      'x-request-id': 'req_0d4ce6acecae4f01a922ef68f359c2fa'
+2025-12-12T23:10:57.031869184Z [err]    },
+2025-12-12T23:10:57.031873805Z [err]    request_id: 'req_0d4ce6acecae4f01a922ef68f359c2fa',
+2025-12-12T23:10:57.031880005Z [err]    error: {
+2025-12-12T23:10:57.031883955Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.031888358Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.031892340Z [err]      param: null,
+2025-12-12T23:10:57.031896810Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.031900822Z [err]    },
+2025-12-12T23:10:57.031905660Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.031911353Z [err]    param: null,
+2025-12-12T23:10:57.031916394Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.031922271Z [err]  }
+2025-12-12T23:10:57.031930561Z [inf]  [Engine] AVAXUSDT: HOLD (0%)
+2025-12-12T23:10:57.031937815Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.031945966Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.031951885Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.031958391Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.031964866Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.031970738Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.031977119Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.033475643Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.033486302Z [err]    status: 429,
+2025-12-12T23:10:57.033493175Z [err]    headers: {
+2025-12-12T23:10:57.033499781Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.033505370Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.033511423Z [err]      'cf-ray': '9ad0e5e51db43ecb-SJC',
+2025-12-12T23:10:57.033520933Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.033527271Z [err]      'content-length': '337',
+2025-12-12T23:10:57.033533758Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.033540770Z [err]      date: 'Fri, 12 Dec 2025 23:10:56 GMT',
+2025-12-12T23:10:57.033546409Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.033550970Z [err]      'set-cookie': '__cf_bm=9ihIczoPkj7trClc7kltemT5NYvlXEjcMCj3v8rRJLQ-1765581056-1.0.1.1-HXkceB9VlOMXvLzSETBbu285dojpsxGW5Pn0OU8G4qIoSW89uzRWtSsD3O68gv_OIphu1DVKHXz.dyvRKkGLgLpGfIXa9WJseF1BT2x5MK4; path=/; expires=Fri, 12-Dec-25 23:40:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=jaSC9kdv05W0AAXbyv77rOgypxvpS9h8BVtWII9zAxk-1765581056884-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.033555437Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.033560759Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.033565726Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.033570247Z [err]      'x-envoy-upstream-service-time': '2',
+2025-12-12T23:10:57.033574845Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.033579425Z [err]      'x-request-id': 'req_d9f77b1dcc9a4f4b8f8153b43e5018ca'
+2025-12-12T23:10:57.033584404Z [err]    },
+2025-12-12T23:10:57.033589058Z [err]    request_id: 'req_d9f77b1dcc9a4f4b8f8153b43e5018ca',
+2025-12-12T23:10:57.036180014Z [err]    error: {
+2025-12-12T23:10:57.036189141Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.036196339Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.036202740Z [err]      param: null,
+2025-12-12T23:10:57.036208280Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.036213365Z [err]    },
+2025-12-12T23:10:57.036218416Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.036224127Z [err]    param: null,
+2025-12-12T23:10:57.036229478Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.036234845Z [err]  }
+2025-12-12T23:10:57.036240409Z [inf]  [Engine] BTCUSDT: HOLD (0%)
+2025-12-12T23:10:57.036245543Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.036250640Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.036256200Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.036261512Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.036269294Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.036275091Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.036280363Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.036285322Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.036290910Z [err]    status: 429,
+2025-12-12T23:10:57.037753783Z [err]    headers: {
+2025-12-12T23:10:57.037768144Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.037775639Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.037783421Z [err]      'cf-ray': '9ad0e5e52a7333dc-SJC',
+2025-12-12T23:10:57.037791971Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.037800490Z [err]      'content-length': '337',
+2025-12-12T23:10:57.037807932Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.037814459Z [err]      date: 'Fri, 12 Dec 2025 23:10:56 GMT',
+2025-12-12T23:10:57.037821299Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.037828309Z [err]      'set-cookie': '__cf_bm=R3Wb8kIIuXSubqOFoDHELJTxW0eXfyamCdJ7diuLR0g-1765581056-1.0.1.1-fTFlHwfjPOLPQjf45Z6sPP_C43raOFSU99Al.W4kzPhruX1GXR_Xxeyq8NCjrOtEw2KA8oNWRN32wxaSfEgIqhHuHD63NOfjxGYPnuEmg.k; path=/; expires=Fri, 12-Dec-25 23:40:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=jaSC9kdv05W0AAXbyv77rOgypxvpS9h8BVtWII9zAxk-1765581056884-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.037835024Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.037848402Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.037860268Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.037866611Z [err]      'x-envoy-upstream-service-time': '2',
+2025-12-12T23:10:57.037873257Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.037879653Z [err]      'x-request-id': 'req_31ecf5193de546278a7b3ae7fb8ca2d6'
+2025-12-12T23:10:57.037886399Z [err]    },
+2025-12-12T23:10:57.037893472Z [err]    request_id: 'req_31ecf5193de546278a7b3ae7fb8ca2d6',
+2025-12-12T23:10:57.037899088Z [err]    error: {
+2025-12-12T23:10:57.037905188Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.039134954Z [err]    headers: {
+2025-12-12T23:10:57.039142518Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.039144997Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.039155160Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.039159688Z [err]      param: null,
+2025-12-12T23:10:57.039164511Z [err]      'cf-ray': '9ad0e5e58b3d33dc-SJC',
+2025-12-12T23:10:57.039171537Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.039179782Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.039183550Z [err]    },
+2025-12-12T23:10:57.039188556Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.039196352Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.039197179Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.039207153Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.039211085Z [err]    param: null,
+2025-12-12T23:10:57.039215713Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.039225044Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.039225596Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.039232222Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.039239207Z [err]  }
+2025-12-12T23:10:57.039241831Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.039253029Z [inf]  [Engine] OPUSDT: HOLD (0%)
+2025-12-12T23:10:57.039253180Z [err]    status: 429,
+2025-12-12T23:10:57.040836078Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.040845224Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.040854297Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.040862483Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.040867832Z [err]      'x-envoy-upstream-service-time': '2',
+2025-12-12T23:10:57.040872895Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.040877893Z [err]      'x-request-id': 'req_fe61da8af7b0493faa85852c93557c58'
+2025-12-12T23:10:57.040883269Z [err]    },
+2025-12-12T23:10:57.040892892Z [err]    request_id: 'req_fe61da8af7b0493faa85852c93557c58',
+2025-12-12T23:10:57.040894053Z [err]      'content-length': '337',
+2025-12-12T23:10:57.040898749Z [err]    error: {
+2025-12-12T23:10:57.040918981Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.040921507Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.040928230Z [err]      date: 'Fri, 12 Dec 2025 23:10:56 GMT',
+2025-12-12T23:10:57.040930807Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.040936816Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.040938718Z [err]      param: null,
+2025-12-12T23:10:57.040945435Z [err]      'set-cookie': '__cf_bm=HtFE4huyN4YFTfsnaBsvTgS1B9Azh.TcDEaMXBKREMs-1765581056-1.0.1.1-eUtruN6KhkxXTCTYCb9kFrN01hphQOy2P7NOIeSM6j8AjYirVgUtvDUaWhTlqijzQjJtIs.OiVw9DHrw5C1PpBWLqsSLSrG.WVLxbvkaJ3Y; path=/; expires=Fri, 12-Dec-25 23:40:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=QKLTg9XqHhCc.51MdtsgHOeTQLEd4q0sybYz9MouRN0-1765581056946-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.040946799Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.042316893Z [err]    },
+2025-12-12T23:10:57.042322919Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.042327069Z [err]    param: null,
+2025-12-12T23:10:57.042330917Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.042335910Z [err]  }
+2025-12-12T23:10:57.042340192Z [inf]  [Engine] SUIUSDT: HOLD (0%)
+2025-12-12T23:10:57.042344767Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.042350574Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.042356230Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.042361150Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.042366186Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.042371842Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.042377443Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.042383320Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.042389284Z [err]    status: 429,
+2025-12-12T23:10:57.042395720Z [err]    headers: {
+2025-12-12T23:10:57.042401170Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.042406223Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.042411632Z [err]      'cf-ray': '9ad0e5e5ae883ecb-SJC',
+2025-12-12T23:10:57.042416342Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.042422043Z [err]      'content-length': '337',
+2025-12-12T23:10:57.042427398Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.044491208Z [err]      date: 'Fri, 12 Dec 2025 23:10:56 GMT',
+2025-12-12T23:10:57.044504672Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.044511686Z [err]      'set-cookie': '__cf_bm=rgIBxfPYjVT2D0KpszoxV7UeqWSKrG0_3Z6Yvw8LEq4-1765581056-1.0.1.1-IUrbWbiFlf4qySmymba32OVbxKy03Jl0tjUE50hXXKo6sR1fevq1x984XGdzzptKZhiVBwctT1jizZHwjPodGNbWiS3N7suCytLEXFpD9lE; path=/; expires=Fri, 12-Dec-25 23:40:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=_lsnL6n.P4aBFiQ94TBXBITL3dR9jxD_5dd2MH5Nbl0-1765581056971-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.044519817Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.044525877Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.044533589Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.044540117Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-12T23:10:57.044546658Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.044552337Z [err]      'x-request-id': 'req_2151e7ba77ee44c9b00894d2e242d034'
+2025-12-12T23:10:57.044558769Z [err]    },
+2025-12-12T23:10:57.044565253Z [err]    request_id: 'req_2151e7ba77ee44c9b00894d2e242d034',
+2025-12-12T23:10:57.044570754Z [err]    error: {
+2025-12-12T23:10:57.044577128Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.044583942Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.044590284Z [err]      param: null,
+2025-12-12T23:10:57.044595863Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.044601567Z [err]    },
+2025-12-12T23:10:57.044608135Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.044614572Z [err]    param: null,
+2025-12-12T23:10:57.044619688Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.045895585Z [err]  }
+2025-12-12T23:10:57.045905629Z [inf]  [Engine] DOGEUSDT: HOLD (0%)
+2025-12-12T23:10:57.045913845Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.045919074Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.045955673Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.045960948Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.045966339Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.045970723Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.045974737Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.045979087Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.045989190Z [err]    status: 429,
+2025-12-12T23:10:57.045998173Z [err]    headers: {
+2025-12-12T23:10:57.046003121Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.046007298Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.046012173Z [err]      'cf-ray': '9ad0e5e5fe28fbec-SJC',
+2025-12-12T23:10:57.046016717Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.046023329Z [err]      'content-length': '337',
+2025-12-12T23:10:57.046028107Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.046034148Z [err]      date: 'Fri, 12 Dec 2025 23:10:57 GMT',
+2025-12-12T23:10:57.046055285Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.046089470Z [err]      'set-cookie': '__cf_bm=zFn_OlKiEmbPVsQ9V5s195ujshGRuDaVPRnhlb01sI8-1765581057-1.0.1.1-_7ckGcS9pHuFREqFQyQzsG1MCLHTLaojkuOU.R.L81IYxoLs3dWMEZTQIe5ZUNFqLz0Is0pFsDVlbX8fJN8c65lgwUtrbDHN619pRyTQ4nU; path=/; expires=Fri, 12-Dec-25 23:40:57 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=jX_Z2a.idEHnPQ3lOeMXCJuOGPoJ2yH91KKIGUzVWKs-1765581057020-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.047192764Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.047199005Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.047204481Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.047208295Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-12T23:10:57.047212220Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.047216700Z [err]      'x-request-id': 'req_ed0fc73b78b34a2ebcdea02926788b31'
+2025-12-12T23:10:57.047220874Z [err]    },
+2025-12-12T23:10:57.047224502Z [err]    request_id: 'req_ed0fc73b78b34a2ebcdea02926788b31',
+2025-12-12T23:10:57.047228154Z [err]    error: {
+2025-12-12T23:10:57.047231947Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.047241671Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.047245938Z [err]      param: null,
+2025-12-12T23:10:57.047249678Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.047253662Z [err]    },
+2025-12-12T23:10:57.047257418Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.047261286Z [err]    param: null,
+2025-12-12T23:10:57.047265276Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.047271459Z [err]  }
+2025-12-12T23:10:57.047275187Z [inf]  [Engine] INJUSDT: HOLD (0%)
+2025-12-12T23:10:57.047278851Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.047282738Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.047287004Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.048751484Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.048759444Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.048765777Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.048770116Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.048775482Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.048780734Z [err]    status: 429,
+2025-12-12T23:10:57.048785105Z [err]    headers: {
+2025-12-12T23:10:57.048792561Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.048797096Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.048801706Z [err]      'cf-ray': '9ad0e5e5fbbe33dc-SJC',
+2025-12-12T23:10:57.048806660Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.048811380Z [err]      'content-length': '337',
+2025-12-12T23:10:57.048815639Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.048820363Z [err]      date: 'Fri, 12 Dec 2025 23:10:57 GMT',
+2025-12-12T23:10:57.048825024Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.048829723Z [err]      'set-cookie': '__cf_bm=UW4GPu_C1yuQvqB6bZauFEKAK2Qfbn761tYcPtI5g2Q-1765581057-1.0.1.1-ZxjF8AkxF3ekAAgspT8IQWGb9ncDi24zr6Vvw0O6eRevViLLH703ESp1pVRs.HqQ7Am1_kTKBnKwuZ8mB_qUO1FukUNV8kvJkxLQp3jcDuc; path=/; expires=Fri, 12-Dec-25 23:40:57 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=bu7OL1bYgq11A4qtj7PkpLm6bdArVo1no1OxnPRfwJM-1765581057027-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.048834122Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.048838711Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.050262814Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.050266659Z [inf]  [Engine] BNBUSDT: HOLD (0%)
+2025-12-12T23:10:57.050270500Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-12T23:10:57.050276623Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.050277011Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.050281933Z [err]      'x-request-id': 'req_1462e68dfc4f4d91a7c796e25b0fd798'
+2025-12-12T23:10:57.050284383Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.050287688Z [err]    },
+2025-12-12T23:10:57.050290623Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.050293817Z [err]    request_id: 'req_1462e68dfc4f4d91a7c796e25b0fd798',
+2025-12-12T23:10:57.050298188Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.050299674Z [err]    error: {
+2025-12-12T23:10:57.050305087Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.050305344Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.050310539Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.050315258Z [err]      param: null,
+2025-12-12T23:10:57.050319641Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.050325091Z [err]    },
+2025-12-12T23:10:57.050328945Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.050333517Z [err]    param: null,
+2025-12-12T23:10:57.050337246Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.050341841Z [err]  }
+2025-12-12T23:10:57.051761991Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.051771769Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.051780384Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.051787152Z [err]    status: 429,
+2025-12-12T23:10:57.051793988Z [err]    headers: {
+2025-12-12T23:10:57.051801049Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.051809418Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.051815427Z [err]      'cf-ray': '9ad0e5e61c60ed3a-SJC',
+2025-12-12T23:10:57.051821675Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.051827301Z [err]      'content-length': '337',
+2025-12-12T23:10:57.051832626Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.051838797Z [err]      date: 'Fri, 12 Dec 2025 23:10:57 GMT',
+2025-12-12T23:10:57.051844936Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.051850704Z [err]      'set-cookie': '__cf_bm=HiMw3zGsljaWhCIsSIBvBknob6yQ_.SOyDomflLt9TY-1765581057-1.0.1.1-YJBF8TDn6eAqdJ9WYyTwcS3aY8HBVXynu83adQPs0x7nJ9U2MJprexjKrS5eRp9bODTZXxfL8hYGKnWO_9G2O7ijRo3ndr5hwGyUfGjCSiE; path=/; expires=Fri, 12-Dec-25 23:40:57 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=rP8vAU.zt4uS8ZUKDlLmM4M4OFXvwmLAHgPfruW6CAQ-1765581057037-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.051856624Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.051863912Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.051869529Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.051875631Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-12T23:10:57.051881867Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.053514377Z [err]    },
+2025-12-12T23:10:57.053515556Z [err]  }
+2025-12-12T23:10:57.053519498Z [err]      'x-request-id': 'req_6b89242e9e2e4a6c8d813173755df724'
+2025-12-12T23:10:57.053525986Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.053526666Z [inf]  [Engine] ETHUSDT: HOLD (0%)
+2025-12-12T23:10:57.053530700Z [err]    },
+2025-12-12T23:10:57.053532959Z [err]    param: null,
+2025-12-12T23:10:57.053535127Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.053538260Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.053568276Z [err]    request_id: 'req_6b89242e9e2e4a6c8d813173755df724',
+2025-12-12T23:10:57.053575880Z [err]    error: {
+2025-12-12T23:10:57.053585460Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.053591707Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.053597638Z [err]      param: null,
+2025-12-12T23:10:57.053603791Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.060130880Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.060145669Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.060151602Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.060156231Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.060160758Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.060164696Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.060168825Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.060172970Z [err]    status: 429,
+2025-12-12T23:10:57.060177970Z [err]    headers: {
+2025-12-12T23:10:57.060182413Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.060186495Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.060190561Z [err]      'cf-ray': '9ad0e5e63f633ecb-SJC',
+2025-12-12T23:10:57.060194236Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.060198620Z [err]      'content-length': '337',
+2025-12-12T23:10:57.060202720Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.060208150Z [err]      date: 'Fri, 12 Dec 2025 23:10:57 GMT',
+2025-12-12T23:10:57.060212175Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.060218931Z [err]      'set-cookie': '__cf_bm=sKdQ3vNxYhKxfow9FUj9ioo3GqbmUnYxPy.7c_rl6SI-1765581057-1.0.1.1-rrQ0bk401oPz3iycnPRxOHc8NK8C.mkoBNE2omG0VwYDbQc6CSa5p8bE89QBREFACb0DkURY_PvrO9eamCqRbrppvXfZ7n7UK.nzFSaSOts; path=/; expires=Fri, 12-Dec-25 23:40:57 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=GVweD6H4AezNKtKL2F6aJYGYw6ocCTe4bwDC6YFm6sk-1765581057053-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.062116071Z [err]  }
+2025-12-12T23:10:57.062130157Z [inf]  [Engine] ARBUSDT: HOLD (0%)
+2025-12-12T23:10:57.062139002Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.062149926Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.062155979Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.062163603Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.062168899Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-12T23:10:57.062173916Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.062179336Z [err]      'x-request-id': 'req_c378465561184b348bafe4f14e592150'
+2025-12-12T23:10:57.062184726Z [err]    },
+2025-12-12T23:10:57.062189623Z [err]    request_id: 'req_c378465561184b348bafe4f14e592150',
+2025-12-12T23:10:57.062199248Z [err]    error: {
+2025-12-12T23:10:57.062205036Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.062209996Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.062215021Z [err]      param: null,
+2025-12-12T23:10:57.062220457Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.062225377Z [err]    },
+2025-12-12T23:10:57.062230277Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.062235590Z [err]    param: null,
+2025-12-12T23:10:57.062240685Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.408480188Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:10:57.408498447Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:10:57.408507035Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:10:57.408514545Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:10:57.408521809Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:10:57.408529520Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:10:57.408536646Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26) {
+2025-12-12T23:10:57.408543865Z [err]    status: 429,
+2025-12-12T23:10:57.408549159Z [err]    headers: {
+2025-12-12T23:10:57.408555670Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:10:57.408561614Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:10:57.408567641Z [err]      'cf-ray': '9ad0e5e85b743ecb-SJC',
+2025-12-12T23:10:57.408574173Z [err]      connection: 'keep-alive',
+2025-12-12T23:10:57.408581840Z [err]      'content-length': '337',
+2025-12-12T23:10:57.408588491Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:10:57.408593959Z [err]      date: 'Fri, 12 Dec 2025 23:10:57 GMT',
+2025-12-12T23:10:57.408600354Z [err]      server: 'cloudflare',
+2025-12-12T23:10:57.408606852Z [err]      'set-cookie': '__cf_bm=tVhJAQWFX25XnD1rGlYO8zUxG5ce1vBUIhttDZj8b48-1765581057-1.0.1.1-_mwoEehs.ITiosXqOxOTCJhYaA2S4N9PQsAdt_xRCM_BZLCAiZqtNXLF8KwVKUEwiF5JoUffrctQ6z0109V5fNSdlYMWeG_xh.9fMA6040g; path=/; expires=Fri, 12-Dec-25 23:40:57 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=vSpAL6fBe.QbfZWPnEKOHmV4y0isv_l_b2XIcFJkDSA-1765581057398-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:10:57.410851817Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:10:57.410889776Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:10:57.410898610Z [err]      vary: 'Origin',
+2025-12-12T23:10:57.410903568Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:10:57.410907929Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-12T23:10:57.410917431Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:10:57.410921893Z [err]      'x-request-id': 'req_5e2a52efea274a2689e8eca225ee4b14'
+2025-12-12T23:10:57.410927611Z [err]    },
+2025-12-12T23:10:57.410932227Z [err]    request_id: 'req_5e2a52efea274a2689e8eca225ee4b14',
+2025-12-12T23:10:57.410936551Z [err]    error: {
+2025-12-12T23:10:57.410941027Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:10:57.410944818Z [err]      type: 'insufficient_quota',
+2025-12-12T23:10:57.410948884Z [err]      param: null,
+2025-12-12T23:10:57.410953056Z [err]      code: 'insufficient_quota'
+2025-12-12T23:10:57.410957295Z [err]    },
+2025-12-12T23:10:57.410961356Z [err]    code: 'insufficient_quota',
+2025-12-12T23:10:57.410965984Z [err]    param: null,
+2025-12-12T23:10:57.410970393Z [err]    type: 'insufficient_quota'
+2025-12-12T23:10:57.410974539Z [err]  }
+2025-12-12T23:10:57.410978416Z [inf]  [Engine] XRPUSDT: HOLD (0%)
+2025-12-12T23:11:27.420749925Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:27.420764527Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:27.420771945Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:27.420779316Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:27.420788373Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:27.420796489Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:27.420803559Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:27.420814315Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:27.420824345Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:27.420833489Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:27.420839312Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:27.420845133Z [err]    status: 429,
+2025-12-12T23:11:27.420850530Z [err]    headers: {
+2025-12-12T23:11:27.420855715Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:27.420862400Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:27.420867763Z [err]      'cf-ray': '9ad0e681dfe14973-SJC',
+2025-12-12T23:11:27.420873122Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:27.420878968Z [err]      'content-length': '337',
+2025-12-12T23:11:27.420884557Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:27.420890486Z [err]      date: 'Fri, 12 Dec 2025 23:11:21 GMT',
+2025-12-12T23:11:27.423200290Z [err]      server: 'cloudflare',
+2025-12-12T23:11:27.423209416Z [err]      'set-cookie': '__cf_bm=a9M75HVW6y5zUdxthkLEvhv4ZYjqsIZRaO2opkw1TDQ-1765581081-1.0.1.1-AjI_jY.SZcK6wXD0bTqaKeQPknwO7QLZUZyAc3DIHuU0OGqksepm0cflazSGyOFm.jrRCLo.vXfbqQeZwEAP.t9GM241I_Lci7Ifaaems8I; path=/; expires=Fri, 12-Dec-25 23:41:21 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=7otAwbEt7LSumpkihrN.9S.NTlgG7NnD9umqnY8_u_Q-1765581081962-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:27.423216778Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:27.423223231Z [err]      vary: 'Origin',
+2025-12-12T23:11:27.423229610Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:27.423235959Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-12T23:11:27.423242334Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:27.423249311Z [err]      'x-request-id': 'req_2c4469144a2f48bc9b2bf649460d115a'
+2025-12-12T23:11:27.423255342Z [err]    },
+2025-12-12T23:11:27.423262645Z [err]    request_id: 'req_2c4469144a2f48bc9b2bf649460d115a',
+2025-12-12T23:11:27.423270486Z [err]    error: {
+2025-12-12T23:11:27.423277794Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:27.423294152Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:27.423299885Z [err]      param: null,
+2025-12-12T23:11:27.423306391Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:27.423311447Z [err]    },
+2025-12-12T23:11:27.423315944Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:27.423320575Z [err]    param: null,
+2025-12-12T23:11:27.423325765Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:27.423330486Z [err]  }
+2025-12-12T23:11:27.425731280Z [err]      'cf-ray': '9ad0e696a9064973-SJC',
+2025-12-12T23:11:27.425780947Z [inf]  [Engine] BTCUSDT: HOLD (0%)
+2025-12-12T23:11:27.425796363Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:27.425804563Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:27.425813033Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:27.425821080Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:27.425830176Z [inf]  [Engine] ETHUSDT: HOLD (0%)
+2025-12-12T23:11:27.425839552Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:27.425848200Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:27.425856480Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:27.425864393Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:27.425872652Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:27.425881001Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:27.425888946Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:27.425897643Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:27.425906062Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:27.425914124Z [err]    status: 429,
+2025-12-12T23:11:27.425921631Z [err]    headers: {
+2025-12-12T23:11:27.425928835Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:27.425936405Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:27.427190030Z [err]      param: null,
+2025-12-12T23:11:27.427199185Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:27.427201916Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:27.427206565Z [err]      'content-length': '337',
+2025-12-12T23:11:27.427212850Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:27.427217275Z [err]      date: 'Fri, 12 Dec 2025 23:11:25 GMT',
+2025-12-12T23:11:27.427221663Z [err]      server: 'cloudflare',
+2025-12-12T23:11:27.427225834Z [err]      'set-cookie': '__cf_bm=.1VvxQovDOn2DmxTSxXXThIDT6hEzlPFWsYvoBMpxto-1765581085-1.0.1.1-yDS40EfeRLyJ3kO.ZJrQQVpnZ1FrlM5159BMpRi4tPoauJwqYOivglCJYufyImpINuQO5yj8vgPQluxIk5tzE7JcELa2T7aN5mecnq8Sy0o; path=/; expires=Fri, 12-Dec-25 23:41:25 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=3OPwFEYcpI.2uAs134bRJs_j89ZIK1nVrtPNXghtlu0-1765581085288-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:27.427230158Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:27.427234499Z [err]      vary: 'Origin',
+2025-12-12T23:11:27.427238888Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:27.427243101Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-12T23:11:27.427247164Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:27.427251297Z [err]      'x-request-id': 'req_097932fd7f1b48c2ab496b400c15727e'
+2025-12-12T23:11:27.427255315Z [err]    },
+2025-12-12T23:11:27.427259399Z [err]    request_id: 'req_097932fd7f1b48c2ab496b400c15727e',
+2025-12-12T23:11:27.427263661Z [err]    error: {
+2025-12-12T23:11:27.427267667Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:27.427271898Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:27.429017929Z [err]    },
+2025-12-12T23:11:27.429025158Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:27.429030317Z [err]    param: null,
+2025-12-12T23:11:27.429034358Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:27.429041251Z [err]  }
+2025-12-12T23:11:27.429048527Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:27.429052675Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:27.429056993Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:28.553742451Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:28.553744105Z [err]      server: 'cloudflare',
+2025-12-12T23:11:28.553753558Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:28.553762120Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:28.553765827Z [err]    status: 429,
+2025-12-12T23:11:28.553770355Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:28.553775824Z [err]    headers: {
+2025-12-12T23:11:28.553778242Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:28.553785899Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:28.553785944Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:28.553793727Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:28.553795420Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:28.553802566Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:28.553804389Z [inf]  [Engine] BNBUSDT: HOLD (0%)
+2025-12-12T23:11:28.553805707Z [err]      'cf-ray': '9ad0e6a76dd34973-SJC',
+2025-12-12T23:11:28.553810054Z [err]      date: 'Fri, 12 Dec 2025 23:11:27 GMT',
+2025-12-12T23:11:28.553810949Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:28.553815200Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:28.553821672Z [err]      'content-length': '337',
+2025-12-12T23:11:28.553827521Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:28.558125233Z [err]      'set-cookie': '__cf_bm=qxx68PQRKONS40NQj1W3mBkVEBc798WF3ENEqcKZyiY-1765581087-1.0.1.1-7xmkVG0jqmhWinSUqcUGZKOxJ9Gxjk2yySXp9AUqu4MmUUUQ3LK0dtG204X17U.SleNVbeD5IHKZU8Vz8RU60b69yl3quRgLpsTfd2jUDv8; path=/; expires=Fri, 12-Dec-25 23:41:27 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=FxkVnqxkoX2zSEodbwErobctKp.vvAmBWhwM6FANtps-1765581087968-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:28.558131791Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:28.558137605Z [err]      vary: 'Origin',
+2025-12-12T23:11:28.558143296Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:28.558149005Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-12T23:11:28.558154600Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:28.558159661Z [err]      'x-request-id': 'req_accccb0d83f240e79d639de64400f78d'
+2025-12-12T23:11:28.558165653Z [err]    },
+2025-12-12T23:11:28.558170832Z [err]    request_id: 'req_accccb0d83f240e79d639de64400f78d',
+2025-12-12T23:11:28.558175031Z [err]    error: {
+2025-12-12T23:11:28.558178807Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:28.558182893Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:28.558186876Z [err]      param: null,
+2025-12-12T23:11:28.558193058Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:28.558197067Z [err]    },
+2025-12-12T23:11:28.558200948Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:28.558205919Z [err]    param: null,
+2025-12-12T23:11:28.558211071Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:28.558216038Z [err]  }
+2025-12-12T23:11:28.558221296Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:28.558227147Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:28.558232695Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:30.551353505Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:30.551361327Z [err]    status: 429,
+2025-12-12T23:11:30.551361652Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:30.551367667Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:30.551373189Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:30.551374300Z [err]    headers: {
+2025-12-12T23:11:30.551378260Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:30.551383526Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:30.551384245Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:30.551388206Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:30.551392633Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:30.551393002Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:30.551400422Z [err]      'cf-ray': '9ad0e6b78f794973-SJC',
+2025-12-12T23:11:30.551410384Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:30.551415785Z [err]      'content-length': '337',
+2025-12-12T23:11:30.551421111Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:30.551427307Z [err]      date: 'Fri, 12 Dec 2025 23:11:30 GMT',
+2025-12-12T23:11:30.551434975Z [err]      server: 'cloudflare',
+2025-12-12T23:11:30.551442601Z [err]      'set-cookie': '__cf_bm=T2W8cMQbwtWc.6D_xIPUm4_nKrVyniAqEmvSRkpW0jw-1765581090-1.0.1.1-cJyOmA7KD2j1P_UPt68cMjFO0mvRyzNWSuqDiGS_MC3hHvJAmxoPPR4vAGlz8A6ThbbhMat6Bjqaygwd1yl6cT24Sxr1t6mTNoisqn.8kdY; path=/; expires=Fri, 12-Dec-25 23:41:30 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=SGFjZFtsXEfD3eZakPzBj2T5mI_kdekksaF9yHTgHBk-1765581090545-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:30.553818202Z [err]    error: {
+2025-12-12T23:11:30.553827100Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:30.553832008Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:30.553837162Z [err]      param: null,
+2025-12-12T23:11:30.553843715Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:30.553848564Z [err]    },
+2025-12-12T23:11:30.553853074Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:30.553865530Z [err]    param: null,
+2025-12-12T23:11:30.553872689Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:30.553880698Z [err]  }
+2025-12-12T23:11:30.553885855Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:30.553887803Z [inf]  [Engine] SOLUSDT: HOLD (0%)
+2025-12-12T23:11:30.553896309Z [err]      vary: 'Origin',
+2025-12-12T23:11:30.553896457Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:30.553901806Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:30.553906802Z [err]      'x-envoy-upstream-service-time': '6',
+2025-12-12T23:11:30.553911221Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:30.553915813Z [err]      'x-request-id': 'req_80fb009c6f304719baac8b7527802380'
+2025-12-12T23:11:30.553921205Z [err]    },
+2025-12-12T23:11:30.553929684Z [err]    request_id: 'req_80fb009c6f304719baac8b7527802380',
+2025-12-12T23:11:31.442680954Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:31.442686804Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:31.442692306Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:33.420370276Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:33.420386412Z [err]      date: 'Fri, 12 Dec 2025 23:11:32 GMT',
+2025-12-12T23:11:33.420396063Z [err]      server: 'cloudflare',
+2025-12-12T23:11:33.420403663Z [err]      'set-cookie': '__cf_bm=wMPYsOzVkPUWUgTZB19M23h97nGhAr0MIWucjYGQu_M-1765581092-1.0.1.1-SOtKpGvr2P22y9jUWjuYqLxhoqO3UpDNWhEVNENpaa1Y33RIskH4bvXmzVRW7evPPnqK9_Dke3WAc7VljjRg8KeW.CBYSGgSEZMWqy.WjUQ; path=/; expires=Fri, 12-Dec-25 23:41:32 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=G8j0m0.Q.S9kL3AiqlQiGkoM6Ge1vFElN3agWkmXPaw-1765581092994-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:33.420443399Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:33.420448197Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:33.420452453Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:33.420457609Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:33.420462251Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:33.420466270Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:33.420470970Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:33.420475535Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:33.420480190Z [err]    status: 429,
+2025-12-12T23:11:33.420486114Z [err]    headers: {
+2025-12-12T23:11:33.420491519Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:33.420496220Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:33.420500038Z [err]      'cf-ray': '9ad0e6c6dec04973-SJC',
+2025-12-12T23:11:33.420504425Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:33.420508507Z [err]      'content-length': '337',
+2025-12-12T23:11:33.425006367Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:33.425017458Z [err]      vary: 'Origin',
+2025-12-12T23:11:33.425023821Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:33.425029947Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-12T23:11:33.425034984Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:33.425040874Z [err]      'x-request-id': 'req_e622d10874be4812b32b9a433d291c7d'
+2025-12-12T23:11:33.425047806Z [err]    },
+2025-12-12T23:11:33.425056782Z [err]    request_id: 'req_e622d10874be4812b32b9a433d291c7d',
+2025-12-12T23:11:33.425063293Z [err]    error: {
+2025-12-12T23:11:33.425070641Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:33.425078318Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:33.425174762Z [err]      param: null,
+2025-12-12T23:11:33.425181228Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:33.425187186Z [err]    },
+2025-12-12T23:11:33.425192958Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:33.425198154Z [err]    param: null,
+2025-12-12T23:11:33.425204426Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:33.425211472Z [err]  }
+2025-12-12T23:11:33.425216650Z [inf]  [Engine] XRPUSDT: HOLD (0%)
+2025-12-12T23:11:33.425222322Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:33.557583277Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:33.557593821Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:33.557601314Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:35.667604187Z [err]      server: 'cloudflare',
+2025-12-12T23:11:35.667614302Z [err]      'set-cookie': '__cf_bm=BArXGwI6ZDiIEYyQdXOdnRW9C2aAFN0wfj9coE2KNFE-1765581095-1.0.1.1-lvdddFhTDZm1Xf80ZS75TyOjWzNwW42knHcmPuds94Fo.Wormg2RoOPyQ51EE7zEBKC_74EKnLNlpFwsRx5w5BGiufkL_jpsZz6wgtqo8AE; path=/; expires=Fri, 12-Dec-25 23:41:35 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=DWh9VadOlgU6cxRi15QQ5xdgF3E80aDZ_JGQZoXXokg-1765581095633-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:35.667633387Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:35.667638519Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:35.667643794Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:35.667648958Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:35.667654671Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:35.667661244Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:35.667670040Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:35.667675162Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:35.667680366Z [err]    status: 429,
+2025-12-12T23:11:35.667685089Z [err]    headers: {
+2025-12-12T23:11:35.667689887Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:35.667695092Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:35.667700035Z [err]      'cf-ray': '9ad0e6d75f794973-SJC',
+2025-12-12T23:11:35.667709661Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:35.667714833Z [err]      'content-length': '337',
+2025-12-12T23:11:35.667719540Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:35.667737141Z [err]      date: 'Fri, 12 Dec 2025 23:11:35 GMT',
+2025-12-12T23:11:35.668972412Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:35.668979076Z [err]      vary: 'Origin',
+2025-12-12T23:11:35.668986464Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:35.668993497Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-12T23:11:35.668999297Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:35.669005107Z [err]      'x-request-id': 'req_572ed710444145c092e38e4140d38cc0'
+2025-12-12T23:11:35.669010293Z [err]    },
+2025-12-12T23:11:35.669016884Z [err]    request_id: 'req_572ed710444145c092e38e4140d38cc0',
+2025-12-12T23:11:35.669022712Z [err]    error: {
+2025-12-12T23:11:35.669028614Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:35.669034413Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:35.669041856Z [err]      param: null,
+2025-12-12T23:11:35.669047105Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:35.669054395Z [err]    },
+2025-12-12T23:11:35.669060223Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:35.669067142Z [err]    param: null,
+2025-12-12T23:11:35.669072895Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:35.669078184Z [err]  }
+2025-12-12T23:11:35.669083311Z [inf]  [Engine] LINKUSDT: HOLD (0%)
+2025-12-12T23:11:35.669088657Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:36.610497755Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:36.610504911Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:36.610513011Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:38.012467907Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:38.012477683Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:38.012483501Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:38.012488682Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:38.012494110Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:38.012499906Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:38.012504757Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:38.012510105Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:38.012515329Z [err]    status: 429,
+2025-12-12T23:11:38.012520869Z [err]    headers: {
+2025-12-12T23:11:38.012525196Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:38.012529777Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:38.012536193Z [err]      'cf-ray': '9ad0e6e61d6d4973-SJC',
+2025-12-12T23:11:38.012540976Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:38.012545209Z [err]      'content-length': '337',
+2025-12-12T23:11:38.012549679Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:38.012554475Z [err]      date: 'Fri, 12 Dec 2025 23:11:37 GMT',
+2025-12-12T23:11:38.012559211Z [err]      server: 'cloudflare',
+2025-12-12T23:11:38.012563660Z [err]      'set-cookie': '__cf_bm=_Y8TMBRNB286hPCyUB3zX4qO4QCMIi_v5_7emdv7peg-1765581097-1.0.1.1-j_YAO3BGCmoJstl1aNnjvEL_i.4hCexG.zqXFW7huo2wSenl5tdFlo_7XOsEVTifUtXSPIdLmNWhaeaeC3bdzZdEUarTKiDI4YA2dw3AvbI; path=/; expires=Fri, 12-Dec-25 23:41:37 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=XNNwxJGKfTAvYMHs2Le_lsypGPi5I3K0C9pWTkUznug-1765581097999-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:38.014561458Z [err]    param: null,
+2025-12-12T23:11:38.014566405Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:38.014570820Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:38.014572840Z [err]      vary: 'Origin',
+2025-12-12T23:11:38.014577109Z [err]  }
+2025-12-12T23:11:38.014578898Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:38.014583109Z [inf]  [Engine] AVAXUSDT: HOLD (0%)
+2025-12-12T23:11:38.014584659Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-12T23:11:38.014588158Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:38.014594297Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:38.014598478Z [err]      'x-request-id': 'req_280fddb36adf4997a840b673954066c3'
+2025-12-12T23:11:38.014603887Z [err]    },
+2025-12-12T23:11:38.014609638Z [err]    request_id: 'req_280fddb36adf4997a840b673954066c3',
+2025-12-12T23:11:38.014616184Z [err]    error: {
+2025-12-12T23:11:38.014620986Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:38.014626209Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:38.014633539Z [err]      param: null,
+2025-12-12T23:11:38.014639101Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:38.014644610Z [err]    },
+2025-12-12T23:11:38.014650264Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:38.624074919Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:38.624087746Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:38.624096008Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:40.562054912Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:40.562057656Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:40.562067795Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:40.562069701Z [err]      'content-length': '337',
+2025-12-12T23:11:40.562074031Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:40.562078800Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:40.562081280Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:40.562087474Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:40.562088064Z [err]      date: 'Fri, 12 Dec 2025 23:11:40 GMT',
+2025-12-12T23:11:40.562093282Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:40.562097608Z [err]      server: 'cloudflare',
+2025-12-12T23:11:40.562099162Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:40.562105553Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:40.562106641Z [err]      'set-cookie': '__cf_bm=uVo1Qa7PpGgE9iRhfVDwZpu4CRlOVyhB_Rfn_E4k9MA-1765581100-1.0.1.1-s6cdhIfO_V3UlDg5ADxZ_Hhc.QKOpIhy5X7Oyeq8bJP48MnfpLmGo2tmof4ejl.b8gZhbfuBYUV16clzn_66J4qAKFwagQduLPZ33GQX_tY; path=/; expires=Fri, 12-Dec-25 23:41:40 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=PRA5x6BFXKuALBkxb1jzwkc918xt251clRDSUFyRdec-1765581100555-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:40.562110721Z [err]    status: 429,
+2025-12-12T23:11:40.562115262Z [err]    headers: {
+2025-12-12T23:11:40.562119931Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:40.562126488Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:40.562131524Z [err]      'cf-ray': '9ad0e6f50d984973-SJC',
+2025-12-12T23:11:40.563474024Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:40.563484504Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:40.563487250Z [err]    param: null,
+2025-12-12T23:11:40.563495815Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:40.563499507Z [err]      vary: 'Origin',
+2025-12-12T23:11:40.563503128Z [err]  }
+2025-12-12T23:11:40.563507523Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:40.563512538Z [inf]  [Engine] DOGEUSDT: HOLD (0%)
+2025-12-12T23:11:40.563521547Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:40.563542551Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-12T23:11:40.563548475Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:40.563558722Z [err]      'x-request-id': 'req_ff91ae6ddf074c19b6b6c75d8e2a7211'
+2025-12-12T23:11:40.563564999Z [err]    },
+2025-12-12T23:11:40.563570938Z [err]    request_id: 'req_ff91ae6ddf074c19b6b6c75d8e2a7211',
+2025-12-12T23:11:40.563576938Z [err]    error: {
+2025-12-12T23:11:40.563583740Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:40.563589822Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:40.563596004Z [err]      param: null,
+2025-12-12T23:11:40.563602476Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:40.563608665Z [err]    },
+2025-12-12T23:11:41.605415039Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:41.605420439Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:41.605425549Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:43.556871640Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:43.556878612Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:43.556884579Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:43.556892447Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:43.556944913Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:43.556953620Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:43.556959632Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:43.556965782Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:43.556975685Z [err]    status: 429,
+2025-12-12T23:11:43.556981992Z [err]    headers: {
+2025-12-12T23:11:43.556987675Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:43.556993982Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:43.557000272Z [err]      'cf-ray': '9ad0e70639af4973-SJC',
+2025-12-12T23:11:43.557007075Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:43.557012693Z [err]      'content-length': '337',
+2025-12-12T23:11:43.557018924Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:43.557024727Z [err]      date: 'Fri, 12 Dec 2025 23:11:43 GMT',
+2025-12-12T23:11:43.557030795Z [err]      server: 'cloudflare',
+2025-12-12T23:11:43.557036345Z [err]      'set-cookie': '__cf_bm=iU9An9U.LvNhY2R5lTyNqTrBbsdURLZ4x5whE9uMc8U-1765581103-1.0.1.1-xFHFf820PrgakuOGG9uh.VFYsA8NbF0obF06xoQ0zIiDz127ikmYUtBCCDCCe6nLuFPX_zRTNLsvIsGG40Hq4cx5r3RusSqULLYihFzta5I; path=/; expires=Fri, 12-Dec-25 23:41:43 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=aRDJNYqefKjrOGh9i4WahorM3I0ASL_VYQl5AdPn3KE-1765581103136-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:43.560017485Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:43.560026577Z [err]      vary: 'Origin',
+2025-12-12T23:11:43.560032254Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:43.560036424Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-12T23:11:43.560040655Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:43.560044869Z [err]      'x-request-id': 'req_a02b43c902694335a074a24237b803ef'
+2025-12-12T23:11:43.560049173Z [err]    },
+2025-12-12T23:11:43.560054211Z [err]    request_id: 'req_a02b43c902694335a074a24237b803ef',
+2025-12-12T23:11:43.560058399Z [err]    error: {
+2025-12-12T23:11:43.560062734Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:43.560066699Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:43.560070907Z [err]      param: null,
+2025-12-12T23:11:43.560075041Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:43.560078887Z [err]    },
+2025-12-12T23:11:43.560082875Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:43.560086862Z [err]    param: null,
+2025-12-12T23:11:43.560090767Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:43.560094834Z [err]  }
+2025-12-12T23:11:43.560098965Z [inf]  [Engine] SUIUSDT: HOLD (0%)
+2025-12-12T23:11:43.560103144Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:43.731004143Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:43.731014857Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:43.731024537Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:45.595529414Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:45.595537509Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:45.595543002Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:45.595547484Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:45.595551395Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:45.595557223Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:45.595566191Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:45.595571488Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:45.595576190Z [err]    status: 429,
+2025-12-12T23:11:45.595580625Z [err]    headers: {
+2025-12-12T23:11:45.595584676Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:45.595588722Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:45.595593036Z [err]      'cf-ray': '9ad0e71589ef4973-SJC',
+2025-12-12T23:11:45.595597412Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:45.595602409Z [err]      'content-length': '337',
+2025-12-12T23:11:45.595612368Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:45.595617868Z [err]      date: 'Fri, 12 Dec 2025 23:11:45 GMT',
+2025-12-12T23:11:45.595623711Z [err]      server: 'cloudflare',
+2025-12-12T23:11:45.595629040Z [err]      'set-cookie': '__cf_bm=ve7SzoCUuR_fzbH1m3RCusFWMflQnky0qSoeCn6_9eo-1765581105-1.0.1.1-N1ON1DllXNt0YEx60Rm_klvGlAsFjDTh4HdptpnAxaTm8tJDgOTSGuym5oskYPGqxYM8TjQltlf3kvtuf0v0bWQ9_PBp.lCXojDed5IPr4o; path=/; expires=Fri, 12-Dec-25 23:41:45 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=eD_oigEvU_u478fYidjSeGE2zKz6a1LJI.YzpYfiUKI-1765581105590-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:45.598856520Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:45.598861837Z [err]      param: null,
+2025-12-12T23:11:45.598865631Z [err]      vary: 'Origin',
+2025-12-12T23:11:45.598871273Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:45.598875871Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:45.598876804Z [err]      'x-envoy-upstream-service-time': '5',
+2025-12-12T23:11:45.598881696Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:45.598886564Z [err]    },
+2025-12-12T23:11:45.598886609Z [err]      'x-request-id': 'req_bbcacc6ac6fc46efa48bb4d407f42d5b'
+2025-12-12T23:11:45.598891910Z [err]    },
+2025-12-12T23:11:45.598894989Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:45.598897418Z [err]    request_id: 'req_bbcacc6ac6fc46efa48bb4d407f42d5b',
+2025-12-12T23:11:45.598901657Z [err]    error: {
+2025-12-12T23:11:45.598905891Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:45.598910062Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:45.598915341Z [err]    param: null,
+2025-12-12T23:11:45.598922797Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:45.598928572Z [err]  }
+2025-12-12T23:11:45.598933779Z [inf]  [Engine] ARBUSDT: HOLD (0%)
+2025-12-12T23:11:45.598940096Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:46.653047832Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:46.653055723Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:46.653079920Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:48.763232078Z [err]  [GPT] Analysis error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-12T23:11:48.763239222Z [err]      at APIError.generate (/app/node_modules/openai/error.js:63:20)
+2025-12-12T23:11:48.763244188Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T23:11:48.763248471Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T23:11:48.763254228Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T23:11:48.763259038Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T23:11:48.763263810Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:218:26)
+2025-12-12T23:11:48.763267512Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-12T23:11:48.763271189Z [err]    status: 429,
+2025-12-12T23:11:48.763275006Z [err]    headers: {
+2025-12-12T23:11:48.763279206Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T23:11:48.763283166Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T23:11:48.763287319Z [err]      'cf-ray': '9ad0e7294ae14973-SJC',
+2025-12-12T23:11:48.763292797Z [err]      connection: 'keep-alive',
+2025-12-12T23:11:48.763297135Z [err]      'content-length': '337',
+2025-12-12T23:11:48.763300983Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-12T23:11:48.763305205Z [err]      date: 'Fri, 12 Dec 2025 23:11:48 GMT',
+2025-12-12T23:11:48.763309657Z [err]      server: 'cloudflare',
+2025-12-12T23:11:48.763314176Z [err]      'set-cookie': '__cf_bm=ntTysEkW6gnxPGoIvon22CxjqcqwmDWzTGnqV4Yo2.g-1765581108-1.0.1.1-PN9ixzxLH5Hd9gJ1T.vGnMtfqb_2GvgVP2ngeBcJZGsNVYWp76zy4Ub3LlQYUU8R0wre5afsaDCazdE1vhPd4QA8bBQr2ieCeZhcYQIj6pw; path=/; expires=Fri, 12-Dec-25 23:41:48 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=H4o3m0wixJckCzbjXHkjLJhUL3w3sgxwgQi85CPeCds-1765581108753-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T23:11:48.766465335Z [err]    },
+2025-12-12T23:11:48.766473896Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T23:11:48.766477716Z [err]    code: 'insufficient_quota',
+2025-12-12T23:11:48.766482248Z [err]      vary: 'Origin',
+2025-12-12T23:11:48.766484345Z [err]    param: null,
+2025-12-12T23:11:48.766487543Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T23:11:48.766493534Z [err]    type: 'insufficient_quota'
+2025-12-12T23:11:48.766493604Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-12T23:11:48.766503002Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T23:11:48.766503094Z [err]  }
+2025-12-12T23:11:48.766511400Z [err]      'x-request-id': 'req_2c97177b52a14d30bfa2756f7e15a881'
+2025-12-12T23:11:48.766514469Z [inf]  [Engine] OPUSDT: HOLD (0%)
+2025-12-12T23:11:48.766517966Z [err]    },
+2025-12-12T23:11:48.766522984Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T23:11:48.766524476Z [err]    request_id: 'req_2c97177b52a14d30bfa2756f7e15a881',
+2025-12-12T23:11:48.766528582Z [err]    error: {
+2025-12-12T23:11:48.766532755Z [err]      message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+2025-12-12T23:11:48.766536722Z [err]      type: 'insufficient_quota',
+2025-12-12T23:11:48.766540463Z [err]      param: null,
+2025-12-12T23:11:48.766544333Z [err]      code: 'insufficient_quota'
+2025-12-12T23:11:49.684038721Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:49.684045517Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:49.684050637Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:50.575448977Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:50.575454978Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:50.575461695Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T23:11:50.575469090Z [inf]  [CryptoPanic] Using cached news data
