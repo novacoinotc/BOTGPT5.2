@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 10, 20;
+  --background-end-rgb: 20, 20, 40;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a6a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a6a8a;
+}
+
+/* Animations */
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+}
+
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+}
+
+.pulse-green {
+  animation: pulse-green 2s infinite;
+}
+
+.pulse-red {
+  animation: pulse-red 2s infinite;
+}
+
+/* Card styles */
+.card {
+  @apply bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-4;
+}
+
+.card-header {
+  @apply flex items-center justify-between mb-4;
+}
+
+.card-title {
+  @apply text-lg font-semibold text-gray-200;
+}
+
+/* Status badge */
+.badge {
+  @apply px-2 py-1 rounded-full text-xs font-medium;
+}
+
+.badge-success {
+  @apply bg-green-500/20 text-green-400;
+}
+
+.badge-danger {
+  @apply bg-red-500/20 text-red-400;
+}
+
+.badge-warning {
+  @apply bg-yellow-500/20 text-yellow-400;
+}
+
+.badge-info {
+  @apply bg-blue-500/20 text-blue-400;
+}

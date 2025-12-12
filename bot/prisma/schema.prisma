@@ -1,0 +1,113 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Trade {
+  id              String   @id @default(uuid())
+  symbol          String
+  side            String   // LONG or SHORT
+  entryPrice      Float
+  exitPrice       Float?
+  quantity        Float
+  leverage        Int
+  pnl             Float?   // percentage
+  pnlUsd          Float?
+  entryTime       DateTime
+  exitTime        DateTime?
+  exitReason      String?  // tp, sl, manual, timeout, signal
+  gptConfidence   Float
+  gptReasoning    String
+
+  // Entry conditions
+  rsi             Float?
+  macdHistogram   Float?
+  orderBookImbalance Float?
+  fundingRate     Float?
+  regime          String?
+  fearGreedValue  Int?
+  newsScore       Float?
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([symbol])
+  @@index([entryTime])
+  @@index([exitReason])
+}
+
+model Pattern {
+  id              String   @id @default(uuid())
+  symbol          String
+  patternType     String
+  regime          String
+
+  // Indicators at detection
+  rsi             Float
+  macdHistogram   Float
+  orderBookImbalance Float
+  fundingRate     Float
+
+  decision        String   // BUY or SELL
+  confidence      Float
+
+  outcome         String?  // success or failure
+  resultPnl       Float?
+
+  timestamp       DateTime
+  createdAt       DateTime @default(now())
+
+  @@index([symbol])
+  @@index([patternType])
+  @@index([outcome])
+}
+
+model Learning {
+  id              String   @id @default(uuid())
+  lesson          String
+  type            String   // success or failure
+  context         Json?
+  useCount        Int      @default(1)
+
+  timestamp       DateTime
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([type])
+  @@index([useCount])
+}
+
+model BotState {
+  id              String   @id @default("main")
+  isRunning       Boolean  @default(false)
+  balance         Float    @default(0)
+  todayPnl        Float    @default(0)
+  todayTrades     Int      @default(0)
+  lastResetDate   DateTime @default(now())
+
+  symbols         String[] @default(["BTCUSDT", "ETHUSDT"])
+
+  updatedAt       DateTime @updatedAt
+}
+
+model DailyStats {
+  id              String   @id @default(uuid())
+  date            DateTime @unique
+  totalTrades     Int
+  winningTrades   Int
+  losingTrades    Int
+  totalPnl        Float
+  totalPnlUsd     Float
+  avgPnl          Float
+  maxDrawdown     Float
+  bestTrade       Float
+  worstTrade      Float
+
+  createdAt       DateTime @default(now())
+
+  @@index([date])
+}
