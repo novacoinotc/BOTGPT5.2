@@ -1,0 +1,20 @@
+{
+  "name": "gpt-scalping-bot",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "bot",
+    "dashboard"
+  ],
+  "scripts": {
+    "dev:bot": "npm run dev -w bot",
+    "dev:dashboard": "npm run dev -w dashboard",
+    "build:bot": "npm run build -w bot",
+    "build:dashboard": "npm run build -w dashboard",
+    "start:bot": "npm run start -w bot",
+    "start:dashboard": "npm run start -w dashboard"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,605 @@
+import { EventEmitter } from 'events';
+import { binanceClient } from '../binance/client.js';
+import { binanceWs } from '../binance/websocket.js';
+import { marketAnalyzer, MarketAnalysis } from '../market/analyzer.js';
+import { cryptoPanicClient } from '../cryptopanic/client.js';
+import { fearGreedIndex } from '../market/fearGreed.js';
+import { gptEngine, GPTDecision } from '../gpt/engine.js';
+import { memorySystem, TradeMemory } from '../memory/index.js';
+import { config } from '../../config/index.js';
+
+interface Position {
+  symbol: string;
+  side: 'LONG' | 'SHORT';
+  entryPrice: number;
+  quantity: number;
+  leverage: number;
+  stopLoss: number;
+  takeProfit: number;
+  entryTime: number;
+  entryConditions: any;
+  gptConfidence: number;
+  gptReasoning: string;
+  positionSizePercent: number;
+}
+
+interface BotState {
+  isRunning: boolean;
+  currentPositions: Map<string, Position>;
+  balance: number;
+  availableBalance: number;
+  todayPnl: number;
+  todayTrades: number;
+  lastAnalysis: Map<string, MarketAnalysis>;
+  lastDecision: Map<string, GPTDecision>;
+}
+
+export class TradingEngine extends EventEmitter {
+  private state: BotState = {
+    isRunning: false,
+    currentPositions: new Map(),
+    balance: 0,
+    availableBalance: 0,
+    todayPnl: 0,
+    todayTrades: 0,
+    lastAnalysis: new Map(),
+    lastDecision: new Map(),
+  };
+
+  private symbols: string[] = ['BTCUSDT', 'ETHUSDT'];
+  private analysisInterval: NodeJS.Timeout | null = null;
+  private positionCheckInterval: NodeJS.Timeout | null = null;
+  private balanceUpdateInterval: NodeJS.Timeout | null = null;
+
+  // Configuration
+  private readonly MIN_CONFIDENCE = 45; // Lowered from 65 to allow more learning
+  private readonly MAX_LEVERAGE = 10; // Max 10x as requested
+  private readonly MAX_POSITION_SIZE_PERCENT = 50; // Max 50% of capital per trade
+  private readonly MAX_HOLD_TIME_HOURS = 4; // Extended from 2 hours
+
+  async start(): Promise<void> {
+    if (this.state.isRunning) {
+      console.log('[Engine] Already running');
+      return;
+    }
+
+    console.log('[Engine] Starting trading bot...');
+    console.log(`[Engine] Min confidence: ${this.MIN_CONFIDENCE}%`);
+    console.log(`[Engine] Max leverage: ${this.MAX_LEVERAGE}x`);
+
+    // Initialize
+    await this.initialize();
+
+    // Connect to WebSocket streams
+    this.connectStreams();
+
+    // Start analysis loop
+    this.startAnalysisLoop();
+
+    // Start position monitoring
+    this.startPositionMonitoring();
+
+    // Start balance updates
+    this.startBalanceUpdates();
+
+    this.state.isRunning = true;
+    this.emit('started');
+
+    console.log('[Engine] Bot started successfully');
+  }
+
+  async stop(): Promise<void> {
+    console.log('[Engine] Stopping trading bot...');
+
+    this.state.isRunning = false;
+
+    if (this.analysisInterval) {
+      clearInterval(this.analysisInterval);
+      this.analysisInterval = null;
+    }
+
+    if (this.positionCheckInterval) {
+      clearInterval(this.positionCheckInterval);
+      this.positionCheckInterval = null;
+    }
+
+    if (this.balanceUpdateInterval) {
+      clearInterval(this.balanceUpdateInterval);
+      this.balanceUpdateInterval = null;
+    }
+
+    binanceWs.disconnect();
+
+    this.emit('stopped');
+    console.log('[Engine] Bot stopped');
+  }
+
+  private async initialize(): Promise<void> {
+    // Get account balance
+    await this.updateBalance();
+
+    console.log(`[Engine] Account balance: $${this.state.balance.toFixed(2)}`);
+    console.log(`[Engine] Available balance: $${this.state.availableBalance.toFixed(2)}`);
+
+    // Check existing positions
+    const positions = await binanceClient.getPositions();
+    for (const pos of positions) {
+      const side = parseFloat(pos.positionAmt) > 0 ? 'LONG' : 'SHORT';
+      this.state.currentPositions.set(pos.symbol, {
+        symbol: pos.symbol,
+        side,
+        entryPrice: parseFloat(pos.entryPrice),
+        quantity: Math.abs(parseFloat(pos.positionAmt)),
+        leverage: parseInt(pos.leverage),
+        stopLoss: 0, // Will be updated by GPT
+        takeProfit: 0,
+        entryTime: Date.now(),
+        entryConditions: {},
+        gptConfidence: 0,
+        gptReasoning: 'Existing position',
+        positionSizePercent: 0,
+      });
+    }
+
+    console.log(`[Engine] Found ${this.state.currentPositions.size} open positions`);
+  }
+
+  private async updateBalance(): Promise<void> {
+    try {
+      const balances = await binanceClient.getBalance();
+      const usdtBalance = balances.find((b: any) => b.asset === 'USDT');
+      this.state.balance = parseFloat(usdtBalance?.balance || '0');
+      this.state.availableBalance = parseFloat(usdtBalance?.availableBalance || '0');
+    } catch (error) {
+      console.error('[Engine] Failed to update balance:', error);
+    }
+  }
+
+  private startBalanceUpdates(): void {
+    this.balanceUpdateInterval = setInterval(async () => {
+      if (!this.state.isRunning) return;
+      await this.updateBalance();
+    }, 60000); // Update every minute
+  }
+
+  private connectStreams(): void {
+    const streams: string[] = [];
+
+    for (const symbol of this.symbols) {
+      const s = symbol.toLowerCase();
+      streams.push(
+        `${s}@aggTrade`,
+        `${s}@kline_1m`,
+        `${s}@depth10@100ms`,
+        `${s}@markPrice`
+      );
+    }
+
+    binanceWs.connect(streams);
+
+    // Handle real-time data
+    binanceWs.on('trade', (data) => {
+      this.handleTrade(data);
+    });
+
+    binanceWs.on('kline', (data) => {
+      if (data.isClosed) {
+        this.handleKlineClose(data);
+      }
+    });
+
+    binanceWs.on('markPrice', (data) => {
+      this.handleMarkPrice(data);
+    });
+  }
+
+  private handleTrade(data: any): void {
+    const position = this.state.currentPositions.get(data.symbol);
+    if (position) {
+      this.checkPositionExit(position, data.price);
+    }
+  }
+
+  private handleKlineClose(data: any): void {
+    this.emit('kline', data);
+  }
+
+  private handleMarkPrice(data: any): void {
+    const position = this.state.currentPositions.get(data.symbol);
+    if (position) {
+      const pnl = this.calculatePnl(position, data.markPrice);
+      this.emit('positionUpdate', { ...position, currentPrice: data.markPrice, pnl });
+    }
+  }
+
+  private startAnalysisLoop(): void {
+    // Analyze every 30 seconds
+    this.analysisInterval = setInterval(async () => {
+      if (!this.state.isRunning) return;
+
+      for (const symbol of this.symbols) {
+        try {
+          await this.analyzeAndDecide(symbol);
+        } catch (error) {
+          console.error(`[Engine] Analysis error for ${symbol}:`, error);
+        }
+      }
+    }, 30000);
+
+    // Initial analysis after 5 seconds
+    setTimeout(() => {
+      for (const symbol of this.symbols) {
+        this.analyzeAndDecide(symbol);
+      }
+    }, 5000);
+  }
+
+  private startPositionMonitoring(): void {
+    this.positionCheckInterval = setInterval(async () => {
+      if (!this.state.isRunning) return;
+
+      // Sync positions with exchange
+      const positions = await binanceClient.getPositions();
+      const exchangePositions = new Set(positions.map((p: any) => p.symbol));
+
+      // Check for closed positions
+      for (const [symbol, position] of this.state.currentPositions) {
+        if (!exchangePositions.has(symbol)) {
+          // Position was closed externally
+          this.handlePositionClosed(position);
+        }
+      }
+    }, 10000);
+  }
+
+  private async analyzeAndDecide(symbol: string): Promise<void> {
+    const hasPosition = this.state.currentPositions.has(symbol);
+
+    // Get market analysis
+    const analysis = await marketAnalyzer.analyze(symbol);
+    this.state.lastAnalysis.set(symbol, analysis);
+
+    // Get news and sentiment
+    const newsSummary = await cryptoPanicClient.getNewsSummary(symbol);
+    const fearGreed = await fearGreedIndex.get();
+
+    // Get recent trades and learnings
+    const recentTrades = memorySystem.getTradesBySymbol(symbol, 20);
+    const learnings = memorySystem.getRelevantLearnings({
+      regime: analysis.regime,
+      symbol,
+    });
+
+    // Get GPT decision with full context
+    const decision = await gptEngine.analyze({
+      analysis,
+      news: newsSummary,
+      fearGreed,
+      recentTrades,
+      learnings,
+      accountBalance: this.state.balance,
+    });
+
+    this.state.lastDecision.set(symbol, decision);
+    this.emit('analysis', { symbol, analysis, decision });
+
+    // Log decision with more detail
+    console.log(`[Engine] ${symbol}: ${decision.action} (${decision.confidence}%)`);
+    console.log(`[Engine]   └─ ${decision.reasoning.slice(0, 100)}...`);
+    if (decision.action !== 'HOLD') {
+      console.log(`[Engine]   └─ Size: ${decision.positionSizePercent}% | Leverage: ${decision.leverage}x`);
+      console.log(`[Engine]   └─ SL: $${decision.stopLoss?.toFixed(2)} | TP: $${decision.takeProfit?.toFixed(2)}`);
+    }
+
+    // Execute decision
+    if (!hasPosition && decision.action !== 'HOLD' && decision.confidence >= this.MIN_CONFIDENCE) {
+      // Check risk management
+      const consecutiveLosses = memorySystem.getConsecutiveLosses();
+
+      if (consecutiveLosses >= 5) {
+        console.log(`[Engine] ${symbol}: Skipping trade - ${consecutiveLosses} consecutive losses (cooling down)`);
+        return;
+      }
+
+      // Reduce size after consecutive losses
+      let adjustedSizePercent = decision.positionSizePercent;
+      if (consecutiveLosses >= 3) {
+        adjustedSizePercent = Math.max(5, decision.positionSizePercent * 0.5);
+        console.log(`[Engine] ${symbol}: Reduced position size to ${adjustedSizePercent}% due to ${consecutiveLosses} consecutive losses`);
+      }
+
+      // Validate decision has required fields
+      if (!decision.stopLoss || !decision.takeProfit) {
+        console.log(`[Engine] ${symbol}: Missing SL/TP in decision, skipping`);
+        return;
+      }
+
+      // Open new position
+      if (config.trading.enabled) {
+        await this.openPosition(symbol, { ...decision, positionSizePercent: adjustedSizePercent }, analysis);
+      } else {
+        console.log(`[Engine] ${symbol}: Paper trade - would ${decision.action}`);
+        this.emit('paperTrade', { symbol, decision });
+      }
+    } else if (hasPosition) {
+      // Update TP/SL if GPT suggests new values
+      const position = this.state.currentPositions.get(symbol)!;
+      if (decision.takeProfit && decision.stopLoss) {
+        position.takeProfit = decision.takeProfit;
+        position.stopLoss = decision.stopLoss;
+        console.log(`[Engine] ${symbol}: Updated SL: $${decision.stopLoss.toFixed(2)} | TP: $${decision.takeProfit.toFixed(2)}`);
+      }
+    }
+  }
+
+  private async openPosition(
+    symbol: string,
+    decision: GPTDecision,
+    analysis: MarketAnalysis
+  ): Promise<void> {
+    try {
+      // Validate leverage
+      const leverage = Math.min(Math.max(1, decision.leverage), this.MAX_LEVERAGE);
+
+      // Calculate position size based on GPT's decision
+      const positionSizePercent = Math.min(decision.positionSizePercent, this.MAX_POSITION_SIZE_PERCENT);
+      const capitalToUse = this.state.availableBalance * (positionSizePercent / 100);
+      const positionValue = capitalToUse * leverage;
+      const quantity = positionValue / analysis.price;
+
+      // Get symbol info for precision
+      const symbolInfo = await binanceClient.getSymbolInfo(symbol);
+      const quantityPrecision = symbolInfo?.quantityPrecision || 3;
+      const pricePrecision = symbolInfo?.pricePrecision || 2;
+
+      const roundedQty = parseFloat(quantity.toFixed(quantityPrecision));
+
+      // Set leverage for this trade
+      await binanceClient.setLeverage(symbol, leverage);
+      await binanceClient.setMarginType(symbol, 'ISOLATED');
+
+      console.log(`[Engine] Opening ${decision.action} ${symbol}:`);
+      console.log(`[Engine]   └─ Quantity: ${roundedQty} @ ~$${analysis.price.toFixed(2)}`);
+      console.log(`[Engine]   └─ Leverage: ${leverage}x`);
+      console.log(`[Engine]   └─ Capital used: $${capitalToUse.toFixed(2)} (${positionSizePercent}%)`);
+      console.log(`[Engine]   └─ Position value: $${positionValue.toFixed(2)}`);
+
+      // Create market order
+      const order = await binanceClient.createOrder({
+        symbol,
+        side: decision.action === 'BUY' ? 'BUY' : 'SELL',
+        type: 'MARKET',
+        quantity: roundedQty,
+      });
+
+      const entryPrice = parseFloat(order.avgPrice || analysis.price.toString());
+
+      // Calculate actual SL and TP prices
+      const stopLoss = decision.stopLoss || (decision.action === 'BUY'
+        ? entryPrice * (1 - (decision.stopLossPercent || 1) / 100)
+        : entryPrice * (1 + (decision.stopLossPercent || 1) / 100));
+
+      const takeProfit = decision.takeProfit || (decision.action === 'BUY'
+        ? entryPrice * (1 + (decision.takeProfitPercent || 0.5) / 100)
+        : entryPrice * (1 - (decision.takeProfitPercent || 0.5) / 100));
+
+      // Store position
+      const position: Position = {
+        symbol,
+        side: decision.action === 'BUY' ? 'LONG' : 'SHORT',
+        entryPrice,
+        quantity: roundedQty,
+        leverage,
+        stopLoss,
+        takeProfit,
+        entryTime: Date.now(),
+        entryConditions: {
+          rsi: analysis.indicators.rsi,
+          macdHistogram: analysis.indicators.macd.histogram,
+          orderBookImbalance: analysis.orderBook.imbalance,
+          fundingRate: analysis.funding.rate,
+          regime: analysis.regime,
+          fearGreed: (await fearGreedIndex.get()).value,
+          newsScore: (await cryptoPanicClient.getNewsSummary(symbol)).sentiment.score,
+        },
+        gptConfidence: decision.confidence,
+        gptReasoning: decision.reasoning,
+        positionSizePercent,
+      };
+
+      this.state.currentPositions.set(symbol, position);
+      this.state.todayTrades++;
+
+      // Update balance
+      await this.updateBalance();
+
+      this.emit('positionOpened', position);
+
+      console.log(`[Engine] Position opened: ${position.side} ${symbol} @ $${entryPrice.toFixed(2)}`);
+      console.log(`[Engine]   └─ SL: $${stopLoss.toFixed(2)} (${((Math.abs(entryPrice - stopLoss) / entryPrice) * 100).toFixed(2)}%)`);
+      console.log(`[Engine]   └─ TP: $${takeProfit.toFixed(2)} (${((Math.abs(takeProfit - entryPrice) / entryPrice) * 100).toFixed(2)}%)`);
+    } catch (error: any) {
+      console.error(`[Engine] Failed to open position:`, error.message);
+      this.emit('error', { type: 'openPosition', error: error.message, symbol });
+    }
+  }
+
+  private async checkPositionExit(position: Position, currentPrice: number): Promise<void> {
+    const pnl = this.calculatePnl(position, currentPrice);
+
+    // Check stop loss
+    if (position.side === 'LONG' && currentPrice <= position.stopLoss) {
+      await this.closePosition(position, currentPrice, 'sl');
+      return;
+    } else if (position.side === 'SHORT' && currentPrice >= position.stopLoss) {
+      await this.closePosition(position, currentPrice, 'sl');
+      return;
+    }
+
+    // Check take profit
+    if (position.side === 'LONG' && currentPrice >= position.takeProfit) {
+      await this.closePosition(position, currentPrice, 'tp');
+      return;
+    } else if (position.side === 'SHORT' && currentPrice <= position.takeProfit) {
+      await this.closePosition(position, currentPrice, 'tp');
+      return;
+    }
+
+    // Check timeout (extended to 4 hours)
+    const holdTime = Date.now() - position.entryTime;
+    if (holdTime > this.MAX_HOLD_TIME_HOURS * 60 * 60 * 1000) {
+      await this.closePosition(position, currentPrice, 'timeout');
+      return;
+    }
+
+    // Trailing stop logic for profitable positions (optional enhancement)
+    if (pnl > 1.0) { // If profit > 1%
+      const newStopLoss = position.side === 'LONG'
+        ? Math.max(position.stopLoss, currentPrice * 0.995) // Trail 0.5% behind
+        : Math.min(position.stopLoss, currentPrice * 1.005);
+
+      if (newStopLoss !== position.stopLoss) {
+        position.stopLoss = newStopLoss;
+        console.log(`[Engine] ${position.symbol}: Trailing SL updated to $${newStopLoss.toFixed(2)}`);
+      }
+    }
+  }
+
+  private async closePosition(
+    position: Position,
+    exitPrice: number,
+    reason: 'tp' | 'sl' | 'manual' | 'timeout' | 'signal'
+  ): Promise<void> {
+    try {
+      // Create closing order
+      await binanceClient.createOrder({
+        symbol: position.symbol,
+        side: position.side === 'LONG' ? 'SELL' : 'BUY',
+        type: 'MARKET',
+        quantity: position.quantity,
+        reduceOnly: true,
+      });
+
+      const pnl = this.calculatePnl(position, exitPrice);
+      const pnlUsd = (pnl / 100) * position.entryPrice * position.quantity * position.leverage;
+
+      // Record trade in memory
+      const tradeMemory = memorySystem.addTrade({
+        symbol: position.symbol,
+        side: position.side,
+        entryPrice: position.entryPrice,
+        exitPrice,
+        quantity: position.quantity,
+        pnl,
+        pnlUsd,
+        entryTime: position.entryTime,
+        exitTime: Date.now(),
+        exitReason: reason,
+        entryConditions: position.entryConditions,
+        gptConfidence: position.gptConfidence,
+        gptReasoning: position.gptReasoning,
+      });
+
+      // Learn from trade
+      const lesson = await gptEngine.learnFromTrade(tradeMemory);
+      if (lesson) {
+        console.log(`[Engine] 🧠 Learned: ${lesson}`);
+      }
+
+      // Update state
+      this.state.currentPositions.delete(position.symbol);
+      this.state.todayPnl += pnlUsd;
+
+      // Update balance
+      await this.updateBalance();
+
+      this.emit('positionClosed', { position, exitPrice, pnl, pnlUsd, reason });
+
+      const emoji = pnl > 0 ? '✅' : '❌';
+      console.log(
+        `[Engine] ${emoji} Position closed: ${position.symbol} | PnL: ${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}% ($${pnlUsd.toFixed(2)}) | Reason: ${reason}`
+      );
+    } catch (error: any) {
+      console.error(`[Engine] Failed to close position:`, error.message);
+      this.emit('error', { type: 'closePosition', error: error.message, symbol: position.symbol });
+    }
+  }
+
+  private handlePositionClosed(position: Position): void {
+    // Position was closed externally (liquidation or manual)
+    this.state.currentPositions.delete(position.symbol);
+    this.emit('positionClosed', { position, reason: 'external' });
+    console.log(`[Engine] ⚠️ Position ${position.symbol} was closed externally`);
+  }
+
+  private calculatePnl(position: Position, currentPrice: number): number {
+    if (position.side === 'LONG') {
+      return ((currentPrice - position.entryPrice) / position.entryPrice) * 100 * position.leverage;
+    } else {
+      return ((position.entryPrice - currentPrice) / position.entryPrice) * 100 * position.leverage;
+    }
+  }
+
+  // === PUBLIC API ===
+
+  getState(): BotState {
+    return {
+      ...this.state,
+      currentPositions: new Map(this.state.currentPositions),
+      lastAnalysis: new Map(this.state.lastAnalysis),
+      lastDecision: new Map(this.state.lastDecision),
+    };
+  }
+
+  getSymbols(): string[] {
+    return [...this.symbols];
+  }
+
+  addSymbol(symbol: string): void {
+    if (!this.symbols.includes(symbol)) {
+      this.symbols.push(symbol);
+      if (this.state.isRunning) {
+        const s = symbol.toLowerCase();
+        binanceWs.subscribe([
+          `${s}@aggTrade`,
+          `${s}@kline_1m`,
+          `${s}@depth10@100ms`,
+          `${s}@markPrice`,
+        ]);
+      }
+      console.log(`[Engine] Added symbol: ${symbol}`);
+    }
+  }
+
+  removeSymbol(symbol: string): void {
+    this.symbols = this.symbols.filter(s => s !== symbol);
+    if (this.state.isRunning) {
+      const s = symbol.toLowerCase();
+      binanceWs.unsubscribe([
+        `${s}@aggTrade`,
+        `${s}@kline_1m`,
+        `${s}@depth10@100ms`,
+        `${s}@markPrice`,
+      ]);
+    }
+    console.log(`[Engine] Removed symbol: ${symbol}`);
+  }
+
+  async manualClose(symbol: string): Promise<void> {
+    const position = this.state.currentPositions.get(symbol);
+    if (position) {
+      const price = await binanceClient.getPrice(symbol);
+      await this.closePosition(position, price, 'manual');
+    }
+  }
+
+  getConfig(): { minConfidence: number; maxLeverage: number; maxPositionSizePercent: number } {
+    return {
+      minConfidence: this.MIN_CONFIDENCE,
+      maxLeverage: this.MAX_LEVERAGE,
+      maxPositionSizePercent: this.MAX_POSITION_SIZE_PERCENT,
+    };
+  }
+}
+
+export const tradingEngine = new TradingEngine();
