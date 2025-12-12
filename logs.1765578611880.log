@@ -1,0 +1,657 @@
+2025-12-12T22:29:36.000000000Z [inf]  Starting Container
+2025-12-12T22:29:37.252519712Z [inf]  
+2025-12-12T22:29:37.252529479Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-12T22:29:37.252530352Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-12T22:29:37.252537643Z [inf]  
+2025-12-12T22:29:37.252539203Z [inf]  
+2025-12-12T22:29:37.252545515Z [inf]  > gpt-scalping-bot@1.0.0 start
+2025-12-12T22:29:37.252546938Z [inf]  > bot@1.0.0 start
+2025-12-12T22:29:37.252551214Z [inf]  > npm run start -w bot
+2025-12-12T22:29:37.252665588Z [inf]  > node dist/index.js
+2025-12-12T22:29:37.252673409Z [inf]  
+2025-12-12T22:29:37.252679246Z [inf]  =========================================
+2025-12-12T22:29:37.252684872Z [inf]      GPT 5.2 SCALPING BOT - v1.0.1
+2025-12-12T22:29:37.254955500Z [inf]  =========================================
+2025-12-12T22:29:37.254966149Z [inf]  
+2025-12-12T22:29:37.254972893Z [inf]  [Config] All required configurations present
+2025-12-12T22:29:37.254978601Z [inf]  [Config] Trading enabled: true
+2025-12-12T22:29:37.254984873Z [inf]  [Config] Max leverage: 10x
+2025-12-12T22:29:37.254990086Z [inf]  [Config] Max position size: 50%
+2025-12-12T22:29:37.254995279Z [inf]  [Config] Min confidence: 45%
+2025-12-12T22:29:37.255000374Z [inf]  [Config] Max hold time: 4h
+2025-12-12T22:29:37.255005452Z [inf]  [Main] Auto-starting trading bot...
+2025-12-12T22:29:37.255013944Z [inf]  [Engine] Starting trading bot...
+2025-12-12T22:29:37.255019120Z [inf]  [Engine] Min confidence: 45%
+2025-12-12T22:29:37.255031465Z [inf]  [Engine] Max leverage: 10x
+2025-12-12T22:29:37.255038518Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-12T22:29:37.255043665Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-12T22:29:37.255049643Z [inf]  [Server] Running on port 3001
+2025-12-12T22:29:37.295242119Z [inf]  [Engine] Account balance: $4682.72
+2025-12-12T22:29:37.295247958Z [inf]  [Engine] Available balance: $4682.72
+2025-12-12T22:29:38.260197271Z [inf]  [Engine] Found 0 open positions
+2025-12-12T22:29:38.260205934Z [inf]  [Engine] Bot started successfully
+2025-12-12T22:29:38.260212937Z [inf]  
+2025-12-12T22:29:38.260219300Z [inf]  [Main] Bot is ready!
+2025-12-12T22:29:38.260224725Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-12T22:29:38.260234543Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-12T22:29:38.260241644Z [inf]  
+2025-12-12T22:29:39.314027484Z [inf]  [WS] Connected to Binance
+2025-12-12T22:29:43.563533308Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:43.563542185Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:43.578848059Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:43.578856104Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:43.585959984Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:43.599858997Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238586894Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238599862Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238607192Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238613442Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238621632Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238629102Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238635811Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238642542Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238648385Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238656407Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238663754Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238670273Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238676669Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238678310Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238682938Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238686219Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238689925Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238694546Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238698704Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238845625Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238855076Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.238859957Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241855547Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241860646Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241865544Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241871126Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241876220Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241882499Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241887985Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241897008Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241903135Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241908513Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241913777Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241918945Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241926661Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241931706Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241936446Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241941618Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:29:44.241946800Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.241951922Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.241957761Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.241963341Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.241968844Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.242954414Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.242962244Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.242968047Z [err]    },
+2025-12-12T22:29:44.242973801Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.242980902Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.242981794Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.242988550Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.242989562Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.242993110Z [err]    status: 400,
+2025-12-12T22:29:44.242997206Z [err]    headers: {
+2025-12-12T22:29:44.243001030Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.243005325Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.243009350Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.243013074Z [err]      'cf-ray': '9ad0a9857c61a230-SJC',
+2025-12-12T22:29:44.243017899Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.243022773Z [err]      'content-length': '165',
+2025-12-12T22:29:44.243026809Z [err]  }
+2025-12-12T22:29:44.243028381Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.243034914Z [err]      date: 'Fri, 12 Dec 2025 22:29:43 GMT',
+2025-12-12T22:29:44.243035311Z [inf]  [Engine] BNBUSDT: HOLD (0%)
+2025-12-12T22:29:44.243039744Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.243042201Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:29:44.243045290Z [err]      'openai-processing-ms': '9',
+2025-12-12T22:29:44.243050517Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.243051299Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.243057192Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.243057900Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.243062207Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.243066350Z [err]      'set-cookie': '__cf_bm=kzF.NISPzKP_q2_F0v4oyyt1fmhyRONeQTa.RUyb2MA-1765578583-1.0.1.1-RdK55k2sbf4Bt1hLJ10YW.CXhqUqOVrDcepbsrD7D.Ydl_ask04tUHSX2Mic1YqoxA0EhefDNKiDYXhzDzvU3ClYoUywShxhXYgUSfofQUs; path=/; expires=Fri, 12-Dec-25 22:59:43 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=Nlf7OeyNYZedqnQMczyiKBJwMfrbD7Or3_F.ODVcnDk-1765578583995-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.243070196Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.243074552Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.243079156Z [err]      'x-envoy-upstream-service-time': '21',
+2025-12-12T22:29:44.243083695Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.243087884Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.243093089Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.243097625Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:29:44.243101897Z [err]      'x-ratelimit-remaining-tokens': '498033',
+2025-12-12T22:29:44.243105871Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:29:44.243110572Z [err]      'x-ratelimit-reset-tokens': '236ms',
+2025-12-12T22:29:44.243114857Z [err]      'x-request-id': 'req_fcb6fa1ac511987791ec258459a621d2'
+2025-12-12T22:29:44.243118895Z [err]    },
+2025-12-12T22:29:44.243124480Z [err]    request_id: 'req_fcb6fa1ac511987791ec258459a621d2',
+2025-12-12T22:29:44.243129709Z [err]    error: {
+2025-12-12T22:29:44.243133866Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.243138341Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.243806628Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.243808010Z [err]    status: 400,
+2025-12-12T22:29:44.243817079Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.243817439Z [err]    headers: {
+2025-12-12T22:29:44.243824117Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.243831626Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.243836202Z [err]      'openai-processing-ms': '11',
+2025-12-12T22:29:44.243839049Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.243843334Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.243846482Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.243848377Z [err]      'cf-ray': '9ad0a9856c44eb4b-SJC',
+2025-12-12T22:29:44.243851467Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.243856594Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.243856914Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.243859223Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.243866070Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.243867629Z [err]      'content-length': '165',
+2025-12-12T22:29:44.243868234Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.243876023Z [err]      'set-cookie': '__cf_bm=fjs70s5.lRvT9llMuElGsIhTwIMlbd90MASLatIvoes-1765578583-1.0.1.1-XAmGLxsVNRuDYH1X19Ve2YM1hg6YKnofkoZAr.1P2tN2Zon1.AleyaFbfbZSt9atoUYQwxK3oYbazWYZL0laGJWcuffkJcmvsqOL6IW1K70; path=/; expires=Fri, 12-Dec-25 22:59:43 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=2AKLr4.58.aYlApXe9rX1tllRqxq51hQC12CYo7y300-1765578583997-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.243876124Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.243882678Z [err]      date: 'Fri, 12 Dec 2025 22:29:43 GMT',
+2025-12-12T22:29:44.245804461Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.245812192Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.245816852Z [err]      'x-envoy-upstream-service-time': '26',
+2025-12-12T22:29:44.245820948Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.245825539Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.245830009Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.245834397Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:29:44.245838661Z [err]      'x-ratelimit-remaining-tokens': '498043',
+2025-12-12T22:29:44.245842933Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:29:44.245847125Z [err]      'x-ratelimit-reset-tokens': '234ms',
+2025-12-12T22:29:44.245851159Z [err]      'x-request-id': 'req_07e1a4cf2181413b883b437a38355ab4'
+2025-12-12T22:29:44.245855525Z [err]    },
+2025-12-12T22:29:44.245866434Z [err]    request_id: 'req_07e1a4cf2181413b883b437a38355ab4',
+2025-12-12T22:29:44.245870484Z [err]    error: {
+2025-12-12T22:29:44.245874219Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.245878095Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.245882328Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.245886346Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.245890161Z [err]    },
+2025-12-12T22:29:44.245895362Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.245899477Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.245903301Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.245907141Z [err]  }
+2025-12-12T22:29:44.245911154Z [inf]  [Engine] ARBUSDT: HOLD (0%)
+2025-12-12T22:29:44.245914791Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:29:44.245919185Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.246738934Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.246745272Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.246749373Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.246755263Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.246759534Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.246763615Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.246767658Z [err]    status: 400,
+2025-12-12T22:29:44.246771808Z [err]    headers: {
+2025-12-12T22:29:44.246775970Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.246781167Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.246786184Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.246790170Z [err]      'cf-ray': '9ad0a9857d6f552b-SJC',
+2025-12-12T22:29:44.246794219Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.246798080Z [err]      'content-length': '165',
+2025-12-12T22:29:44.246801931Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.246806327Z [err]      date: 'Fri, 12 Dec 2025 22:29:44 GMT',
+2025-12-12T22:29:44.246810143Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.246815170Z [err]      'openai-processing-ms': '7',
+2025-12-12T22:29:44.246819167Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.246823090Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.246827271Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.246831251Z [err]      'set-cookie': '__cf_bm=7Qi15W5JVwmORevnrA37Qt5Vy_UlCzfeH504uwv7UH8-1765578584-1.0.1.1-3InV3vxvQ2OZZO3PRgAiW2joTei_N0BUeB26fkbSlQufVuUiEyPCvfscjVu.jrHUJRdZRWOc.ud.u_ULdmBnCNxvYkV8JpiklFUdN6DPMwA; path=/; expires=Fri, 12-Dec-25 22:59:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=WsFNVr4gV6IhF1enioUCnd9_VjKxc.C4CsdPWoqNXTY-1765578584013-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.248399766Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.248409840Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.248416965Z [err]      'x-envoy-upstream-service-time': '20',
+2025-12-12T22:29:44.248424193Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.248429319Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.248434081Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.248438489Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:29:44.248444274Z [err]      'x-ratelimit-remaining-tokens': '498047',
+2025-12-12T22:29:44.248448904Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:29:44.248454184Z [err]      'x-ratelimit-reset-tokens': '234ms',
+2025-12-12T22:29:44.248459482Z [err]      'x-request-id': 'req_c7466c28bd2542b4add1ccf30ebd318a'
+2025-12-12T22:29:44.248464375Z [err]    },
+2025-12-12T22:29:44.248472355Z [err]    request_id: 'req_c7466c28bd2542b4add1ccf30ebd318a',
+2025-12-12T22:29:44.248476761Z [err]    error: {
+2025-12-12T22:29:44.248480898Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.248485834Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.248490318Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.248496273Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.248501206Z [err]    },
+2025-12-12T22:29:44.248505601Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.248510139Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.248515054Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.248519449Z [err]  }
+2025-12-12T22:29:44.248524149Z [inf]  [Engine] DOGEUSDT: HOLD (0%)
+2025-12-12T22:29:44.248529061Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:29:44.248533613Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.251228014Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.251239043Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.251249530Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.251255747Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.251261716Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.251270502Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.251278172Z [err]    status: 400,
+2025-12-12T22:29:44.251283391Z [err]    headers: {
+2025-12-12T22:29:44.251291149Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.251296664Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.251300785Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.251306143Z [err]      'cf-ray': '9ad0a985ba83227e-SJC',
+2025-12-12T22:29:44.251311215Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.251315572Z [err]      'content-length': '165',
+2025-12-12T22:29:44.251319791Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.251324244Z [err]      date: 'Fri, 12 Dec 2025 22:29:44 GMT',
+2025-12-12T22:29:44.251328798Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.251333875Z [err]      'openai-processing-ms': '10',
+2025-12-12T22:29:44.251338629Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.251344464Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.251348495Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.251352844Z [err]      'set-cookie': '__cf_bm=LzjG1C7AnYFKdt8hfwbmufprixxzL3judnEm1ZZvOvk-1765578584-1.0.1.1-A5tlwpku8c4znYqRaCnktTU8DMe3ZVsSzZR8upebbYQ6ejwnRXKoHAJj.BvJFXjYqzW.xM0y.Jae3QcrVvsiKtOciop8oKlL2GjSLCF.4tg; path=/; expires=Fri, 12-Dec-25 22:59:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=1sbB813CpxxdhoGXdqXnC5QN8gBUk5aJcgkkkqZ5Ptg-1765578584041-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.252247834Z [err]      'x-ratelimit-remaining-tokens': '498046',
+2025-12-12T22:29:44.252251689Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.252254775Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:29:44.252260378Z [err]      'x-ratelimit-reset-tokens': '234ms',
+2025-12-12T22:29:44.252265758Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.252265910Z [err]      'x-request-id': 'req_1fefef37d1cd43589b0be15fdee216d8'
+2025-12-12T22:29:44.252271671Z [err]    },
+2025-12-12T22:29:44.252273162Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.252275815Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.252278568Z [err]    request_id: 'req_1fefef37d1cd43589b0be15fdee216d8',
+2025-12-12T22:29:44.252280139Z [err]  }
+2025-12-12T22:29:44.252285677Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.252286071Z [err]    error: {
+2025-12-12T22:29:44.252286800Z [inf]  [Engine] XRPUSDT: HOLD (0%)
+2025-12-12T22:29:44.252293088Z [err]      'x-envoy-upstream-service-time': '23',
+2025-12-12T22:29:44.252293393Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.252295650Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:29:44.252302080Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.252303030Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.252304906Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.252308127Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.252311204Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.252314175Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.252319352Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.252320149Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:29:44.252325529Z [err]    },
+2025-12-12T22:29:44.253825776Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.253825777Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.253835893Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.253835979Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.253838001Z [err]      'content-length': '165',
+2025-12-12T22:29:44.253844389Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.253844447Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.253852758Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.253852877Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.253853345Z [err]      'set-cookie': '__cf_bm=hFxa.9dlU4uTjd6wGsBbTiu6r0n2XgZE5Z5ZLM3aLvM-1765578584-1.0.1.1-zevsFJrnBWHCzkpRGR5f2_INnr3LqxTeNYJLp03WCL.LR9UE0Xp_Z.99XJb.0UjDDx2uCQBl5DGcmTwG5irSyjfeXgG4WZuk7mm6tX0DtKc; path=/; expires=Fri, 12-Dec-25 22:59:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=lri85GvuIAHyjm2leo2D15sOQ4a_v3NblvGBEB.A2Ws-1765578584055-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.253862731Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.253863764Z [err]      date: 'Fri, 12 Dec 2025 22:29:44 GMT',
+2025-12-12T22:29:44.253871584Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.253877495Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.253878862Z [err]    status: 400,
+2025-12-12T22:29:44.253884696Z [err]    headers: {
+2025-12-12T22:29:44.253887688Z [err]      'openai-processing-ms': '9',
+2025-12-12T22:29:44.253890869Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.253895313Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.253899752Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.253904913Z [err]      'cf-ray': '9ad0a985df49f4d9-SJC',
+2025-12-12T22:29:44.253908794Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.255361918Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.255363717Z [err]      'x-ratelimit-reset-requests': '174ms',
+2025-12-12T22:29:44.255371804Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:29:44.255373093Z [err]      'x-ratelimit-reset-tokens': '403ms',
+2025-12-12T22:29:44.255373110Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.255381529Z [err]      'x-request-id': 'req_f85451e841cd441ab0e84bdac723d540'
+2025-12-12T22:29:44.255383422Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.255389872Z [err]    },
+2025-12-12T22:29:44.255395723Z [err]    request_id: 'req_f85451e841cd441ab0e84bdac723d540',
+2025-12-12T22:29:44.255397437Z [err]      'x-envoy-upstream-service-time': '25',
+2025-12-12T22:29:44.255399698Z [err]    },
+2025-12-12T22:29:44.255402679Z [err]    error: {
+2025-12-12T22:29:44.255404594Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.255409742Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.255411582Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.255412890Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.255416707Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.255419063Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.255423637Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.255424095Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.255426996Z [err]      'x-ratelimit-remaining-requests': '498',
+2025-12-12T22:29:44.255430880Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.255433454Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.255434530Z [err]      'x-ratelimit-remaining-tokens': '496634',
+2025-12-12T22:29:44.255440269Z [err]  }
+2025-12-12T22:29:44.255446580Z [inf]  [Engine] LINKUSDT: HOLD (0%)
+2025-12-12T22:29:44.256617779Z [err]      'set-cookie': '__cf_bm=dQ.oaEgDzmMvXywBssmi3RC5dD_FUCCpaZlhf6TEru8-1765578584-1.0.1.1-UxCDivrmnRzlygkgx8Mn2l0ffrljt619yMoLqgL1qe1HbJrQ32aQtgFETQ2rl9ohiCPxPVrZZUuwS1_5pptfjWnt_O7QtebLaZAbcVFbQDw; path=/; expires=Fri, 12-Dec-25 22:59:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=95wyDcSqbb3HIqvhuTPQ2QfPvh_jsBIs3Z751ChtL5U-1765578584059-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.256632499Z [err]      date: 'Fri, 12 Dec 2025 22:29:44 GMT',
+2025-12-12T22:29:44.256636191Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.256642469Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.256650769Z [err]      'openai-processing-ms': '8',
+2025-12-12T22:29:44.256651257Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.256659083Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.256660478Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.256666966Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.256667976Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.256672674Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.256678401Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.256682426Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.256682753Z [err]    status: 400,
+2025-12-12T22:29:44.256689066Z [err]    headers: {
+2025-12-12T22:29:44.256693363Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.256697880Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.256861773Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.256872581Z [err]      'cf-ray': '9ad0a985dac92523-SJC',
+2025-12-12T22:29:44.256879647Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.256885315Z [err]      'content-length': '165',
+2025-12-12T22:29:44.256893520Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.258041119Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.258049728Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.258059188Z [err]      'x-envoy-upstream-service-time': '22',
+2025-12-12T22:29:44.258066891Z [err]    request_id: 'req_07d714e1a7ab46d5a2f9b3192fad94e0',
+2025-12-12T22:29:44.258067315Z [inf]  [Engine] BTCUSDT: HOLD (0%)
+2025-12-12T22:29:44.258067390Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.258074951Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.258080059Z [err]    error: {
+2025-12-12T22:29:44.258081400Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:29:44.258084233Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.258089906Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.258093128Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.258093166Z [err]      'x-ratelimit-remaining-requests': '498',
+2025-12-12T22:29:44.258098275Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.258102016Z [err]      'x-ratelimit-remaining-tokens': '496598',
+2025-12-12T22:29:44.258105868Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.258111445Z [err]      'x-ratelimit-reset-requests': '175ms',
+2025-12-12T22:29:44.258115385Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.258119373Z [err]      'x-ratelimit-reset-tokens': '408ms',
+2025-12-12T22:29:44.258122902Z [err]    },
+2025-12-12T22:29:44.258126557Z [err]      'x-request-id': 'req_07d714e1a7ab46d5a2f9b3192fad94e0'
+2025-12-12T22:29:44.258132412Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.258134613Z [err]    },
+2025-12-12T22:29:44.258139824Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.258147045Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.258152653Z [err]  }
+2025-12-12T22:29:44.259875508Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.259883569Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.259888414Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.259892944Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.259897053Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.259902180Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.259906883Z [err]    status: 400,
+2025-12-12T22:29:44.259912126Z [err]    headers: {
+2025-12-12T22:29:44.259919042Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.259937362Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.259944509Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.259950807Z [err]      'cf-ray': '9ad0a985fbe22c2d-SJC',
+2025-12-12T22:29:44.259957055Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.259963131Z [err]      'content-length': '165',
+2025-12-12T22:29:44.259969498Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.259974755Z [err]      date: 'Fri, 12 Dec 2025 22:29:44 GMT',
+2025-12-12T22:29:44.259980848Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.259985896Z [err]      'openai-processing-ms': '9',
+2025-12-12T22:29:44.259990980Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.259995926Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.260000883Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.260005663Z [err]      'set-cookie': '__cf_bm=1Dd2Jgi03itMr4A83Ev9d47vM2lmIjFB.nItEhCTXXM-1765578584-1.0.1.1-_qIwIa9nLrozO_nMKR.uyRjC6e.2QQcOeX2ImtG6JkmsuXFiRX4SMio54lFZ0tRW4IC6jAwmYxI_9Xh8NQAzL2aUcuFc1CvGyBZNK6HNYcs; path=/; expires=Fri, 12-Dec-25 22:59:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=tkijG.9vMkFMmUXEUDx_biI.1zyi4_j9LIwLDoPH14E-1765578584074-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.261316719Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.261326978Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.261333915Z [err]      'x-envoy-upstream-service-time': '25',
+2025-12-12T22:29:44.261346746Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.261353848Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.261360292Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.261366457Z [err]      'x-ratelimit-remaining-requests': '498',
+2025-12-12T22:29:44.261372781Z [err]      'x-ratelimit-remaining-tokens': '496186',
+2025-12-12T22:29:44.261379001Z [err]      'x-ratelimit-reset-requests': '228ms',
+2025-12-12T22:29:44.261385580Z [err]      'x-ratelimit-reset-tokens': '457ms',
+2025-12-12T22:29:44.261391970Z [err]      'x-request-id': 'req_9b8d3aa6fe664bd495baefc678f4c256'
+2025-12-12T22:29:44.261398425Z [err]    },
+2025-12-12T22:29:44.261404614Z [err]    request_id: 'req_9b8d3aa6fe664bd495baefc678f4c256',
+2025-12-12T22:29:44.261422403Z [err]    error: {
+2025-12-12T22:29:44.261431481Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.261437791Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.261444018Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.261450589Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.261457418Z [err]    },
+2025-12-12T22:29:44.261463875Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.261473665Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.261480953Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.261488568Z [err]  }
+2025-12-12T22:29:44.261496824Z [inf]  [Engine] AVAXUSDT: HOLD (0%)
+2025-12-12T22:29:44.261502570Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:29:44.261508611Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.264176247Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.264180029Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.264183663Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.264189559Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.264192237Z [err]      'content-length': '165',
+2025-12-12T22:29:44.264194766Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.264199700Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.264201749Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.264205254Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.264210477Z [err]      date: 'Fri, 12 Dec 2025 22:29:44 GMT',
+2025-12-12T22:29:44.264210479Z [err]    status: 400,
+2025-12-12T22:29:44.264216755Z [err]    headers: {
+2025-12-12T22:29:44.264218954Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.264222451Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.264227599Z [err]      'openai-processing-ms': '7',
+2025-12-12T22:29:44.264228422Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.264234181Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.264239950Z [err]      'cf-ray': '9ad0a985fb528e9b-SJC',
+2025-12-12T22:29:44.264535763Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.264540822Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.264545290Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.264549535Z [err]      'set-cookie': '__cf_bm=Pm07s4hCPgdS7V68xaiMSCTOb9gUv211KB1W3eN1mkc-1765578584-1.0.1.1-5v7KPiBhcFc.KjMi_mKIMq5TrputhTOX7E7iI_Hk.CJnFQtD0HHkje8he0JUmX8uAmFqfX61rcaKt_DYGSejtTq6kt3rrbY3rAlH4CE.Nng; path=/; expires=Fri, 12-Dec-25 22:59:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=tUrqF.bLeR1i1V3PmB0pYFR5EtiKWUoepV0DvnLpqeI-1765578584080-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.265223923Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.265227107Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.265230931Z [err]      'x-request-id': 'req_308e150267244a4799ca361260ee4ce1'
+2025-12-12T22:29:44.265235911Z [err]  }
+2025-12-12T22:29:44.265241697Z [err]    },
+2025-12-12T22:29:44.265243109Z [inf]  [Engine] ETHUSDT: HOLD (0%)
+2025-12-12T22:29:44.265249781Z [err]    request_id: 'req_308e150267244a4799ca361260ee4ce1',
+2025-12-12T22:29:44.265250652Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:29:44.265256808Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.265262364Z [err]    error: {
+2025-12-12T22:29:44.265272735Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.265284291Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.265290504Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.265296141Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.265301605Z [err]    },
+2025-12-12T22:29:44.265306924Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.265312719Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.265384295Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.265392077Z [err]      'x-envoy-upstream-service-time': '20',
+2025-12-12T22:29:44.265398397Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.265404443Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.265411583Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.265417003Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:29:44.265421841Z [err]      'x-ratelimit-remaining-tokens': '497905',
+2025-12-12T22:29:44.265425971Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:29:44.265430409Z [err]      'x-ratelimit-reset-tokens': '251ms',
+2025-12-12T22:29:44.266274641Z [err]      'cf-ray': '9ad0a985e875cfb8-SJC',
+2025-12-12T22:29:44.266279214Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.266284048Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.266286018Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.266291927Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.266292580Z [err]      'content-length': '165',
+2025-12-12T22:29:44.266296230Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.266302394Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.266302478Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.266309222Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.266312348Z [err]      date: 'Fri, 12 Dec 2025 22:29:44 GMT',
+2025-12-12T22:29:44.266315044Z [err]    status: 400,
+2025-12-12T22:29:44.266320812Z [err]    headers: {
+2025-12-12T22:29:44.266321268Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.266326928Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.266331642Z [err]      'openai-processing-ms': '22',
+2025-12-12T22:29:44.266333056Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.266338900Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.266339843Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.266345894Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.266356798Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.266363614Z [err]      'set-cookie': '__cf_bm=bg.iqJ21KTuqcx2EVYVpAGZeJE3jxx88UVoucMljh8Q-1765578584-1.0.1.1-zEAfMxGmh_RoyH2iGeAL.nRGLENnVzBa8cQbBf9b6XFLMj.7uxOHiyg3_59aLseYmTjYsJyGkuEQi5G5c17xlJs7ONlQ4F7u5ZJduNGFPos; path=/; expires=Fri, 12-Dec-25 22:59:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=kYzqxds7svh0dKnbu6W1eWiCa8ZFuOPjB_LMqvdcTdQ-1765578584089-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.268073047Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.268079358Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.268081357Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.268086274Z [err]      'x-envoy-upstream-service-time': '35',
+2025-12-12T22:29:44.268091239Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.268092024Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.268096924Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.268100312Z [err]    },
+2025-12-12T22:29:44.268103860Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.268108536Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.268111549Z [err]      'x-ratelimit-remaining-requests': '497',
+2025-12-12T22:29:44.268117083Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.268118912Z [err]      'x-ratelimit-remaining-tokens': '494865',
+2025-12-12T22:29:44.268126017Z [err]      'x-ratelimit-reset-requests': '271ms',
+2025-12-12T22:29:44.268126866Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.268134582Z [err]      'x-ratelimit-reset-tokens': '616ms',
+2025-12-12T22:29:44.268136088Z [err]  }
+2025-12-12T22:29:44.268141925Z [err]      'x-request-id': 'req_ade5a27bd7c94428b1b9eb2dc9232218'
+2025-12-12T22:29:44.268144585Z [inf]  [Engine] SUIUSDT: HOLD (0%)
+2025-12-12T22:29:44.268149962Z [err]    },
+2025-12-12T22:29:44.268152464Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:29:44.268157094Z [err]    request_id: 'req_ade5a27bd7c94428b1b9eb2dc9232218',
+2025-12-12T22:29:44.268161154Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.268165124Z [err]    error: {
+2025-12-12T22:29:44.268169001Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.268172987Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.269487270Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.269502977Z [err]      'content-length': '165',
+2025-12-12T22:29:44.269512504Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.269517678Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.269518587Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.269521849Z [err]      date: 'Fri, 12 Dec 2025 22:29:44 GMT',
+2025-12-12T22:29:44.269526616Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.269531065Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.269533030Z [err]      'cf-ray': '9ad0a9860d0beb4b-SJC',
+2025-12-12T22:29:44.269534163Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.269540116Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.269545803Z [err]      'openai-processing-ms': '6',
+2025-12-12T22:29:44.269547425Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.269552328Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.269556776Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.269566208Z [err]    status: 400,
+2025-12-12T22:29:44.269577373Z [err]    headers: {
+2025-12-12T22:29:44.269582151Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.269587661Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.269604396Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.269609567Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.269617698Z [err]      'set-cookie': '__cf_bm=ACfki526vcj7qcMJvcS67t7Ti4RoyENcEw0PiynsRO0-1765578584-1.0.1.1-SDQ60zPtkVfUOWDos2AGtDU7lAQdWkTvz2cuf.toqGoyfyf2cQbWa7mxNJdYWNbafH_.Htd7WCu1a4zEeim0AwJrQzDxuzUUDNs0Jaf_ZGY; path=/; expires=Fri, 12-Dec-25 22:59:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=cej7gvIOl_miim9n0uyOwhS6aK0MC2.xYHpCjRke3mU-1765578584093-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.270907149Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.270914462Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.270919770Z [err]      'x-envoy-upstream-service-time': '23',
+2025-12-12T22:29:44.270927260Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.270932939Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.270938617Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.270944224Z [err]      'x-ratelimit-remaining-requests': '497',
+2025-12-12T22:29:44.270949586Z [err]      'x-ratelimit-remaining-tokens': '494380',
+2025-12-12T22:29:44.270955210Z [err]      'x-ratelimit-reset-requests': '330ms',
+2025-12-12T22:29:44.270961739Z [err]      'x-ratelimit-reset-tokens': '674ms',
+2025-12-12T22:29:44.270966805Z [err]      'x-request-id': 'req_612efe810cb949369dfbf47dd031530a'
+2025-12-12T22:29:44.270972398Z [err]    },
+2025-12-12T22:29:44.270978486Z [err]    request_id: 'req_612efe810cb949369dfbf47dd031530a',
+2025-12-12T22:29:44.270983897Z [err]    error: {
+2025-12-12T22:29:44.270989495Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.270995084Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.271000829Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.271006858Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.271012061Z [err]    },
+2025-12-12T22:29:44.271065091Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.271072167Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.271078090Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.271083659Z [err]  }
+2025-12-12T22:29:44.485526489Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.485540703Z [err]      'openai-processing-ms': '7',
+2025-12-12T22:29:44.485550739Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.485562706Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.485565136Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.485580282Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.485580795Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.485593624Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.485598099Z [err]      'set-cookie': '__cf_bm=qIF4_EsudM4HC3h61dN7pSX.fF8vqILS0PvOCtghlG4-1765578584-1.0.1.1-4hSBybRYr5G.XtmUa7E70NvndWSNgXcbGnHaDxMVEt9m9epgI_SuoaCS_12wMibe.tz7NfRMJwESqnoyByckb1yUVsbz9UHiCKWnRJLsMgI; path=/; expires=Fri, 12-Dec-25 22:59:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=YJ4XeqpbcznDKZdQgz_xpYA6Os8EyrcEEWKnnuJpNGo-1765578584481-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.485604811Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.485611052Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.485617435Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.485623497Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.485631840Z [err]    status: 400,
+2025-12-12T22:29:44.485643088Z [err]    headers: {
+2025-12-12T22:29:44.485652285Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.485658105Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.485664214Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.485670008Z [err]      'cf-ray': '9ad0a988785deb4b-SJC',
+2025-12-12T22:29:44.485676028Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.485682231Z [err]      'content-length': '165',
+2025-12-12T22:29:44.485688350Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.485695423Z [err]      date: 'Fri, 12 Dec 2025 22:29:44 GMT',
+2025-12-12T22:29:44.487106967Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.487113018Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.487117924Z [err]      'x-envoy-upstream-service-time': '24',
+2025-12-12T22:29:44.487122084Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.487126068Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.487130341Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.487134315Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:29:44.487139106Z [err]      'x-ratelimit-remaining-tokens': '497951',
+2025-12-12T22:29:44.487144493Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:29:44.487148420Z [err]      'x-ratelimit-reset-tokens': '245ms',
+2025-12-12T22:29:44.487152416Z [err]      'x-request-id': 'req_92d277fc48a8460eb5378a28251846bf'
+2025-12-12T22:29:44.487156151Z [err]    },
+2025-12-12T22:29:44.487159879Z [err]    request_id: 'req_92d277fc48a8460eb5378a28251846bf',
+2025-12-12T22:29:44.487163853Z [err]    error: {
+2025-12-12T22:29:44.487167592Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.487171220Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.487174965Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.487178819Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.487182731Z [err]    },
+2025-12-12T22:29:44.487187751Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.487191477Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.487195346Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.487198925Z [err]  }
+2025-12-12T22:29:44.487203020Z [inf]  [Engine] SOLUSDT: HOLD (0%)
+2025-12-12T22:29:44.487206935Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:29:44.603591077Z [err]      'content-type': 'application/json',
+2025-12-12T22:29:44.603601525Z [err]      date: 'Fri, 12 Dec 2025 22:29:44 GMT',
+2025-12-12T22:29:44.603606904Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:29:44.603612185Z [err]      'openai-processing-ms': '23',
+2025-12-12T22:29:44.603617124Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:29:44.603622989Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:29:44.603628560Z [err]      server: 'cloudflare',
+2025-12-12T22:29:44.603656699Z [err]  [GPT] Analysis error: BadRequestError: 400 Unknown parameter: 'reasoning'.
+2025-12-12T22:29:44.603665931Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:29:44.603672777Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:29:44.603679500Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:29:44.603685913Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:29:44.603692300Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:23:30)
+2025-12-12T22:29:44.603698330Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:26) {
+2025-12-12T22:29:44.603707645Z [err]    status: 400,
+2025-12-12T22:29:44.603713649Z [err]    headers: {
+2025-12-12T22:29:44.603719649Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:29:44.603726366Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:29:44.603733175Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:29:44.603739462Z [err]      'cf-ray': '9ad0a985dfb041ce-SJC',
+2025-12-12T22:29:44.603745322Z [err]      connection: 'keep-alive',
+2025-12-12T22:29:44.603751641Z [err]      'content-length': '165',
+2025-12-12T22:29:44.604827073Z [err]      'set-cookie': '__cf_bm=PBemhsvbCfAKWsKjIYky2FwztoyrTvXSH431U3flxfc-1765578584-1.0.1.1-QPQl_YqXhIudjeyEVqCUsl.cJcRhWIHjyVCEbK2eo9Nzwu36gPazSj5tFJ2RfUD5ObT_vh3s6Ke1naWOov0.qzL__H9Hzn_NlVa7zBCpFhc; path=/; expires=Fri, 12-Dec-25 22:59:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=j6Fmna1.lKE.0wJStf86YRFZGdVQUezqzmdOv3.K9dI-1765578584594-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:29:44.604836989Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:29:44.604843753Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:29:44.604850063Z [err]      'x-request-id': 'req_f42f962857d04fb6aab837b1ec48610f'
+2025-12-12T22:29:44.604850793Z [err]      'x-envoy-upstream-service-time': '556',
+2025-12-12T22:29:44.604857557Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:29:44.604863615Z [err]    },
+2025-12-12T22:29:44.604865003Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:29:44.604872581Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:29:44.604873769Z [err]    request_id: 'req_f42f962857d04fb6aab837b1ec48610f',
+2025-12-12T22:29:44.604880063Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:29:44.604882555Z [err]    error: {
+2025-12-12T22:29:44.604888362Z [err]      'x-ratelimit-remaining-tokens': '498045',
+2025-12-12T22:29:44.604891764Z [err]      message: "Unknown parameter: 'reasoning'.",
+2025-12-12T22:29:44.604896037Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:29:44.604900734Z [err]      type: 'invalid_request_error',
+2025-12-12T22:29:44.604903934Z [err]      'x-ratelimit-reset-tokens': '234ms',
+2025-12-12T22:29:44.604909327Z [err]      param: 'reasoning',
+2025-12-12T22:29:44.604916601Z [err]      code: 'unknown_parameter'
+2025-12-12T22:29:44.604923376Z [err]    },
+2025-12-12T22:29:44.606662151Z [err]    code: 'unknown_parameter',
+2025-12-12T22:29:44.606675583Z [err]    param: 'reasoning',
+2025-12-12T22:29:44.606682486Z [err]    type: 'invalid_request_error'
+2025-12-12T22:29:44.606689922Z [err]  }
+2025-12-12T22:29:44.606696422Z [inf]  [Engine] INJUSDT: HOLD (0%)
+2025-12-12T22:29:44.606739724Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-12T22:30:02.478457137Z [err]  Railway rate limit of 500 logs/sec reached for replica, update your application to reduce the logging rate. Messages dropped: 2
