@@ -37,7 +37,7 @@ interface MarketContext {
 
 export class GPTEngine {
   private client: OpenAI;
-  private model = 'gpt-4o'; // Latest GPT-4o model
+  private model = 'gpt-5.2'; // Latest GPT-5.2 model (Dec 2025)
 
   constructor() {
     this.client = new OpenAI({
