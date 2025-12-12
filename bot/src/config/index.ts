@@ -23,7 +23,7 @@ export const config = {
   // OpenAI
   openai: {
     apiKey: process.env.OPENAI_API_KEY!,
-    model: 'gpt-5.2', // Latest model
+    model: 'gpt-4o', // Latest GPT-4o model
   },
 
   // CryptoPanic

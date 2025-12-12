@@ -37,7 +37,7 @@ interface MarketContext {
 
 export class GPTEngine {
   private client: OpenAI;
-  private model = 'gpt-5.2'; // Latest GPT 5.2 Thinking
+  private model = 'gpt-4o'; // Latest GPT-4o model
 
   constructor() {
     this.client = new OpenAI({
@@ -59,9 +59,6 @@ export class GPTEngine {
         temperature: 0.4, // Balanced between consistency and creativity
         response_format: { type: 'json_object' },
         max_tokens: 3000,
-        // GPT 5.2 specific parameters
-        // @ts-ignore - New GPT 5.2 parameters
-        reasoning: { effort: 'medium' }, // Use reasoning for better analysis
       });
 
       const content = response.choices[0]?.message?.content;
