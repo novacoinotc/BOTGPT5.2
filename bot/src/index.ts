@@ -56,9 +56,9 @@ function validateConfig(): void {
   console.log('[Config] All required configurations present');
   console.log(`[Config] Trading enabled: ${config.trading.enabled}`);
   console.log(`[Config] Max leverage: ${config.trading.maxLeverage}x`);
-  console.log(`[Config] Risk per trade: ${config.trading.riskPerTrade * 100}%`);
-  console.log(`[Config] Target profit: ${config.trading.scalpingTargetProfit * 100}%`);
-  console.log(`[Config] Stop loss: ${config.trading.scalpingStopLoss * 100}%`);
+  console.log(`[Config] Max position size: ${config.trading.maxPositionSizePercent}%`);
+  console.log(`[Config] Min confidence: ${config.trading.minConfidence}%`);
+  console.log(`[Config] Max hold time: ${config.trading.maxHoldTimeHours}h`);
 }
 
 function setupGracefulShutdown(): void {
