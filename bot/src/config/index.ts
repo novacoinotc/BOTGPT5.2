@@ -37,14 +37,13 @@ export const config = {
     url: process.env.DATABASE_URL!,
   },
 
-  // Trading
+  // Trading - GPT decides most parameters dynamically
   trading: {
     enabled: process.env.TRADING_ENABLED === 'true',
-    maxPositionSize: parseFloat(process.env.MAX_POSITION_SIZE || '100'),
-    maxLeverage: parseInt(process.env.MAX_LEVERAGE || '20'),
-    riskPerTrade: parseFloat(process.env.RISK_PER_TRADE || '0.02'),
-    scalpingTargetProfit: parseFloat(process.env.SCALPING_TARGET_PROFIT || '0.003'),
-    scalpingStopLoss: parseFloat(process.env.SCALPING_STOP_LOSS || '0.005'),
+    maxPositionSizePercent: parseInt(process.env.MAX_POSITION_SIZE_PERCENT || '50'), // Max 50% of capital
+    maxLeverage: parseInt(process.env.MAX_LEVERAGE || '10'), // Max 10x leverage
+    minConfidence: parseInt(process.env.MIN_CONFIDENCE || '45'), // Lowered for learning
+    maxHoldTimeHours: parseInt(process.env.MAX_HOLD_TIME_HOURS || '4'), // Extended hold time
   },
 
   // Server
