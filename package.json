@@ -12,7 +12,8 @@
     "build:bot": "npm run build -w bot",
     "build:dashboard": "npm run build -w dashboard",
     "start:bot": "npm run start -w bot",
-    "start:dashboard": "npm run start -w dashboard"
+    "start:dashboard": "npm run start -w dashboard",
+    "start": "npm run start -w bot"
   },
   "engines": {
     "node": ">=20.0.0"
