@@ -1,0 +1,1001 @@
+2025-12-12T21:57:13.590281462Z [err]          _server: null,
+2025-12-12T21:57:13.590287227Z [err]          ssl: TLSWrap {
+2025-12-12T21:57:13.591729865Z [err]              _hadError: false,
+2025-12-12T21:57:13.591735934Z [err]              _sockname: null,
+2025-12-12T21:57:13.591737717Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-12T21:57:13.591738617Z [err]              _parent: null,
+2025-12-12T21:57:13.591744874Z [err]              [Symbol(kSetKeepAlive)]: false,
+2025-12-12T21:57:13.591746348Z [err]              _host: null,
+2025-12-12T21:57:13.591748682Z [err]              _pendingData: null,
+2025-12-12T21:57:13.591748877Z [err]              [Symbol(timeout)]: null,
+2025-12-12T21:57:13.591754806Z [err]              _closeAfterHandlingError: false,
+2025-12-12T21:57:13.591757586Z [err]              _pendingEncoding: '',
+2025-12-12T21:57:13.591759486Z [err]              _readableState: [ReadableState],
+2025-12-12T21:57:13.591759996Z [err]              [Symbol(kBuffer)]: null,
+2025-12-12T21:57:13.591765526Z [err]              _events: [Object],
+2025-12-12T21:57:13.591766966Z [err]              server: null,
+2025-12-12T21:57:13.591769663Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-12T21:57:13.591770060Z [err]              _writableState: [WritableState],
+2025-12-12T21:57:13.591773714Z [err]              [Symbol(kBufferGen)]: null,
+2025-12-12T21:57:13.591779164Z [err]              allowHalfOpen: false,
+2025-12-12T21:57:13.591782839Z [err]              _server: null,
+2025-12-12T21:57:13.591784117Z [err]              _maxListeners: undefined,
+2025-12-12T21:57:13.591792529Z [err]              _eventsCount: 4,
+2025-12-12T21:57:13.591794373Z [err]              [Symbol(shapeMode)]: true,
+2025-12-12T21:57:13.591794634Z [err]              [Symbol(async_id_symbol)]: 95706,
+2025-12-12T21:57:13.591807301Z [err]              [Symbol(kHandle)]: [TCP],
+2025-12-12T21:57:13.591809748Z [err]              [Symbol(kCapture)]: false,
+2025-12-12T21:57:13.591814372Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-12T21:57:13.593380663Z [err]          [Symbol(res)]: TLSWrap {
+2025-12-12T21:57:13.593392595Z [err]            _parent: TCP {
+2025-12-12T21:57:13.593401361Z [err]            onhandshakestart: [Function: noop],
+2025-12-12T21:57:13.593405418Z [err]              reading: [Getter/Setter],
+2025-12-12T21:57:13.593406470Z [err]              [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-12T21:57:13.593416877Z [err]              [Symbol(kBytesRead)]: 0,
+2025-12-12T21:57:13.593417638Z [err]            onhandshakedone: [Function (anonymous)],
+2025-12-12T21:57:13.593417823Z [err]              onconnection: null,
+2025-12-12T21:57:13.593435003Z [err]              [Symbol(owner_symbol)]: [Socket]
+2025-12-12T21:57:13.593435097Z [err]            onocspresponse: [Function: onocspresponse],
+2025-12-12T21:57:13.593444689Z [err]            onnewsession: [Function: onnewsessionclient],
+2025-12-12T21:57:13.593450964Z [err]            onerror: [Function: onerror],
+2025-12-12T21:57:13.593457734Z [err]            [Symbol(owner_symbol)]: [Circular *3]
+2025-12-12T21:57:13.593464048Z [err]          },
+2025-12-12T21:57:13.593469718Z [err]          _requestCert: true,
+2025-12-12T21:57:13.593475257Z [err]          _rejectUnauthorized: true,
+2025-12-12T21:57:13.593480962Z [err]          parser: null,
+2025-12-12T21:57:13.593489538Z [err]          _httpMessage: [Circular *1],
+2025-12-12T21:57:13.593493482Z [err]              [Symbol(kBytesWritten)]: 0
+2025-12-12T21:57:13.593500188Z [err]          timeout: 0,
+2025-12-12T21:57:13.593504291Z [err]            },
+2025-12-12T21:57:13.593514580Z [err]          [Symbol(alpncallback)]: null,
+2025-12-12T21:57:13.593514995Z [err]            _secureContext: SecureContext { context: SecureContext {} },
+2025-12-12T21:57:13.593524119Z [err]            reading: true,
+2025-12-12T21:57:13.593529954Z [err]            onkeylog: [Function: onkeylog],
+2025-12-12T21:57:13.595007856Z [err]            },
+2025-12-12T21:57:13.595016459Z [err]            _parentWrap: <ref *2> Socket {
+2025-12-12T21:57:13.595024511Z [err]              connecting: false,
+2025-12-12T21:57:13.595031435Z [err]              _hadError: false,
+2025-12-12T21:57:13.595038017Z [err]              _parent: null,
+2025-12-12T21:57:13.595056960Z [err]              _host: null,
+2025-12-12T21:57:13.595071988Z [err]              _closeAfterHandlingError: false,
+2025-12-12T21:57:13.595080236Z [err]              _events: [Object],
+2025-12-12T21:57:13.595085914Z [err]              _readableState: [ReadableState],
+2025-12-12T21:57:13.595092858Z [err]              _writableState: [WritableState],
+2025-12-12T21:57:13.595098330Z [err]              allowHalfOpen: false,
+2025-12-12T21:57:13.595105376Z [err]              _maxListeners: undefined,
+2025-12-12T21:57:13.597874235Z [err]            _parentWrap: <ref *2> Socket {
+2025-12-12T21:57:13.600045774Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-12T21:57:13.600983356Z [err]          [Symbol(kSetKeepAliveInitialDelay)]: 60,
+2025-12-12T21:57:13.604119459Z [err]              [Symbol(kCapture)]: false,
+2025-12-12T21:57:13.605719931Z [err]              _sessionCache: [Object],
+2025-12-12T21:57:13.607808017Z [err]              [Symbol(timeout)]: null,
+2025-12-12T21:57:13.609200632Z [err]          'GET, POST, PUT, DELETE, OPTIONS',
+2025-12-12T21:57:13.610793126Z [err]            pskCallback: undefined,
+2025-12-12T21:57:13.615088694Z [err]            _events: {
+2025-12-12T21:57:13.615099490Z [err]              close: [Function (anonymous)],
+2025-12-12T21:57:13.619256863Z [err]            [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-12T21:57:13.619268810Z [err]            [Symbol(kBytesRead)]: 0,
+2025-12-12T21:57:13.623665289Z [err]          _maxListeners: undefined,
+2025-12-12T21:57:13.623670160Z [err]          _sockname: null,
+2025-12-12T21:57:13.628894604Z [err]              _server: null,
+2025-12-12T21:57:13.628901615Z [err]              [Symbol(async_id_symbol)]: 95706,
+2025-12-12T21:57:13.628908805Z [err]              [Symbol(kHandle)]: [TCP],
+2025-12-12T21:57:13.632595892Z [err]            [Symbol(owner_symbol)]: [Circular *3]
+2025-12-12T21:57:13.634768327Z [err]              _pendingData: null,
+2025-12-12T21:57:13.634777843Z [err]              _pendingEncoding: '',
+2025-12-12T21:57:13.637759955Z [err]              _pendingData: null,
+2025-12-12T21:57:13.638959607Z [err]            onnewsession: [Function: onnewsessionclient],
+2025-12-12T21:57:13.642291876Z [err]              sockets: [Object: null prototype],
+2025-12-12T21:57:13.644317312Z [err]              options: [Object: null prototype],
+2025-12-12T21:57:13.645360982Z [err]              _writableState: [WritableState],
+2025-12-12T21:57:13.647437389Z [err]        },
+2025-12-12T21:57:13.650669726Z [err]          corked: 0,
+2025-12-12T21:57:13.653111179Z [err]              _maxListeners: undefined,
+2025-12-12T21:57:13.653116531Z [err]              options: [Object],
+2025-12-12T21:57:13.656937519Z [err]            [Symbol(AgentBaseInternalState)]: { currentSocket: undefined }
+2025-12-12T21:57:13.656951367Z [err]          },
+2025-12-12T21:57:13.659664203Z [err]            },
+2025-12-12T21:57:13.661352511Z [err]      },
+2025-12-12T21:57:13.663309070Z [err]        _newSessionPending: false,
+2025-12-12T21:57:13.665935641Z [err]            pipes: [],
+2025-12-12T21:57:13.668545284Z [err]            [Symbol(owner_symbol)]: [Circular *2]
+2025-12-12T21:57:13.671289318Z [err]          length: 0,
+2025-12-12T21:57:13.671299118Z [err]          corked: 0,
+2025-12-12T21:57:13.673409385Z [err]              _readableState: [ReadableState],
+2025-12-12T21:57:13.679374311Z [err]          _parentWrap: <ref *2> Socket {
+2025-12-12T21:57:13.679384107Z [err]            connecting: false,
+2025-12-12T21:57:13.679391306Z [err]            _hadError: false,
+2025-12-12T21:57:13.681555265Z [err]            [Symbol(kBufferCb)]: null,
+2025-12-12T21:57:13.686087569Z [err]        [Symbol(alpncallback)]: null,
+2025-12-12T21:57:13.686098851Z [err]        [Symbol(res)]: TLSWrap {
+2025-12-12T21:57:13.689977856Z [err]              [Symbol(kBuffer)]: null,
+2025-12-12T21:57:13.689984727Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-12T21:57:13.692736150Z [err]              connect: [Function]
+2025-12-12T21:57:13.693151312Z [err]            _readableState: ReadableState {
+2025-12-12T21:57:13.695491160Z [err]            _pendingEncoding: '',
+2025-12-12T21:57:13.696751372Z [err]              connecting: false,
+2025-12-12T21:57:13.700091255Z [err]            _events: {
+2025-12-12T21:57:13.702080293Z [err]              [Symbol(kState)]: 17563908,
+2025-12-12T21:57:13.703646564Z [err]            [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-12T21:57:13.705415381Z [err]        [Symbol(kBytesWritten)]: 0,
+2025-12-12T21:57:13.707547182Z [err]              _maxListeners: undefined,
+2025-12-12T21:57:13.709974725Z [err]          agent: HttpsProxyAgent {
+2025-12-12T21:57:13.711747217Z [err]            [Symbol(AgentBaseInternalState)]: { currentSocket: undefined }
+2025-12-12T21:57:13.713018524Z [err]            },
+2025-12-12T21:57:13.715381480Z [err]              path: null
+2025-12-12T21:57:13.718266800Z [err]              error: [Function (anonymous)],
+2025-12-12T21:57:13.718828237Z [err]              [Symbol(kWriteCbValue)]: null
+2025-12-12T21:57:13.721798248Z [err]        date: 'Fri, 12 Dec 2025 21:57:13 GMT',
+2025-12-12T21:57:13.723746614Z [err]          FormData: [Function: FormData] {
+2025-12-12T21:57:13.725438003Z [err]            'fapi.binance.com:443:::::::::::::::::::::': [ [TLSSocket] ]
+2025-12-12T21:57:13.727245105Z [err]        allowAbsoluteUrls: true,
+2025-12-12T21:57:13.730340829Z [err]          options: { path: undefined },
+2025-12-12T21:57:13.732334767Z [err]        insecureHTTPParser: undefined,
+2025-12-12T21:57:13.733831030Z [err]              pipe: false,
+2025-12-12T21:57:13.735409794Z [err]              end: [Function: onReadableStreamEnd],
+2025-12-12T21:57:13.737206098Z [err]              _sockname: null,
+2025-12-12T21:57:13.740138909Z [err]              reading: true,
+2025-12-12T21:57:13.741851205Z [err]              onerror: [Function: onerror],
+2025-12-12T21:57:13.744020766Z [err]            [Symbol(kCapture)]: false,
+2025-12-12T21:57:13.746129000Z [err]              beforeRedirects: [Object],
+2025-12-12T21:57:13.748958134Z [err]            'Access-Control-Allow-Methods',
+2025-12-12T21:57:13.748970763Z [err]            'GET, POST, PUT, DELETE, OPTIONS',
+2025-12-12T21:57:13.753141874Z [err]            encrypted: true,
+2025-12-12T21:57:13.753153803Z [err]            _events: [Object: null prototype] {
+2025-12-12T21:57:13.755112607Z [err]              _maxListeners: undefined,
+2025-12-12T21:57:13.758626992Z [err]              _parentWrap: [Socket],
+2025-12-12T21:57:13.760945915Z [err]              onocspresponse: [Function: onocspresponse],
+2025-12-12T21:57:13.760954228Z [err]              onnewsession: [Function: onnewsessionclient],
+2025-12-12T21:57:13.763248587Z [err]            [Symbol(kBufferGen)]: null,
+2025-12-12T21:57:13.768713461Z [err]              beforeRedirect: [Function: dispatchBeforeRedirect],
+2025-12-12T21:57:13.768726035Z [err]              beforeRedirects: [Object],
+2025-12-12T21:57:13.768834052Z [err]          [Symbol(kCapture)]: false,
+2025-12-12T21:57:13.773869588Z [err]            'content-type': 'application/json',
+2025-12-12T21:57:13.773875111Z [err]            'content-length': '79',
+2025-12-12T21:57:13.775553696Z [err]        protocol: 'https:',
+2025-12-12T21:57:13.777560082Z [err]            maxRedirects: 21,
+2025-12-12T21:57:13.779763719Z [err]              options: [Object],
+2025-12-12T21:57:13.781769266Z [err]          _redirects: [],
+2025-12-12T21:57:13.784294679Z [err]            rejectUnauthorized: true,
+2025-12-12T21:57:13.785882299Z [err]            error: [Function: socketErrorListener],
+2025-12-12T21:57:13.787344826Z [err]              drain: undefined,
+2025-12-12T21:57:13.789382377Z [err]            _maxListeners: undefined,
+2025-12-12T21:57:13.791996540Z [err]          _closeAfterHandlingError: false,
+2025-12-12T21:57:13.793794431Z [err]          _server: null,
+2025-12-12T21:57:13.794949193Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-12T21:57:13.796963772Z [err]          parser: null,
+2025-12-12T21:57:13.799507887Z [err]              [Symbol(async_id_symbol)]: 95706,
+2025-12-12T21:57:13.802984902Z [err]          },
+2025-12-12T21:57:13.802993663Z [err]          [Symbol(verified)]: true,
+2025-12-12T21:57:13.804907253Z [err]              [Symbol(async_id_symbol)]: 95706,
+2025-12-12T21:57:13.806768679Z [err]          [Symbol(shapeMode)]: true,
+2025-12-12T21:57:13.809938074Z [err]              maxSockets: Infinity,
+2025-12-12T21:57:13.812861722Z [err]              freeSockets: [Object: null prototype] {},
+2025-12-12T21:57:13.812867472Z [err]              keepAliveMsecs: 1000,
+2025-12-12T21:57:13.816577750Z [err]              _eventsCount: 4,
+2025-12-12T21:57:13.820681983Z [err]          'x-mbx-apikey': [
+2025-12-12T21:57:13.820689840Z [err]            'X-MBX-APIKEY',
+2025-12-12T21:57:13.825016301Z [err]  npm error command sh -c node dist/index.js
+2025-12-12T21:57:14.804410999Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-12T21:57:14.831166289Z [inf]  
+2025-12-12T21:57:14.831172419Z [inf]  > gpt-scalping-bot@1.0.0 start
+2025-12-12T21:57:14.831176369Z [inf]  > npm run start -w bot
+2025-12-12T21:57:14.831180118Z [inf]  
+2025-12-12T21:57:14.943574824Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-12T21:57:15.005523985Z [inf]  
+2025-12-12T21:57:15.005532325Z [inf]  > bot@1.0.0 start
+2025-12-12T21:57:15.005539017Z [inf]  > node dist/index.js
+2025-12-12T21:57:15.005544733Z [inf]  
+2025-12-12T21:57:15.495625953Z [inf]  =========================================
+2025-12-12T21:57:15.495629926Z [inf]      GPT 5.2 SCALPING BOT - v1.0.1
+2025-12-12T21:57:15.495633758Z [inf]  =========================================
+2025-12-12T21:57:15.495638491Z [inf]  
+2025-12-12T21:57:15.495643760Z [inf]  [Config] All required configurations present
+2025-12-12T21:57:15.495648033Z [inf]  [Config] Trading enabled: true
+2025-12-12T21:57:15.495651965Z [inf]  [Config] Max leverage: 10x
+2025-12-12T21:57:15.495656184Z [inf]  [Config] Max position size: 50%
+2025-12-12T21:57:15.495660164Z [inf]  [Config] Min confidence: 45%
+2025-12-12T21:57:15.495664099Z [inf]  [Config] Max hold time: 4h
+2025-12-12T21:57:15.495668576Z [inf]  [Main] Auto-starting trading bot...
+2025-12-12T21:57:15.495672737Z [inf]  [Engine] Starting trading bot...
+2025-12-12T21:57:15.495676585Z [inf]  [Engine] Min confidence: 45%
+2025-12-12T21:57:15.495682072Z [inf]  [Engine] Max leverage: 10x
+2025-12-12T21:57:15.495688590Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-12T21:57:15.495692417Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-12T21:57:15.495696325Z [inf]  [Server] Running on port 3001
+2025-12-12T21:57:15.799588121Z [inf]  [Engine] Account balance: $4698.79
+2025-12-12T21:57:15.799602528Z [inf]  [Engine] Available balance: $4698.79
+2025-12-12T21:57:16.467575365Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-12T21:57:16.467583874Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-12T21:57:16.467611238Z [inf]  
+2025-12-12T21:57:16.467624988Z [inf]  [Engine] Found 0 open positions
+2025-12-12T21:57:16.467632991Z [inf]  [Engine] Bot started successfully
+2025-12-12T21:57:16.467640124Z [inf]  
+2025-12-12T21:57:16.467646827Z [inf]  [Main] Bot is ready!
+2025-12-12T21:57:17.518267977Z [inf]  [WS] Connected to Binance
+2025-12-12T21:57:22.529694593Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T21:57:22.529699636Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T21:57:22.529733719Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T21:57:22.529767098Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T21:57:25.712551245Z [err]  Railway rate limit of 500 logs/sec reached for replica, update your application to reduce the logging rate. Messages dropped: 2649
+2025-12-12T21:57:42.180624978Z [inf]  [Engine] Opening BUY BTCUSDT:
+2025-12-12T21:57:42.180635398Z [inf]  [Engine]   └─ Quantity: 0.025 @ ~$90189.40
+2025-12-12T21:57:42.180643218Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-12T21:57:42.180656379Z [inf]  [Engine] ETHUSDT: SELL (62%)
+2025-12-12T21:57:42.180662891Z [inf]  [Engine]   └─ Contexto mayormente bajista con tendencia fuerte: alineación de medias en “bajista perfecta” (precio...
+2025-12-12T21:57:42.180668544Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T21:57:42.180675289Z [inf]  [Engine]   └─ SL: $3094.20 | TP: $3062.00
+2025-12-12T21:57:42.180681656Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-12T21:57:42.180688179Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo a rebote corto (scalp). 1) Tendencia: la alineación EMA9<EMA21<SMA50 e...
+2025-12-12T21:57:42.180694905Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T21:57:42.180701222Z [inf]  [Engine]   └─ SL: $89920.00 | TP: $90470.00
+2025-12-12T21:57:42.180708037Z [inf]  [Engine] Opening SELL ETHUSDT:
+2025-12-12T21:57:42.180714391Z [inf]  [Engine]   └─ Quantity: 0.732 @ ~$3081.33
+2025-12-12T21:57:42.180720213Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-12T21:57:42.180726115Z [inf]  [Engine]   └─ Capital used: $563.86 (12%)
+2025-12-12T21:57:42.180731794Z [inf]  [Engine]   └─ Position value: $2255.42
+2025-12-12T21:57:42.180738479Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:57:42.180744195Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:57:42.180749856Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:57:42.180755443Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:57:42.180762127Z [inf]  [Engine] Position opened: SHORT ETHUSDT @ $0.00
+2025-12-12T21:57:42.180767787Z [inf]  [Engine]   └─ SL: $3094.20 (Infinity%)
+2025-12-12T21:57:42.180773443Z [inf]  [Engine]   └─ TP: $3062.00 (Infinity%)
+2025-12-12T21:57:42.182387289Z [inf]  [Engine]   └─ Capital used: $563.86 (12%)
+2025-12-12T21:57:42.182417417Z [inf]  [Engine]   └─ Position value: $2255.42
+2025-12-12T21:57:42.182424656Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:57:42.182430449Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:57:42.182436571Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:57:42.182442583Z [inf]  [Engine] Position opened: LONG BTCUSDT @ $0.00
+2025-12-12T21:57:42.182449187Z [inf]  [Engine]   └─ SL: $89920.00 (Infinity%)
+2025-12-12T21:57:42.182455189Z [inf]  [Engine]   └─ TP: $90470.00 (Infinity%)
+2025-12-12T21:57:46.905210160Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:57:46.905220339Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:57:46.905229924Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:57:46.905236144Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:06.908641327Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T21:58:06.908654739Z [inf]  [Engine]   └─ SL: $89870.00 | TP: $90510.00
+2025-12-12T21:58:06.908663045Z [inf]  [Engine] BTCUSDT: Updated SL: $89870.00 | TP: $90510.00
+2025-12-12T21:58:06.908671162Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:06.908678317Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:06.908685201Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:06.908691087Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:06.908699041Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T21:58:06.908706013Z [inf]  [Engine]   └─ Aunque el ADX (40.6) indica tendencia fuerte, la estructura sigue siendo bajista: precio por debajo ...
+2025-12-12T21:58:06.908751896Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-12T21:58:06.908974641Z [inf]  [Engine]   └─ Contexto mixto pero con edge para scalp long de rebote/mean reversion: (1) Order book muy inclinado ...
+2025-12-12T21:58:26.907827842Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:26.907834383Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:26.907839525Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:26.907843773Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:26.907849719Z [inf]  [Engine] BTCUSDT: BUY (62%)
+2025-12-12T21:58:26.907854251Z [inf]  [Engine]   └─ Contexto mixto pero con edge de scalping long: (1) Order book muy inclinado a compradores (86.2% vs ...
+2025-12-12T21:58:26.907859195Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T21:58:26.907864341Z [inf]  [Engine]   └─ SL: $89980.00 | TP: $90460.00
+2025-12-12T21:58:26.907868797Z [inf]  [Engine] BTCUSDT: Updated SL: $89980.00 | TP: $90460.00
+2025-12-12T21:58:27.085789920Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:27.085799164Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:27.085804522Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:27.085810873Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:36.776222207Z [inf]  [Engine]   └─ Contexto mixto pero con setup de scalping LONG de mean-reversion: (1) Precio en zona baja del Value ...
+2025-12-12T21:58:36.776231880Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T21:58:36.776237017Z [inf]  [Engine]   └─ SL: $3056.80 | TP: $3106.20
+2025-12-12T21:58:36.776241715Z [inf]  [Engine] ETHUSDT: Updated SL: $3056.80 | TP: $3106.20
+2025-12-12T21:58:36.776255665Z [inf]  [Engine] ETHUSDT: BUY (56%)
+2025-12-12T21:58:37.744938513Z [err]  [GPT] Learning error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-12T21:58:37.744954361Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T21:58:37.744964703Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T21:58:37.744972121Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T21:58:37.744978812Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T21:58:37.744987010Z [err]      at async GPTEngine.learnFromTrade (/app/bot/dist/services/gpt/engine.js:344:30)
+2025-12-12T21:58:37.744994921Z [err]      at async TradingEngine.closePosition (/app/bot/dist/services/trading/engine.js:401:28)
+2025-12-12T21:58:37.745002897Z [err]      at async TradingEngine.checkPositionExit (/app/bot/dist/services/trading/engine.js:343:13) {
+2025-12-12T21:58:37.745009128Z [err]    status: 400,
+2025-12-12T21:58:37.745015632Z [err]    headers: {
+2025-12-12T21:58:37.745022914Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T21:58:37.745030386Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T21:58:37.745038257Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T21:58:37.745045041Z [err]      'cf-ray': '9ad07bf55a0255c2-SJC',
+2025-12-12T21:58:37.745051389Z [err]      connection: 'keep-alive',
+2025-12-12T21:58:37.745058781Z [err]      'content-length': '245',
+2025-12-12T21:58:37.745065513Z [err]      'content-type': 'application/json',
+2025-12-12T21:58:37.745072722Z [err]      date: 'Fri, 12 Dec 2025 21:58:37 GMT',
+2025-12-12T21:58:37.745078962Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T21:58:37.745085721Z [err]      'openai-processing-ms': '8',
+2025-12-12T21:58:37.745093295Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T21:58:37.746615128Z [err]      'openai-version': '2020-10-01',
+2025-12-12T21:58:37.746619133Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T21:58:37.746623088Z [err]      server: 'cloudflare',
+2025-12-12T21:58:37.746629053Z [err]      'set-cookie': '__cf_bm=pEaEu2taVYqr.US4Jgdv3pYzfvV6F.tsSEQMY0fn0G4-1765576717-1.0.1.1-g.V10MBsFQPw0Muip3nr45RHSiwNB3na2tV5Acdf.Ffq2qfSlN46myKRu9Wy4cdpiWpWiD2hCE8zvoE0Ytbd_cAqROspAGdlubhNe8qncFw; path=/; expires=Fri, 12-Dec-25 22:28:37 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=Qvpey5XilSFU4lDNrhP7ymYqs2havRUo1Q0lcDQMbwc-1765576717736-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T21:58:37.746629923Z [err]      'x-ratelimit-reset-tokens': '31ms',
+2025-12-12T21:58:37.746635444Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T21:58:37.746637165Z [err]      'x-request-id': 'req_73498406c27a441ea068b22d6a26ee3a'
+2025-12-12T21:58:37.746642295Z [err]    },
+2025-12-12T21:58:37.746645318Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T21:58:37.746648442Z [err]    request_id: 'req_73498406c27a441ea068b22d6a26ee3a',
+2025-12-12T21:58:37.746651237Z [err]      'x-envoy-upstream-service-time': '23',
+2025-12-12T21:58:37.746656840Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T21:58:37.746657447Z [err]    error: {
+2025-12-12T21:58:37.746663097Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T21:58:37.746664981Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-12T21:58:37.746669807Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T21:58:37.746671575Z [err]      type: 'invalid_request_error',
+2025-12-12T21:58:37.746675626Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T21:58:37.746680207Z [err]      'x-ratelimit-remaining-tokens': '499737',
+2025-12-12T21:58:37.748033597Z [err]      param: 'max_tokens',
+2025-12-12T21:58:37.748039702Z [err]      code: 'unsupported_parameter'
+2025-12-12T21:58:37.748043993Z [err]    },
+2025-12-12T21:58:37.748048024Z [err]    code: 'unsupported_parameter',
+2025-12-12T21:58:37.748051698Z [err]    param: 'max_tokens',
+2025-12-12T21:58:37.748055949Z [err]    type: 'invalid_request_error'
+2025-12-12T21:58:37.748060081Z [err]  }
+2025-12-12T21:58:38.728415350Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T21:58:38.728422860Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T21:58:38.728429695Z [inf]  [Engine] ❌ Position closed: ETHUSDT | PnL: -Infinity% ($NaN) | Reason: sl
+2025-12-12T21:58:47.769366872Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:47.769492158Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:47.769499285Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:47.769506726Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:55.824646025Z [inf]  [Engine] BTCUSDT: Updated SL: $89878.00 | TP: $90662.00
+2025-12-12T21:58:55.824680716Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-12T21:58:55.824686682Z [inf]  [Engine]   └─ Contexto mixto pero con edge para scalp long: (1) Order book muy inclinado a compradores (88.1% vs 1...
+2025-12-12T21:58:55.824692715Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T21:58:55.824698578Z [inf]  [Engine]   └─ SL: $89878.00 | TP: $90662.00
+2025-12-12T21:58:56.842311446Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:56.842319462Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:56.842326017Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:58:56.842332791Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:05.812971408Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T21:59:05.812975172Z [inf]  [Engine]   └─ Aunque el order book muestra dominio comprador (imbalance +38.6% y presión compradora 59.7%) y el hi...
+2025-12-12T21:59:25.424671467Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:25.424681008Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:25.424688026Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:25.424695823Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:26.854129169Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-12T21:59:26.854133109Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo de scalping long: (1) Régimen declarado en rango y el precio está muy ...
+2025-12-12T21:59:26.854138217Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T21:59:26.854224567Z [inf]  [Engine]   └─ SL: $89790.00 | TP: $90520.00
+2025-12-12T21:59:26.854235814Z [inf]  [Engine] BTCUSDT: Updated SL: $89790.00 | TP: $90520.00
+2025-12-12T21:59:27.277557297Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:27.277564447Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:27.277578031Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:27.277584268Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:37.091724899Z [inf]  [Engine] ETHUSDT: SELL (58%)
+2025-12-12T21:59:37.091729533Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo bajista para scalp: (1) Tendencia: alineación de medias es bajista (pr...
+2025-12-12T21:59:37.091734514Z [inf]  [Engine]   └─ Size: 10% | Leverage: 3x
+2025-12-12T21:59:37.091739065Z [inf]  [Engine]   └─ SL: $3100.20 | TP: $3062.20
+2025-12-12T21:59:38.882840678Z [inf]  [Engine] Opening SELL ETHUSDT:
+2025-12-12T21:59:38.882844614Z [inf]  [Engine]   └─ Quantity: 0.402 @ ~$3080.83
+2025-12-12T21:59:38.882849163Z [inf]  [Engine]   └─ Leverage: 3x
+2025-12-12T21:59:38.882853771Z [inf]  [Engine]   └─ Capital used: $413.29 (10%)
+2025-12-12T21:59:38.882857851Z [inf]  [Engine]   └─ Position value: $1239.88
+2025-12-12T21:59:39.148970610Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:39.148979607Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:39.148984770Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:39.148989801Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:39.924437543Z [inf]  [Engine]   └─ SL: $3100.20 (Infinity%)
+2025-12-12T21:59:39.924448107Z [inf]  [Engine]   └─ TP: $3062.20 (Infinity%)
+2025-12-12T21:59:39.924482220Z [inf]  [Engine] Position opened: SHORT ETHUSDT @ $0.00
+2025-12-12T21:59:47.165667796Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:47.165672890Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:47.165677293Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T21:59:47.165682604Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:07.165606522Z [inf]  [Engine] BTCUSDT: SELL (68%)
+2025-12-12T22:00:07.165614910Z [inf]  [Engine]   └─ Contexto favorece continuación bajista de corto plazo para scalping: (1) Tendencia: precio por debaj...
+2025-12-12T22:00:07.165620432Z [inf]  [Engine]   └─ Size: 12% | Leverage: 5x
+2025-12-12T22:00:07.165626541Z [inf]  [Engine]   └─ SL: $90480.00 | TP: $89790.00
+2025-12-12T22:00:07.165630955Z [inf]  [Engine] BTCUSDT: Updated SL: $90480.00 | TP: $89790.00
+2025-12-12T22:00:07.165644777Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:07.165648748Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:07.165652387Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:07.165655993Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:07.165661978Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:00:07.165665927Z [err]  [GPT] Learning error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-12T22:00:07.165669660Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:00:07.165673088Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:00:07.165676788Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:00:07.165682566Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:00:07.165686386Z [err]      at async GPTEngine.learnFromTrade (/app/bot/dist/services/gpt/engine.js:344:30)
+2025-12-12T22:00:07.165690146Z [err]      at async TradingEngine.closePosition (/app/bot/dist/services/trading/engine.js:401:28)
+2025-12-12T22:00:07.165693589Z [err]      at async TradingEngine.checkPositionExit (/app/bot/dist/services/trading/engine.js:339:13) {
+2025-12-12T22:00:07.165697116Z [err]    status: 400,
+2025-12-12T22:00:07.167938040Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:00:07.167963727Z [err]    headers: {
+2025-12-12T22:00:07.167970232Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:00:07.167976253Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:00:07.167983256Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:00:07.167990684Z [err]      'cf-ray': '9ad07dee7cd867fb-SJC',
+2025-12-12T22:00:07.168003559Z [err]      connection: 'keep-alive',
+2025-12-12T22:00:07.168010127Z [err]      'content-length': '245',
+2025-12-12T22:00:07.168011521Z [err]      date: 'Fri, 12 Dec 2025 21:59:58 GMT',
+2025-12-12T22:00:07.168016230Z [err]      'content-type': 'application/json',
+2025-12-12T22:00:07.168031113Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:00:07.168047261Z [err]      'openai-processing-ms': '9',
+2025-12-12T22:00:07.168064990Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:00:07.168081243Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:00:07.168095238Z [err]      server: 'cloudflare',
+2025-12-12T22:00:07.168106676Z [err]      'set-cookie': '__cf_bm=Hb93En.EtAAYDjHLMTwBB_CW28pcesHDv3Uw.zmySdY-1765576798-1.0.1.1-IZfoxLbSv0SrBX6RXTrmhwKaNOVLVdLIkkIWNZem5Fk8KDBhRHii06vEi1RLuyuzYLP_0xn2bd5pmhWPcrLgnZqvBa8rcEsG0YtXQ1Beu6g; path=/; expires=Fri, 12-Dec-25 22:29:58 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=v2PifqGv38Cjk8eCztRFAlzLH9Ipo9kbvi4QqntgMx0-1765576798685-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:00:07.168118372Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:00:07.168130176Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:00:07.168146089Z [err]      'x-envoy-upstream-service-time': '149',
+2025-12-12T22:00:07.168161987Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:00:07.170132770Z [err]      type: 'invalid_request_error',
+2025-12-12T22:00:07.170142833Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:00:07.170152533Z [err]      param: 'max_tokens',
+2025-12-12T22:00:07.170158845Z [err]      code: 'unsupported_parameter'
+2025-12-12T22:00:07.170163268Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:00:07.170165261Z [err]    },
+2025-12-12T22:00:07.170171661Z [err]    code: 'unsupported_parameter',
+2025-12-12T22:00:07.170178328Z [err]    param: 'max_tokens',
+2025-12-12T22:00:07.170178823Z [err]      'x-ratelimit-remaining-tokens': '499735',
+2025-12-12T22:00:07.170188706Z [err]    type: 'invalid_request_error'
+2025-12-12T22:00:07.170191102Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:00:07.170196727Z [err]  }
+2025-12-12T22:00:07.170203318Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:00:07.170204436Z [err]      'x-ratelimit-reset-tokens': '31ms',
+2025-12-12T22:00:07.170209635Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:00:07.170218646Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:00:07.170219140Z [err]      'x-request-id': 'req_e24131a96d4f47bb837c9cd9bd929147'
+2025-12-12T22:00:07.170224967Z [inf]  [Engine] ✅ Position closed: BTCUSDT | PnL: +Infinity% ($NaN) | Reason: sl
+2025-12-12T22:00:07.170227890Z [err]    },
+2025-12-12T22:00:07.170236492Z [err]    request_id: 'req_e24131a96d4f47bb837c9cd9bd929147',
+2025-12-12T22:00:07.170240945Z [err]    error: {
+2025-12-12T22:00:07.170244809Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-12T22:00:09.296788974Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T22:00:09.296797508Z [inf]  [Engine]   └─ No entro aún porque las señales están mezcladas y el punto de entrada no ofrece asimetría clara para...
+2025-12-12T22:00:16.973111300Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:16.973116480Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:16.973121152Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:16.973126188Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:25.424934231Z [inf]  [Engine] BTCUSDT: SELL (62%)
+2025-12-12T22:00:25.424943039Z [inf]  [Engine]   └─ Tendencia: el precio está por debajo de EMA9, EMA21 y SMA50 con alineación bajista perfecta, y ADX 2...
+2025-12-12T22:00:25.424948159Z [inf]  [Engine]   └─ Size: 15% | Leverage: 4x
+2025-12-12T22:00:25.424952965Z [inf]  [Engine]   └─ SL: $90460.00 | TP: $89860.00
+2025-12-12T22:00:27.119446008Z [inf]  [Engine]   └─ Capital used: $642.07 (15%)
+2025-12-12T22:00:27.119450798Z [inf]  [Engine]   └─ Position value: $2568.28
+2025-12-12T22:00:27.119479598Z [inf]  [Engine] Opening SELL BTCUSDT:
+2025-12-12T22:00:27.119492638Z [inf]  [Engine]   └─ Quantity: 0.028 @ ~$90148.10
+2025-12-12T22:00:27.119500262Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-12T22:00:27.583965071Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:27.583975773Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:27.583982421Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:27.583988793Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:28.170091189Z [inf]  [Engine] Position opened: SHORT BTCUSDT @ $0.00
+2025-12-12T22:00:28.170099155Z [inf]  [Engine]   └─ SL: $90460.00 (Infinity%)
+2025-12-12T22:00:28.170104658Z [inf]  [Engine]   └─ TP: $89860.00 (Infinity%)
+2025-12-12T22:00:29.041263569Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:29.041271375Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:29.041279067Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:29.041285547Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:49.069882648Z [inf]  [Engine]   └─ SL: $3104.00 | TP: $3057.70
+2025-12-12T22:00:49.069893673Z [inf]  [Engine] ETHUSDT: Updated SL: $3104.00 | TP: $3057.70
+2025-12-12T22:00:49.069900746Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:49.069907335Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:49.069914726Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:49.069921629Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:49.069982154Z [inf]  [Engine] ETHUSDT: SELL (63%)
+2025-12-12T22:00:49.069988189Z [inf]  [Engine]   └─ Contexto favorece continuación bajista de corto plazo para scalp: (1) Tendencia: alineación bajista ...
+2025-12-12T22:00:49.069993998Z [inf]  [Engine]   └─ Size: 10% | Leverage: 3x
+2025-12-12T22:00:57.133212031Z [inf]  [Engine] BTCUSDT: BUY (62%)
+2025-12-12T22:00:57.133220683Z [inf]  [Engine]   └─ Aunque el régimen y la alineación EMA9<EMA21<SMA50 son bajistas (precio por debajo de todas), hay se...
+2025-12-12T22:00:57.133226752Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T22:00:57.133232925Z [inf]  [Engine]   └─ SL: $89780.00 | TP: $90610.00
+2025-12-12T22:00:57.133240593Z [inf]  [Engine] BTCUSDT: Updated SL: $89780.00 | TP: $90610.00
+2025-12-12T22:00:57.683885353Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:57.683891815Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:57.683896876Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:57.683901435Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:00:58.473203265Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:00:58.473206852Z [err]  [GPT] Learning error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-12T22:00:58.473217491Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:00:58.473226425Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:00:58.473234258Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:00:58.473242247Z [err]      'cf-ray': '9ad07f64de6880fd-SJC',
+2025-12-12T22:00:58.473242963Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:00:58.473251909Z [err]      at async GPTEngine.learnFromTrade (/app/bot/dist/services/gpt/engine.js:344:30)
+2025-12-12T22:00:58.473262061Z [err]      at async TradingEngine.closePosition (/app/bot/dist/services/trading/engine.js:401:28)
+2025-12-12T22:00:58.473263687Z [err]      connection: 'keep-alive',
+2025-12-12T22:00:58.473272044Z [err]      at async TradingEngine.checkPositionExit (/app/bot/dist/services/trading/engine.js:343:13) {
+2025-12-12T22:00:58.473280930Z [err]    status: 400,
+2025-12-12T22:00:58.473283985Z [err]      'content-length': '245',
+2025-12-12T22:00:58.473292727Z [err]    headers: {
+2025-12-12T22:00:58.473299462Z [err]      'content-type': 'application/json',
+2025-12-12T22:00:58.473304488Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:00:58.473315226Z [err]      date: 'Fri, 12 Dec 2025 22:00:58 GMT',
+2025-12-12T22:00:58.473319390Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:00:58.473330554Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:00:58.473333172Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:00:58.473342658Z [err]      'openai-processing-ms': '8',
+2025-12-12T22:00:58.475493650Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:00:58.475502436Z [err]      server: 'cloudflare',
+2025-12-12T22:00:58.475507844Z [err]      'set-cookie': '__cf_bm=HkvM1aDKMzwkuOqhRxEOz.FIzKXxNI8yFbzM8ts8x9s-1765576858-1.0.1.1-vz1yxqnIyu.uE1Br5APbioG6rlIbcQqDQUbeicNyek87eRjvk2Qo56E2YUh4DgYXf9PIWjuEi6ZJMt33.ekp8Is6Fw07YLikbhPTdcs8nis; path=/; expires=Fri, 12-Dec-25 22:30:58 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=.yCCresTxvMSQ4u2WgRmtyu7oOZipHtKqQtgBPXGB7o-1765576858467-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:00:58.475513281Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:00:58.475518226Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:00:58.475526093Z [err]      'x-envoy-upstream-service-time': '37',
+2025-12-12T22:00:58.475532515Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:00:58.475537906Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:00:58.475542987Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:00:58.475547975Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:00:58.475552536Z [err]      'x-ratelimit-remaining-tokens': '499736',
+2025-12-12T22:00:58.475557268Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:00:58.475561876Z [err]      'x-ratelimit-reset-tokens': '31ms',
+2025-12-12T22:00:58.475566662Z [err]      'x-request-id': 'req_07de4fa7bd9949d9a67640bdc5a1e5b8'
+2025-12-12T22:00:58.475571140Z [err]    },
+2025-12-12T22:00:58.475576365Z [err]    request_id: 'req_07de4fa7bd9949d9a67640bdc5a1e5b8',
+2025-12-12T22:00:58.475581010Z [err]    error: {
+2025-12-12T22:00:58.475585994Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-12T22:00:58.475590076Z [err]      type: 'invalid_request_error',
+2025-12-12T22:00:58.476922586Z [err]      param: 'max_tokens',
+2025-12-12T22:00:58.476928561Z [err]      code: 'unsupported_parameter'
+2025-12-12T22:00:58.476934128Z [err]    },
+2025-12-12T22:00:58.476940927Z [err]    code: 'unsupported_parameter',
+2025-12-12T22:00:58.476945553Z [err]    param: 'max_tokens',
+2025-12-12T22:00:58.476949664Z [err]    type: 'invalid_request_error'
+2025-12-12T22:00:58.476954826Z [err]  }
+2025-12-12T22:00:59.117332754Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:00:59.117340583Z [inf]  [Engine] ❌ Position closed: BTCUSDT | PnL: -Infinity% ($NaN) | Reason: sl
+2025-12-12T22:01:07.532619856Z [inf]  [Engine] ETHUSDT: BUY (58%)
+2025-12-12T22:01:07.532625365Z [inf]  [Engine]   └─ Aunque la estructura de medias es bajista (precio < EMA21 y < SMA50 con alineación bajista) y el ADX...
+2025-12-12T22:01:07.532644122Z [inf]  [Engine]   └─ Size: 10% | Leverage: 3x
+2025-12-12T22:01:07.532650913Z [inf]  [Engine]   └─ SL: $3064.90 | TP: $3103.50
+2025-12-12T22:01:07.532657286Z [inf]  [Engine] ETHUSDT: Updated SL: $3064.90 | TP: $3103.50
+2025-12-12T22:01:09.105909765Z [err]  [GPT] Learning error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-12T22:01:09.105914357Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:01:09.105918193Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:01:09.105921920Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:01:09.105925699Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:01:09.106693780Z [err]      at async GPTEngine.learnFromTrade (/app/bot/dist/services/gpt/engine.js:344:30)
+2025-12-12T22:01:09.106704892Z [err]      at async TradingEngine.closePosition (/app/bot/dist/services/trading/engine.js:401:28)
+2025-12-12T22:01:09.106709173Z [err]      at async TradingEngine.checkPositionExit (/app/bot/dist/services/trading/engine.js:343:13) {
+2025-12-12T22:01:09.106712946Z [err]    status: 400,
+2025-12-12T22:01:09.106716669Z [err]    headers: {
+2025-12-12T22:01:09.106720795Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:01:09.106724358Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:01:09.106728255Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:01:09.106731920Z [err]      'cf-ray': '9ad07fa679b6cfd9-SJC',
+2025-12-12T22:01:09.106735657Z [err]      connection: 'keep-alive',
+2025-12-12T22:01:09.106739144Z [err]      'content-length': '245',
+2025-12-12T22:01:09.106742517Z [err]      'content-type': 'application/json',
+2025-12-12T22:01:09.106746776Z [err]      date: 'Fri, 12 Dec 2025 22:01:08 GMT',
+2025-12-12T22:01:09.106750306Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:01:09.106753766Z [err]      'openai-processing-ms': '8',
+2025-12-12T22:01:09.106757157Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:01:09.107105511Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:01:09.107109523Z [err]      server: 'cloudflare',
+2025-12-12T22:01:09.107113348Z [err]      'set-cookie': '__cf_bm=90mvdIwnxPa5o8gPvMIhduOA4ZHjzO2tPa.dx_dNkgg-1765576868-1.0.1.1-DXFI68QblHQXOhyINkNugyYMvlyUIBuq.FdKKZUa3bfUKjgkbn6GNofWXyWwO35fkjiWPd5TQNivRJxfX4HMQEsgB6ZW9oh.ZAeBq57WWg8; path=/; expires=Fri, 12-Dec-25 22:31:08 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=DlIm8by5YVb12PKm7LOVXPuban2ryFJ7gMOOvixPjH0-1765576868964-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:01:09.107117028Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:01:09.107120939Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:01:09.107124582Z [err]      'x-envoy-upstream-service-time': '21',
+2025-12-12T22:01:09.107128214Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:01:09.108254270Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:01:09.108264033Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:01:09.108269919Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:01:09.108274187Z [err]      'x-ratelimit-remaining-tokens': '499737',
+2025-12-12T22:01:09.108277936Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:01:09.108282741Z [err]      'x-ratelimit-reset-tokens': '31ms',
+2025-12-12T22:01:09.108287451Z [err]      'x-request-id': 'req_6fe09f9314af49d896b2fc2cedbc275b'
+2025-12-12T22:01:09.108291201Z [err]    },
+2025-12-12T22:01:09.108295135Z [err]    request_id: 'req_6fe09f9314af49d896b2fc2cedbc275b',
+2025-12-12T22:01:09.108299933Z [err]    error: {
+2025-12-12T22:01:09.108304019Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-12T22:01:09.108307957Z [err]      type: 'invalid_request_error',
+2025-12-12T22:01:09.108414192Z [err]      param: 'max_tokens',
+2025-12-12T22:01:09.108420900Z [err]      code: 'unsupported_parameter'
+2025-12-12T22:01:09.108428745Z [err]    },
+2025-12-12T22:01:09.108435640Z [err]    code: 'unsupported_parameter',
+2025-12-12T22:01:09.108442113Z [err]    param: 'max_tokens',
+2025-12-12T22:01:09.108447972Z [err]    type: 'invalid_request_error'
+2025-12-12T22:01:09.108453889Z [err]  }
+2025-12-12T22:01:09.108459425Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:01:09.252707297Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:01:09.435962163Z [inf]  [Engine] ❌ Position closed: ETHUSDT | PnL: -Infinity% ($NaN) | Reason: sl
+2025-12-12T22:01:17.147545755Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:17.147550566Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:17.147555470Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:17.147560428Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:27.124859410Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-12T22:01:27.124865820Z [inf]  [Engine]   └─ Aunque el régimen y la estructura de medias es bajista (precio por debajo de EMA9/EMA21/SMA50 con al...
+2025-12-12T22:01:27.124871524Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T22:01:27.124877640Z [inf]  [Engine]   └─ SL: $89860.00 | TP: $90620.00
+2025-12-12T22:01:28.634042291Z [inf]  [Engine] Opening BUY BTCUSDT:
+2025-12-12T22:01:28.634049399Z [inf]  [Engine]   └─ Quantity: 0.025 @ ~$90154.00
+2025-12-12T22:01:28.634054473Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-12T22:01:28.634060974Z [inf]  [Engine]   └─ Capital used: $562.79 (12%)
+2025-12-12T22:01:28.634067051Z [inf]  [Engine]   └─ Position value: $2251.16
+2025-12-12T22:01:29.177960843Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:29.177968814Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:29.177975093Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:29.177981213Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:29.644408838Z [inf]  [Engine] Position opened: LONG BTCUSDT @ $0.00
+2025-12-12T22:01:29.644421853Z [inf]  [Engine]   └─ SL: $89860.00 (Infinity%)
+2025-12-12T22:01:29.644428125Z [inf]  [Engine]   └─ TP: $90620.00 (Infinity%)
+2025-12-12T22:01:30.197140989Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:30.197146827Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:30.197152589Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:30.197158298Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:50.220767673Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:50.220780575Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:50.220789125Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:50.220839290Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T22:01:50.220844429Z [inf]  [Engine]   └─ La estructura sigue siendo bajista y fuerte (ADX 39.5 + alineación bajista perfecta: precio por deba...
+2025-12-12T22:01:50.220849304Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:57.166633233Z [inf]  [Engine]   └─ Contexto mixto pero con setup de scalping a favor de rebote/mean reversion: (1) Order book extremada...
+2025-12-12T22:01:57.166642346Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T22:01:57.166649343Z [inf]  [Engine]   └─ SL: $89790.00 | TP: $90520.00
+2025-12-12T22:01:57.166653334Z [inf]  [Engine] BTCUSDT: Updated SL: $89790.00 | TP: $90520.00
+2025-12-12T22:01:57.166686926Z [inf]  [Engine] BTCUSDT: BUY (56%)
+2025-12-12T22:01:57.497596224Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:57.497602459Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:57.497607064Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:01:57.497611107Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:07.205996293Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T22:02:07.206001764Z [inf]  [Engine]   └─ No entro todavía porque las señales están mezcladas y venimos de 2 pérdidas consecutivas (deberíamos...
+2025-12-12T22:02:26.868971630Z [inf]  [Engine]   └─ SL: $89740.00 | TP: $90630.00
+2025-12-12T22:02:26.868985075Z [inf]  [Engine] BTCUSDT: Updated SL: $89740.00 | TP: $90630.00
+2025-12-12T22:02:26.868991296Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89746.01
+2025-12-12T22:02:26.868997642Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:02:26.869022209Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:26.869026897Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:26.869031212Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:26.869035638Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:26.869040280Z [inf]  [Engine] BTCUSDT: BUY (56%)
+2025-12-12T22:02:26.869044758Z [inf]  [Engine]   └─ Contexto mixto pero con edge para scalp long: (1) Order book con dominio comprador muy marcado (93.9...
+2025-12-12T22:02:26.869050374Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T22:02:29.258630824Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89747.01
+2025-12-12T22:02:29.258641876Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89747.31
+2025-12-12T22:02:29.258649904Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89747.51
+2025-12-12T22:02:29.258656325Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89747.71
+2025-12-12T22:02:29.258663080Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89747.81
+2025-12-12T22:02:29.258671389Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89748.01
+2025-12-12T22:02:29.258671525Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89746.11
+2025-12-12T22:02:29.258679576Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89746.21
+2025-12-12T22:02:29.258680020Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89748.10
+2025-12-12T22:02:29.258687889Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89746.41
+2025-12-12T22:02:29.258687953Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89748.20
+2025-12-12T22:02:29.258694721Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89746.51
+2025-12-12T22:02:29.258905817Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89748.30
+2025-12-12T22:02:29.258911324Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89748.50
+2025-12-12T22:02:29.258915887Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89748.60
+2025-12-12T22:02:29.258920499Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89749.00
+2025-12-12T22:02:29.258925055Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89749.10
+2025-12-12T22:02:29.262209744Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89749.30
+2025-12-12T22:02:29.262223005Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89749.40
+2025-12-12T22:02:29.262230214Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89749.50
+2025-12-12T22:02:29.262238543Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89749.60
+2025-12-12T22:02:29.262245933Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89749.99
+2025-12-12T22:02:29.262629434Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89750.19
+2025-12-12T22:02:29.262636775Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89750.39
+2025-12-12T22:02:29.262643591Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89750.49
+2025-12-12T22:02:29.262650311Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89750.59
+2025-12-12T22:02:29.262657843Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89750.79
+2025-12-12T22:02:29.262664911Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89750.89
+2025-12-12T22:02:29.262673135Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89750.99
+2025-12-12T22:02:29.262681514Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89751.09
+2025-12-12T22:02:29.262688996Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89751.19
+2025-12-12T22:02:29.262695814Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89751.49
+2025-12-12T22:02:29.262703022Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89751.59
+2025-12-12T22:02:29.262709908Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89751.89
+2025-12-12T22:02:29.262715472Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89751.99
+2025-12-12T22:02:29.262722490Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89752.08
+2025-12-12T22:02:29.262729874Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89752.38
+2025-12-12T22:02:29.262737015Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89752.48
+2025-12-12T22:02:29.267929959Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89752.78
+2025-12-12T22:02:29.270082254Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89752.88
+2025-12-12T22:02:29.284706996Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89752.98
+2025-12-12T22:02:29.284714866Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89753.48
+2025-12-12T22:02:29.286522783Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89753.58
+2025-12-12T22:02:29.286534324Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89753.68
+2025-12-12T22:02:29.286540191Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89753.78
+2025-12-12T22:02:29.286546375Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89753.98
+2025-12-12T22:02:29.286552676Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89754.47
+2025-12-12T22:02:29.292246898Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89754.57
+2025-12-12T22:02:29.292255850Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89754.97
+2025-12-12T22:02:29.404676985Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89755.37
+2025-12-12T22:02:29.671315955Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89755.47
+2025-12-12T22:02:30.432484965Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89755.57
+2025-12-12T22:02:30.432491477Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89755.67
+2025-12-12T22:02:30.434249647Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89755.96
+2025-12-12T22:02:30.434255591Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89756.26
+2025-12-12T22:02:30.434260973Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89756.46
+2025-12-12T22:02:30.434265803Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89756.56
+2025-12-12T22:02:30.434273022Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89756.96
+2025-12-12T22:02:30.436964549Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89757.96
+2025-12-12T22:02:30.436976418Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89758.05
+2025-12-12T22:02:30.436981780Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89757.06
+2025-12-12T22:02:30.436985712Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89758.45
+2025-12-12T22:02:30.436989575Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89757.46
+2025-12-12T22:02:30.436994116Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89757.56
+2025-12-12T22:02:30.436998116Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89757.66
+2025-12-12T22:02:30.437002094Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89757.76
+2025-12-12T22:02:30.437006001Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89757.86
+2025-12-12T22:02:30.451674401Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89758.55
+2025-12-12T22:02:30.451682609Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89758.95
+2025-12-12T22:02:30.461552191Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89759.35
+2025-12-12T22:02:30.461564568Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89759.45
+2025-12-12T22:02:30.461570462Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89759.85
+2025-12-12T22:02:30.611066685Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89759.94
+2025-12-12T22:02:30.652692621Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89760.04
+2025-12-12T22:02:30.838345585Z [inf]  [Engine] BTCUSDT: Trailing SL updated to $89760.14
+2025-12-12T22:02:35.424863198Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T22:02:35.424867256Z [inf]  [Engine]   └─ Aunque la tendencia de fondo es bajista (alineación EMA9<EMA21<SMA50 y precio bajo SMA50) y el ADX 3...
+2025-12-12T22:02:55.425170673Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:55.425179006Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:55.425184572Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-12T22:02:56.417573468Z [inf]  [Engine] BTCUSDT: SELL (63%)
+2025-12-12T22:02:56.417580059Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo bajista aprovechable para scalp. 1) Tendencia: alineación de medias en...
+2025-12-12T22:02:56.417586408Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T22:02:56.417591408Z [inf]  [Engine]   └─ SL: $90510.00 | TP: $89860.00
+2025-12-12T22:02:56.417597402Z [inf]  [Engine] BTCUSDT: Updated SL: $90510.00 | TP: $89860.00
+2025-12-12T22:02:56.637082224Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:56.637095140Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:56.637100571Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:56.637104832Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:02:57.809172255Z [err]      'cf-ray': '9ad0824ebd39cf2f-SJC',
+2025-12-12T22:02:57.809181732Z [err]      connection: 'keep-alive',
+2025-12-12T22:02:57.809186617Z [err]      'content-length': '245',
+2025-12-12T22:02:57.809190514Z [err]      'content-type': 'application/json',
+2025-12-12T22:02:57.809194695Z [err]      date: 'Fri, 12 Dec 2025 22:02:57 GMT',
+2025-12-12T22:02:57.809199632Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:02:57.809203639Z [err]      'openai-processing-ms': '9',
+2025-12-12T22:02:57.809207585Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:02:57.809217524Z [err]  [GPT] Learning error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-12T22:02:57.809222211Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:02:57.809226658Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:02:57.809231065Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:02:57.809235195Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:02:57.809239443Z [err]      at async GPTEngine.learnFromTrade (/app/bot/dist/services/gpt/engine.js:344:30)
+2025-12-12T22:02:57.809243654Z [err]      at async TradingEngine.closePosition (/app/bot/dist/services/trading/engine.js:401:28)
+2025-12-12T22:02:57.809248947Z [err]      at async TradingEngine.checkPositionExit (/app/bot/dist/services/trading/engine.js:339:13) {
+2025-12-12T22:02:57.809253351Z [err]    status: 400,
+2025-12-12T22:02:57.809257525Z [err]    headers: {
+2025-12-12T22:02:57.809261271Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:02:57.809265210Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:02:57.809269118Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:02:57.810355001Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:02:57.810361619Z [err]      server: 'cloudflare',
+2025-12-12T22:02:57.810364214Z [err]      'x-request-id': 'req_143d2326bada4a5b9bf78fd070742f2e'
+2025-12-12T22:02:57.810367114Z [err]      'set-cookie': '__cf_bm=cFxXc5u76RApbgEZ3Wakb5hkTgVVj5Iok.9J_zFUtpc-1765576977-1.0.1.1-6mENfqksGJtXaztV5FfLSA8xCwUlFSBrp83_FPuA0_YEk3U8Pov5B4JdYI5kNt4sOYt_NwrLQfFKaajtDZiH2TZCgQGlTsGQwHQ_qYKPHOA; path=/; expires=Fri, 12-Dec-25 22:32:57 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=0Cqpqg9H8s871xVTqhW8wwy_Rp5tvk4JowU3RFkbt7M-1765576977803-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:02:57.810372467Z [err]    },
+2025-12-12T22:02:57.810374332Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:02:57.810379253Z [err]    request_id: 'req_143d2326bada4a5b9bf78fd070742f2e',
+2025-12-12T22:02:57.810381736Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:02:57.810387005Z [err]    error: {
+2025-12-12T22:02:57.810387415Z [err]      'x-envoy-upstream-service-time': '23',
+2025-12-12T22:02:57.810393348Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:02:57.810393683Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-12T22:02:57.810399212Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:02:57.810401820Z [err]      type: 'invalid_request_error',
+2025-12-12T22:02:57.810403836Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:02:57.810408205Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:02:57.810411922Z [err]      'x-ratelimit-remaining-tokens': '499734',
+2025-12-12T22:02:57.810416335Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:02:57.810420079Z [err]      'x-ratelimit-reset-tokens': '31ms',
+2025-12-12T22:02:57.811744346Z [err]      param: 'max_tokens',
+2025-12-12T22:02:57.811754718Z [err]      code: 'unsupported_parameter'
+2025-12-12T22:02:57.811776661Z [err]    },
+2025-12-12T22:02:57.811786796Z [err]    code: 'unsupported_parameter',
+2025-12-12T22:02:57.811792867Z [err]    param: 'max_tokens',
+2025-12-12T22:02:57.811801529Z [err]    type: 'invalid_request_error'
+2025-12-12T22:02:57.811808226Z [err]  }
+2025-12-12T22:02:58.332642592Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:02:58.332688498Z [inf]  [Engine] ✅ Position closed: BTCUSDT | PnL: +Infinity% ($NaN) | Reason: sl
+2025-12-12T22:03:06.713094312Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T22:03:06.713100940Z [inf]  [Engine]   └─ Aunque hay señales de rebote intradía (precio ligeramente arriba de EMA9, MACD histograma positivo y...
+2025-12-12T22:03:26.711348156Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:26.711358211Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:26.711370134Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:27.428569857Z [inf]  [Engine]   └─ SL: $89860.00 | TP: $90615.00
+2025-12-12T22:03:27.428645688Z [inf]  [Engine] BTCUSDT: BUY (56%)
+2025-12-12T22:03:27.428654050Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo de rebote intradía: (1) Régimen declarado en rango y precio muy cerca ...
+2025-12-12T22:03:27.428660346Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T22:03:28.709415146Z [inf]  [Engine] Opening BUY BTCUSDT:
+2025-12-12T22:03:28.709424099Z [inf]  [Engine]   └─ Quantity: 0.025 @ ~$90208.20
+2025-12-12T22:03:28.709429894Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-12T22:03:28.709434845Z [inf]  [Engine]   └─ Capital used: $562.68 (12%)
+2025-12-12T22:03:28.709439909Z [inf]  [Engine]   └─ Position value: $2250.73
+2025-12-12T22:03:29.450740113Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:29.450745985Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:29.450747772Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:29.450752887Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:29.715732937Z [inf]  [Engine] Position opened: LONG BTCUSDT @ $0.00
+2025-12-12T22:03:29.715742589Z [inf]  [Engine]   └─ SL: $89860.00 (Infinity%)
+2025-12-12T22:03:29.715749685Z [inf]  [Engine]   └─ TP: $90615.00 (Infinity%)
+2025-12-12T22:03:30.544001286Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:30.544007006Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:30.544012524Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:30.544018737Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:50.136845619Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T22:03:50.136854613Z [inf]  [Engine]   └─ No entro aún porque las señales están mezcladas y venimos de 2 pérdidas consecutivas (según reglas, ...
+2025-12-12T22:03:50.136860958Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:50.136865444Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:50.136869983Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:50.136874114Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:57.534168417Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T22:03:57.534175144Z [inf]  [Engine]   └─ SL: $90510.00 | TP: $89860.00
+2025-12-12T22:03:57.534180825Z [inf]  [Engine] BTCUSDT: Updated SL: $90510.00 | TP: $89860.00
+2025-12-12T22:03:57.534192013Z [inf]  [Engine] BTCUSDT: SELL (56%)
+2025-12-12T22:03:57.534201129Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo bajista aprovechable para scalp: (1) Tendencia: alineación de medias e...
+2025-12-12T22:03:58.051247792Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:58.051253782Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:58.051258142Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:58.051268398Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:03:58.081887843Z [err]      at async TradingEngine.closePosition (/app/bot/dist/services/trading/engine.js:401:28)
+2025-12-12T22:03:58.081896760Z [err]      at async TradingEngine.checkPositionExit (/app/bot/dist/services/trading/engine.js:339:13) {
+2025-12-12T22:03:58.081903832Z [err]    status: 400,
+2025-12-12T22:03:58.081912107Z [err]    headers: {
+2025-12-12T22:03:58.081912862Z [err]      'content-length': '245',
+2025-12-12T22:03:58.081920100Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:03:58.081920433Z [err]      'content-type': 'application/json',
+2025-12-12T22:03:58.081927855Z [err]      date: 'Fri, 12 Dec 2025 22:03:58 GMT',
+2025-12-12T22:03:58.081928544Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:03:58.081935545Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:03:58.081937364Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:03:58.081944733Z [err]      'cf-ray': '9ad083c77a97eb29-SJC',
+2025-12-12T22:03:58.081945081Z [err]      'openai-processing-ms': '7',
+2025-12-12T22:03:58.081951602Z [err]      connection: 'keep-alive',
+2025-12-12T22:03:58.081955445Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:03:58.081996506Z [err]  [GPT] Learning error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-12T22:03:58.082002767Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:03:58.082009376Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:03:58.082015604Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:03:58.082022161Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:03:58.082028102Z [err]      at async GPTEngine.learnFromTrade (/app/bot/dist/services/gpt/engine.js:344:30)
+2025-12-12T22:03:58.083626849Z [err]    error: {
+2025-12-12T22:03:58.083627611Z [err]      'x-request-id': 'req_16c64e361e024bfa98e35e46cc5c4107'
+2025-12-12T22:03:58.083637846Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-12T22:03:58.083638851Z [err]    },
+2025-12-12T22:03:58.083643081Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:03:58.083646836Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:03:58.083648257Z [err]      type: 'invalid_request_error',
+2025-12-12T22:03:58.083648627Z [err]    request_id: 'req_16c64e361e024bfa98e35e46cc5c4107',
+2025-12-12T22:03:58.083651692Z [err]      server: 'cloudflare',
+2025-12-12T22:03:58.083659319Z [err]      'set-cookie': '__cf_bm=46NcbdGJMSanYN8GIafRJaOZk1ovcvEhzkrP3XKpAic-1765577038-1.0.1.1-CcMMiuAt3Pw4HS7k9Hz6pXc0aAiL3MFt8TSNgX9HvLOFd5morBrifPp3GlgbuehbOYba.Z0MX703Gj9lI9biC5IKeQgy7Hb4JmJ8psNL5FI; path=/; expires=Fri, 12-Dec-25 22:33:58 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=2anrBeimQjvNxVaRfWyWVMZYIVHfJbukN8icEMQme4Q-1765577038073-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:03:58.083659597Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:03:58.083667935Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:03:58.083669271Z [err]      'x-ratelimit-remaining-tokens': '499735',
+2025-12-12T22:03:58.083673030Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:03:58.083678048Z [err]      'x-envoy-upstream-service-time': '21',
+2025-12-12T22:03:58.083682559Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:03:58.083686417Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:03:58.083733028Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:03:58.083739462Z [err]      'x-ratelimit-reset-tokens': '31ms',
+2025-12-12T22:03:58.085193186Z [err]      param: 'max_tokens',
+2025-12-12T22:03:58.085200016Z [err]      code: 'unsupported_parameter'
+2025-12-12T22:03:58.085207291Z [err]    },
+2025-12-12T22:03:58.085214563Z [err]    code: 'unsupported_parameter',
+2025-12-12T22:03:58.085220935Z [err]    param: 'max_tokens',
+2025-12-12T22:03:58.085226395Z [err]    type: 'invalid_request_error'
+2025-12-12T22:03:58.085232327Z [err]  }
+2025-12-12T22:03:58.573669196Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:03:58.573707846Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-12T22:03:58.622066402Z [inf]  [Engine] ✅ Position closed: BTCUSDT | PnL: +Infinity% ($NaN) | Reason: sl
+2025-12-12T22:04:06.937275473Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T22:04:06.937283801Z [inf]  [Engine]   └─ Aunque el order book muestra dominio comprador (imbalance ~69% y presión compradora 67%), el context...
+2025-12-12T22:04:16.869793376Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:16.869801475Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:16.869823406Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:16.869827438Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:36.870451869Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:36.870454067Z [inf]  [Engine] BTCUSDT: SELL (62%)
+2025-12-12T22:04:36.870462221Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo bajista para scalp: (1) Tendencia: alineación de medias en "bajista pe...
+2025-12-12T22:04:36.870471835Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T22:04:36.870475163Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:36.870478823Z [inf]  [Engine]   └─ SL: $90820.00 | TP: $89980.00
+2025-12-12T22:04:36.870487962Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:36.870490416Z [inf]  [Engine] Opening SELL BTCUSDT:
+2025-12-12T22:04:36.870497674Z [inf]  [Engine]   └─ Quantity: 0.025 @ ~$90205.30
+2025-12-12T22:04:36.870501739Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-12T22:04:36.870510015Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:36.870510183Z [inf]  [Engine]   └─ Capital used: $562.40 (12%)
+2025-12-12T22:04:36.870524679Z [inf]  [Engine]   └─ Position value: $2249.58
+2025-12-12T22:04:36.870530579Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:36.870534995Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:36.870539960Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:36.870544670Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:36.870548903Z [inf]  [Engine] Position opened: SHORT BTCUSDT @ $0.00
+2025-12-12T22:04:36.870553274Z [inf]  [Engine]   └─ SL: $90820.00 (Infinity%)
+2025-12-12T22:04:36.870557782Z [inf]  [Engine]   └─ TP: $89980.00 (Infinity%)
+2025-12-12T22:04:41.646230806Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T22:04:41.646237742Z [inf]  [Engine]   └─ No entro aún porque las señales están mezcladas y venimos de 2 pérdidas consecutivas (deberíamos ser...
+2025-12-12T22:04:46.912143704Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:46.912148285Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:46.912153397Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:46.912158057Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:55.759118487Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-12T22:04:55.759127643Z [inf]  [Engine]   └─ Contexto mixto pero con edge de scalping long en rango: (1) Régimen lateral y precio dentro de BB co...
+2025-12-12T22:04:55.759134498Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T22:04:55.759139595Z [inf]  [Engine]   └─ SL: $89720.00 | TP: $90620.00
+2025-12-12T22:04:55.759147596Z [inf]  [Engine] BTCUSDT: Updated SL: $89720.00 | TP: $90620.00
+2025-12-12T22:04:56.651936633Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:56.651944215Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:56.651950650Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:56.651956836Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:04:56.713582144Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-12T22:04:56.713608873Z [err]  [GPT] Learning error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-12T22:04:56.713615007Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-12T22:04:56.713620430Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-12T22:04:56.713627949Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-12T22:04:56.713633092Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-12T22:04:56.713638520Z [err]      at async GPTEngine.learnFromTrade (/app/bot/dist/services/gpt/engine.js:344:30)
+2025-12-12T22:04:56.713647942Z [err]      at async TradingEngine.closePosition (/app/bot/dist/services/trading/engine.js:401:28)
+2025-12-12T22:04:56.713652910Z [err]      at async TradingEngine.checkPositionExit (/app/bot/dist/services/trading/engine.js:343:13) {
+2025-12-12T22:04:56.713658386Z [err]    status: 400,
+2025-12-12T22:04:56.713663589Z [err]    headers: {
+2025-12-12T22:04:56.713668811Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-12T22:04:56.713674600Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-12T22:04:56.713682280Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-12T22:04:56.713690329Z [err]      'cf-ray': '9ad08535dea3300b-SJC',
+2025-12-12T22:04:56.713695360Z [err]      connection: 'keep-alive',
+2025-12-12T22:04:56.713700512Z [err]      'content-length': '245',
+2025-12-12T22:04:56.713705506Z [err]      'content-type': 'application/json',
+2025-12-12T22:04:56.713710377Z [err]      date: 'Fri, 12 Dec 2025 22:04:56 GMT',
+2025-12-12T22:04:56.713715440Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-12T22:04:56.713720444Z [err]      'openai-processing-ms': '8',
+2025-12-12T22:04:56.714669263Z [err]      'openai-version': '2020-10-01',
+2025-12-12T22:04:56.714676265Z [err]      server: 'cloudflare',
+2025-12-12T22:04:56.714679044Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-12T22:04:56.714682770Z [err]      'set-cookie': '__cf_bm=bdzzOUd0WdK3bF5pYGrCKmKssLbiLBRggI6sm7scGpg-1765577096-1.0.1.1-1QXtvoVTplQ5T_zLwRFQT.DsGRVHYu.ob9ahn8PrHCBHXl0EuVRx3k7yxAK0l8vpPgsXpvf3AmLCZjo9iOPdwrYABOFj0gB6DrTnpDjS1OA; path=/; expires=Fri, 12-Dec-25 22:34:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=LtLViNDLsoijylhISrQaZOfcXxCOXAXC_4kuesQ03FA-1765577096705-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-12T22:04:56.714689057Z [err]      type: 'invalid_request_error',
+2025-12-12T22:04:56.714689802Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-12T22:04:56.714694347Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-12T22:04:56.714697519Z [err]      'x-content-type-options': 'nosniff',
+2025-12-12T22:04:56.714702227Z [err]      'x-envoy-upstream-service-time': '23',
+2025-12-12T22:04:56.714707065Z [err]      'x-ratelimit-remaining-tokens': '499737',
+2025-12-12T22:04:56.714707957Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-12T22:04:56.714713809Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-12T22:04:56.714717995Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-12T22:04:56.714719687Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-12T22:04:56.714726769Z [err]      'x-ratelimit-reset-tokens': '31ms',
+2025-12-12T22:04:56.714733124Z [err]      'x-request-id': 'req_fc47acf473094281836ed7fdeea0f9b4'
+2025-12-12T22:04:56.714739575Z [err]    },
+2025-12-12T22:04:56.714746431Z [err]    request_id: 'req_fc47acf473094281836ed7fdeea0f9b4',
+2025-12-12T22:04:56.714753688Z [err]    error: {
+2025-12-12T22:04:56.716002654Z [err]      param: 'max_tokens',
+2025-12-12T22:04:56.716009013Z [err]      code: 'unsupported_parameter'
+2025-12-12T22:04:56.716013408Z [err]    },
+2025-12-12T22:04:56.716017459Z [err]    code: 'unsupported_parameter',
+2025-12-12T22:04:56.716021693Z [err]    param: 'max_tokens',
+2025-12-12T22:04:56.716026012Z [err]    type: 'invalid_request_error'
+2025-12-12T22:04:56.716030415Z [err]  }
+2025-12-12T22:04:57.248910244Z [inf]  [Engine] ❌ Position closed: BTCUSDT | PnL: -Infinity% ($NaN) | Reason: sl
+2025-12-12T22:05:06.871831845Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-12T22:05:06.871838807Z [inf]  [Engine]   └─ Aunque el order book muestra dominio comprador (imbalance 82.3% y presión compradora 70.6%) y el MAC...
+2025-12-12T22:05:26.867606516Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:26.867615745Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:26.867624348Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:26.867630533Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:26.867637434Z [inf]  [Engine] BTCUSDT: SELL (58%)
+2025-12-12T22:05:26.867643874Z [inf]  [Engine]   └─ Contexto mixto pero con sesgo bajista de corto plazo: (1) Tendencia: alineación de medias en "bajist...
+2025-12-12T22:05:26.867650207Z [inf]  [Engine]   └─ Size: 12% | Leverage: 4x
+2025-12-12T22:05:26.867656057Z [inf]  [Engine]   └─ SL: $90440.00 | TP: $89860.00
+2025-12-12T22:05:28.179823757Z [inf]  [Engine] Opening SELL BTCUSDT:
+2025-12-12T22:05:28.179833637Z [inf]  [Engine]   └─ Quantity: 0.025 @ ~$90177.30
+2025-12-12T22:05:28.179839090Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-12T22:05:28.179843908Z [inf]  [Engine]   └─ Capital used: $562.12 (12%)
+2025-12-12T22:05:28.179852419Z [inf]  [Engine]   └─ Position value: $2248.50
+2025-12-12T22:05:28.711757145Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:28.711769708Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:28.711777962Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:28.711785545Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:29.113872800Z [inf]  [Engine] Position opened: SHORT BTCUSDT @ $0.00
+2025-12-12T22:05:29.113885999Z [inf]  [Engine]   └─ SL: $90440.00 (Infinity%)
+2025-12-12T22:05:29.113892116Z [inf]  [Engine]   └─ TP: $89860.00 (Infinity%)
+2025-12-12T22:05:30.358176848Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:30.358187456Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:30.358194474Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:30.358201170Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:50.359390914Z [inf]  [Engine] ETHUSDT: HOLD (56%)
+2025-12-12T22:05:50.359401165Z [inf]  [Engine]   └─ Aunque el order book muestra dominio claro de compradores (imbalance 147.5% y presión compradora 86....
+2025-12-12T22:05:50.359407740Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:50.359415084Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:50.359420961Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:50.359427001Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:58.203695152Z [inf]  [Engine] BTCUSDT: SELL (62%)
+2025-12-12T22:05:58.203700968Z [inf]  [Engine]   └─ Contexto favorece continuación bajista de corto plazo para scalp: (1) Tendencia: precio por debajo d...
+2025-12-12T22:05:58.203706732Z [inf]  [Engine]   └─ Size: 15% | Leverage: 4x
+2025-12-12T22:05:58.203712460Z [inf]  [Engine]   └─ SL: $90520.00 | TP: $89420.00
+2025-12-12T22:05:58.203721681Z [inf]  [Engine] BTCUSDT: Updated SL: $90520.00 | TP: $89420.00
+2025-12-12T22:05:58.816135237Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:58.816140113Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:58.816148307Z [inf]  [CryptoPanic] Using cached news data
+2025-12-12T22:05:58.816154483Z [inf]  [CryptoPanic] Using cached news data

@@ -57,7 +57,6 @@ export class GPTEngine {
           { role: 'user', content: userPrompt },
         ],
         response_format: { type: 'json_object' },
-        max_completion_tokens: 5000, // Increased for detailed analysis
         // GPT-5.2 reasoning parameter (efforts: none, minimal, low, medium, high, xhigh)
         reasoning: { effort: 'medium' } as any, // Balance of speed and quality for scalping
       });
@@ -71,7 +70,7 @@ export class GPTEngine {
 
       // Validate and cap values
       decision.leverage = Math.min(Math.max(1, decision.leverage || 3), 10); // Cap at 10x
-      decision.positionSizePercent = Math.min(Math.max(1, decision.positionSizePercent || 10), 50); // Max 50%
+      decision.positionSizePercent = Math.min(Math.max(1, decision.positionSizePercent || 3), 5); // Max 5% for scalping
 
       // Store the analysis for learning
       await this.storeAnalysis(context, decision);
@@ -91,15 +90,17 @@ BALANCE ACTUAL: $${accountBalance.toFixed(2)} USDT
 === TU ROL ===
 Eres el cerebro del bot. TÚ DECIDES TODO:
 - Si entrar o no (BUY/SELL/HOLD)
-- Cuánto del capital usar (1-50%)
+- Cuánto del capital usar (1-5% MÁXIMO por trade)
 - Qué apalancamiento usar (1-10x)
 - Dónde poner el Stop Loss (FLEXIBLE, usa tu criterio)
 - Dónde poner el Take Profit (FLEXIBLE, usa tu criterio)
 
-=== FILOSOFÍA DE TRADING ===
-- Queremos hacer MUCHOS trades pequeños, no pocos trades grandes
-- Objetivo: profits de 0.2% a 1% por trade
-- PERO si ves una oportunidad clara, puedes ser más agresivo
+=== FILOSOFÍA DE TRADING - SCALPING ===
+- SCALPING PURO: MUCHOS trades pequeños durante el día
+- Máximo 5% del capital por trade (para diversificar riesgo)
+- Objetivo: profits de 0.2% a 0.5% por trade
+- Múltiples posiciones simultáneas en diferentes pares
+- Entradas y salidas RÁPIDAS
 - Si NO estás seguro, di HOLD. Es mejor no entrar que perder.
 - APRENDE de cada trade. Revisa el historial y NO repitas errores.
 
@@ -123,11 +124,11 @@ APALANCAMIENTO (1-10x):
 - Mercado muy volátil: reduce apalancamiento
 - Después de pérdidas: reduce apalancamiento
 
-TAMAÑO DE POSICIÓN (1-50% del capital):
-- Señal muy clara: 20-50%
-- Señal normal: 10-20%
-- Señal débil pero interesante: 5-10%
-- Experimental/aprendiendo: 1-5%
+TAMAÑO DE POSICIÓN (1-5% del capital) - SCALPING:
+- Señal muy clara: 4-5%
+- Señal normal: 3-4%
+- Señal débil pero interesante: 2-3%
+- Experimental/aprendiendo: 1-2%
 
 === ANÁLISIS QUE DEBES HACER ===
 1. TENDENCIA: ¿Hay tendencia clara? (ADX, EMAs, precio vs SMA50)
@@ -164,7 +165,7 @@ TAMAÑO DE POSICIÓN (1-50% del capital):
   "stopLossPercent": porcentaje_desde_entrada,
   "takeProfit": precio_take_profit,
   "takeProfitPercent": porcentaje_desde_entrada,
-  "positionSizePercent": 1-50,
+  "positionSizePercent": 1-5,
   "leverage": 1-10,
   "riskLevel": "low" | "medium" | "high",
   "timeframe": "1m" | "5m" | "15m" | "1h",
@@ -391,7 +392,6 @@ Ejemplo: "En RSI>70 con funding alto, esperar confirmación de reversión antes 
       const response = await this.client.chat.completions.create({
         model: this.model,
         messages: [{ role: 'user', content: prompt }],
-        max_completion_tokens: 200,
         // @ts-ignore - GPT-5.2 reasoning parameter
         reasoning: { effort: 'low' }, // Fast learning extraction
       });
