@@ -56,6 +56,7 @@ export class TradingEngine extends EventEmitter {
   private readonly MAX_LEVERAGE = 10; // Max 10x as requested
   private readonly MAX_POSITION_SIZE_PERCENT = 50; // Max 50% of capital per trade
   private readonly MAX_HOLD_TIME_HOURS = 4; // Extended from 2 hours
+  private readonly MAX_TOTAL_EXPOSURE_PERCENT = 80; // Max 80% total capital in all positions
 
   async start(): Promise<void> {
     if (this.state.isRunning) {
@@ -338,14 +339,44 @@ export class TradingEngine extends EventEmitter {
     analysis: MarketAnalysis
   ): Promise<void> {
     try {
+      // Validate input data to prevent NaN/Infinity issues
+      if (!this.isValidNumber(analysis.price) || analysis.price <= 0) {
+        console.error(`[Engine] Invalid price for ${symbol}: ${analysis.price}`);
+        return;
+      }
+
+      if (!this.isValidNumber(decision.leverage) || decision.leverage < 1) {
+        console.error(`[Engine] Invalid leverage: ${decision.leverage}`);
+        return;
+      }
+
+      if (!this.isValidNumber(decision.positionSizePercent) || decision.positionSizePercent <= 0) {
+        console.error(`[Engine] Invalid position size: ${decision.positionSizePercent}%`);
+        return;
+      }
+
       // Validate leverage
       const leverage = Math.min(Math.max(1, decision.leverage), this.MAX_LEVERAGE);
 
       // Calculate position size based on GPT's decision
       const positionSizePercent = Math.min(decision.positionSizePercent, this.MAX_POSITION_SIZE_PERCENT);
       const capitalToUse = this.state.availableBalance * (positionSizePercent / 100);
+
+      // Check total exposure limit before opening position
+      const exposureCheck = this.canOpenNewPosition(capitalToUse);
+      if (!exposureCheck.allowed) {
+        console.log(`[Engine] ${symbol}: Cannot open position - ${exposureCheck.reason}`);
+        return;
+      }
+
       const positionValue = capitalToUse * leverage;
       const quantity = positionValue / analysis.price;
+
+      // Validate calculated quantity
+      if (!this.isValidNumber(quantity) || quantity <= 0) {
+        console.error(`[Engine] Invalid calculated quantity: ${quantity}`);
+        return;
+      }
 
       // Get symbol info for precision
       const symbolInfo = await binanceClient.getSymbolInfo(symbol);
@@ -471,17 +502,35 @@ export class TradingEngine extends EventEmitter {
     reason: 'tp' | 'sl' | 'manual' | 'timeout' | 'signal'
   ): Promise<void> {
     try {
+      // Get symbol info for correct precision
+      const symbolInfo = await binanceClient.getSymbolInfo(position.symbol);
+      const lotSizeFilter = symbolInfo?.filters?.find((f: any) => f.filterType === 'LOT_SIZE');
+      const stepSize = lotSizeFilter ? parseFloat(lotSizeFilter.stepSize) : 0.001;
+      const precision = Math.max(0, -Math.log10(stepSize));
+
+      // Round quantity to valid step size
+      const roundedQty = parseFloat(
+        (Math.floor(position.quantity / stepSize) * stepSize).toFixed(precision)
+      );
+
       // Create closing order
+      // Note: positionSide omitted for one-way position mode (most common)
+      // For hedge mode accounts, positionSide would need to be position.side
       await binanceClient.createOrder({
         symbol: position.symbol,
         side: position.side === 'LONG' ? 'SELL' : 'BUY',
         type: 'MARKET',
-        quantity: position.quantity,
+        quantity: roundedQty,
         reduceOnly: true,
       });
 
       const pnl = this.calculatePnl(position, exitPrice);
-      const pnlUsd = (pnl / 100) * position.entryPrice * position.quantity * position.leverage;
+      // FIX: Calculate USD P&L directly from price difference (not from leveraged %)
+      // pnl already includes leverage (% return on margin), so don't multiply by leverage again
+      const priceDiff = position.side === 'LONG'
+        ? (exitPrice - position.entryPrice)
+        : (position.entryPrice - exitPrice);
+      const pnlUsd = priceDiff * position.quantity;
 
       // Record trade in memory
       const tradeMemory = memorySystem.addTrade({
@@ -533,11 +582,60 @@ export class TradingEngine extends EventEmitter {
   }
 
   private calculatePnl(position: Position, currentPrice: number): number {
+    // Validate inputs to prevent NaN/Infinity
+    if (!this.isValidNumber(currentPrice) || !this.isValidNumber(position.entryPrice) || position.entryPrice === 0) {
+      console.warn(`[Engine] Invalid PnL calculation: currentPrice=${currentPrice}, entryPrice=${position.entryPrice}`);
+      return 0;
+    }
+
     if (position.side === 'LONG') {
       return ((currentPrice - position.entryPrice) / position.entryPrice) * 100 * position.leverage;
     } else {
       return ((position.entryPrice - currentPrice) / position.entryPrice) * 100 * position.leverage;
     }
+  }
+
+  // Helper: Validate number (not NaN, not Infinity, is a number)
+  private isValidNumber(value: any): boolean {
+    return typeof value === 'number' && !isNaN(value) && isFinite(value);
+  }
+
+  // Helper: Calculate total exposure across all positions
+  private calculateTotalExposure(): { exposureUsd: number; exposurePercent: number } {
+    let totalExposure = 0;
+
+    for (const position of this.state.currentPositions.values()) {
+      // Exposure = margin used = (position value / leverage)
+      const positionValue = position.quantity * position.entryPrice;
+      const marginUsed = positionValue / position.leverage;
+      totalExposure += marginUsed;
+    }
+
+    const exposurePercent = this.state.balance > 0
+      ? (totalExposure / this.state.balance) * 100
+      : 0;
+
+    return {
+      exposureUsd: totalExposure,
+      exposurePercent: this.isValidNumber(exposurePercent) ? exposurePercent : 0
+    };
+  }
+
+  // Helper: Check if we can open a new position given exposure limits
+  private canOpenNewPosition(requiredMargin: number): { allowed: boolean; reason?: string } {
+    const { exposureUsd, exposurePercent } = this.calculateTotalExposure();
+    const newExposurePercent = this.state.balance > 0
+      ? ((exposureUsd + requiredMargin) / this.state.balance) * 100
+      : 100;
+
+    if (newExposurePercent > this.MAX_TOTAL_EXPOSURE_PERCENT) {
+      return {
+        allowed: false,
+        reason: `Total exposure would be ${newExposurePercent.toFixed(1)}% (max: ${this.MAX_TOTAL_EXPOSURE_PERCENT}%)`
+      };
+    }
+
+    return { allowed: true };
   }
 
   // === PUBLIC API ===
@@ -593,12 +691,18 @@ export class TradingEngine extends EventEmitter {
     }
   }
 
-  getConfig(): { minConfidence: number; maxLeverage: number; maxPositionSizePercent: number } {
+  getConfig(): { minConfidence: number; maxLeverage: number; maxPositionSizePercent: number; maxTotalExposurePercent: number } {
     return {
       minConfidence: this.MIN_CONFIDENCE,
       maxLeverage: this.MAX_LEVERAGE,
       maxPositionSizePercent: this.MAX_POSITION_SIZE_PERCENT,
+      maxTotalExposurePercent: this.MAX_TOTAL_EXPOSURE_PERCENT,
     };
+  }
+
+  // Public method to get current exposure
+  getTotalExposure(): { exposureUsd: number; exposurePercent: number } {
+    return this.calculateTotalExposure();
   }
 }
 
