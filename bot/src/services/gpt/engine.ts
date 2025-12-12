@@ -50,7 +50,6 @@ export class GPTEngine {
     const userPrompt = this.buildAnalysisPrompt(context);
 
     try {
-      // GPT-5.2 uses 'reasoning' parameter not in OpenAI SDK types yet
       const response = await this.client.chat.completions.create({
         model: this.model,
         messages: [
@@ -58,8 +57,7 @@ export class GPTEngine {
           { role: 'user', content: userPrompt },
         ],
         response_format: { type: 'json_object' },
-        reasoning: { effort: 'medium' }, // GPT-5.2 reasoning (none/minimal/low/medium/high/xhigh)
-      } as any);
+      });
 
       const content = response.choices[0]?.message?.content;
       if (!content) {
@@ -389,12 +387,10 @@ Ejemplo: "En RSI>70 con funding alto, esperar confirmación de reversión antes 
 `;
 
     try {
-      // GPT-5.2 reasoning parameter not in SDK types
       const response = await this.client.chat.completions.create({
         model: this.model,
         messages: [{ role: 'user', content: prompt }],
-        reasoning: { effort: 'low' }, // Fast learning extraction
-      } as any);
+      });
 
       const lesson = response.choices[0]?.message?.content?.trim() || '';
 
