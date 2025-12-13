@@ -273,6 +273,23 @@ export class TradingEngine extends EventEmitter {
     const analysis = await marketAnalyzer.analyze(symbol);
     this.state.lastAnalysis.set(symbol, analysis);
 
+    // STEP 1: Quick screening with cheap model (gpt-4o-mini)
+    // This saves ~90% of API costs by filtering out non-opportunities
+    if (!hasPosition) {
+      const screening = await gptEngine.quickScreen(analysis);
+
+      if (!screening.hasOpportunity) {
+        // No opportunity detected - skip expensive GPT-5.2 analysis
+        console.log(`[Engine] ${symbol}: No opportunity (score: ${screening.score}) - skipping full analysis`);
+        return;
+      }
+
+      console.log(`[Engine] ${symbol}: Opportunity detected! (score: ${screening.score}, direction: ${screening.direction})`);
+    }
+
+    // STEP 2: Full analysis with premium model (gpt-5.2)
+    // Only called when screening detects opportunity OR we have an open position to manage
+
     // Get news and sentiment
     const newsSummary = await cryptoPanicClient.getNewsSummary(symbol);
     const fearGreed = await fearGreedIndex.get();
@@ -284,7 +301,7 @@ export class TradingEngine extends EventEmitter {
       symbol,
     });
 
-    // Get GPT decision with full context
+    // Get GPT-5.2 decision with full context
     const decision = await gptEngine.analyze({
       analysis,
       news: newsSummary,
