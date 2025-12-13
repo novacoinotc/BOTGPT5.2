@@ -37,7 +37,8 @@ interface MarketContext {
 
 export class GPTEngine {
   private client: OpenAI;
-  private model = 'gpt-5.2'; // Latest GPT-5.2 model (Dec 2025)
+  private screeningModel = 'gpt-5.1-mini'; // Cheap model for quick screening
+  private tradingModel = 'gpt-5.2'; // Premium model for trading decisions
 
   constructor() {
     this.client = new OpenAI({
@@ -45,6 +46,56 @@ export class GPTEngine {
     });
   }
 
+  // STEP 1: Quick screening with cheap model - detects if there's potential opportunity
+  async quickScreen(analysis: MarketAnalysis): Promise<{ hasOpportunity: boolean; direction: 'BUY' | 'SELL' | 'NONE'; score: number }> {
+    const prompt = `Analiza rápidamente estos indicadores y responde en JSON si hay oportunidad de scalping:
+
+SYMBOL: ${analysis.symbol}
+PRECIO: $${analysis.price.toFixed(2)}
+RSI: ${analysis.indicators.rsi.toFixed(1)}
+MACD Histogram: ${analysis.indicators.macd.histogram > 0 ? 'POSITIVO' : 'NEGATIVO'}
+ADX: ${analysis.indicators.adx.toFixed(1)}
+Order Book Imbalance: ${(analysis.orderBook.imbalance * 100).toFixed(1)}%
+Régimen: ${analysis.regime}
+Funding Rate: ${(analysis.funding.rate * 100).toFixed(4)}%
+
+Responde SOLO en JSON:
+{"hasOpportunity": true/false, "direction": "BUY"/"SELL"/"NONE", "score": 0-100}
+
+Criterios para oportunidad:
+- RSI < 30 o > 70 = señal fuerte
+- Imbalance > 20% = presión clara
+- ADX > 25 = tendencia
+- Score > 50 = vale la pena analizar más`;
+
+    try {
+      const response = await this.client.chat.completions.create({
+        model: this.screeningModel,
+        messages: [{ role: 'user', content: prompt }],
+        response_format: { type: 'json_object' },
+        max_tokens: 100, // Very short response
+      });
+
+      const content = response.choices[0]?.message?.content;
+      if (!content) {
+        return { hasOpportunity: false, direction: 'NONE', score: 0 };
+      }
+
+      const result = JSON.parse(content);
+      console.log(`[GPT-Screen] ${analysis.symbol}: score=${result.score}, direction=${result.direction}`);
+
+      return {
+        hasOpportunity: result.hasOpportunity && result.score >= 50,
+        direction: result.direction || 'NONE',
+        score: result.score || 0
+      };
+    } catch (error) {
+      console.error('[GPT-Screen] Error:', error);
+      return { hasOpportunity: false, direction: 'NONE', score: 0 };
+    }
+  }
+
+  // STEP 2: Full analysis with premium model - only called when screening detects opportunity
   async analyze(context: MarketContext): Promise<GPTDecision> {
     const systemPrompt = this.buildSystemPrompt(context.accountBalance);
     const userPrompt = this.buildAnalysisPrompt(context);
@@ -52,7 +103,7 @@ export class GPTEngine {
     try {
       // GPT-5.2 with reasoning_effort for optimized performance
       const response = await this.client.chat.completions.create({
-        model: this.model,
+        model: this.tradingModel,
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: userPrompt },
@@ -390,10 +441,10 @@ Ejemplo: "En RSI>70 con funding alto, esperar confirmación de reversión antes 
 
     try {
       const response = await this.client.chat.completions.create({
-        model: this.model,
+        model: this.screeningModel, // Use cheap model for learning extraction
         messages: [{ role: 'user', content: prompt }],
-        reasoning_effort: 'none', // Fast extraction, no deep reasoning needed
-      } as any);
+        max_tokens: 200,
+      });
 
       const lesson = response.choices[0]?.message?.content?.trim() || '';
 
