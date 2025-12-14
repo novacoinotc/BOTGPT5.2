@@ -1,0 +1,325 @@
+2025-12-14T01:57:22.000000000Z [inf]  Starting Container
+2025-12-14T01:57:24.006753274Z [inf]  
+2025-12-14T01:57:24.006772906Z [inf]  [Config] All required configurations present
+2025-12-14T01:57:24.006782158Z [inf]  [Config] Trading enabled: true
+2025-12-14T01:57:24.006817197Z [inf]  [Config] Max leverage: 10x
+2025-12-14T01:57:24.006830917Z [inf]  [Config] Max position size: 50%
+2025-12-14T01:57:24.006841023Z [inf]  [Config] Min confidence: 45%
+2025-12-14T01:57:24.006850910Z [inf]  [Config] Max hold time: 4h
+2025-12-14T01:57:24.006860986Z [inf]  [Main] Auto-starting trading bot...
+2025-12-14T01:57:24.006871502Z [inf]  [Engine] Starting trading bot...
+2025-12-14T01:57:24.006881818Z [inf]  [Engine] Min confidence: 45%
+2025-12-14T01:57:24.006898726Z [inf]  [Engine] Max leverage: 10x
+2025-12-14T01:57:24.006909565Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-14T01:57:24.006918110Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-14T01:57:24.006928842Z [inf]  [Server] Running on port 3001
+2025-12-14T01:57:24.006955686Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-14T01:57:24.006960168Z [inf]  
+2025-12-14T01:57:24.006964347Z [inf]  > gpt-scalping-bot@1.0.0 start
+2025-12-14T01:57:24.006968456Z [inf]  > npm run start -w bot
+2025-12-14T01:57:24.006972635Z [inf]  
+2025-12-14T01:57:24.006979279Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-14T01:57:24.006983543Z [inf]  
+2025-12-14T01:57:24.006987617Z [inf]  > bot@1.0.0 start
+2025-12-14T01:57:24.006993058Z [inf]  > node dist/index.js
+2025-12-14T01:57:24.006999053Z [inf]  
+2025-12-14T01:57:24.007003423Z [inf]  =========================================
+2025-12-14T01:57:24.007007932Z [inf]      GPT 5.2 SCALPING BOT - v1.0.1
+2025-12-14T01:57:24.007015445Z [inf]  =========================================
+2025-12-14T01:57:24.009832360Z [inf]  [Engine] Account balance: $4669.66
+2025-12-14T01:57:24.009835654Z [inf]  [Engine] Available balance: $4669.66
+2025-12-14T01:57:24.268771530Z [inf]  [Engine] Found 0 open positions
+2025-12-14T01:57:24.271064319Z [inf]  [Engine] Bot started successfully
+2025-12-14T01:57:24.271079292Z [inf]  
+2025-12-14T01:57:24.271084241Z [inf]  [Main] Bot is ready!
+2025-12-14T01:57:24.271088909Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-14T01:57:24.271093723Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-14T01:57:24.271098784Z [inf]  
+2025-12-14T01:57:25.296694071Z [inf]  [WS] Connected to Binance
+2025-12-14T01:57:31.293102073Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:31.293109002Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:31.329169050Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:31.329174768Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:31.353911949Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:31.353928167Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:31.364112265Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:32.282641266Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:32.282648163Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:32.282655046Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:32.282664787Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:57:32.991735873Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:02.418593630Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:02.418607266Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:02.418747319Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:03.292210765Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:05.280986179Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:07.343123059Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:09.349796974Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:12.401641398Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:14.725120463Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:16.900286976Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:19.471525767Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:21.488656882Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:26.693091796Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:28.697596367Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:31.554366386Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:33.492225900Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:35.391370247Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:37.488640401Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:39.407349350Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:41.653066451Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:43.724336218Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:46.793449924Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:48.624383143Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:50.695749700Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:56.649673819Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:58:59.103218301Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:01.896777231Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:03.924870668Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:06.707605361Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:09.041696463Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:11.846864792Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:13.920915467Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:15.783237388Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:17.797386684Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:19.767489975Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:21.729136937Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:26.825007144Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:30.102590755Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:34.247469955Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:37.022786419Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:39.397567598Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:42.157692411Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:44.333094717Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:46.445766354Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:48.989517700Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:51.174152141Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:53.471553595Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:55.495706601Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:57.180541373Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:59:59.217798205Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:01.867451830Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:06.193484197Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:09.302351238Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:12.196739239Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:15.446286515Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:18.457941160Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:21.420864459Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:24.300935775Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:26.551659382Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:28.396970230Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:29.369567681Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:31.558521865Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:33.489125977Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:36.206726615Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:38.236339938Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:45.583432625Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:47.638870103Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:50.544028291Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:52.364618961Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:54.722720563Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:56.505518171Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:57.332726445Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:59.919624970Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:00:59.919631633Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:01.543176375Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:03.526459185Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:06.598525825Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:08.587892174Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:11.605904808Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:13.959836598Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:15.974911478Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:18.966131679Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:21.510816963Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:23.590771077Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:26.624286266Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:28.815064058Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:30.832632968Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:32.833231327Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:35.606850377Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:37.670253918Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:40.716490573Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:42.729122662Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:44.803786237Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:47.861363258Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:50.893097505Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:53.145120517Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:57.100337958Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:01:59.062287561Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:01.983752386Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:04.147210704Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:06.293476746Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:09.052599761Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:11.146604442Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:13.389071056Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:16.166261461Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:18.114314359Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:22.117683568Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:24.268982886Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:27.154997862Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:29.421740784Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:31.454693704Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:33.447758617Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:35.520774769Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:38.292696368Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:40.272146579Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:43.368836316Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:45.391941729Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:47.410283435Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:49.531170083Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:52.263074661Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:56.390559255Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:02:58.545992352Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:00.621613106Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:03.759283137Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:06.515556791Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:08.394373598Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:10.539713158Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:12.588190988Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:14.717044367Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:16.607347346Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:18.521330981Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:20.714445337Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:26.461024563Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:28.699914931Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:30.805427554Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:33.526995764Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:35.462420339Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:37.528462217Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:39.521831565Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:42.851710229Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:44.843309615Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:47.544450539Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:49.524267343Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:52.558346442Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:03:56.894001252Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:00.747521225Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:04.726201473Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:07.544364238Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:09.730117261Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:12.637602429Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:14.803959450Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:17.712903988Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:19.834951444Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:21.940460930Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:24.145719634Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:26.778331607Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:26.778343101Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:29.030687541Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:31.814562555Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:33.707510468Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:35.894865122Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:37.986061521Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:40.219443471Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:43.158668571Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:45.113363997Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:47.093180425Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:49.058448432Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:51.029683700Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:57.419551443Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:04:59.864449203Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:01.542596007Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:03.549616456Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:06.474896597Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:08.461351657Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:11.434324229Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:14.728488585Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:16.715296855Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:19.592742203Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:21.563001300Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:24.667443597Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:27.838172890Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:30.792262618Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:32.603211367Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:34.734670800Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:36.747724818Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:38.715689131Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:40.907393500Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:42.946435143Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:45.107524841Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:47.144248368Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:50.096263765Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:51.884358400Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:56.296853407Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:05:59.036244335Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:01.206592785Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:03.269381211Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:05.359047730Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:08.036246690Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:09.840912624Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:13.005784901Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:15.413293665Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:17.404662931Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:20.189358287Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:22.042404711Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:28.330634899Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:31.250139414Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:33.359402108Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:36.111127966Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:38.225602584Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:40.335256775Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:43.387253469Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:45.388520754Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:47.337222668Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:49.675334935Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:52.578446597Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:54.415495870Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:56.660314232Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:06:58.742779332Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:01.626646995Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:04.506119270Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:06.958054298Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:09.959512986Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:12.660021114Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:15.032627373Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:18.671579879Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:20.739374726Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:24.009588727Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:26.693950963Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:27.634392284Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:29.902705251Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:35.740316530Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:37.832885445Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:40.019807862Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:42.835397603Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:44.919153231Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:46.843910655Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:48.948104894Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:51.159570777Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:53.800716170Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:56.806247045Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:57.002901579Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:07:58.903819075Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:02.842853736Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:04.875005982Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:06.919241836Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:08.933486817Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:11.972359138Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:14.202428446Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:17.126301789Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:19.933810309Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:22.054605788Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:25.052114422Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:27.080091389Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:30.485333118Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:33.093945989Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:35.183221501Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:38.267351519Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:41.077327090Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:43.389575154Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:45.303457003Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:48.223870894Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:50.173587760Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:53.320126485Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:55.306899136Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:56.624325702Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:08:59.491222200Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:09:01.763391980Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:09:03.695457691Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:09:05.562605121Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:09:07.693188637Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:09:10.505182683Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:09:12.782606199Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:09:14.853910392Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:09:17.665455901Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:09:19.623539030Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
