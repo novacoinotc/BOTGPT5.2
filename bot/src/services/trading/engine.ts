@@ -648,6 +648,13 @@ export class TradingEngine extends EventEmitter {
       );
     } catch (error: any) {
       console.error(`[Engine] Failed to close position:`, error.message);
+
+      // If error is 400 (no position to close), remove from state to stop retrying
+      if (error.response?.status === 400 || error.message?.includes('400')) {
+        console.log(`[Engine] Removing phantom position ${position.symbol} from state (400 error)`);
+        this.state.currentPositions.delete(position.symbol);
+      }
+
       this.emit('error', { type: 'closePosition', error: error.message, symbol: position.symbol });
     }
   }
