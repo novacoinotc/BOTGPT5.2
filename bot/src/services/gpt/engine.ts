@@ -76,9 +76,6 @@ Criterios para oportunidad:
         max_completion_tokens: 900, // Increased - reasoning models need space to think
       });
 
-      // Debug: Log full response structure
-      console.log(`[GPT-Screen] ${analysis.symbol} full response:`, JSON.stringify(response.choices[0], null, 2));
-
       const content = response.choices[0]?.message?.content;
 
       if (!content) {
@@ -90,7 +87,7 @@ Criterios para oportunidad:
       console.log(`[GPT-Screen] ${analysis.symbol}: score=${result.score}, direction=${result.direction}, hasOpp=${result.hasOpportunity}`);
 
       return {
-        hasOpportunity: result.hasOpportunity && result.score >= 50,
+        hasOpportunity: result.hasOpportunity && result.score >= 60, // COST OPTIMIZED: was 50
         direction: result.direction || 'NONE',
         score: result.score || 0
       };
