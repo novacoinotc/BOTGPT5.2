@@ -73,7 +73,7 @@ Criterios para oportunidad:
         model: this.screeningModel,
         messages: [{ role: 'user', content: prompt }],
         response_format: { type: 'json_object' },
-        max_tokens: 100, // Very short response
+        max_completion_tokens: 100, // Very short response
       });
 
       const content = response.choices[0]?.message?.content;
@@ -443,7 +443,7 @@ Ejemplo: "En RSI>70 con funding alto, esperar confirmación de reversión antes 
       const response = await this.client.chat.completions.create({
         model: this.screeningModel, // Use cheap model for learning extraction
         messages: [{ role: 'user', content: prompt }],
-        max_tokens: 200,
+        max_completion_tokens: 200,
       });
 
       const lesson = response.choices[0]?.message?.content?.trim() || '';
