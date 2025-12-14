@@ -426,10 +426,23 @@ export class TradingEngine extends EventEmitter {
 
       // Get symbol info for precision
       const symbolInfo = await binanceClient.getSymbolInfo(symbol);
-      const quantityPrecision = symbolInfo?.quantityPrecision || 3;
-      const pricePrecision = symbolInfo?.pricePrecision || 2;
 
-      const roundedQty = parseFloat(quantity.toFixed(quantityPrecision));
+      // Use LOT_SIZE filter for proper quantity rounding (handles DOGEUSDT etc)
+      const lotSizeFilter = symbolInfo?.filters?.find((f: any) => f.filterType === 'LOT_SIZE');
+      const stepSize = lotSizeFilter ? parseFloat(lotSizeFilter.stepSize) : 0.001;
+      const minQty = lotSizeFilter ? parseFloat(lotSizeFilter.minQty) : 0.001;
+      const precision = Math.max(0, -Math.log10(stepSize));
+
+      // Round quantity to valid step size
+      let roundedQty = parseFloat(
+        (Math.floor(quantity / stepSize) * stepSize).toFixed(precision)
+      );
+
+      // Ensure minimum quantity
+      if (roundedQty < minQty) {
+        console.log(`[Engine] ${symbol}: Quantity ${roundedQty} below minimum ${minQty}, skipping`);
+        return;
+      }
 
       // Set leverage for this trade
       await binanceClient.setLeverage(symbol, leverage);
