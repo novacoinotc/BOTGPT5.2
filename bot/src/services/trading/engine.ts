@@ -486,6 +486,13 @@ export class TradingEngine extends EventEmitter {
   }
 
   private async checkPositionExit(position: Position, currentPrice: number): Promise<void> {
+    // Skip invalid positions (phantom positions from Binance with entryPrice=0)
+    if (!position.entryPrice || position.entryPrice <= 0 || !position.quantity || position.quantity <= 0) {
+      // Remove invalid position from state
+      this.state.currentPositions.delete(position.symbol);
+      return;
+    }
+
     const pnl = this.calculatePnl(position, currentPrice);
 
     // Check stop loss
