@@ -1,0 +1,1001 @@
+2025-12-14T01:13:29.442038280Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:29.442041973Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:29.442219130Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:29.442224883Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:29.442226763Z [err]    },
+2025-12-14T01:13:29.442231597Z [err]      date: 'Sun, 14 Dec 2025 01:13:26 GMT',
+2025-12-14T01:13:29.442236463Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:13:29.442236693Z [err]    error: {
+2025-12-14T01:13:29.442236980Z [err]    code: 'model_not_found',
+2025-12-14T01:13:29.442243060Z [err]      server: 'cloudflare',
+2025-12-14T01:13:29.442245131Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:29.442246934Z [err]    param: null,
+2025-12-14T01:13:29.442247191Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:29.442247506Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:29.442253147Z [err]      'set-cookie': '__cf_bm=jUkGQjj9VFkbwzReIWMVJFrEr_qXHKRFpKTsZvDTTG4-1765674806-1.0.1.1-JQP92JgkLOVekDPj5LoicKnIFNzmexDl1Jy37lm0Him3U4EPlqq0EPQAAvarz6DTW8i27yKTxmv9kynM1NVSOrKqYOyKiaL3ZOybwaX_7FU; path=/; expires=Sun, 14-Dec-25 01:43:26 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=pMJ5VxOAFdfEwlv04nRHXUp5M6TKFGhrMAMDmkSgTXs-1765674806790-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:29.442253558Z [err]      'x-request-id': 'req_cba50db5683d406eb9d3e25847fb7a9f'
+2025-12-14T01:13:29.442257443Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:29.442261975Z [err]    },
+2025-12-14T01:13:29.442267547Z [err]    request_id: 'req_cba50db5683d406eb9d3e25847fb7a9f',
+2025-12-14T01:13:29.442273236Z [err]      vary: 'Origin',
+2025-12-14T01:13:29.442275476Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:29.442286203Z [err]      param: null,
+2025-12-14T01:13:29.442293657Z [err]      code: 'model_not_found'
+2025-12-14T01:13:29.442646836Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:29.442648606Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:29.442652846Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:29.442658480Z [err]    status: 404,
+2025-12-14T01:13:29.442658993Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:29.442659540Z [err]  }
+2025-12-14T01:13:29.442665120Z [err]      date: 'Sun, 14 Dec 2025 01:13:27 GMT',
+2025-12-14T01:13:29.442669290Z [err]    headers: {
+2025-12-14T01:13:29.442669777Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:29.442678183Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:29.442678677Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:29.442687125Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:29.442687726Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:29.442695685Z [err]      'cf-ray': '9ad9d6b92972d7ae-SEA',
+2025-12-14T01:13:29.442697264Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:29.442704855Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:29.442711870Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:29.442718836Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:29.442725446Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:29.442730751Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:29.442735916Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:29.443097250Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:29.443103503Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:29.443107578Z [err]      server: 'cloudflare',
+2025-12-14T01:13:29.443109336Z [err]      param: null,
+2025-12-14T01:13:29.443114539Z [err]      code: 'model_not_found'
+2025-12-14T01:13:29.443116459Z [err]      'set-cookie': '__cf_bm=BqHQtpTrqJPER94Q_wGb2CPSSDOot9GT_tB5kEyytAY-1765674807-1.0.1.1-2JFGDOaZEQdpczZ37sSQkIJdp4cSM7C_W1oRvx2MyK1LtK70Xc9P6PfNBuzese.RqIUIhVUgOuWF9ft.qC3r_bOB4WLd.dHOE1b5cfJLuJ8; path=/; expires=Sun, 14-Dec-25 01:43:27 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=JC8B2oOrPasqspEwh9WsUSOEtMfBs0PIOOr4zMn0mNk-1765674807299-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:29.443119095Z [err]    },
+2025-12-14T01:13:29.443125036Z [err]    code: 'model_not_found',
+2025-12-14T01:13:29.443125109Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:29.443130595Z [err]    param: null,
+2025-12-14T01:13:29.443130665Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:29.443136516Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:29.443136582Z [err]      vary: 'Origin',
+2025-12-14T01:13:29.443142570Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:29.443142990Z [err]  }
+2025-12-14T01:13:29.443147058Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:13:29.443151279Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:29.443155223Z [err]      'x-request-id': 'req_e2c651a0761c4cdb85e0064d82529b53'
+2025-12-14T01:13:29.443158858Z [err]    },
+2025-12-14T01:13:29.443162617Z [err]    request_id: 'req_e2c651a0761c4cdb85e0064d82529b53',
+2025-12-14T01:13:29.443166588Z [err]    error: {
+2025-12-14T01:13:59.477203204Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.477210953Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.477215965Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.477221042Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.477228916Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.477235617Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.477240032Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.477244432Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.477248651Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.477253038Z [err]    status: 404,
+2025-12-14T01:13:59.477257192Z [err]    headers: {
+2025-12-14T01:13:59.477261898Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.477266268Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.477270605Z [err]      'cf-ray': '9ad9d74b9823df25-SEA',
+2025-12-14T01:13:59.477274484Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.477278335Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.477284887Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.477289096Z [err]      date: 'Sun, 14 Dec 2025 01:13:50 GMT',
+2025-12-14T01:13:59.477293028Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.477297414Z [err]      'set-cookie': '__cf_bm=o11leWF755xmp1EPGpAfdlFECBt0ZZwiLIsK5ojMY5M-1765674830-1.0.1.1-x_vo42kLEXlxCJwYcQulKaWu5rOL2Srp4wv4akD6xzkOoJ3GKLX6y25bHhyZBY43jloB89nsRNGY6j2e.yT7k571va57R4iH9kfspUDnEyU; path=/; expires=Sun, 14-Dec-25 01:43:50 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=bQpvN0_.HT9OsLAoE9Jxy_dQt65Pz0A8QmPae.1ihH8-1765674830735-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.477701854Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.477712211Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.477720095Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.477728068Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.477736080Z [err]      'x-envoy-upstream-service-time': '5',
+2025-12-14T01:13:59.477743077Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.477749470Z [err]      'x-request-id': 'req_948098a7d05f438ebab1997c61ee836b'
+2025-12-14T01:13:59.477759806Z [err]    },
+2025-12-14T01:13:59.477766846Z [err]    request_id: 'req_948098a7d05f438ebab1997c61ee836b',
+2025-12-14T01:13:59.477774054Z [err]    error: {
+2025-12-14T01:13:59.477780765Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.477787982Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.477795151Z [err]      param: null,
+2025-12-14T01:13:59.477802071Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.477808725Z [err]    },
+2025-12-14T01:13:59.477815390Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.477822013Z [err]    param: null,
+2025-12-14T01:13:59.477828294Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.477834525Z [err]  }
+2025-12-14T01:13:59.477840878Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.477847058Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.477853030Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.477859647Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.477866705Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.478193133Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.478200727Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.478207622Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.478214114Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.478220795Z [err]    status: 404,
+2025-12-14T01:13:59.478227084Z [err]    headers: {
+2025-12-14T01:13:59.478233150Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.478238975Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.478245387Z [err]      'cf-ray': '9ad9d750abfbdf25-SEA',
+2025-12-14T01:13:59.478251766Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.478258027Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.478264334Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.478271024Z [err]      date: 'Sun, 14 Dec 2025 01:13:51 GMT',
+2025-12-14T01:13:59.478277110Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.478283990Z [err]      'set-cookie': '__cf_bm=TZ2XqbCsKEimGLnUWOr8uU6sL0TK32ABJo12iAN5SpI-1765674831-1.0.1.1-j5L7vLXBUhbkVM9Nf775Sp1497gUUieCeP55KmAwnWUpHtgHWVWh4KLQwdAfzdOI99GHI8GjCVIsNzXjsS7W8bSRncoTj1oW.GrGpnfROZE; path=/; expires=Sun, 14-Dec-25 01:43:51 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=36WGMvgjT3RZNYga8WGqqnbv1C38JKyNbWhNvtFS0fk-1765674831544-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.478290307Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.478301834Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.478308318Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.478315715Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.478469477Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:13:59.478476547Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.478483348Z [err]      'x-request-id': 'req_f2cc7545aa8e4521be06a19167376263'
+2025-12-14T01:13:59.478489875Z [err]    },
+2025-12-14T01:13:59.478496564Z [err]    request_id: 'req_f2cc7545aa8e4521be06a19167376263',
+2025-12-14T01:13:59.478503247Z [err]    error: {
+2025-12-14T01:13:59.478509868Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.478516520Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.478522762Z [err]      param: null,
+2025-12-14T01:13:59.478529215Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.478535155Z [err]    },
+2025-12-14T01:13:59.478541500Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.478548202Z [err]    param: null,
+2025-12-14T01:13:59.478554574Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.478561640Z [err]  }
+2025-12-14T01:13:59.478567915Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.478574594Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.478581317Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.478587800Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.478594081Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.478600438Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.478607991Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.478614407Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.478829274Z [err]    status: 404,
+2025-12-14T01:13:59.478838909Z [err]    headers: {
+2025-12-14T01:13:59.478845257Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.478851338Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.478857190Z [err]      'cf-ray': '9ad9d7542e71df25-SEA',
+2025-12-14T01:13:59.478863660Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.478869564Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.478877328Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.478883827Z [err]      date: 'Sun, 14 Dec 2025 01:13:52 GMT',
+2025-12-14T01:13:59.478890715Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.478896969Z [err]      'set-cookie': '__cf_bm=9pofvuANDBypJ6j.R1V_c52nmZSkrqaUv_LmVjdR.is-1765674832-1.0.1.1-u0T6I_SVHlDZg3QO5YIAnbcarfPbM0UAE5qPxiGR80XUB9mEFl0yLBBySB9KSmZeCzo65UAklH0o4s2sDJLuIjr2oIZnuNDfMa_ZP4QNYJk; path=/; expires=Sun, 14-Dec-25 01:43:52 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=72wlr6XQ8zauZ7_AdrSuo8YFY4mzhJ8KuW02L4mUWZE-1765674832098-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.478903172Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.478909794Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.478916233Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.478923352Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.478929477Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-14T01:13:59.478935614Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.478943302Z [err]      'x-request-id': 'req_241670efb59d4e20a87d9c8292992a8f'
+2025-12-14T01:13:59.478949807Z [err]    },
+2025-12-14T01:13:59.478956315Z [err]    request_id: 'req_241670efb59d4e20a87d9c8292992a8f',
+2025-12-14T01:13:59.478962202Z [err]    error: {
+2025-12-14T01:13:59.478970902Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.478978155Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.478982210Z [err]      param: null,
+2025-12-14T01:13:59.478987522Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.478991432Z [err]    },
+2025-12-14T01:13:59.478995231Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.478999264Z [err]    param: null,
+2025-12-14T01:13:59.479003268Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.479007552Z [err]  }
+2025-12-14T01:13:59.479011823Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.479015360Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.479019201Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.479023656Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.479028155Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.479033931Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.479038062Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.479042000Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.479046231Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.479050335Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.479055094Z [err]    status: 404,
+2025-12-14T01:13:59.479059331Z [err]    headers: {
+2025-12-14T01:13:59.479063890Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.479393870Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.479398955Z [err]      'cf-ray': '9ad9d757a94ddf25-SEA',
+2025-12-14T01:13:59.479403235Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.479407554Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.479411830Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.479415950Z [err]      date: 'Sun, 14 Dec 2025 01:13:52 GMT',
+2025-12-14T01:13:59.479420008Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.479423915Z [err]      'set-cookie': '__cf_bm=Eg3EdqgxojCXk8oOTN_iuNmZA7kgnh4cllT.Ce7.lmQ-1765674832-1.0.1.1-MNhai3pqo1ix9WPM3tcYelLLLoEdblRx3.OJTbXF5byUEXRFfHCiOYpmBtK5mF0WtkaD86p4hBc4hbU9nfNz3R49Qfq5EUXT6RGxDoGGkjI; path=/; expires=Sun, 14-Dec-25 01:43:52 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=85gVteSZw4kt6TFK_hgNY8EWzcZmEAeJM5gBZG_cVtk-1765674832663-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.479428187Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.479432255Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.479436021Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.479439897Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.479443701Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:13:59.479447817Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.479453114Z [err]      'x-request-id': 'req_eaa6e9029bd940dd9e76277fdd7fc503'
+2025-12-14T01:13:59.479457027Z [err]    },
+2025-12-14T01:13:59.479460748Z [err]    request_id: 'req_eaa6e9029bd940dd9e76277fdd7fc503',
+2025-12-14T01:13:59.479464540Z [err]    error: {
+2025-12-14T01:13:59.479468613Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.479472841Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.479811855Z [err]      param: null,
+2025-12-14T01:13:59.479819972Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.479828225Z [err]    },
+2025-12-14T01:13:59.479828952Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.479836163Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.479839650Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.479841530Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.479842653Z [err]    status: 404,
+2025-12-14T01:13:59.479845373Z [err]    param: null,
+2025-12-14T01:13:59.479849697Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.479850097Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.479850667Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.479856530Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.479856640Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.479859738Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.479859795Z [err]      'cf-ray': '9ad9d75aebdcdf25-SEA',
+2025-12-14T01:13:59.479860902Z [err]    headers: {
+2025-12-14T01:13:59.479865613Z [err]  }
+2025-12-14T01:13:59.479869014Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.479871380Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.479874026Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.479881427Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.479888324Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.480316867Z [err]      date: 'Sun, 14 Dec 2025 01:13:53 GMT',
+2025-12-14T01:13:59.480324856Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.480332231Z [err]      'set-cookie': '__cf_bm=Qri18GvtmOc.FQczwN5B8EHE7Z2HN_jr8E1UKgiqlVY-1765674833-1.0.1.1-b8K6eRaXB27CcZU1atUyzcmdB9TNWe1Og35kkZ8R2LXE21ZFEuicNQbbdBg0QfHE7M8H8HtPI1TOlzz845a5fkLBAovVNIsgnKXmVbRWZLw; path=/; expires=Sun, 14-Dec-25 01:43:53 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=8zmRkAPjR0.B.3fdlunAQgIlY7.9_hEMP5zkKnp_R0k-1765674833181-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.480338585Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.480345065Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.480351300Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.480358225Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.480365363Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:13:59.480372176Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.480378556Z [err]      'x-request-id': 'req_431c618bedec4c4fb729da566c04adaf'
+2025-12-14T01:13:59.480384868Z [err]    },
+2025-12-14T01:13:59.480391406Z [err]    request_id: 'req_431c618bedec4c4fb729da566c04adaf',
+2025-12-14T01:13:59.480397996Z [err]    error: {
+2025-12-14T01:13:59.480404749Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.480410712Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.480418132Z [err]      param: null,
+2025-12-14T01:13:59.480424825Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.480431684Z [err]    },
+2025-12-14T01:13:59.480438143Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.480445043Z [err]    param: null,
+2025-12-14T01:13:59.480451946Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.480701342Z [err]  }
+2025-12-14T01:13:59.480706615Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.480712280Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.480714687Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.480715218Z [err]    headers: {
+2025-12-14T01:13:59.480719790Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.480725225Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.480725531Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.480726117Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.480732608Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.480734493Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.480734975Z [err]      date: 'Sun, 14 Dec 2025 01:13:53 GMT',
+2025-12-14T01:13:59.480738608Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.480743834Z [err]      'cf-ray': '9ad9d75eeef2df25-SEA',
+2025-12-14T01:13:59.480744091Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.480744401Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.480750183Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.480752631Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.480755595Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.480760894Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.480768550Z [err]    status: 404,
+2025-12-14T01:13:59.481095220Z [err]      'set-cookie': '__cf_bm=Qi3LRo6i_EhT1sNVaMdzEe4WCuDsn5MirZlh9thcMow-1765674833-1.0.1.1-Ir_CeBg0TlbIHKtVvdgH7eOh1V09fI7VwVt.ttlEpnbWhkDB_25rj.jQ.AhiFM49r3aDyDecbA0Br0sp9CvDPKVzEKNcJYxZYZdROBGe7hE; path=/; expires=Sun, 14-Dec-25 01:43:53 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=vWuoqqKJXxtqvFdjj1L8elMqzSJ9rf5Gu.sKqxrAjh0-1765674833937-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.481100523Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.481104245Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.481107989Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.481111653Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.481117654Z [err]      'x-envoy-upstream-service-time': '121',
+2025-12-14T01:13:59.481121390Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.481124858Z [err]      'x-request-id': 'req_03e2d52e3d134b36a60b9f492eb7b241'
+2025-12-14T01:13:59.481128284Z [err]    },
+2025-12-14T01:13:59.481132054Z [err]    request_id: 'req_03e2d52e3d134b36a60b9f492eb7b241',
+2025-12-14T01:13:59.481140441Z [err]    error: {
+2025-12-14T01:13:59.481144845Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.481148407Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.481151850Z [err]      param: null,
+2025-12-14T01:13:59.481155380Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.481160265Z [err]    },
+2025-12-14T01:13:59.481163908Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.481167814Z [err]    param: null,
+2025-12-14T01:13:59.481171371Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.481175065Z [err]  }
+2025-12-14T01:13:59.481178457Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.481537498Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.481543485Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.481547547Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.481551287Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.481555574Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.481560443Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.481564658Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.481568630Z [err]    status: 404,
+2025-12-14T01:13:59.481572415Z [err]    headers: {
+2025-12-14T01:13:59.481577202Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.481581095Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.481585105Z [err]      'cf-ray': '9ad9d762da3ddf25-SEA',
+2025-12-14T01:13:59.481589265Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.481593105Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.481596898Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.481600728Z [err]      date: 'Sun, 14 Dec 2025 01:13:54 GMT',
+2025-12-14T01:13:59.481604509Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.481608817Z [err]      'set-cookie': '__cf_bm=Xw6ooR_J0u6B3p2MhPpGslZ950syIDmn36p3R7TFsGQ-1765674834-1.0.1.1-gzkKGknPTv914bUpufkdBTCWTsFEEN4mXhJ0_9GSsXYYnk00FMUdyFYujE63sTjVtifKtLC4rKEo4FunPjFy80RRTlYxdKSncwyi00N.sOc; path=/; expires=Sun, 14-Dec-25 01:43:54 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=sHqeTtazAU8tk1JdMTIUROEU.DiVoep3nr2ltQAeu2I-1765674834459-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.481982711Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.481988110Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.481992471Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.481996490Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.481999978Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:13:59.482006733Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.482013886Z [err]      'x-request-id': 'req_b882c171767b44ae87603329143dcea2'
+2025-12-14T01:13:59.482017591Z [err]    },
+2025-12-14T01:13:59.482021612Z [err]    request_id: 'req_b882c171767b44ae87603329143dcea2',
+2025-12-14T01:13:59.482025440Z [err]    error: {
+2025-12-14T01:13:59.482028855Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.482034172Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.482037789Z [err]      param: null,
+2025-12-14T01:13:59.482041640Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.482045303Z [err]    },
+2025-12-14T01:13:59.482050254Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.482053631Z [err]    param: null,
+2025-12-14T01:13:59.482057337Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.482061187Z [err]  }
+2025-12-14T01:13:59.482065061Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.482070245Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.482073601Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.482079632Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.482083162Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.482314430Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.482321995Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.482329053Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.482335320Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.482341552Z [err]    status: 404,
+2025-12-14T01:13:59.482345925Z [err]    headers: {
+2025-12-14T01:13:59.482349525Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.482353022Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.482357702Z [err]      'cf-ray': '9ad9d7662cfbdf25-SEA',
+2025-12-14T01:13:59.482361780Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.482365386Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.482368858Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.482372907Z [err]      date: 'Sun, 14 Dec 2025 01:13:54 GMT',
+2025-12-14T01:13:59.482376465Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.482381010Z [err]      'set-cookie': '__cf_bm=CTvxObI5uEUTjhG7iHWNh5lZlVz3_TSoCl.ZNHtjn_g-1765674834-1.0.1.1-YhmJGzYxs_tonzgOszls.3XunYeHN9Plm2po5bWLuz1vqFi0hZ8h5PowGtpj7qqAYXLuELuSUlXHqMH0eL5460ugZQUq9ibmmwBXUy7Jx.A; path=/; expires=Sun, 14-Dec-25 01:43:54 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=Kfp8fpK8p8XI9ct8kXWjl8F2U9e0XQjfswdtnrxmwFg-1765674834984-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.482384780Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.482388635Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.482392358Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.482396071Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.482880827Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.482886245Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.482890200Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.482894495Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.482920948Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:13:59.482934629Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.482944455Z [err]      'x-request-id': 'req_638450aeba77421c81a23c2aa79f1095'
+2025-12-14T01:13:59.482953613Z [err]    },
+2025-12-14T01:13:59.482961454Z [err]    request_id: 'req_638450aeba77421c81a23c2aa79f1095',
+2025-12-14T01:13:59.482971089Z [err]    error: {
+2025-12-14T01:13:59.482979511Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.482987209Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.482995645Z [err]      param: null,
+2025-12-14T01:13:59.483003793Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.483011360Z [err]    },
+2025-12-14T01:13:59.483019451Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.483027392Z [err]    param: null,
+2025-12-14T01:13:59.483037318Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.483046001Z [err]  }
+2025-12-14T01:13:59.483054562Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.483061461Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.483070672Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.483078486Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.483373259Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.483384264Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.483388074Z [err]      'x-request-id': 'req_92f6a878dff047539c98bc5fbc861bf0'
+2025-12-14T01:13:59.483394473Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.483399425Z [err]    status: 404,
+2025-12-14T01:13:59.483404943Z [err]    headers: {
+2025-12-14T01:13:59.483409342Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.483414384Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.483419637Z [err]      'cf-ray': '9ad9d769efbddf25-SEA',
+2025-12-14T01:13:59.483423652Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.483428302Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.483432664Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.483437184Z [err]      date: 'Sun, 14 Dec 2025 01:13:55 GMT',
+2025-12-14T01:13:59.483441395Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.483445731Z [err]      'set-cookie': '__cf_bm=9_TFTR0NwallN0ImrCHpD5QaBsBKSdK.EEShd51S6vo-1765674835-1.0.1.1-TquhEf0NwBWq0vRtJKUpBX4usMsUHNDBesoeUbK0Da3B5XmhBD9giWLZmalqmjq6EjtGrGZ1NwyMPIw0csoidX7YMAZwftNsX_aGTqILcTM; path=/; expires=Sun, 14-Dec-25 01:43:55 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=FdT4.W9QCQRmIQ74dSHqAwh5XhJw.T6SiKA5VyWRChk-1765674835586-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.483451544Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.483456690Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.483461308Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.483466489Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.483470770Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:13:59.483777715Z [err]    },
+2025-12-14T01:13:59.483782542Z [err]    request_id: 'req_92f6a878dff047539c98bc5fbc861bf0',
+2025-12-14T01:13:59.483786286Z [err]    error: {
+2025-12-14T01:13:59.483789923Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.483794048Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.483797972Z [err]      param: null,
+2025-12-14T01:13:59.483801615Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.483805300Z [err]    },
+2025-12-14T01:13:59.483809771Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.483815958Z [err]    param: null,
+2025-12-14T01:13:59.483822082Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.483827667Z [err]  }
+2025-12-14T01:13:59.483834761Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.483840169Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.483844947Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.483851481Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.483857332Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.483862372Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.483867366Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.483872550Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.483877824Z [err]    status: 404,
+2025-12-14T01:13:59.483882881Z [err]    headers: {
+2025-12-14T01:13:59.483888961Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.484322300Z [err]    error: {
+2025-12-14T01:13:59.484323442Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.484327918Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.484330037Z [err]      'cf-ray': '9ad9d76d3a83df25-SEA',
+2025-12-14T01:13:59.484333632Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.484335045Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.484338711Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.484344316Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.484350515Z [err]      date: 'Sun, 14 Dec 2025 01:13:56 GMT',
+2025-12-14T01:13:59.484356893Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.484363701Z [err]      'set-cookie': '__cf_bm=e5J.QiCZK1CRNMI2qsv82_FJs7FP2LU4cvLwsBl4smQ-1765674836-1.0.1.1-nu3vyPGNoouJdq.pRx9itHKWiF.W4MKimo5LWQqCzm4gu1MDKhlrxssb2WF6SKd1VMZUpbguuo.lJIk7bYx4UxxttMLQzOMch_OCNKh33t0; path=/; expires=Sun, 14-Dec-25 01:43:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=hZLDNWJlQ0_5ade4StJIyDtCjPrNVh_GYz158RjCD5M-1765674836106-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.484369779Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.484375592Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.484379546Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.484383524Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.484388388Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:13:59.484392037Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.484396022Z [err]      'x-request-id': 'req_db1be6a4848749b882922a73051fc1f6'
+2025-12-14T01:13:59.484400114Z [err]    },
+2025-12-14T01:13:59.484404538Z [err]    request_id: 'req_db1be6a4848749b882922a73051fc1f6',
+2025-12-14T01:13:59.484699601Z [err]      param: null,
+2025-12-14T01:13:59.484701339Z [err]    status: 404,
+2025-12-14T01:13:59.484708070Z [err]    headers: {
+2025-12-14T01:13:59.484708430Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.484713902Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.484716022Z [err]    },
+2025-12-14T01:13:59.484719041Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.484723985Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.484724785Z [err]      'cf-ray': '9ad9d7723ea9df25-SEA',
+2025-12-14T01:13:59.484731118Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.484732582Z [err]    param: null,
+2025-12-14T01:13:59.484739669Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.484746380Z [err]  }
+2025-12-14T01:13:59.484752663Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.484757515Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:13:59.484767066Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.484770938Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.484774765Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.484778953Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.484782713Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.484786438Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.484790091Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.484793528Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.485511594Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.485516481Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.485522194Z [err]      date: 'Sun, 14 Dec 2025 01:13:56 GMT',
+2025-12-14T01:13:59.485531777Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.485539445Z [err]      'set-cookie': '__cf_bm=RMlADKR.JIUbGnNUzWxgkSAzyrZ4nAs_XKi2I7ugp_8-1765674836-1.0.1.1-TuckfN5IkCpO1M2W64Ds64MxmH33QaUUIV0_PtRljg1.X62f1sBNaqnVqSdBhfH5Df3W87cC2u2ZU1nIwQQfCuOkatv9c5X1oRWxv64CQ.Q; path=/; expires=Sun, 14-Dec-25 01:43:56 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=1oDLMmqEKaqD09tKg8hG6IgOKZWb_4S3LngZWTpOgNI-1765674836963-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.485546525Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.485552915Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.485560182Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.485567452Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.485574762Z [err]      'x-envoy-upstream-service-time': '2',
+2025-12-14T01:13:59.485582043Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.485589715Z [err]      'x-request-id': 'req_10302c6581d94a4b88d09c962f0c1b8c'
+2025-12-14T01:13:59.485597546Z [err]    },
+2025-12-14T01:13:59.485603522Z [err]    request_id: 'req_10302c6581d94a4b88d09c962f0c1b8c',
+2025-12-14T01:13:59.485608870Z [err]    error: {
+2025-12-14T01:13:59.485614675Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.485619178Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.485623818Z [err]      param: null,
+2025-12-14T01:13:59.485628276Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.485632338Z [err]    },
+2025-12-14T01:13:59.485636658Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.485641735Z [err]    param: null,
+2025-12-14T01:13:59.485646012Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.485649986Z [err]  }
+2025-12-14T01:13:59.485654240Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:13:59.485658855Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:13:59.485663099Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:13:59.485667820Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:13:59.485672611Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:13:59.485847248Z [err]      'cf-ray': '9ad9d775d9a7df25-SEA',
+2025-12-14T01:13:59.485854598Z [err]      connection: 'keep-alive',
+2025-12-14T01:13:59.485861295Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:13:59.485866528Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:13:59.485870575Z [err]      date: 'Sun, 14 Dec 2025 01:13:57 GMT',
+2025-12-14T01:13:59.485875974Z [err]      server: 'cloudflare',
+2025-12-14T01:13:59.485881336Z [err]      'set-cookie': '__cf_bm=iwIfS.ELOrI4OqOB0i1C9poi3kH6TR9xczZp5q7_Ygk-1765674837-1.0.1.1-XwHmAqQxn1JEatdh6S6U87jFX1ZNAzhHdBbSzGpLvC2Q00fRmN_qO1b9LmvUP_7sS9rCz83nOqBw3qAZV6p.aISobTB6ZiKakwZchtVZLsA; path=/; expires=Sun, 14-Dec-25 01:43:57 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=QcuixaBVCWKlgK4PINlHt5deZXxr7TCY1_hSdvxJdIo-1765674837503-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:13:59.485891678Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:13:59.485903644Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:13:59.485911720Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:13:59.485920967Z [err]    status: 404,
+2025-12-14T01:13:59.485929225Z [err]    headers: {
+2025-12-14T01:13:59.485937324Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:13:59.485947152Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:13:59.486123612Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:13:59.486132750Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:13:59.486140555Z [err]      vary: 'Origin',
+2025-12-14T01:13:59.486147804Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:13:59.486154770Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-14T01:13:59.486162002Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:13:59.486168912Z [err]      'x-request-id': 'req_653cf97b425d4463a449e864bcc23439'
+2025-12-14T01:13:59.486176885Z [err]    },
+2025-12-14T01:13:59.486184160Z [err]    request_id: 'req_653cf97b425d4463a449e864bcc23439',
+2025-12-14T01:13:59.486191530Z [err]    error: {
+2025-12-14T01:13:59.486199421Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:13:59.486206914Z [err]      type: 'invalid_request_error',
+2025-12-14T01:13:59.486213919Z [err]      param: null,
+2025-12-14T01:13:59.486220021Z [err]      code: 'model_not_found'
+2025-12-14T01:13:59.486226810Z [err]    },
+2025-12-14T01:13:59.486234894Z [err]    code: 'model_not_found',
+2025-12-14T01:13:59.486245578Z [err]    param: null,
+2025-12-14T01:13:59.486252238Z [err]    type: 'invalid_request_error'
+2025-12-14T01:13:59.486260396Z [err]  }
+2025-12-14T01:13:59.486267082Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.431511662Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.431517473Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.431522053Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.431522785Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.431526305Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.431530672Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.431535060Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.431536584Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.431541614Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.431546190Z [err]      'cf-ray': '9ad9d8069e9abe02-SEA',
+2025-12-14T01:14:29.431546418Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.431551107Z [err]    status: 404,
+2025-12-14T01:14:29.431555671Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.431557122Z [err]    headers: {
+2025-12-14T01:14:29.431564558Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.431571675Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.431578151Z [err]      date: 'Sun, 14 Dec 2025 01:14:20 GMT',
+2025-12-14T01:14:29.431586207Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.431594239Z [err]      'set-cookie': '__cf_bm=P9bgH6sxKt3C3HL2qJXXPZwyFHtqKPgHHgV37TVXpbo-1765674860-1.0.1.1-9WFh9R0FXituVnOiZctxV3hEAIA43G.ZI5Nd8T1b4.2yTb2pHMPXEIdpec3niZ7y7y7NQ3raj8jvSu9uaaShpzpoywKHl8dSZBjRdRMWA0A; path=/; expires=Sun, 14-Dec-25 01:44:20 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=3HoMQgCiRtp5yBUDtr4ejpfS5RssuYRF8XzDn7mf1mc-1765674860648-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.432064498Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.432070810Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.432074372Z [err]    param: null,
+2025-12-14T01:14:29.432080522Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.432085348Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.432087468Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.432096412Z [err]  }
+2025-12-14T01:14:29.432103894Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.432106785Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.432112143Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.432130526Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:14:29.432136698Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.432141066Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.432143285Z [err]      'x-request-id': 'req_ce292b999e73462785d92bda6359f16b'
+2025-12-14T01:14:29.432149102Z [err]    },
+2025-12-14T01:14:29.432150332Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.432154514Z [err]    request_id: 'req_ce292b999e73462785d92bda6359f16b',
+2025-12-14T01:14:29.432159291Z [err]    error: {
+2025-12-14T01:14:29.432164074Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.432168044Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.432173106Z [err]      param: null,
+2025-12-14T01:14:29.432177341Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.432181476Z [err]    },
+2025-12-14T01:14:29.432187412Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.432441457Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.432446222Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.432449984Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.432454152Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.432457948Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.432461576Z [err]    status: 404,
+2025-12-14T01:14:29.432465305Z [err]    headers: {
+2025-12-14T01:14:29.432469520Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.432473484Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.432477009Z [err]      'cf-ray': '9ad9d809dd2dbe02-SEA',
+2025-12-14T01:14:29.432480706Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.432484435Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.432488253Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.432492412Z [err]      date: 'Sun, 14 Dec 2025 01:14:21 GMT',
+2025-12-14T01:14:29.432496345Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.432500108Z [err]      'set-cookie': '__cf_bm=7Zx2pO3ZhwXH3umF5PzaqyTQ8F0VZWK2r7AuyOBM5ek-1765674861-1.0.1.1-nwN7VcGNmj1KXIUwpzsbBTap4klU_rnmTCoNtCxbv_mrSWFW0ZMAjC8jQu.UgXmppFRsaVpU4CjKsqPMHmvp5PcFD_g2Ob6jTSXQ9QbZdLc; path=/; expires=Sun, 14-Dec-25 01:44:21 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=x7H4CBS6wzBY9Ie90l9ar4fbx2D6zbvUHcq91GQ_o8w-1765674861160-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.432503716Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.432507455Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.433171401Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.433177808Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.433182545Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:14:29.433187760Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.433192642Z [err]      'x-request-id': 'req_e87305787f434b0dbce09913ea64dbe9'
+2025-12-14T01:14:29.433197312Z [err]    },
+2025-12-14T01:14:29.433201068Z [err]    request_id: 'req_e87305787f434b0dbce09913ea64dbe9',
+2025-12-14T01:14:29.433204803Z [err]    error: {
+2025-12-14T01:14:29.433208721Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.433213688Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.433218298Z [err]      param: null,
+2025-12-14T01:14:29.433222030Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.433227150Z [err]    },
+2025-12-14T01:14:29.433231412Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.433236068Z [err]    param: null,
+2025-12-14T01:14:29.433241212Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.433246042Z [err]  }
+2025-12-14T01:14:29.433250584Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.433254407Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.433259280Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.433263658Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.433267585Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.433271564Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.433275873Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.433426364Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.433432437Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.433436598Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:14:29.433440680Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.433444273Z [err]      'x-request-id': 'req_7fbe5b9597a145b0a6b10d8c8f28f953'
+2025-12-14T01:14:29.433448512Z [err]    },
+2025-12-14T01:14:29.433475659Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.433487368Z [err]    status: 404,
+2025-12-14T01:14:29.433494494Z [err]    headers: {
+2025-12-14T01:14:29.433499983Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.433504825Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.433510322Z [err]      'cf-ray': '9ad9d80d1bbfbe02-SEA',
+2025-12-14T01:14:29.433515985Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.433521048Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.433525740Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.433531594Z [err]      date: 'Sun, 14 Dec 2025 01:14:21 GMT',
+2025-12-14T01:14:29.433537410Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.433543582Z [err]      'set-cookie': '__cf_bm=DMMS7BPdewlR3UM7seD0m1dnn0I8_ImHAhd9IgYwsts-1765674861-1.0.1.1-.BimFx0SRcaiVaZenxf.LzaZfb1DR_28k2dcCNMLrT1i2uUVECvOu9jzsV5VUo1zY_SJXjvgbFQffmVUkkZzVagE4birw.2CpOa2DwXN8T0; path=/; expires=Sun, 14-Dec-25 01:44:21 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=X4AT5UC9_cQ539rt4oonWY.iTRQxs6NoNeN8LSTi9s0-1765674861693-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.433548401Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.433553061Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.433925759Z [err]    request_id: 'req_7fbe5b9597a145b0a6b10d8c8f28f953',
+2025-12-14T01:14:29.433931676Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.433932365Z [err]    error: {
+2025-12-14T01:14:29.433937596Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.433942505Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.433944302Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.433950645Z [err]      param: null,
+2025-12-14T01:14:29.433952649Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.433956908Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.433962540Z [err]    },
+2025-12-14T01:14:29.433963178Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.433967146Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.433973264Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.433973266Z [err]    param: null,
+2025-12-14T01:14:29.433977684Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.433983851Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.433983950Z [err]  }
+2025-12-14T01:14:29.433988559Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.433993485Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.433993920Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.434002383Z [err]    status: 404,
+2025-12-14T01:14:29.434010205Z [err]    headers: {
+2025-12-14T01:14:29.434019337Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.434463981Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.434474971Z [err]      'cf-ray': '9ad9d810dbb5be02-SEA',
+2025-12-14T01:14:29.434475450Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.434479525Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.434484536Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.434486615Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.434488295Z [err]      'x-request-id': 'req_92353e8cfea943e291b2dd7bd3f53c8e'
+2025-12-14T01:14:29.434491395Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.434493563Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.434499178Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.434503056Z [err]    },
+2025-12-14T01:14:29.434503818Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.434510265Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.434519054Z [err]    request_id: 'req_92353e8cfea943e291b2dd7bd3f53c8e',
+2025-12-14T01:14:29.434521675Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-14T01:14:29.434523350Z [err]      date: 'Sun, 14 Dec 2025 01:14:22 GMT',
+2025-12-14T01:14:29.434533361Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.434534826Z [err]    error: {
+2025-12-14T01:14:29.434539810Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.434542748Z [err]      'set-cookie': '__cf_bm=izY8Sws765wOxs34A0ZxFMpUGTyywaywHjVb2988BzU-1765674862-1.0.1.1-L.FD0PLvBFeQxQPzMs1YSUAqzlMkg9TbLk_yS_FY1b215I5Fn_iyK_3gjMrYozV4fDJvmqqJIsj1o6GUzAIQB7ax35XD3OaXVWaF8HUmEoY; path=/; expires=Sun, 14-Dec-25 01:44:22 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=roJFyUay4Rsxk60v_ZcNFQuSqSLEIkXYVYXdcV3aIKo-1765674862290-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.434905540Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.434911617Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.434917495Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.434922939Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.434930229Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.434937298Z [err]      param: null,
+2025-12-14T01:14:29.434937488Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.434944296Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.434951075Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.434957420Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.434958003Z [err]    status: 404,
+2025-12-14T01:14:29.434964399Z [err]    headers: {
+2025-12-14T01:14:29.434972224Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.434974382Z [err]    },
+2025-12-14T01:14:29.434980631Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.434989202Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.434989295Z [err]      'cf-ray': '9ad9d8148c63be02-SEA',
+2025-12-14T01:14:29.434995095Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.435004289Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.435005238Z [err]    param: null,
+2025-12-14T01:14:29.435015574Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.435024544Z [err]  }
+2025-12-14T01:14:29.435032590Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.435609860Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.435618099Z [err]      date: 'Sun, 14 Dec 2025 01:14:22 GMT',
+2025-12-14T01:14:29.435621973Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.435626153Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.435627575Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.435635188Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.435637928Z [err]    error: {
+2025-12-14T01:14:29.435641992Z [err]    param: null,
+2025-12-14T01:14:29.435642661Z [err]      'set-cookie': '__cf_bm=NyA79dlqQWJDhdn9JGT.FZAeJf7QClbA3CIlgS7RdBs-1765674862-1.0.1.1-imVryObRYlQQvfTvQwo54HOtzTOXziBrnBjZBlREZ86tkxWnIh1wLeHqY9e4Rvm40mFWBqAO1JxPq2IkdwFDltz8vhgzZga8jJzEZgcWW_o; path=/; expires=Sun, 14-Dec-25 01:44:22 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=RP9l8VNt71zhBPeEflanLha266xe0a.FbcCdwCrYVf0-1765674862894-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.435646228Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-14T01:14:29.435651186Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.435654739Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.435658135Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.435664862Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.435665155Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.435670455Z [err]      'x-request-id': 'req_78b556991f0048ada5efce7ff5ff7845'
+2025-12-14T01:14:29.435679125Z [err]      param: null,
+2025-12-14T01:14:29.435682114Z [err]    },
+2025-12-14T01:14:29.435690883Z [err]    request_id: 'req_78b556991f0048ada5efce7ff5ff7845',
+2025-12-14T01:14:29.435692860Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.435701748Z [err]    },
+2025-12-14T01:14:29.436096805Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.436104470Z [err]  }
+2025-12-14T01:14:29.436111435Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.436134195Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.436139453Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.436144342Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.436149940Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.436154045Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.436158357Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.436162511Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.436166529Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.436173573Z [err]    status: 404,
+2025-12-14T01:14:29.436179848Z [err]    headers: {
+2025-12-14T01:14:29.436188802Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.436195165Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.436199066Z [err]      'cf-ray': '9ad9d819aee1be02-SEA',
+2025-12-14T01:14:29.436202838Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.436207117Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.436211085Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.436215557Z [err]      date: 'Sun, 14 Dec 2025 01:14:23 GMT',
+2025-12-14T01:14:29.436220037Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.436224442Z [err]      'set-cookie': '__cf_bm=XJwOpo7ukWIXe2BADLbgcfkOwZfSQ3Vu_fHHjxHDkz0-1765674863-1.0.1.1-Vy8yRMd_7kCK54A4uImqVS73HCXmTgq4Oq0T9_8zeUCFBA6aKNBQEv_D4JbwxzVhX6J4.1Agv9a2x02PbJCdLnOWy.c89k4hxngVMdHh5IU; path=/; expires=Sun, 14-Dec-25 01:44:23 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=eDD4Y4pH9IAkhSDKj17wnPQtWyTQWhCSjP0sWljWrXg-1765674863698-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.436368315Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.436372742Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.436376510Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.436380218Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.436383850Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:14:29.436387608Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.436391339Z [err]      'x-request-id': 'req_fe01ed9cde114952a60cb548e2cd6ec7'
+2025-12-14T01:14:29.436395220Z [err]    },
+2025-12-14T01:14:29.436401545Z [err]    request_id: 'req_fe01ed9cde114952a60cb548e2cd6ec7',
+2025-12-14T01:14:29.436405273Z [err]    error: {
+2025-12-14T01:14:29.436408940Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.436412370Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.436416007Z [err]      param: null,
+2025-12-14T01:14:29.436419503Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.436423410Z [err]    },
+2025-12-14T01:14:29.436427074Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.436430765Z [err]    param: null,
+2025-12-14T01:14:29.436435254Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.436438887Z [err]  }
+2025-12-14T01:14:29.436442543Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.436446020Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.436450382Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.436453797Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.436457508Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.436877275Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.436882825Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.436887073Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.436892402Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.436898432Z [err]    status: 404,
+2025-12-14T01:14:29.436902514Z [err]    headers: {
+2025-12-14T01:14:29.436906254Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.436910328Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.436914205Z [err]      'cf-ray': '9ad9d81daf66be02-SEA',
+2025-12-14T01:14:29.436919209Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.436923079Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.436927650Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.436932641Z [err]      date: 'Sun, 14 Dec 2025 01:14:24 GMT',
+2025-12-14T01:14:29.436936540Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.436940422Z [err]      'set-cookie': '__cf_bm=bsm0b2WNMzL7KKX3KtHmLmvf3bIQ4OF09deQ24MgKnY-1765674864-1.0.1.1-eWGJzU_Ar7u9rBegEMA48ZaVrOsRafndK7.VaFWF7dAqOGLHBNUZy.QU1aGILMyIKSSfKOK3Ij_siN_WJ47n9yS6rn1F5mY24mlP1NlRWDw; path=/; expires=Sun, 14-Dec-25 01:44:24 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=FU3Tg5i8VXvqSgrgLZa2IAJykwtwsXJ7Ns.XpZZv46g-1765674864345-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.436944357Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.436948318Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.436952840Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.436959435Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.437356120Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:14:29.437366425Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.437367675Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.437375909Z [err]      'x-request-id': 'req_02a958d780bf4d27b48a6ebb9770d50a'
+2025-12-14T01:14:29.437380437Z [err]    error: {
+2025-12-14T01:14:29.437387744Z [err]    },
+2025-12-14T01:14:29.437397793Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.437399208Z [err]    request_id: 'req_02a958d780bf4d27b48a6ebb9770d50a',
+2025-12-14T01:14:29.437663541Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.437671042Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.437677135Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:14:29.437682683Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.437686995Z [err]      param: null,
+2025-12-14T01:14:29.437689002Z [err]      'x-request-id': 'req_1c2d1c69a4754add827e311905408b17'
+2025-12-14T01:14:29.437697519Z [err]    },
+2025-12-14T01:14:29.437705031Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.437717642Z [err]    },
+2025-12-14T01:14:29.437728124Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.437739988Z [err]    param: null,
+2025-12-14T01:14:29.437750398Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.437761656Z [err]  }
+2025-12-14T01:14:29.437772378Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.437782232Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.437793028Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.437803943Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.437813928Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.437824272Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.437834478Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.437844827Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.437865968Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.437877109Z [err]    status: 404,
+2025-12-14T01:14:29.437887174Z [err]    headers: {
+2025-12-14T01:14:29.437897431Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.437908229Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.437918295Z [err]      'cf-ray': '9ad9d8210ebabe02-SEA',
+2025-12-14T01:14:29.437930036Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.437939522Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.437949921Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.437959948Z [err]      date: 'Sun, 14 Dec 2025 01:14:24 GMT',
+2025-12-14T01:14:29.437970487Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.437982850Z [err]      'set-cookie': '__cf_bm=wcyGwECOCZkxJTG4TWbqatPhb1OjRilllYr17LOd7dE-1765674864-1.0.1.1-iUcVacl4L4pHGTrU0SuvsrlavnOsebghuxYk7jmCmXBBS7K5QzgMJCqGSSaMbfO7VdpxU2P40fWaceWCxGbODLwkcwKtwPCeIGtJ3r6vjPk; path=/; expires=Sun, 14-Dec-25 01:44:24 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=K0vVkXHPzuza_lidiuNfkNbTyhvjvEje534D2CbIMEY-1765674864877-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.437992545Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.438002992Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.438379731Z [err]    request_id: 'req_1c2d1c69a4754add827e311905408b17',
+2025-12-14T01:14:29.438390185Z [err]    error: {
+2025-12-14T01:14:29.438401484Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.438412825Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.438425150Z [err]      param: null,
+2025-12-14T01:14:29.438435772Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.438446795Z [err]    },
+2025-12-14T01:14:29.438457145Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.438468662Z [err]    param: null,
+2025-12-14T01:14:29.438479034Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.438488825Z [err]  }
+2025-12-14T01:14:29.438498045Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.438508052Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.438518088Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.438527467Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.438537135Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.438546578Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.438558250Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.438568521Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.438579888Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.438587957Z [err]    request_id: 'req_3a233c5f3eb54e1a9f48647378112c13',
+2025-12-14T01:14:29.438588684Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.438595912Z [err]    status: 404,
+2025-12-14T01:14:29.438601050Z [err]    error: {
+2025-12-14T01:14:29.438602285Z [err]      'cf-ray': '9ad9d8246dd2be02-SEA',
+2025-12-14T01:14:29.438612842Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.438613418Z [err]    headers: {
+2025-12-14T01:14:29.438614435Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.438623121Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.438626581Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.438630464Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.438635772Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.438640505Z [err]      date: 'Sun, 14 Dec 2025 01:14:25 GMT',
+2025-12-14T01:14:29.438646355Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.438654374Z [err]      'set-cookie': '__cf_bm=qPWRk3X4wKKnWThLsFLgt6nh8V50BRSeeVFuBXYqAak-1765674865-1.0.1.1-yxjeKT.RT7uA48nzVuaUhS.nxL0t.Qjy2UwLuJ7dYZkHuLa_12gkR66dMJTXJ3p0UiUqwXiXjCXdW_g1IT3ioqVy8hR4fJCyn.UCwe87zBc; path=/; expires=Sun, 14-Dec-25 01:44:25 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=pqssabHm_zRHE77i6VL.SJ0_eKrBIMp794hL1d_nt9k-1765674865432-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.438662270Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.438669608Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.438677452Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.438685208Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.438692360Z [err]      'x-envoy-upstream-service-time': '3',
+2025-12-14T01:14:29.438699608Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.438706088Z [err]      'x-request-id': 'req_3a233c5f3eb54e1a9f48647378112c13'
+2025-12-14T01:14:29.438713543Z [err]    },
+2025-12-14T01:14:29.439406074Z [err]      param: null,
+2025-12-14T01:14:29.439415528Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.439424355Z [err]    },
+2025-12-14T01:14:29.439431587Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.439437428Z [err]    param: null,
+2025-12-14T01:14:29.439443398Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.439449045Z [err]  }
+2025-12-14T01:14:29.439455095Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.439460797Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.439468731Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.439475833Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.439482472Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.439488468Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.439494395Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.439499751Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.439505581Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.439510865Z [err]    status: 404,
+2025-12-14T01:14:29.439517020Z [err]    headers: {
+2025-12-14T01:14:29.439523300Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.439528781Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.439534237Z [err]      'cf-ray': '9ad9d82a896cbe02-SEA',
+2025-12-14T01:14:29.439539618Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.439545244Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.439751685Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.439761181Z [err]      date: 'Sun, 14 Dec 2025 01:14:26 GMT',
+2025-12-14T01:14:29.439769449Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.439775208Z [err]      'set-cookie': '__cf_bm=Q1F3aSFBfZJubCPcEEt4noK0dK_yMYFpExMh2g7pI_w-1765674866-1.0.1.1-Dw49f5bRSN47sTwDgikXieISNpWeYvn8F2B7SkqAwaIx8CYR7sOUoI4By_s0HIRgPlVk9w_dZdAQbxx8yWZTm6GJg9_bbboK1ns2qPxqs_Y; path=/; expires=Sun, 14-Dec-25 01:44:26 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=hLpv0EeKDBQImAJsUA8WFinbqeulHrZJphLShEPxGW8-1765674866391-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.439780972Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.439786362Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.439791668Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.439796950Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.439802177Z [err]      'x-envoy-upstream-service-time': '2',
+2025-12-14T01:14:29.439808554Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.439813825Z [err]      'x-request-id': 'req_203e5641efad449c9ce7f3066a5ab6d3'
+2025-12-14T01:14:29.439819037Z [err]    },
+2025-12-14T01:14:29.439824132Z [err]    request_id: 'req_203e5641efad449c9ce7f3066a5ab6d3',
+2025-12-14T01:14:29.439829474Z [err]    error: {
+2025-12-14T01:14:29.439834827Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.439839846Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.439846112Z [err]      param: null,
+2025-12-14T01:14:29.439851470Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.439856499Z [err]    },
+2025-12-14T01:14:29.439861683Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.439866661Z [err]    param: null,
+2025-12-14T01:14:29.440523704Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.440524418Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.440528028Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.440534673Z [err]  }
+2025-12-14T01:14:29.440535418Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.440535450Z [err]    status: 404,
+2025-12-14T01:14:29.440540822Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.440544172Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.440545500Z [err]    headers: {
+2025-12-14T01:14:29.440546923Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.440552241Z [err]      date: 'Sun, 14 Dec 2025 01:14:27 GMT',
+2025-12-14T01:14:29.440553684Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.440556031Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.440559625Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.440565366Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.440565990Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.440570318Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.440575292Z [err]      'cf-ray': '9ad9d82f7b7cbe02-SEA',
+2025-12-14T01:14:29.440577547Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.440581601Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.440585540Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.440812734Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.440817722Z [err]      'set-cookie': '__cf_bm=uewc9tgmNYt19sLLTrquN6eueF0kdYZ9EiBaobLvuW0-1765674867-1.0.1.1-us082PJKp.8.4v9MvvOVIUZ6iVBCqtC09VlbsndgMSTbX8aUTFtMAeLEFRjYHIDheoPsI02DUEbpfi4XWE74ZvvUjKI9ekBq6VoawZUuLPM; path=/; expires=Sun, 14-Dec-25 01:44:27 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=oy6h0sccZ_M0ncW4T.EeP6R4SLCbNOhei74VOY.TUuY-1765674867187-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.440821665Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.440826051Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.440829778Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.440834049Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.440838207Z [err]      'x-envoy-upstream-service-time': '4',
+2025-12-14T01:14:29.440843400Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.440847108Z [err]      'x-request-id': 'req_76829a1252064f3eb87f6e5e4c13b082'
+2025-12-14T01:14:29.440850830Z [err]    },
+2025-12-14T01:14:29.440854353Z [err]    request_id: 'req_76829a1252064f3eb87f6e5e4c13b082',
+2025-12-14T01:14:29.440858612Z [err]    error: {
+2025-12-14T01:14:29.440862525Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.440866221Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.440870447Z [err]      param: null,
+2025-12-14T01:14:29.440873902Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.440877651Z [err]    },
+2025-12-14T01:14:29.440882466Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.440886060Z [err]    param: null,
+2025-12-14T01:14:29.440889733Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.440893221Z [err]  }
+2025-12-14T01:14:29.440896884Z [err]  [GPT-Screen] Error: NotFoundError: 404 The model `gpt-5.1-mini` does not exist or you do not have access to it.
+2025-12-14T01:14:29.441550326Z [err]      date: 'Sun, 14 Dec 2025 01:14:28 GMT',
+2025-12-14T01:14:29.441557881Z [err]      server: 'cloudflare',
+2025-12-14T01:14:29.441565713Z [err]      'set-cookie': '__cf_bm=6zljZcn8utA6Qd90ps8oCHn6AX6rZQcuei3YL.YGowM-1765674868-1.0.1.1-l39FxS3tfTTjGConDLKKZc2lYHsRpA_K89r4H8McpmsYpWGyM50yp8EcDgqkBPq6cfxqy4tvr3x1aONlm2GewmaS6cCinFsPPfdrUL.WL2s; path=/; expires=Sun, 14-Dec-25 01:44:28 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=H4N1qo7NxIPA8Nc7jSS8CGb_MsShh5SQhp0PuLZwXDk-1765674868084-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:14:29.441580672Z [err]      at APIError.generate (/app/node_modules/openai/error.js:54:20)
+2025-12-14T01:14:29.441590088Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:14:29.441599235Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:14:29.441604559Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:14:29.441612679Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:14:29.441618371Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:14:29.441623398Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:14:29.441628770Z [err]    status: 404,
+2025-12-14T01:14:29.441634156Z [err]    headers: {
+2025-12-14T01:14:29.441639192Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:14:29.441645182Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:14:29.441649859Z [err]      'cf-ray': '9ad9d8350f27be02-SEA',
+2025-12-14T01:14:29.441654664Z [err]      connection: 'keep-alive',
+2025-12-14T01:14:29.441659532Z [err]      'content-encoding': 'gzip',
+2025-12-14T01:14:29.441664648Z [err]      'content-type': 'application/json; charset=utf-8',
+2025-12-14T01:14:29.442094548Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:14:29.442099882Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:14:29.442106932Z [err]      'transfer-encoding': 'chunked',
+2025-12-14T01:14:29.442116568Z [err]      vary: 'Origin',
+2025-12-14T01:14:29.442123141Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:14:29.442128822Z [err]      'x-envoy-upstream-service-time': '5',
+2025-12-14T01:14:29.442133909Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:14:29.442139118Z [err]      'x-request-id': 'req_cd6e6bac3a0747afa95fe91105774af6'
+2025-12-14T01:14:29.442144717Z [err]    },
+2025-12-14T01:14:29.442150368Z [err]    request_id: 'req_cd6e6bac3a0747afa95fe91105774af6',
+2025-12-14T01:14:29.442155572Z [err]    error: {
+2025-12-14T01:14:29.442160579Z [err]      message: 'The model `gpt-5.1-mini` does not exist or you do not have access to it.',
+2025-12-14T01:14:29.442165533Z [err]      type: 'invalid_request_error',
+2025-12-14T01:14:29.442170913Z [err]      param: null,
+2025-12-14T01:14:29.442176277Z [err]      code: 'model_not_found'
+2025-12-14T01:14:29.442181266Z [err]    },
+2025-12-14T01:14:29.442186626Z [err]    code: 'model_not_found',
+2025-12-14T01:14:29.442191739Z [err]    param: null,
+2025-12-14T01:14:29.442197022Z [err]    type: 'invalid_request_error'
+2025-12-14T01:14:29.442202478Z [err]  }
