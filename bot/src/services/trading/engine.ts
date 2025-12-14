@@ -153,6 +153,7 @@ export class TradingEngine extends EventEmitter {
         gptConfidence: 0,
         gptReasoning: 'Existing position',
         positionSizePercent: 0,
+        lastGptUpdate: Date.now(), // Initialize to now so first update happens after 5 min
       });
     }
 
@@ -529,22 +530,28 @@ export class TradingEngine extends EventEmitter {
 
     const pnl = this.calculatePnl(position, currentPrice);
 
-    // Check stop loss
-    if (position.side === 'LONG' && currentPrice <= position.stopLoss) {
-      await this.closePosition(position, currentPrice, 'sl');
-      return;
-    } else if (position.side === 'SHORT' && currentPrice >= position.stopLoss) {
-      await this.closePosition(position, currentPrice, 'sl');
-      return;
-    }
+    // Skip SL/TP checks if they haven't been set by GPT yet (=0)
+    // GPT will set proper SL/TP on first position update (within 5 minutes)
+    const hasSLTP = position.stopLoss > 0 && position.takeProfit > 0;
 
-    // Check take profit
-    if (position.side === 'LONG' && currentPrice >= position.takeProfit) {
-      await this.closePosition(position, currentPrice, 'tp');
-      return;
-    } else if (position.side === 'SHORT' && currentPrice <= position.takeProfit) {
-      await this.closePosition(position, currentPrice, 'tp');
-      return;
+    if (hasSLTP) {
+      // Check stop loss
+      if (position.side === 'LONG' && currentPrice <= position.stopLoss) {
+        await this.closePosition(position, currentPrice, 'sl');
+        return;
+      } else if (position.side === 'SHORT' && currentPrice >= position.stopLoss) {
+        await this.closePosition(position, currentPrice, 'sl');
+        return;
+      }
+
+      // Check take profit
+      if (position.side === 'LONG' && currentPrice >= position.takeProfit) {
+        await this.closePosition(position, currentPrice, 'tp');
+        return;
+      } else if (position.side === 'SHORT' && currentPrice <= position.takeProfit) {
+        await this.closePosition(position, currentPrice, 'tp');
+        return;
+      }
     }
 
     // Check timeout (extended to 4 hours)

@@ -69,28 +69,37 @@ Criterios para oportunidad:
 - Score > 50 = vale la pena analizar más`;
 
     try {
-      const response = await this.client.chat.completions.create({
-        model: this.screeningModel,
-        messages: [{ role: 'user', content: prompt }],
-        response_format: { type: 'json_object' },
-        max_completion_tokens: 900, // Increased - reasoning models need space to think
-      });
+      // Try up to 2 times in case of empty response
+      for (let attempt = 1; attempt <= 2; attempt++) {
+        const response = await this.client.chat.completions.create({
+          model: this.screeningModel,
+          messages: [{ role: 'user', content: prompt }],
+          response_format: { type: 'json_object' },
+          max_completion_tokens: 900, // Increased - reasoning models need space to think
+        });
 
-      const content = response.choices[0]?.message?.content;
+        const content = response.choices[0]?.message?.content;
 
-      if (!content) {
-        console.log(`[GPT-Screen] ${analysis.symbol}: Empty content, checking refusal:`, response.choices[0]?.message?.refusal);
-        return { hasOpportunity: false, direction: 'NONE', score: 0 };
+        if (!content) {
+          if (attempt < 2) {
+            console.log(`[GPT-Screen] ${analysis.symbol}: Empty content (attempt ${attempt}), retrying...`);
+            continue;
+          }
+          console.log(`[GPT-Screen] ${analysis.symbol}: Empty content after ${attempt} attempts`);
+          return { hasOpportunity: false, direction: 'NONE', score: 0 };
+        }
+
+        const result = JSON.parse(content);
+        console.log(`[GPT-Screen] ${analysis.symbol}: score=${result.score}, direction=${result.direction}, hasOpp=${result.hasOpportunity}`);
+
+        return {
+          hasOpportunity: result.hasOpportunity && result.score >= 60, // COST OPTIMIZED: was 50
+          direction: result.direction || 'NONE',
+          score: result.score || 0
+        };
       }
 
-      const result = JSON.parse(content);
-      console.log(`[GPT-Screen] ${analysis.symbol}: score=${result.score}, direction=${result.direction}, hasOpp=${result.hasOpportunity}`);
-
-      return {
-        hasOpportunity: result.hasOpportunity && result.score >= 60, // COST OPTIMIZED: was 50
-        direction: result.direction || 'NONE',
-        score: result.score || 0
-      };
+      return { hasOpportunity: false, direction: 'NONE', score: 0 };
     } catch (error: any) {
       console.error(`[GPT-Screen] ${analysis.symbol} Error:`, error.message || error);
       return { hasOpportunity: false, direction: 'NONE', score: 0 };
