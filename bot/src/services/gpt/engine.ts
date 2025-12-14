@@ -76,11 +76,13 @@ Criterios para oportunidad:
         max_completion_tokens: 100, // Very short response
       });
 
+      // Debug: Log full response structure
+      console.log(`[GPT-Screen] ${analysis.symbol} full response:`, JSON.stringify(response.choices[0], null, 2));
+
       const content = response.choices[0]?.message?.content;
-      console.log(`[GPT-Screen] ${analysis.symbol} raw response:`, content);
 
       if (!content) {
-        console.log(`[GPT-Screen] ${analysis.symbol}: Empty response from API`);
+        console.log(`[GPT-Screen] ${analysis.symbol}: Empty content, checking refusal:`, response.choices[0]?.message?.refusal);
         return { hasOpportunity: false, direction: 'NONE', score: 0 };
       }
 

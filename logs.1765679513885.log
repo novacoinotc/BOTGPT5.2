@@ -1,0 +1,380 @@
+2025-12-14T02:27:05.000000000Z [inf]  Starting Container
+2025-12-14T02:27:06.751033944Z [inf]  
+2025-12-14T02:27:06.751034736Z [inf]  [Engine] Max leverage: 10x
+2025-12-14T02:27:06.751045256Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-14T02:27:06.751045714Z [inf]  =========================================
+2025-12-14T02:27:06.751054628Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-14T02:27:06.751055309Z [inf]      GPT 5.2 SCALPING BOT - v1.0.1
+2025-12-14T02:27:06.751064325Z [inf]  =========================================
+2025-12-14T02:27:06.751064364Z [inf]  [Server] Running on port 3001
+2025-12-14T02:27:06.751074388Z [inf]  [Config] Max position size: 50%
+2025-12-14T02:27:06.751090006Z [inf]  [Config] Min confidence: 45%
+2025-12-14T02:27:06.751091888Z [inf]  
+2025-12-14T02:27:06.751096564Z [inf]  [Engine] Starting trading bot...
+2025-12-14T02:27:06.751106568Z [inf]  [Config] All required configurations present
+2025-12-14T02:27:06.751107096Z [inf]  [Config] Max hold time: 4h
+2025-12-14T02:27:06.751114657Z [inf]  [Engine] Min confidence: 45%
+2025-12-14T02:27:06.751115513Z [inf]  > npm run start -w bot
+2025-12-14T02:27:06.751118756Z [inf]  [Config] Trading enabled: true
+2025-12-14T02:27:06.751125250Z [inf]  [Main] Auto-starting trading bot...
+2025-12-14T02:27:06.751126860Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-14T02:27:06.751130322Z [inf]  [Config] Max leverage: 10x
+2025-12-14T02:27:06.751133305Z [inf]  
+2025-12-14T02:27:06.751136781Z [inf]  
+2025-12-14T02:27:06.751142947Z [inf]  > gpt-scalping-bot@1.0.0 start
+2025-12-14T02:27:06.751143364Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-14T02:27:06.751146884Z [inf]  
+2025-12-14T02:27:06.751158109Z [inf]  > bot@1.0.0 start
+2025-12-14T02:27:06.751166180Z [inf]  > node dist/index.js
+2025-12-14T02:27:06.893725927Z [inf]  [Engine] Account balance: $4669.66
+2025-12-14T02:27:06.893732656Z [inf]  [Engine] Available balance: $4669.66
+2025-12-14T02:27:07.786703143Z [inf]  
+2025-12-14T02:27:07.786717330Z [inf]  [Main] Bot is ready!
+2025-12-14T02:27:07.786717506Z [inf]  [Engine] Found 0 open positions
+2025-12-14T02:27:07.786730253Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-14T02:27:07.786730941Z [inf]  [Engine] Bot started successfully
+2025-12-14T02:27:07.786739625Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-14T02:27:07.786748012Z [inf]  
+2025-12-14T02:27:08.798133211Z [inf]  [WS] Connected to Binance
+2025-12-14T02:27:14.717773459Z [inf]  [GPT-Screen] DOGEUSDT raw response: 
+2025-12-14T02:27:14.717781875Z [inf]  [GPT-Screen] DOGEUSDT: Empty response from API
+2025-12-14T02:27:14.717788538Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:14.717792786Z [inf]  [GPT-Screen] OPUSDT raw response: 
+2025-12-14T02:27:14.717799895Z [inf]  [GPT-Screen] OPUSDT: Empty response from API
+2025-12-14T02:27:14.717805167Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:14.717810504Z [inf]  [GPT-Screen] INJUSDT raw response: 
+2025-12-14T02:27:14.717812006Z [inf]  [GPT-Screen] BTCUSDT raw response: 
+2025-12-14T02:27:14.717816452Z [inf]  [GPT-Screen] INJUSDT: Empty response from API
+2025-12-14T02:27:14.717820267Z [inf]  [GPT-Screen] BTCUSDT: Empty response from API
+2025-12-14T02:27:14.717825092Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:14.717828086Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:14.717841439Z [inf]  [GPT-Screen] ETHUSDT raw response: 
+2025-12-14T02:27:14.717846619Z [inf]  [GPT-Screen] ETHUSDT: Empty response from API
+2025-12-14T02:27:14.717857921Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:14.726475969Z [inf]  [GPT-Screen] XRPUSDT raw response: 
+2025-12-14T02:27:14.726481846Z [inf]  [GPT-Screen] XRPUSDT: Empty response from API
+2025-12-14T02:27:14.726486702Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:14.734418560Z [inf]  [GPT-Screen] ARBUSDT raw response: 
+2025-12-14T02:27:14.734427235Z [inf]  [GPT-Screen] ARBUSDT: Empty response from API
+2025-12-14T02:27:14.734433514Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:14.734440008Z [inf]  [GPT-Screen] AVAXUSDT raw response: 
+2025-12-14T02:27:14.734446118Z [inf]  [GPT-Screen] AVAXUSDT: Empty response from API
+2025-12-14T02:27:14.734452999Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:14.807870242Z [inf]  [GPT-Screen] SUIUSDT raw response: 
+2025-12-14T02:27:14.807877904Z [inf]  [GPT-Screen] SUIUSDT: Empty response from API
+2025-12-14T02:27:14.807882703Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:15.032952905Z [inf]  [GPT-Screen] LINKUSDT raw response: 
+2025-12-14T02:27:15.032960425Z [inf]  [GPT-Screen] LINKUSDT: Empty response from API
+2025-12-14T02:27:15.032967029Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:15.239221981Z [inf]  [GPT-Screen] BNBUSDT raw response: 
+2025-12-14T02:27:15.239228074Z [inf]  [GPT-Screen] BNBUSDT: Empty response from API
+2025-12-14T02:27:15.239233173Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:15.803398567Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:15.803487534Z [inf]  [GPT-Screen] SOLUSDT raw response: 
+2025-12-14T02:27:15.803502992Z [inf]  [GPT-Screen] SOLUSDT: Empty response from API
+2025-12-14T02:27:45.990510497Z [inf]  [GPT-Screen] ETHUSDT: Empty response from API
+2025-12-14T02:27:45.990522959Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:45.990529015Z [inf]  [GPT-Screen] BNBUSDT raw response: 
+2025-12-14T02:27:45.990538538Z [inf]  [GPT-Screen] BNBUSDT: Empty response from API
+2025-12-14T02:27:45.990548966Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:45.990711736Z [inf]  [GPT-Screen] BTCUSDT raw response: 
+2025-12-14T02:27:45.990723067Z [inf]  [GPT-Screen] BTCUSDT: Empty response from API
+2025-12-14T02:27:45.990753392Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:45.990762666Z [inf]  [GPT-Screen] ETHUSDT raw response: 
+2025-12-14T02:27:46.891308022Z [inf]  [GPT-Screen] SOLUSDT: Empty response from API
+2025-12-14T02:27:46.891323164Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:46.891359004Z [inf]  [GPT-Screen] SOLUSDT raw response: 
+2025-12-14T02:27:49.007744607Z [inf]  [GPT-Screen] XRPUSDT raw response: 
+2025-12-14T02:27:49.007750449Z [inf]  [GPT-Screen] XRPUSDT: Empty response from API
+2025-12-14T02:27:49.007756068Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:51.208969068Z [inf]  [GPT-Screen] LINKUSDT raw response: 
+2025-12-14T02:27:51.208974769Z [inf]  [GPT-Screen] LINKUSDT: Empty response from API
+2025-12-14T02:27:51.208980398Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:53.586762769Z [inf]  [GPT-Screen] AVAXUSDT raw response: 
+2025-12-14T02:27:53.586767609Z [inf]  [GPT-Screen] AVAXUSDT: Empty response from API
+2025-12-14T02:27:53.586772726Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:57.040423058Z [inf]  [GPT-Screen] DOGEUSDT raw response: 
+2025-12-14T02:27:57.040432934Z [inf]  [GPT-Screen] DOGEUSDT: Empty response from API
+2025-12-14T02:27:57.040441259Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:27:59.211394405Z [inf]  [GPT-Screen] SUIUSDT raw response: 
+2025-12-14T02:27:59.211401928Z [inf]  [GPT-Screen] SUIUSDT: Empty response from API
+2025-12-14T02:27:59.211406583Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:01.385149927Z [inf]  [GPT-Screen] ARBUSDT raw response: 
+2025-12-14T02:28:01.385154626Z [inf]  [GPT-Screen] ARBUSDT: Empty response from API
+2025-12-14T02:28:01.385158715Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:04.098283781Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:04.098364934Z [inf]  [GPT-Screen] OPUSDT raw response: 
+2025-12-14T02:28:04.098379595Z [inf]  [GPT-Screen] OPUSDT: Empty response from API
+2025-12-14T02:28:06.152810752Z [inf]  [GPT-Screen] INJUSDT raw response: 
+2025-12-14T02:28:06.152814524Z [inf]  [GPT-Screen] INJUSDT: Empty response from API
+2025-12-14T02:28:06.152819237Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:09.480260404Z [inf]  [GPT-Screen] BTCUSDT raw response: 
+2025-12-14T02:28:09.480271171Z [inf]  [GPT-Screen] BTCUSDT: Empty response from API
+2025-12-14T02:28:09.480275258Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:12.207718551Z [inf]  [GPT-Screen] ETHUSDT raw response: 
+2025-12-14T02:28:12.207725613Z [inf]  [GPT-Screen] ETHUSDT: Empty response from API
+2025-12-14T02:28:12.207733110Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:14.298558476Z [inf]  [GPT-Screen] BNBUSDT raw response: 
+2025-12-14T02:28:14.298562989Z [inf]  [GPT-Screen] BNBUSDT: Empty response from API
+2025-12-14T02:28:14.298566973Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:16.473052079Z [inf]  [GPT-Screen] SOLUSDT raw response: 
+2025-12-14T02:28:16.473066917Z [inf]  [GPT-Screen] SOLUSDT: Empty response from API
+2025-12-14T02:28:16.473074700Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:18.686711149Z [inf]  [GPT-Screen] XRPUSDT raw response: 
+2025-12-14T02:28:18.686718988Z [inf]  [GPT-Screen] XRPUSDT: Empty response from API
+2025-12-14T02:28:18.686723749Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:20.893857754Z [inf]  [GPT-Screen] LINKUSDT raw response: 
+2025-12-14T02:28:20.893863207Z [inf]  [GPT-Screen] LINKUSDT: Empty response from API
+2025-12-14T02:28:20.893872041Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:23.245044590Z [inf]  [GPT-Screen] AVAXUSDT raw response: 
+2025-12-14T02:28:23.245059777Z [inf]  [GPT-Screen] AVAXUSDT: Empty response from API
+2025-12-14T02:28:23.245067054Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:25.302207274Z [inf]  [GPT-Screen] DOGEUSDT raw response: 
+2025-12-14T02:28:25.302215306Z [inf]  [GPT-Screen] DOGEUSDT: Empty response from API
+2025-12-14T02:28:25.302221708Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:27.432918494Z [inf]  [GPT-Screen] SUIUSDT raw response: 
+2025-12-14T02:28:27.432925037Z [inf]  [GPT-Screen] SUIUSDT: Empty response from API
+2025-12-14T02:28:27.432929143Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:31.354360982Z [inf]  [GPT-Screen] ARBUSDT raw response: 
+2025-12-14T02:28:31.354367008Z [inf]  [GPT-Screen] ARBUSDT: Empty response from API
+2025-12-14T02:28:31.354373182Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:34.307495855Z [inf]  [GPT-Screen] OPUSDT raw response: 
+2025-12-14T02:28:34.307501771Z [inf]  [GPT-Screen] OPUSDT: Empty response from API
+2025-12-14T02:28:34.307505762Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:36.662481423Z [inf]  [GPT-Screen] INJUSDT raw response: 
+2025-12-14T02:28:36.662489432Z [inf]  [GPT-Screen] INJUSDT: Empty response from API
+2025-12-14T02:28:36.662497196Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:40.612879069Z [inf]  [GPT-Screen] BTCUSDT raw response: 
+2025-12-14T02:28:40.612883969Z [inf]  [GPT-Screen] BTCUSDT: Empty response from API
+2025-12-14T02:28:40.612888723Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:42.870148074Z [inf]  [GPT-Screen] ETHUSDT raw response: 
+2025-12-14T02:28:42.870154863Z [inf]  [GPT-Screen] ETHUSDT: Empty response from API
+2025-12-14T02:28:42.870160114Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:45.538330470Z [inf]  [GPT-Screen] BNBUSDT raw response: 
+2025-12-14T02:28:45.538337036Z [inf]  [GPT-Screen] BNBUSDT: Empty response from API
+2025-12-14T02:28:45.538341134Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:48.512014962Z [inf]  [GPT-Screen] SOLUSDT raw response: 
+2025-12-14T02:28:48.512023134Z [inf]  [GPT-Screen] SOLUSDT: Empty response from API
+2025-12-14T02:28:48.512032411Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:50.476481650Z [inf]  [GPT-Screen] XRPUSDT raw response: 
+2025-12-14T02:28:50.476487880Z [inf]  [GPT-Screen] XRPUSDT: Empty response from API
+2025-12-14T02:28:50.476493307Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:52.524285246Z [inf]  [GPT-Screen] LINKUSDT raw response: 
+2025-12-14T02:28:52.524290064Z [inf]  [GPT-Screen] LINKUSDT: Empty response from API
+2025-12-14T02:28:52.524295281Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:54.866448376Z [inf]  [GPT-Screen] AVAXUSDT raw response: 
+2025-12-14T02:28:54.866478840Z [inf]  [GPT-Screen] AVAXUSDT: Empty response from API
+2025-12-14T02:28:54.866487749Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:57.661850102Z [inf]  [GPT-Screen] DOGEUSDT raw response: 
+2025-12-14T02:28:57.661855579Z [inf]  [GPT-Screen] DOGEUSDT: Empty response from API
+2025-12-14T02:28:57.661861700Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:28:59.793018488Z [inf]  [GPT-Screen] SUIUSDT raw response: 
+2025-12-14T02:28:59.793029585Z [inf]  [GPT-Screen] SUIUSDT: Empty response from API
+2025-12-14T02:28:59.793038332Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:02.157647670Z [inf]  [GPT-Screen] ARBUSDT raw response: 
+2025-12-14T02:29:02.157654490Z [inf]  [GPT-Screen] ARBUSDT: Empty response from API
+2025-12-14T02:29:02.157658675Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:04.634682636Z [inf]  [GPT-Screen] OPUSDT raw response: 
+2025-12-14T02:29:04.634688110Z [inf]  [GPT-Screen] OPUSDT: Empty response from API
+2025-12-14T02:29:04.634697692Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:06.866261693Z [inf]  [GPT-Screen] INJUSDT raw response: 
+2025-12-14T02:29:06.866267605Z [inf]  [GPT-Screen] INJUSDT: Empty response from API
+2025-12-14T02:29:06.866272804Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:09.779498684Z [inf]  [GPT-Screen] BTCUSDT raw response: 
+2025-12-14T02:29:09.779503280Z [inf]  [GPT-Screen] BTCUSDT: Empty response from API
+2025-12-14T02:29:09.779507596Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:11.875685029Z [inf]  [GPT-Screen] ETHUSDT raw response: 
+2025-12-14T02:29:11.875692883Z [inf]  [GPT-Screen] ETHUSDT: Empty response from API
+2025-12-14T02:29:11.875698312Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:14.285086127Z [inf]  [GPT-Screen] BNBUSDT raw response: 
+2025-12-14T02:29:14.285095566Z [inf]  [GPT-Screen] BNBUSDT: Empty response from API
+2025-12-14T02:29:14.285103380Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:16.439459951Z [inf]  [GPT-Screen] SOLUSDT raw response: 
+2025-12-14T02:29:16.439466819Z [inf]  [GPT-Screen] SOLUSDT: Empty response from API
+2025-12-14T02:29:16.439472944Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:19.056932416Z [inf]  [GPT-Screen] XRPUSDT raw response: 
+2025-12-14T02:29:19.056942081Z [inf]  [GPT-Screen] XRPUSDT: Empty response from API
+2025-12-14T02:29:19.056948317Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:21.484264815Z [inf]  [GPT-Screen] LINKUSDT raw response: 
+2025-12-14T02:29:21.484269104Z [inf]  [GPT-Screen] LINKUSDT: Empty response from API
+2025-12-14T02:29:21.484273650Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:24.092201869Z [inf]  [GPT-Screen] AVAXUSDT raw response: 
+2025-12-14T02:29:24.092208594Z [inf]  [GPT-Screen] AVAXUSDT: Empty response from API
+2025-12-14T02:29:24.092213107Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:26.899170142Z [inf]  [GPT-Screen] DOGEUSDT raw response: 
+2025-12-14T02:29:26.899177801Z [inf]  [GPT-Screen] DOGEUSDT: Empty response from API
+2025-12-14T02:29:26.899187579Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:28.950691289Z [inf]  [GPT-Screen] SUIUSDT raw response: 
+2025-12-14T02:29:28.950703261Z [inf]  [GPT-Screen] SUIUSDT: Empty response from API
+2025-12-14T02:29:28.950710567Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:30.916760593Z [inf]  [GPT-Screen] ARBUSDT raw response: 
+2025-12-14T02:29:30.916766194Z [inf]  [GPT-Screen] ARBUSDT: Empty response from API
+2025-12-14T02:29:30.916770985Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:33.249857469Z [inf]  [GPT-Screen] OPUSDT raw response: 
+2025-12-14T02:29:33.249866205Z [inf]  [GPT-Screen] OPUSDT: Empty response from API
+2025-12-14T02:29:33.249872126Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:35.337752999Z [inf]  [GPT-Screen] INJUSDT raw response: 
+2025-12-14T02:29:35.337757060Z [inf]  [GPT-Screen] INJUSDT: Empty response from API
+2025-12-14T02:29:35.337763497Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:39.457847132Z [inf]  [GPT-Screen] BTCUSDT raw response: 
+2025-12-14T02:29:39.457853834Z [inf]  [GPT-Screen] BTCUSDT: Empty response from API
+2025-12-14T02:29:39.457859146Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:41.568960953Z [inf]  [GPT-Screen] ETHUSDT raw response: 
+2025-12-14T02:29:41.568967384Z [inf]  [GPT-Screen] ETHUSDT: Empty response from API
+2025-12-14T02:29:41.568974530Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:43.972034429Z [inf]  [GPT-Screen] BNBUSDT raw response: 
+2025-12-14T02:29:43.972038197Z [inf]  [GPT-Screen] BNBUSDT: Empty response from API
+2025-12-14T02:29:43.972042091Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:46.075841451Z [inf]  [GPT-Screen] SOLUSDT raw response: 
+2025-12-14T02:29:46.075855051Z [inf]  [GPT-Screen] SOLUSDT: Empty response from API
+2025-12-14T02:29:46.075860676Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:48.148841270Z [inf]  [GPT-Screen] XRPUSDT raw response: 
+2025-12-14T02:29:48.148848430Z [inf]  [GPT-Screen] XRPUSDT: Empty response from API
+2025-12-14T02:29:48.148859009Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:50.575864960Z [inf]  [GPT-Screen] LINKUSDT raw response: 
+2025-12-14T02:29:50.575869615Z [inf]  [GPT-Screen] LINKUSDT: Empty response from API
+2025-12-14T02:29:50.575873581Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:52.813069603Z [inf]  [GPT-Screen] AVAXUSDT raw response: 
+2025-12-14T02:29:52.813074485Z [inf]  [GPT-Screen] AVAXUSDT: Empty response from API
+2025-12-14T02:29:52.813080487Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:55.335352341Z [inf]  [GPT-Screen] DOGEUSDT raw response: 
+2025-12-14T02:29:55.335358016Z [inf]  [GPT-Screen] DOGEUSDT: Empty response from API
+2025-12-14T02:29:55.335362568Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:57.433121264Z [inf]  [GPT-Screen] SUIUSDT raw response: 
+2025-12-14T02:29:57.433129530Z [inf]  [GPT-Screen] SUIUSDT: Empty response from API
+2025-12-14T02:29:57.433134079Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:29:59.655339655Z [inf]  [GPT-Screen] ARBUSDT raw response: 
+2025-12-14T02:29:59.655344915Z [inf]  [GPT-Screen] ARBUSDT: Empty response from API
+2025-12-14T02:29:59.655349242Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:01.735874234Z [inf]  [GPT-Screen] OPUSDT raw response: 
+2025-12-14T02:30:01.735881136Z [inf]  [GPT-Screen] OPUSDT: Empty response from API
+2025-12-14T02:30:01.735886281Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:04.362150059Z [inf]  [GPT-Screen] INJUSDT raw response: 
+2025-12-14T02:30:04.362157995Z [inf]  [GPT-Screen] INJUSDT: Empty response from API
+2025-12-14T02:30:04.362162743Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:09.492367771Z [inf]  [GPT-Screen] BTCUSDT raw response: 
+2025-12-14T02:30:09.492376668Z [inf]  [GPT-Screen] BTCUSDT: Empty response from API
+2025-12-14T02:30:09.492382222Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:12.337578509Z [inf]  [GPT-Screen] ETHUSDT raw response: 
+2025-12-14T02:30:12.337583768Z [inf]  [GPT-Screen] ETHUSDT: Empty response from API
+2025-12-14T02:30:12.337588955Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:14.685813637Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:14.685900434Z [inf]  [GPT-Screen] BNBUSDT raw response: 
+2025-12-14T02:30:14.685906436Z [inf]  [GPT-Screen] BNBUSDT: Empty response from API
+2025-12-14T02:30:17.539469063Z [inf]  [GPT-Screen] SOLUSDT raw response: 
+2025-12-14T02:30:17.539476567Z [inf]  [GPT-Screen] SOLUSDT: Empty response from API
+2025-12-14T02:30:17.539481583Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:20.329160328Z [inf]  [GPT-Screen] XRPUSDT raw response: 
+2025-12-14T02:30:20.329172367Z [inf]  [GPT-Screen] XRPUSDT: Empty response from API
+2025-12-14T02:30:20.329178766Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:22.426074727Z [inf]  [GPT-Screen] LINKUSDT raw response: 
+2025-12-14T02:30:22.426082256Z [inf]  [GPT-Screen] LINKUSDT: Empty response from API
+2025-12-14T02:30:22.426086804Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:24.696785432Z [inf]  [GPT-Screen] AVAXUSDT raw response: 
+2025-12-14T02:30:24.696792382Z [inf]  [GPT-Screen] AVAXUSDT: Empty response from API
+2025-12-14T02:30:24.696796549Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:27.396099064Z [inf]  [GPT-Screen] DOGEUSDT: Empty response from API
+2025-12-14T02:30:27.396108269Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:27.396127633Z [inf]  [GPT-Screen] DOGEUSDT raw response: 
+2025-12-14T02:30:30.708135836Z [inf]  [GPT-Screen] SUIUSDT raw response: 
+2025-12-14T02:30:30.708142705Z [inf]  [GPT-Screen] SUIUSDT: Empty response from API
+2025-12-14T02:30:30.708149788Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:32.957269895Z [inf]  [GPT-Screen] ARBUSDT raw response: 
+2025-12-14T02:30:32.957277892Z [inf]  [GPT-Screen] ARBUSDT: Empty response from API
+2025-12-14T02:30:32.957284649Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:35.545746612Z [inf]  [GPT-Screen] OPUSDT raw response: 
+2025-12-14T02:30:35.545754505Z [inf]  [GPT-Screen] OPUSDT: Empty response from API
+2025-12-14T02:30:35.545760405Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:38.080911543Z [inf]  [GPT-Screen] INJUSDT raw response: 
+2025-12-14T02:30:38.080915367Z [inf]  [GPT-Screen] INJUSDT: Empty response from API
+2025-12-14T02:30:38.080919367Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:39.660133009Z [inf]  [GPT-Screen] BTCUSDT raw response: 
+2025-12-14T02:30:39.660140380Z [inf]  [GPT-Screen] BTCUSDT: Empty response from API
+2025-12-14T02:30:39.660146499Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:42.582023984Z [inf]  [GPT-Screen] ETHUSDT raw response: 
+2025-12-14T02:30:42.582035132Z [inf]  [GPT-Screen] ETHUSDT: Empty response from API
+2025-12-14T02:30:42.582046954Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:44.650071755Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:44.650192946Z [inf]  [GPT-Screen] BNBUSDT raw response: 
+2025-12-14T02:30:44.650203998Z [inf]  [GPT-Screen] BNBUSDT: Empty response from API
+2025-12-14T02:30:46.849702139Z [inf]  [GPT-Screen] SOLUSDT raw response: 
+2025-12-14T02:30:46.849713831Z [inf]  [GPT-Screen] SOLUSDT: Empty response from API
+2025-12-14T02:30:46.849720860Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:49.230355845Z [inf]  [GPT-Screen] XRPUSDT raw response: 
+2025-12-14T02:30:49.230368667Z [inf]  [GPT-Screen] XRPUSDT: Empty response from API
+2025-12-14T02:30:49.230375591Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:51.724751081Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:51.724868247Z [inf]  [GPT-Screen] LINKUSDT raw response: 
+2025-12-14T02:30:51.724872440Z [inf]  [GPT-Screen] LINKUSDT: Empty response from API
+2025-12-14T02:30:54.022704572Z [inf]  [GPT-Screen] AVAXUSDT raw response: 
+2025-12-14T02:30:54.022717219Z [inf]  [GPT-Screen] AVAXUSDT: Empty response from API
+2025-12-14T02:30:54.022725290Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:56.252121411Z [inf]  [GPT-Screen] DOGEUSDT raw response: 
+2025-12-14T02:30:56.252127923Z [inf]  [GPT-Screen] DOGEUSDT: Empty response from API
+2025-12-14T02:30:56.252132219Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:30:58.883776103Z [inf]  [GPT-Screen] SUIUSDT raw response: 
+2025-12-14T02:30:58.883780111Z [inf]  [GPT-Screen] SUIUSDT: Empty response from API
+2025-12-14T02:30:58.883783746Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:03.306862039Z [inf]  [GPT-Screen] ARBUSDT raw response: 
+2025-12-14T02:31:03.306871897Z [inf]  [GPT-Screen] ARBUSDT: Empty response from API
+2025-12-14T02:31:03.306877693Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:05.806982559Z [inf]  [GPT-Screen] OPUSDT raw response: 
+2025-12-14T02:31:05.806992653Z [inf]  [GPT-Screen] OPUSDT: Empty response from API
+2025-12-14T02:31:05.806998523Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:07.966236107Z [inf]  [GPT-Screen] INJUSDT raw response: 
+2025-12-14T02:31:07.966242639Z [inf]  [GPT-Screen] INJUSDT: Empty response from API
+2025-12-14T02:31:07.966247481Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:10.828822284Z [inf]  [GPT-Screen] BTCUSDT raw response: 
+2025-12-14T02:31:10.828827362Z [inf]  [GPT-Screen] BTCUSDT: Empty response from API
+2025-12-14T02:31:10.828833090Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:13.267317565Z [inf]  [GPT-Screen] ETHUSDT raw response: 
+2025-12-14T02:31:13.267324248Z [inf]  [GPT-Screen] ETHUSDT: Empty response from API
+2025-12-14T02:31:13.267331491Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:15.797431694Z [inf]  [GPT-Screen] BNBUSDT raw response: 
+2025-12-14T02:31:15.797435549Z [inf]  [GPT-Screen] BNBUSDT: Empty response from API
+2025-12-14T02:31:15.797439505Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:18.134223982Z [inf]  [GPT-Screen] SOLUSDT raw response: 
+2025-12-14T02:31:18.134228739Z [inf]  [GPT-Screen] SOLUSDT: Empty response from API
+2025-12-14T02:31:18.134233421Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:20.993646133Z [inf]  [GPT-Screen] XRPUSDT raw response: 
+2025-12-14T02:31:20.993651313Z [inf]  [GPT-Screen] XRPUSDT: Empty response from API
+2025-12-14T02:31:20.993656214Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:23.009251448Z [inf]  [GPT-Screen] LINKUSDT raw response: 
+2025-12-14T02:31:23.009257147Z [inf]  [GPT-Screen] LINKUSDT: Empty response from API
+2025-12-14T02:31:23.009263537Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:25.078171622Z [inf]  [GPT-Screen] AVAXUSDT raw response: 
+2025-12-14T02:31:25.078175993Z [inf]  [GPT-Screen] AVAXUSDT: Empty response from API
+2025-12-14T02:31:25.078179974Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:27.315935693Z [inf]  [GPT-Screen] DOGEUSDT raw response: 
+2025-12-14T02:31:27.315939480Z [inf]  [GPT-Screen] DOGEUSDT: Empty response from API
+2025-12-14T02:31:27.315942984Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:30.097537306Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:30.097602645Z [inf]  [GPT-Screen] SUIUSDT raw response: 
+2025-12-14T02:31:30.097610468Z [inf]  [GPT-Screen] SUIUSDT: Empty response from API
+2025-12-14T02:31:32.279844980Z [inf]  [GPT-Screen] ARBUSDT raw response: 
+2025-12-14T02:31:32.279854032Z [inf]  [GPT-Screen] ARBUSDT: Empty response from API
+2025-12-14T02:31:32.279859856Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:34.385229011Z [inf]  [GPT-Screen] OPUSDT raw response: 
+2025-12-14T02:31:34.385233534Z [inf]  [GPT-Screen] OPUSDT: Empty response from API
+2025-12-14T02:31:34.385238125Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:37.025535773Z [inf]  [GPT-Screen] INJUSDT raw response: 
+2025-12-14T02:31:37.025542369Z [inf]  [GPT-Screen] INJUSDT: Empty response from API
+2025-12-14T02:31:37.025549187Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:40.076040376Z [inf]  [GPT-Screen] BTCUSDT raw response: 
+2025-12-14T02:31:40.076045480Z [inf]  [GPT-Screen] BTCUSDT: Empty response from API
+2025-12-14T02:31:40.076050357Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:42.281875251Z [inf]  [GPT-Screen] ETHUSDT raw response: 
+2025-12-14T02:31:42.281881743Z [inf]  [GPT-Screen] ETHUSDT: Empty response from API
+2025-12-14T02:31:42.281886684Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:44.693557122Z [inf]  [GPT-Screen] BNBUSDT raw response: 
+2025-12-14T02:31:44.693566025Z [inf]  [GPT-Screen] BNBUSDT: Empty response from API
+2025-12-14T02:31:44.693572116Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:47.112161499Z [inf]  [GPT-Screen] SOLUSDT raw response: 
+2025-12-14T02:31:47.112171463Z [inf]  [GPT-Screen] SOLUSDT: Empty response from API
+2025-12-14T02:31:47.112177812Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:49.577305566Z [inf]  [GPT-Screen] XRPUSDT raw response: 
+2025-12-14T02:31:49.577311321Z [inf]  [GPT-Screen] XRPUSDT: Empty response from API
+2025-12-14T02:31:49.577317242Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:31:52.211726708Z [inf]  [GPT-Screen] LINKUSDT raw response: 
+2025-12-14T02:31:52.211731350Z [inf]  [GPT-Screen] LINKUSDT: Empty response from API
+2025-12-14T02:31:52.211735570Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
