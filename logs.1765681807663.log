@@ -1,0 +1,870 @@
+2025-12-14T03:06:49.000000000Z [inf]  Starting Container
+2025-12-14T03:06:50.405385510Z [inf]  [Engine] Min confidence: 45%
+2025-12-14T03:06:50.405396134Z [inf]  [Engine] Max leverage: 10x
+2025-12-14T03:06:50.405407120Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-14T03:06:50.405415890Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-14T03:06:50.405420411Z [inf]  [Server] Running on port 3001
+2025-12-14T03:06:50.405433745Z [inf]  
+2025-12-14T03:06:50.405440798Z [inf]  > bot@1.0.0 start
+2025-12-14T03:06:50.405447314Z [inf]  > node dist/index.js
+2025-12-14T03:06:50.405452622Z [inf]  
+2025-12-14T03:06:50.405457860Z [inf]  =========================================
+2025-12-14T03:06:50.405463005Z [inf]      GPT 5.2 SCALPING BOT - v1.0.1
+2025-12-14T03:06:50.405467421Z [inf]  =========================================
+2025-12-14T03:06:50.405471736Z [inf]  
+2025-12-14T03:06:50.405475795Z [inf]  [Config] All required configurations present
+2025-12-14T03:06:50.405482002Z [inf]  [Config] Trading enabled: true
+2025-12-14T03:06:50.405487428Z [inf]  [Config] Max leverage: 10x
+2025-12-14T03:06:50.405493337Z [inf]  [Config] Max position size: 50%
+2025-12-14T03:06:50.405498332Z [inf]  [Config] Min confidence: 45%
+2025-12-14T03:06:50.405503060Z [inf]  [Config] Max hold time: 4h
+2025-12-14T03:06:50.405507898Z [inf]  [Main] Auto-starting trading bot...
+2025-12-14T03:06:50.405509644Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-14T03:06:50.405514158Z [inf]  [Engine] Starting trading bot...
+2025-12-14T03:06:50.405515362Z [inf]  
+2025-12-14T03:06:50.405519506Z [inf]  > gpt-scalping-bot@1.0.0 start
+2025-12-14T03:06:50.405524501Z [inf]  > npm run start -w bot
+2025-12-14T03:06:50.405528855Z [inf]  
+2025-12-14T03:06:50.405533006Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-14T03:06:50.797598020Z [inf]  [Engine] Account balance: $4661.09
+2025-12-14T03:06:50.797604048Z [inf]  [Engine] Available balance: $2756.28
+2025-12-14T03:06:51.398164818Z [inf]  [Engine] Found 5 open positions
+2025-12-14T03:06:51.398170285Z [inf]  [Engine] Bot started successfully
+2025-12-14T03:06:51.398176056Z [inf]  
+2025-12-14T03:06:51.398181379Z [inf]  [Main] Bot is ready!
+2025-12-14T03:06:51.398187707Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-14T03:06:51.398192832Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-14T03:06:51.398199150Z [inf]  
+2025-12-14T03:06:52.445601047Z [inf]  [WS] Connected to Binance
+2025-12-14T03:06:54.381266140Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.381272849Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.381280185Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.381287081Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.381295344Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.396494239Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.616658686Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.616665591Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.630640160Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.662438895Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.673458702Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.809708349Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.809714564Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.812421028Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:54.873192076Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443544044Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443559944Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443569261Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443578034Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443586415Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443599012Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443610163Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443619649Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443663393Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443667649Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443672035Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443678780Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443686089Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443692438Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443697938Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443703828Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443709898Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.443716352Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.444744545Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.444750282Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.444754894Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.444759312Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.444763196Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.448769458Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.456515346Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.467204925Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.473489029Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.481112935Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.830958263Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.858087243Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.950362061Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.950367596Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.950372645Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:55.962622745Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.494081874Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.494085747Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.494090015Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.494094218Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.494098430Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.494102264Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.494106952Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.494111839Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.494115619Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.530499932Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.532111090Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.572262090Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.572276711Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.615615738Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:56.675830722Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.586638783Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.586642945Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.586647254Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.586651860Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.586655820Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.586660030Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586663869Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586668100Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586673424Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586677835Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586681887Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586687019Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586691406Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586696090Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586699889Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586703596Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586707463Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586711634Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586716686Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.586721425Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.586725407Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.588989167Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.588995372Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.589001629Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.589007311Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.589017087Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.589023891Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:06:57.589029390Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.589035670Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.594995545Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.610769941Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:57.834706332Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.471941250Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.471946510Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.471951794Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.471956033Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.471961192Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.471967547Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.471995176Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.472001229Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.653562358Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.781295065Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.840746714Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:58.888428317Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.457508592Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.457518619Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.457525035Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.457529647Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.457534473Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.457539834Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.457665387Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.457670409Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.552369988Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.628969285Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.635985567Z [inf]  [Engine] 🧠 Learned: En confianza 0% y sin indicadores, evitar operar; esperar confirmación (RSI o order-book imbalance) antes de entrar.
+2025-12-14T03:06:59.843837105Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:06:59.979011413Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477516969Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477521221Z [inf]  [Engine] ❌ Position closed: BNBUSDT | PnL: -0.05% ($-0.34) | Reason: sl
+2025-12-14T03:07:00.477525147Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477529447Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477534048Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477538014Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477542138Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477545998Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477549827Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477553325Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477557833Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477562271Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477566371Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477570048Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477574667Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477578886Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477583292Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.477587040Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.478279387Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.506324858Z [inf]  [Engine] 🧠 Learned: En TP muy ajustado tras entrada instantánea, usar trailing stop o TP más amplio para capturar más profit
+2025-12-14T03:07:00.533863945Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.564408392Z [inf]  [Engine] 🧠 Learned: En ausencia de confirmación (RSI/Order Book N/A), esperar señales coincidentes y confirmación de estructura antes de entrar.
+2025-12-14T03:07:00.571061077Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.611189651Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.667679080Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.706764990Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.732344347Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.771598341Z [inf]  [Engine] 🧠 Learned: En ausencia de confirmación técnica u order book imbalance, evitar short y esperar confluencia (RSI/imbalance/volumen)
+2025-12-14T03:07:00.831968318Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.858553158Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.858557692Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.869258760Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.873945016Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.900281683Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.907262611Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.952856838Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.952866265Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.981058003Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:00.997312508Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482018514Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482023390Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482028495Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482032128Z [inf]  [Engine] ✅ Position closed: BTCUSDT | PnL: +0.03% ($0.72) | Reason: tp
+2025-12-14T03:07:01.482035751Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482039625Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482043463Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482047576Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482051649Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482055630Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482059149Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482062874Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482066935Z [inf]  [Engine] ❌ Position closed: LINKUSDT | PnL: -0.09% ($-1.93) | Reason: sl
+2025-12-14T03:07:01.482071516Z [inf]  [Engine] 🧠 Learned: En ausencia de indicadores/imbalances, evitar entrar y esperar confirmación múltiple antes de shortear
+2025-12-14T03:07:01.482075164Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482079994Z [inf]  [Engine] ❌ Position closed: LINKUSDT | PnL: -0.08% ($-1.77) | Reason: sl
+2025-12-14T03:07:01.482083723Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.482087374Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.485089621Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.485094937Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.485099936Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.485104855Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.485109355Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.485114528Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.485119859Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.485124465Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.485129775Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.485134968Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.490601428Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.496060302Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.521045348Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.542419021Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.552376612Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.561952961Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.576607348Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.601675915Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.620935992Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.620943511Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.654479369Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.654483844Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.681900318Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.684259161Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.724402446Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.738046890Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.751843601Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.771094936Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.784594708Z [inf]  [Engine] ❌ Position closed: OPUSDT | PnL: 0.00% ($0.00) | Reason: sl
+2025-12-14T03:07:01.804347930Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.805914437Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.830946133Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.892515409Z [inf]  [Engine] ⚠️ Position ETHUSDT was closed externally
+2025-12-14T03:07:01.903553063Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.928390732Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.928396512Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.950029460Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.953095474Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:01.981251409Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430715843Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430716978Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430730297Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430731702Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430743788Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430746537Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 35}",
+2025-12-14T03:07:02.430755730Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430758655Z [inf]      "refusal": null,
+2025-12-14T03:07:02.430766563Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430766968Z [inf]      "annotations": []
+2025-12-14T03:07:02.430776025Z [inf]    },
+2025-12-14T03:07:02.430776772Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430784798Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T03:07:02.430792718Z [inf]    "finish_reason": "stop"
+2025-12-14T03:07:02.430796460Z [inf]    "index": 0,
+2025-12-14T03:07:02.430796844Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430806589Z [inf]  }
+2025-12-14T03:07:02.430808890Z [inf]    "message": {
+2025-12-14T03:07:02.430810359Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:02.430818276Z [inf]  [GPT-Screen] INJUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-14T03:07:02.430818752Z [inf]      "role": "assistant",
+2025-12-14T03:07:02.430827967Z [inf]  [Engine] INJUSDT: No opportunity (score: 35) - skipping full analysis
+2025-12-14T03:07:02.499384314Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T03:07:02.499391250Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T03:07:02.499401263Z [inf]    "index": 0,
+2025-12-14T03:07:02.499411342Z [inf]    "message": {
+2025-12-14T03:07:02.499418899Z [inf]      "role": "assistant",
+2025-12-14T03:07:02.499426744Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T03:07:02.499434943Z [inf]      "refusal": null,
+2025-12-14T03:07:02.499441144Z [inf]      "annotations": []
+2025-12-14T03:07:02.499448257Z [inf]    },
+2025-12-14T03:07:02.499454335Z [inf]    "finish_reason": "stop"
+2025-12-14T03:07:02.499461179Z [inf]  }
+2025-12-14T03:07:02.499468678Z [inf]  [GPT-Screen] DOGEUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T03:07:02.762143269Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:03.004225564Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:03.460811476Z [inf]  [Engine] ✅ Position closed: ETHUSDT | PnL: +0.05% ($1.59) | Reason: tp
+2025-12-14T03:07:03.948783886Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T03:07:05.440762888Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T03:07:05.440768942Z [inf]    "index": 0,
+2025-12-14T03:07:05.440773958Z [inf]    "message": {
+2025-12-14T03:07:05.440778963Z [inf]      "role": "assistant",
+2025-12-14T03:07:05.440784094Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T03:07:05.440790438Z [inf]      "refusal": null,
+2025-12-14T03:07:05.440794935Z [inf]      "annotations": []
+2025-12-14T03:07:05.440800340Z [inf]    },
+2025-12-14T03:07:05.440805037Z [inf]    "finish_reason": "stop"
+2025-12-14T03:07:05.440809929Z [inf]  }
+2025-12-14T03:07:05.440814271Z [inf]  [GPT-Screen] SUIUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T03:07:05.440818946Z [inf]  [Engine] SUIUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T03:07:06.575220292Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T03:07:06.575232250Z [inf]    "index": 0,
+2025-12-14T03:07:06.575238553Z [inf]    "message": {
+2025-12-14T03:07:06.575246977Z [inf]      "role": "assistant",
+2025-12-14T03:07:06.575253385Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T03:07:06.575259858Z [inf]      "refusal": null,
+2025-12-14T03:07:06.575265236Z [inf]      "annotations": []
+2025-12-14T03:07:06.575271337Z [inf]    },
+2025-12-14T03:07:06.575278498Z [inf]    "finish_reason": "stop"
+2025-12-14T03:07:06.575285020Z [inf]  }
+2025-12-14T03:07:06.575291164Z [inf]  [GPT-Screen] SOLUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T03:07:06.575297439Z [inf]  [Engine] SOLUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T03:07:08.390736572Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T03:07:08.390741487Z [inf]    "index": 0,
+2025-12-14T03:07:08.390746348Z [inf]    "message": {
+2025-12-14T03:07:08.390751258Z [inf]      "role": "assistant",
+2025-12-14T03:07:08.390755845Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 40}",
+2025-12-14T03:07:08.390760356Z [inf]      "refusal": null,
+2025-12-14T03:07:08.390765885Z [inf]      "annotations": []
+2025-12-14T03:07:08.390770450Z [inf]    },
+2025-12-14T03:07:08.390775047Z [inf]    "finish_reason": "stop"
+2025-12-14T03:07:08.390779268Z [inf]  }
+2025-12-14T03:07:08.390784128Z [inf]  [GPT-Screen] XRPUSDT: score=40, direction=SELL, hasOpp=true
+2025-12-14T03:07:08.390788856Z [inf]  [Engine] XRPUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-14T03:07:08.726175536Z [inf]  [Engine] ETHUSDT: HOLD (42%)
+2025-12-14T03:07:08.726184855Z [inf]  [Engine]   └─ Contexto mixto y sin asimetría clara para un scalp inmediato. Técnicamente el sesgo es levemente alc...
+2025-12-14T03:07:11.419811287Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:11.419822162Z [inf]  [Engine] ARBUSDT: Opportunity detected! (score: 63, direction: BUY)
+2025-12-14T03:07:11.419827679Z [inf]  [GPT-Screen] AVAXUSDT: Empty content, checking refusal: null
+2025-12-14T03:07:11.419835469Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T03:07:11.419836773Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T03:07:11.419843595Z [inf]      "refusal": null,
+2025-12-14T03:07:11.419846900Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:11.419850508Z [inf]    "index": 0,
+2025-12-14T03:07:11.419852792Z [inf]    },
+2025-12-14T03:07:11.419865327Z [inf]  }
+2025-12-14T03:07:11.419868788Z [inf]    "finish_reason": "length"
+2025-12-14T03:07:11.419871332Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T03:07:11.419876407Z [inf]  [GPT-Screen] ARBUSDT: score=63, direction=BUY, hasOpp=true
+2025-12-14T03:07:11.419884082Z [inf]  }
+2025-12-14T03:07:11.419884131Z [inf]    "index": 0,
+2025-12-14T03:07:11.419884286Z [inf]      "annotations": []
+2025-12-14T03:07:11.419896001Z [inf]    "message": {
+2025-12-14T03:07:11.419898380Z [inf]    },
+2025-12-14T03:07:11.419901630Z [inf]      "refusal": null,
+2025-12-14T03:07:11.419908092Z [inf]      "role": "assistant",
+2025-12-14T03:07:11.419909856Z [inf]    "message": {
+2025-12-14T03:07:11.419910330Z [inf]    "finish_reason": "stop"
+2025-12-14T03:07:11.419918365Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 63}",
+2025-12-14T03:07:11.419918715Z [inf]      "annotations": []
+2025-12-14T03:07:11.419929179Z [inf]      "role": "assistant",
+2025-12-14T03:07:11.419943198Z [inf]      "content": "",
+2025-12-14T03:07:11.519499157Z [inf]  [Engine] OPUSDT: HOLD (44%)
+2025-12-14T03:07:11.519505245Z [inf]  [Engine]   └─ No entro porque se juntan 3 factores que reducen mucho la expectativa para un scalp limpio: (1) Spre...
+2025-12-14T03:07:11.562240802Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:11.620405201Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:11.825204243Z [inf]  [Engine] LINKUSDT: SELL (52%)
+2025-12-14T03:07:11.825208725Z [inf]  [Engine]   └─ Régimen claramente lateral (ADX 16.2) y volatilidad baja (ATR 0.04 = 0.307%), lo que favorece scalps...
+2025-12-14T03:07:11.825213771Z [inf]  [Engine]   └─ Size: 1.5% | Leverage: 3x
+2025-12-14T03:07:11.825217729Z [inf]  [Engine]   └─ SL: $13.84 | TP: $13.73
+2025-12-14T03:07:12.595595561Z [inf]  [Engine] BTCUSDT: HOLD (44%)
+2025-12-14T03:07:12.595606185Z [inf]  [Engine]   └─ No entro aún porque las señales están mixtas y la ventaja es pequeña: (1) Régimen de rango con ADX 1...
+2025-12-14T03:07:15.591942026Z [inf]  [Engine] BNBUSDT: HOLD (44%)
+2025-12-14T03:07:15.591953051Z [inf]  [Engine]   └─ No hay una ventaja clara para scalping ahora mismo. Contexto: ADX 11 confirma mercado en rango y sin...
+2025-12-14T03:07:24.558100493Z [inf]  [Engine] ARBUSDT: HOLD (58%)
+2025-12-14T03:07:24.558115341Z [inf]  [Engine]   └─ Setup técnico es alcista (precio sobre EMA9/EMA21/SMA50 con alineación alcista perfecta, ADX 30.7 in...
+2025-12-14T03:07:28.172935625Z [inf]    "finish_reason": "stop"
+2025-12-14T03:07:28.172946979Z [inf]  }
+2025-12-14T03:07:28.172954589Z [inf]  [GPT-Screen] BTCUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T03:07:28.172964834Z [inf]  [Engine] BTCUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T03:07:28.173026610Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T03:07:28.173030839Z [inf]    "index": 0,
+2025-12-14T03:07:28.173034657Z [inf]    "message": {
+2025-12-14T03:07:28.173038492Z [inf]      "role": "assistant",
+2025-12-14T03:07:28.173043299Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T03:07:28.173048270Z [inf]      "refusal": null,
+2025-12-14T03:07:28.173054565Z [inf]      "annotations": []
+2025-12-14T03:07:28.173058694Z [inf]    },
+2025-12-14T03:07:37.797443707Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T03:07:37.797462628Z [inf]    "index": 0,
+2025-12-14T03:07:37.797470201Z [inf]    "message": {
+2025-12-14T03:07:37.797477559Z [inf]      "role": "assistant",
+2025-12-14T03:07:37.797483070Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 55}",
+2025-12-14T03:07:37.797487675Z [inf]      "refusal": null,
+2025-12-14T03:07:37.797492183Z [inf]      "annotations": []
+2025-12-14T03:07:37.797496820Z [inf]    },
+2025-12-14T03:07:37.797501992Z [inf]    "finish_reason": "stop"
+2025-12-14T03:07:37.797506953Z [inf]  }
+2025-12-14T03:07:37.797511661Z [inf]  [GPT-Screen] ETHUSDT: score=55, direction=BUY, hasOpp=true
+2025-12-14T03:07:37.797516082Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 55, direction: BUY)
+2025-12-14T03:07:37.797521203Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:37.797525618Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:37.797532070Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:37.797537929Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:57.817848214Z [inf]  [Engine] ETHUSDT: BUY (62%)
+2025-12-14T03:07:57.817852830Z [inf]  [Engine]   └─ Contexto de scalping en rango con volatilidad baja: ADX 11.9 indica mercado lateral y ATR 0.241% sug...
+2025-12-14T03:07:57.817857836Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-14T03:07:57.817862014Z [inf]  [Engine]   └─ SL: $3109.50 | TP: $3129.80
+2025-12-14T03:07:57.817867405Z [inf]  [Engine] Opening BUY ETHUSDT:
+2025-12-14T03:07:57.817874365Z [inf]  [Engine]   └─ Quantity: 0.179 @ ~$3121.28
+2025-12-14T03:07:57.817893967Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T03:07:57.817903672Z [inf]  [Engine]   └─ Capital used: $139.70 (3%)
+2025-12-14T03:07:57.817908714Z [inf]  [Engine]   └─ Position value: $558.81
+2025-12-14T03:07:57.817913248Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:57.817918605Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:57.817925183Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:57.817930661Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:07:57.817936196Z [inf]  [Engine] Position opened: LONG ETHUSDT @ $0.00
+2025-12-14T03:07:57.817947293Z [inf]  [Engine]   └─ SL: $3109.50 (Infinity%)
+2025-12-14T03:07:57.817952191Z [inf]  [Engine]   └─ TP: $3129.80 (Infinity%)
+2025-12-14T03:08:05.002613587Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T03:08:05.002621189Z [inf]    "index": 0,
+2025-12-14T03:08:05.002626864Z [inf]    "message": {
+2025-12-14T03:08:05.002631854Z [inf]      "role": "assistant",
+2025-12-14T03:08:05.002638126Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 56}",
+2025-12-14T03:08:05.002643261Z [inf]      "refusal": null,
+2025-12-14T03:08:05.002649637Z [inf]      "annotations": []
+2025-12-14T03:08:05.002654356Z [inf]    },
+2025-12-14T03:08:05.002658542Z [inf]    "finish_reason": "stop"
+2025-12-14T03:08:05.002663057Z [inf]  }
+2025-12-14T03:08:05.002667110Z [inf]  [GPT-Screen] BTCUSDT: score=56, direction=BUY, hasOpp=true
+2025-12-14T03:08:05.002672044Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 56, direction: BUY)
+2025-12-14T03:08:05.765088469Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:05.765093961Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:05.765099169Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:05.765105063Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:06.953351932Z [inf]    },
+2025-12-14T03:08:06.953357703Z [inf]    "finish_reason": "stop"
+2025-12-14T03:08:06.953363609Z [inf]  }
+2025-12-14T03:08:06.953368283Z [inf]  [GPT-Screen] BNBUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-14T03:08:06.953373961Z [inf]  [Engine] BNBUSDT: No opportunity (score: 35) - skipping full analysis
+2025-12-14T03:08:06.953438606Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T03:08:06.953452855Z [inf]    "index": 0,
+2025-12-14T03:08:06.953462696Z [inf]    "message": {
+2025-12-14T03:08:06.953471119Z [inf]      "role": "assistant",
+2025-12-14T03:08:06.953489277Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 35}",
+2025-12-14T03:08:06.953496883Z [inf]      "refusal": null,
+2025-12-14T03:08:06.953503259Z [inf]      "annotations": []
+2025-12-14T03:08:15.133645422Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T03:08:15.133649360Z [inf]    "index": 0,
+2025-12-14T03:08:15.133653078Z [inf]    "message": {
+2025-12-14T03:08:15.133657264Z [inf]      "role": "assistant",
+2025-12-14T03:08:15.133661566Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 28}",
+2025-12-14T03:08:15.133666328Z [inf]      "refusal": null,
+2025-12-14T03:08:15.133672338Z [inf]      "annotations": []
+2025-12-14T03:08:15.133676133Z [inf]    },
+2025-12-14T03:08:15.133679633Z [inf]    "finish_reason": "stop"
+2025-12-14T03:08:15.133684397Z [inf]  }
+2025-12-14T03:08:15.133688189Z [inf]  [GPT-Screen] SOLUSDT: score=28, direction=NONE, hasOpp=false
+2025-12-14T03:08:15.133692053Z [inf]  [Engine] SOLUSDT: No opportunity (score: 28) - skipping full analysis
+2025-12-14T03:08:19.036029916Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-14T03:08:19.036036184Z [inf]  [Engine]   └─ Contexto de rango con volatilidad baja (ADX 10.1 y BB Width 0.40%), ideal para scalping de mean reve...
+2025-12-14T03:08:19.036204582Z [inf]  [Engine]   └─ Size: 3% | Leverage: 5x
+2025-12-14T03:08:19.036216806Z [inf]  [Engine]   └─ SL: $90080.00 | TP: $90418.00
+2025-12-14T03:08:20.861509801Z [inf]  [Engine] Opening BUY BTCUSDT:
+2025-12-14T03:08:20.861516559Z [inf]  [Engine]   └─ Quantity: 0.008 @ ~$90235.60
+2025-12-14T03:08:20.861521549Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T03:08:20.861525608Z [inf]  [Engine]   └─ Capital used: $135.51 (3%)
+2025-12-14T03:08:20.861529750Z [inf]  [Engine]   └─ Position value: $677.55
+2025-12-14T03:08:21.340648459Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:21.859635726Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:21.859642588Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:21.859651699Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:22.138666175Z [inf]  [Engine] Position opened: LONG BTCUSDT @ $0.00
+2025-12-14T03:08:22.138672355Z [inf]  [Engine]   └─ SL: $90080.00 (Infinity%)
+2025-12-14T03:08:22.138678401Z [inf]  [Engine]   └─ TP: $90418.00 (Infinity%)
+2025-12-14T03:08:24.875895972Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T03:08:24.875903217Z [inf]    "index": 0,
+2025-12-14T03:08:24.875908996Z [inf]    "message": {
+2025-12-14T03:08:24.875914907Z [inf]      "role": "assistant",
+2025-12-14T03:08:24.875920244Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T03:08:24.875925458Z [inf]      "refusal": null,
+2025-12-14T03:08:24.876037564Z [inf]      "annotations": []
+2025-12-14T03:08:24.876056195Z [inf]    },
+2025-12-14T03:08:24.876063647Z [inf]    "finish_reason": "stop"
+2025-12-14T03:08:24.876068965Z [inf]  }
+2025-12-14T03:08:24.876074126Z [inf]  [GPT-Screen] XRPUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T03:08:24.876080231Z [inf]  [Engine] XRPUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T03:08:33.164203016Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T03:08:33.164209870Z [inf]    "index": 0,
+2025-12-14T03:08:33.164215386Z [inf]    "message": {
+2025-12-14T03:08:33.164221943Z [inf]      "role": "assistant",
+2025-12-14T03:08:33.164228368Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 65}",
+2025-12-14T03:08:33.164233877Z [inf]      "refusal": null,
+2025-12-14T03:08:33.164241727Z [inf]      "annotations": []
+2025-12-14T03:08:33.164250096Z [inf]    },
+2025-12-14T03:08:33.164255532Z [inf]    "finish_reason": "stop"
+2025-12-14T03:08:33.164262299Z [inf]  }
+2025-12-14T03:08:33.164268213Z [inf]  [GPT-Screen] ETHUSDT: score=65, direction=BUY, hasOpp=true
+2025-12-14T03:08:33.164273914Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 65, direction: BUY)
+2025-12-14T03:08:33.362788568Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:33.925644648Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:33.925651273Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:33.925660937Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:34.935081424Z [inf]      "role": "assistant",
+2025-12-14T03:08:34.935094473Z [inf]      "content": "",
+2025-12-14T03:08:34.935103158Z [inf]      "refusal": null,
+2025-12-14T03:08:34.935110580Z [inf]      "annotations": []
+2025-12-14T03:08:34.935117395Z [inf]    },
+2025-12-14T03:08:34.935124118Z [inf]    "finish_reason": "length"
+2025-12-14T03:08:34.935135246Z [inf]  }
+2025-12-14T03:08:34.935141665Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T03:08:34.935147683Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T03:08:34.935259000Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T03:08:34.935263184Z [inf]    "index": 0,
+2025-12-14T03:08:34.935267529Z [inf]    "message": {
+2025-12-14T03:08:35.992342479Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T03:08:35.992350750Z [inf]    "index": 0,
+2025-12-14T03:08:35.992356156Z [inf]    "message": {
+2025-12-14T03:08:35.992361678Z [inf]      "role": "assistant",
+2025-12-14T03:08:35.992369678Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 17}",
+2025-12-14T03:08:35.992378187Z [inf]      "refusal": null,
+2025-12-14T03:08:35.992383219Z [inf]      "annotations": []
+2025-12-14T03:08:35.992388206Z [inf]    },
+2025-12-14T03:08:35.992392495Z [inf]    "finish_reason": "stop"
+2025-12-14T03:08:35.992401034Z [inf]  }
+2025-12-14T03:08:35.992407973Z [inf]  [GPT-Screen] LINKUSDT: score=17, direction=NONE, hasOpp=false
+2025-12-14T03:08:35.992414318Z [inf]  [Engine] LINKUSDT: No opportunity (score: 17) - skipping full analysis
+2025-12-14T03:08:55.526563831Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T03:08:55.526570896Z [inf]    "index": 0,
+2025-12-14T03:08:55.526573423Z [inf]  }
+2025-12-14T03:08:55.526576324Z [inf]    "message": {
+2025-12-14T03:08:55.526581414Z [inf]      "role": "assistant",
+2025-12-14T03:08:55.526585187Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T03:08:55.526587457Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 35}",
+2025-12-14T03:08:55.526592974Z [inf]      "refusal": null,
+2025-12-14T03:08:55.526593998Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T03:08:55.526600250Z [inf]      "annotations": []
+2025-12-14T03:08:55.526600299Z [inf]  [Engine] ETHUSDT: BUY (58%)
+2025-12-14T03:08:55.526605867Z [inf]  [Engine]   └─ Contexto de rango con volatilidad baja (ADX 11.9, BB Width 0.62%, ATR 0.24%), ideal para scalps cort...
+2025-12-14T03:08:55.526607080Z [inf]    },
+2025-12-14T03:08:55.526612447Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-14T03:08:55.526613585Z [inf]    "finish_reason": "stop"
+2025-12-14T03:08:55.526618291Z [inf]  }
+2025-12-14T03:08:55.526622636Z [inf]  [GPT-Screen] AVAXUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-14T03:08:55.526626719Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 35) - skipping full analysis
+2025-12-14T03:08:55.526630720Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T03:08:55.526634556Z [inf]    "index": 0,
+2025-12-14T03:08:55.526641050Z [inf]    "message": {
+2025-12-14T03:08:55.526645627Z [inf]      "role": "assistant",
+2025-12-14T03:08:55.526651441Z [inf]      "content": "",
+2025-12-14T03:08:55.526655678Z [inf]      "refusal": null,
+2025-12-14T03:08:55.526659877Z [inf]      "annotations": []
+2025-12-14T03:08:55.526664744Z [inf]    },
+2025-12-14T03:08:55.526668658Z [inf]    "finish_reason": "length"
+2025-12-14T03:08:55.528338079Z [inf]  [Engine]   └─ SL: $3110.70 | TP: $3133.10
+2025-12-14T03:08:55.528345910Z [inf]  [Engine] Opening BUY ETHUSDT:
+2025-12-14T03:08:55.528351397Z [inf]  [Engine]   └─ Quantity: 0.168 @ ~$3122.57
+2025-12-14T03:08:55.528356322Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T03:08:55.528361424Z [inf]  [Engine]   └─ Capital used: $131.18 (3%)
+2025-12-14T03:08:55.528366301Z [inf]  [Engine]   └─ Position value: $524.72
+2025-12-14T03:08:55.528371577Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:55.528376167Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:55.528381129Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:55.528386620Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:08:55.528392110Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T03:08:55.528398944Z [inf]    "index": 0,
+2025-12-14T03:08:55.528405058Z [inf]    "message": {
+2025-12-14T03:08:55.528420418Z [inf]      "role": "assistant",
+2025-12-14T03:08:55.528426631Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T03:08:55.528430964Z [inf]      "refusal": null,
+2025-12-14T03:08:55.528435284Z [inf]      "annotations": []
+2025-12-14T03:08:55.528439901Z [inf]    },
+2025-12-14T03:08:55.528444196Z [inf]    "finish_reason": "stop"
+2025-12-14T03:08:55.528449553Z [inf]  }
+2025-12-14T03:08:55.528454927Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T03:08:55.528459133Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T03:08:55.528462899Z [inf]  [Engine] Position opened: LONG ETHUSDT @ $0.00
+2025-12-14T03:08:55.528467323Z [inf]  [Engine]   └─ SL: $3110.70 (Infinity%)
+2025-12-14T03:08:55.528474966Z [inf]  [Engine]   └─ TP: $3133.10 (Infinity%)
+2025-12-14T03:08:57.430369856Z [inf]  [Engine] BTCUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T03:08:57.430382068Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T03:08:57.430392049Z [inf]    "index": 0,
+2025-12-14T03:08:57.430398722Z [inf]    "message": {
+2025-12-14T03:08:57.430404594Z [inf]      "role": "assistant",
+2025-12-14T03:08:57.430412061Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T03:08:57.430417718Z [inf]      "refusal": null,
+2025-12-14T03:08:57.430423258Z [inf]      "annotations": []
+2025-12-14T03:08:57.430427953Z [inf]    },
+2025-12-14T03:08:57.430433548Z [inf]    "finish_reason": "stop"
+2025-12-14T03:08:57.430440113Z [inf]  }
+2025-12-14T03:08:57.430445668Z [inf]  [GPT-Screen] BTCUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T03:09:00.193054013Z [inf]  [GPT-Screen] SUIUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T03:09:00.193063759Z [inf]  [Engine] SUIUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T03:09:00.193248870Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T03:09:00.193257341Z [inf]    "index": 0,
+2025-12-14T03:09:00.193264291Z [inf]    "message": {
+2025-12-14T03:09:00.193270764Z [inf]      "role": "assistant",
+2025-12-14T03:09:00.193275966Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T03:09:00.193281366Z [inf]      "refusal": null,
+2025-12-14T03:09:00.193286838Z [inf]      "annotations": []
+2025-12-14T03:09:00.193292729Z [inf]    },
+2025-12-14T03:09:00.193300567Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:00.193305600Z [inf]  }
+2025-12-14T03:09:01.487719762Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T03:09:01.487729882Z [inf]    "index": 0,
+2025-12-14T03:09:01.487739070Z [inf]    "message": {
+2025-12-14T03:09:01.487748022Z [inf]      "role": "assistant",
+2025-12-14T03:09:01.487755234Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 42}",
+2025-12-14T03:09:01.487762963Z [inf]      "refusal": null,
+2025-12-14T03:09:01.487769869Z [inf]      "annotations": []
+2025-12-14T03:09:01.487779092Z [inf]    },
+2025-12-14T03:09:01.487785956Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:01.488119991Z [inf]  }
+2025-12-14T03:09:01.488129628Z [inf]  [GPT-Screen] BNBUSDT: score=42, direction=SELL, hasOpp=true
+2025-12-14T03:09:01.488136162Z [inf]  [Engine] BNBUSDT: No opportunity (score: 42) - skipping full analysis
+2025-12-14T03:09:04.620188862Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T03:09:04.620199027Z [inf]    "index": 0,
+2025-12-14T03:09:04.620204706Z [inf]    "message": {
+2025-12-14T03:09:04.620209501Z [inf]      "role": "assistant",
+2025-12-14T03:09:04.620214150Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 40}",
+2025-12-14T03:09:04.620218937Z [inf]      "refusal": null,
+2025-12-14T03:09:04.620223465Z [inf]      "annotations": []
+2025-12-14T03:09:04.620230678Z [inf]    },
+2025-12-14T03:09:04.620237212Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:04.620242316Z [inf]  }
+2025-12-14T03:09:04.620247530Z [inf]  [GPT-Screen] BNBUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-14T03:09:04.620253969Z [inf]  [Engine] BNBUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-14T03:09:07.564472380Z [inf]  [GPT-Screen] ETHUSDT: score=62, direction=BUY, hasOpp=true
+2025-12-14T03:09:07.564483263Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 62, direction: BUY)
+2025-12-14T03:09:07.564496872Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T03:09:07.564508100Z [inf]    "index": 0,
+2025-12-14T03:09:07.564519327Z [inf]    "message": {
+2025-12-14T03:09:07.564527365Z [inf]      "role": "assistant",
+2025-12-14T03:09:07.564538016Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 62}",
+2025-12-14T03:09:07.564545062Z [inf]      "refusal": null,
+2025-12-14T03:09:07.564551202Z [inf]      "annotations": []
+2025-12-14T03:09:07.564557200Z [inf]    },
+2025-12-14T03:09:07.564564022Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:07.564570281Z [inf]  }
+2025-12-14T03:09:08.125353732Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:08.125363370Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:08.125369195Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:08.125374852Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:11.101378740Z [inf]  }
+2025-12-14T03:09:11.101385536Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T03:09:11.101389928Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T03:09:11.101392548Z [inf]    "index": 0,
+2025-12-14T03:09:11.101397725Z [inf]    "message": {
+2025-12-14T03:09:11.101401444Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T03:09:11.101402580Z [inf]      "role": "assistant",
+2025-12-14T03:09:11.101407276Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T03:09:11.101411250Z [inf]      "refusal": null,
+2025-12-14T03:09:11.101416197Z [inf]      "annotations": []
+2025-12-14T03:09:11.101420193Z [inf]    },
+2025-12-14T03:09:11.101424244Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:14.137615421Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T03:09:14.137622322Z [inf]    "index": 0,
+2025-12-14T03:09:14.137627359Z [inf]    "message": {
+2025-12-14T03:09:14.137632767Z [inf]      "role": "assistant",
+2025-12-14T03:09:14.137637329Z [inf]      "content": "",
+2025-12-14T03:09:14.137642162Z [inf]      "refusal": null,
+2025-12-14T03:09:14.137647377Z [inf]      "annotations": []
+2025-12-14T03:09:14.137653174Z [inf]    },
+2025-12-14T03:09:14.137659238Z [inf]    "finish_reason": "length"
+2025-12-14T03:09:14.137664686Z [inf]  }
+2025-12-14T03:09:14.137669477Z [inf]  [GPT-Screen] ARBUSDT: Empty content, checking refusal: null
+2025-12-14T03:09:14.137674257Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T03:09:16.580648003Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T03:09:16.580657182Z [inf]    "index": 0,
+2025-12-14T03:09:16.580663513Z [inf]    "message": {
+2025-12-14T03:09:16.580669519Z [inf]      "role": "assistant",
+2025-12-14T03:09:16.580676176Z [inf]      "content": "",
+2025-12-14T03:09:16.580681948Z [inf]      "refusal": null,
+2025-12-14T03:09:16.580687099Z [inf]      "annotations": []
+2025-12-14T03:09:16.580692564Z [inf]    },
+2025-12-14T03:09:16.580697508Z [inf]    "finish_reason": "length"
+2025-12-14T03:09:16.580702516Z [inf]  }
+2025-12-14T03:09:16.580707146Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T03:09:16.580711761Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T03:09:22.526391208Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T03:09:22.526403459Z [inf]    "index": 0,
+2025-12-14T03:09:22.526410593Z [inf]    "message": {
+2025-12-14T03:09:22.526417089Z [inf]      "role": "assistant",
+2025-12-14T03:09:22.526425922Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 57}",
+2025-12-14T03:09:22.526439599Z [inf]      "refusal": null,
+2025-12-14T03:09:22.526445560Z [inf]      "annotations": []
+2025-12-14T03:09:22.526461693Z [inf]    },
+2025-12-14T03:09:22.526468238Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:22.526477022Z [inf]  }
+2025-12-14T03:09:22.526483162Z [inf]  [GPT-Screen] XRPUSDT: score=57, direction=SELL, hasOpp=true
+2025-12-14T03:09:22.526490231Z [inf]  [Engine] XRPUSDT: Opportunity detected! (score: 57, direction: SELL)
+2025-12-14T03:09:22.715608458Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:23.280805093Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:23.280809404Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:23.280815552Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:24.283966134Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T03:09:24.283973431Z [inf]    "index": 0,
+2025-12-14T03:09:24.283981023Z [inf]    "message": {
+2025-12-14T03:09:24.283988808Z [inf]      "role": "assistant",
+2025-12-14T03:09:24.283995239Z [inf]  [Engine] XRPUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T03:09:24.283997586Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T03:09:24.284005991Z [inf]      "refusal": null,
+2025-12-14T03:09:24.284013328Z [inf]      "annotations": []
+2025-12-14T03:09:24.284020476Z [inf]    },
+2025-12-14T03:09:24.284028254Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:24.284036236Z [inf]  }
+2025-12-14T03:09:24.284043964Z [inf]  [GPT-Screen] XRPUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T03:09:25.255386733Z [inf]  }
+2025-12-14T03:09:25.255397939Z [inf]  [GPT-Screen] OPUSDT: score=10, direction=NONE, hasOpp=false
+2025-12-14T03:09:25.255403568Z [inf]  [Engine] OPUSDT: No opportunity (score: 10) - skipping full analysis
+2025-12-14T03:09:25.255540871Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T03:09:25.255551966Z [inf]    "index": 0,
+2025-12-14T03:09:25.255557998Z [inf]    "message": {
+2025-12-14T03:09:25.255563356Z [inf]      "role": "assistant",
+2025-12-14T03:09:25.255613532Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 10}",
+2025-12-14T03:09:25.255626157Z [inf]      "refusal": null,
+2025-12-14T03:09:25.255631568Z [inf]      "annotations": []
+2025-12-14T03:09:25.255637122Z [inf]    },
+2025-12-14T03:09:25.255643252Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:26.535607746Z [inf]  [Engine] ETHUSDT: HOLD (52%)
+2025-12-14T03:09:26.535614967Z [inf]  [Engine]   └─ Aunque la estructura de medias es alcista (precio > EMA9/EMA21/SMA50 con alineación perfecta) y el o...
+2025-12-14T03:09:32.254608710Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T03:09:32.254613264Z [inf]    "index": 0,
+2025-12-14T03:09:32.254617173Z [inf]    "message": {
+2025-12-14T03:09:32.254621074Z [inf]      "role": "assistant",
+2025-12-14T03:09:32.254624832Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 18}",
+2025-12-14T03:09:32.254628726Z [inf]      "refusal": null,
+2025-12-14T03:09:32.254633404Z [inf]      "annotations": []
+2025-12-14T03:09:32.254637597Z [inf]    },
+2025-12-14T03:09:32.254642850Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:32.254647855Z [inf]  }
+2025-12-14T03:09:32.254651696Z [inf]  [GPT-Screen] LINKUSDT: score=18, direction=NONE, hasOpp=false
+2025-12-14T03:09:32.254655476Z [inf]  [Engine] LINKUSDT: No opportunity (score: 18) - skipping full analysis
+2025-12-14T03:09:32.624986506Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T03:09:32.624992278Z [inf]    "index": 0,
+2025-12-14T03:09:32.624998820Z [inf]    "message": {
+2025-12-14T03:09:32.625004599Z [inf]      "role": "assistant",
+2025-12-14T03:09:32.625009895Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 40}",
+2025-12-14T03:09:32.625016855Z [inf]      "refusal": null,
+2025-12-14T03:09:32.625023087Z [inf]      "annotations": []
+2025-12-14T03:09:32.625028596Z [inf]    },
+2025-12-14T03:09:32.625034673Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:32.625040181Z [inf]  }
+2025-12-14T03:09:32.625044984Z [inf]  [GPT-Screen] BTCUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-14T03:09:32.625050053Z [inf]  [Engine] BTCUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-14T03:09:33.547478277Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T03:09:33.547486997Z [inf]    "index": 0,
+2025-12-14T03:09:33.547491990Z [inf]    "message": {
+2025-12-14T03:09:33.547498635Z [inf]      "role": "assistant",
+2025-12-14T03:09:33.547504348Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T03:09:33.547509674Z [inf]      "refusal": null,
+2025-12-14T03:09:33.547514817Z [inf]      "annotations": []
+2025-12-14T03:09:33.547520016Z [inf]    },
+2025-12-14T03:09:33.547525057Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:33.547529987Z [inf]  }
+2025-12-14T03:09:33.547535983Z [inf]  [GPT-Screen] INJUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T03:09:33.547540893Z [inf]  [Engine] INJUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T03:09:37.305432668Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T03:09:37.305438355Z [inf]    "index": 0,
+2025-12-14T03:09:37.305443870Z [inf]    "message": {
+2025-12-14T03:09:37.305449794Z [inf]      "role": "assistant",
+2025-12-14T03:09:37.305456528Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 45}",
+2025-12-14T03:09:37.305463133Z [inf]      "refusal": null,
+2025-12-14T03:09:37.305469194Z [inf]      "annotations": []
+2025-12-14T03:09:37.305475110Z [inf]    },
+2025-12-14T03:09:37.305480100Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:37.305486353Z [inf]  }
+2025-12-14T03:09:37.305492389Z [inf]  [GPT-Screen] BNBUSDT: score=45, direction=SELL, hasOpp=false
+2025-12-14T03:09:37.305497792Z [inf]  [Engine] BNBUSDT: No opportunity (score: 45) - skipping full analysis
+2025-12-14T03:09:39.497620384Z [inf]  [Engine] XRPUSDT: HOLD (58%)
+2025-12-14T03:09:39.497632072Z [inf]  [Engine]   └─ El contexto actual es de rango y muy baja direccionalidad: ADX 15.4 confirma mercado lateral y el pr...
+2025-12-14T03:09:42.413517644Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T03:09:42.413524843Z [inf]    "index": 0,
+2025-12-14T03:09:42.413531239Z [inf]    "message": {
+2025-12-14T03:09:42.413539884Z [inf]      "role": "assistant",
+2025-12-14T03:09:42.413545907Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T03:09:42.413557067Z [inf]      "refusal": null,
+2025-12-14T03:09:42.413562123Z [inf]      "annotations": []
+2025-12-14T03:09:42.413567886Z [inf]    },
+2025-12-14T03:09:42.413572822Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:42.413577944Z [inf]  }
+2025-12-14T03:09:42.413583195Z [inf]  [GPT-Screen] ETHUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T03:09:42.413588246Z [inf]  [Engine] ETHUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T03:09:45.406405925Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T03:09:45.406412620Z [inf]    "index": 0,
+2025-12-14T03:09:45.406417386Z [inf]    "message": {
+2025-12-14T03:09:45.406422088Z [inf]      "role": "assistant",
+2025-12-14T03:09:45.406427534Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 55}",
+2025-12-14T03:09:45.406433579Z [inf]      "refusal": null,
+2025-12-14T03:09:45.406439038Z [inf]      "annotations": []
+2025-12-14T03:09:45.406444386Z [inf]    },
+2025-12-14T03:09:45.406449786Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:45.406456240Z [inf]  }
+2025-12-14T03:09:45.406462927Z [inf]  [GPT-Screen] AVAXUSDT: score=55, direction=BUY, hasOpp=true
+2025-12-14T03:09:45.406468261Z [inf]  [Engine] AVAXUSDT: Opportunity detected! (score: 55, direction: BUY)
+2025-12-14T03:09:45.406668603Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:45.633776686Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:45.645502969Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:50.455351408Z [inf]  [GPT-Screen] SOLUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T03:09:50.455376136Z [inf]  [Engine] SOLUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T03:09:50.455384475Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T03:09:50.455390538Z [inf]    "index": 0,
+2025-12-14T03:09:50.455397168Z [inf]    "message": {
+2025-12-14T03:09:50.455404247Z [inf]      "role": "assistant",
+2025-12-14T03:09:50.455411966Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 58}",
+2025-12-14T03:09:50.455418886Z [inf]      "refusal": null,
+2025-12-14T03:09:50.455425445Z [inf]      "annotations": []
+2025-12-14T03:09:50.455430644Z [inf]    },
+2025-12-14T03:09:50.455436334Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:50.455441980Z [inf]  }
+2025-12-14T03:09:50.455447315Z [inf]  [GPT-Screen] LINKUSDT: score=58, direction=BUY, hasOpp=true
+2025-12-14T03:09:50.455452547Z [inf]  [Engine] LINKUSDT: Opportunity detected! (score: 58, direction: BUY)
+2025-12-14T03:09:50.455897071Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T03:09:50.455901699Z [inf]    "index": 0,
+2025-12-14T03:09:50.455906699Z [inf]    "message": {
+2025-12-14T03:09:50.455911786Z [inf]      "role": "assistant",
+2025-12-14T03:09:50.455944311Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T03:09:50.455949305Z [inf]      "refusal": null,
+2025-12-14T03:09:50.455957700Z [inf]      "annotations": []
+2025-12-14T03:09:50.455962579Z [inf]    },
+2025-12-14T03:09:50.455966629Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:50.455971302Z [inf]  }
+2025-12-14T03:09:50.571543840Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:50.587790001Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:50.598487739Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:50.620534407Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T03:09:55.491482746Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T03:09:55.491488379Z [inf]    "index": 0,
+2025-12-14T03:09:55.491493284Z [inf]    "message": {
+2025-12-14T03:09:55.491498296Z [inf]      "role": "assistant",
+2025-12-14T03:09:55.491503178Z [inf]      "content": "",
+2025-12-14T03:09:55.491508636Z [inf]      "refusal": null,
+2025-12-14T03:09:55.491513296Z [inf]      "annotations": []
+2025-12-14T03:09:55.491518504Z [inf]    },
+2025-12-14T03:09:55.491524005Z [inf]    "finish_reason": "length"
+2025-12-14T03:09:55.491528594Z [inf]  }
+2025-12-14T03:09:55.491535524Z [inf]  [GPT-Screen] BNBUSDT: Empty content, checking refusal: null
+2025-12-14T03:09:55.491540410Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T03:09:57.848472064Z [inf]    },
+2025-12-14T03:09:57.848472911Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T03:09:57.848482275Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:57.848490362Z [inf]    "index": 0,
+2025-12-14T03:09:57.848490785Z [inf]  }
+2025-12-14T03:09:57.848498541Z [inf]    "message": {
+2025-12-14T03:09:57.848500272Z [inf]  [GPT-Screen] XRPUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T03:09:57.848509160Z [inf]      "role": "assistant",
+2025-12-14T03:09:57.848517322Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T03:09:57.848518870Z [inf]  [Engine] XRPUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T03:09:57.848525720Z [inf]      "refusal": null,
+2025-12-14T03:09:57.848532914Z [inf]      "annotations": []
+2025-12-14T03:09:59.469833307Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T03:09:59.469838467Z [inf]    "index": 0,
+2025-12-14T03:09:59.469843650Z [inf]    "message": {
+2025-12-14T03:09:59.469849035Z [inf]      "role": "assistant",
+2025-12-14T03:09:59.469854640Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 30}",
+2025-12-14T03:09:59.469859984Z [inf]      "refusal": null,
+2025-12-14T03:09:59.469865212Z [inf]      "annotations": []
+2025-12-14T03:09:59.469870445Z [inf]    },
+2025-12-14T03:09:59.469876287Z [inf]    "finish_reason": "stop"
+2025-12-14T03:09:59.469882412Z [inf]  }
+2025-12-14T03:09:59.469887386Z [inf]  [GPT-Screen] BTCUSDT: score=30, direction=SELL, hasOpp=false
+2025-12-14T03:09:59.469892702Z [inf]  [Engine] BTCUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T03:10:01.570590573Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T03:10:01.570600940Z [inf]    "index": 0,
+2025-12-14T03:10:01.570607589Z [inf]    "message": {
+2025-12-14T03:10:01.570614955Z [inf]      "role": "assistant",
+2025-12-14T03:10:01.570620434Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T03:10:01.570625662Z [inf]      "refusal": null,
+2025-12-14T03:10:01.570630626Z [inf]      "annotations": []
+2025-12-14T03:10:01.570636965Z [inf]    },
+2025-12-14T03:10:01.570642871Z [inf]    "finish_reason": "stop"
+2025-12-14T03:10:01.570648273Z [inf]  }
+2025-12-14T03:10:01.570655065Z [inf]  [GPT-Screen] SOLUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T03:10:01.570668346Z [inf]  [Engine] SOLUSDT: No opportunity (score: 25) - skipping full analysis
