@@ -632,8 +632,8 @@ export class TradingEngine extends EventEmitter {
         : (position.entryPrice - exitPrice);
       const pnlUsd = priceDiff * position.quantity;
 
-      // Record trade in memory
-      const tradeMemory = memorySystem.addTrade({
+      // Record trade in memory (persist to database)
+      const tradeMemory = await memorySystem.addTrade({
         symbol: position.symbol,
         side: position.side,
         entryPrice: position.entryPrice,
