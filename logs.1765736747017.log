@@ -1,0 +1,1001 @@
+2025-12-14T17:17:12.523988808Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:17:14.681561188Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:17:14.681568439Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:17:16.453944628Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:17:16.453953025Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:18:06.489005124Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:18:06.489011655Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:18:08.376823993Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:18:08.376830373Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:18:10.402015956Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:18:10.402021260Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:18:12.405941836Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:18:12.405948395Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:18:14.529845929Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:18:14.529852092Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:18:16.497109072Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:18:16.497115766Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:19:06.513170636Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:19:06.513178217Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:19:08.541913662Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:19:08.541923753Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:19:10.510470570Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:19:10.510476069Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:19:12.601503847Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:19:12.601512964Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:19:15.826766139Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:19:15.826770649Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:19:17.573077560Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:19:17.573084191Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:20:07.726713871Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:20:07.726730502Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:20:07.726738598Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:20:07.726746752Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:20:09.713752170Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:20:09.713759428Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:20:11.728824857Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:20:11.728832125Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:20:13.911332082Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:20:13.911342697Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:20:15.837759469Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:20:15.837763756Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:21:05.935358363Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:21:05.935364906Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:21:07.927925388Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:21:07.927938084Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:21:10.088957060Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:21:10.088967036Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:21:12.734522274Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:21:12.734531218Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:21:14.610873677Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:21:14.610883419Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:21:16.762860459Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:21:16.762868277Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:22:06.799694911Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:22:06.799700022Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:22:07.798690500Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:22:07.798697249Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:22:10.095105604Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:22:10.095119286Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:22:12.906766062Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:22:12.906774687Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:22:14.985203864Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:22:14.985264180Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:22:16.742709761Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:22:16.742717612Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:23:06.198645098Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:23:06.198672132Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:23:07.857860466Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:23:07.857867753Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:23:09.747487885Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:23:09.747497130Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:23:12.902453565Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:23:12.902462562Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:23:14.912772737Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:23:14.912777805Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:23:16.812741189Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:23:16.812749260Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:24:06.288608437Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:24:06.288616665Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:24:07.952134562Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:24:07.952140526Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:24:09.988602910Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:24:09.988611857Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:24:12.217651700Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:24:12.217657655Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:24:14.239959513Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:24:14.239964179Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:24:17.081672163Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:24:17.081677907Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:25:07.243965603Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:25:07.244061060Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:25:08.251712213Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:25:08.251716335Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:25:10.237910720Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:25:10.237917742Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:25:12.403767834Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:25:12.403777156Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:25:15.174245073Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:25:15.174252668Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:25:17.161297502Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:25:17.161314964Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:26:07.213976831Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:26:07.213985730Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:26:08.367152522Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:26:08.367156850Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:26:11.368246843Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:26:11.368253105Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:26:13.508801856Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:26:13.508813369Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:26:16.379156133Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:26:16.379162009Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:26:18.342241892Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:26:18.342251805Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:27:08.350321086Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:27:08.350330919Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:27:08.350337935Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:27:08.350344894Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:27:09.592391203Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:27:09.592405273Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:27:12.395103868Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:27:12.395110198Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:27:14.464779175Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:27:14.464789797Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:27:16.248252874Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:27:16.248258467Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:28:15.696603337Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:28:15.696616478Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:28:15.696625537Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:28:15.696635109Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:28:15.696642469Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:28:15.696649390Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:28:15.696655638Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:28:15.696664045Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:28:15.696670237Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:28:15.696676745Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:28:17.458024294Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:28:17.458029568Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:29:07.461518879Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:29:07.461538608Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:29:07.470083363Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:29:07.470099213Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:29:09.635063866Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:29:09.635084732Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:29:11.600740067Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:29:11.600754349Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:29:13.828815280Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:29:13.828822076Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:29:16.671891264Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:29:16.671897126Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:30:06.636948306Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:30:06.636956865Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:30:07.623077916Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:30:07.623086585Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:30:09.591318806Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:30:09.591325775Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:30:11.620595421Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:30:11.620606471Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:30:13.824553850Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:30:13.824560342Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:30:15.879262109Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:30:15.879295956Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:31:05.883253537Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:31:05.883266642Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:31:07.690212917Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:31:07.690225861Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:31:09.780419338Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:31:09.780431166Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:31:11.948455814Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:31:11.948469442Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:31:14.662147581Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:31:14.665284149Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:31:16.627223421Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:31:16.627231676Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:32:06.686848958Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:32:06.686863076Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:32:07.730917449Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:32:07.730925192Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:32:09.790976646Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:32:09.790986944Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:32:11.827313961Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:32:11.827321088Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:32:14.809372181Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:32:14.809384406Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:32:16.827103883Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:32:16.827111040Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:33:06.858990068Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:33:06.859004749Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:33:07.703823450Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:33:07.703832300Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:33:09.794658615Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:33:09.794662685Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:33:11.818361717Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:33:11.818367981Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:33:13.941155189Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:33:13.941167252Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:33:15.863398427Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:33:15.863405309Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:34:05.866410492Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:34:05.866434923Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:34:07.947667302Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:34:07.947675225Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:34:09.827358074Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:34:09.827365388Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:34:11.881924823Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:34:11.881934240Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:34:14.090505318Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:34:14.090513518Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:34:16.061593541Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:34:16.061605892Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:35:16.119039933Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:35:16.119046883Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:35:16.119053850Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:35:16.119061048Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:35:16.119068805Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:35:16.119075596Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:35:16.119082507Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:35:16.119089655Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:35:16.119097054Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:35:16.119103428Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:35:16.514647785Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:35:16.514655922Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:36:06.519544870Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:36:06.519550582Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:36:08.401520338Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:36:08.401526377Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:36:10.409724663Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:36:10.409728771Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:36:12.585042401Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:36:12.585050616Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:36:14.689836011Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:36:14.689840948Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:36:16.382706838Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:36:16.382710938Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:37:05.805342296Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:37:05.805360185Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:37:07.419980010Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:37:07.419987185Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:37:09.394187685Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:37:09.394199874Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:37:11.415124579Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:37:11.415135914Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:37:13.505534288Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:37:13.505539677Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:37:15.629376269Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:37:15.629390283Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:38:05.677573230Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:38:05.677579926Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:38:07.554083431Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:38:07.554092302Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:38:09.549481440Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:38:09.549494129Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:38:11.561031092Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:38:11.561041895Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:38:14.550876333Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:38:14.550880922Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:38:16.522131827Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:38:16.522136113Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:39:05.962304131Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:39:05.962316691Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:39:07.801850192Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:39:07.801866816Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:39:09.754028781Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:39:09.754039121Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:39:11.824439757Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:39:11.824453379Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:39:13.917901709Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:39:13.917914762Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:39:15.988144084Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:39:15.988151113Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:40:06.056106902Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:40:06.056118220Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:40:07.676764215Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:40:07.676770321Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:40:09.674755435Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:40:09.674765623Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:40:11.750320234Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:40:11.750325870Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:40:13.945183032Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:40:13.945195791Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:40:15.728581442Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:40:15.728588748Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:41:05.976991541Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:41:05.976998328Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:41:07.773492031Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:41:07.773496209Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:41:09.776394550Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:41:09.776399737Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:41:11.919098855Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:41:11.919102925Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:41:14.017196794Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:41:14.017201544Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:41:16.041404665Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:41:16.041412277Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:42:06.038370474Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:42:06.038378776Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:42:07.893045670Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:42:07.893052110Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:42:10.093235751Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:42:10.093241650Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:42:12.051569869Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:42:12.051589943Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:42:14.380154353Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:42:14.380162912Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:42:16.268987862Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:42:16.268994379Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:43:06.270835480Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:43:06.270843341Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:43:07.413907454Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:43:07.413918328Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:43:09.515940638Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:43:09.515948680Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:43:12.199661191Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:43:12.199670145Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:43:14.361450742Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:43:14.361461654Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:43:16.264738552Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:43:16.264747986Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:44:06.280727591Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:44:06.280735385Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:44:07.651203128Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:44:07.651226218Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:44:10.294354167Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:44:10.294360504Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:44:12.488861801Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:44:12.488869513Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:44:14.581251145Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:44:14.581262493Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:44:16.387216589Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:44:16.387226080Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:45:06.396977406Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:45:06.397262529Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:45:07.710310896Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:45:07.710327760Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:45:10.328029135Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:45:10.328036765Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:45:12.391093284Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:45:12.391097232Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:45:14.724636009Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:45:14.724644715Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:45:17.500136978Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:45:17.500145183Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:46:07.515724963Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:46:07.515738023Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:46:07.515746568Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:46:07.515753258Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:46:09.850564370Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:46:09.850571891Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:46:12.522472329Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:46:12.522476614Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:46:14.767382826Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:46:14.767389496Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:46:16.480541147Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:46:16.480548264Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:47:05.870209206Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:47:05.870222203Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:47:07.696768707Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:47:07.696780839Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:47:09.689643657Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:47:09.689647164Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:47:11.714514014Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:47:11.714520858Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:47:14.397900546Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:47:14.397905868Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:47:16.396418141Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:47:16.396425171Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:48:06.424367384Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:48:06.424380235Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:48:07.632236752Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:48:07.632252132Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:48:10.478383163Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:48:10.478392408Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:48:12.333357004Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:48:12.333362684Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:48:14.476400403Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:48:14.476407167Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:48:16.387356274Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:48:16.387364036Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:49:06.516981180Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:49:06.516989219Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:49:07.553221413Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:49:07.553231946Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:49:09.594774809Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:49:09.594799883Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:49:12.553018934Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:49:12.553023318Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:49:14.787824691Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:49:14.787834467Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:49:16.629744541Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:49:16.629752627Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:50:06.659835430Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:50:06.659842864Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:50:07.762257161Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:50:07.762496523Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:50:09.611660505Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:50:09.611666490Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:50:11.610045865Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:50:11.610052737Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:50:13.828890636Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:50:13.828897026Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:50:15.896816175Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:50:15.896831069Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:51:05.905280359Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:51:05.905286985Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:51:07.825565760Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:51:07.825569486Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:51:09.889852854Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:51:09.889861684Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:51:13.155612392Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:51:13.155621165Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:51:15.263663193Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:51:15.263671025Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:51:17.115257864Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:51:17.115263959Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:52:07.699297680Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:52:07.699304033Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:52:08.983785957Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:52:08.983800023Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:52:10.949177879Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:52:10.949184055Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:52:13.972603206Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:52:13.972615400Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:52:16.293229537Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:52:16.293235824Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:52:18.256010230Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:52:18.256017859Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:53:07.654973007Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:53:07.654981288Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:53:08.641202978Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:53:08.641208292Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:53:11.631085303Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:53:11.631089852Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:53:13.681014287Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:53:13.681019905Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:53:16.671092057Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:53:16.671097282Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:53:18.700668146Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:53:18.700675323Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:54:07.922202167Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:54:07.922216357Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:54:07.922225809Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:54:07.922234372Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:54:09.996397531Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:54:09.996410747Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:54:12.098407548Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:54:12.098416864Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:54:15.069875140Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:54:15.069882814Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:54:16.788239543Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:54:16.788247391Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:55:06.159318736Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:55:06.159327631Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:55:07.887049229Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:55:07.887059701Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:55:09.959956444Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:55:09.959965531Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:55:11.922785223Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:55:11.922810478Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:55:14.030604488Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:55:14.030617215Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:55:16.212640480Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:55:16.212655114Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:56:06.214041749Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:56:06.214050601Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:56:07.912876323Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:56:07.912882512Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:56:09.926510578Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:56:09.926518218Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:56:11.928685652Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:56:11.928694262Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:56:14.098993151Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:56:14.099002489Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:56:16.106396293Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:56:16.106402883Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:57:16.106592929Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:57:16.106598938Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:57:16.106606079Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:57:16.106611905Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:57:16.106618490Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:57:16.106624059Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:57:16.106629296Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:57:16.106635300Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:57:16.106641998Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:57:16.106647157Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:57:18.058670939Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:57:18.058677867Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:58:08.234860273Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:58:08.234876890Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:58:08.234888422Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:58:08.234895775Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:58:10.125885108Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:58:10.125889627Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:58:12.118176943Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:58:12.118184431Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:58:14.177761795Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:58:14.177773612Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:58:16.113004241Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:58:16.113010501Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:59:15.547314795Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:59:15.547326746Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:59:15.547335457Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:59:15.547342595Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:59:15.547349612Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:59:15.547356716Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:59:15.547363441Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:59:15.547371795Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:59:15.547378867Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:59:15.547386795Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T17:59:17.425486534Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T17:59:17.425500779Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:00:07.752728163Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:00:07.752734788Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:00:12.815656923Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:00:12.815663998Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:00:16.883093410Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:00:16.883103297Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:00:21.799788683Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:00:21.799796765Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:00:24.721149272Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:00:24.721163835Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:00:30.846062503Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:00:30.846068367Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:01:11.316085130Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:01:11.316091899Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:01:11.316098895Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:01:11.316106164Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:01:11.316113185Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:01:11.316120171Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:01:14.284199003Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:01:14.284203646Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:01:16.405072884Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:01:16.405091527Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:01:19.246503044Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:01:19.246513003Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:02:08.580460117Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:02:08.580479816Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:02:08.580489619Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:02:08.580498549Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:02:10.394438739Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:02:10.394448992Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:02:12.558357064Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:02:12.558362804Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:02:14.683953664Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:02:14.683963618Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:02:16.611693528Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:02:16.611703573Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:03:06.615495496Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:03:06.615515064Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:03:07.498013514Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:03:07.498027428Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:03:09.474951052Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:03:09.474961107Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:03:11.483427384Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:03:11.483456072Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:03:13.634418081Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:03:13.634427690Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:03:15.721765340Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:03:15.721776856Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:04:05.730389249Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:04:05.730408301Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:04:07.580961832Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:04:07.580969942Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:04:09.694516640Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:04:09.694525676Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:04:11.748026933Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:04:11.748043242Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:04:14.866940098Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:04:14.866946193Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:04:16.796933954Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:04:16.796939783Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:05:07.405732370Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:05:07.405739187Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:05:09.370540144Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:05:09.370546419Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:05:13.342568500Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:05:13.342573984Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:05:15.276790997Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:05:15.276800404Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:05:18.268703165Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:05:18.268711554Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:05:20.246406856Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:05:20.246415246Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:06:09.650651632Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:06:09.650664040Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:06:09.650671686Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:06:09.650681439Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:06:10.376544784Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:06:10.376550954Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:06:12.433789409Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:06:12.433798478Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:06:14.570586306Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:06:14.570591595Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:06:16.317822621Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:06:16.317830831Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:07:05.803240881Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:07:05.803252296Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:07:07.573339909Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:07:07.573344781Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:07:09.514502986Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:07:09.514515447Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:07:11.526442750Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:07:11.526448443Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:07:13.687919721Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:07:13.687929159Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:07:15.702715154Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:07:15.702723125Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:08:05.921635169Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:08:05.921644268Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:08:07.982779758Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T18:08:07.982808240Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-14T18:08:27.281078318Z [inf]  [GPT-Screen] BNBUSDT: score=74, direction=SELL, hasOpp=true
+2025-12-14T18:08:27.281086487Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 74, direction: SELL)
+2025-12-14T18:08:27.281092991Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T18:08:27.281103037Z [inf]  [CryptoPanic] Fetched global sentiment (cached 15 min)
+2025-12-14T18:08:34.072881914Z [inf]  [Engine] BNBUSDT: SELL (62%)
+2025-12-14T18:08:34.072888421Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $887.50 | TP: $879.30
+2025-12-14T18:08:35.900714801Z [inf]  [Engine] Opening SELL BNBUSDT:
+2025-12-14T18:08:35.900721284Z [inf]  [Engine]   └─ Quantity: 0.75 @ ~$883.32
+2025-12-14T18:08:35.900728169Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T18:08:35.900735266Z [inf]  [Engine]   └─ Capital used: $132.84 (3%)
+2025-12-14T18:08:35.900742756Z [inf]  [Engine]   └─ Position value: $664.19
+2025-12-14T18:08:35.915396356Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=883.32
+2025-12-14T18:08:36.944298187Z [inf]  [Engine] Position opened: SHORT BNBUSDT @ $883.32
+2025-12-14T18:08:36.944308346Z [inf]  [Engine]   └─ SL: $887.50 (0.47%)
+2025-12-14T18:08:36.944317642Z [inf]  [Engine]   └─ TP: $879.30 (0.46%)
+2025-12-14T18:08:56.350104868Z [inf]  [GPT-Screen] SOLUSDT: score=55, direction=SELL, hasOpp=true
+2025-12-14T18:08:56.350118143Z [inf]  [Engine] SOLUSDT: No opportunity (score: 55) - skipping
+2025-12-14T18:08:57.085005834Z [inf]  [GPT-Screen] XRPUSDT: score=75, direction=SELL, hasOpp=true
+2025-12-14T18:08:57.085011605Z [inf]  [Engine] XRPUSDT: Opportunity detected! (score: 75, direction: SELL)
+2025-12-14T18:09:17.210813315Z [inf]  [Engine] XRPUSDT: BUY (56%)
+2025-12-14T18:09:17.210819425Z [inf]  [Engine]   └─ Size: 2.5% | Lev: 3x | SL: $1.9800 | TP: $2.0000
+2025-12-14T18:09:17.210826549Z [inf]  [GPT-Screen] BTCUSDT: score=68, direction=SELL, hasOpp=true
+2025-12-14T18:09:17.210832699Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 68, direction: SELL)
+2025-12-14T18:09:17.210839344Z [inf]  [Engine] Opening BUY XRPUSDT:
+2025-12-14T18:09:17.210846163Z [inf]  [Engine]   └─ Quantity: 162 @ ~$1.99
+2025-12-14T18:09:17.210852783Z [inf]  [Engine]   └─ Leverage: 3x
+2025-12-14T18:09:17.210859688Z [inf]  [Engine]   └─ Capital used: $107.38 (2.5%)
+2025-12-14T18:09:17.210866335Z [inf]  [Engine]   └─ Position value: $322.15
+2025-12-14T18:09:17.210872823Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=1.9885
+2025-12-14T18:09:17.210879825Z [inf]  [Engine] Position opened: LONG XRPUSDT @ $1.9885
+2025-12-14T18:09:17.210885824Z [inf]  [Engine]   └─ SL: $1.9800 (0.43%)
+2025-12-14T18:09:17.210891165Z [inf]  [Engine]   └─ TP: $2.0000 (0.58%)
+2025-12-14T18:09:24.623330002Z [inf]  [GPT-Screen] DOGEUSDT: score=65, direction=SELL, hasOpp=true
+2025-12-14T18:09:24.623337928Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 65, direction: SELL)
+2025-12-14T18:09:31.412789322Z [inf]  [Engine] BTCUSDT: SELL (66%)
+2025-12-14T18:09:31.412796107Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $89170.00 | TP: $88570.00
+2025-12-14T18:09:32.530574383Z [inf]  [Engine] Opening SELL BTCUSDT:
+2025-12-14T18:09:32.530588925Z [inf]  [Engine]   └─ Quantity: 0.007 @ ~$88863.20
+2025-12-14T18:09:32.530598678Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T18:09:32.530607422Z [inf]  [Engine]   └─ Capital used: $125.64 (3%)
+2025-12-14T18:09:32.530625344Z [inf]  [Engine]   └─ Position value: $628.20
+2025-12-14T18:09:33.552480040Z [inf]  [Engine] Position opened: SHORT BTCUSDT @ $88863.20
+2025-12-14T18:09:33.552497271Z [inf]  [Engine]   └─ SL: $89170.00 (0.35%)
+2025-12-14T18:09:33.552507222Z [inf]  [Engine]   └─ TP: $88570.00 (0.33%)
+2025-12-14T18:09:33.552747180Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=88863.2
+2025-12-14T18:09:36.617373006Z [inf]  [Engine] DOGEUSDT: SELL (56%)
+2025-12-14T18:09:36.617386921Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $0.13260 | TP: $0.13080
+2025-12-14T18:09:38.470865414Z [inf]  [Engine] Opening SELL DOGEUSDT:
+2025-12-14T18:09:38.470871627Z [inf]  [Engine]   └─ Quantity: 4547.136 @ ~$0.13
+2025-12-14T18:09:38.470878310Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T18:09:38.470884472Z [inf]  [Engine]   └─ Capital used: $121.91 (3%)
+2025-12-14T18:09:38.470891635Z [inf]  [Engine]   └─ Position value: $609.54
+2025-12-14T18:09:38.771108066Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T18:09:44.772681816Z [inf]  [GPT-Screen] ETHUSDT: score=50, direction=NONE, hasOpp=false
+2025-12-14T18:09:44.772694415Z [inf]  [Engine] ETHUSDT: No opportunity (score: 50) - skipping
+2025-12-14T18:10:04.825068893Z [inf]  [GPT-Screen] SOLUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-14T18:10:04.825075849Z [inf]  [Engine] SOLUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-14T18:10:23.902078176Z [inf]  [Engine] SOLUSDT: SELL (68%)
+2025-12-14T18:10:23.902087768Z [inf]  [Engine]   └─ Size: 4% | Lev: 5x | SL: $130.82 | TP: $129.82
+2025-12-14T18:10:23.902109142Z [inf]  [Engine] Opening SELL SOLUSDT:
+2025-12-14T18:10:23.902119040Z [inf]  [Engine]   └─ Quantity: 6.24 @ ~$130.22
+2025-12-14T18:10:23.902127626Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T18:10:23.902134495Z [inf]  [Engine]   └─ Capital used: $162.54 (4%)
+2025-12-14T18:10:23.902141759Z [inf]  [Engine]   └─ Position value: $812.72
+2025-12-14T18:10:23.902148334Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=130.22
+2025-12-14T18:10:23.902156423Z [inf]  [Engine] Position opened: SHORT SOLUSDT @ $130.22
+2025-12-14T18:10:23.902163071Z [inf]  [Engine]   └─ SL: $130.82 (0.46%)
+2025-12-14T18:10:23.902170468Z [inf]  [Engine]   └─ TP: $129.82 (0.31%)
+2025-12-14T18:10:23.902176814Z [inf]  [GPT-Screen] ETHUSDT: Empty content (attempt 1), retrying...
+2025-12-14T18:10:28.073156319Z [inf]  [GPT-Screen] DOGEUSDT: score=68, direction=SELL, hasOpp=true
+2025-12-14T18:10:28.073183932Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 68, direction: SELL)
+2025-12-14T18:10:36.886098690Z [inf]  [GPT-Screen] ETHUSDT: score=68, direction=SELL, hasOpp=true
+2025-12-14T18:10:36.886111951Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 68, direction: SELL)
+2025-12-14T18:10:40.981116153Z [inf]  [Engine] DOGEUSDT: SELL (62%)
+2025-12-14T18:10:40.981120883Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $0.13120 | TP: $0.12940
+2025-12-14T18:10:43.185397347Z [inf]  [Engine] Opening SELL DOGEUSDT:
+2025-12-14T18:10:43.185405835Z [inf]  [Engine]   └─ Quantity: 4363.912 @ ~$0.13
+2025-12-14T18:10:43.185416073Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T18:10:43.185425057Z [inf]  [Engine]   └─ Capital used: $117.03 (3%)
+2025-12-14T18:10:43.185434933Z [inf]  [Engine]   └─ Position value: $585.16
+2025-12-14T18:10:43.185443374Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T18:10:51.157814279Z [inf]  [Engine] ETHUSDT: SELL (58%)
+2025-12-14T18:10:51.157820588Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $3102.20 | TP: $3078.10
+2025-12-14T18:10:51.991580198Z [inf]  [Engine] Opening SELL ETHUSDT:
+2025-12-14T18:10:51.991584387Z [inf]  [Engine]   └─ Quantity: 0.152 @ ~$3089.27
+2025-12-14T18:10:51.991588728Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T18:10:51.991593046Z [inf]  [Engine]   └─ Capital used: $117.03 (3%)
+2025-12-14T18:10:51.991598287Z [inf]  [Engine]   └─ Position value: $468.13
+2025-12-14T18:10:52.949824518Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=3089.27
+2025-12-14T18:10:52.949831371Z [inf]  [Engine] Position opened: SHORT ETHUSDT @ $3089.27
+2025-12-14T18:10:52.949838101Z [inf]  [Engine]   └─ SL: $3102.20 (0.42%)
+2025-12-14T18:10:52.949850641Z [inf]  [Engine]   └─ TP: $3078.10 (0.36%)
+2025-12-14T18:11:12.316435616Z [inf]  [GPT-Screen] DOGEUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-14T18:11:12.316449964Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 40) - skipping
+2025-12-14T18:11:22.016854066Z [inf]  [GPT-Screen] DOGEUSDT: score=78, direction=SELL, hasOpp=true
+2025-12-14T18:11:22.016858904Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 78, direction: SELL)
+2025-12-14T18:11:41.399999475Z [inf]  [Engine] DOGEUSDT: HOLD (44%)
+2025-12-14T18:12:31.554243680Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 70, direction: SELL)
+2025-12-14T18:12:31.554297601Z [inf]  [GPT-Screen] DOGEUSDT: score=70, direction=SELL, hasOpp=true
+2025-12-14T18:12:40.674997961Z [inf]  [Engine] DOGEUSDT: HOLD (44%)
+2025-12-14T18:13:20.676913675Z [inf]  [GPT-Screen] DOGEUSDT: score=52, direction=SELL, hasOpp=true
+2025-12-14T18:13:20.676922085Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 52) - skipping
+2025-12-14T18:14:10.683204404Z [inf]  [Engine] BNBUSDT: Position update due (6min since last GPT analysis)
+2025-12-14T18:14:18.658174680Z [inf]  [Engine] BNBUSDT: SELL (63%)
+2025-12-14T18:14:18.658179967Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $888.90 | TP: $881.10
+2025-12-14T18:14:18.658185204Z [inf]  [Engine] BNBUSDT: Updated SL: $888.90 | TP: $881.10
+2025-12-14T18:14:20.600273032Z [inf]  [Engine] XRPUSDT: Position update due (5min since last GPT analysis)
+2025-12-14T18:14:39.927081858Z [inf]  [Engine] XRPUSDT: SELL (58%)
+2025-12-14T18:14:39.927093428Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $2.0020 | TP: $1.9820
+2025-12-14T18:14:39.927100919Z [inf]  [Engine] XRPUSDT: Updated SL: $2.00 | TP: $1.98
+2025-12-14T18:14:39.927109142Z [inf]  [Engine] Removing phantom position XRPUSDT from state (400 error)
+2025-12-14T18:14:39.927117230Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:14:39.927124354Z [inf]  [Engine] Removing phantom position XRPUSDT from state (400 error)
+2025-12-14T18:14:39.927131522Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:14:39.927138218Z [inf]  [Engine] Removing phantom position XRPUSDT from state (400 error)
+2025-12-14T18:14:39.927144910Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:14:39.927150914Z [inf]  [Engine] Removing phantom position XRPUSDT from state (400 error)
+2025-12-14T18:14:39.927157490Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:14:45.122397008Z [inf]  [Engine] 🧠 Learned: En régimen trending_down y Fear&Greed bajo, evitar longs hasta confirmación clara de inversión (ruptura y volumen).
+2025-12-14T18:14:46.027506449Z [inf]  [Engine] ❌ Position closed: XRPUSDT | PnL: -0.20% ($-0.21) | Reason: sl
+2025-12-14T18:14:49.040270786Z [inf]  [GPT-Screen] DOGEUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-14T18:14:49.040278772Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-14T18:15:08.148621778Z [inf]  [Engine] DOGEUSDT: SELL (58%)
+2025-12-14T18:15:08.148637137Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $0.13110 | TP: $0.12940
+2025-12-14T18:15:08.148646978Z [inf]  [Engine] BTCUSDT: Position update due (6min since last GPT analysis)
+2025-12-14T18:15:08.148655268Z [inf]  [Engine] Opening SELL DOGEUSDT:
+2025-12-14T18:15:08.148662514Z [inf]  [Engine]   └─ Quantity: 4349.511 @ ~$0.13
+2025-12-14T18:15:08.148671744Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T18:15:08.148680162Z [inf]  [Engine]   └─ Capital used: $116.71 (3%)
+2025-12-14T18:15:08.148686993Z [inf]  [Engine]   └─ Position value: $583.57
+2025-12-14T18:15:08.148695315Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T18:15:27.459702673Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-14T18:15:27.459707449Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $88520.00 | TP: $89190.00
+2025-12-14T18:15:27.459711703Z [inf]  [Engine] BTCUSDT: Updated SL: $88520.00 | TP: $89190.00
+2025-12-14T18:15:27.459715567Z [inf]  [Engine] SOLUSDT: Position update due (5min since last GPT analysis)
+2025-12-14T18:15:27.459720337Z [inf]  [Engine] Removing phantom position BTCUSDT from state (400 error)
+2025-12-14T18:15:27.459725004Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:15:27.459729745Z [inf]  [Engine] Removing phantom position BTCUSDT from state (400 error)
+2025-12-14T18:15:27.459734045Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:15:27.459738578Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:15:27.459743072Z [inf]  [Engine] Removing phantom position BTCUSDT from state (400 error)
+2025-12-14T18:15:27.459747697Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:15:27.459753416Z [inf]  [Engine] Removing phantom position BTCUSDT from state (400 error)
+2025-12-14T18:15:27.459758305Z [inf]  [Engine] Removing phantom position BTCUSDT from state (400 error)
+2025-12-14T18:15:27.459762803Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:15:33.268278655Z [inf]  [Engine] 🧠 Learned: En régimen ranging, evitar shortear y esperar confirmación en los extremos del rango o un breakout claro.
+2025-12-14T18:15:33.268283935Z [inf]  [Engine] ❌ Position closed: BTCUSDT | PnL: -0.23% ($-0.28) | Reason: sl
+2025-12-14T18:15:35.409485486Z [inf]  [Engine] SOLUSDT: SELL (58%)
+2025-12-14T18:15:35.409494168Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $130.92 | TP: $129.83
+2025-12-14T18:15:35.409501295Z [inf]  [Engine] SOLUSDT: Updated SL: $130.92 | TP: $129.83
+2025-12-14T18:15:55.406655364Z [inf]  [GPT-Screen] XRPUSDT: score=42, direction=SELL, hasOpp=false
+2025-12-14T18:15:55.406667108Z [inf]  [Engine] XRPUSDT: No opportunity (score: 42) - skipping
+2025-12-14T18:15:56.107746649Z [inf]  [GPT-Screen] DOGEUSDT: score=68, direction=SELL, hasOpp=true
+2025-12-14T18:15:56.107755188Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 68, direction: SELL)
+2025-12-14T18:16:15.543094919Z [inf]  [Engine] DOGEUSDT: BUY (52%)
+2025-12-14T18:16:15.543108663Z [inf]  [Engine]   └─ Size: 2% | Lev: 3x | SL: $0.12910 | TP: $0.13060
+2025-12-14T18:16:15.543115382Z [inf]  [Engine] Opening BUY DOGEUSDT:
+2025-12-14T18:16:15.543120142Z [inf]  [Engine]   └─ Quantity: 1795.358 @ ~$0.13
+2025-12-14T18:16:15.543127662Z [inf]  [Engine]   └─ Leverage: 3x
+2025-12-14T18:16:15.543133551Z [inf]  [Engine]   └─ Capital used: $80.28 (2%)
+2025-12-14T18:16:15.543142071Z [inf]  [Engine]   └─ Position value: $240.83
+2025-12-14T18:16:15.543146162Z [inf]  [GPT-Screen] BTCUSDT: score=75, direction=BUY, hasOpp=true
+2025-12-14T18:16:15.543150699Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 75, direction: BUY)
+2025-12-14T18:16:15.543155262Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T18:16:35.540456759Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-14T18:16:35.540468703Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $88490.00 | TP: $89295.00
+2025-12-14T18:16:35.540477044Z [inf]  [Engine] Opening BUY BTCUSDT:
+2025-12-14T18:16:35.540483898Z [inf]  [Engine]   └─ Quantity: 0.005 @ ~$88892.60
+2025-12-14T18:16:35.540490104Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T18:16:35.540498128Z [inf]  [Engine]   └─ Capital used: $120.41 (3%)
+2025-12-14T18:16:35.540503986Z [inf]  [Engine]   └─ Position value: $481.66
+2025-12-14T18:16:36.176350008Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=88892.6
+2025-12-14T18:16:36.176357913Z [inf]  [Engine] Position opened: LONG BTCUSDT @ $88892.60
+2025-12-14T18:16:36.176369908Z [inf]  [Engine]   └─ SL: $88490.00 (0.45%)
+2025-12-14T18:16:36.176382450Z [inf]  [Engine]   └─ TP: $89295.00 (0.45%)
+2025-12-14T18:16:37.270457995Z [inf]  [Engine] ETHUSDT: Position update due (6min since last GPT analysis)
+2025-12-14T18:16:57.267624502Z [inf]  [Engine] ETHUSDT: SELL (58%)
+2025-12-14T18:16:57.267634067Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $3103.20 | TP: $3074.30
+2025-12-14T18:16:57.267640284Z [inf]  [Engine] ETHUSDT: Updated SL: $3103.20 | TP: $3074.30
+2025-12-14T18:17:06.245252919Z [inf]  [GPT-Screen] XRPUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-14T18:17:06.245258470Z [inf]  [Engine] XRPUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-14T18:17:25.654263443Z [inf]  [GPT-Screen] XRPUSDT: score=80, direction=SELL, hasOpp=true
+2025-12-14T18:17:25.654291533Z [inf]  [Engine] XRPUSDT: SELL (58%)
+2025-12-14T18:17:25.654299130Z [inf]  [Engine] XRPUSDT: Opportunity detected! (score: 80, direction: SELL)
+2025-12-14T18:17:25.654304527Z [inf]  [Engine]   └─ Size: 2% | Lev: 4x | SL: $2.0010 | TP: $1.9800
+2025-12-14T18:17:25.654312209Z [inf]  [Engine] Opening SELL XRPUSDT:
+2025-12-14T18:17:25.654321534Z [inf]  [Engine]   └─ Quantity: 157 @ ~$1.99
+2025-12-14T18:17:25.654328562Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T18:17:25.654343019Z [inf]  [Engine]   └─ Capital used: $78.05 (2%)
+2025-12-14T18:17:25.654351830Z [inf]  [Engine]   └─ Position value: $312.21
+2025-12-14T18:17:25.654359325Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=1.9891
+2025-12-14T18:17:25.654365651Z [inf]  [Engine] Position opened: SHORT XRPUSDT @ $1.9891
+2025-12-14T18:17:25.654378300Z [inf]  [Engine]   └─ SL: $2.0010 (0.60%)
+2025-12-14T18:17:25.654385880Z [inf]  [Engine]   └─ TP: $1.9800 (0.46%)
+2025-12-14T18:17:45.656515454Z [inf]  [Engine] XRPUSDT: SELL (56%)
+2025-12-14T18:17:45.656531097Z [inf]  [Engine]   └─ Size: 2.5% | Lev: 4x | SL: $2.0010 | TP: $1.9820
+2025-12-14T18:17:45.656540095Z [inf]  [GPT-Screen] DOGEUSDT: score=48, direction=SELL, hasOpp=false
+2025-12-14T18:17:45.656548335Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 48) - skipping
+2025-12-14T18:17:45.656557322Z [inf]  [Engine] Opening SELL XRPUSDT:
+2025-12-14T18:17:45.656567845Z [inf]  [Engine]   └─ Quantity: 192.2 @ ~$1.99
+2025-12-14T18:17:45.656576410Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T18:17:45.656583685Z [inf]  [Engine]   └─ Capital used: $95.61 (2.5%)
+2025-12-14T18:17:45.656592729Z [inf]  [Engine]   └─ Position value: $382.45
+2025-12-14T18:17:45.656600855Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=1.9894
+2025-12-14T18:17:45.656609752Z [inf]  [Engine] Position opened: SHORT XRPUSDT @ $1.9894
+2025-12-14T18:17:45.656617814Z [inf]  [Engine]   └─ SL: $2.0010 (0.58%)
+2025-12-14T18:17:45.656626698Z [inf]  [Engine]   └─ TP: $1.9820 (0.37%)
+2025-12-14T18:17:54.452541181Z [inf]  [GPT-Screen] DOGEUSDT: Empty content (attempt 1), retrying...
+2025-12-14T18:18:13.752311329Z [inf]  [GPT-Screen] DOGEUSDT: score=62, direction=SELL, hasOpp=true
+2025-12-14T18:18:13.752332548Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 62, direction: SELL)
+2025-12-14T18:18:22.498475835Z [inf]  [GPT-Screen] DOGEUSDT: score=52, direction=SELL, hasOpp=true
+2025-12-14T18:18:22.498482905Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 52) - skipping
+2025-12-14T18:18:27.391360958Z [inf]  [Engine] DOGEUSDT: HOLD (58%)
+2025-12-14T18:19:26.844553251Z [inf]  [GPT-Screen] DOGEUSDT: score=50, direction=SELL, hasOpp=false
+2025-12-14T18:19:26.844562244Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 50) - skipping
+2025-12-14T18:20:06.903284681Z [inf]  [Engine] BNBUSDT: Position update due (6min since last GPT analysis)
+2025-12-14T18:20:15.936097792Z [inf]  [Engine] BNBUSDT: BUY (56%)
+2025-12-14T18:20:15.936107870Z [inf]  [Engine]   └─ Size: 3% | Lev: 3x | SL: $882.40 | TP: $887.20
+2025-12-14T18:20:15.936125030Z [inf]  [Engine] BNBUSDT: Updated SL: $882.40 | TP: $887.20
+2025-12-14T18:20:17.960788550Z [inf]  [Engine] Removing phantom position BNBUSDT from state (400 error)
+2025-12-14T18:20:17.960804104Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:20:17.960811709Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:20:17.960817483Z [inf]  [Engine] Removing phantom position BNBUSDT from state (400 error)
+2025-12-14T18:20:17.960823253Z [inf]  [Engine] Removing phantom position BNBUSDT from state (400 error)
+2025-12-14T18:20:17.960830299Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:20:18.869711155Z [inf]  [Engine] Removing phantom position BNBUSDT from state (400 error)
+2025-12-14T18:20:18.869717162Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:20:18.869723218Z [inf]  [Engine] Removing phantom position BNBUSDT from state (400 error)
+2025-12-14T18:20:18.869728757Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:20:26.717445099Z [inf]  [Engine] 🧠 Learned: En Fear&Greed<30, evitar shorts sin confirmación de momentum y volumen bajista
+2025-12-14T18:20:26.717454464Z [inf]  [Engine] ❌ Position closed: BNBUSDT | PnL: -0.61% ($-0.80) | Reason: sl
+2025-12-14T18:20:30.889046991Z [inf]  [GPT-Screen] DOGEUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-14T18:20:30.889056739Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-14T18:20:50.889393556Z [inf]  [Engine] DOGEUSDT: SELL (62%)
+2025-12-14T18:20:50.889400220Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $0.13140 | TP: $0.12990
+2025-12-14T18:20:50.889406159Z [inf]  [Engine] DOGEUSDT: Reduced position size to 5% due to 3 consecutive losses
+2025-12-14T18:20:50.889411447Z [inf]  [Engine] Opening SELL DOGEUSDT:
+2025-12-14T18:20:50.889418491Z [inf]  [Engine]   └─ Quantity: 5746.864 @ ~$0.13
+2025-12-14T18:20:50.889425178Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T18:20:50.889431803Z [inf]  [Engine]   └─ Capital used: $193.01 (5%)
+2025-12-14T18:20:50.889439901Z [inf]  [Engine]   └─ Position value: $772.03
+2025-12-14T18:20:50.889446576Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T18:21:20.914579066Z [inf]  [GPT-Screen] BNBUSDT: score=80, direction=SELL, hasOpp=true
+2025-12-14T18:21:20.914583405Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 80, direction: SELL)
+2025-12-14T18:21:30.202068021Z [inf]  [Engine] BNBUSDT: BUY (56%)
+2025-12-14T18:21:30.202087614Z [inf]  [Engine]   └─ Size: 2% | Lev: 4x | SL: $880.40 | TP: $886.85
+2025-12-14T18:21:30.202098700Z [inf]  [Engine] BNBUSDT: Reduced position size to 5% due to 3 consecutive losses
+2025-12-14T18:21:31.905527419Z [inf]  [Engine]   └─ Position value: $772.03
+2025-12-14T18:21:31.905658199Z [inf]  [Engine] Opening BUY BNBUSDT:
+2025-12-14T18:21:31.905662529Z [inf]  [Engine]   └─ Quantity: 0.87 @ ~$883.77
+2025-12-14T18:21:31.905666515Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T18:21:31.905671012Z [inf]  [Engine]   └─ Capital used: $193.01 (5%)
+2025-12-14T18:21:32.833134092Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=883.77
+2025-12-14T18:21:32.833138372Z [inf]  [Engine] Position opened: LONG BNBUSDT @ $883.77
+2025-12-14T18:21:32.833143747Z [inf]  [Engine]   └─ SL: $880.40 (0.38%)
+2025-12-14T18:21:32.833148398Z [inf]  [Engine]   └─ TP: $886.85 (0.35%)
+2025-12-14T18:21:33.849736816Z [inf]  [Engine] SOLUSDT: Position update due (6min since last GPT analysis)
+2025-12-14T18:21:53.250658628Z [inf]  [Engine] SOLUSDT: SELL (58%)
+2025-12-14T18:21:53.250664517Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $131.10 | TP: $129.90
+2025-12-14T18:21:53.250670772Z [inf]  [Engine] SOLUSDT: Updated SL: $131.10 | TP: $129.90
+2025-12-14T18:22:12.696274141Z [inf]  [GPT-Screen] DOGEUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-14T18:22:12.696297690Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-14T18:22:12.696309172Z [inf]  [Engine] BTCUSDT: Position update due (5min since last GPT analysis)
+2025-12-14T18:22:18.472973861Z [inf]  [Engine] BTCUSDT: HOLD (58%)
+2025-12-14T18:22:18.472985115Z [inf]  [Engine] ETHUSDT: Position update due (5min since last GPT analysis)
+2025-12-14T18:22:21.532743739Z [inf]  [Engine] DOGEUSDT: SELL (62%)
+2025-12-14T18:22:21.532762646Z [inf]  [Engine]   └─ Size: 3% | Lev: 6x | SL: $0.13110 | TP: $0.12940
+2025-12-14T18:22:21.532772065Z [inf]  [Engine] DOGEUSDT: Reduced position size to 5% due to 3 consecutive losses
+2025-12-14T18:22:23.379168177Z [inf]  [Engine] Opening SELL DOGEUSDT:
+2025-12-14T18:22:23.379176589Z [inf]  [Engine]   └─ Quantity: 8196.913 @ ~$0.13
+2025-12-14T18:22:23.379189745Z [inf]  [Engine]   └─ Leverage: 6x
+2025-12-14T18:22:23.379196240Z [inf]  [Engine]   └─ Capital used: $183.39 (5%)
+2025-12-14T18:22:23.379205231Z [inf]  [Engine]   └─ Position value: $1100.35
+2025-12-14T18:22:24.346426980Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T18:22:33.388589739Z [inf]  [Engine] ETHUSDT: BUY (62%)
+2025-12-14T18:22:33.388595128Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $3076.80 | TP: $3101.60
+2025-12-14T18:22:33.388624130Z [inf]  [Engine] ETHUSDT: Updated SL: $3076.80 | TP: $3101.60
+2025-12-14T18:22:34.583586105Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:34.583592448Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.414087135Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.414093035Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.414098517Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.414103953Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.414109220Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.414115306Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.414122130Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.414128500Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.414133776Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.414138895Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.414143974Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.414149229Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.414154080Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.414159733Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.414165421Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.414171443Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.414177992Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.414183668Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.414188619Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.420950088Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.420958649Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.420961449Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.420967099Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.420972240Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.420977553Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.420979848Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.420983629Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.420991499Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.421010696Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.421021856Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.421029371Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.421035983Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.421044658Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.421053143Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.421061741Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.421067742Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.421074421Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.421082541Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.422062073Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.422066687Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.576472854Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.576490502Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.613620676Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.613630755Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:35.671864342Z [inf]  [Engine] Removing phantom position ETHUSDT from state (400 error)
+2025-12-14T18:22:35.671876049Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T18:22:41.489136825Z [inf]  [Engine] 🧠 Learned: En régimen ranging con Fear&Greed bajo (21) y RSI ~50, evitar shorts; esperar ruptura confirmada o vender en rebotes desde resistencia
+2025-12-14T18:22:42.472995600Z [inf]  [Engine] ❌ Position closed: ETHUSDT | PnL: -0.22% ($-0.26) | Reason: sl
+2025-12-14T18:22:45.592948912Z [inf]  [GPT-Screen] DOGEUSDT: score=72, direction=SELL, hasOpp=true
+2025-12-14T18:22:45.592954574Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 72, direction: SELL)
+2025-12-14T18:23:05.619899313Z [inf]  [Engine] DOGEUSDT: BUY (52%)
+2025-12-14T18:23:05.619906070Z [inf]  [Engine]   └─ Size: 2.5% | Lev: 3x | SL: $0.12900 | TP: $0.13060
+2025-12-14T18:23:05.619912732Z [inf]  [Engine] DOGEUSDT: Reduced position size to 5% due to 4 consecutive losses
+2025-12-14T18:23:05.619921421Z [inf]  [Engine] Opening BUY DOGEUSDT:
+2025-12-14T18:23:05.619928724Z [inf]  [Engine]   └─ Quantity: 4229.946 @ ~$0.13
+2025-12-14T18:23:05.619965652Z [inf]  [Engine]   └─ Leverage: 3x
+2025-12-14T18:23:05.619979252Z [inf]  [Engine]   └─ Capital used: $189.23 (5%)
+2025-12-14T18:23:05.619987498Z [inf]  [Engine]   └─ Position value: $567.70
+2025-12-14T18:23:05.619995040Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T18:23:05.620001827Z [inf]  [Engine] BTCUSDT: Position update due (6min since last GPT analysis)
+2025-12-14T18:23:25.616804395Z [inf]  [Engine] BTCUSDT: HOLD (52%)
+2025-12-14T18:23:29.989739703Z [inf]  [GPT-Screen] ETHUSDT: score=65, direction=BUY, hasOpp=true
+2025-12-14T18:23:29.989749592Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 65, direction: BUY)
+2025-12-14T18:23:29.989754865Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T18:23:29.989766754Z [inf]  [CryptoPanic] Fetched global sentiment (cached 15 min)
+2025-12-14T18:23:49.986951775Z [inf]  [Engine] ETHUSDT: BUY (57%)
+2025-12-14T18:23:49.986969825Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $3074.40 | TP: $3104.70
+2025-12-14T18:23:49.986979112Z [inf]  [Engine] ETHUSDT: Reduced position size to 5% due to 4 consecutive losses
+2025-12-14T18:23:49.986989090Z [inf]  [Engine] Opening BUY ETHUSDT:
+2025-12-14T18:23:49.986998006Z [inf]  [Engine]   └─ Quantity: 0.245 @ ~$3090.48
+2025-12-14T18:23:49.987006854Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T18:23:49.987016330Z [inf]  [Engine]   └─ Capital used: $189.23 (5%)
+2025-12-14T18:23:49.987025246Z [inf]  [Engine]   └─ Position value: $756.93
+2025-12-14T18:23:49.987034626Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=3090.48
+2025-12-14T18:23:49.987044110Z [inf]  [Engine] Position opened: LONG ETHUSDT @ $3090.48
+2025-12-14T18:23:49.987053119Z [inf]  [Engine]   └─ SL: $3074.40 (0.52%)
+2025-12-14T18:23:49.987061496Z [inf]  [Engine]   └─ TP: $3104.70 (0.46%)
+2025-12-14T18:23:49.987069606Z [inf]  [Engine] XRPUSDT: Position update due (6min since last GPT analysis)
+2025-12-14T18:24:09.117631356Z [inf]  [Engine] XRPUSDT: SELL (58%)
+2025-12-14T18:24:09.117638420Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $2.0020 | TP: $1.9825
+2025-12-14T18:24:09.117642551Z [inf]  [Engine] XRPUSDT: Updated SL: $2.00 | TP: $1.98
+2025-12-14T18:24:09.117648616Z [inf]  [Engine] BTCUSDT: Position update due (7min since last GPT analysis)
+2025-12-14T18:24:29.116952654Z [inf]  [GPT-Screen] DOGEUSDT: Empty content (attempt 1), retrying...
+2025-12-14T18:24:29.116964191Z [inf]  [Engine] BTCUSDT: HOLD (62%)
+2025-12-14T18:24:29.116970597Z [inf]  [Engine] BTCUSDT: Updated SL: $88390.00 | TP: $89070.00
+2025-12-14T18:24:49.156442219Z [inf]  [GPT-Screen] DOGEUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-14T18:24:49.156449564Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-14T18:24:49.156455890Z [inf]  [GPT-Screen] DOGEUSDT: score=68, direction=SELL, hasOpp=true
+2025-12-14T18:24:49.156461817Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 68, direction: SELL)
+2025-12-14T18:24:55.072477131Z [inf]  [Engine] DOGEUSDT: HOLD (58%)
+2025-12-14T18:25:15.473948577Z [inf]  [Engine] DOGEUSDT: SELL (58%)
+2025-12-14T18:25:15.473961038Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $0.13070 | TP: $0.12950
+2025-12-14T18:25:15.473967229Z [inf]  [Engine] DOGEUSDT: Reduced position size to 5% due to 4 consecutive losses
+2025-12-14T18:25:15.473971901Z [inf]  [Engine] Opening SELL DOGEUSDT:
+2025-12-14T18:25:15.473977077Z [inf]  [Engine]   └─ Quantity: 6695.9 @ ~$0.13
+2025-12-14T18:25:15.473981942Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T18:25:15.473986367Z [inf]  [Engine]   └─ Capital used: $179.76 (5%)
+2025-12-14T18:25:15.473990954Z [inf]  [Engine]   └─ Position value: $898.79
+2025-12-14T18:25:15.473997570Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T18:25:23.291591950Z [inf]  [GPT-Screen] DOGEUSDT: score=65, direction=SELL, hasOpp=true
+2025-12-14T18:25:23.291597117Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 65, direction: SELL)
+2025-12-14T18:25:42.809054815Z [inf]  [Engine] DOGEUSDT: HOLD (58%)
+2025-12-14T18:25:42.809064133Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
+2025-12-14T18:25:42.809073282Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
+2025-12-14T18:25:42.809080121Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
+2025-12-14T18:25:42.809086294Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
+2025-12-14T18:25:42.809093870Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
+2025-12-14T18:25:42.809100028Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
+2025-12-14T18:25:42.809109915Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
+2025-12-14T18:25:42.809118435Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
+2025-12-14T18:25:43.505965137Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
+2025-12-14T18:25:43.808075981Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
+2025-12-14T18:25:43.811545456Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.99
