@@ -1,0 +1,1236 @@
+2025-12-14T04:11:31.900916078Z [inf]    },
+2025-12-14T04:11:31.900920085Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:32.701058969Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T04:11:32.701065178Z [inf]    "index": 0,
+2025-12-14T04:11:32.701071353Z [inf]    "message": {
+2025-12-14T04:11:32.701077446Z [inf]      "role": "assistant",
+2025-12-14T04:11:32.701082558Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:11:32.701086912Z [inf]      "refusal": null,
+2025-12-14T04:11:32.701091187Z [inf]      "annotations": []
+2025-12-14T04:11:32.701095673Z [inf]    },
+2025-12-14T04:11:32.701100147Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:32.701103963Z [inf]  }
+2025-12-14T04:11:32.701108309Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:11:32.701112234Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:11:34.753498043Z [inf]  [Engine] LINKUSDT: HOLD (54%)
+2025-12-14T04:11:34.753506938Z [inf]  [Engine]   └─ LINK está en régimen de rango con ADX 14 (tendencia débil) y BB Width 0.66% (compresión). El precio ...
+2025-12-14T04:11:34.753515994Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T04:11:34.753524490Z [inf]    "index": 0,
+2025-12-14T04:11:34.753532024Z [inf]    "message": {
+2025-12-14T04:11:34.753538696Z [inf]      "role": "assistant",
+2025-12-14T04:11:34.753546672Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:11:34.753553421Z [inf]      "refusal": null,
+2025-12-14T04:11:34.753562118Z [inf]      "annotations": []
+2025-12-14T04:11:34.753569117Z [inf]    },
+2025-12-14T04:11:34.753577367Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:34.753585716Z [inf]  }
+2025-12-14T04:11:34.753595091Z [inf]  [GPT-Screen] SUIUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:11:34.753603010Z [inf]  [Engine] SUIUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:11:37.763563461Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T04:11:37.763592396Z [inf]    "index": 0,
+2025-12-14T04:11:37.763602946Z [inf]    "message": {
+2025-12-14T04:11:37.763611049Z [inf]      "role": "assistant",
+2025-12-14T04:11:37.763617227Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T04:11:37.763623645Z [inf]      "refusal": null,
+2025-12-14T04:11:37.763631595Z [inf]      "annotations": []
+2025-12-14T04:11:37.763639873Z [inf]    },
+2025-12-14T04:11:37.763646860Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:37.763653500Z [inf]  }
+2025-12-14T04:11:37.763659555Z [inf]  [GPT-Screen] BTCUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:11:37.763666497Z [inf]  [Engine] BTCUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:11:38.723851532Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T04:11:38.723856343Z [inf]    "index": 0,
+2025-12-14T04:11:38.723861964Z [inf]    "message": {
+2025-12-14T04:11:38.723867972Z [inf]      "role": "assistant",
+2025-12-14T04:11:38.723873883Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 58}",
+2025-12-14T04:11:38.723879354Z [inf]      "refusal": null,
+2025-12-14T04:11:38.723884629Z [inf]      "annotations": []
+2025-12-14T04:11:38.723891226Z [inf]    },
+2025-12-14T04:11:38.723897014Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:38.723902291Z [inf]  }
+2025-12-14T04:11:38.723909854Z [inf]  [GPT-Screen] ARBUSDT: score=58, direction=BUY, hasOpp=true
+2025-12-14T04:11:38.723915198Z [inf]  [Engine] ARBUSDT: Opportunity detected! (score: 58, direction: BUY)
+2025-12-14T04:11:38.723919784Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:38.723929847Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:38.723941356Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:38.891334918Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:40.873956161Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T04:11:40.873961047Z [inf]    "index": 0,
+2025-12-14T04:11:40.873964603Z [inf]    "message": {
+2025-12-14T04:11:40.873968235Z [inf]      "role": "assistant",
+2025-12-14T04:11:40.873972152Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 15}",
+2025-12-14T04:11:40.873976581Z [inf]      "refusal": null,
+2025-12-14T04:11:40.873980115Z [inf]      "annotations": []
+2025-12-14T04:11:40.873984393Z [inf]    },
+2025-12-14T04:11:40.873988398Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:40.873991972Z [inf]  }
+2025-12-14T04:11:40.873998342Z [inf]  [GPT-Screen] AVAXUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-14T04:11:40.874002001Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 15) - skipping full analysis
+2025-12-14T04:11:42.216775548Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T04:11:42.216780829Z [inf]    "index": 0,
+2025-12-14T04:11:42.216785580Z [inf]    "message": {
+2025-12-14T04:11:42.216791566Z [inf]      "role": "assistant",
+2025-12-14T04:11:42.216796186Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T04:11:42.216800188Z [inf]      "refusal": null,
+2025-12-14T04:11:42.216805858Z [inf]      "annotations": []
+2025-12-14T04:11:42.216809867Z [inf]    },
+2025-12-14T04:11:42.216814069Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:42.216817944Z [inf]  }
+2025-12-14T04:11:42.216823021Z [inf]  [GPT-Screen] ARBUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:11:42.216826950Z [inf]  [Engine] ARBUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:11:44.852550617Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:44.852562313Z [inf]  }
+2025-12-14T04:11:44.852568405Z [inf]  [GPT-Screen] ETHUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-14T04:11:44.852575350Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-14T04:11:44.852582552Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:44.852588675Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T04:11:44.852593006Z [inf]    "index": 0,
+2025-12-14T04:11:44.852601232Z [inf]    "message": {
+2025-12-14T04:11:44.852605413Z [inf]      "role": "assistant",
+2025-12-14T04:11:44.852610339Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 60}",
+2025-12-14T04:11:44.852616341Z [inf]      "refusal": null,
+2025-12-14T04:11:44.852622471Z [inf]      "annotations": []
+2025-12-14T04:11:44.852628300Z [inf]    },
+2025-12-14T04:11:45.084317622Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:45.113075046Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:45.127316923Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:46.177739391Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T04:11:46.177753641Z [inf]    "index": 0,
+2025-12-14T04:11:46.177762424Z [inf]    "message": {
+2025-12-14T04:11:46.177772702Z [inf]      "role": "assistant",
+2025-12-14T04:11:46.177779615Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T04:11:46.177787871Z [inf]      "refusal": null,
+2025-12-14T04:11:46.177794869Z [inf]      "annotations": []
+2025-12-14T04:11:46.177801738Z [inf]    },
+2025-12-14T04:11:46.177809861Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:46.177816901Z [inf]  }
+2025-12-14T04:11:46.177823017Z [inf]  [GPT-Screen] BNBUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:11:46.177829736Z [inf]  [Engine] BNBUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:11:49.269705458Z [inf]  [Engine] ARBUSDT: HOLD (58%)
+2025-12-14T04:11:49.269716537Z [inf]  [Engine]   └─ No entro aún por un motivo clave de scalping: el spread (0.0464%) está por encima del umbral (>0.03%...
+2025-12-14T04:11:51.887203174Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:11:51.887210621Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:11:51.887228738Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T04:11:51.887235520Z [inf]    "index": 0,
+2025-12-14T04:11:51.887239830Z [inf]    "message": {
+2025-12-14T04:11:51.887244030Z [inf]      "role": "assistant",
+2025-12-14T04:11:51.887248067Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:11:51.887252000Z [inf]      "refusal": null,
+2025-12-14T04:11:51.887255956Z [inf]      "annotations": []
+2025-12-14T04:11:51.887261449Z [inf]    },
+2025-12-14T04:11:51.887267043Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:51.887271123Z [inf]  }
+2025-12-14T04:11:52.813542391Z [inf]    },
+2025-12-14T04:11:52.813555520Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:52.813563882Z [inf]  }
+2025-12-14T04:11:52.813572550Z [inf]  [GPT-Screen] DOGEUSDT: score=45, direction=SELL, hasOpp=true
+2025-12-14T04:11:52.813579402Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 45) - skipping full analysis
+2025-12-14T04:11:52.813602658Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T04:11:52.813608797Z [inf]    "index": 0,
+2025-12-14T04:11:52.813614129Z [inf]    "message": {
+2025-12-14T04:11:52.813619875Z [inf]      "role": "assistant",
+2025-12-14T04:11:52.813624986Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 45}",
+2025-12-14T04:11:52.813630974Z [inf]      "refusal": null,
+2025-12-14T04:11:52.813636774Z [inf]      "annotations": []
+2025-12-14T04:11:53.835224003Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T04:11:53.835231551Z [inf]    "index": 0,
+2025-12-14T04:11:53.835238963Z [inf]    "message": {
+2025-12-14T04:11:53.835245835Z [inf]      "role": "assistant",
+2025-12-14T04:11:53.835252833Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 55}",
+2025-12-14T04:11:53.835261718Z [inf]      "refusal": null,
+2025-12-14T04:11:53.835268438Z [inf]      "annotations": []
+2025-12-14T04:11:53.835275926Z [inf]    },
+2025-12-14T04:11:53.835282441Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:53.835289375Z [inf]  }
+2025-12-14T04:11:53.835296073Z [inf]  [GPT-Screen] OPUSDT: score=55, direction=BUY, hasOpp=true
+2025-12-14T04:11:53.835303434Z [inf]  [Engine] OPUSDT: Opportunity detected! (score: 55, direction: BUY)
+2025-12-14T04:11:54.094951098Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:54.094961530Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:54.109816167Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:54.112773874Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:11:59.908497633Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T04:11:59.908507147Z [inf]    "index": 0,
+2025-12-14T04:11:59.908514176Z [inf]    "message": {
+2025-12-14T04:11:59.908525250Z [inf]      "role": "assistant",
+2025-12-14T04:11:59.908532591Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T04:11:59.908539657Z [inf]      "refusal": null,
+2025-12-14T04:11:59.908547129Z [inf]      "annotations": []
+2025-12-14T04:11:59.908555302Z [inf]    },
+2025-12-14T04:11:59.908561806Z [inf]    "finish_reason": "stop"
+2025-12-14T04:11:59.908568166Z [inf]  }
+2025-12-14T04:11:59.908574699Z [inf]  [GPT-Screen] OPUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T04:11:59.908585216Z [inf]  [Engine] OPUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T04:12:00.838249682Z [inf]  }
+2025-12-14T04:12:00.838258200Z [inf]  [GPT-Screen] SUIUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:12:00.838260407Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T04:12:00.838265237Z [inf]  [Engine] SUIUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:12:00.838270790Z [inf]    "index": 0,
+2025-12-14T04:12:00.838272608Z [inf]  [Engine] ETHUSDT: BUY (56%)
+2025-12-14T04:12:00.838279656Z [inf]  [Engine]   └─ Contexto de scalping en rango con volatilidad baja (ADX 10.4, BB Width 0.51%, ATR ~0.208%), ideal pa...
+2025-12-14T04:12:00.838280956Z [inf]    "message": {
+2025-12-14T04:12:00.838287261Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-14T04:12:00.838289713Z [inf]      "role": "assistant",
+2025-12-14T04:12:00.838294238Z [inf]  [Engine]   └─ SL: $3108.00 | TP: $3129.50
+2025-12-14T04:12:00.838298587Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:12:00.838305564Z [inf]      "refusal": null,
+2025-12-14T04:12:00.838312940Z [inf]      "annotations": []
+2025-12-14T04:12:00.838319385Z [inf]    },
+2025-12-14T04:12:00.838326703Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:02.888354659Z [inf]  [Engine] Opening BUY ETHUSDT:
+2025-12-14T04:12:02.888362505Z [inf]  [Engine]   └─ Quantity: 0.145 @ ~$3117.61
+2025-12-14T04:12:02.888370044Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T04:12:02.888376726Z [inf]  [Engine]   └─ Capital used: $112.77 (3%)
+2025-12-14T04:12:02.888386511Z [inf]  [Engine]   └─ Position value: $451.08
+2025-12-14T04:12:02.963082091Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T04:12:02.963091038Z [inf]    "index": 0,
+2025-12-14T04:12:02.963096943Z [inf]    "message": {
+2025-12-14T04:12:02.963102325Z [inf]      "role": "assistant",
+2025-12-14T04:12:02.963108002Z [inf]      "content": "",
+2025-12-14T04:12:02.963116389Z [inf]      "refusal": null,
+2025-12-14T04:12:02.963123017Z [inf]      "annotations": []
+2025-12-14T04:12:02.963131219Z [inf]    },
+2025-12-14T04:12:02.963141598Z [inf]    "finish_reason": "length"
+2025-12-14T04:12:02.963150707Z [inf]  }
+2025-12-14T04:12:02.963158788Z [inf]  [GPT-Screen] XRPUSDT: Empty content, checking refusal: null
+2025-12-14T04:12:02.963166228Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T04:12:03.095352575Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:03.290112898Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:03.304700892Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:03.304707343Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:03.766483632Z [inf]  [Engine] Position opened: LONG ETHUSDT @ $0.00
+2025-12-14T04:12:03.766489090Z [inf]  [Engine]   └─ SL: $3108.00 (Infinity%)
+2025-12-14T04:12:03.766494827Z [inf]  [Engine]   └─ TP: $3129.50 (Infinity%)
+2025-12-14T04:12:04.786021383Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T04:12:04.786027348Z [inf]    "index": 0,
+2025-12-14T04:12:04.786033177Z [inf]    "message": {
+2025-12-14T04:12:04.786039871Z [inf]      "role": "assistant",
+2025-12-14T04:12:04.786047387Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:12:04.786053699Z [inf]      "refusal": null,
+2025-12-14T04:12:04.786060499Z [inf]      "annotations": []
+2025-12-14T04:12:04.786067840Z [inf]    },
+2025-12-14T04:12:04.786074915Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:04.786082117Z [inf]  }
+2025-12-14T04:12:04.786088404Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:12:04.786093279Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:12:06.879061116Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-14T04:12:06.879062350Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T04:12:06.879071909Z [inf]    "index": 0,
+2025-12-14T04:12:06.879077427Z [inf]    "message": {
+2025-12-14T04:12:06.879081815Z [inf]      "role": "assistant",
+2025-12-14T04:12:06.879086527Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 60}",
+2025-12-14T04:12:06.879091141Z [inf]      "refusal": null,
+2025-12-14T04:12:06.879098346Z [inf]      "annotations": []
+2025-12-14T04:12:06.879102237Z [inf]    },
+2025-12-14T04:12:06.879106342Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:06.879110905Z [inf]  }
+2025-12-14T04:12:06.879115170Z [inf]  [GPT-Screen] BTCUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-14T04:12:07.041842347Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:07.043270655Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:07.255637075Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:07.255655635Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:09.908752083Z [inf]  [Engine] OPUSDT: HOLD (44%)
+2025-12-14T04:12:09.908760495Z [inf]  [Engine]   └─ No entro aún porque el spread está en 0.0320% (por encima del umbral >0.03% para scalping), lo que e...
+2025-12-14T04:12:10.838981495Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T04:12:10.838987842Z [inf]    "index": 0,
+2025-12-14T04:12:10.838992677Z [inf]    "message": {
+2025-12-14T04:12:10.838998972Z [inf]      "role": "assistant",
+2025-12-14T04:12:10.839004166Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:12:10.839010287Z [inf]      "refusal": null,
+2025-12-14T04:12:10.839015703Z [inf]      "annotations": []
+2025-12-14T04:12:10.839021230Z [inf]    },
+2025-12-14T04:12:10.839026408Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:10.839031393Z [inf]  }
+2025-12-14T04:12:10.839036918Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:12:10.839042272Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:12:13.143348735Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T04:12:13.143379185Z [inf]    "index": 0,
+2025-12-14T04:12:13.143390337Z [inf]    "message": {
+2025-12-14T04:12:13.143397179Z [inf]      "role": "assistant",
+2025-12-14T04:12:13.143404383Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 55}",
+2025-12-14T04:12:13.143411030Z [inf]      "refusal": null,
+2025-12-14T04:12:13.143417891Z [inf]      "annotations": []
+2025-12-14T04:12:13.143424511Z [inf]    },
+2025-12-14T04:12:13.143430961Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:13.143438046Z [inf]  }
+2025-12-14T04:12:13.143450444Z [inf]  [GPT-Screen] BNBUSDT: score=55, direction=BUY, hasOpp=true
+2025-12-14T04:12:13.143458366Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 55, direction: BUY)
+2025-12-14T04:12:13.320215088Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:13.936199994Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:13.936206869Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:13.936213069Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:13.936219635Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T04:12:13.936225726Z [inf]    "index": 0,
+2025-12-14T04:12:13.936231729Z [inf]    "message": {
+2025-12-14T04:12:13.936238296Z [inf]      "role": "assistant",
+2025-12-14T04:12:13.936245129Z [inf]      "content": "",
+2025-12-14T04:12:13.936251197Z [inf]      "refusal": null,
+2025-12-14T04:12:13.936257214Z [inf]      "annotations": []
+2025-12-14T04:12:13.936263287Z [inf]    },
+2025-12-14T04:12:13.936269747Z [inf]    "finish_reason": "length"
+2025-12-14T04:12:13.936275475Z [inf]  }
+2025-12-14T04:12:13.936281412Z [inf]  [GPT-Screen] ARBUSDT: Empty content, checking refusal: null
+2025-12-14T04:12:13.936286875Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T04:12:14.959051098Z [inf]    "message": {
+2025-12-14T04:12:14.959069334Z [inf]      "role": "assistant",
+2025-12-14T04:12:14.959077397Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:12:14.959088112Z [inf]      "refusal": null,
+2025-12-14T04:12:14.959096745Z [inf]      "annotations": []
+2025-12-14T04:12:14.959105587Z [inf]    },
+2025-12-14T04:12:14.959114619Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:14.959122910Z [inf]  }
+2025-12-14T04:12:14.959133188Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:12:14.959146424Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:12:14.959233869Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T04:12:14.959241625Z [inf]    "index": 0,
+2025-12-14T04:12:21.096879248Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T04:12:21.096886949Z [inf]    "index": 0,
+2025-12-14T04:12:21.096892766Z [inf]    "message": {
+2025-12-14T04:12:21.096898975Z [inf]      "role": "assistant",
+2025-12-14T04:12:21.096903564Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 35}",
+2025-12-14T04:12:21.096909132Z [inf]      "refusal": null,
+2025-12-14T04:12:21.096913172Z [inf]      "annotations": []
+2025-12-14T04:12:21.096917378Z [inf]    },
+2025-12-14T04:12:21.096921383Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:21.096926876Z [inf]  }
+2025-12-14T04:12:21.096934870Z [inf]  [GPT-Screen] AVAXUSDT: score=35, direction=SELL, hasOpp=false
+2025-12-14T04:12:21.096939744Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 35) - skipping full analysis
+2025-12-14T04:12:22.118229039Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T04:12:22.118235809Z [inf]    "index": 0,
+2025-12-14T04:12:22.118240979Z [inf]    "message": {
+2025-12-14T04:12:22.118246612Z [inf]      "role": "assistant",
+2025-12-14T04:12:22.118254781Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 42}",
+2025-12-14T04:12:22.118263033Z [inf]      "refusal": null,
+2025-12-14T04:12:22.118270779Z [inf]      "annotations": []
+2025-12-14T04:12:22.118278533Z [inf]    },
+2025-12-14T04:12:22.118286196Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:22.118293821Z [inf]  }
+2025-12-14T04:12:22.118300542Z [inf]  [GPT-Screen] OPUSDT: score=42, direction=SELL, hasOpp=false
+2025-12-14T04:12:22.118305971Z [inf]  [Engine] OPUSDT: No opportunity (score: 42) - skipping full analysis
+2025-12-14T04:12:22.911442821Z [inf]  [Engine] BTCUSDT: BUY (62%)
+2025-12-14T04:12:22.911448115Z [inf]  [Engine]   └─ BTC está en régimen de rango con volatilidad baja (ADX 10.2 y BB Width 0.28%), lo que favorece scalp...
+2025-12-14T04:12:22.911452511Z [inf]  [Engine]   └─ Size: 3% | Leverage: 5x
+2025-12-14T04:12:22.911456703Z [inf]  [Engine]   └─ SL: $90084.00 | TP: $90520.00
+2025-12-14T04:12:24.356507093Z [inf]  [Engine] Opening BUY BTCUSDT:
+2025-12-14T04:12:24.356514442Z [inf]  [Engine]   └─ Quantity: 0.006 @ ~$90242.20
+2025-12-14T04:12:24.356519122Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T04:12:24.356524010Z [inf]  [Engine]   └─ Capital used: $116.14 (3%)
+2025-12-14T04:12:24.356529146Z [inf]  [Engine]   └─ Position value: $580.70
+2025-12-14T04:12:24.987650451Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:25.220335508Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:25.222743687Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:25.232845997Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:25.970528446Z [inf]  [Engine] Position opened: LONG BTCUSDT @ $0.00
+2025-12-14T04:12:25.970532490Z [inf]  [Engine]   └─ SL: $90084.00 (Infinity%)
+2025-12-14T04:12:25.970536682Z [inf]  [Engine]   └─ TP: $90520.00 (Infinity%)
+2025-12-14T04:12:26.918748117Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T04:12:26.918751893Z [inf]    "index": 0,
+2025-12-14T04:12:26.918755978Z [inf]    "message": {
+2025-12-14T04:12:26.918760050Z [inf]      "role": "assistant",
+2025-12-14T04:12:26.918764132Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 15}",
+2025-12-14T04:12:26.918768977Z [inf]      "refusal": null,
+2025-12-14T04:12:26.918772833Z [inf]      "annotations": []
+2025-12-14T04:12:26.918779060Z [inf]    },
+2025-12-14T04:12:26.918783021Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:26.918786745Z [inf]  }
+2025-12-14T04:12:26.918790763Z [inf]  [GPT-Screen] DOGEUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-14T04:12:26.918794631Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 15) - skipping full analysis
+2025-12-14T04:12:26.918799478Z [inf]  [Engine] BNBUSDT: BUY (58%)
+2025-12-14T04:12:26.918803223Z [inf]  [Engine]   └─ Contexto de scalping en rango: ADX 12.3 confirma mercado lateral y ATR bajo (1.47 = 0.164%), ideal p...
+2025-12-14T04:12:26.918807471Z [inf]  [Engine]   └─ Size: 3% | Leverage: 5x
+2025-12-14T04:12:26.918812341Z [inf]  [Engine]   └─ SL: $893.91 | TP: $898.84
+2025-12-14T04:12:28.139910222Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:12:28.139917968Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:12:28.139950766Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T04:12:28.139959992Z [inf]    "index": 0,
+2025-12-14T04:12:28.139966539Z [inf]    "message": {
+2025-12-14T04:12:28.139975791Z [inf]      "role": "assistant",
+2025-12-14T04:12:28.139981041Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:12:28.139986138Z [inf]      "refusal": null,
+2025-12-14T04:12:28.139990881Z [inf]      "annotations": []
+2025-12-14T04:12:28.139996309Z [inf]    },
+2025-12-14T04:12:28.140001516Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:28.140006433Z [inf]  }
+2025-12-14T04:12:28.442699589Z [inf]  [Engine] Opening BUY BNBUSDT:
+2025-12-14T04:12:28.442709429Z [inf]  [Engine]   └─ Quantity: 0.66 @ ~$896.14
+2025-12-14T04:12:28.442714814Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T04:12:28.442720068Z [inf]  [Engine]   └─ Capital used: $118.29 (3%)
+2025-12-14T04:12:28.442725636Z [inf]  [Engine]   └─ Position value: $591.44
+2025-12-14T04:12:29.063678335Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:29.259258925Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:29.285467667Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:29.318186527Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:30.024717681Z [inf]  [Engine] Position opened: LONG BNBUSDT @ $0.00
+2025-12-14T04:12:30.024722091Z [inf]  [Engine]   └─ SL: $893.91 (Infinity%)
+2025-12-14T04:12:30.024726737Z [inf]  [Engine]   └─ TP: $898.84 (Infinity%)
+2025-12-14T04:12:30.172871724Z [err]  [Engine] Invalid PnL calculation: currentPrice=896.28, entryPrice=0
+2025-12-14T04:12:33.163441869Z [err]  [Engine] Invalid PnL calculation: currentPrice=896.28, entryPrice=0
+2025-12-14T04:12:33.431843952Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T04:12:33.431852174Z [inf]    "index": 0,
+2025-12-14T04:12:33.431861358Z [inf]    "message": {
+2025-12-14T04:12:33.431867916Z [inf]      "role": "assistant",
+2025-12-14T04:12:33.431875218Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:12:33.431882192Z [inf]      "refusal": null,
+2025-12-14T04:12:33.431889195Z [inf]      "annotations": []
+2025-12-14T04:12:33.431895228Z [inf]    },
+2025-12-14T04:12:33.431901680Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:33.431907367Z [inf]  }
+2025-12-14T04:12:33.431913772Z [inf]  [GPT-Screen] SUIUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:12:33.431920346Z [inf]  [Engine] SUIUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:12:35.136773030Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T04:12:35.136782577Z [inf]    "index": 0,
+2025-12-14T04:12:35.136788674Z [inf]    "message": {
+2025-12-14T04:12:35.136794475Z [inf]      "role": "assistant",
+2025-12-14T04:12:35.136802002Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T04:12:35.136807708Z [inf]      "refusal": null,
+2025-12-14T04:12:35.136815493Z [inf]      "annotations": []
+2025-12-14T04:12:35.136821502Z [inf]    },
+2025-12-14T04:12:35.136827199Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:35.136834178Z [inf]  }
+2025-12-14T04:12:35.136840130Z [inf]  [GPT-Screen] SOLUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:12:35.136846015Z [inf]  [Engine] SOLUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:12:35.145329806Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T04:12:35.145338445Z [inf]    "index": 0,
+2025-12-14T04:12:35.145345856Z [inf]    "message": {
+2025-12-14T04:12:35.145352021Z [inf]      "role": "assistant",
+2025-12-14T04:12:35.145357698Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 40}",
+2025-12-14T04:12:35.145363196Z [inf]      "refusal": null,
+2025-12-14T04:12:35.145368721Z [inf]      "annotations": []
+2025-12-14T04:12:35.145374285Z [inf]    },
+2025-12-14T04:12:35.145378931Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:35.145384782Z [inf]  }
+2025-12-14T04:12:35.145390726Z [inf]  [GPT-Screen] ETHUSDT: score=40, direction=SELL, hasOpp=false
+2025-12-14T04:12:35.145397071Z [inf]  [Engine] ETHUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-14T04:12:42.089134925Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T04:12:42.089154818Z [inf]      "annotations": []
+2025-12-14T04:12:42.089167138Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T04:12:42.089174373Z [inf]    },
+2025-12-14T04:12:42.089177581Z [inf]    "index": 0,
+2025-12-14T04:12:42.089185754Z [inf]    "message": {
+2025-12-14T04:12:42.089195693Z [inf]    "finish_reason": "length"
+2025-12-14T04:12:42.089196422Z [inf]      "role": "assistant",
+2025-12-14T04:12:42.089211657Z [inf]      "content": "",
+2025-12-14T04:12:42.089214845Z [inf]  }
+2025-12-14T04:12:42.089219398Z [inf]      "refusal": null,
+2025-12-14T04:12:42.089228142Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T04:12:43.462996090Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T04:12:43.463001802Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-14T04:12:43.463005862Z [inf]    "index": 0,
+2025-12-14T04:12:43.463010874Z [inf]    "message": {
+2025-12-14T04:12:43.463015898Z [inf]      "role": "assistant",
+2025-12-14T04:12:43.463021334Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 60}",
+2025-12-14T04:12:43.463025723Z [inf]      "refusal": null,
+2025-12-14T04:12:43.463030135Z [inf]      "annotations": []
+2025-12-14T04:12:43.463033928Z [inf]    },
+2025-12-14T04:12:43.463038206Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:43.463043650Z [inf]  }
+2025-12-14T04:12:43.463047629Z [inf]  [GPT-Screen] BNBUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-14T04:12:44.041570140Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:44.041574602Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:44.041585001Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:44.041589538Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:46.021514645Z [inf]    "message": {
+2025-12-14T04:12:46.021530984Z [inf]      "role": "assistant",
+2025-12-14T04:12:46.021540343Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 35}",
+2025-12-14T04:12:46.021547823Z [inf]      "refusal": null,
+2025-12-14T04:12:46.021556101Z [inf]      "annotations": []
+2025-12-14T04:12:46.021563980Z [inf]    },
+2025-12-14T04:12:46.021572282Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:46.021583117Z [inf]  }
+2025-12-14T04:12:46.021591919Z [inf]  [GPT-Screen] ARBUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-14T04:12:46.021599948Z [inf]  [Engine] ARBUSDT: No opportunity (score: 35) - skipping full analysis
+2025-12-14T04:12:46.021647394Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T04:12:46.021654251Z [inf]    "index": 0,
+2025-12-14T04:12:48.473227930Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T04:12:48.473237207Z [inf]    "index": 0,
+2025-12-14T04:12:48.473243600Z [inf]    "message": {
+2025-12-14T04:12:48.473250035Z [inf]      "role": "assistant",
+2025-12-14T04:12:48.473255195Z [inf]      "content": "",
+2025-12-14T04:12:48.473261790Z [inf]      "refusal": null,
+2025-12-14T04:12:48.473267703Z [inf]      "annotations": []
+2025-12-14T04:12:48.473273581Z [inf]    },
+2025-12-14T04:12:48.473281325Z [inf]    "finish_reason": "length"
+2025-12-14T04:12:48.473287189Z [inf]  }
+2025-12-14T04:12:48.473292025Z [inf]  [GPT-Screen] XRPUSDT: Empty content, checking refusal: null
+2025-12-14T04:12:48.473297397Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T04:12:52.202847662Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T04:12:52.202853473Z [inf]    "index": 0,
+2025-12-14T04:12:52.202858349Z [inf]    "message": {
+2025-12-14T04:12:52.202863982Z [inf]      "role": "assistant",
+2025-12-14T04:12:52.202865064Z [inf]  }
+2025-12-14T04:12:52.202869895Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 65}",
+2025-12-14T04:12:52.202875514Z [inf]      "refusal": null,
+2025-12-14T04:12:52.202876417Z [inf]  [GPT-Screen] ETHUSDT: score=65, direction=SELL, hasOpp=true
+2025-12-14T04:12:52.202885455Z [inf]      "annotations": []
+2025-12-14T04:12:52.202885908Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 65, direction: SELL)
+2025-12-14T04:12:52.202891479Z [inf]    },
+2025-12-14T04:12:52.202895728Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:53.062703675Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:53.062714743Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:53.062720368Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:53.062734875Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:12:53.969070476Z [inf]    },
+2025-12-14T04:12:53.969080977Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:53.969087608Z [inf]  }
+2025-12-14T04:12:53.969092888Z [inf]  [GPT-Screen] LINKUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-14T04:12:53.969097890Z [inf]  [Engine] LINKUSDT: No opportunity (score: 15) - skipping full analysis
+2025-12-14T04:12:53.969162334Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T04:12:53.969167008Z [inf]    "index": 0,
+2025-12-14T04:12:53.969171052Z [inf]    "message": {
+2025-12-14T04:12:53.969175043Z [inf]      "role": "assistant",
+2025-12-14T04:12:53.969178983Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 15}",
+2025-12-14T04:12:53.969183203Z [inf]      "refusal": null,
+2025-12-14T04:12:53.969187954Z [inf]      "annotations": []
+2025-12-14T04:12:58.017632459Z [inf]  [Engine] BNBUSDT: SELL (56%)
+2025-12-14T04:12:58.017636990Z [inf]  [Engine]   └─ Contexto de rango y scalping: ADX 12.3 confirma mercado débil/lateral y BB Width 0.44% indica compre...
+2025-12-14T04:12:58.017641371Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-14T04:12:58.017646347Z [inf]  [Engine]   └─ SL: $898.55 | TP: $894.10
+2025-12-14T04:12:58.272272821Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T04:12:58.272279028Z [inf]    "index": 0,
+2025-12-14T04:12:58.272284523Z [inf]    "message": {
+2025-12-14T04:12:58.272290429Z [inf]      "role": "assistant",
+2025-12-14T04:12:58.272295950Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:12:58.272303464Z [inf]      "refusal": null,
+2025-12-14T04:12:58.272309333Z [inf]      "annotations": []
+2025-12-14T04:12:58.272317373Z [inf]    },
+2025-12-14T04:12:58.272324469Z [inf]    "finish_reason": "stop"
+2025-12-14T04:12:58.272330457Z [inf]  }
+2025-12-14T04:12:58.272336033Z [inf]  [GPT-Screen] AVAXUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:12:58.272341282Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:12:58.475118817Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T04:12:58.475131740Z [inf]    "index": 0,
+2025-12-14T04:12:58.475139687Z [inf]    "message": {
+2025-12-14T04:12:58.475197854Z [inf]      "role": "assistant",
+2025-12-14T04:12:58.475207105Z [inf]      "content": "",
+2025-12-14T04:12:58.475214715Z [inf]      "refusal": null,
+2025-12-14T04:12:58.475227540Z [inf]      "annotations": []
+2025-12-14T04:12:58.475239890Z [inf]    },
+2025-12-14T04:12:58.475246445Z [inf]    "finish_reason": "length"
+2025-12-14T04:12:58.475253601Z [inf]  }
+2025-12-14T04:12:58.475260833Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T04:12:58.475267443Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T04:12:59.054022601Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T04:13:04.044257548Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T04:13:04.044264176Z [inf]    "index": 0,
+2025-12-14T04:13:04.044269551Z [inf]    "message": {
+2025-12-14T04:13:04.044279818Z [inf]      "role": "assistant",
+2025-12-14T04:13:04.044288085Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T04:13:04.044293642Z [inf]      "refusal": null,
+2025-12-14T04:13:04.044298401Z [inf]      "annotations": []
+2025-12-14T04:13:04.044304507Z [inf]    },
+2025-12-14T04:13:04.044310254Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:04.044315644Z [inf]  }
+2025-12-14T04:13:04.044320643Z [inf]  [GPT-Screen] SOLUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:13:04.044326572Z [inf]  [Engine] SOLUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:13:04.073524936Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T04:13:04.073539832Z [inf]    "index": 0,
+2025-12-14T04:13:04.073548273Z [inf]    "message": {
+2025-12-14T04:13:04.073555100Z [inf]      "role": "assistant",
+2025-12-14T04:13:04.073562082Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:13:04.073569204Z [inf]      "refusal": null,
+2025-12-14T04:13:04.073575855Z [inf]      "annotations": []
+2025-12-14T04:13:04.073582472Z [inf]    },
+2025-12-14T04:13:04.073589483Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:04.073596810Z [inf]  }
+2025-12-14T04:13:04.073603989Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:13:04.073610930Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:13:05.089244195Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T04:13:05.089252198Z [inf]    "index": 0,
+2025-12-14T04:13:05.089257234Z [inf]    "message": {
+2025-12-14T04:13:05.089261878Z [inf]      "role": "assistant",
+2025-12-14T04:13:05.089266465Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T04:13:05.089271860Z [inf]      "refusal": null,
+2025-12-14T04:13:05.089277941Z [inf]      "annotations": []
+2025-12-14T04:13:05.089283095Z [inf]    },
+2025-12-14T04:13:05.089287960Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:05.089293161Z [inf]  }
+2025-12-14T04:13:05.089298734Z [inf]  [GPT-Screen] INJUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:13:05.089303781Z [inf]  [Engine] INJUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:13:07.027602336Z [inf]  [Engine] ETHUSDT: HOLD (56%)
+2025-12-14T04:13:07.027608671Z [inf]  [Engine]   └─ No hay edge claro para scalping desde el precio actual ($3119.74) porque: (1) Régimen en rango confi...
+2025-12-14T04:13:09.048894327Z [inf]  [Engine] BTCUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-14T04:13:09.048948323Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T04:13:09.048954643Z [inf]    "index": 0,
+2025-12-14T04:13:09.048961113Z [inf]    "message": {
+2025-12-14T04:13:09.048966679Z [inf]      "role": "assistant",
+2025-12-14T04:13:09.048974223Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 40}",
+2025-12-14T04:13:09.048980230Z [inf]      "refusal": null,
+2025-12-14T04:13:09.048985961Z [inf]      "annotations": []
+2025-12-14T04:13:09.048991624Z [inf]    },
+2025-12-14T04:13:09.048997486Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:09.049002692Z [inf]  }
+2025-12-14T04:13:09.049008162Z [inf]  [GPT-Screen] BTCUSDT: score=40, direction=SELL, hasOpp=false
+2025-12-14T04:13:14.135970737Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 31}",
+2025-12-14T04:13:14.135978546Z [inf]      "refusal": null,
+2025-12-14T04:13:14.135983703Z [inf]      "annotations": []
+2025-12-14T04:13:14.135989257Z [inf]    },
+2025-12-14T04:13:14.135994495Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:14.135999354Z [inf]  }
+2025-12-14T04:13:14.136006169Z [inf]  [GPT-Screen] XRPUSDT: score=31, direction=SELL, hasOpp=false
+2025-12-14T04:13:14.136011800Z [inf]  [Engine] XRPUSDT: No opportunity (score: 31) - skipping full analysis
+2025-12-14T04:13:14.136050410Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T04:13:14.136054975Z [inf]    "index": 0,
+2025-12-14T04:13:14.136059856Z [inf]    "message": {
+2025-12-14T04:13:14.136064586Z [inf]      "role": "assistant",
+2025-12-14T04:13:14.421793875Z [inf]  [Engine] BNBUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T04:13:14.421858320Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T04:13:14.421866574Z [inf]    "index": 0,
+2025-12-14T04:13:14.421874120Z [inf]    "message": {
+2025-12-14T04:13:14.421880533Z [inf]      "role": "assistant",
+2025-12-14T04:13:14.421886426Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 30}",
+2025-12-14T04:13:14.421892750Z [inf]      "refusal": null,
+2025-12-14T04:13:14.421898719Z [inf]      "annotations": []
+2025-12-14T04:13:14.421904993Z [inf]    },
+2025-12-14T04:13:14.421910725Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:14.421916464Z [inf]  }
+2025-12-14T04:13:14.421922203Z [inf]  [GPT-Screen] BNBUSDT: score=30, direction=SELL, hasOpp=false
+2025-12-14T04:13:17.404425426Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T04:13:17.404432140Z [inf]    "index": 0,
+2025-12-14T04:13:17.404437290Z [inf]    "message": {
+2025-12-14T04:13:17.404442122Z [inf]      "role": "assistant",
+2025-12-14T04:13:17.404446721Z [inf]      "content": "",
+2025-12-14T04:13:17.404451265Z [inf]      "refusal": null,
+2025-12-14T04:13:17.404455653Z [inf]      "annotations": []
+2025-12-14T04:13:17.404460456Z [inf]    },
+2025-12-14T04:13:17.404465348Z [inf]    "finish_reason": "length"
+2025-12-14T04:13:17.404469807Z [inf]  }
+2025-12-14T04:13:17.404474481Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T04:13:17.404479363Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T04:13:20.239346280Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T04:13:20.239352376Z [inf]    "index": 0,
+2025-12-14T04:13:20.239356951Z [inf]    "message": {
+2025-12-14T04:13:20.239360999Z [inf]      "role": "assistant",
+2025-12-14T04:13:20.239424599Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:13:20.239429318Z [inf]      "refusal": null,
+2025-12-14T04:13:20.239433114Z [inf]      "annotations": []
+2025-12-14T04:13:20.239438595Z [inf]    },
+2025-12-14T04:13:20.239454292Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:20.239459092Z [inf]  }
+2025-12-14T04:13:20.239462855Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:13:20.239466890Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:13:22.248230366Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T04:13:22.248238247Z [inf]    "index": 0,
+2025-12-14T04:13:22.248246053Z [inf]    "message": {
+2025-12-14T04:13:22.248253278Z [inf]      "role": "assistant",
+2025-12-14T04:13:22.248259649Z [inf]      "content": "",
+2025-12-14T04:13:22.248266736Z [inf]      "refusal": null,
+2025-12-14T04:13:22.248276477Z [inf]      "annotations": []
+2025-12-14T04:13:22.248284023Z [inf]    },
+2025-12-14T04:13:22.248290711Z [inf]    "finish_reason": "length"
+2025-12-14T04:13:22.248298107Z [inf]  }
+2025-12-14T04:13:22.248307395Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T04:13:22.248315204Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T04:13:23.456577177Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T04:13:23.456585553Z [inf]    "index": 0,
+2025-12-14T04:13:23.456591156Z [inf]    "message": {
+2025-12-14T04:13:23.456596357Z [inf]      "role": "assistant",
+2025-12-14T04:13:23.456602548Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 58}",
+2025-12-14T04:13:23.456609959Z [inf]      "refusal": null,
+2025-12-14T04:13:23.456615492Z [inf]      "annotations": []
+2025-12-14T04:13:23.456621244Z [inf]    },
+2025-12-14T04:13:23.456625722Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:23.456630999Z [inf]  }
+2025-12-14T04:13:23.456636059Z [inf]  [GPT-Screen] SOLUSDT: score=58, direction=SELL, hasOpp=true
+2025-12-14T04:13:23.456640771Z [inf]  [Engine] SOLUSDT: Opportunity detected! (score: 58, direction: SELL)
+2025-12-14T04:13:24.231588253Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:24.231595165Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:24.231601413Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:24.231607565Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:29.611088681Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T04:13:29.611103890Z [inf]    "index": 0,
+2025-12-14T04:13:29.611112739Z [inf]    "message": {
+2025-12-14T04:13:29.611120975Z [inf]      "role": "assistant",
+2025-12-14T04:13:29.611129036Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 55}",
+2025-12-14T04:13:29.611137394Z [inf]      "refusal": null,
+2025-12-14T04:13:29.611144565Z [inf]      "annotations": []
+2025-12-14T04:13:29.611152561Z [inf]    },
+2025-12-14T04:13:29.611160320Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:29.611171498Z [inf]  }
+2025-12-14T04:13:29.611178469Z [inf]  [GPT-Screen] BNBUSDT: score=55, direction=SELL, hasOpp=true
+2025-12-14T04:13:29.611184879Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 55, direction: SELL)
+2025-12-14T04:13:30.308763463Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:30.308767434Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:30.308771595Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:30.308776250Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:32.686896441Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T04:13:32.686917881Z [inf]    "index": 0,
+2025-12-14T04:13:32.686924733Z [inf]    "message": {
+2025-12-14T04:13:32.686933209Z [inf]      "role": "assistant",
+2025-12-14T04:13:32.686939108Z [inf]      "content": "",
+2025-12-14T04:13:32.686948245Z [inf]      "refusal": null,
+2025-12-14T04:13:32.686954161Z [inf]      "annotations": []
+2025-12-14T04:13:32.686959838Z [inf]    },
+2025-12-14T04:13:32.686965025Z [inf]    "finish_reason": "length"
+2025-12-14T04:13:32.686971758Z [inf]  }
+2025-12-14T04:13:32.686981196Z [inf]  [GPT-Screen] AVAXUSDT: Empty content, checking refusal: null
+2025-12-14T04:13:32.686987410Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T04:13:34.369794372Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T04:13:34.369800160Z [inf]    "index": 0,
+2025-12-14T04:13:34.369806327Z [inf]    "message": {
+2025-12-14T04:13:34.369811559Z [inf]      "role": "assistant",
+2025-12-14T04:13:34.369819320Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 40}",
+2025-12-14T04:13:34.369825762Z [inf]      "refusal": null,
+2025-12-14T04:13:34.369830907Z [inf]      "annotations": []
+2025-12-14T04:13:34.369836184Z [inf]    },
+2025-12-14T04:13:34.369841280Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:34.371949162Z [inf]  }
+2025-12-14T04:13:34.371959094Z [inf]  [GPT-Screen] ARBUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-14T04:13:34.371964536Z [inf]  [Engine] ARBUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-14T04:13:39.363462199Z [inf]  [Engine] SOLUSDT: SELL (56%)
+2025-12-14T04:13:39.363466635Z [inf]  [Engine]   └─ Régimen en rango con ADX 16.8 (sin tendencia), BB Width muy estrecho (0.55%) y ATR bajo (~0.25%), id...
+2025-12-14T04:13:39.363475620Z [inf]  [Engine]   └─ Size: 2% | Leverage: 3x
+2025-12-14T04:13:39.363479658Z [inf]  [Engine]   └─ SL: $133.56 | TP: $132.59
+2025-12-14T04:13:40.352759197Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T04:13:41.383434663Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T04:13:41.383440347Z [inf]    "index": 0,
+2025-12-14T04:13:41.383447903Z [inf]    "message": {
+2025-12-14T04:13:41.383456870Z [inf]      "role": "assistant",
+2025-12-14T04:13:41.383463017Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 75}",
+2025-12-14T04:13:41.383474155Z [inf]      "refusal": null,
+2025-12-14T04:13:41.383481054Z [inf]      "annotations": []
+2025-12-14T04:13:41.383487522Z [inf]    },
+2025-12-14T04:13:41.383495481Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:41.383502610Z [inf]  }
+2025-12-14T04:13:41.383508631Z [inf]  [GPT-Screen] BTCUSDT: score=75, direction=SELL, hasOpp=true
+2025-12-14T04:13:41.383516534Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 75, direction: SELL)
+2025-12-14T04:13:41.453006437Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:41.453018472Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:41.459359924Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:41.469740617Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:13:43.426891102Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T04:13:43.426899030Z [inf]    "index": 0,
+2025-12-14T04:13:43.426906300Z [inf]    "message": {
+2025-12-14T04:13:43.426912442Z [inf]      "role": "assistant",
+2025-12-14T04:13:43.426917867Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T04:13:43.426923260Z [inf]      "refusal": null,
+2025-12-14T04:13:43.426928215Z [inf]      "annotations": []
+2025-12-14T04:13:43.426935058Z [inf]    },
+2025-12-14T04:13:43.426941838Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:43.426947273Z [inf]  }
+2025-12-14T04:13:43.426954104Z [inf]  [GPT-Screen] OPUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T04:13:43.426959418Z [inf]  [Engine] OPUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T04:13:46.511089339Z [inf]  [Engine] BNBUSDT: HOLD (44%)
+2025-12-14T04:13:46.511102262Z [inf]  [Engine]   └─ BNBUSDT está en régimen de rango (ADX 12.3) y justo en el POC ($895.81), lo que suele actuar como “i...
+2025-12-14T04:13:49.338664195Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T04:13:49.338671936Z [inf]    "index": 0,
+2025-12-14T04:13:49.338678742Z [inf]    "message": {
+2025-12-14T04:13:49.338685342Z [inf]      "role": "assistant",
+2025-12-14T04:13:49.338692183Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:13:49.338708812Z [inf]      "refusal": null,
+2025-12-14T04:13:49.338717183Z [inf]      "annotations": []
+2025-12-14T04:13:49.338726636Z [inf]    },
+2025-12-14T04:13:49.338733626Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:49.338739775Z [inf]  }
+2025-12-14T04:13:49.338745837Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:13:49.338750688Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:13:49.577681263Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T04:13:49.577691392Z [inf]    "index": 0,
+2025-12-14T04:13:49.577697609Z [inf]    "message": {
+2025-12-14T04:13:49.577702044Z [inf]      "role": "assistant",
+2025-12-14T04:13:49.577707101Z [inf]      "content": "",
+2025-12-14T04:13:49.577712811Z [inf]      "refusal": null,
+2025-12-14T04:13:49.577717965Z [inf]      "annotations": []
+2025-12-14T04:13:49.577724630Z [inf]    },
+2025-12-14T04:13:49.577729513Z [inf]    "finish_reason": "length"
+2025-12-14T04:13:49.577735188Z [inf]  }
+2025-12-14T04:13:49.577739908Z [inf]  [GPT-Screen] DOGEUSDT: Empty content, checking refusal: null
+2025-12-14T04:13:49.577744755Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T04:13:53.432318715Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T04:13:53.432331599Z [inf]    "index": 0,
+2025-12-14T04:13:53.432339394Z [inf]    "message": {
+2025-12-14T04:13:53.432346258Z [inf]      "role": "assistant",
+2025-12-14T04:13:53.432354066Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 25}",
+2025-12-14T04:13:53.432361645Z [inf]      "refusal": null,
+2025-12-14T04:13:53.432369913Z [inf]      "annotations": []
+2025-12-14T04:13:53.432377483Z [inf]    },
+2025-12-14T04:13:53.432383615Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:53.432391333Z [inf]  }
+2025-12-14T04:13:53.432398617Z [inf]  [GPT-Screen] SOLUSDT: score=25, direction=SELL, hasOpp=false
+2025-12-14T04:13:53.432405003Z [inf]  [Engine] SOLUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:13:54.606756932Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T04:13:54.606764614Z [inf]    "index": 0,
+2025-12-14T04:13:54.606769291Z [inf]    "message": {
+2025-12-14T04:13:54.606773788Z [inf]      "role": "assistant",
+2025-12-14T04:13:54.606780663Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T04:13:54.606785328Z [inf]      "refusal": null,
+2025-12-14T04:13:54.606790276Z [inf]      "annotations": []
+2025-12-14T04:13:54.606795081Z [inf]    },
+2025-12-14T04:13:54.606799127Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:54.606803434Z [inf]  }
+2025-12-14T04:13:54.606807949Z [inf]  [GPT-Screen] SUIUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:13:54.606812911Z [inf]  [Engine] SUIUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:13:56.419200078Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T04:13:56.419207036Z [inf]    "index": 0,
+2025-12-14T04:13:56.419213343Z [inf]    "message": {
+2025-12-14T04:13:56.419219389Z [inf]      "role": "assistant",
+2025-12-14T04:13:56.419224545Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T04:13:56.419230353Z [inf]      "refusal": null,
+2025-12-14T04:13:56.419236933Z [inf]      "annotations": []
+2025-12-14T04:13:56.419242726Z [inf]    },
+2025-12-14T04:13:56.419248230Z [inf]    "finish_reason": "stop"
+2025-12-14T04:13:56.419254352Z [inf]  }
+2025-12-14T04:13:56.419261918Z [inf]  [GPT-Screen] XRPUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T04:13:56.419268759Z [inf]  [Engine] XRPUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T04:14:00.885439363Z [inf]  [Engine] BTCUSDT: SELL (58%)
+2025-12-14T04:14:00.885454442Z [inf]  [Engine]   └─ Régimen claramente lateral (ADX 10.2) y volatilidad muy comprimida (BB Width 0.28%, ATR 0.105%), lo ...
+2025-12-14T04:14:00.885462821Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-14T04:14:00.885475824Z [inf]  [Engine]   └─ SL: $90390.00 | TP: $90060.00
+2025-12-14T04:14:02.437839013Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T04:14:02.768963333Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T04:14:02.768973551Z [inf]    "index": 0,
+2025-12-14T04:14:02.768979187Z [inf]    "message": {
+2025-12-14T04:14:02.768984389Z [inf]      "role": "assistant",
+2025-12-14T04:14:02.768995718Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:02.769000598Z [inf]      "refusal": null,
+2025-12-14T04:14:02.769005335Z [inf]      "annotations": []
+2025-12-14T04:14:02.769010283Z [inf]    },
+2025-12-14T04:14:02.769015236Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:02.769021041Z [inf]  }
+2025-12-14T04:14:02.769025739Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:02.769031468Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:04.539270898Z [inf]  }
+2025-12-14T04:14:04.539279424Z [inf]  [GPT-Screen] XRPUSDT: score=55, direction=SELL, hasOpp=true
+2025-12-14T04:14:04.539286512Z [inf]  [Engine] XRPUSDT: Opportunity detected! (score: 55, direction: SELL)
+2025-12-14T04:14:04.539293616Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T04:14:04.539314428Z [inf]    "index": 0,
+2025-12-14T04:14:04.539321619Z [inf]    "message": {
+2025-12-14T04:14:04.539326878Z [inf]      "role": "assistant",
+2025-12-14T04:14:04.539333877Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 55}",
+2025-12-14T04:14:04.539341103Z [inf]      "refusal": null,
+2025-12-14T04:14:04.539348273Z [inf]      "annotations": []
+2025-12-14T04:14:04.539354749Z [inf]    },
+2025-12-14T04:14:04.539375548Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:04.651199029Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T04:14:04.651212113Z [inf]    "index": 0,
+2025-12-14T04:14:04.651220276Z [inf]    "message": {
+2025-12-14T04:14:04.651230762Z [inf]      "role": "assistant",
+2025-12-14T04:14:04.651240455Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 62}",
+2025-12-14T04:14:04.651248947Z [inf]      "refusal": null,
+2025-12-14T04:14:04.651257216Z [inf]      "annotations": []
+2025-12-14T04:14:04.651263746Z [inf]    },
+2025-12-14T04:14:04.651270231Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:04.651276981Z [inf]  }
+2025-12-14T04:14:04.651283648Z [inf]  [GPT-Screen] ARBUSDT: score=62, direction=SELL, hasOpp=true
+2025-12-14T04:14:04.651290644Z [inf]  [Engine] ARBUSDT: Opportunity detected! (score: 62, direction: SELL)
+2025-12-14T04:14:04.717391034Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:04.821180690Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:04.821188741Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:05.448718439Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:05.448724038Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:05.448729439Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:05.448734424Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:05.448739757Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:11.409915572Z [inf]      "role": "assistant",
+2025-12-14T04:14:11.409932938Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 40}",
+2025-12-14T04:14:11.409941338Z [inf]      "refusal": null,
+2025-12-14T04:14:11.409948887Z [inf]      "annotations": []
+2025-12-14T04:14:11.409956618Z [inf]    },
+2025-12-14T04:14:11.409964057Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:11.409972068Z [inf]  }
+2025-12-14T04:14:11.409976498Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T04:14:11.409981545Z [inf]  [GPT-Screen] BTCUSDT: score=40, direction=SELL, hasOpp=false
+2025-12-14T04:14:11.409982597Z [inf]    "index": 0,
+2025-12-14T04:14:11.409988248Z [inf]    "message": {
+2025-12-14T04:14:11.410002064Z [inf]  [Engine] BTCUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-14T04:14:11.524597248Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T04:14:11.524607266Z [inf]    "index": 0,
+2025-12-14T04:14:11.524613397Z [inf]    "message": {
+2025-12-14T04:14:11.524619786Z [inf]      "role": "assistant",
+2025-12-14T04:14:11.524626012Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 35}",
+2025-12-14T04:14:11.524636080Z [inf]      "refusal": null,
+2025-12-14T04:14:11.524642310Z [inf]      "annotations": []
+2025-12-14T04:14:11.524648893Z [inf]    },
+2025-12-14T04:14:11.524656192Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:11.524663869Z [inf]  }
+2025-12-14T04:14:11.524670020Z [inf]  [GPT-Screen] AVAXUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-14T04:14:11.524676264Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 35) - skipping full analysis
+2025-12-14T04:14:14.660209571Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T04:14:14.660219839Z [inf]    "index": 0,
+2025-12-14T04:14:14.660229288Z [inf]    "message": {
+2025-12-14T04:14:14.660241175Z [inf]      "role": "assistant",
+2025-12-14T04:14:14.660248032Z [inf]      "content": "",
+2025-12-14T04:14:14.660255336Z [inf]      "refusal": null,
+2025-12-14T04:14:14.660262036Z [inf]      "annotations": []
+2025-12-14T04:14:14.660268900Z [inf]    },
+2025-12-14T04:14:14.660275568Z [inf]    "finish_reason": "length"
+2025-12-14T04:14:14.660283334Z [inf]  }
+2025-12-14T04:14:14.660290694Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T04:14:14.660298135Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T04:14:16.600086773Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T04:14:16.600089992Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:16.600093961Z [inf]    "index": 0,
+2025-12-14T04:14:16.600099157Z [inf]    "message": {
+2025-12-14T04:14:16.600104186Z [inf]      "role": "assistant",
+2025-12-14T04:14:16.600104621Z [inf]  }
+2025-12-14T04:14:16.600108756Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:16.600114551Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:16.600115405Z [inf]      "refusal": null,
+2025-12-14T04:14:16.600121043Z [inf]      "annotations": []
+2025-12-14T04:14:16.600124134Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:16.600126901Z [inf]    },
+2025-12-14T04:14:20.669942069Z [inf]  [Engine] XRPUSDT: HOLD (58%)
+2025-12-14T04:14:20.669952437Z [inf]  [Engine]   └─ Régimen claramente lateral (ADX 14.4) y volatilidad comprimida (BB width 0.49%, ATR ~0.186%), lo que...
+2025-12-14T04:14:20.963270515Z [inf]  [Engine] ARBUSDT: HOLD (58%)
+2025-12-14T04:14:20.963277540Z [inf]  [Engine]   └─ No entro todavía principalmente por el SPREAD (0.0465%), que está por encima del umbral de no-operar...
+2025-12-14T04:14:21.913395798Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T04:14:21.913407256Z [inf]    "index": 0,
+2025-12-14T04:14:21.913414240Z [inf]    "message": {
+2025-12-14T04:14:21.913421412Z [inf]      "role": "assistant",
+2025-12-14T04:14:21.913427726Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:21.913456632Z [inf]      "refusal": null,
+2025-12-14T04:14:21.913463665Z [inf]      "annotations": []
+2025-12-14T04:14:21.913477161Z [inf]    },
+2025-12-14T04:14:21.913484646Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:21.913493518Z [inf]  }
+2025-12-14T04:14:21.913500442Z [inf]  [GPT-Screen] SUIUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:21.913508535Z [inf]  [Engine] SUIUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:21.983179366Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T04:14:21.983190847Z [inf]    "index": 0,
+2025-12-14T04:14:21.983201054Z [inf]    "message": {
+2025-12-14T04:14:21.983207856Z [inf]      "role": "assistant",
+2025-12-14T04:14:21.983215406Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 60}",
+2025-12-14T04:14:21.983221973Z [inf]      "refusal": null,
+2025-12-14T04:14:21.983229130Z [inf]      "annotations": []
+2025-12-14T04:14:21.983238735Z [inf]    },
+2025-12-14T04:14:21.983245413Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:21.983254375Z [inf]  }
+2025-12-14T04:14:21.983260959Z [inf]  [GPT-Screen] BNBUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-14T04:14:21.983266539Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-14T04:14:22.544717073Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:22.544723787Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:22.544727744Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:22.544732370Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:23.786503889Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T04:14:23.786509360Z [inf]    "index": 0,
+2025-12-14T04:14:23.786513343Z [inf]    "message": {
+2025-12-14T04:14:23.786517192Z [inf]      "role": "assistant",
+2025-12-14T04:14:23.786520841Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 21}",
+2025-12-14T04:14:23.786525491Z [inf]      "refusal": null,
+2025-12-14T04:14:23.786529178Z [inf]      "annotations": []
+2025-12-14T04:14:23.786532907Z [inf]    },
+2025-12-14T04:14:23.786536926Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:23.786540914Z [inf]  }
+2025-12-14T04:14:23.786544897Z [inf]  [GPT-Screen] ETHUSDT: score=21, direction=NONE, hasOpp=false
+2025-12-14T04:14:23.786548719Z [inf]  [Engine] ETHUSDT: No opportunity (score: 21) - skipping full analysis
+2025-12-14T04:14:25.592174178Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T04:14:25.592181452Z [inf]    "index": 0,
+2025-12-14T04:14:25.592185752Z [inf]    "message": {
+2025-12-14T04:14:25.592190103Z [inf]      "role": "assistant",
+2025-12-14T04:14:25.592194571Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:25.592199069Z [inf]      "refusal": null,
+2025-12-14T04:14:25.592203174Z [inf]      "annotations": []
+2025-12-14T04:14:25.592209224Z [inf]    },
+2025-12-14T04:14:25.592214398Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:25.592219253Z [inf]  }
+2025-12-14T04:14:25.592224747Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:25.592230166Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:32.813170912Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T04:14:32.813179779Z [inf]    "index": 0,
+2025-12-14T04:14:32.813186141Z [inf]    "message": {
+2025-12-14T04:14:32.813192766Z [inf]      "role": "assistant",
+2025-12-14T04:14:32.813199306Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 55}",
+2025-12-14T04:14:32.813205997Z [inf]      "refusal": null,
+2025-12-14T04:14:32.813211458Z [inf]      "annotations": []
+2025-12-14T04:14:32.813217186Z [inf]    },
+2025-12-14T04:14:32.813222120Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:32.813227579Z [inf]  }
+2025-12-14T04:14:32.813232933Z [inf]  [GPT-Screen] OPUSDT: score=55, direction=SELL, hasOpp=true
+2025-12-14T04:14:32.813239900Z [inf]  [Engine] OPUSDT: Opportunity detected! (score: 55, direction: SELL)
+2025-12-14T04:14:32.985927151Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:33.584793062Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T04:14:33.584795568Z [inf]      "role": "assistant",
+2025-12-14T04:14:33.584801960Z [inf]  [GPT-Screen] BNBUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:14:33.584803081Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T04:14:33.584811599Z [inf]      "refusal": null,
+2025-12-14T04:14:33.584816054Z [inf]  [Engine] BNBUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:14:33.584817681Z [inf]    "index": 0,
+2025-12-14T04:14:33.584821168Z [inf]      "annotations": []
+2025-12-14T04:14:33.584823457Z [inf]    },
+2025-12-14T04:14:33.584831393Z [inf]    "message": {
+2025-12-14T04:14:33.584837219Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:33.584844796Z [inf]  }
+2025-12-14T04:14:33.584844911Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:33.584850727Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:33.584855161Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:33.948510183Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T04:14:33.948523597Z [inf]    "index": 0,
+2025-12-14T04:14:33.948530860Z [inf]    "message": {
+2025-12-14T04:14:33.948537490Z [inf]      "role": "assistant",
+2025-12-14T04:14:33.948543617Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 40}",
+2025-12-14T04:14:33.948550491Z [inf]      "refusal": null,
+2025-12-14T04:14:33.948557844Z [inf]      "annotations": []
+2025-12-14T04:14:33.948564652Z [inf]    },
+2025-12-14T04:14:33.948571390Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:33.948580425Z [inf]  }
+2025-12-14T04:14:33.948587017Z [inf]  [GPT-Screen] ARBUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-14T04:14:33.948593601Z [inf]  [Engine] ARBUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-14T04:14:35.542740410Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T04:14:35.542745341Z [inf]    "index": 0,
+2025-12-14T04:14:35.542749981Z [inf]    "message": {
+2025-12-14T04:14:35.542761370Z [inf]      "role": "assistant",
+2025-12-14T04:14:35.542766135Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"BUY\", \"score\": 38}",
+2025-12-14T04:14:35.542770395Z [inf]      "refusal": null,
+2025-12-14T04:14:35.542774832Z [inf]      "annotations": []
+2025-12-14T04:14:35.542779456Z [inf]    },
+2025-12-14T04:14:35.542783708Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:35.542789673Z [inf]  }
+2025-12-14T04:14:35.542794250Z [inf]  [GPT-Screen] AVAXUSDT: score=38, direction=BUY, hasOpp=false
+2025-12-14T04:14:35.542800643Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 38) - skipping full analysis
+2025-12-14T04:14:38.782567688Z [inf]      "annotations": []
+2025-12-14T04:14:38.782577042Z [inf]    },
+2025-12-14T04:14:38.782582448Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:38.782588976Z [inf]  }
+2025-12-14T04:14:38.782597400Z [inf]  [GPT-Screen] BTCUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:14:38.782602907Z [inf]  [Engine] BTCUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:14:38.782616353Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T04:14:38.782626045Z [inf]    "index": 0,
+2025-12-14T04:14:38.782632403Z [inf]    "message": {
+2025-12-14T04:14:38.782637992Z [inf]      "role": "assistant",
+2025-12-14T04:14:38.782644043Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T04:14:38.782649954Z [inf]      "refusal": null,
+2025-12-14T04:14:39.093665833Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T04:14:39.093673457Z [inf]    "index": 0,
+2025-12-14T04:14:39.093678061Z [inf]    "message": {
+2025-12-14T04:14:39.093682048Z [inf]      "role": "assistant",
+2025-12-14T04:14:39.093686135Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:39.093690617Z [inf]      "refusal": null,
+2025-12-14T04:14:39.093695353Z [inf]      "annotations": []
+2025-12-14T04:14:39.093700212Z [inf]    },
+2025-12-14T04:14:39.093704819Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:39.093709648Z [inf]  }
+2025-12-14T04:14:39.093724178Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:39.093729745Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:41.582135312Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T04:14:41.582142648Z [inf]    "index": 0,
+2025-12-14T04:14:41.582150244Z [inf]    "message": {
+2025-12-14T04:14:41.582155847Z [inf]      "role": "assistant",
+2025-12-14T04:14:41.582160282Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T04:14:41.582165085Z [inf]      "refusal": null,
+2025-12-14T04:14:41.582169572Z [inf]      "annotations": []
+2025-12-14T04:14:41.582173395Z [inf]    },
+2025-12-14T04:14:41.582177386Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:41.582181995Z [inf]  }
+2025-12-14T04:14:41.582187773Z [inf]  [GPT-Screen] DOGEUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:14:41.582193163Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T04:14:42.555422567Z [inf]  [Engine] BNBUSDT: SELL (56%)
+2025-12-14T04:14:42.555429144Z [inf]  [Engine]   └─ Contexto de rango con volatilidad baja (ADX 12.3 y BB Width 0.44%), por lo que busco scalps cortos c...
+2025-12-14T04:14:42.555434870Z [inf]  [Engine]   └─ Size: 3% | Leverage: 5x
+2025-12-14T04:14:42.555441750Z [inf]  [Engine]   └─ SL: $899.25 | TP: $894.15
+2025-12-14T04:14:44.649860113Z [inf]  [Engine] Opening SELL BNBUSDT:
+2025-12-14T04:14:44.649866041Z [inf]  [Engine]   └─ Quantity: 0.64 @ ~$896.38
+2025-12-14T04:14:44.649872984Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T04:14:44.649879199Z [inf]  [Engine]   └─ Capital used: $114.74 (3%)
+2025-12-14T04:14:44.649884639Z [inf]  [Engine]   └─ Position value: $573.69
+2025-12-14T04:14:45.022176171Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:45.090810183Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:45.090818181Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:45.090825291Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:45.609874922Z [err]  [Engine] Invalid PnL calculation: currentPrice=896.38561553, entryPrice=0
+2025-12-14T04:14:45.609881182Z [inf]  [Engine] Position opened: SHORT BNBUSDT @ $0.00
+2025-12-14T04:14:45.609885873Z [inf]  [Engine]   └─ SL: $899.25 (Infinity%)
+2025-12-14T04:14:45.609891553Z [inf]  [Engine]   └─ TP: $894.15 (Infinity%)
+2025-12-14T04:14:46.787072193Z [inf]  [Engine] OPUSDT: HOLD (56%)
+2025-12-14T04:14:46.787080176Z [inf]  [Engine]   └─ No entro aún por una razón operativa clave: el spread está en 0.0320% (>0.03%), lo que en scalping (...
+2025-12-14T04:14:47.688173931Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T04:14:47.688184276Z [inf]    "index": 0,
+2025-12-14T04:14:47.688189858Z [inf]    "message": {
+2025-12-14T04:14:47.688194748Z [inf]      "role": "assistant",
+2025-12-14T04:14:47.688199834Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:47.688206825Z [inf]      "refusal": null,
+2025-12-14T04:14:47.688213287Z [inf]      "annotations": []
+2025-12-14T04:14:47.688219205Z [inf]    },
+2025-12-14T04:14:47.688225273Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:47.688232532Z [inf]  }
+2025-12-14T04:14:47.688239355Z [inf]  [GPT-Screen] OPUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:47.688246019Z [inf]  [Engine] OPUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:47.716664150Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T04:14:47.716676618Z [inf]    "index": 0,
+2025-12-14T04:14:47.716692397Z [inf]    "message": {
+2025-12-14T04:14:47.716703571Z [inf]      "role": "assistant",
+2025-12-14T04:14:47.716709994Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:47.716716867Z [inf]      "refusal": null,
+2025-12-14T04:14:47.716723277Z [inf]      "annotations": []
+2025-12-14T04:14:47.716730012Z [inf]    },
+2025-12-14T04:14:47.716736673Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:47.716743357Z [inf]  }
+2025-12-14T04:14:47.716749544Z [inf]  [GPT-Screen] SUIUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:47.716755618Z [inf]  [Engine] SUIUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:49.722157025Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T04:14:49.722163934Z [inf]    "index": 0,
+2025-12-14T04:14:49.722170650Z [inf]    "message": {
+2025-12-14T04:14:49.722177361Z [inf]      "role": "assistant",
+2025-12-14T04:14:49.722182354Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:49.722186570Z [inf]      "refusal": null,
+2025-12-14T04:14:49.722191417Z [inf]      "annotations": []
+2025-12-14T04:14:49.722197742Z [inf]    },
+2025-12-14T04:14:49.722202302Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:49.722206455Z [inf]  }
+2025-12-14T04:14:49.722210632Z [inf]  [GPT-Screen] ETHUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:49.722214345Z [inf]  [Engine] ETHUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:50.650518587Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T04:14:50.650534092Z [inf]    "index": 0,
+2025-12-14T04:14:50.650541737Z [inf]    "message": {
+2025-12-14T04:14:50.650548123Z [inf]      "role": "assistant",
+2025-12-14T04:14:50.650553902Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 42}",
+2025-12-14T04:14:50.650559975Z [inf]      "refusal": null,
+2025-12-14T04:14:50.650566589Z [inf]      "annotations": []
+2025-12-14T04:14:50.650571983Z [inf]    },
+2025-12-14T04:14:50.650581747Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:50.650589948Z [inf]  }
+2025-12-14T04:14:50.650596178Z [inf]  [GPT-Screen] XRPUSDT: score=42, direction=SELL, hasOpp=false
+2025-12-14T04:14:50.650601587Z [inf]  [Engine] XRPUSDT: No opportunity (score: 42) - skipping full analysis
+2025-12-14T04:14:51.673712288Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T04:14:51.673718532Z [inf]    "index": 0,
+2025-12-14T04:14:51.673724355Z [inf]    "message": {
+2025-12-14T04:14:51.673729570Z [inf]      "role": "assistant",
+2025-12-14T04:14:51.673734753Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:51.673743326Z [inf]      "refusal": null,
+2025-12-14T04:14:51.673749123Z [inf]      "annotations": []
+2025-12-14T04:14:51.673754534Z [inf]    },
+2025-12-14T04:14:51.673759924Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:51.673765571Z [inf]  }
+2025-12-14T04:14:51.673770738Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:51.673775392Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:52.040077149Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T04:14:52.040087228Z [inf]    "index": 0,
+2025-12-14T04:14:52.040092870Z [inf]    "message": {
+2025-12-14T04:14:52.040098991Z [inf]      "role": "assistant",
+2025-12-14T04:14:52.040104657Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:52.040109853Z [inf]      "refusal": null,
+2025-12-14T04:14:52.040116316Z [inf]      "annotations": []
+2025-12-14T04:14:52.040122073Z [inf]    },
+2025-12-14T04:14:52.040131035Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:52.040137307Z [inf]  }
+2025-12-14T04:14:52.040143099Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:52.040148918Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:53.095034125Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T04:14:53.095040303Z [inf]    "index": 0,
+2025-12-14T04:14:53.095044805Z [inf]    "message": {
+2025-12-14T04:14:53.095048837Z [inf]      "role": "assistant",
+2025-12-14T04:14:53.095052776Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:53.095057467Z [inf]      "refusal": null,
+2025-12-14T04:14:53.095061533Z [inf]      "annotations": []
+2025-12-14T04:14:53.095065309Z [inf]    },
+2025-12-14T04:14:53.095069412Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:53.095073103Z [inf]  }
+2025-12-14T04:14:53.095077515Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:53.095081519Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:56.077069272Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:56.077078259Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T04:14:56.077087155Z [inf]    "index": 0,
+2025-12-14T04:14:56.077095225Z [inf]    "message": {
+2025-12-14T04:14:56.077100418Z [inf]      "role": "assistant",
+2025-12-14T04:14:56.077105274Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:56.077110475Z [inf]      "refusal": null,
+2025-12-14T04:14:56.077115680Z [inf]      "annotations": []
+2025-12-14T04:14:56.077120226Z [inf]    },
+2025-12-14T04:14:56.077125071Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:56.077130635Z [inf]  }
+2025-12-14T04:14:56.077135473Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:59.632784154Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T04:14:59.632795365Z [inf]    "index": 0,
+2025-12-14T04:14:59.632803295Z [inf]    "message": {
+2025-12-14T04:14:59.632810211Z [inf]      "role": "assistant",
+2025-12-14T04:14:59.632816665Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 58}",
+2025-12-14T04:14:59.632823645Z [inf]      "refusal": null,
+2025-12-14T04:14:59.632830099Z [inf]      "annotations": []
+2025-12-14T04:14:59.632836459Z [inf]    },
+2025-12-14T04:14:59.632843201Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:59.632851122Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T04:14:59.632853062Z [inf]  }
+2025-12-14T04:14:59.632859280Z [inf]    "index": 0,
+2025-12-14T04:14:59.632862853Z [inf]  [GPT-Screen] ARBUSDT: score=58, direction=BUY, hasOpp=true
+2025-12-14T04:14:59.632867175Z [inf]    "message": {
+2025-12-14T04:14:59.632871135Z [inf]  [Engine] ARBUSDT: Opportunity detected! (score: 58, direction: BUY)
+2025-12-14T04:14:59.632875225Z [inf]      "role": "assistant",
+2025-12-14T04:14:59.632880258Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:14:59.632885670Z [inf]      "refusal": null,
+2025-12-14T04:14:59.632891660Z [inf]      "annotations": []
+2025-12-14T04:14:59.632896407Z [inf]    },
+2025-12-14T04:14:59.632902557Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:59.632909349Z [inf]  }
+2025-12-14T04:14:59.632918482Z [inf]  [GPT-Screen] XRPUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:14:59.632925590Z [inf]  [Engine] XRPUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:14:59.757215110Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:59.842810949Z [inf]    },
+2025-12-14T04:14:59.842819883Z [inf]    "finish_reason": "stop"
+2025-12-14T04:14:59.842827935Z [inf]  }
+2025-12-14T04:14:59.842833997Z [inf]  [GPT-Screen] BNBUSDT: score=55, direction=BUY, hasOpp=true
+2025-12-14T04:14:59.842842692Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 55, direction: BUY)
+2025-12-14T04:14:59.842843547Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T04:14:59.842868729Z [inf]    "index": 0,
+2025-12-14T04:14:59.842875951Z [inf]    "message": {
+2025-12-14T04:14:59.842881824Z [inf]      "role": "assistant",
+2025-12-14T04:14:59.842889146Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 55}",
+2025-12-14T04:14:59.842895392Z [inf]      "refusal": null,
+2025-12-14T04:14:59.842901197Z [inf]      "annotations": []
+2025-12-14T04:14:59.964053337Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:14:59.969915585Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:15:00.017298407Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:15:00.079078054Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:15:00.220854357Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:15:00.763723902Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:15:00.763731442Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:15:03.744667921Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T04:15:03.744677565Z [inf]    "index": 0,
+2025-12-14T04:15:03.744684850Z [inf]    "message": {
+2025-12-14T04:15:03.744691169Z [inf]      "role": "assistant",
+2025-12-14T04:15:03.744697459Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T04:15:03.744704087Z [inf]      "refusal": null,
+2025-12-14T04:15:03.744710190Z [inf]      "annotations": []
+2025-12-14T04:15:03.744718341Z [inf]    },
+2025-12-14T04:15:03.744725236Z [inf]    "finish_reason": "stop"
+2025-12-14T04:15:03.744732386Z [inf]  }
+2025-12-14T04:15:03.744740603Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:15:03.744746863Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T04:15:04.818683404Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T04:15:04.818695441Z [inf]    "index": 0,
+2025-12-14T04:15:04.818702474Z [inf]    "message": {
+2025-12-14T04:15:04.818708290Z [inf]      "role": "assistant",
+2025-12-14T04:15:04.818724752Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 40}",
+2025-12-14T04:15:04.818733886Z [inf]      "refusal": null,
+2025-12-14T04:15:04.818741754Z [inf]      "annotations": []
+2025-12-14T04:15:04.818752193Z [inf]    },
+2025-12-14T04:15:04.818759799Z [inf]    "finish_reason": "stop"
+2025-12-14T04:15:04.818766765Z [inf]  }
+2025-12-14T04:15:04.818775078Z [inf]  [GPT-Screen] AVAXUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-14T04:15:04.818781317Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-14T04:15:09.609899587Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T04:15:09.609912027Z [inf]    "index": 0,
+2025-12-14T04:15:09.609918662Z [inf]    "message": {
+2025-12-14T04:15:09.609925381Z [inf]      "role": "assistant",
+2025-12-14T04:15:09.609931911Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 35}",
+2025-12-14T04:15:09.609939112Z [inf]      "refusal": null,
+2025-12-14T04:15:09.609945811Z [inf]      "annotations": []
+2025-12-14T04:15:09.609953561Z [inf]    },
+2025-12-14T04:15:09.609963577Z [inf]    "finish_reason": "stop"
+2025-12-14T04:15:09.609972039Z [inf]  }
+2025-12-14T04:15:09.609978666Z [inf]  [GPT-Screen] BTCUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-14T04:15:09.609992898Z [inf]  [Engine] BTCUSDT: No opportunity (score: 35) - skipping full analysis
+2025-12-14T04:15:10.246390580Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T04:15:10.246409768Z [inf]    "index": 0,
+2025-12-14T04:15:10.246419578Z [inf]    "message": {
+2025-12-14T04:15:10.246430027Z [inf]      "role": "assistant",
+2025-12-14T04:15:10.246438076Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 15}",
+2025-12-14T04:15:10.246446298Z [inf]      "refusal": null,
+2025-12-14T04:15:10.246452935Z [inf]      "annotations": []
+2025-12-14T04:15:10.246458717Z [inf]    },
+2025-12-14T04:15:10.246466532Z [inf]    "finish_reason": "stop"
+2025-12-14T04:15:10.246476521Z [inf]  }
+2025-12-14T04:15:10.246482709Z [inf]  [GPT-Screen] DOGEUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-14T04:15:10.246489672Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 15) - skipping full analysis
+2025-12-14T04:15:13.689807087Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T04:15:13.689813458Z [inf]    "index": 0,
+2025-12-14T04:15:13.689819559Z [inf]    "message": {
+2025-12-14T04:15:13.689826515Z [inf]      "role": "assistant",
+2025-12-14T04:15:13.689832560Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 35}",
+2025-12-14T04:15:13.689839126Z [inf]      "refusal": null,
+2025-12-14T04:15:13.689844631Z [inf]      "annotations": []
+2025-12-14T04:15:13.689851433Z [inf]    },
+2025-12-14T04:15:13.689857295Z [inf]    "finish_reason": "stop"
+2025-12-14T04:15:13.689862695Z [inf]  }
+2025-12-14T04:15:13.689868328Z [inf]  [GPT-Screen] AVAXUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-14T04:15:13.689873902Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 35) - skipping full analysis
+2025-12-14T04:15:15.582971202Z [inf]  [Engine] BNBUSDT: BUY (58%)
+2025-12-14T04:15:15.582980325Z [inf]  [Engine]   └─ Contexto de rango (ADX 12.3) + volatilidad baja (BB Width 0.44%, ATR 0.165%) favorece scalps de mean...
+2025-12-14T04:15:15.582989232Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-14T04:15:15.582996886Z [inf]  [Engine]   └─ SL: $893.60 | TP: $898.60
