@@ -1,0 +1,1001 @@
+2025-12-14T02:36:34.673621613Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:36:34.673627616Z [inf]      "content": "",
+2025-12-14T02:36:34.673633138Z [inf]      "refusal": null,
+2025-12-14T02:36:34.673639254Z [inf]      "annotations": []
+2025-12-14T02:36:34.673646344Z [inf]    },
+2025-12-14T02:36:34.704698831Z [inf]  }
+2025-12-14T02:36:34.704714879Z [inf]  [GPT-Screen] LINKUSDT: Empty content, checking refusal: null
+2025-12-14T02:36:34.704723224Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:36:34.704752708Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:36:34.704760527Z [inf]    "index": 0,
+2025-12-14T02:36:34.704768878Z [inf]    "message": {
+2025-12-14T02:36:34.704776648Z [inf]      "role": "assistant",
+2025-12-14T02:36:34.704784417Z [inf]      "content": "",
+2025-12-14T02:36:34.704792139Z [inf]      "refusal": null,
+2025-12-14T02:36:34.704799930Z [inf]      "annotations": []
+2025-12-14T02:36:34.704807511Z [inf]    },
+2025-12-14T02:36:34.704815222Z [inf]    "finish_reason": "length"
+2025-12-14T02:36:34.791316389Z [inf]      "role": "assistant",
+2025-12-14T02:36:34.791329527Z [inf]      "content": "",
+2025-12-14T02:36:34.791344378Z [inf]      "refusal": null,
+2025-12-14T02:36:34.791358999Z [inf]      "annotations": []
+2025-12-14T02:36:34.791372438Z [inf]    },
+2025-12-14T02:36:34.791372641Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:36:34.791386208Z [inf]    "index": 0,
+2025-12-14T02:36:34.791388552Z [inf]    "finish_reason": "length"
+2025-12-14T02:36:34.791398189Z [inf]    "message": {
+2025-12-14T02:36:34.791401257Z [inf]  }
+2025-12-14T02:36:34.791408662Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T02:36:34.791415085Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:36:34.873098854Z [inf]    },
+2025-12-14T02:36:34.873113561Z [inf]    "finish_reason": "length"
+2025-12-14T02:36:34.873121955Z [inf]  }
+2025-12-14T02:36:34.873129181Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T02:36:34.873136157Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:36:34.873279873Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T02:36:34.873286846Z [inf]    "index": 0,
+2025-12-14T02:36:34.873292213Z [inf]    "message": {
+2025-12-14T02:36:34.873297610Z [inf]      "role": "assistant",
+2025-12-14T02:36:34.873305804Z [inf]      "content": "",
+2025-12-14T02:36:34.873312903Z [inf]      "refusal": null,
+2025-12-14T02:36:34.873320402Z [inf]      "annotations": []
+2025-12-14T02:36:35.332727526Z [inf]  }
+2025-12-14T02:36:35.332738289Z [inf]  [GPT-Screen] DOGEUSDT: Empty content, checking refusal: null
+2025-12-14T02:36:35.332745220Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:36:35.332746894Z [inf]      "role": "assistant",
+2025-12-14T02:36:35.332756740Z [inf]      "content": "",
+2025-12-14T02:36:35.332762092Z [inf]    },
+2025-12-14T02:36:35.332764733Z [inf]      "refusal": null,
+2025-12-14T02:36:35.332777021Z [inf]    "finish_reason": "length"
+2025-12-14T02:36:35.332780607Z [inf]      "annotations": []
+2025-12-14T02:36:35.332834040Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T02:36:35.332846211Z [inf]    "index": 0,
+2025-12-14T02:36:35.332853025Z [inf]    "message": {
+2025-12-14T02:37:04.931421557Z [inf]      "content": "",
+2025-12-14T02:37:04.931434443Z [inf]      "annotations": []
+2025-12-14T02:37:04.931439824Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:37:04.931442440Z [inf]      "refusal": null,
+2025-12-14T02:37:04.931450999Z [inf]    },
+2025-12-14T02:37:04.931451319Z [inf]    "index": 0,
+2025-12-14T02:37:04.931452341Z [inf]      "annotations": []
+2025-12-14T02:37:04.931463508Z [inf]    },
+2025-12-14T02:37:04.931465113Z [inf]    "message": {
+2025-12-14T02:37:04.931466741Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:04.931475497Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:04.931480937Z [inf]  }
+2025-12-14T02:37:04.931482079Z [inf]      "role": "assistant",
+2025-12-14T02:37:04.931492064Z [inf]  }
+2025-12-14T02:37:04.931492231Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:04.931503385Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:04.931507858Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:04.931511538Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:04.931516699Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T02:37:04.931522573Z [inf]    "index": 0,
+2025-12-14T02:37:04.931529317Z [inf]    "message": {
+2025-12-14T02:37:04.931540222Z [inf]      "role": "assistant",
+2025-12-14T02:37:04.931546108Z [inf]      "content": "",
+2025-12-14T02:37:04.931551249Z [inf]      "refusal": null,
+2025-12-14T02:37:06.807093724Z [inf]  }
+2025-12-14T02:37:06.807107177Z [inf]  [GPT-Screen] BNBUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:06.807117550Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:06.807144150Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:37:06.807151057Z [inf]    "index": 0,
+2025-12-14T02:37:06.807155715Z [inf]    "message": {
+2025-12-14T02:37:06.807160535Z [inf]      "role": "assistant",
+2025-12-14T02:37:06.807165450Z [inf]      "content": "",
+2025-12-14T02:37:06.807169724Z [inf]      "refusal": null,
+2025-12-14T02:37:06.807174063Z [inf]      "annotations": []
+2025-12-14T02:37:06.807181120Z [inf]    },
+2025-12-14T02:37:06.807186552Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:09.466578978Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:37:09.466585294Z [inf]    "index": 0,
+2025-12-14T02:37:09.466591486Z [inf]    "message": {
+2025-12-14T02:37:09.466598093Z [inf]      "role": "assistant",
+2025-12-14T02:37:09.466604252Z [inf]      "content": "",
+2025-12-14T02:37:09.466610308Z [inf]      "refusal": null,
+2025-12-14T02:37:09.466616361Z [inf]      "annotations": []
+2025-12-14T02:37:09.466624485Z [inf]    },
+2025-12-14T02:37:09.466632223Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:09.466640608Z [inf]  }
+2025-12-14T02:37:09.466649333Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:09.466659324Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:12.449608643Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:12.449828050Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T02:37:12.449832827Z [inf]    "index": 0,
+2025-12-14T02:37:12.449836614Z [inf]    "message": {
+2025-12-14T02:37:12.449841252Z [inf]      "role": "assistant",
+2025-12-14T02:37:12.449845440Z [inf]      "content": "",
+2025-12-14T02:37:12.449849079Z [inf]      "refusal": null,
+2025-12-14T02:37:12.449853539Z [inf]      "annotations": []
+2025-12-14T02:37:12.449858145Z [inf]    },
+2025-12-14T02:37:12.449862937Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:12.449866679Z [inf]  }
+2025-12-14T02:37:12.449870453Z [inf]  [GPT-Screen] XRPUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:14.841824692Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:37:14.841832318Z [inf]    "index": 0,
+2025-12-14T02:37:14.841839055Z [inf]    "message": {
+2025-12-14T02:37:14.841845758Z [inf]      "role": "assistant",
+2025-12-14T02:37:14.841854172Z [inf]      "content": "",
+2025-12-14T02:37:14.841860600Z [inf]      "refusal": null,
+2025-12-14T02:37:14.841867052Z [inf]      "annotations": []
+2025-12-14T02:37:14.841874020Z [inf]    },
+2025-12-14T02:37:14.841882517Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:14.841890018Z [inf]  }
+2025-12-14T02:37:14.841895987Z [inf]  [GPT-Screen] LINKUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:14.841902209Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:17.725383792Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T02:37:17.725390102Z [inf]    "index": 0,
+2025-12-14T02:37:17.725396615Z [inf]    "message": {
+2025-12-14T02:37:17.725404721Z [inf]      "role": "assistant",
+2025-12-14T02:37:17.725410648Z [inf]      "content": "",
+2025-12-14T02:37:17.725416404Z [inf]      "refusal": null,
+2025-12-14T02:37:17.725422427Z [inf]      "annotations": []
+2025-12-14T02:37:17.725428478Z [inf]    },
+2025-12-14T02:37:17.725434573Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:17.725441228Z [inf]  }
+2025-12-14T02:37:17.725448135Z [inf]  [GPT-Screen] AVAXUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:17.725454386Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:21.450542044Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T02:37:21.450546397Z [inf]    "index": 0,
+2025-12-14T02:37:21.450551227Z [inf]    "message": {
+2025-12-14T02:37:21.450555604Z [inf]      "role": "assistant",
+2025-12-14T02:37:21.450559556Z [inf]      "content": "",
+2025-12-14T02:37:21.450563658Z [inf]      "refusal": null,
+2025-12-14T02:37:21.450568079Z [inf]      "annotations": []
+2025-12-14T02:37:21.450572212Z [inf]    },
+2025-12-14T02:37:21.450576998Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:21.450582786Z [inf]  }
+2025-12-14T02:37:21.450588458Z [inf]  [GPT-Screen] DOGEUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:21.450594226Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:23.568927026Z [inf]      "content": "",
+2025-12-14T02:37:23.568936087Z [inf]      "refusal": null,
+2025-12-14T02:37:23.568941632Z [inf]      "annotations": []
+2025-12-14T02:37:23.568946916Z [inf]    },
+2025-12-14T02:37:23.568952344Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:23.568958153Z [inf]  }
+2025-12-14T02:37:23.568964299Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:23.568971250Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:23.568994980Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T02:37:23.569002010Z [inf]    "index": 0,
+2025-12-14T02:37:23.569008881Z [inf]    "message": {
+2025-12-14T02:37:23.569015758Z [inf]      "role": "assistant",
+2025-12-14T02:37:26.467298823Z [inf]    },
+2025-12-14T02:37:26.467313879Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:26.467323148Z [inf]  }
+2025-12-14T02:37:26.467332817Z [inf]  [GPT-Screen] ARBUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:26.467341580Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:26.467402918Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T02:37:26.467409425Z [inf]    "index": 0,
+2025-12-14T02:37:26.467416347Z [inf]    "message": {
+2025-12-14T02:37:26.467423260Z [inf]      "role": "assistant",
+2025-12-14T02:37:26.467430320Z [inf]      "content": "",
+2025-12-14T02:37:26.467436785Z [inf]      "refusal": null,
+2025-12-14T02:37:26.467443502Z [inf]      "annotations": []
+2025-12-14T02:37:28.853732049Z [inf]  }
+2025-12-14T02:37:28.853740746Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:28.853747807Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:28.853756982Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T02:37:28.853765120Z [inf]    "index": 0,
+2025-12-14T02:37:28.853772226Z [inf]    "message": {
+2025-12-14T02:37:28.853779576Z [inf]      "role": "assistant",
+2025-12-14T02:37:28.853785993Z [inf]      "content": "",
+2025-12-14T02:37:28.853792976Z [inf]      "refusal": null,
+2025-12-14T02:37:28.853799790Z [inf]      "annotations": []
+2025-12-14T02:37:28.853806512Z [inf]    },
+2025-12-14T02:37:28.853812891Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:29.541985858Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:37:29.542002595Z [inf]    "index": 0,
+2025-12-14T02:37:29.542010901Z [inf]    "message": {
+2025-12-14T02:37:29.542017496Z [inf]      "role": "assistant",
+2025-12-14T02:37:29.542024152Z [inf]      "content": "",
+2025-12-14T02:37:29.542030691Z [inf]      "refusal": null,
+2025-12-14T02:37:29.542036564Z [inf]      "annotations": []
+2025-12-14T02:37:29.542043226Z [inf]    },
+2025-12-14T02:37:29.542050563Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:29.542057755Z [inf]  }
+2025-12-14T02:37:29.542064466Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:29.542071061Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:31.852900498Z [inf]    "message": {
+2025-12-14T02:37:31.852912867Z [inf]      "role": "assistant",
+2025-12-14T02:37:31.852918664Z [inf]      "content": "",
+2025-12-14T02:37:31.852923481Z [inf]      "refusal": null,
+2025-12-14T02:37:31.852929473Z [inf]      "annotations": []
+2025-12-14T02:37:31.852934768Z [inf]    },
+2025-12-14T02:37:31.852939290Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:31.852943852Z [inf]  }
+2025-12-14T02:37:31.852951299Z [inf]  [GPT-Screen] INJUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:31.852955148Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T02:37:31.852956934Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:31.852963456Z [inf]    "index": 0,
+2025-12-14T02:37:32.516212808Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T02:37:32.516219423Z [inf]    "index": 0,
+2025-12-14T02:37:32.516224021Z [inf]    "message": {
+2025-12-14T02:37:32.516228431Z [inf]      "role": "assistant",
+2025-12-14T02:37:32.516233220Z [inf]      "content": "",
+2025-12-14T02:37:32.516238106Z [inf]      "refusal": null,
+2025-12-14T02:37:32.516243575Z [inf]      "annotations": []
+2025-12-14T02:37:32.516248079Z [inf]    },
+2025-12-14T02:37:32.516253033Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:32.516258227Z [inf]  }
+2025-12-14T02:37:32.516262400Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:32.516267097Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:34.860416429Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:37:34.860420827Z [inf]    "index": 0,
+2025-12-14T02:37:34.860425111Z [inf]    "message": {
+2025-12-14T02:37:34.860429397Z [inf]      "role": "assistant",
+2025-12-14T02:37:34.860433634Z [inf]      "content": "",
+2025-12-14T02:37:34.860437392Z [inf]      "refusal": null,
+2025-12-14T02:37:34.860441218Z [inf]      "annotations": []
+2025-12-14T02:37:34.860445105Z [inf]    },
+2025-12-14T02:37:34.860449905Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:34.860454587Z [inf]  }
+2025-12-14T02:37:34.860458327Z [inf]  [GPT-Screen] BNBUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:34.860462010Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:37.694808248Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:37:37.694816370Z [inf]    "index": 0,
+2025-12-14T02:37:37.694823625Z [inf]    "message": {
+2025-12-14T02:37:37.694831051Z [inf]      "role": "assistant",
+2025-12-14T02:37:37.694855974Z [inf]      "content": "",
+2025-12-14T02:37:37.694862736Z [inf]      "refusal": null,
+2025-12-14T02:37:37.694868373Z [inf]      "annotations": []
+2025-12-14T02:37:37.694873762Z [inf]    },
+2025-12-14T02:37:37.694880012Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:37.694885874Z [inf]  }
+2025-12-14T02:37:37.694891043Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:37.694895996Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:40.490911784Z [inf]  }
+2025-12-14T02:37:40.490921730Z [inf]  [GPT-Screen] XRPUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:40.490929396Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:40.490994107Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T02:37:40.491003028Z [inf]    "index": 0,
+2025-12-14T02:37:40.491010748Z [inf]    "message": {
+2025-12-14T02:37:40.491016430Z [inf]      "role": "assistant",
+2025-12-14T02:37:40.491025931Z [inf]      "content": "",
+2025-12-14T02:37:40.491033194Z [inf]      "refusal": null,
+2025-12-14T02:37:40.491041690Z [inf]      "annotations": []
+2025-12-14T02:37:40.491049124Z [inf]    },
+2025-12-14T02:37:40.491054482Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:43.533936954Z [inf]  }
+2025-12-14T02:37:43.533948643Z [inf]  [GPT-Screen] LINKUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:43.533955665Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:43.534039529Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:37:43.534047464Z [inf]    "index": 0,
+2025-12-14T02:37:43.534054234Z [inf]    "message": {
+2025-12-14T02:37:43.534069631Z [inf]      "role": "assistant",
+2025-12-14T02:37:43.534076372Z [inf]      "content": "",
+2025-12-14T02:37:43.534082309Z [inf]      "refusal": null,
+2025-12-14T02:37:43.534090427Z [inf]      "annotations": []
+2025-12-14T02:37:43.534096837Z [inf]    },
+2025-12-14T02:37:43.534103518Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:46.639113319Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:46.639168965Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T02:37:46.639174405Z [inf]    "index": 0,
+2025-12-14T02:37:46.639180987Z [inf]    "message": {
+2025-12-14T02:37:46.639189194Z [inf]      "role": "assistant",
+2025-12-14T02:37:46.639194573Z [inf]      "content": "",
+2025-12-14T02:37:46.639199818Z [inf]      "refusal": null,
+2025-12-14T02:37:46.639204941Z [inf]      "annotations": []
+2025-12-14T02:37:46.639210501Z [inf]    },
+2025-12-14T02:37:46.639215525Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:46.639220954Z [inf]  }
+2025-12-14T02:37:46.639225887Z [inf]  [GPT-Screen] AVAXUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:49.495485026Z [inf]      "annotations": []
+2025-12-14T02:37:49.495498177Z [inf]    },
+2025-12-14T02:37:49.495505851Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:49.495512611Z [inf]  }
+2025-12-14T02:37:49.495519299Z [inf]  [GPT-Screen] DOGEUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:49.495527393Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:49.495586590Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T02:37:49.495594491Z [inf]    "index": 0,
+2025-12-14T02:37:49.495599927Z [inf]    "message": {
+2025-12-14T02:37:49.495606318Z [inf]      "role": "assistant",
+2025-12-14T02:37:49.495612066Z [inf]      "content": "",
+2025-12-14T02:37:49.495618820Z [inf]      "refusal": null,
+2025-12-14T02:37:52.495182502Z [inf]      "content": "",
+2025-12-14T02:37:52.495191891Z [inf]      "refusal": null,
+2025-12-14T02:37:52.495197983Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:52.495202927Z [inf]      "annotations": []
+2025-12-14T02:37:52.495212498Z [inf]  }
+2025-12-14T02:37:52.495217197Z [inf]    },
+2025-12-14T02:37:52.495221621Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:52.495224557Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T02:37:52.495229174Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:52.495231304Z [inf]    "index": 0,
+2025-12-14T02:37:52.495236316Z [inf]    "message": {
+2025-12-14T02:37:52.495248673Z [inf]      "role": "assistant",
+2025-12-14T02:37:54.755516398Z [inf]  [GPT-Screen] ARBUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:54.755528420Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:54.755549223Z [inf]      "refusal": null,
+2025-12-14T02:37:54.755564720Z [inf]      "annotations": []
+2025-12-14T02:37:54.755576342Z [inf]    },
+2025-12-14T02:37:54.755580006Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T02:37:54.755588200Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:54.755598138Z [inf]    "index": 0,
+2025-12-14T02:37:54.755603191Z [inf]  }
+2025-12-14T02:37:54.755609789Z [inf]    "message": {
+2025-12-14T02:37:54.755617386Z [inf]      "role": "assistant",
+2025-12-14T02:37:54.755626137Z [inf]      "content": "",
+2025-12-14T02:37:57.440877149Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:57.440890705Z [inf]  }
+2025-12-14T02:37:57.440899191Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:57.440909264Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:37:57.441019766Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T02:37:57.441026675Z [inf]    "index": 0,
+2025-12-14T02:37:57.441034343Z [inf]    "message": {
+2025-12-14T02:37:57.441041043Z [inf]      "role": "assistant",
+2025-12-14T02:37:57.441049194Z [inf]      "content": "",
+2025-12-14T02:37:57.441056391Z [inf]      "refusal": null,
+2025-12-14T02:37:57.441062223Z [inf]      "annotations": []
+2025-12-14T02:37:57.441069317Z [inf]    },
+2025-12-14T02:37:59.869067039Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:37:59.869071982Z [inf]    "index": 0,
+2025-12-14T02:37:59.869076115Z [inf]    "message": {
+2025-12-14T02:37:59.869080029Z [inf]      "role": "assistant",
+2025-12-14T02:37:59.869084082Z [inf]      "content": "",
+2025-12-14T02:37:59.869088266Z [inf]      "refusal": null,
+2025-12-14T02:37:59.869092179Z [inf]      "annotations": []
+2025-12-14T02:37:59.869096315Z [inf]    },
+2025-12-14T02:37:59.869101198Z [inf]    "finish_reason": "length"
+2025-12-14T02:37:59.869106455Z [inf]  }
+2025-12-14T02:37:59.869110773Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:37:59.869114919Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:00.043206610Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T02:38:00.043214529Z [inf]    "index": 0,
+2025-12-14T02:38:00.043221299Z [inf]    "message": {
+2025-12-14T02:38:00.043228363Z [inf]      "role": "assistant",
+2025-12-14T02:38:00.043235810Z [inf]      "content": "",
+2025-12-14T02:38:00.043241892Z [inf]      "refusal": null,
+2025-12-14T02:38:00.043249344Z [inf]      "annotations": []
+2025-12-14T02:38:00.043256361Z [inf]    },
+2025-12-14T02:38:00.043263579Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:00.043271312Z [inf]  }
+2025-12-14T02:38:00.043279964Z [inf]  [GPT-Screen] INJUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:00.043287093Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:04.662706945Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T02:38:04.662711964Z [inf]    "index": 0,
+2025-12-14T02:38:04.662716945Z [inf]    "message": {
+2025-12-14T02:38:04.662721414Z [inf]      "role": "assistant",
+2025-12-14T02:38:04.662725161Z [inf]      "content": "",
+2025-12-14T02:38:04.662729454Z [inf]      "refusal": null,
+2025-12-14T02:38:04.662735142Z [inf]      "annotations": []
+2025-12-14T02:38:04.662740367Z [inf]    },
+2025-12-14T02:38:04.662745638Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:04.662751251Z [inf]  }
+2025-12-14T02:38:04.662757241Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:04.662762096Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:08.078214801Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:38:08.078220441Z [inf]    "index": 0,
+2025-12-14T02:38:08.078224434Z [inf]    "message": {
+2025-12-14T02:38:08.078228243Z [inf]      "role": "assistant",
+2025-12-14T02:38:08.078233169Z [inf]      "content": "",
+2025-12-14T02:38:08.078237404Z [inf]      "refusal": null,
+2025-12-14T02:38:08.078241195Z [inf]      "annotations": []
+2025-12-14T02:38:08.078245083Z [inf]    },
+2025-12-14T02:38:08.078251018Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:08.078255809Z [inf]  }
+2025-12-14T02:38:08.078259509Z [inf]  [GPT-Screen] BNBUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:08.078263306Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:11.052059122Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:38:11.052067770Z [inf]    "index": 0,
+2025-12-14T02:38:11.052075082Z [inf]    "message": {
+2025-12-14T02:38:11.052112891Z [inf]      "role": "assistant",
+2025-12-14T02:38:11.052169097Z [inf]      "content": "",
+2025-12-14T02:38:11.052187683Z [inf]      "refusal": null,
+2025-12-14T02:38:11.052200645Z [inf]      "annotations": []
+2025-12-14T02:38:11.052255240Z [inf]    },
+2025-12-14T02:38:11.052265928Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:11.052273165Z [inf]  }
+2025-12-14T02:38:11.052280388Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:11.052287052Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:14.935039694Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T02:38:14.935043809Z [inf]    "index": 0,
+2025-12-14T02:38:14.935047799Z [inf]    "message": {
+2025-12-14T02:38:14.935051760Z [inf]      "role": "assistant",
+2025-12-14T02:38:14.935055930Z [inf]      "content": "",
+2025-12-14T02:38:14.935061616Z [inf]      "refusal": null,
+2025-12-14T02:38:14.935065876Z [inf]      "annotations": []
+2025-12-14T02:38:14.935070622Z [inf]    },
+2025-12-14T02:38:14.935074506Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:14.935078214Z [inf]  }
+2025-12-14T02:38:14.935083689Z [inf]  [GPT-Screen] XRPUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:14.935087885Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:18.724101583Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:38:18.724105742Z [inf]    "index": 0,
+2025-12-14T02:38:18.724109821Z [inf]    "message": {
+2025-12-14T02:38:18.724114151Z [inf]      "role": "assistant",
+2025-12-14T02:38:18.724117933Z [inf]      "content": "",
+2025-12-14T02:38:18.724121720Z [inf]      "refusal": null,
+2025-12-14T02:38:18.724126030Z [inf]      "annotations": []
+2025-12-14T02:38:18.724130045Z [inf]    },
+2025-12-14T02:38:18.724135071Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:18.724138902Z [inf]  }
+2025-12-14T02:38:18.724143061Z [inf]  [GPT-Screen] LINKUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:18.724147273Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:21.595193039Z [inf]    },
+2025-12-14T02:38:21.595203462Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:21.595209079Z [inf]  }
+2025-12-14T02:38:21.595214244Z [inf]  [GPT-Screen] AVAXUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:21.595219510Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:21.595431760Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T02:38:21.595437936Z [inf]    "index": 0,
+2025-12-14T02:38:21.595444170Z [inf]    "message": {
+2025-12-14T02:38:21.595450830Z [inf]      "role": "assistant",
+2025-12-14T02:38:21.595457104Z [inf]      "content": "",
+2025-12-14T02:38:21.595467127Z [inf]      "refusal": null,
+2025-12-14T02:38:21.595473360Z [inf]      "annotations": []
+2025-12-14T02:38:25.817492741Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T02:38:25.817498690Z [inf]    "index": 0,
+2025-12-14T02:38:25.817503439Z [inf]    "message": {
+2025-12-14T02:38:25.817508075Z [inf]      "role": "assistant",
+2025-12-14T02:38:25.817512176Z [inf]      "content": "",
+2025-12-14T02:38:25.817517724Z [inf]      "refusal": null,
+2025-12-14T02:38:25.817522853Z [inf]      "annotations": []
+2025-12-14T02:38:25.817528314Z [inf]    },
+2025-12-14T02:38:25.817533726Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:25.817539251Z [inf]  }
+2025-12-14T02:38:25.817544509Z [inf]  [GPT-Screen] DOGEUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:25.817550177Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:28.872597309Z [inf]      "content": "",
+2025-12-14T02:38:28.872609545Z [inf]      "refusal": null,
+2025-12-14T02:38:28.872618616Z [inf]      "annotations": []
+2025-12-14T02:38:28.872627195Z [inf]    },
+2025-12-14T02:38:28.872634042Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:28.872641315Z [inf]  }
+2025-12-14T02:38:28.872648906Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T02:38:28.872648934Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:28.872656396Z [inf]    "index": 0,
+2025-12-14T02:38:28.872657175Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:28.872661748Z [inf]    "message": {
+2025-12-14T02:38:28.872666126Z [inf]      "role": "assistant",
+2025-12-14T02:38:29.635261382Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:38:29.635266762Z [inf]    "index": 0,
+2025-12-14T02:38:29.635284053Z [inf]    "message": {
+2025-12-14T02:38:29.635291383Z [inf]      "role": "assistant",
+2025-12-14T02:38:29.635298338Z [inf]      "content": "",
+2025-12-14T02:38:29.635304329Z [inf]      "refusal": null,
+2025-12-14T02:38:29.635310212Z [inf]      "annotations": []
+2025-12-14T02:38:29.635328536Z [inf]    },
+2025-12-14T02:38:29.635346524Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:29.635352978Z [inf]  }
+2025-12-14T02:38:29.635358823Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:29.635364603Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:31.618253678Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T02:38:31.618263281Z [inf]    "index": 0,
+2025-12-14T02:38:31.618269229Z [inf]    "message": {
+2025-12-14T02:38:31.618274873Z [inf]      "role": "assistant",
+2025-12-14T02:38:31.618281665Z [inf]      "content": "",
+2025-12-14T02:38:31.618297207Z [inf]      "refusal": null,
+2025-12-14T02:38:31.618306555Z [inf]      "annotations": []
+2025-12-14T02:38:31.618314149Z [inf]    },
+2025-12-14T02:38:31.618321102Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:31.618328291Z [inf]  }
+2025-12-14T02:38:31.618335898Z [inf]  [GPT-Screen] ARBUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:31.618344924Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:34.610939516Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T02:38:34.610944785Z [inf]    "index": 0,
+2025-12-14T02:38:34.610950234Z [inf]    "message": {
+2025-12-14T02:38:34.610955944Z [inf]      "role": "assistant",
+2025-12-14T02:38:34.610963474Z [inf]      "content": "",
+2025-12-14T02:38:34.610969104Z [inf]      "refusal": null,
+2025-12-14T02:38:34.610974056Z [inf]      "annotations": []
+2025-12-14T02:38:34.610979071Z [inf]    },
+2025-12-14T02:38:34.610984433Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:34.610989892Z [inf]  }
+2025-12-14T02:38:34.610995797Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:34.611002016Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:34.611007124Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T02:38:34.611013990Z [inf]    "index": 0,
+2025-12-14T02:38:34.611019416Z [inf]    "message": {
+2025-12-14T02:38:34.611082382Z [inf]      "role": "assistant",
+2025-12-14T02:38:34.611088773Z [inf]      "content": "",
+2025-12-14T02:38:34.611094626Z [inf]      "refusal": null,
+2025-12-14T02:38:34.611101409Z [inf]      "annotations": []
+2025-12-14T02:38:34.611107411Z [inf]    },
+2025-12-14T02:38:34.611113332Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:34.611118512Z [inf]  }
+2025-12-14T02:38:34.611124338Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:34.611130454Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:36.903910682Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:38:36.903917652Z [inf]    "index": 0,
+2025-12-14T02:38:36.903922589Z [inf]    "message": {
+2025-12-14T02:38:36.903927526Z [inf]      "role": "assistant",
+2025-12-14T02:38:36.903932101Z [inf]      "content": "",
+2025-12-14T02:38:36.903936493Z [inf]      "refusal": null,
+2025-12-14T02:38:36.903943621Z [inf]      "annotations": []
+2025-12-14T02:38:36.903949315Z [inf]    },
+2025-12-14T02:38:36.903953649Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:36.903958066Z [inf]  }
+2025-12-14T02:38:36.903962824Z [inf]  [GPT-Screen] BNBUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:36.903967253Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:37.606852722Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T02:38:37.606856463Z [inf]    "index": 0,
+2025-12-14T02:38:37.606860081Z [inf]    "message": {
+2025-12-14T02:38:37.606863765Z [inf]      "role": "assistant",
+2025-12-14T02:38:37.606867327Z [inf]      "content": "",
+2025-12-14T02:38:37.606870998Z [inf]      "refusal": null,
+2025-12-14T02:38:37.606874443Z [inf]      "annotations": []
+2025-12-14T02:38:37.606877935Z [inf]    },
+2025-12-14T02:38:37.606881261Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:37.606884652Z [inf]  }
+2025-12-14T02:38:37.606888335Z [inf]  [GPT-Screen] INJUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:37.606891716Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:40.666410252Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:38:40.666416231Z [inf]    "index": 0,
+2025-12-14T02:38:40.666422117Z [inf]    "message": {
+2025-12-14T02:38:40.666431942Z [inf]      "content": "",
+2025-12-14T02:38:40.666432327Z [inf]      "role": "assistant",
+2025-12-14T02:38:40.666444149Z [inf]      "refusal": null,
+2025-12-14T02:38:40.666450456Z [inf]      "annotations": []
+2025-12-14T02:38:40.666457850Z [inf]    },
+2025-12-14T02:38:40.668934151Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:40.668942736Z [inf]  }
+2025-12-14T02:38:40.668948779Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:40.668954257Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:42.869869977Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T02:38:42.869881120Z [inf]    "index": 0,
+2025-12-14T02:38:42.869888372Z [inf]    "message": {
+2025-12-14T02:38:42.869894818Z [inf]      "role": "assistant",
+2025-12-14T02:38:42.869900939Z [inf]      "content": "",
+2025-12-14T02:38:42.869908615Z [inf]      "refusal": null,
+2025-12-14T02:38:42.869914678Z [inf]      "annotations": []
+2025-12-14T02:38:42.869921640Z [inf]    },
+2025-12-14T02:38:42.869928424Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:42.869937136Z [inf]  }
+2025-12-14T02:38:42.869944299Z [inf]  [GPT-Screen] XRPUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:42.869952368Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:46.083214205Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:38:46.083220352Z [inf]    "index": 0,
+2025-12-14T02:38:46.083229800Z [inf]    "message": {
+2025-12-14T02:38:46.083233989Z [inf]      "role": "assistant",
+2025-12-14T02:38:46.083237908Z [inf]      "content": "",
+2025-12-14T02:38:46.083241791Z [inf]      "refusal": null,
+2025-12-14T02:38:46.083246219Z [inf]      "annotations": []
+2025-12-14T02:38:46.083250336Z [inf]    },
+2025-12-14T02:38:46.083253911Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:46.083262232Z [inf]  }
+2025-12-14T02:38:46.083269266Z [inf]  [GPT-Screen] LINKUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:46.083274537Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:48.992175659Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T02:38:48.992186074Z [inf]    "index": 0,
+2025-12-14T02:38:48.992187140Z [inf]  }
+2025-12-14T02:38:48.992193206Z [inf]    "message": {
+2025-12-14T02:38:48.992202226Z [inf]  [GPT-Screen] AVAXUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:48.992202522Z [inf]      "role": "assistant",
+2025-12-14T02:38:48.992211021Z [inf]      "content": "",
+2025-12-14T02:38:48.992212324Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:48.992217583Z [inf]      "refusal": null,
+2025-12-14T02:38:48.992223206Z [inf]      "annotations": []
+2025-12-14T02:38:48.992228870Z [inf]    },
+2025-12-14T02:38:48.992234001Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:51.908923770Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T02:38:51.908932901Z [inf]    "index": 0,
+2025-12-14T02:38:51.908938221Z [inf]    "message": {
+2025-12-14T02:38:51.908943248Z [inf]      "role": "assistant",
+2025-12-14T02:38:51.908949156Z [inf]      "content": "",
+2025-12-14T02:38:51.908954378Z [inf]      "refusal": null,
+2025-12-14T02:38:51.908959675Z [inf]      "annotations": []
+2025-12-14T02:38:51.908965175Z [inf]    },
+2025-12-14T02:38:51.908971102Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:51.908976932Z [inf]  }
+2025-12-14T02:38:51.908982837Z [inf]  [GPT-Screen] DOGEUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:51.908988082Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:54.572472872Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T02:38:54.572479522Z [inf]    "index": 0,
+2025-12-14T02:38:54.572485815Z [inf]    "message": {
+2025-12-14T02:38:54.572492662Z [inf]      "role": "assistant",
+2025-12-14T02:38:54.572498978Z [inf]      "content": "",
+2025-12-14T02:38:54.572505559Z [inf]      "refusal": null,
+2025-12-14T02:38:54.572512561Z [inf]      "annotations": []
+2025-12-14T02:38:54.572519883Z [inf]    },
+2025-12-14T02:38:54.572526710Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:54.572533008Z [inf]  }
+2025-12-14T02:38:54.572539281Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:54.572545543Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:57.628251614Z [inf]    "index": 0,
+2025-12-14T02:38:57.628261499Z [inf]    "message": {
+2025-12-14T02:38:57.628268074Z [inf]      "role": "assistant",
+2025-12-14T02:38:57.628275087Z [inf]      "content": "",
+2025-12-14T02:38:57.628283334Z [inf]      "refusal": null,
+2025-12-14T02:38:57.628289984Z [inf]      "annotations": []
+2025-12-14T02:38:57.628298526Z [inf]    },
+2025-12-14T02:38:57.628305660Z [inf]    "finish_reason": "length"
+2025-12-14T02:38:57.628313072Z [inf]  }
+2025-12-14T02:38:57.628320253Z [inf]  [GPT-Screen] ARBUSDT: Empty content, checking refusal: null
+2025-12-14T02:38:57.628326812Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:38:57.628460225Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T02:39:00.174606993Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T02:39:00.174614093Z [inf]    "index": 0,
+2025-12-14T02:39:00.174618589Z [inf]    "message": {
+2025-12-14T02:39:00.174623288Z [inf]      "role": "assistant",
+2025-12-14T02:39:00.174627959Z [inf]      "content": "",
+2025-12-14T02:39:00.174632382Z [inf]      "refusal": null,
+2025-12-14T02:39:00.174636679Z [inf]      "annotations": []
+2025-12-14T02:39:00.174641210Z [inf]    },
+2025-12-14T02:39:00.174646135Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:00.174651217Z [inf]  }
+2025-12-14T02:39:00.174655564Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:00.174659597Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:00.687401801Z [inf]      "annotations": []
+2025-12-14T02:39:00.687412180Z [inf]    },
+2025-12-14T02:39:00.687420853Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:00.687427877Z [inf]  }
+2025-12-14T02:39:00.687437828Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:00.687453871Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:00.687458136Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:39:00.687458766Z [inf]    "message": {
+2025-12-14T02:39:00.687473928Z [inf]    "index": 0,
+2025-12-14T02:39:00.687474221Z [inf]      "role": "assistant",
+2025-12-14T02:39:00.687484095Z [inf]      "content": "",
+2025-12-14T02:39:00.687490172Z [inf]      "refusal": null,
+2025-12-14T02:39:02.631504866Z [inf]      "role": "assistant",
+2025-12-14T02:39:02.631515864Z [inf]      "content": "",
+2025-12-14T02:39:02.631523011Z [inf]      "refusal": null,
+2025-12-14T02:39:02.631531913Z [inf]      "annotations": []
+2025-12-14T02:39:02.631537857Z [inf]    },
+2025-12-14T02:39:02.631543807Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:02.631549508Z [inf]  }
+2025-12-14T02:39:02.631555495Z [inf]  [GPT-Screen] INJUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:02.631562262Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:02.631619737Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T02:39:02.631625171Z [inf]    "index": 0,
+2025-12-14T02:39:02.631630358Z [inf]    "message": {
+2025-12-14T02:39:03.150061891Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T02:39:03.150073932Z [inf]    "index": 0,
+2025-12-14T02:39:03.150080332Z [inf]    "message": {
+2025-12-14T02:39:03.150086728Z [inf]      "role": "assistant",
+2025-12-14T02:39:03.150093270Z [inf]      "content": "",
+2025-12-14T02:39:03.150098534Z [inf]      "refusal": null,
+2025-12-14T02:39:03.150104991Z [inf]      "annotations": []
+2025-12-14T02:39:03.150112266Z [inf]    },
+2025-12-14T02:39:03.150117315Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:03.150123827Z [inf]  }
+2025-12-14T02:39:03.150129103Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:03.150133812Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:06.651572321Z [inf]      "content": "",
+2025-12-14T02:39:06.651582322Z [inf]      "refusal": null,
+2025-12-14T02:39:06.651587799Z [inf]      "annotations": []
+2025-12-14T02:39:06.651592714Z [inf]    },
+2025-12-14T02:39:06.651597243Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:06.651603077Z [inf]  }
+2025-12-14T02:39:06.651609777Z [inf]  [GPT-Screen] BNBUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:06.651615538Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:06.651650012Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:39:06.651655266Z [inf]    "index": 0,
+2025-12-14T02:39:06.651659130Z [inf]    "message": {
+2025-12-14T02:39:06.651663240Z [inf]      "role": "assistant",
+2025-12-14T02:39:09.006908083Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:09.006944107Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:39:09.006956359Z [inf]    "index": 0,
+2025-12-14T02:39:09.006963846Z [inf]    "message": {
+2025-12-14T02:39:09.006970905Z [inf]      "role": "assistant",
+2025-12-14T02:39:09.006977853Z [inf]      "content": "",
+2025-12-14T02:39:09.006985623Z [inf]      "refusal": null,
+2025-12-14T02:39:09.006992080Z [inf]      "annotations": []
+2025-12-14T02:39:09.006998611Z [inf]    },
+2025-12-14T02:39:09.007005629Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:09.007021428Z [inf]  }
+2025-12-14T02:39:09.007027529Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:11.677380352Z [inf]      "refusal": null,
+2025-12-14T02:39:11.677391582Z [inf]      "annotations": []
+2025-12-14T02:39:11.677399855Z [inf]    },
+2025-12-14T02:39:11.677406275Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:11.677412103Z [inf]  }
+2025-12-14T02:39:11.677418489Z [inf]  [GPT-Screen] XRPUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:11.677424616Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:11.677498764Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T02:39:11.677506955Z [inf]    "index": 0,
+2025-12-14T02:39:11.677513060Z [inf]    "message": {
+2025-12-14T02:39:11.677519986Z [inf]      "role": "assistant",
+2025-12-14T02:39:11.677526906Z [inf]      "content": "",
+2025-12-14T02:39:14.038297486Z [inf]  [GPT-Screen] LINKUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:14.038307182Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:14.038323013Z [inf]      "content": "",
+2025-12-14T02:39:14.038339619Z [inf]      "refusal": null,
+2025-12-14T02:39:14.038348320Z [inf]      "annotations": []
+2025-12-14T02:39:14.038355050Z [inf]    },
+2025-12-14T02:39:14.038362129Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:14.038369399Z [inf]  }
+2025-12-14T02:39:14.038551414Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:39:14.038567816Z [inf]    "index": 0,
+2025-12-14T02:39:14.038575493Z [inf]    "message": {
+2025-12-14T02:39:14.038583583Z [inf]      "role": "assistant",
+2025-12-14T02:39:16.717133606Z [inf]      "annotations": []
+2025-12-14T02:39:16.717144175Z [inf]    },
+2025-12-14T02:39:16.717152360Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:16.717160271Z [inf]  }
+2025-12-14T02:39:16.717168365Z [inf]  [GPT-Screen] AVAXUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:16.717175373Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:16.717204219Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T02:39:16.717208709Z [inf]    "index": 0,
+2025-12-14T02:39:16.717213898Z [inf]    "message": {
+2025-12-14T02:39:16.717221834Z [inf]      "role": "assistant",
+2025-12-14T02:39:16.717229159Z [inf]      "content": "",
+2025-12-14T02:39:16.717237319Z [inf]      "refusal": null,
+2025-12-14T02:39:19.694562502Z [inf]    },
+2025-12-14T02:39:19.694582320Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:19.694597012Z [inf]  }
+2025-12-14T02:39:19.694600386Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:19.694612162Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T02:39:19.694614961Z [inf]  [GPT-Screen] DOGEUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:19.694621522Z [inf]    "index": 0,
+2025-12-14T02:39:19.694627702Z [inf]    "message": {
+2025-12-14T02:39:19.694634283Z [inf]      "role": "assistant",
+2025-12-14T02:39:19.694645665Z [inf]      "content": "",
+2025-12-14T02:39:19.694654919Z [inf]      "refusal": null,
+2025-12-14T02:39:19.694664074Z [inf]      "annotations": []
+2025-12-14T02:39:22.685569015Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T02:39:22.685572988Z [inf]    "index": 0,
+2025-12-14T02:39:22.685576793Z [inf]    "message": {
+2025-12-14T02:39:22.685580847Z [inf]      "role": "assistant",
+2025-12-14T02:39:22.685584564Z [inf]      "content": "",
+2025-12-14T02:39:22.685588177Z [inf]      "refusal": null,
+2025-12-14T02:39:22.685591734Z [inf]      "annotations": []
+2025-12-14T02:39:22.685595517Z [inf]    },
+2025-12-14T02:39:22.685599363Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:22.685602883Z [inf]  }
+2025-12-14T02:39:22.685606444Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:22.685610257Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:24.859070864Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T02:39:24.859078308Z [inf]    "index": 0,
+2025-12-14T02:39:24.859086158Z [inf]    "message": {
+2025-12-14T02:39:24.859095628Z [inf]      "role": "assistant",
+2025-12-14T02:39:24.859106439Z [inf]      "content": "",
+2025-12-14T02:39:24.859112848Z [inf]      "refusal": null,
+2025-12-14T02:39:24.859120792Z [inf]      "annotations": []
+2025-12-14T02:39:24.859127707Z [inf]    },
+2025-12-14T02:39:24.859133901Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:24.859139601Z [inf]  }
+2025-12-14T02:39:24.859146387Z [inf]  [GPT-Screen] ARBUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:24.859152642Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:27.857794166Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T02:39:27.857799919Z [inf]    "index": 0,
+2025-12-14T02:39:27.857803924Z [inf]    "message": {
+2025-12-14T02:39:27.857807959Z [inf]      "role": "assistant",
+2025-12-14T02:39:27.857812135Z [inf]      "content": "",
+2025-12-14T02:39:27.857817720Z [inf]      "refusal": null,
+2025-12-14T02:39:27.857822928Z [inf]      "annotations": []
+2025-12-14T02:39:27.857826868Z [inf]    },
+2025-12-14T02:39:27.857831002Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:27.857834896Z [inf]  }
+2025-12-14T02:39:27.857838914Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:27.857842880Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:29.942925861Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:39:29.942935761Z [inf]    "index": 0,
+2025-12-14T02:39:29.942949396Z [inf]    "message": {
+2025-12-14T02:39:29.942955808Z [inf]      "role": "assistant",
+2025-12-14T02:39:29.942961788Z [inf]      "content": "",
+2025-12-14T02:39:29.942968458Z [inf]      "refusal": null,
+2025-12-14T02:39:29.942974176Z [inf]      "annotations": []
+2025-12-14T02:39:29.942980050Z [inf]    },
+2025-12-14T02:39:29.942990466Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:29.942997735Z [inf]  }
+2025-12-14T02:39:29.943003619Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:29.943010486Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:32.734688908Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T02:39:32.734699606Z [inf]    "index": 0,
+2025-12-14T02:39:32.734706910Z [inf]    "message": {
+2025-12-14T02:39:32.734713146Z [inf]      "role": "assistant",
+2025-12-14T02:39:32.734719531Z [inf]      "content": "",
+2025-12-14T02:39:32.734725660Z [inf]      "refusal": null,
+2025-12-14T02:39:32.734731718Z [inf]      "annotations": []
+2025-12-14T02:39:32.734737719Z [inf]    },
+2025-12-14T02:39:32.734743144Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:32.734748933Z [inf]  }
+2025-12-14T02:39:32.734754596Z [inf]  [GPT-Screen] INJUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:32.734760830Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:33.737509352Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T02:39:33.737516205Z [inf]    "index": 0,
+2025-12-14T02:39:33.737521403Z [inf]    "message": {
+2025-12-14T02:39:33.737526247Z [inf]      "role": "assistant",
+2025-12-14T02:39:33.737532194Z [inf]      "content": "",
+2025-12-14T02:39:33.737537850Z [inf]      "refusal": null,
+2025-12-14T02:39:33.737543139Z [inf]      "annotations": []
+2025-12-14T02:39:33.737549206Z [inf]    },
+2025-12-14T02:39:33.737549841Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:33.737555777Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:33.737560610Z [inf]  }
+2025-12-14T02:39:33.737565776Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:36.162896388Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:36.162897569Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:39:36.162905537Z [inf]    "index": 0,
+2025-12-14T02:39:36.162910617Z [inf]    "message": {
+2025-12-14T02:39:36.162916392Z [inf]      "role": "assistant",
+2025-12-14T02:39:36.162922364Z [inf]      "content": "",
+2025-12-14T02:39:36.162927396Z [inf]      "refusal": null,
+2025-12-14T02:39:36.162933024Z [inf]      "annotations": []
+2025-12-14T02:39:36.162938212Z [inf]    },
+2025-12-14T02:39:36.162943560Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:36.162948647Z [inf]  }
+2025-12-14T02:39:36.162954322Z [inf]  [GPT-Screen] BNBUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:38.733909567Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:38.733916832Z [inf]  }
+2025-12-14T02:39:38.733922074Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:38.733926433Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:38.733984379Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:39:38.733988641Z [inf]    "index": 0,
+2025-12-14T02:39:38.733994260Z [inf]    "message": {
+2025-12-14T02:39:38.733998563Z [inf]      "role": "assistant",
+2025-12-14T02:39:38.734004197Z [inf]      "content": "",
+2025-12-14T02:39:38.734008306Z [inf]      "refusal": null,
+2025-12-14T02:39:38.734012547Z [inf]      "annotations": []
+2025-12-14T02:39:38.734016445Z [inf]    },
+2025-12-14T02:39:42.057809463Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T02:39:42.057815561Z [inf]    "index": 0,
+2025-12-14T02:39:42.057820847Z [inf]    "message": {
+2025-12-14T02:39:42.057825490Z [inf]      "role": "assistant",
+2025-12-14T02:39:42.057831071Z [inf]      "content": "",
+2025-12-14T02:39:42.057836312Z [inf]      "refusal": null,
+2025-12-14T02:39:42.057841411Z [inf]      "annotations": []
+2025-12-14T02:39:42.057846574Z [inf]    },
+2025-12-14T02:39:42.057853713Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:42.057858477Z [inf]  }
+2025-12-14T02:39:42.057863334Z [inf]  [GPT-Screen] XRPUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:42.057868429Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:44.737269993Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:39:44.737275073Z [inf]    "index": 0,
+2025-12-14T02:39:44.737279328Z [inf]    "message": {
+2025-12-14T02:39:44.737285801Z [inf]      "role": "assistant",
+2025-12-14T02:39:44.737290634Z [inf]      "content": "",
+2025-12-14T02:39:44.737296169Z [inf]      "refusal": null,
+2025-12-14T02:39:44.737301666Z [inf]      "annotations": []
+2025-12-14T02:39:44.737307449Z [inf]    },
+2025-12-14T02:39:44.737311472Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:44.737315986Z [inf]  }
+2025-12-14T02:39:44.737320456Z [inf]  [GPT-Screen] LINKUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:44.737325781Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:47.013691595Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T02:39:47.013706653Z [inf]    "index": 0,
+2025-12-14T02:39:47.013713268Z [inf]    "message": {
+2025-12-14T02:39:47.013720046Z [inf]      "role": "assistant",
+2025-12-14T02:39:47.013725534Z [inf]      "content": "",
+2025-12-14T02:39:47.013732664Z [inf]      "refusal": null,
+2025-12-14T02:39:47.013739469Z [inf]      "annotations": []
+2025-12-14T02:39:47.013744778Z [inf]    },
+2025-12-14T02:39:47.013750972Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:47.013757006Z [inf]  }
+2025-12-14T02:39:47.013763845Z [inf]  [GPT-Screen] AVAXUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:47.013770877Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:49.690194109Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T02:39:49.690202324Z [inf]    "index": 0,
+2025-12-14T02:39:49.690209171Z [inf]    "message": {
+2025-12-14T02:39:49.690215403Z [inf]      "role": "assistant",
+2025-12-14T02:39:49.690221950Z [inf]      "content": "",
+2025-12-14T02:39:49.690229137Z [inf]      "refusal": null,
+2025-12-14T02:39:49.690236019Z [inf]      "annotations": []
+2025-12-14T02:39:49.690243578Z [inf]    },
+2025-12-14T02:39:49.690251188Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:49.690258209Z [inf]  }
+2025-12-14T02:39:49.690264920Z [inf]  [GPT-Screen] DOGEUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:49.690271341Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:51.887089801Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T02:39:51.887097546Z [inf]    "index": 0,
+2025-12-14T02:39:51.887103165Z [inf]    "message": {
+2025-12-14T02:39:51.887110942Z [inf]      "role": "assistant",
+2025-12-14T02:39:51.887117716Z [inf]      "content": "",
+2025-12-14T02:39:51.887122961Z [inf]      "refusal": null,
+2025-12-14T02:39:51.887129029Z [inf]      "annotations": []
+2025-12-14T02:39:51.887133445Z [inf]    },
+2025-12-14T02:39:51.887138118Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:51.887142246Z [inf]  }
+2025-12-14T02:39:51.887146223Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:51.887152191Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:54.730396080Z [inf]      "role": "assistant",
+2025-12-14T02:39:54.730405734Z [inf]      "content": "",
+2025-12-14T02:39:54.730412955Z [inf]      "refusal": null,
+2025-12-14T02:39:54.730419711Z [inf]      "annotations": []
+2025-12-14T02:39:54.730426559Z [inf]    },
+2025-12-14T02:39:54.730435571Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:54.730444703Z [inf]  }
+2025-12-14T02:39:54.730445254Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:54.730460681Z [inf]  [GPT-Screen] ARBUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:54.730460771Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T02:39:54.730466046Z [inf]    "index": 0,
+2025-12-14T02:39:54.730472445Z [inf]    "message": {
+2025-12-14T02:39:56.951026356Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T02:39:56.951036070Z [inf]    "index": 0,
+2025-12-14T02:39:56.951041938Z [inf]    "message": {
+2025-12-14T02:39:56.951046859Z [inf]      "role": "assistant",
+2025-12-14T02:39:56.951051466Z [inf]      "content": "",
+2025-12-14T02:39:56.951056822Z [inf]      "refusal": null,
+2025-12-14T02:39:56.951061261Z [inf]      "annotations": []
+2025-12-14T02:39:56.951065604Z [inf]    },
+2025-12-14T02:39:56.951069947Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:56.951074335Z [inf]  }
+2025-12-14T02:39:56.951078710Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:56.951082731Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:59.251849456Z [inf]      "annotations": []
+2025-12-14T02:39:59.251859782Z [inf]    },
+2025-12-14T02:39:59.251869045Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:59.251876421Z [inf]  }
+2025-12-14T02:39:59.251884040Z [inf]  [GPT-Screen] INJUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:59.251887144Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T02:39:59.251893438Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:59.251895427Z [inf]    "index": 0,
+2025-12-14T02:39:59.251903875Z [inf]    "message": {
+2025-12-14T02:39:59.251909695Z [inf]      "role": "assistant",
+2025-12-14T02:39:59.251914899Z [inf]      "content": "",
+2025-12-14T02:39:59.251920200Z [inf]      "refusal": null,
+2025-12-14T02:39:59.766974803Z [inf]      "refusal": null,
+2025-12-14T02:39:59.766987406Z [inf]      "annotations": []
+2025-12-14T02:39:59.766994484Z [inf]    },
+2025-12-14T02:39:59.767008458Z [inf]    "finish_reason": "length"
+2025-12-14T02:39:59.767018009Z [inf]  }
+2025-12-14T02:39:59.767027068Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:39:59.767034899Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:39:59.767103645Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:39:59.767108297Z [inf]    "index": 0,
+2025-12-14T02:39:59.767113081Z [inf]    "message": {
+2025-12-14T02:39:59.767117140Z [inf]      "role": "assistant",
+2025-12-14T02:39:59.767122107Z [inf]      "content": "",
+2025-12-14T02:40:03.292551900Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T02:40:03.292563085Z [inf]    "index": 0,
+2025-12-14T02:40:03.292570016Z [inf]    "message": {
+2025-12-14T02:40:03.292575838Z [inf]      "role": "assistant",
+2025-12-14T02:40:03.292582347Z [inf]      "content": "",
+2025-12-14T02:40:03.292589944Z [inf]      "refusal": null,
+2025-12-14T02:40:03.292596380Z [inf]      "annotations": []
+2025-12-14T02:40:03.292602599Z [inf]    },
+2025-12-14T02:40:03.292608142Z [inf]    "finish_reason": "length"
+2025-12-14T02:40:03.292614128Z [inf]  }
+2025-12-14T02:40:03.292619702Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T02:40:03.292627847Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:40:05.771324313Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:40:05.771496099Z [inf]    "index": 0,
+2025-12-14T02:40:05.771556973Z [inf]    "message": {
+2025-12-14T02:40:05.771562676Z [inf]      "role": "assistant",
+2025-12-14T02:40:05.771566641Z [inf]      "content": "",
+2025-12-14T02:40:05.771572350Z [inf]      "refusal": null,
+2025-12-14T02:40:05.771575967Z [inf]      "annotations": []
+2025-12-14T02:40:05.771579531Z [inf]    },
+2025-12-14T02:40:05.771583374Z [inf]    "finish_reason": "length"
+2025-12-14T02:40:05.771587267Z [inf]  }
+2025-12-14T02:40:05.771591184Z [inf]  [GPT-Screen] BNBUSDT: Empty content, checking refusal: null
+2025-12-14T02:40:05.771594862Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:40:08.147983990Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:40:08.147995199Z [inf]    "index": 0,
+2025-12-14T02:40:08.148002878Z [inf]    "message": {
+2025-12-14T02:40:08.148009487Z [inf]      "role": "assistant",
+2025-12-14T02:40:08.148015531Z [inf]      "content": "",
+2025-12-14T02:40:08.148021947Z [inf]      "refusal": null,
+2025-12-14T02:40:08.148028201Z [inf]      "annotations": []
+2025-12-14T02:40:08.148036192Z [inf]    },
+2025-12-14T02:40:08.148042252Z [inf]    "finish_reason": "length"
+2025-12-14T02:40:08.148049561Z [inf]  }
+2025-12-14T02:40:08.148055888Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T02:40:08.148062534Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:40:11.946502932Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T02:40:11.946511910Z [inf]    "index": 0,
+2025-12-14T02:40:11.946516461Z [inf]    "message": {
+2025-12-14T02:40:11.946521070Z [inf]      "role": "assistant",
+2025-12-14T02:40:11.946525486Z [inf]      "content": "",
+2025-12-14T02:40:11.946529349Z [inf]      "refusal": null,
+2025-12-14T02:40:11.946533604Z [inf]      "annotations": []
+2025-12-14T02:40:11.946556753Z [inf]    },
+2025-12-14T02:40:11.946562596Z [inf]    "finish_reason": "length"
+2025-12-14T02:40:11.946568045Z [inf]  }
+2025-12-14T02:40:11.946573836Z [inf]  [GPT-Screen] XRPUSDT: Empty content, checking refusal: null
+2025-12-14T02:40:11.946578993Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:40:14.853736763Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:40:14.853742474Z [inf]    "index": 0,
+2025-12-14T02:40:14.853747384Z [inf]    "message": {
+2025-12-14T02:40:14.853752684Z [inf]      "role": "assistant",
+2025-12-14T02:40:14.853758676Z [inf]      "content": "",
+2025-12-14T02:40:14.853764152Z [inf]      "refusal": null,
+2025-12-14T02:40:14.853769902Z [inf]      "annotations": []
+2025-12-14T02:40:14.853775160Z [inf]    },
+2025-12-14T02:40:14.853781520Z [inf]    "finish_reason": "length"
+2025-12-14T02:40:14.853786901Z [inf]  }
+2025-12-14T02:40:14.853794272Z [inf]  [GPT-Screen] LINKUSDT: Empty content, checking refusal: null
+2025-12-14T02:40:14.853799463Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:40:17.866000444Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T02:40:17.866005476Z [inf]    "index": 0,
+2025-12-14T02:40:17.866010980Z [inf]    "message": {
+2025-12-14T02:40:17.866020435Z [inf]      "role": "assistant",
+2025-12-14T02:40:17.866026382Z [inf]      "content": "",
+2025-12-14T02:40:17.866032522Z [inf]      "refusal": null,
+2025-12-14T02:40:17.866037935Z [inf]      "annotations": []
+2025-12-14T02:40:17.866043996Z [inf]    },
+2025-12-14T02:40:17.866050098Z [inf]    "finish_reason": "length"
+2025-12-14T02:40:17.866055972Z [inf]  }
+2025-12-14T02:40:17.866094554Z [inf]  [GPT-Screen] AVAXUSDT: Empty content, checking refusal: null
+2025-12-14T02:40:17.866100899Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
