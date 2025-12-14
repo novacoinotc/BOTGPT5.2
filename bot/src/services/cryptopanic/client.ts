@@ -38,9 +38,9 @@ interface NewsResponse {
 export class CryptoPanicClient {
   private client: AxiosInstance;
   private cache: Map<string, CacheEntry<NewsItem[]>> = new Map();
-  private summaryCache: Map<string, CacheEntry<any>> = new Map();
-  private readonly CACHE_TTL = 15 * 60 * 1000; // 15 minutes cache (was 5 min)
-  private readonly SUMMARY_CACHE_TTL = 10 * 60 * 1000; // 10 minutes for summaries
+  private globalSentimentCache: CacheEntry<any> | null = null;
+  private readonly CACHE_TTL = 30 * 60 * 1000; // 30 minutes cache
+  private readonly GLOBAL_CACHE_TTL = 15 * 60 * 1000; // 15 minutes for global sentiment (4 calls/hour = 96/day = 2880/month)
 
   constructor() {
     this.client = axios.create({
@@ -170,32 +170,41 @@ export class CryptoPanicClient {
     };
   }
 
-  // Get news summary for GPT analysis - OPTIMIZED with caching
+  // Get news summary for GPT analysis - SUPER OPTIMIZED: 1 call for ALL symbols
+  // This makes 3000 API calls last 30+ days (4 calls/hour × 24h × 30d = 2880)
   async getNewsSummary(symbol: string): Promise<{
     headlines: string[];
     sentiment: { score: number; bullish: number; bearish: number };
     hotTopics: string[];
   }> {
-    // Check summary cache first (10 min TTL)
-    const cacheKey = `summary_${symbol}`;
-    const cached = this.summaryCache.get(cacheKey);
-    if (cached && Date.now() - cached.timestamp < this.SUMMARY_CACHE_TTL) {
-      return cached.data;
+    // Use global cache for ALL symbols (15 min TTL = 4 calls/hour)
+    if (this.globalSentimentCache && Date.now() - this.globalSentimentCache.timestamp < this.GLOBAL_CACHE_TTL) {
+      return this.globalSentimentCache.data;
     }
 
-    // Only fetch symbol-specific news (reduces API calls from 4 to 1)
-    const symbolNews = await this.getNewsForSymbol(symbol, 5);
+    // Fetch general crypto news (not per-symbol) - ONE call for all
+    try {
+      const generalNews = await this.getNews({ kind: 'news', limit: 10 });
 
-    const result = {
-      headlines: symbolNews.slice(0, 5).map(n => n.title),
-      sentiment: this.calculateSentiment(symbolNews),
-      hotTopics: [], // Skip hot topics to save API calls
-    };
+      const result = {
+        headlines: generalNews.slice(0, 5).map(n => n.title),
+        sentiment: this.calculateSentiment(generalNews),
+        hotTopics: generalNews.slice(0, 3).map(n => n.title),
+      };
 
-    // Cache the result
-    this.summaryCache.set(cacheKey, { data: result, timestamp: Date.now() });
+      // Cache globally for all symbols
+      this.globalSentimentCache = { data: result, timestamp: Date.now() };
+      console.log('[CryptoPanic] Fetched global sentiment (cached 15 min)');
 
-    return result;
+      return result;
+    } catch (error) {
+      // Return neutral on error
+      return {
+        headlines: [],
+        sentiment: { score: 0, bullish: 0, bearish: 0 },
+        hotTopics: [],
+      };
+    }
   }
 }
 
