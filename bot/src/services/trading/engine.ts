@@ -431,7 +431,12 @@ export class TradingEngine extends EventEmitter {
       const lotSizeFilter = symbolInfo?.filters?.find((f: any) => f.filterType === 'LOT_SIZE');
       const stepSize = lotSizeFilter ? parseFloat(lotSizeFilter.stepSize) : 0.001;
       const minQty = lotSizeFilter ? parseFloat(lotSizeFilter.minQty) : 0.001;
-      const precision = Math.max(0, -Math.log10(stepSize));
+      const precision = Math.max(0, Math.round(-Math.log10(stepSize)));
+
+      // DEBUG: Log the LOT_SIZE info for troubleshooting
+      if (symbol === 'DOGEUSDT' || !lotSizeFilter) {
+        console.log(`[Engine] ${symbol} LOT_SIZE: stepSize=${stepSize}, minQty=${minQty}, precision=${precision}, hasFilter=${!!lotSizeFilter}`);
+      }
 
       // Round quantity to valid step size
       let roundedQty = parseFloat(
