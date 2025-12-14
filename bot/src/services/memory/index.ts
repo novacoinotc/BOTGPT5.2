@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import { prisma } from '../database/index.js';
 
 export interface TradeMemory {
   id: string;
@@ -58,10 +59,104 @@ class MemorySystem {
   private maxTrades = 1000;
   private maxPatterns = 500;
   private maxLearnings = 100;
+  private initialized = false;
+
+  // === INITIALIZATION (Load from DB) ===
+
+  async initialize(): Promise<void> {
+    if (this.initialized) return;
+
+    try {
+      console.log('[Memory] Loading historical data from database...');
+
+      // Load trades from database
+      const dbTrades = await prisma.trade.findMany({
+        orderBy: { entryTime: 'desc' },
+        take: this.maxTrades,
+      });
+
+      this.trades = dbTrades.map(t => ({
+        id: t.id,
+        symbol: t.symbol,
+        side: t.side as 'LONG' | 'SHORT',
+        entryPrice: t.entryPrice,
+        exitPrice: t.exitPrice || 0,
+        quantity: t.quantity,
+        pnl: t.pnl || 0,
+        pnlUsd: t.pnlUsd || 0,
+        entryTime: t.entryTime.getTime(),
+        exitTime: t.exitTime?.getTime() || 0,
+        exitReason: (t.exitReason || 'manual') as TradeMemory['exitReason'],
+        entryConditions: {
+          rsi: t.rsi || 50,
+          macdHistogram: t.macdHistogram || 0,
+          orderBookImbalance: t.orderBookImbalance || 0,
+          fundingRate: t.fundingRate || 0,
+          regime: t.regime || 'unknown',
+          fearGreed: t.fearGreedValue || 50,
+          newsScore: t.newsScore || 0,
+        },
+        gptConfidence: t.gptConfidence,
+        gptReasoning: t.gptReasoning,
+      }));
+
+      console.log(`[Memory] Loaded ${this.trades.length} trades from database`);
+
+      // Load learnings from database
+      const dbLearnings = await prisma.learning.findMany({
+        orderBy: { useCount: 'desc' },
+        take: this.maxLearnings,
+      });
+
+      this.learnings = dbLearnings.map(l => ({
+        id: l.id,
+        lesson: l.lesson,
+        type: l.type as 'success' | 'failure',
+        context: l.context as any,
+        timestamp: l.timestamp.getTime(),
+        useCount: l.useCount,
+      }));
+
+      console.log(`[Memory] Loaded ${this.learnings.length} learnings from database`);
+
+      // Load patterns from database
+      const dbPatterns = await prisma.pattern.findMany({
+        orderBy: { timestamp: 'desc' },
+        take: this.maxPatterns,
+      });
+
+      this.patterns = dbPatterns.map(p => ({
+        symbol: p.symbol,
+        pattern: p.patternType,
+        regime: p.regime,
+        indicators: {
+          rsi: p.rsi,
+          macdHistogram: p.macdHistogram,
+          orderBookImbalance: p.orderBookImbalance,
+          fundingRate: p.fundingRate,
+        },
+        decision: p.decision as 'BUY' | 'SELL',
+        confidence: p.confidence,
+        timestamp: p.timestamp.getTime(),
+        outcome: p.outcome as 'success' | 'failure' | undefined,
+        pnl: p.resultPnl || undefined,
+      }));
+
+      console.log(`[Memory] Loaded ${this.patterns.length} patterns from database`);
+
+      this.initialized = true;
+      console.log('[Memory] Database initialization complete!');
+
+    } catch (error) {
+      console.error('[Memory] Error loading from database:', error);
+      // Continue with empty memory if DB fails
+      this.initialized = true;
+    }
+  }
 
   // === TRADE MEMORY ===
 
-  addTrade(trade: Omit<TradeMemory, 'id'>): TradeMemory {
+  async addTrade(trade: Omit<TradeMemory, 'id'>): Promise<TradeMemory> {
     const newTrade: TradeMemory = {
       ...trade,
       id: uuidv4(),
@@ -69,9 +164,41 @@ class MemorySystem {
 
     this.trades.unshift(newTrade);
 
-    // Keep only recent trades
+    // Keep only recent trades in memory
     if (this.trades.length > this.maxTrades) {
       this.trades = this.trades.slice(0, this.maxTrades);
+    }
+
+    // Persist to database
+    try {
+      await prisma.trade.create({
+        data: {
+          id: newTrade.id,
+          symbol: newTrade.symbol,
+          side: newTrade.side,
+          entryPrice: newTrade.entryPrice,
+          exitPrice: newTrade.exitPrice,
+          quantity: newTrade.quantity,
+          leverage: 1, // Will be updated if available
+          pnl: newTrade.pnl,
+          pnlUsd: newTrade.pnlUsd,
+          entryTime: new Date(newTrade.entryTime),
+          exitTime: new Date(newTrade.exitTime),
+          exitReason: newTrade.exitReason,
+          gptConfidence: newTrade.gptConfidence,
+          gptReasoning: newTrade.gptReasoning,
+          rsi: newTrade.entryConditions.rsi,
+          macdHistogram: newTrade.entryConditions.macdHistogram,
+          orderBookImbalance: newTrade.entryConditions.orderBookImbalance,
+          fundingRate: newTrade.entryConditions.fundingRate,
+          regime: newTrade.entryConditions.regime,
+          fearGreedValue: newTrade.entryConditions.fearGreed,
+          newsScore: newTrade.entryConditions.newsScore,
+        },
+      });
+      console.log(`[Memory] Trade ${newTrade.id} persisted to database`);
+    } catch (error) {
+      console.error('[Memory] Error persisting trade:', error);
     }
 
     return newTrade;
@@ -126,6 +253,26 @@ class MemorySystem {
     if (this.patterns.length > this.maxPatterns) {
       this.patterns = this.patterns.slice(0, this.maxPatterns);
     }
+
+    // Persist to database
+    try {
+      await prisma.pattern.create({
+        data: {
+          symbol: pattern.symbol,
+          patternType: pattern.pattern,
+          regime: pattern.regime,
+          rsi: pattern.indicators.rsi,
+          macdHistogram: pattern.indicators.macdHistogram,
+          orderBookImbalance: pattern.indicators.orderBookImbalance,
+          fundingRate: pattern.indicators.fundingRate,
+          decision: pattern.decision,
+          confidence: pattern.confidence,
+          timestamp: new Date(pattern.timestamp),
+        },
+      });
+    } catch (error) {
+      console.error('[Memory] Error persisting pattern:', error);
+    }
   }
 
   findSimilarPatterns(current: Partial<PatternMemory>): PatternMemory[] {
@@ -162,11 +309,21 @@ class MemorySystem {
     return (successes / matchingPatterns.length) * 100;
   }
 
-  updatePatternOutcome(timestamp: number, outcome: 'success' | 'failure', pnl: number): void {
+  async updatePatternOutcome(timestamp: number, outcome: 'success' | 'failure', pnl: number): Promise<void> {
     const pattern = this.patterns.find(p => p.timestamp === timestamp);
     if (pattern) {
       pattern.outcome = outcome;
       pattern.pnl = pnl;
+
+      // Update in database
+      try {
+        await prisma.pattern.updateMany({
+          where: { timestamp: new Date(timestamp) },
+          data: { outcome, resultPnl: pnl },
+        });
+      } catch (error) {
+        console.error('[Memory] Error updating pattern outcome:', error);
+      }
     }
   }
 
@@ -185,6 +342,19 @@ class MemorySystem {
     if (existing) {
       existing.useCount++;
       existing.timestamp = Date.now();
+
+      // Update in database
+      try {
+        await prisma.learning.update({
+          where: { id: existing.id },
+          data: {
+            useCount: existing.useCount,
+            timestamp: new Date(existing.timestamp),
+          },
+        });
+      } catch (error) {
+        console.error('[Memory] Error updating learning:', error);
+      }
       return;
     }
 
@@ -198,6 +368,23 @@ class MemorySystem {
     };
 
     this.learnings.unshift(learning);
+
+    // Persist to database
+    try {
+      await prisma.learning.create({
+        data: {
+          id: learning.id,
+          lesson: learning.lesson,
+          type: learning.type,
+          context: learning.context,
+          useCount: learning.useCount,
+          timestamp: new Date(learning.timestamp),
+        },
+      });
+      console.log(`[Memory] Learning persisted to database: "${lesson.substring(0, 50)}..."`);
+    } catch (error) {
+      console.error('[Memory] Error persisting learning:', error);
+    }
 
     // Keep only most relevant learnings
     if (this.learnings.length > this.maxLearnings) {
@@ -278,7 +465,7 @@ class MemorySystem {
     };
   }
 
-  // === PERSISTENCE ===
+  // === PERSISTENCE (Legacy methods kept for compatibility) ===
 
   exportData(): {
     trades: TradeMemory[];

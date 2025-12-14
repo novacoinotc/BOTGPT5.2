@@ -1,9 +1,11 @@
 import { startServer } from './server/index.js';
 import { tradingEngine } from './services/trading/engine.js';
 import { config } from './config/index.js';
+import { memorySystem } from './services/memory/index.js';
+import { testDatabaseConnection, disconnectDatabase } from './services/database/index.js';
 
 console.log('=========================================');
-console.log('    GPT 5.2 SCALPING BOT - v1.0.1');
+console.log('    GPT 5.2 SCALPING BOT - v1.0.2');
 console.log('=========================================');
 console.log('');
 
@@ -11,6 +13,15 @@ async function main(): Promise<void> {
   try {
     // Validate configuration
     validateConfig();
+
+    // Connect to database
+    const dbConnected = await testDatabaseConnection();
+    if (!dbConnected) {
+      console.warn('[Main] WARNING: Database connection failed. Data will not persist!');
+    }
+
+    // Initialize memory system (load historical data)
+    await memorySystem.initialize();
 
     // Start HTTP server
     startServer();
@@ -67,6 +78,7 @@ function setupGracefulShutdown(): void {
 
     try {
       await tradingEngine.stop();
+      await disconnectDatabase();
       console.log('[Main] Bot stopped successfully');
       process.exit(0);
     } catch (error) {
