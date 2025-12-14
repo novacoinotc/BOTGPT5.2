@@ -1,0 +1,164 @@
+2025-12-14T05:23:16.000000000Z [inf]  Starting Container
+2025-12-14T05:23:17.546206927Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-14T05:23:17.546214417Z [inf]  
+2025-12-14T05:23:17.546322329Z [inf]  
+2025-12-14T05:23:17.546331386Z [inf]  =========================================
+2025-12-14T05:23:17.546338166Z [inf]      GPT 5.2 SCALPING BOT - v1.0.1
+2025-12-14T05:23:17.546344188Z [inf]  =========================================
+2025-12-14T05:23:17.546348881Z [inf]  > gpt-scalping-bot@1.0.0 start
+2025-12-14T05:23:17.546356115Z [inf]  > npm run start -w bot
+2025-12-14T05:23:17.546358345Z [inf]  
+2025-12-14T05:23:17.546361734Z [inf]  
+2025-12-14T05:23:17.546366519Z [inf]  > bot@1.0.0 start
+2025-12-14T05:23:17.546367516Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-14T05:23:17.546374260Z [inf]  > node dist/index.js
+2025-12-14T05:23:17.546377588Z [inf]  
+2025-12-14T05:23:17.546382416Z [inf]  [Config] All required configurations present
+2025-12-14T05:23:17.546387636Z [inf]  [Config] Trading enabled: true
+2025-12-14T05:23:17.546392882Z [inf]  [Config] Max leverage: 10x
+2025-12-14T05:23:17.546402549Z [inf]  [Config] Max position size: 50%
+2025-12-14T05:23:17.546408381Z [inf]  [Config] Min confidence: 45%
+2025-12-14T05:23:17.546418918Z [inf]  [Config] Max hold time: 4h
+2025-12-14T05:23:17.548204717Z [inf]  [Main] Auto-starting trading bot...
+2025-12-14T05:23:17.548211855Z [inf]  [Engine] Starting trading bot...
+2025-12-14T05:23:17.548217628Z [inf]  [Engine] Min confidence: 45%
+2025-12-14T05:23:17.548222906Z [inf]  [Engine] Max leverage: 10x
+2025-12-14T05:23:17.548228004Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-14T05:23:17.548233000Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-14T05:23:17.548248857Z [inf]  [Server] Running on port 3001
+2025-12-14T05:23:17.858989669Z [inf]  [Engine] Account balance: $4615.36
+2025-12-14T05:23:17.858997464Z [inf]  [Engine] Available balance: $4116.43
+2025-12-14T05:23:18.589705017Z [inf]  [Engine] Found 3 open positions
+2025-12-14T05:23:18.589710302Z [inf]  [Engine] Bot started successfully
+2025-12-14T05:23:18.589716107Z [inf]  
+2025-12-14T05:23:18.589723411Z [inf]  [Main] Bot is ready!
+2025-12-14T05:23:18.589729356Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-14T05:23:18.589734823Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-14T05:23:18.589755911Z [inf]  
+2025-12-14T05:23:19.612870577Z [inf]  [WS] Connected to Binance
+2025-12-14T05:23:29.129608644Z [inf]  [GPT-Screen] BNBUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T05:23:29.129617909Z [inf]  [Engine] BNBUSDT: No opportunity (score: 20) - skipping
+2025-12-14T05:23:34.878555084Z [inf]  [GPT-Screen] XRPUSDT: score=58, direction=BUY, hasOpp=true
+2025-12-14T05:23:34.878563596Z [inf]  [Engine] XRPUSDT: No opportunity (score: 58) - skipping
+2025-12-14T05:23:38.731847724Z [inf]  [GPT-Screen] BTCUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-14T05:23:38.731853145Z [inf]  [Engine] BTCUSDT: No opportunity (score: 40) - skipping
+2025-12-14T05:23:39.876124006Z [inf]  [GPT-Screen] DOGEUSDT: Empty content (attempt 1), retrying...
+2025-12-14T05:23:49.301325228Z [inf]  [GPT-Screen] DOGEUSDT: score=55, direction=BUY, hasOpp=true
+2025-12-14T05:23:49.301334052Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 55) - skipping
+2025-12-14T05:24:29.322333183Z [inf]  [GPT-Screen] BTCUSDT: score=28, direction=NONE, hasOpp=false
+2025-12-14T05:24:29.322339278Z [inf]  [Engine] BTCUSDT: No opportunity (score: 28) - skipping
+2025-12-14T05:24:49.322956153Z [inf]  [GPT-Screen] BNBUSDT: Empty content (attempt 1), retrying...
+2025-12-14T05:25:09.319961546Z [inf]  [GPT-Screen] BNBUSDT: score=47, direction=SELL, hasOpp=false
+2025-12-14T05:25:09.319966754Z [inf]  [Engine] BNBUSDT: No opportunity (score: 47) - skipping
+2025-12-14T05:25:12.064728534Z [inf]  [GPT-Screen] XRPUSDT: score=45, direction=BUY, hasOpp=false
+2025-12-14T05:25:12.064733933Z [inf]  [Engine] XRPUSDT: No opportunity (score: 45) - skipping
+2025-12-14T05:25:31.637135631Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=BUY, hasOpp=false
+2025-12-14T05:25:31.637145156Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping
+2025-12-14T05:25:33.061025547Z [inf]  [GPT-Screen] BTCUSDT: score=57, direction=SELL, hasOpp=true
+2025-12-14T05:25:33.061037067Z [inf]  [Engine] BTCUSDT: No opportunity (score: 57) - skipping
+2025-12-14T05:25:52.696241900Z [inf]  [Socket] Client connected: dzTT9R1Dz_GcdT1PAAAB
+2025-12-14T05:25:52.696248992Z [inf]  [Socket] Client disconnected: dzTT9R1Dz_GcdT1PAAAB
+2025-12-14T05:25:52.696253587Z [inf]  [GPT-Screen] BNBUSDT: score=25, direction=SELL, hasOpp=false
+2025-12-14T05:25:52.696257927Z [inf]  [Engine] BNBUSDT: No opportunity (score: 25) - skipping
+2025-12-14T05:26:02.661154926Z [inf]  [GPT-Screen] XRPUSDT: Empty content (attempt 1), retrying...
+2025-12-14T05:26:22.661145462Z [inf]  [GPT-Screen] XRPUSDT: score=38, direction=NONE, hasOpp=false
+2025-12-14T05:26:22.661149918Z [inf]  [Engine] XRPUSDT: No opportunity (score: 38) - skipping
+2025-12-14T05:26:28.354181500Z [inf]  [GPT-Screen] BTCUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-14T05:26:28.354191127Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-14T05:26:28.794578584Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T05:26:28.794590785Z [inf]  [CryptoPanic] Fetched global sentiment (cached 15 min)
+2025-12-14T05:26:48.787907171Z [inf]  [GPT-Screen] DOGEUSDT: score=32, direction=NONE, hasOpp=false
+2025-12-14T05:26:48.787915722Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 32) - skipping
+2025-12-14T05:26:48.787920817Z [inf]  [Engine] BTCUSDT: HOLD (44%)
+2025-12-14T05:27:08.792719257Z [inf]  [GPT-Screen] BNBUSDT: Empty content (attempt 1), retrying...
+2025-12-14T05:27:13.825955743Z [inf]  [GPT-Screen] BNBUSDT: score=40, direction=SELL, hasOpp=false
+2025-12-14T05:27:13.825967502Z [inf]  [Engine] BNBUSDT: No opportunity (score: 40) - skipping
+2025-12-14T05:27:33.819410654Z [inf]  [GPT-Screen] XRPUSDT: score=40, direction=BUY, hasOpp=true
+2025-12-14T05:27:33.819420649Z [inf]  [Engine] XRPUSDT: No opportunity (score: 40) - skipping
+2025-12-14T05:27:33.819426864Z [inf]  [GPT-Screen] BTCUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-14T05:27:33.819433938Z [inf]  [Engine] BTCUSDT: No opportunity (score: 35) - skipping
+2025-12-14T05:27:41.751747504Z [inf]  [GPT-Screen] DOGEUSDT: score=30, direction=SELL, hasOpp=false
+2025-12-14T05:27:41.751756633Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 30) - skipping
+2025-12-14T05:27:45.669304359Z [inf]  [GPT-Screen] BNBUSDT: score=55, direction=SELL, hasOpp=true
+2025-12-14T05:27:45.669311085Z [inf]  [Engine] BNBUSDT: No opportunity (score: 55) - skipping
+2025-12-14T05:28:05.665131944Z [inf]  [GPT-Screen] XRPUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-14T05:28:05.665144927Z [inf]  [Engine] XRPUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-14T05:28:13.710835061Z [inf]  [Engine] XRPUSDT: BUY (56%)
+2025-12-14T05:28:13.710844437Z [inf]  [Engine]   └─ Size: 3% | Lev: 3x | SL: $2.00 | TP: $2.02
+2025-12-14T05:28:15.040453849Z [inf]  [Engine] Opening BUY XRPUSDT:
+2025-12-14T05:28:15.040467567Z [inf]  [Engine]   └─ Quantity: 184.2 @ ~$2.01
+2025-12-14T05:28:15.040476798Z [inf]  [Engine]   └─ Leverage: 3x
+2025-12-14T05:28:15.040480820Z [inf]  [Engine]   └─ Capital used: $123.49 (3%)
+2025-12-14T05:28:15.040484788Z [inf]  [Engine]   └─ Position value: $370.48
+2025-12-14T05:28:15.796380201Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=2.0118
+2025-12-14T05:28:16.044721448Z [inf]  [Engine] Position opened: LONG XRPUSDT @ $2.01
+2025-12-14T05:28:16.044737024Z [inf]  [Engine]   └─ SL: $2.00 (0.44%)
+2025-12-14T05:28:16.044744435Z [inf]  [Engine]   └─ TP: $2.02 (0.31%)
+2025-12-14T05:28:36.040083118Z [inf]  [GPT-Screen] DOGEUSDT: score=28, direction=NONE, hasOpp=false
+2025-12-14T05:28:36.040087671Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 28) - skipping
+2025-12-14T05:28:36.040091872Z [inf]  [GPT-Screen] BTCUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-14T05:28:36.040096271Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-14T05:28:56.040279304Z [inf]  [Engine] BTCUSDT: BUY (55%)
+2025-12-14T05:28:56.040285142Z [inf]  [Engine]   └─ Size: 3% | Lev: 3x | SL: $89910.00 | TP: $90320.00
+2025-12-14T05:28:56.040289792Z [inf]  [Engine] Opening BUY BTCUSDT:
+2025-12-14T05:28:56.040294686Z [inf]  [Engine]   └─ Quantity: 0.004 @ ~$90076.50
+2025-12-14T05:28:56.040299172Z [inf]  [Engine]   └─ Leverage: 3x
+2025-12-14T05:28:56.040304362Z [inf]  [Engine]   └─ Capital used: $119.79 (3%)
+2025-12-14T05:28:56.040308515Z [inf]  [Engine]   └─ Position value: $359.36
+2025-12-14T05:28:56.175987380Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=90076.5
+2025-12-14T05:28:56.992359458Z [inf]  [Engine] Position opened: LONG BTCUSDT @ $90076.50
+2025-12-14T05:28:56.992364363Z [inf]  [Engine]   └─ SL: $89910.00 (0.18%)
+2025-12-14T05:28:56.992372290Z [inf]  [Engine]   └─ TP: $90320.00 (0.27%)
+2025-12-14T05:28:57.175775138Z [inf]  [Engine] ETHUSDT: Position update due (6min since last GPT analysis)
+2025-12-14T05:29:17.172601159Z [inf]  [Engine] ETHUSDT: BUY (62%)
+2025-12-14T05:29:17.172608295Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $3093.40 | TP: $3114.70
+2025-12-14T05:29:17.172613475Z [inf]  [Engine] ETHUSDT: Updated SL: $3093.40 | TP: $3114.70
+2025-12-14T05:29:19.058304380Z [inf]  [Engine] BTCUSDT: Position update due (29428169min since last GPT analysis)
+2025-12-14T05:29:27.633471223Z [inf]  [GPT-Screen] BNBUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T05:29:27.633477611Z [inf]  [Engine] BNBUSDT: No opportunity (score: 30) - skipping
+2025-12-14T05:29:28.179169299Z [inf]  [Engine] SOLUSDT: Position update due (6min since last GPT analysis)
+2025-12-14T05:29:34.104652785Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-14T05:29:34.104658751Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $89870.00 | TP: $90270.00
+2025-12-14T05:29:34.104663852Z [inf]  [Engine] BTCUSDT: Updated SL: $89870.00 | TP: $90270.00
+2025-12-14T05:29:53.692064295Z [inf]  [Engine] SOLUSDT: BUY (62%)
+2025-12-14T05:29:53.692068595Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $131.60 | TP: $132.74
+2025-12-14T05:29:53.692072539Z [inf]  [Engine] SOLUSDT: Updated SL: $131.60 | TP: $132.74
+2025-12-14T05:29:53.692077743Z [inf]  [Engine] XRPUSDT: Position update due (29428170min since last GPT analysis)
+2025-12-14T05:29:53.692082130Z [inf]  [GPT-Screen] BNBUSDT: Empty content (attempt 1), retrying...
+2025-12-14T05:30:03.203034962Z [inf]  [Engine] XRPUSDT: BUY (56%)
+2025-12-14T05:30:03.203038793Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $2.00 | TP: $2.02
+2025-12-14T05:30:03.203042886Z [inf]  [Engine] XRPUSDT: Updated SL: $2.00 | TP: $2.02
+2025-12-14T05:30:23.566331728Z [inf]  [GPT-Screen] BNBUSDT: Empty content after 2 attempts
+2025-12-14T05:30:23.566335828Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-14T05:30:23.566342333Z [inf]  [GPT-Screen] DOGEUSDT: score=41, direction=BUY, hasOpp=false
+2025-12-14T05:30:23.566348526Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 41) - skipping
+2025-12-14T05:30:42.832423764Z [inf]  [GPT-Screen] DOGEUSDT: score=65, direction=BUY, hasOpp=true
+2025-12-14T05:30:42.832429778Z [inf]  [Engine] DOGEUSDT: Opportunity detected! (score: 65, direction: BUY)
+2025-12-14T05:30:42.832435169Z [inf]  [GPT-Screen] BNBUSDT: score=70, direction=SELL, hasOpp=true
+2025-12-14T05:30:42.832441649Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 70, direction: SELL)
+2025-12-14T05:30:47.448177728Z [inf]  [Engine] BNBUSDT: BUY (58%)
+2025-12-14T05:30:47.448184893Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $890.55 | TP: $895.78
+2025-12-14T05:30:47.712481340Z [inf]  [Engine] DOGEUSDT: BUY (58%)
+2025-12-14T05:30:47.712487899Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $0.14 | TP: $0.14
+2025-12-14T05:30:49.347205331Z [inf]  [Engine] Opening BUY BNBUSDT:
+2025-12-14T05:30:49.347209849Z [inf]  [Engine]   └─ Quantity: 0.65 @ ~$893.21
+2025-12-14T05:30:49.347214164Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-14T05:30:49.347218753Z [inf]  [Engine]   └─ Capital used: $116.19 (3%)
+2025-12-14T05:30:49.347223394Z [inf]  [Engine]   └─ Position value: $580.93
+2025-12-14T05:30:49.470776660Z [inf]  [Engine] Opening BUY DOGEUSDT:
+2025-12-14T05:30:49.470781070Z [inf]  [Engine]   └─ Quantity: 3376.508 @ ~$0.14
+2025-12-14T05:30:49.470785096Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T05:30:49.470789738Z [inf]  [Engine]   └─ Capital used: $116.19 (3%)
+2025-12-14T05:30:49.470794278Z [inf]  [Engine]   └─ Position value: $464.74
+2025-12-14T05:30:49.685661640Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=893.21
+2025-12-14T05:30:49.929088747Z [err]  [Engine] Failed to open position: Request failed with status code 400
+2025-12-14T05:30:50.332540626Z [inf]  [Engine] Position opened: LONG BNBUSDT @ $893.21
+2025-12-14T05:30:50.332553669Z [inf]  [Engine]   └─ SL: $890.55 (0.30%)
+2025-12-14T05:30:50.332563856Z [inf]  [Engine]   └─ TP: $895.78 (0.29%)
+2025-12-14T05:31:09.985597181Z [inf]  [GPT-Screen] DOGEUSDT: score=32, direction=NONE, hasOpp=false
+2025-12-14T05:31:09.985607895Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 32) - skipping
+2025-12-14T05:31:29.986996516Z [inf]  [Engine] BNBUSDT: Position update due (29428171min since last GPT analysis)
+2025-12-14T05:31:35.502710559Z [inf]  [Engine] BNBUSDT: BUY (54%)
+2025-12-14T05:31:35.502716633Z [inf]  [Engine]   └─ Size: 3% | Lev: 3x | SL: $890.05 | TP: $895.85
+2025-12-14T05:31:35.502722895Z [inf]  [Engine] BNBUSDT: Updated SL: $890.05 | TP: $895.85
+2025-12-14T05:32:05.155709899Z [inf]  [GPT-Screen] DOGEUSDT: Empty content (attempt 1), retrying...
