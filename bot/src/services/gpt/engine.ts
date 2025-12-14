@@ -77,20 +77,23 @@ Criterios para oportunidad:
       });
 
       const content = response.choices[0]?.message?.content;
+      console.log(`[GPT-Screen] ${analysis.symbol} raw response:`, content);
+
       if (!content) {
+        console.log(`[GPT-Screen] ${analysis.symbol}: Empty response from API`);
         return { hasOpportunity: false, direction: 'NONE', score: 0 };
       }
 
       const result = JSON.parse(content);
-      console.log(`[GPT-Screen] ${analysis.symbol}: score=${result.score}, direction=${result.direction}`);
+      console.log(`[GPT-Screen] ${analysis.symbol}: score=${result.score}, direction=${result.direction}, hasOpp=${result.hasOpportunity}`);
 
       return {
         hasOpportunity: result.hasOpportunity && result.score >= 50,
         direction: result.direction || 'NONE',
         score: result.score || 0
       };
-    } catch (error) {
-      console.error('[GPT-Screen] Error:', error);
+    } catch (error: any) {
+      console.error(`[GPT-Screen] ${analysis.symbol} Error:`, error.message || error);
       return { hasOpportunity: false, direction: 'NONE', score: 0 };
     }
   }
