@@ -1,0 +1,1001 @@
+2025-12-14T02:49:24.120783208Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:49:24.120793021Z [inf]    "index": 0,
+2025-12-14T02:49:24.120801967Z [inf]    "message": {
+2025-12-14T02:49:24.120810235Z [inf]      "role": "assistant",
+2025-12-14T02:49:24.120822562Z [inf]      "content": "",
+2025-12-14T02:49:24.120835811Z [inf]      "refusal": null,
+2025-12-14T02:49:24.120848709Z [inf]      "annotations": []
+2025-12-14T02:49:24.120858396Z [inf]    },
+2025-12-14T02:49:24.120867810Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:24.321936966Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T02:49:24.321947355Z [inf]    "index": 0,
+2025-12-14T02:49:24.321955744Z [inf]    "message": {
+2025-12-14T02:49:24.321964149Z [inf]      "role": "assistant",
+2025-12-14T02:49:24.321972240Z [inf]      "content": "",
+2025-12-14T02:49:24.321979707Z [inf]      "refusal": null,
+2025-12-14T02:49:24.321986598Z [inf]      "annotations": []
+2025-12-14T02:49:24.321993659Z [inf]    },
+2025-12-14T02:49:24.322001654Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:24.322008842Z [inf]  }
+2025-12-14T02:49:24.322016271Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T02:49:24.322024733Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:49:25.412985613Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T02:49:25.412996689Z [inf]    "index": 0,
+2025-12-14T02:49:25.413006104Z [inf]    "message": {
+2025-12-14T02:49:25.413013208Z [inf]      "role": "assistant",
+2025-12-14T02:49:25.413021988Z [inf]      "content": "",
+2025-12-14T02:49:25.413029490Z [inf]      "refusal": null,
+2025-12-14T02:49:25.413036357Z [inf]      "annotations": []
+2025-12-14T02:49:25.413045265Z [inf]    },
+2025-12-14T02:49:25.413051842Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:25.413057961Z [inf]  }
+2025-12-14T02:49:25.413063663Z [inf]  [GPT-Screen] INJUSDT: Empty content, checking refusal: null
+2025-12-14T02:49:25.413070319Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:49:28.158837552Z [inf]  [Engine] XRPUSDT: BUY (61%)
+2025-12-14T02:49:28.158847163Z [inf]  [Engine]   └─ Contexto de rango con volatilidad muy baja (BB Width 0.58% y ATR ~0.193%), lo que favorece scalps co...
+2025-12-14T02:49:28.158854763Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-14T02:49:28.158862319Z [inf]  [Engine]   └─ SL: $2.01 | TP: $2.03
+2025-12-14T02:49:30.164705204Z [inf]  [Engine] Opening BUY XRPUSDT:
+2025-12-14T02:49:30.164712681Z [inf]  [Engine]   └─ Quantity: 276.8 @ ~$2.02
+2025-12-14T02:49:30.164720037Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T02:49:30.164727654Z [inf]  [Engine]   └─ Capital used: $140.09 (3%)
+2025-12-14T02:49:30.164740995Z [inf]  [Engine]   └─ Position value: $560.36
+2025-12-14T02:49:30.297119734Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:49:31.040945066Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:49:31.040957261Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:49:31.040965514Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:49:31.040978638Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0254, entryPrice=0
+2025-12-14T02:49:31.040985647Z [inf]  [Engine] Position opened: LONG XRPUSDT @ $0.00
+2025-12-14T02:49:31.040994434Z [inf]  [Engine]   └─ SL: $2.01 (Infinity%)
+2025-12-14T02:49:31.041000682Z [inf]  [Engine]   └─ TP: $2.03 (Infinity%)
+2025-12-14T02:49:31.041007512Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0255, entryPrice=0
+2025-12-14T02:49:31.167973907Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0255, entryPrice=0
+2025-12-14T02:49:32.018885105Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0256, entryPrice=0
+2025-12-14T02:49:32.025708922Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0255, entryPrice=0
+2025-12-14T02:49:32.031509363Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0254, entryPrice=0
+2025-12-14T02:49:32.057597700Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T02:49:32.057607826Z [inf]    "index": 0,
+2025-12-14T02:49:32.057615999Z [inf]    "message": {
+2025-12-14T02:49:32.057622551Z [inf]      "role": "assistant",
+2025-12-14T02:49:32.057629820Z [inf]      "content": "",
+2025-12-14T02:49:32.057636641Z [inf]      "refusal": null,
+2025-12-14T02:49:32.057643324Z [inf]      "annotations": []
+2025-12-14T02:49:32.057649412Z [inf]    },
+2025-12-14T02:49:32.057655614Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:32.057662511Z [inf]  }
+2025-12-14T02:49:32.057669567Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T02:49:32.057675247Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:49:32.181280667Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0253, entryPrice=0
+2025-12-14T02:49:33.157816984Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:49:33.157822540Z [inf]    "index": 0,
+2025-12-14T02:49:33.157830027Z [inf]    "message": {
+2025-12-14T02:49:33.157836997Z [inf]      "role": "assistant",
+2025-12-14T02:49:33.157842824Z [inf]      "content": "",
+2025-12-14T02:49:33.157849435Z [inf]      "refusal": null,
+2025-12-14T02:49:33.157855120Z [inf]      "annotations": []
+2025-12-14T02:49:33.157862332Z [inf]    },
+2025-12-14T02:49:33.157869066Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:33.157876922Z [inf]  }
+2025-12-14T02:49:33.157882820Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:49:33.157888834Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:49:33.179410144Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0253, entryPrice=0
+2025-12-14T02:49:34.027386322Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0253, entryPrice=0
+2025-12-14T02:49:35.103129478Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0253, entryPrice=0
+2025-12-14T02:49:35.103139535Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:49:35.103147941Z [inf]    "index": 0,
+2025-12-14T02:49:35.103159999Z [inf]    "message": {
+2025-12-14T02:49:35.103168403Z [inf]      "role": "assistant",
+2025-12-14T02:49:35.103176564Z [inf]      "content": "",
+2025-12-14T02:49:35.103184258Z [inf]      "refusal": null,
+2025-12-14T02:49:35.103192863Z [inf]      "annotations": []
+2025-12-14T02:49:35.103200437Z [inf]    },
+2025-12-14T02:49:35.103209760Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:35.103217975Z [inf]  }
+2025-12-14T02:49:35.103228305Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T02:49:35.103240642Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:49:35.258882237Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T02:49:35.258897784Z [inf]    "index": 0,
+2025-12-14T02:49:35.258907324Z [inf]    "message": {
+2025-12-14T02:49:35.258915788Z [inf]      "role": "assistant",
+2025-12-14T02:49:35.258931712Z [inf]      "content": "",
+2025-12-14T02:49:35.258946517Z [inf]      "refusal": null,
+2025-12-14T02:49:35.258954217Z [inf]      "annotations": []
+2025-12-14T02:49:35.258962022Z [inf]    },
+2025-12-14T02:49:35.258970028Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:35.258978727Z [inf]  }
+2025-12-14T02:49:35.258987044Z [inf]  [GPT-Screen] ARBUSDT: Empty content, checking refusal: null
+2025-12-14T02:49:35.258995379Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:49:35.946090339Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:49:36.113485869Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:49:36.118111561Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:49:36.134625361Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:49:36.177885747Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02545844, entryPrice=0
+2025-12-14T02:49:36.962592031Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:49:38.266084849Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0253, entryPrice=0
+2025-12-14T02:49:38.415485516Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0253, entryPrice=0
+2025-12-14T02:49:39.173653343Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02536114, entryPrice=0
+2025-12-14T02:49:39.198794227Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:49:40.156933305Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:49:40.156939673Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0253, entryPrice=0
+2025-12-14T02:49:40.338637317Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0253, entryPrice=0
+2025-12-14T02:49:42.181215375Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02540585, entryPrice=0
+2025-12-14T02:49:43.153939055Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T02:49:43.153948962Z [inf]    "index": 0,
+2025-12-14T02:49:43.153961111Z [inf]    "message": {
+2025-12-14T02:49:43.153969902Z [inf]      "role": "assistant",
+2025-12-14T02:49:43.153979272Z [inf]      "content": "",
+2025-12-14T02:49:43.154044883Z [inf]      "refusal": null,
+2025-12-14T02:49:43.154059957Z [inf]      "annotations": []
+2025-12-14T02:49:43.154070258Z [inf]    },
+2025-12-14T02:49:43.154080279Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:43.154090911Z [inf]  }
+2025-12-14T02:49:43.154100571Z [inf]  [GPT-Screen] INJUSDT: Empty content, checking refusal: null
+2025-12-14T02:49:43.154111551Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:49:43.154119524Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:49:43.154126812Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:49:44.222811605Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:49:45.214541821Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:49:45.214549274Z [inf]    "index": 0,
+2025-12-14T02:49:45.214556458Z [inf]    "message": {
+2025-12-14T02:49:45.214564146Z [inf]      "role": "assistant",
+2025-12-14T02:49:45.214571384Z [inf]      "content": "",
+2025-12-14T02:49:45.214578222Z [inf]      "refusal": null,
+2025-12-14T02:49:45.214583275Z [inf]      "annotations": []
+2025-12-14T02:49:45.214588551Z [inf]    },
+2025-12-14T02:49:45.214593943Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:45.214603380Z [inf]  }
+2025-12-14T02:49:45.214611411Z [inf]  [GPT-Screen] LINKUSDT: Empty content, checking refusal: null
+2025-12-14T02:49:45.214618674Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:49:45.214627982Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02538755, entryPrice=0
+2025-12-14T02:49:45.274893038Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:49:46.116540088Z [inf]  [Engine] XRPUSDT: HOLD (57%)
+2025-12-14T02:49:46.116551862Z [inf]  [Engine]   └─ El mercado está en régimen de RANGO con tendencia débil (ADX 16.4) y volatilidad muy baja (BB Width ...
+2025-12-14T02:49:46.116563744Z [inf]  [Engine] XRPUSDT: Updated SL: $2.02 | TP: $2.03
+2025-12-14T02:49:47.174224696Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T02:49:47.174231085Z [inf]    "index": 0,
+2025-12-14T02:49:47.174237111Z [inf]    "message": {
+2025-12-14T02:49:47.174242834Z [inf]      "role": "assistant",
+2025-12-14T02:49:47.174248618Z [inf]      "content": "",
+2025-12-14T02:49:47.174253980Z [inf]      "refusal": null,
+2025-12-14T02:49:47.174261165Z [inf]      "annotations": []
+2025-12-14T02:49:47.174266935Z [inf]    },
+2025-12-14T02:49:47.174277323Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:47.174284847Z [inf]  }
+2025-12-14T02:49:47.174291282Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T02:49:47.174297493Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:49:47.314425895Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T02:49:47.314433462Z [inf]    "index": 0,
+2025-12-14T02:49:47.314441292Z [inf]    "message": {
+2025-12-14T02:49:47.314448265Z [inf]      "role": "assistant",
+2025-12-14T02:49:47.314456518Z [inf]      "content": "",
+2025-12-14T02:49:47.314463164Z [inf]      "refusal": null,
+2025-12-14T02:49:47.314471203Z [inf]      "annotations": []
+2025-12-14T02:49:47.314478191Z [inf]    },
+2025-12-14T02:49:47.314485160Z [inf]    "finish_reason": "length"
+2025-12-14T02:49:47.314491287Z [inf]  }
+2025-12-14T02:49:47.314497801Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T02:49:47.314503980Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:49:47.985863066Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:49:47.985871724Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:49:48.178897421Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02518217, entryPrice=0
+2025-12-14T02:49:48.969800571Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:49:50.023342322Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:49:50.207895400Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:49:50.393087889Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:49:50.950930724Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:49:51.163742495Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02520049, entryPrice=0
+2025-12-14T02:49:51.313303013Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T02:49:51.313318524Z [inf]    "index": 0,
+2025-12-14T02:49:51.313328828Z [inf]    "message": {
+2025-12-14T02:49:51.313336822Z [inf]      "role": "assistant",
+2025-12-14T02:49:51.313344548Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T02:49:51.313351689Z [inf]      "refusal": null,
+2025-12-14T02:49:51.313359546Z [inf]      "annotations": []
+2025-12-14T02:49:51.313366202Z [inf]    },
+2025-12-14T02:49:51.313373219Z [inf]    "finish_reason": "stop"
+2025-12-14T02:49:51.313382568Z [inf]  }
+2025-12-14T02:49:51.313389254Z [inf]  [GPT-Screen] AVAXUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T02:49:51.313396613Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T02:49:52.104519300Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:49:52.245032604Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:49:54.170494743Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02523161, entryPrice=0
+2025-12-14T02:49:56.082186847Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:49:56.082200955Z [inf]    "index": 0,
+2025-12-14T02:49:56.082209334Z [inf]    "message": {
+2025-12-14T02:49:56.082219913Z [inf]      "role": "assistant",
+2025-12-14T02:49:56.082228271Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T02:49:56.082238429Z [inf]      "refusal": null,
+2025-12-14T02:49:56.082247417Z [inf]      "annotations": []
+2025-12-14T02:49:56.082257982Z [inf]    },
+2025-12-14T02:49:56.082268178Z [inf]    "finish_reason": "stop"
+2025-12-14T02:49:56.082276164Z [inf]  }
+2025-12-14T02:49:56.082283388Z [inf]  [GPT-Screen] BNBUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T02:49:56.082290456Z [inf]  [Engine] BNBUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T02:49:56.102951771Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:49:56.153937354Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T02:49:56.153956221Z [inf]    "index": 0,
+2025-12-14T02:49:56.153967890Z [inf]    "message": {
+2025-12-14T02:49:56.153977533Z [inf]      "role": "assistant",
+2025-12-14T02:49:56.153995614Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T02:49:56.154005809Z [inf]      "refusal": null,
+2025-12-14T02:49:56.154016928Z [inf]      "annotations": []
+2025-12-14T02:49:56.154026217Z [inf]    },
+2025-12-14T02:49:56.154035356Z [inf]    "finish_reason": "stop"
+2025-12-14T02:49:56.154044826Z [inf]  }
+2025-12-14T02:49:56.154054293Z [inf]  [GPT-Screen] INJUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T02:49:56.154062881Z [inf]  [Engine] INJUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T02:49:57.029847714Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:49:57.123306335Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:49:57.123320880Z [inf]    "index": 0,
+2025-12-14T02:49:57.123332089Z [inf]    "message": {
+2025-12-14T02:49:57.123339258Z [inf]      "role": "assistant",
+2025-12-14T02:49:57.123351140Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T02:49:57.123358594Z [inf]      "refusal": null,
+2025-12-14T02:49:57.123365882Z [inf]      "annotations": []
+2025-12-14T02:49:57.123373919Z [inf]    },
+2025-12-14T02:49:57.123380894Z [inf]    "finish_reason": "stop"
+2025-12-14T02:49:57.123393303Z [inf]  }
+2025-12-14T02:49:57.123399846Z [inf]  [GPT-Screen] LINKUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T02:49:57.123406394Z [inf]  [Engine] LINKUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T02:49:57.177815969Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252365, entryPrice=0
+2025-12-14T02:49:59.291313615Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:49:59.291320493Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0249, entryPrice=0
+2025-12-14T02:49:59.291327036Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:00.274274322Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0249, entryPrice=0
+2025-12-14T02:50:00.274283329Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02512099, entryPrice=0
+2025-12-14T02:50:02.261968091Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:02.261974089Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T02:50:02.261981252Z [inf]    "index": 0,
+2025-12-14T02:50:02.261987532Z [inf]    "message": {
+2025-12-14T02:50:02.261994214Z [inf]      "role": "assistant",
+2025-12-14T02:50:02.262009044Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T02:50:02.262019340Z [inf]      "refusal": null,
+2025-12-14T02:50:02.262027183Z [inf]      "annotations": []
+2025-12-14T02:50:02.262034062Z [inf]    },
+2025-12-14T02:50:02.262040870Z [inf]    "finish_reason": "stop"
+2025-12-14T02:50:02.262047437Z [inf]  }
+2025-12-14T02:50:02.262053878Z [inf]  [GPT-Screen] DOGEUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T02:50:02.262061047Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T02:50:02.262067385Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0249, entryPrice=0
+2025-12-14T02:50:02.495260539Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0249, entryPrice=0
+2025-12-14T02:50:03.065380085Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0249, entryPrice=0
+2025-12-14T02:50:03.100514016Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0249, entryPrice=0
+2025-12-14T02:50:03.170856218Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02496795, entryPrice=0
+2025-12-14T02:50:03.384058707Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:04.107481769Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:50:04.107488306Z [inf]    "index": 0,
+2025-12-14T02:50:04.107494695Z [inf]    "message": {
+2025-12-14T02:50:04.107501234Z [inf]      "role": "assistant",
+2025-12-14T02:50:04.107508744Z [inf]      "content": "",
+2025-12-14T02:50:04.107515629Z [inf]      "refusal": null,
+2025-12-14T02:50:04.107521672Z [inf]      "annotations": []
+2025-12-14T02:50:04.107528664Z [inf]    },
+2025-12-14T02:50:04.107534211Z [inf]    "finish_reason": "length"
+2025-12-14T02:50:04.107622794Z [inf]  }
+2025-12-14T02:50:04.107628885Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:50:04.107648645Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:50:04.107654717Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:04.107660335Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:04.107666427Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0249, entryPrice=0
+2025-12-14T02:50:04.198734079Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:05.274928921Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:05.993949902Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:06.060990363Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:06.178982452Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:06.210669254Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:06.337416833Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:06.426068688Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:06.968247607Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:07.349685116Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:07.511404867Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:08.240512770Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:09.171688025Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:09.180814533Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:12.176824676Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:12.179833381Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:13.243489857Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:13.243507975Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0253, entryPrice=0
+2025-12-14T02:50:14.252949172Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-14T02:50:14.252961250Z [inf]    "index": 0,
+2025-12-14T02:50:14.252969495Z [inf]    "message": {
+2025-12-14T02:50:14.252979279Z [inf]      "role": "assistant",
+2025-12-14T02:50:14.253005954Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 65}",
+2025-12-14T02:50:14.253033632Z [inf]      "refusal": null,
+2025-12-14T02:50:14.253045290Z [inf]      "annotations": []
+2025-12-14T02:50:14.253056945Z [inf]    },
+2025-12-14T02:50:14.253059420Z [inf]  [GPT-Screen] ETHUSDT: score=65, direction=BUY, hasOpp=true
+2025-12-14T02:50:14.253068654Z [inf]    "finish_reason": "stop"
+2025-12-14T02:50:14.253082757Z [inf]  }
+2025-12-14T02:50:14.253083239Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 65, direction: BUY)
+2025-12-14T02:50:14.253096913Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:14.253100185Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0252, entryPrice=0
+2025-12-14T02:50:14.253109930Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:14.253123466Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:14.253123774Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:14.253139006Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:14.253139607Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:14.253150247Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T02:50:14.253158534Z [inf]    "index": 0,
+2025-12-14T02:50:14.253165651Z [inf]    "message": {
+2025-12-14T02:50:14.253173078Z [inf]      "role": "assistant",
+2025-12-14T02:50:14.253180209Z [inf]      "content": "",
+2025-12-14T02:50:14.253187168Z [inf]      "refusal": null,
+2025-12-14T02:50:14.253195538Z [inf]      "annotations": []
+2025-12-14T02:50:14.260128902Z [inf]    },
+2025-12-14T02:50:14.260136980Z [inf]    "finish_reason": "length"
+2025-12-14T02:50:14.260149220Z [inf]  }
+2025-12-14T02:50:14.260157197Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T02:50:14.260165211Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:50:14.260173660Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:50:14.260180708Z [inf]    "index": 0,
+2025-12-14T02:50:14.260186892Z [inf]    "message": {
+2025-12-14T02:50:14.260194767Z [inf]      "role": "assistant",
+2025-12-14T02:50:14.260200513Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T02:50:14.260205934Z [inf]      "refusal": null,
+2025-12-14T02:50:14.260212117Z [inf]      "annotations": []
+2025-12-14T02:50:14.260531656Z [inf]    },
+2025-12-14T02:50:14.260537195Z [inf]    "finish_reason": "stop"
+2025-12-14T02:50:14.260542239Z [inf]  }
+2025-12-14T02:50:14.260547138Z [inf]  [GPT-Screen] SOLUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T02:50:14.260555547Z [inf]  [Engine] SOLUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T02:50:15.260158930Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:15.260166714Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:15.260173652Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:15.260181474Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:15.260188989Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:15.260196388Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025073, entryPrice=0
+2025-12-14T02:50:15.454085938Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:18.067486111Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:18.172705564Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02510483, entryPrice=0
+2025-12-14T02:50:19.179670994Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:20.148550670Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:21.134718146Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:21.174641229Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02510612, entryPrice=0
+2025-12-14T02:50:21.510905901Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:23.046404594Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:24.032840077Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T02:50:24.032847028Z [inf]    "index": 0,
+2025-12-14T02:50:24.032995471Z [inf]    "message": {
+2025-12-14T02:50:24.033003426Z [inf]      "role": "assistant",
+2025-12-14T02:50:24.033009399Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T02:50:24.033015860Z [inf]      "refusal": null,
+2025-12-14T02:50:24.033027910Z [inf]      "annotations": []
+2025-12-14T02:50:24.033034211Z [inf]    },
+2025-12-14T02:50:24.033040292Z [inf]    "finish_reason": "stop"
+2025-12-14T02:50:24.033052997Z [inf]  }
+2025-12-14T02:50:24.033059768Z [inf]  [GPT-Screen] AVAXUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T02:50:24.033070288Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T02:50:24.033081701Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:24.172479706Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02513514, entryPrice=0
+2025-12-14T02:50:25.530312308Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:26.073330891Z [inf]  [Engine] ETHUSDT: BUY (58%)
+2025-12-14T02:50:26.073344358Z [inf]  [Engine]   └─ Contexto de scalping en rango con volatilidad baja (ATR 7.50 = 0.24%) y spread excelente (0.0003%), ...
+2025-12-14T02:50:26.073352355Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-14T02:50:26.073360359Z [inf]  [Engine]   └─ SL: $3108.80 | TP: $3130.80
+2025-12-14T02:50:26.479999612Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:27.108454661Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:27.182965921Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02507273, entryPrice=0
+2025-12-14T02:50:27.195148968Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:28.287340748Z [inf]  [Engine] XRPUSDT: SELL (56%)
+2025-12-14T02:50:28.287355916Z [inf]  [Engine]   └─ Contexto de rango y baja volatilidad: ADX 16.4 confirma mercado lateral y el ATR (~0.197%) sugiere m...
+2025-12-14T02:50:28.287364133Z [inf]  [Engine]   └─ Size: 3% | Leverage: 3x
+2025-12-14T02:50:28.287385502Z [inf]  [Engine]   └─ SL: $2.04 | TP: $2.02
+2025-12-14T02:50:28.287397118Z [inf]  [Engine] XRPUSDT: Updated SL: $2.04 | TP: $2.02
+2025-12-14T02:50:28.287413024Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:28.287743445Z [inf]  [Engine] Opening BUY ETHUSDT:
+2025-12-14T02:50:28.287752177Z [inf]  [Engine]   └─ Quantity: 0.174 @ ~$3119.55
+2025-12-14T02:50:28.287760258Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T02:50:28.287768620Z [inf]  [Engine]   └─ Capital used: $135.88 (3%)
+2025-12-14T02:50:28.288361615Z [inf]  [Engine]   └─ Position value: $543.52
+2025-12-14T02:50:28.334914174Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:28.486471295Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:29.270210000Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:29.270224086Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:29.270411447Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:29.270419909Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:29.270426527Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.66, entryPrice=0
+2025-12-14T02:50:29.270441695Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:29.270452374Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:29.270459137Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.0251, entryPrice=0
+2025-12-14T02:50:29.270466645Z [inf]  [Engine] Position opened: LONG ETHUSDT @ $0.00
+2025-12-14T02:50:29.270473179Z [inf]  [Engine]   └─ SL: $3108.80 (Infinity%)
+2025-12-14T02:50:29.270480471Z [inf]  [Engine]   └─ TP: $3130.80 (Infinity%)
+2025-12-14T02:50:29.295949932Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:30.291471801Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T02:50:30.291481067Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.67, entryPrice=0
+2025-12-14T02:50:30.291488737Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T02:50:30.291496449Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:30.291504348Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.66, entryPrice=0
+2025-12-14T02:50:30.291512410Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.67, entryPrice=0
+2025-12-14T02:50:30.291520657Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.76418217, entryPrice=0
+2025-12-14T02:50:30.291528446Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T02:50:30.291560178Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.02503805, entryPrice=0
+2025-12-14T02:50:30.326217749Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.67, entryPrice=0
+2025-12-14T02:50:30.509102293Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:30.514514014Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T02:50:31.162864498Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T02:50:31.162870665Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:31.170911007Z [err]  [Engine] Invalid PnL calculation: currentPrice=2.025, entryPrice=0
+2025-12-14T02:50:31.465754051Z [inf]  [Engine] ⚠️ Position XRPUSDT was closed externally
+2025-12-14T02:50:32.190348353Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T02:50:32.190359348Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.66, entryPrice=0
+2025-12-14T02:50:32.190369167Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T02:50:32.190378277Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.67, entryPrice=0
+2025-12-14T02:50:32.190388481Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.68, entryPrice=0
+2025-12-14T02:50:32.190399565Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.69, entryPrice=0
+2025-12-14T02:50:32.190412746Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.7, entryPrice=0
+2025-12-14T02:50:32.190421948Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.72, entryPrice=0
+2025-12-14T02:50:32.190431962Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.73, entryPrice=0
+2025-12-14T02:50:32.190442318Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.74, entryPrice=0
+2025-12-14T02:50:32.190456129Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.75, entryPrice=0
+2025-12-14T02:50:32.190468281Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.77, entryPrice=0
+2025-12-14T02:50:32.190478050Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.78, entryPrice=0
+2025-12-14T02:50:32.190487285Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.79, entryPrice=0
+2025-12-14T02:50:32.190496263Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.8, entryPrice=0
+2025-12-14T02:50:32.190507582Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.81, entryPrice=0
+2025-12-14T02:50:32.190516458Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.83, entryPrice=0
+2025-12-14T02:50:32.190524641Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:32.345662379Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T02:50:33.084195419Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T02:50:33.084203400Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T02:50:33.084213644Z [inf]    "index": 0,
+2025-12-14T02:50:33.084220958Z [inf]    "message": {
+2025-12-14T02:50:33.084229150Z [inf]      "role": "assistant",
+2025-12-14T02:50:33.084237269Z [inf]      "content": "",
+2025-12-14T02:50:33.084244649Z [inf]      "refusal": null,
+2025-12-14T02:50:33.084252038Z [inf]      "annotations": []
+2025-12-14T02:50:33.084259105Z [inf]    },
+2025-12-14T02:50:33.084266479Z [inf]    "finish_reason": "length"
+2025-12-14T02:50:33.084273736Z [inf]  }
+2025-12-14T02:50:33.084282405Z [inf]  [GPT-Screen] ARBUSDT: Empty content, checking refusal: null
+2025-12-14T02:50:33.084295228Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:50:33.167810411Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:33.261927441Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:33.362643587Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:33.511849810Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:33.997563021Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:50:33.997572006Z [inf]    "index": 0,
+2025-12-14T02:50:33.997581773Z [inf]    "message": {
+2025-12-14T02:50:33.997591995Z [inf]      "role": "assistant",
+2025-12-14T02:50:33.997604036Z [inf]      "content": "",
+2025-12-14T02:50:33.997616206Z [inf]      "refusal": null,
+2025-12-14T02:50:33.997625268Z [inf]      "annotations": []
+2025-12-14T02:50:33.997635806Z [inf]    },
+2025-12-14T02:50:33.997646162Z [inf]    "finish_reason": "length"
+2025-12-14T02:50:33.997655400Z [inf]  }
+2025-12-14T02:50:33.997672227Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:50:33.997689786Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:50:33.997697391Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:34.141916744Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T02:50:34.141923895Z [inf]    "index": 0,
+2025-12-14T02:50:34.141930667Z [inf]    "message": {
+2025-12-14T02:50:34.141936434Z [inf]      "role": "assistant",
+2025-12-14T02:50:34.141942448Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T02:50:34.141948775Z [inf]      "refusal": null,
+2025-12-14T02:50:34.141955120Z [inf]      "annotations": []
+2025-12-14T02:50:34.141961088Z [inf]    },
+2025-12-14T02:50:34.141967393Z [inf]    "finish_reason": "stop"
+2025-12-14T02:50:34.141978845Z [inf]  }
+2025-12-14T02:50:34.141986822Z [inf]  [GPT-Screen] DOGEUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T02:50:34.141993314Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T02:50:34.394480159Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:34.544263054Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:34.555662258Z [inf]  [Engine] ❌ Position closed: XRPUSDT | PnL: 0.00% ($560.55) | Reason: sl
+2025-12-14T02:50:35.082708498Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:35.082716456Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:35.082723925Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:35.082731266Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:35.292446797Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:36.170267494Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:36.448799654Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:36.975988899Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:37.148059040Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:37.945571224Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:39.195636949Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:39.195658857Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:39.195667057Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:39.411678233Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:40.067322540Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:40.067332487Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:40.096421759Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:40.341077228Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:40.462118676Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:50:40.462124359Z [inf]    "index": 0,
+2025-12-14T02:50:40.462130970Z [inf]    "message": {
+2025-12-14T02:50:40.462138137Z [inf]      "role": "assistant",
+2025-12-14T02:50:40.462144004Z [inf]      "content": "",
+2025-12-14T02:50:40.462149679Z [inf]      "refusal": null,
+2025-12-14T02:50:40.462157826Z [inf]      "annotations": []
+2025-12-14T02:50:40.462164040Z [inf]    },
+2025-12-14T02:50:40.462169921Z [inf]    "finish_reason": "length"
+2025-12-14T02:50:40.462176829Z [inf]  }
+2025-12-14T02:50:40.462184195Z [inf]  [GPT-Screen] BNBUSDT: Empty content, checking refusal: null
+2025-12-14T02:50:40.462190336Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:50:40.524624594Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:50:40.524630259Z [inf]    "index": 0,
+2025-12-14T02:50:40.524635282Z [inf]    "message": {
+2025-12-14T02:50:40.524640614Z [inf]      "role": "assistant",
+2025-12-14T02:50:40.524645431Z [inf]      "content": "",
+2025-12-14T02:50:40.524650504Z [inf]      "refusal": null,
+2025-12-14T02:50:40.524655911Z [inf]      "annotations": []
+2025-12-14T02:50:40.524661122Z [inf]    },
+2025-12-14T02:50:40.524665701Z [inf]    "finish_reason": "length"
+2025-12-14T02:50:40.524670471Z [inf]  }
+2025-12-14T02:50:40.524674752Z [inf]  [GPT-Screen] LINKUSDT: Empty content, checking refusal: null
+2025-12-14T02:50:40.524679650Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:50:41.136334438Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:41.136341883Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:41.277651660Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:42.131579601Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:42.168369010Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:42.292058440Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:43.202528555Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.85, entryPrice=0
+2025-12-14T02:50:44.315338826Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-14T02:50:44.315353671Z [inf]    "index": 0,
+2025-12-14T02:50:44.315361567Z [inf]    "message": {
+2025-12-14T02:50:44.315369651Z [inf]      "role": "assistant",
+2025-12-14T02:50:44.315377870Z [inf]      "content": "",
+2025-12-14T02:50:44.315385625Z [inf]      "refusal": null,
+2025-12-14T02:50:44.315392812Z [inf]      "annotations": []
+2025-12-14T02:50:44.315399670Z [inf]    },
+2025-12-14T02:50:44.315406651Z [inf]    "finish_reason": "length"
+2025-12-14T02:50:44.315447798Z [inf]  }
+2025-12-14T02:50:44.315459493Z [inf]  [GPT-Screen] OPUSDT: Empty content, checking refusal: null
+2025-12-14T02:50:44.315468541Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:50:44.315628375Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:44.568074402Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:45.304375888Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.78, entryPrice=0
+2025-12-14T02:50:45.304382762Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.78, entryPrice=0
+2025-12-14T02:50:45.304387640Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.77, entryPrice=0
+2025-12-14T02:50:45.304392191Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.76, entryPrice=0
+2025-12-14T02:50:45.304397908Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.75, entryPrice=0
+2025-12-14T02:50:45.304402641Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.74, entryPrice=0
+2025-12-14T02:50:45.304409606Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.73, entryPrice=0
+2025-12-14T02:50:45.304428565Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.72, entryPrice=0
+2025-12-14T02:50:45.304437188Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.71, entryPrice=0
+2025-12-14T02:50:45.304443946Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.7, entryPrice=0
+2025-12-14T02:50:45.304461154Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.68, entryPrice=0
+2025-12-14T02:50:45.304469109Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.67, entryPrice=0
+2025-12-14T02:50:45.304591733Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.84, entryPrice=0
+2025-12-14T02:50:45.304599840Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.83, entryPrice=0
+2025-12-14T02:50:45.304606103Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.81, entryPrice=0
+2025-12-14T02:50:45.304612202Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.8, entryPrice=0
+2025-12-14T02:50:45.304618841Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.79, entryPrice=0
+2025-12-14T02:50:45.304623980Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.78, entryPrice=0
+2025-12-14T02:50:45.304629069Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.78, entryPrice=0
+2025-12-14T02:50:45.310380950Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.79144961, entryPrice=0
+2025-12-14T02:50:45.310387054Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.67, entryPrice=0
+2025-12-14T02:50:45.310393866Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T02:50:45.310400293Z [inf]    "index": 0,
+2025-12-14T02:50:45.310407954Z [inf]    "message": {
+2025-12-14T02:50:45.310413792Z [inf]      "role": "assistant",
+2025-12-14T02:50:45.310420383Z [inf]      "content": "",
+2025-12-14T02:50:45.310426338Z [inf]      "refusal": null,
+2025-12-14T02:50:45.310432574Z [inf]      "annotations": []
+2025-12-14T02:50:45.310439660Z [inf]    },
+2025-12-14T02:50:45.310446072Z [inf]    "finish_reason": "length"
+2025-12-14T02:50:45.310451955Z [inf]  }
+2025-12-14T02:50:45.310457832Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T02:50:45.310464576Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:50:46.141427910Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.67, entryPrice=0
+2025-12-14T02:50:46.514055026Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.66, entryPrice=0
+2025-12-14T02:50:47.215363522Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T02:50:47.215375286Z [inf]      "refusal": null,
+2025-12-14T02:50:47.215383307Z [inf]      "annotations": []
+2025-12-14T02:50:47.215390681Z [inf]    },
+2025-12-14T02:50:47.215397880Z [inf]    "finish_reason": "stop"
+2025-12-14T02:50:47.215407784Z [inf]  }
+2025-12-14T02:50:47.215413114Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.66, entryPrice=0
+2025-12-14T02:50:47.215423548Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:50:47.215427791Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T02:50:47.215433201Z [inf]    "index": 0,
+2025-12-14T02:50:47.215438292Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T02:50:47.215444317Z [inf]    "message": {
+2025-12-14T02:50:47.215452639Z [inf]      "role": "assistant",
+2025-12-14T02:50:47.218971075Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.67, entryPrice=0
+2025-12-14T02:50:48.092184284Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.66, entryPrice=0
+2025-12-14T02:50:48.092190952Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.65, entryPrice=0
+2025-12-14T02:50:48.092196973Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.64, entryPrice=0
+2025-12-14T02:50:48.092211330Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.63, entryPrice=0
+2025-12-14T02:50:48.092219220Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.62, entryPrice=0
+2025-12-14T02:50:48.092226542Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.61, entryPrice=0
+2025-12-14T02:50:48.092234946Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.6, entryPrice=0
+2025-12-14T02:50:48.171969548Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.72286047, entryPrice=0
+2025-12-14T02:50:48.180494949Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.59, entryPrice=0
+2025-12-14T02:50:49.156775576Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.59, entryPrice=0
+2025-12-14T02:50:49.456201187Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.6, entryPrice=0
+2025-12-14T02:50:49.563505186Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.6, entryPrice=0
+2025-12-14T02:50:49.568765804Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.59, entryPrice=0
+2025-12-14T02:50:49.568776615Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.58, entryPrice=0
+2025-12-14T02:50:49.568804519Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.57, entryPrice=0
+2025-12-14T02:50:49.568811314Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.56, entryPrice=0
+2025-12-14T02:50:49.569210659Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.55, entryPrice=0
+2025-12-14T02:50:49.569220227Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.54, entryPrice=0
+2025-12-14T02:50:49.569241755Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.53, entryPrice=0
+2025-12-14T02:50:49.569252750Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.52, entryPrice=0
+2025-12-14T02:50:49.569258466Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.51, entryPrice=0
+2025-12-14T02:50:49.569264966Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.5, entryPrice=0
+2025-12-14T02:50:49.569271827Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.49, entryPrice=0
+2025-12-14T02:50:49.569279509Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.48, entryPrice=0
+2025-12-14T02:50:49.569286606Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.47, entryPrice=0
+2025-12-14T02:50:49.569293950Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.46, entryPrice=0
+2025-12-14T02:50:49.572466203Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.45, entryPrice=0
+2025-12-14T02:50:49.572480581Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.44, entryPrice=0
+2025-12-14T02:50:49.572488446Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.43, entryPrice=0
+2025-12-14T02:50:49.572495511Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.42, entryPrice=0
+2025-12-14T02:50:49.572501032Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.41, entryPrice=0
+2025-12-14T02:50:49.572507633Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.4, entryPrice=0
+2025-12-14T02:50:50.205104433Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.39, entryPrice=0
+2025-12-14T02:50:50.205109285Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.4, entryPrice=0
+2025-12-14T02:50:50.383485803Z [inf]  [Engine] ETHUSDT: BUY (66%)
+2025-12-14T02:50:50.383500626Z [inf]  [Engine]   └─ Contexto de rango con sesgo alcista: aunque el ADX (12.7) indica tendencia débil/lateral, el precio ...
+2025-12-14T02:50:50.383506499Z [inf]  [Engine]   └─ Size: 3% | Leverage: 4x
+2025-12-14T02:50:50.383511751Z [inf]  [Engine]   └─ SL: $3108.20 | TP: $3130.00
+2025-12-14T02:50:50.383520671Z [inf]  [Engine] ETHUSDT: Updated SL: $3108.20 | TP: $3130.00
+2025-12-14T02:50:51.090141434Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.39, entryPrice=0
+2025-12-14T02:50:51.090148368Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.39, entryPrice=0
+2025-12-14T02:50:51.090155882Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.4, entryPrice=0
+2025-12-14T02:50:51.167654653Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.71053488, entryPrice=0
+2025-12-14T02:50:51.499168819Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.4, entryPrice=0
+2025-12-14T02:50:52.089212089Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.39, entryPrice=0
+2025-12-14T02:50:52.245606957Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.39, entryPrice=0
+2025-12-14T02:50:53.056279507Z [inf]    "message": {
+2025-12-14T02:50:53.056295164Z [inf]      "role": "assistant",
+2025-12-14T02:50:53.056306951Z [inf]      "content": "",
+2025-12-14T02:50:53.056315870Z [inf]      "refusal": null,
+2025-12-14T02:50:53.056336327Z [inf]    "finish_reason": "length"
+2025-12-14T02:50:53.056358457Z [inf]      "annotations": []
+2025-12-14T02:50:53.056359074Z [inf]  }
+2025-12-14T02:50:53.056365696Z [inf]    },
+2025-12-14T02:50:53.056369036Z [inf]  [GPT-Screen] AVAXUSDT: Empty content, checking refusal: null
+2025-12-14T02:50:53.056376552Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:50:53.056418760Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-14T02:50:53.056425670Z [inf]    "index": 0,
+2025-12-14T02:50:53.501078040Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.39, entryPrice=0
+2025-12-14T02:50:53.548129632Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-14T02:50:53.548143981Z [inf]    "index": 0,
+2025-12-14T02:50:53.548153297Z [inf]    "message": {
+2025-12-14T02:50:53.548163673Z [inf]      "role": "assistant",
+2025-12-14T02:50:53.548171772Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 68}",
+2025-12-14T02:50:53.548181109Z [inf]      "refusal": null,
+2025-12-14T02:50:53.548189480Z [inf]      "annotations": []
+2025-12-14T02:50:53.548198096Z [inf]    },
+2025-12-14T02:50:53.548206573Z [inf]    "finish_reason": "stop"
+2025-12-14T02:50:53.548214711Z [inf]  }
+2025-12-14T02:50:53.548229399Z [inf]  [GPT-Screen] ARBUSDT: score=68, direction=BUY, hasOpp=true
+2025-12-14T02:50:53.548237024Z [inf]  [Engine] ARBUSDT: Opportunity detected! (score: 68, direction: BUY)
+2025-12-14T02:50:54.094475099Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.36, entryPrice=0
+2025-12-14T02:50:54.094488248Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.35, entryPrice=0
+2025-12-14T02:50:54.094495358Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.34, entryPrice=0
+2025-12-14T02:50:54.094502207Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.33, entryPrice=0
+2025-12-14T02:50:54.094511055Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.32, entryPrice=0
+2025-12-14T02:50:54.094516878Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:54.094522889Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.31, entryPrice=0
+2025-12-14T02:50:54.094530895Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.3, entryPrice=0
+2025-12-14T02:50:54.094531879Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:54.094541359Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.29, entryPrice=0
+2025-12-14T02:50:54.094543136Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:54.094550607Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.26, entryPrice=0
+2025-12-14T02:50:54.094551381Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.28, entryPrice=0
+2025-12-14T02:50:54.094560178Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.27, entryPrice=0
+2025-12-14T02:50:54.094812239Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:50:54.094942525Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.39, entryPrice=0
+2025-12-14T02:50:54.094956221Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.38, entryPrice=0
+2025-12-14T02:50:54.094962660Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.37, entryPrice=0
+2025-12-14T02:50:54.165658599Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.26, entryPrice=0
+2025-12-14T02:50:54.175245739Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.61410853, entryPrice=0
+2025-12-14T02:50:55.178611708Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.27, entryPrice=0
+2025-12-14T02:50:55.178617554Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.26, entryPrice=0
+2025-12-14T02:50:55.178624711Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.27, entryPrice=0
+2025-12-14T02:50:55.178631128Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.27, entryPrice=0
+2025-12-14T02:50:55.178637117Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-14T02:50:55.178643813Z [inf]    "index": 0,
+2025-12-14T02:50:55.178650348Z [inf]    "message": {
+2025-12-14T02:50:55.178658490Z [inf]      "role": "assistant",
+2025-12-14T02:50:55.178664991Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-14T02:50:55.178672351Z [inf]      "refusal": null,
+2025-12-14T02:50:55.178679659Z [inf]      "annotations": []
+2025-12-14T02:50:55.178689207Z [inf]    },
+2025-12-14T02:50:55.178695313Z [inf]    "finish_reason": "stop"
+2025-12-14T02:50:55.178701664Z [inf]  }
+2025-12-14T02:50:55.178708554Z [inf]  [GPT-Screen] INJUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T02:50:55.178716341Z [inf]  [Engine] INJUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-14T02:50:55.178722685Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.26, entryPrice=0
+2025-12-14T02:50:55.178728894Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.27, entryPrice=0
+2025-12-14T02:50:56.188024374Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.26, entryPrice=0
+2025-12-14T02:50:56.213711096Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.26, entryPrice=0
+2025-12-14T02:50:57.040399534Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.26, entryPrice=0
+2025-12-14T02:50:57.040406385Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.25, entryPrice=0
+2025-12-14T02:50:57.040412944Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.22, entryPrice=0
+2025-12-14T02:50:57.129875129Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.21, entryPrice=0
+2025-12-14T02:50:57.175146256Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.41364341, entryPrice=0
+2025-12-14T02:50:57.381341074Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.21, entryPrice=0
+2025-12-14T02:50:58.363140787Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.2, entryPrice=0
+2025-12-14T02:50:59.387691038Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.2, entryPrice=0
+2025-12-14T02:50:59.581412469Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.2, entryPrice=0
+2025-12-14T02:50:59.583927515Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.19, entryPrice=0
+2025-12-14T02:50:59.583940414Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.18, entryPrice=0
+2025-12-14T02:50:59.583947108Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.16, entryPrice=0
+2025-12-14T02:50:59.583953381Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.15, entryPrice=0
+2025-12-14T02:50:59.583959416Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.14, entryPrice=0
+2025-12-14T02:50:59.583965088Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.13, entryPrice=0
+2025-12-14T02:50:59.583970272Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.11, entryPrice=0
+2025-12-14T02:50:59.583976909Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.1, entryPrice=0
+2025-12-14T02:50:59.583983132Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.09, entryPrice=0
+2025-12-14T02:50:59.583989502Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.08, entryPrice=0
+2025-12-14T02:50:59.583994709Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.07, entryPrice=0
+2025-12-14T02:50:59.587959397Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.06, entryPrice=0
+2025-12-14T02:50:59.587970054Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.05, entryPrice=0
+2025-12-14T02:50:59.587977160Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.04, entryPrice=0
+2025-12-14T02:50:59.587984083Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.03, entryPrice=0
+2025-12-14T02:50:59.587990620Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.02, entryPrice=0
+2025-12-14T02:50:59.587997099Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.01, entryPrice=0
+2025-12-14T02:51:00.329570019Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119, entryPrice=0
+2025-12-14T02:51:00.329577030Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.99, entryPrice=0
+2025-12-14T02:51:00.329583434Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.98, entryPrice=0
+2025-12-14T02:51:00.329590160Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.97, entryPrice=0
+2025-12-14T02:51:00.329596546Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.96, entryPrice=0
+2025-12-14T02:51:00.329603423Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.95, entryPrice=0
+2025-12-14T02:51:00.329609483Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.94, entryPrice=0
+2025-12-14T02:51:00.329616700Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.93, entryPrice=0
+2025-12-14T02:51:00.329623987Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.92, entryPrice=0
+2025-12-14T02:51:00.329630339Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.91, entryPrice=0
+2025-12-14T02:51:00.329636261Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.9, entryPrice=0
+2025-12-14T02:51:00.329642296Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.89, entryPrice=0
+2025-12-14T02:51:00.329648704Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.88, entryPrice=0
+2025-12-14T02:51:00.329655600Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.87, entryPrice=0
+2025-12-14T02:51:00.329661807Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.86, entryPrice=0
+2025-12-14T02:51:00.329683642Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.85, entryPrice=0
+2025-12-14T02:51:00.329692836Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.84, entryPrice=0
+2025-12-14T02:51:00.329701734Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.83, entryPrice=0
+2025-12-14T02:51:00.329709075Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.82, entryPrice=0
+2025-12-14T02:51:00.334147626Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.82, entryPrice=0
+2025-12-14T02:51:00.334155150Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.81, entryPrice=0
+2025-12-14T02:51:00.334162048Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.8, entryPrice=0
+2025-12-14T02:51:00.334169236Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.79, entryPrice=0
+2025-12-14T02:51:00.334175082Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.78, entryPrice=0
+2025-12-14T02:51:00.334180723Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.77, entryPrice=0
+2025-12-14T02:51:00.334186484Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.76, entryPrice=0
+2025-12-14T02:51:00.334193608Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.75, entryPrice=0
+2025-12-14T02:51:00.334200226Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.74, entryPrice=0
+2025-12-14T02:51:00.334206679Z [err]  [Engine] Invalid PnL calculation: currentPrice=3119.17385271, entryPrice=0
+2025-12-14T02:51:01.152972923Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.74, entryPrice=0
+2025-12-14T02:51:01.152976923Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.73, entryPrice=0
+2025-12-14T02:51:01.308296823Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.73, entryPrice=0
+2025-12-14T02:51:01.332115620Z [inf]  [GPT-Screen] BNBUSDT: Empty content, checking refusal: null
+2025-12-14T02:51:01.332115708Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-14T02:51:01.332131732Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:51:01.332137978Z [inf]    "index": 0,
+2025-12-14T02:51:01.332147669Z [inf]    "message": {
+2025-12-14T02:51:01.332155813Z [inf]      "role": "assistant",
+2025-12-14T02:51:01.332166991Z [inf]      "content": "",
+2025-12-14T02:51:01.332174985Z [inf]      "refusal": null,
+2025-12-14T02:51:01.332182118Z [inf]      "annotations": []
+2025-12-14T02:51:01.332189989Z [inf]    },
+2025-12-14T02:51:01.332197687Z [inf]    "finish_reason": "length"
+2025-12-14T02:51:01.332205512Z [inf]  }
+2025-12-14T02:51:01.472689752Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.74, entryPrice=0
+2025-12-14T02:51:02.213403586Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.73, entryPrice=0
+2025-12-14T02:51:02.213410521Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.73, entryPrice=0
+2025-12-14T02:51:02.357830672Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.73, entryPrice=0
+2025-12-14T02:51:03.212499045Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.69, entryPrice=0
+2025-12-14T02:51:03.212509369Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.68, entryPrice=0
+2025-12-14T02:51:03.212515522Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.67, entryPrice=0
+2025-12-14T02:51:03.212525613Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.66, entryPrice=0
+2025-12-14T02:51:03.212531884Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.65, entryPrice=0
+2025-12-14T02:51:03.212539104Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.64, entryPrice=0
+2025-12-14T02:51:03.212671568Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-14T02:51:03.212683156Z [inf]    "index": 0,
+2025-12-14T02:51:03.212693241Z [inf]    "message": {
+2025-12-14T02:51:03.212704221Z [inf]      "role": "assistant",
+2025-12-14T02:51:03.212715278Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-14T02:51:03.212723408Z [inf]      "refusal": null,
+2025-12-14T02:51:03.212731171Z [inf]      "annotations": []
+2025-12-14T02:51:03.212738902Z [inf]    },
+2025-12-14T02:51:03.212746245Z [inf]    "finish_reason": "stop"
+2025-12-14T02:51:03.212754792Z [inf]  }
+2025-12-14T02:51:03.212767194Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T02:51:03.212774934Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-14T02:51:03.212783430Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.74, entryPrice=0
+2025-12-14T02:51:03.212792834Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.73, entryPrice=0
+2025-12-14T02:51:03.212800913Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.72, entryPrice=0
+2025-12-14T02:51:03.212807942Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.71, entryPrice=0
+2025-12-14T02:51:03.212815867Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.7, entryPrice=0
+2025-12-14T02:51:03.218270975Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.63, entryPrice=0
+2025-12-14T02:51:03.218274936Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.61, entryPrice=0
+2025-12-14T02:51:03.218278880Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.6, entryPrice=0
+2025-12-14T02:51:03.218283233Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.59, entryPrice=0
+2025-12-14T02:51:03.218288049Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.58, entryPrice=0
+2025-12-14T02:51:03.218296189Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.57, entryPrice=0
+2025-12-14T02:51:03.218300410Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.56, entryPrice=0
+2025-12-14T02:51:03.218306457Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.55, entryPrice=0
+2025-12-14T02:51:03.218310591Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.53, entryPrice=0
+2025-12-14T02:51:03.218314816Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.52, entryPrice=0
+2025-12-14T02:51:03.218319302Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.51, entryPrice=0
+2025-12-14T02:51:03.219504763Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.5, entryPrice=0
+2025-12-14T02:51:03.219510241Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.94594574, entryPrice=0
+2025-12-14T02:51:03.219514480Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.49, entryPrice=0
+2025-12-14T02:51:03.219518241Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.48, entryPrice=0
+2025-12-14T02:51:03.219523004Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.47, entryPrice=0
+2025-12-14T02:51:03.219528918Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.46, entryPrice=0
+2025-12-14T02:51:03.219534116Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.45, entryPrice=0
+2025-12-14T02:51:03.219555041Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.44, entryPrice=0
+2025-12-14T02:51:03.221915625Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.29, entryPrice=0
+2025-12-14T02:51:03.221925831Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.28, entryPrice=0
+2025-12-14T02:51:03.222008614Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.43, entryPrice=0
+2025-12-14T02:51:03.222017929Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.42, entryPrice=0
+2025-12-14T02:51:03.222031776Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.41, entryPrice=0
+2025-12-14T02:51:03.222041605Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.4, entryPrice=0
+2025-12-14T02:51:03.222049851Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.39, entryPrice=0
+2025-12-14T02:51:03.222070606Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.38, entryPrice=0
+2025-12-14T02:51:03.222078948Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.37, entryPrice=0
+2025-12-14T02:51:03.222087199Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.36, entryPrice=0
+2025-12-14T02:51:03.222106290Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.35, entryPrice=0
+2025-12-14T02:51:03.222114183Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:03.222131664Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.33, entryPrice=0
+2025-12-14T02:51:03.222143988Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.32, entryPrice=0
+2025-12-14T02:51:03.222158434Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.31, entryPrice=0
+2025-12-14T02:51:03.222175522Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.3, entryPrice=0
+2025-12-14T02:51:03.336494446Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.29, entryPrice=0
+2025-12-14T02:51:04.243686610Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.29, entryPrice=0
+2025-12-14T02:51:04.243693558Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.3, entryPrice=0
+2025-12-14T02:51:04.243699847Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.32, entryPrice=0
+2025-12-14T02:51:04.243704777Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:04.243712713Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.35, entryPrice=0
+2025-12-14T02:51:04.243718359Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.36, entryPrice=0
+2025-12-14T02:51:04.243723585Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.37, entryPrice=0
+2025-12-14T02:51:04.243729391Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.38, entryPrice=0
+2025-12-14T02:51:04.243734114Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.39, entryPrice=0
+2025-12-14T02:51:04.243739001Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.4, entryPrice=0
+2025-12-14T02:51:04.243744910Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.41, entryPrice=0
+2025-12-14T02:51:04.243749505Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.42, entryPrice=0
+2025-12-14T02:51:04.243754474Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.43, entryPrice=0
+2025-12-14T02:51:04.243759676Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.44, entryPrice=0
+2025-12-14T02:51:04.243765678Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.45, entryPrice=0
+2025-12-14T02:51:04.243771877Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.46, entryPrice=0
+2025-12-14T02:51:04.243777925Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.48, entryPrice=0
+2025-12-14T02:51:04.243783484Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.49, entryPrice=0
+2025-12-14T02:51:04.243788040Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.5, entryPrice=0
+2025-12-14T02:51:04.247670231Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.56, entryPrice=0
+2025-12-14T02:51:04.247820164Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.52, entryPrice=0
+2025-12-14T02:51:04.247828587Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.53, entryPrice=0
+2025-12-14T02:51:04.247836434Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.54, entryPrice=0
+2025-12-14T02:51:04.247847930Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.55, entryPrice=0
+2025-12-14T02:51:04.292265240Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-14T02:51:04.292274163Z [inf]    "index": 0,
+2025-12-14T02:51:04.292281479Z [inf]    "message": {
+2025-12-14T02:51:04.292289052Z [inf]      "role": "assistant",
+2025-12-14T02:51:04.292296014Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-14T02:51:04.292303596Z [inf]      "refusal": null,
+2025-12-14T02:51:04.292311645Z [inf]      "annotations": []
+2025-12-14T02:51:04.292319486Z [inf]    },
+2025-12-14T02:51:04.292326540Z [inf]    "finish_reason": "stop"
+2025-12-14T02:51:04.292333327Z [inf]  }
+2025-12-14T02:51:04.292340572Z [inf]  [GPT-Screen] XRPUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-14T02:51:04.292346795Z [inf]  [Engine] XRPUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-14T02:51:04.506780389Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.56, entryPrice=0
+2025-12-14T02:51:04.590325091Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.55, entryPrice=0
+2025-12-14T02:51:04.590333918Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.54, entryPrice=0
+2025-12-14T02:51:04.590340063Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.53, entryPrice=0
+2025-12-14T02:51:04.590346515Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.52, entryPrice=0
+2025-12-14T02:51:04.590357247Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.51, entryPrice=0
+2025-12-14T02:51:04.590363890Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.5, entryPrice=0
+2025-12-14T02:51:04.590369878Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.49, entryPrice=0
+2025-12-14T02:51:04.590376325Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.48, entryPrice=0
+2025-12-14T02:51:04.590397103Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.47, entryPrice=0
+2025-12-14T02:51:04.590404065Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.45, entryPrice=0
+2025-12-14T02:51:04.590419698Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.44, entryPrice=0
+2025-12-14T02:51:04.590426681Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.43, entryPrice=0
+2025-12-14T02:51:04.590433195Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.41, entryPrice=0
+2025-12-14T02:51:04.596337175Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.4, entryPrice=0
+2025-12-14T02:51:04.596345711Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.38, entryPrice=0
+2025-12-14T02:51:04.596352860Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.36, entryPrice=0
+2025-12-14T02:51:04.596360991Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.35, entryPrice=0
+2025-12-14T02:51:05.204359689Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:05.548970477Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:06.173237674Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:06.173244259Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:06.174285702Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.69500775, entryPrice=0
+2025-12-14T02:51:07.105611096Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:07.519467150Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-14T02:51:07.519478078Z [inf]    "index": 0,
+2025-12-14T02:51:07.519484704Z [inf]    "message": {
+2025-12-14T02:51:07.519491301Z [inf]      "role": "assistant",
+2025-12-14T02:51:07.519497729Z [inf]      "content": "",
+2025-12-14T02:51:07.519503333Z [inf]      "refusal": null,
+2025-12-14T02:51:07.519508489Z [inf]      "annotations": []
+2025-12-14T02:51:07.519513206Z [inf]    },
+2025-12-14T02:51:07.519518705Z [inf]    "finish_reason": "length"
+2025-12-14T02:51:07.519525989Z [inf]  }
+2025-12-14T02:51:07.519531661Z [inf]  [GPT-Screen] BTCUSDT: Empty content, checking refusal: null
+2025-12-14T02:51:07.519536347Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:51:08.169940105Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:08.169946436Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:08.209537069Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:51:08.209547413Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:51:08.224546440Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:08.447664942Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:51:08.458011077Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T02:51:09.148755911Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:09.148812495Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.34, entryPrice=0
+2025-12-14T02:51:09.148818888Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.33, entryPrice=0
+2025-12-14T02:51:09.148824327Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.3, entryPrice=0
+2025-12-14T02:51:09.148902613Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.29, entryPrice=0
+2025-12-14T02:51:09.167647975Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.60803101, entryPrice=0
+2025-12-14T02:51:10.430447874Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.28, entryPrice=0
+2025-12-14T02:51:10.430466247Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.27, entryPrice=0
+2025-12-14T02:51:10.430477667Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.26, entryPrice=0
+2025-12-14T02:51:10.430486067Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.25, entryPrice=0
+2025-12-14T02:51:10.430494358Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.24, entryPrice=0
+2025-12-14T02:51:10.432721152Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.23, entryPrice=0
+2025-12-14T02:51:10.432730409Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.22, entryPrice=0
+2025-12-14T02:51:10.432736947Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.21, entryPrice=0
+2025-12-14T02:51:10.584422867Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:11.189331302Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.21, entryPrice=0
+2025-12-14T02:51:11.316514565Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:11.575984054Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:12.183521734Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.21, entryPrice=0
+2025-12-14T02:51:12.183527675Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.32933333, entryPrice=0
+2025-12-14T02:51:12.188164834Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-14T02:51:12.188172294Z [inf]    "index": 0,
+2025-12-14T02:51:12.188178329Z [inf]    "message": {
+2025-12-14T02:51:12.188184071Z [inf]      "role": "assistant",
+2025-12-14T02:51:12.188189817Z [inf]      "content": "",
+2025-12-14T02:51:12.188196823Z [inf]      "refusal": null,
+2025-12-14T02:51:12.188202146Z [inf]      "annotations": []
+2025-12-14T02:51:12.188207820Z [inf]    },
+2025-12-14T02:51:12.188213585Z [inf]    "finish_reason": "length"
+2025-12-14T02:51:12.188218315Z [inf]  }
+2025-12-14T02:51:12.188223848Z [inf]  [GPT-Screen] SUIUSDT: Empty content, checking refusal: null
+2025-12-14T02:51:12.188228814Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:51:12.450413691Z [inf]  [Engine] ARBUSDT: HOLD (58%)
+2025-12-14T02:51:12.450421411Z [inf]  [Engine]   └─ Técnicamente ARB está en contexto alcista para scalping: precio por encima de EMA9/EMA21/SMA50 (stac...
+2025-12-14T02:51:13.227103744Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:13.227114922Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:13.227124737Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:13.315830229Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:14.309966311Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-14T02:51:14.309975779Z [inf]    "index": 0,
+2025-12-14T02:51:14.309981202Z [inf]    "message": {
+2025-12-14T02:51:14.309987483Z [inf]      "role": "assistant",
+2025-12-14T02:51:14.309993483Z [inf]      "content": "",
+2025-12-14T02:51:14.310000280Z [inf]      "refusal": null,
+2025-12-14T02:51:14.310006150Z [inf]      "annotations": []
+2025-12-14T02:51:14.310012735Z [inf]    },
+2025-12-14T02:51:14.310019463Z [inf]    "finish_reason": "length"
+2025-12-14T02:51:14.310025427Z [inf]  }
+2025-12-14T02:51:14.310030958Z [inf]  [GPT-Screen] SOLUSDT: Empty content, checking refusal: null
+2025-12-14T02:51:14.310036274Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T02:51:14.310043055Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:14.310050264Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.21, entryPrice=0
+2025-12-14T02:51:14.479140668Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:15.388954186Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:15.388960684Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.21, entryPrice=0
+2025-12-14T02:51:15.388969116Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:15.388975957Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:15.388982195Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.33189147, entryPrice=0
+2025-12-14T02:51:15.388989294Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.21, entryPrice=0
+2025-12-14T02:51:15.455475717Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:16.433238192Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-14T02:51:16.433242094Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:16.433276389Z [inf]      "role": "assistant",
+2025-12-14T02:51:16.433284455Z [inf]      "refusal": null,
+2025-12-14T02:51:16.433297924Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 28}",
+2025-12-14T02:51:16.433298137Z [inf]      "annotations": []
+2025-12-14T02:51:16.433307425Z [inf]    },
+2025-12-14T02:51:16.433325251Z [inf]    "index": 0,
+2025-12-14T02:51:16.433326890Z [inf]    "finish_reason": "stop"
+2025-12-14T02:51:16.433334311Z [inf]    "message": {
+2025-12-14T02:51:16.433337384Z [inf]  }
+2025-12-14T02:51:16.433347269Z [inf]  [GPT-Screen] LINKUSDT: score=28, direction=NONE, hasOpp=false
+2025-12-14T02:51:16.433353497Z [inf]  [Engine] LINKUSDT: No opportunity (score: 28) - skipping full analysis
+2025-12-14T02:51:17.295331624Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.21, entryPrice=0
+2025-12-14T02:51:17.295336126Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:17.295340403Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.2, entryPrice=0
+2025-12-14T02:51:17.295344576Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.19, entryPrice=0
+2025-12-14T02:51:17.295348369Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.17, entryPrice=0
+2025-12-14T02:51:17.295352799Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.16, entryPrice=0
+2025-12-14T02:51:17.295357553Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.15, entryPrice=0
+2025-12-14T02:51:18.151947333Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.16, entryPrice=0
+2025-12-14T02:51:18.175451008Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.24316279, entryPrice=0
+2025-12-14T02:51:18.289277950Z [err]  [Engine] Invalid PnL calculation: currentPrice=3118.15, entryPrice=0
