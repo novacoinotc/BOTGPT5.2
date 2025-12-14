@@ -1,0 +1,236 @@
+2025-12-14T04:28:39.000000000Z [inf]  Starting Container
+2025-12-14T04:28:40.247028624Z [inf]  [Engine] Account balance: $4623.67
+2025-12-14T04:28:40.247032989Z [inf]  [Engine] Available balance: $3726.35
+2025-12-14T04:28:40.603816937Z [inf]  [Engine] Found 6 open positions
+2025-12-14T04:28:40.603822919Z [inf]  [Engine] Bot started successfully
+2025-12-14T04:28:40.603827150Z [inf]  
+2025-12-14T04:28:40.603832275Z [inf]  [Main] Bot is ready!
+2025-12-14T04:28:40.603836419Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-14T04:28:40.603840818Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-14T04:28:40.603846018Z [inf]  
+2025-12-14T04:28:41.456034208Z [inf]  [WS] Connected to Binance
+2025-12-14T04:28:43.009895366Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.162864419Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.183129900Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.193209155Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.203414864Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.223479687Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.261242161Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.524929934Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.765778432Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.769901481Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.841581597Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.841590498Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.863427498Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:43.883402546Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.058222176Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.129478681Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.129484839Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.201363300Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.338872785Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.338879192Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.348660130Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.369076422Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.574356049Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.578029781Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.582765362Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.602756500Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.684787349Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.693666067Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.962047083Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.962050879Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:44.962054865Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:45.172045287Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:45.172050186Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:45.186282234Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:45.257640504Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:45.257645261Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:45.580118515Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.002811918Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.002817521Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.012746288Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.349951816Z [inf]  [Engine] BNBUSDT: Position update due (29428109min since last GPT analysis)
+2025-12-14T04:28:46.349957608Z [inf]  [Engine] XRPUSDT: Position update due (29428109min since last GPT analysis)
+2025-12-14T04:28:46.349963379Z [inf]  [Engine] SOLUSDT: Position update due (29428109min since last GPT analysis)
+2025-12-14T04:28:46.359229211Z [inf]  [Engine] ETHUSDT: Position update due (29428109min since last GPT analysis)
+2025-12-14T04:28:46.359236754Z [inf]  [Engine] BTCUSDT: Position update due (29428109min since last GPT analysis)
+2025-12-14T04:28:46.363989331Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.363997650Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.481344337Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.604801131Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604812702Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604821761Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.604821766Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604826838Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604830905Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604833690Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604839447Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604840334Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604844581Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604849967Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604852862Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604859332Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.604865463Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.664463324Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.735219426Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.754199491Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.758155956Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.814361218Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.814369567Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.814374928Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.851079488Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:46.851085868Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.988022003Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:46.988027683Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:28:47.273015354Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.541348744Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.541354798Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.541358757Z [inf]  [Engine] 🧠 Learned: En señales débiles (confianza 0%), evitar entrar; esperar confirmación con RSI, volumen y order book alineados.
+2025-12-14T04:28:47.541362233Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.541366404Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.541370224Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.541374432Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.804329189Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.804336733Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.804343175Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.804364382Z [inf]  [Engine] 🧠 Learned: En stop muy ajustado tras entrada rápida, usar stop más amplio o trailing para dejar correr ganancias
+2025-12-14T04:28:47.804384859Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:47.882677372Z [inf]  [Engine] ❌ Position closed: BNBUSDT | PnL: -0.04% ($-0.04) | Reason: tp
+2025-12-14T04:28:48.160999886Z [inf]  [Engine] ✅ Position closed: ETHUSDT | PnL: +0.05% ($0.41) | Reason: sl
+2025-12-14T04:28:48.161007771Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:48.321429591Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:48.321438498Z [inf]  [Engine] 🧠 Learned: En Order Book Imbalance 0%, evitar abrir longs hasta ver confirmación de demanda/volumen creciente.
+2025-12-14T04:28:48.333091507Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:48.470776152Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:48.541705422Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:48.635793259Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:48.673738889Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:48.724365420Z [inf]  [Engine] ❌ Position closed: BTCUSDT | PnL: -0.03% ($-0.19) | Reason: tp
+2025-12-14T04:28:48.724378055Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:48.724388081Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:48.901064495Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:48.901512734Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:49.170817139Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:49.170822101Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:49.431930069Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:49.717493573Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:49.853898244Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:50.120384283Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:50.120391237Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:50.120395769Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:50.120399869Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:50.258021151Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:50.258029136Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:50.848618003Z [inf]  [Engine] ✅ Position closed: XRPUSDT | PnL: +0.12% ($1.42) | Reason: sl
+2025-12-14T04:28:50.848622900Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:50.848627593Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:50.984139220Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:51.126628472Z [inf]  [Engine] ✅ Position closed: SOLUSDT | PnL: +0.12% ($0.49) | Reason: sl
+2025-12-14T04:28:51.299527027Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-14T04:28:52.116940918Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:28:52.116950957Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping
+2025-12-14T04:28:59.111135287Z [inf]  [Engine] SOLUSDT: BUY (58%)
+2025-12-14T04:28:59.111139909Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $132.20 | TP: $133.20
+2025-12-14T04:29:01.375271291Z [inf]  [Engine] XRPUSDT: HOLD (56%)
+2025-12-14T04:29:02.532807536Z [inf]  [Engine] ETHUSDT: HOLD (44%)
+2025-12-14T04:29:04.056993911Z [inf]  [Engine] BNBUSDT: SELL (58%)
+2025-12-14T04:29:04.057002590Z [inf]  [Engine]   └─ Size: 2% | Lev: 4x | SL: $899.10 | TP: $894.60
+2025-12-14T04:29:04.620130546Z [inf]  [Engine] BTCUSDT: SELL (56%)
+2025-12-14T04:29:04.620137925Z [inf]  [Engine]   └─ Size: 3% | Lev: 3x | SL: $90480.00 | TP: $89900.00
+2025-12-14T04:29:54.845133496Z [inf]  [GPT-Screen] BTCUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-14T04:29:54.845139430Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-14T04:29:54.845144032Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:29:54.845147965Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:29:54.845152202Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:29:54.845156729Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:30:14.845065296Z [inf]  [Engine] BTCUSDT: BUY (58%)
+2025-12-14T04:30:14.845074484Z [inf]  [Engine]   └─ Size: 2% | Lev: 3x | SL: $90140.00 | TP: $90400.00
+2025-12-14T04:30:14.845082800Z [inf]  [Engine] Opening BUY BTCUSDT:
+2025-12-14T04:30:14.845090270Z [inf]  [Engine]   └─ Quantity: 0.003 @ ~$90260.80
+2025-12-14T04:30:14.845097682Z [inf]  [Engine]   └─ Leverage: 3x
+2025-12-14T04:30:14.845104697Z [inf]  [Engine]   └─ Capital used: $89.29 (2%)
+2025-12-14T04:30:14.845110027Z [inf]  [Engine]   └─ Position value: $267.86
+2025-12-14T04:30:14.845115541Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=90260.8
+2025-12-14T04:30:14.845120950Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:30:14.845127889Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:30:14.845133613Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:30:14.845139507Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:30:14.845144719Z [inf]  [Engine] Position opened: LONG BTCUSDT @ $90260.80
+2025-12-14T04:30:14.845150134Z [inf]  [Engine]   └─ SL: $90140.00 (0.13%)
+2025-12-14T04:30:14.845155312Z [inf]  [Engine]   └─ TP: $90400.00 (0.15%)
+2025-12-14T04:30:24.410176859Z [inf]  [GPT-Screen] ETHUSDT: Empty content, checking refusal: null
+2025-12-14T04:30:24.410184772Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-14T04:30:44.413363318Z [inf]  [GPT-Screen] BNBUSDT: score=40, direction=SELL, hasOpp=false
+2025-12-14T04:30:44.413370138Z [inf]  [Engine] BNBUSDT: No opportunity (score: 40) - skipping
+2025-12-14T04:30:44.413374471Z [inf]  [Engine] BTCUSDT: Position update due (29428111min since last GPT analysis)
+2025-12-14T04:30:44.413378890Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:30:44.413382733Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:30:44.413388073Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:30:44.413391981Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:30:46.492954942Z [inf]  [GPT-Screen] SOLUSDT: score=22, direction=NONE, hasOpp=false
+2025-12-14T04:30:46.492963178Z [inf]  [Engine] SOLUSDT: No opportunity (score: 22) - skipping
+2025-12-14T04:30:55.619114171Z [inf]  [GPT-Screen] XRPUSDT: score=45, direction=SELL, hasOpp=false
+2025-12-14T04:30:55.619124869Z [inf]  [Engine] XRPUSDT: No opportunity (score: 45) - skipping
+2025-12-14T04:30:58.098885266Z [inf]  [Engine] BTCUSDT: BUY (55%)
+2025-12-14T04:30:58.098889513Z [inf]  [Engine]   └─ Size: 3% | Lev: 3x | SL: $90145.00 | TP: $90440.00
+2025-12-14T04:30:58.098894111Z [inf]  [Engine] BTCUSDT: Updated SL: $90145.00 | TP: $90440.00
+2025-12-14T04:31:02.421881030Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-14T04:31:02.421891726Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping
+2025-12-14T04:31:08.427842597Z [inf]  [GPT-Screen] ETHUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-14T04:31:08.427847590Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-14T04:31:08.637663936Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:08.637667889Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:08.883330652Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:08.975073183Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:28.990129537Z [inf]  [Engine] ETHUSDT: BUY (62%)
+2025-12-14T04:31:28.990130425Z [inf]  [Engine] Position opened: LONG ETHUSDT @ $3118.29
+2025-12-14T04:31:28.990141974Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $3109.20 | TP: $3127.10
+2025-12-14T04:31:28.990142379Z [inf]  [Engine]   └─ SL: $3109.20 (0.29%)
+2025-12-14T04:31:28.990148243Z [inf]  [Engine] Opening BUY ETHUSDT:
+2025-12-14T04:31:28.990151772Z [inf]  [Engine]   └─ TP: $3127.10 (0.28%)
+2025-12-14T04:31:28.990154784Z [inf]  [Engine]   └─ Quantity: 0.168 @ ~$3118.29
+2025-12-14T04:31:28.990158983Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T04:31:28.990164123Z [inf]  [Engine]   └─ Capital used: $131.22 (3%)
+2025-12-14T04:31:28.990168340Z [inf]  [Engine]   └─ Position value: $524.88
+2025-12-14T04:31:28.990178604Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=3118.29
+2025-12-14T04:31:28.990187145Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:28.990191501Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:28.990196185Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:28.990199978Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:48.999188395Z [inf]  [GPT-Screen] BNBUSDT: score=35, direction=SELL, hasOpp=false
+2025-12-14T04:31:48.999192882Z [inf]  [Engine] BNBUSDT: No opportunity (score: 35) - skipping
+2025-12-14T04:31:48.999199067Z [inf]  [Engine] ETHUSDT: Position update due (29428112min since last GPT analysis)
+2025-12-14T04:31:48.999205340Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:48.999209182Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:48.999212942Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:48.999216902Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:31:51.466760877Z [inf]  [GPT-Screen] SOLUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-14T04:31:51.466767781Z [inf]  [Engine] SOLUSDT: No opportunity (score: 35) - skipping
+2025-12-14T04:31:52.467359753Z [inf]  [Engine] ETHUSDT: BUY (58%)
+2025-12-14T04:31:52.467375194Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $3109.60 | TP: $3127.40
+2025-12-14T04:31:52.467386066Z [inf]  [Engine] ETHUSDT: Updated SL: $3109.60 | TP: $3127.40
+2025-12-14T04:31:57.172312352Z [inf]  [GPT-Screen] XRPUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:31:57.172316525Z [inf]  [Engine] XRPUSDT: No opportunity (score: 25) - skipping
+2025-12-14T04:32:02.555647069Z [inf]  [GPT-Screen] BNBUSDT: score=62, direction=SELL, hasOpp=true
+2025-12-14T04:32:02.555655838Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 62, direction: SELL)
+2025-12-14T04:32:02.813016638Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:32:03.027116858Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:32:03.046777446Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:32:03.067259662Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:32:03.349811714Z [inf]  [GPT-Screen] DOGEUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-14T04:32:03.349818695Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 25) - skipping
+2025-12-14T04:32:23.404771083Z [inf]  [Engine]   └─ SL: $894.90 (0.23%)
+2025-12-14T04:32:23.404780595Z [inf]  [Engine]   └─ TP: $898.90 (0.22%)
+2025-12-14T04:32:23.404833840Z [inf]  [Engine] BNBUSDT: BUY (58%)
+2025-12-14T04:32:23.404837607Z [inf]  [Engine]   └─ Size: 2% | Lev: 4x | SL: $894.90 | TP: $898.90
+2025-12-14T04:32:23.404842127Z [inf]  [Engine] Opening BUY BNBUSDT:
+2025-12-14T04:32:23.404846966Z [inf]  [Engine]   └─ Quantity: 0.38 @ ~$896.93
+2025-12-14T04:32:23.404850751Z [inf]  [Engine]   └─ Leverage: 4x
+2025-12-14T04:32:23.404854359Z [inf]  [Engine]   └─ Capital used: $84.86 (2%)
+2025-12-14T04:32:23.404858495Z [inf]  [Engine]   └─ Position value: $339.44
+2025-12-14T04:32:23.404863975Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=896.93
+2025-12-14T04:32:23.404867791Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:32:23.404871451Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:32:23.404875108Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:32:23.404879664Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-14T04:32:23.404884027Z [inf]  [Engine] Position opened: LONG BNBUSDT @ $896.93
