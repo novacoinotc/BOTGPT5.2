@@ -354,8 +354,8 @@ export class TradingEngine extends EventEmitter {
       }
     } else if (hasPosition) {
       // Update TP/SL if GPT suggests new values
-      const position = this.state.currentPositions.get(symbol)!;
-      if (decision.takeProfit && decision.stopLoss) {
+      const position = this.state.currentPositions.get(symbol);
+      if (position && decision.takeProfit && decision.stopLoss) {
         position.takeProfit = decision.takeProfit;
         position.stopLoss = decision.stopLoss;
         console.log(`[Engine] ${symbol}: Updated SL: $${decision.stopLoss.toFixed(2)} | TP: $${decision.takeProfit.toFixed(2)}`);
