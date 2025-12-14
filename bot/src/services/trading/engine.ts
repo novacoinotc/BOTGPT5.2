@@ -330,10 +330,11 @@ export class TradingEngine extends EventEmitter {
     this.state.lastDecision.set(symbol, decision);
     this.emit('analysis', { symbol, analysis, decision });
 
-    // Log decision
+    // Log decision with dynamic precision for low-price assets
+    const logPrecision = analysis.price < 1 ? 5 : analysis.price < 100 ? 4 : 2;
     console.log(`[Engine] ${symbol}: ${decision.action} (${decision.confidence}%)`);
     if (decision.action !== 'HOLD') {
-      console.log(`[Engine]   └─ Size: ${decision.positionSizePercent}% | Lev: ${decision.leverage}x | SL: $${decision.stopLoss?.toFixed(2)} | TP: $${decision.takeProfit?.toFixed(2)}`);
+      console.log(`[Engine]   └─ Size: ${decision.positionSizePercent}% | Lev: ${decision.leverage}x | SL: $${decision.stopLoss?.toFixed(logPrecision)} | TP: $${decision.takeProfit?.toFixed(logPrecision)}`);
     }
 
     // Execute decision
@@ -501,6 +502,7 @@ export class TradingEngine extends EventEmitter {
         gptConfidence: decision.confidence,
         gptReasoning: decision.reasoning,
         positionSizePercent,
+        lastGptUpdate: Date.now(), // Initialize for new positions too
       };
 
       this.state.currentPositions.set(symbol, position);
@@ -511,9 +513,11 @@ export class TradingEngine extends EventEmitter {
 
       this.emit('positionOpened', position);
 
-      console.log(`[Engine] Position opened: ${position.side} ${symbol} @ $${entryPrice.toFixed(2)}`);
-      console.log(`[Engine]   └─ SL: $${stopLoss.toFixed(2)} (${((Math.abs(entryPrice - stopLoss) / entryPrice) * 100).toFixed(2)}%)`);
-      console.log(`[Engine]   └─ TP: $${takeProfit.toFixed(2)} (${((Math.abs(takeProfit - entryPrice) / entryPrice) * 100).toFixed(2)}%)`);
+      // Dynamic precision for logging (more decimals for low-price assets)
+      const logPrecision = entryPrice < 1 ? 5 : entryPrice < 100 ? 4 : 2;
+      console.log(`[Engine] Position opened: ${position.side} ${symbol} @ $${entryPrice.toFixed(logPrecision)}`);
+      console.log(`[Engine]   └─ SL: $${stopLoss.toFixed(logPrecision)} (${((Math.abs(entryPrice - stopLoss) / entryPrice) * 100).toFixed(2)}%)`);
+      console.log(`[Engine]   └─ TP: $${takeProfit.toFixed(logPrecision)} (${((Math.abs(takeProfit - entryPrice) / entryPrice) * 100).toFixed(2)}%)`);
     } catch (error: any) {
       console.error(`[Engine] Failed to open position:`, error.message);
       this.emit('error', { type: 'openPosition', error: error.message, symbol });
