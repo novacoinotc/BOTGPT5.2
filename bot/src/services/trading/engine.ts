@@ -21,6 +21,7 @@ interface Position {
   gptConfidence: number;
   gptReasoning: string;
   positionSizePercent: number;
+  lastGptUpdate?: number; // Timestamp of last GPT analysis for this position
 }
 
 interface BotState {
@@ -46,10 +47,10 @@ export class TradingEngine extends EventEmitter {
     lastDecision: new Map(),
   };
 
+  // COST OPTIMIZED: Reduced from 12 to 6 main pairs
   private symbols: string[] = [
-    'BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT',
-    'XRPUSDT', 'LINKUSDT', 'AVAXUSDT', 'DOGEUSDT',
-    'SUIUSDT', 'ARBUSDT', 'OPUSDT', 'INJUSDT'
+    'BTCUSDT', 'ETHUSDT', 'BNBUSDT',
+    'SOLUSDT', 'XRPUSDT', 'DOGEUSDT'
   ];
   private analysisInterval: NodeJS.Timeout | null = null;
   private positionCheckInterval: NodeJS.Timeout | null = null;
@@ -227,7 +228,7 @@ export class TradingEngine extends EventEmitter {
   }
 
   private startAnalysisLoop(): void {
-    // Analyze every 30 seconds
+    // COST OPTIMIZED: Analyze every 60 seconds (was 30s)
     this.analysisInterval = setInterval(async () => {
       if (!this.state.isRunning) return;
 
@@ -238,7 +239,7 @@ export class TradingEngine extends EventEmitter {
           console.error(`[Engine] Analysis error for ${symbol}:`, error);
         }
       }
-    }, 30000);
+    }, 60000); // 60 seconds
 
     // Initial analysis after 5 seconds
     setTimeout(() => {
@@ -266,21 +267,35 @@ export class TradingEngine extends EventEmitter {
     }, 10000);
   }
 
+  // Cost optimization: Only update positions with GPT every 5 minutes
+  private readonly POSITION_UPDATE_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
+
   private async analyzeAndDecide(symbol: string): Promise<void> {
     const hasPosition = this.state.currentPositions.has(symbol);
+    const position = this.state.currentPositions.get(symbol);
 
     // Get market analysis
     const analysis = await marketAnalyzer.analyze(symbol);
     this.state.lastAnalysis.set(symbol, analysis);
 
-    // STEP 1: Quick screening with cheap model (gpt-4o-mini)
+    // COST OPTIMIZATION: For open positions, only call GPT-5.2 every 5 minutes
+    if (hasPosition && position) {
+      const timeSinceLastUpdate = Date.now() - (position.lastGptUpdate || 0);
+      if (timeSinceLastUpdate < this.POSITION_UPDATE_INTERVAL_MS) {
+        // Skip GPT-5.2 call, just monitor SL/TP with current values
+        return;
+      }
+      console.log(`[Engine] ${symbol}: Position update due (${Math.round(timeSinceLastUpdate / 60000)}min since last GPT analysis)`);
+    }
+
+    // STEP 1: Quick screening with cheap model (gpt-5-mini)
     // This saves ~90% of API costs by filtering out non-opportunities
     if (!hasPosition) {
       const screening = await gptEngine.quickScreen(analysis);
 
       if (!screening.hasOpportunity) {
         // No opportunity detected - skip expensive GPT-5.2 analysis
-        console.log(`[Engine] ${symbol}: No opportunity (score: ${screening.score}) - skipping full analysis`);
+        console.log(`[Engine] ${symbol}: No opportunity (score: ${screening.score}) - skipping`);
         return;
       }
 
@@ -288,7 +303,7 @@ export class TradingEngine extends EventEmitter {
     }
 
     // STEP 2: Full analysis with premium model (gpt-5.2)
-    // Only called when screening detects opportunity OR we have an open position to manage
+    // Only called when screening detects opportunity OR position needs update (every 5 min)
 
     // Get news and sentiment
     const newsSummary = await cryptoPanicClient.getNewsSummary(symbol);
@@ -314,12 +329,10 @@ export class TradingEngine extends EventEmitter {
     this.state.lastDecision.set(symbol, decision);
     this.emit('analysis', { symbol, analysis, decision });
 
-    // Log decision with more detail
+    // Log decision
     console.log(`[Engine] ${symbol}: ${decision.action} (${decision.confidence}%)`);
-    console.log(`[Engine]   └─ ${decision.reasoning.slice(0, 100)}...`);
     if (decision.action !== 'HOLD') {
-      console.log(`[Engine]   └─ Size: ${decision.positionSizePercent}% | Leverage: ${decision.leverage}x`);
-      console.log(`[Engine]   └─ SL: $${decision.stopLoss?.toFixed(2)} | TP: $${decision.takeProfit?.toFixed(2)}`);
+      console.log(`[Engine]   └─ Size: ${decision.positionSizePercent}% | Lev: ${decision.leverage}x | SL: $${decision.stopLoss?.toFixed(2)} | TP: $${decision.takeProfit?.toFixed(2)}`);
     }
 
     // Execute decision
@@ -358,6 +371,7 @@ export class TradingEngine extends EventEmitter {
       if (position && decision.takeProfit && decision.stopLoss) {
         position.takeProfit = decision.takeProfit;
         position.stopLoss = decision.stopLoss;
+        position.lastGptUpdate = Date.now(); // Track last GPT update time
         console.log(`[Engine] ${symbol}: Updated SL: $${decision.stopLoss.toFixed(2)} | TP: $${decision.takeProfit.toFixed(2)}`);
       }
     }
@@ -433,7 +447,27 @@ export class TradingEngine extends EventEmitter {
         quantity: roundedQty,
       });
 
-      const entryPrice = parseFloat(order.avgPrice || analysis.price.toString());
+      // Get entry price from order fills (more reliable than avgPrice for market orders)
+      let entryPrice = 0;
+      if (order.fills && order.fills.length > 0) {
+        // Calculate weighted average price from fills
+        let totalQty = 0;
+        let totalValue = 0;
+        for (const fill of order.fills) {
+          const fillPrice = parseFloat(fill.price);
+          const fillQty = parseFloat(fill.qty);
+          totalValue += fillPrice * fillQty;
+          totalQty += fillQty;
+        }
+        entryPrice = totalQty > 0 ? totalValue / totalQty : 0;
+      }
+
+      // Fallback to avgPrice or analysis price
+      if (!entryPrice || entryPrice <= 0) {
+        entryPrice = parseFloat(order.avgPrice) || analysis.price;
+      }
+
+      console.log(`[Engine] Order filled: avgPrice=${order.avgPrice}, fills=${order.fills?.length || 0}, entryPrice=${entryPrice}`);
 
       // Calculate actual SL and TP prices
       const stopLoss = decision.stopLoss || (decision.action === 'BUY'
