@@ -38,7 +38,9 @@ interface NewsResponse {
 export class CryptoPanicClient {
   private client: AxiosInstance;
   private cache: Map<string, CacheEntry<NewsItem[]>> = new Map();
-  private readonly CACHE_TTL = 5 * 60 * 1000; // 5 minutes cache to avoid rate limits
+  private summaryCache: Map<string, CacheEntry<any>> = new Map();
+  private readonly CACHE_TTL = 15 * 60 * 1000; // 15 minutes cache (was 5 min)
+  private readonly SUMMARY_CACHE_TTL = 10 * 60 * 1000; // 10 minutes for summaries
 
   constructor() {
     this.client = axios.create({
@@ -168,29 +170,32 @@ export class CryptoPanicClient {
     };
   }
 
-  // Get news summary for GPT analysis
+  // Get news summary for GPT analysis - OPTIMIZED with caching
   async getNewsSummary(symbol: string): Promise<{
     headlines: string[];
     sentiment: { score: number; bullish: number; bearish: number };
     hotTopics: string[];
   }> {
-    const [symbolNews, hotNews, bullishNews, bearishNews] = await Promise.all([
-      this.getNewsForSymbol(symbol, 5),
-      this.getHotNews(3),
-      this.getBullishNews(3),
-      this.getBearishNews(3),
-    ]);
+    // Check summary cache first (10 min TTL)
+    const cacheKey = `summary_${symbol}`;
+    const cached = this.summaryCache.get(cacheKey);
+    if (cached && Date.now() - cached.timestamp < this.SUMMARY_CACHE_TTL) {
+      return cached.data;
+    }
 
-    const allNews = [...symbolNews, ...hotNews];
-    const uniqueNews = allNews.filter(
-      (item, index, self) => index === self.findIndex(t => t.id === item.id)
-    );
+    // Only fetch symbol-specific news (reduces API calls from 4 to 1)
+    const symbolNews = await this.getNewsForSymbol(symbol, 5);
 
-    return {
-      headlines: uniqueNews.slice(0, 5).map(n => n.title),
+    const result = {
+      headlines: symbolNews.slice(0, 5).map(n => n.title),
       sentiment: this.calculateSentiment(symbolNews),
-      hotTopics: hotNews.map(n => n.title),
+      hotTopics: [], // Skip hot topics to save API calls
     };
+
+    // Cache the result
+    this.summaryCache.set(cacheKey, { data: result, timestamp: Date.now() });
+
+    return result;
   }
 }
 
