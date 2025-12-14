@@ -1,0 +1,1001 @@
+2025-12-14T01:22:16.990294168Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:16.990299176Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:16.990304509Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:16.990310639Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:16.990316593Z [err]    status: 400,
+2025-12-14T01:22:16.990330097Z [err]    headers: {
+2025-12-14T01:22:16.990336458Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:16.990342325Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:16.990348302Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:16.990354341Z [err]      'cf-ray': '9ad9e392599a22ea-SJC',
+2025-12-14T01:22:16.990360328Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:16.990366633Z [err]      'content-length': '245',
+2025-12-14T01:22:16.990371929Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:16.990376514Z [err]      date: 'Sun, 14 Dec 2025 01:22:13 GMT',
+2025-12-14T01:22:16.990381346Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:16.990386425Z [err]      'openai-processing-ms': '9',
+2025-12-14T01:22:16.990391155Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:16.990395839Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:16.990413028Z [err]      server: 'cloudflare',
+2025-12-14T01:22:16.990418587Z [err]      'set-cookie': '__cf_bm=dmEcuaq74JvKNKyL1ewC16Tq8C4R0mzxyJp4415vr1o-1765675333-1.0.1.1-Vd_QkAC_O69lihFn0DVl7fmkA_aiZVeOnxOrDIHdGLK8YahY46vsOkt0a0yvYONplmGPxRSYR6MBwJ1ohHU71YZl0v5p9Lg0i.3SFiqALX8; path=/; expires=Sun, 14-Dec-25 01:52:13 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=zXx6H_N8dX5XlGPwbe4UvZcl58dwj3YfYKFhh74Tc7c-1765675333575-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:16.991917252Z [err]      param: 'max_tokens',
+2025-12-14T01:22:16.991925875Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:16.991931784Z [err]    },
+2025-12-14T01:22:16.991936802Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:16.991941319Z [err]    param: 'max_tokens',
+2025-12-14T01:22:16.991947388Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:16.991951955Z [err]  }
+2025-12-14T01:22:16.991956662Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:16.991964602Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:16.991974781Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:16.991979735Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:16.991984377Z [err]      'x-envoy-upstream-service-time': '22',
+2025-12-14T01:22:16.991990750Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:16.991995594Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:16.992000417Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:16.992004828Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:16.992009425Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:16.992014801Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:16.992019757Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:16.992025892Z [err]      'x-request-id': 'req_ccc5b748f5764781beef50d7a24a97eb'
+2025-12-14T01:22:16.992030542Z [err]    },
+2025-12-14T01:22:16.992035343Z [err]    request_id: 'req_ccc5b748f5764781beef50d7a24a97eb',
+2025-12-14T01:22:16.992040050Z [err]    error: {
+2025-12-14T01:22:16.992044720Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:16.992049481Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:16.993718016Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:16.993727210Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:16.993738410Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:16.993748338Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:16.993755095Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:16.993761107Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:16.993766671Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:16.993772092Z [err]    status: 400,
+2025-12-14T01:22:16.993777110Z [err]    headers: {
+2025-12-14T01:22:16.993782660Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:16.993788246Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:16.993797963Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:16.993804222Z [err]      'cf-ray': '9ad9e3966c5522ea-SJC',
+2025-12-14T01:22:16.993810410Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:16.993817200Z [err]      'content-length': '245',
+2025-12-14T01:22:16.993823919Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:16.993831066Z [err]      date: 'Sun, 14 Dec 2025 01:22:14 GMT',
+2025-12-14T01:22:16.993838365Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:16.993845417Z [err]      'openai-processing-ms': '8',
+2025-12-14T01:22:16.993851834Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:16.993858256Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:16.993864727Z [err]      server: 'cloudflare',
+2025-12-14T01:22:16.995226189Z [err]      'set-cookie': '__cf_bm=xMteZdV5D55fwvSuFR7PIqjgF4yem_E7IAoPRLfJ2ZA-1765675334-1.0.1.1-9TZqhCugjs_8XkeKD5b5JC68CHThwhRxwCiZzjxNlI9PFdf2iqBdnIFzisISjbOkoESM9RCkiX_qH.AKo393NnPfENkzi2sNFiZuYYaKsys; path=/; expires=Sun, 14-Dec-25 01:52:14 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=BFH9fTQBSl2vqQeIv9UrB86szObCDAXWF4G.571Kbpg-1765675334230-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:16.995231999Z [err]    request_id: 'req_e1290bbcc0534c3d8af00873c6e23bde',
+2025-12-14T01:22:16.995234342Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:16.995240531Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:16.995243060Z [err]    error: {
+2025-12-14T01:22:16.995246071Z [err]      'x-envoy-upstream-service-time': '20',
+2025-12-14T01:22:16.995251241Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:16.995251698Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:16.995257369Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:16.995259614Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:16.995262187Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:16.995267881Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:16.995268539Z [err]      param: 'max_tokens',
+2025-12-14T01:22:16.995273001Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:16.995276751Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:16.995279180Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:16.995283132Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:16.995287682Z [err]      'x-request-id': 'req_e1290bbcc0534c3d8af00873c6e23bde'
+2025-12-14T01:22:16.995291884Z [err]    },
+2025-12-14T01:22:16.996975255Z [err]    },
+2025-12-14T01:22:16.996981543Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:16.996986168Z [err]    param: 'max_tokens',
+2025-12-14T01:22:16.996991340Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:16.996995334Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:16.996996378Z [err]  }
+2025-12-14T01:22:16.997002010Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:16.997008224Z [err]      'cf-ray': '9ad9e39a6ee722ea-SJC',
+2025-12-14T01:22:16.997008471Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:16.997016229Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:16.997017573Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:16.997021165Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:16.997027614Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:16.997028025Z [err]      'content-length': '245',
+2025-12-14T01:22:16.997031989Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:16.997035976Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:16.997039823Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:16.997043798Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:16.997048945Z [err]    status: 400,
+2025-12-14T01:22:16.997052930Z [err]    headers: {
+2025-12-14T01:22:16.997056963Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:16.997060770Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:16.998732360Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:16.998741061Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:16.998741610Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:16.998747395Z [err]      date: 'Sun, 14 Dec 2025 01:22:14 GMT',
+2025-12-14T01:22:16.998748466Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:16.998754313Z [err]      'x-request-id': 'req_bfb44a7f3e6d432682d8c30c43de493b'
+2025-12-14T01:22:16.998754980Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:16.998760588Z [err]      'openai-processing-ms': '9',
+2025-12-14T01:22:16.998765900Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:16.998771840Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:16.998777012Z [err]      server: 'cloudflare',
+2025-12-14T01:22:16.998782201Z [err]      'set-cookie': '__cf_bm=BnEQCzylmghlRRJ5yIwGDXsnGyj43v50QiQv.yPtv0I-1765675334-1.0.1.1-8aX0mzeQEZwlq0nuKr9V.zxOAqyMzIfzb2gpSv0RrY.WoQaEyUKh2ZTwi5h.1aP9r6Jcb4LXN0Kq1FrYZJBw8cApU49h9KST5MYuhpuBgVs; path=/; expires=Sun, 14-Dec-25 01:52:14 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=TebZZVnnuKWPFdlqrBW0Chv7H_32kZs0Vs5MefjLspE-1765675334875-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:16.998788080Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:16.998793143Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:16.998796724Z [err]      'x-envoy-upstream-service-time': '26',
+2025-12-14T01:22:16.998800477Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:16.998804471Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:16.998808554Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:16.998812574Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:17.001384552Z [err]    },
+2025-12-14T01:22:17.001392555Z [err]    request_id: 'req_bfb44a7f3e6d432682d8c30c43de493b',
+2025-12-14T01:22:17.001397418Z [err]    error: {
+2025-12-14T01:22:17.001404423Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:17.001407146Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:17.001407595Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:17.001413310Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:17.001418761Z [err]  }
+2025-12-14T01:22:17.001421348Z [err]      param: 'max_tokens',
+2025-12-14T01:22:17.001426125Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:17.001428615Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:17.001432141Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:17.001435961Z [err]    },
+2025-12-14T01:22:17.001442253Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:17.001445410Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:17.001449169Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:17.001454049Z [err]    param: 'max_tokens',
+2025-12-14T01:22:17.001455121Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:17.001459783Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:17.001464185Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:17.001469200Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:17.003303688Z [err]    status: 400,
+2025-12-14T01:22:17.003314329Z [err]    headers: {
+2025-12-14T01:22:17.003315469Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:17.003322233Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:17.003328954Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:17.003334148Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:17.003335789Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:17.003344481Z [err]      date: 'Sun, 14 Dec 2025 01:22:16 GMT',
+2025-12-14T01:22:17.003349633Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:17.003352190Z [err]      'cf-ray': '9ad9e3a46d1d22ea-SJC',
+2025-12-14T01:22:17.003355089Z [err]      'openai-processing-ms': '12',
+2025-12-14T01:22:17.003359687Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:17.003361106Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:17.003366670Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:17.003368026Z [err]      'content-length': '245',
+2025-12-14T01:22:17.003371864Z [err]      server: 'cloudflare',
+2025-12-14T01:22:17.003377598Z [err]      'set-cookie': '__cf_bm=YApJG.B8ZsKveQmY6Jr9c7QkJoyzBf9JC6ORTAyvFpg-1765675336-1.0.1.1-R6r2ILPD1jGB1QOkNFzw7lKuykeTBfvvfaBzXZqwIBcCSDMvttyFGz3j3Zg8GTWY05XMoaIyDHxmYZN5q5GsH1bB4oJ5R7Lv5GRERx4mcjc; path=/; expires=Sun, 14-Dec-25 01:52:16 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=8u84OIF24h7Edg4610MDD5AWQLPiK6rJe.Xaoa2GRJY-1765675336476-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:17.003382057Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:17.003386801Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:17.003391868Z [err]      'x-envoy-upstream-service-time': '27',
+2025-12-14T01:22:17.004737680Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:17.004743811Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:17.004747920Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:17.004753154Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:17.004756753Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:17.004760396Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:17.004764406Z [err]      'x-request-id': 'req_f0cc89e1cd4a46bfbee636e143ddf8df'
+2025-12-14T01:22:17.004768073Z [err]    },
+2025-12-14T01:22:17.004771806Z [err]    request_id: 'req_f0cc89e1cd4a46bfbee636e143ddf8df',
+2025-12-14T01:22:17.004775327Z [err]    error: {
+2025-12-14T01:22:17.004778773Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:17.004783215Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:17.004787707Z [err]      param: 'max_tokens',
+2025-12-14T01:22:17.004791802Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:17.004795610Z [err]    },
+2025-12-14T01:22:17.004799923Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:17.004803540Z [err]    param: 'max_tokens',
+2025-12-14T01:22:17.004807622Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:17.004811528Z [err]  }
+2025-12-14T01:22:17.004816332Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:17.075728777Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:17.075736342Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:17.075741991Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:17.075748979Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:17.075754475Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:17.075759214Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:17.075764299Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:17.075768764Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:17.075773337Z [err]    status: 400,
+2025-12-14T01:22:17.075784157Z [err]    headers: {
+2025-12-14T01:22:17.075788609Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:17.075794947Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:17.075799469Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:17.075804258Z [err]      'cf-ray': '9ad9e3a7ffe522ea-SJC',
+2025-12-14T01:22:17.075808629Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:17.075813179Z [err]      'content-length': '245',
+2025-12-14T01:22:17.075817724Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:17.075822218Z [err]      date: 'Sun, 14 Dec 2025 01:22:17 GMT',
+2025-12-14T01:22:17.075826699Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:17.075835461Z [err]      'openai-processing-ms': '11',
+2025-12-14T01:22:17.075839862Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:17.077822063Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:17.077834039Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:17.077841381Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:17.077848953Z [err]      'x-request-id': 'req_5824ef3c02a8485da016ef6eb4186356'
+2025-12-14T01:22:17.077849361Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:17.077857910Z [err]      server: 'cloudflare',
+2025-12-14T01:22:17.077858035Z [err]    },
+2025-12-14T01:22:17.077865568Z [err]      'set-cookie': '__cf_bm=82QbTrmj6LXvG0CzAfUxu1uo3v83ho7LGt8i4h.Wzyo-1765675337-1.0.1.1-yUw8V9JK_aoBInK4LbR_6q.VSuiqs8qsZxi1s6f88dgZS7CCUwswnqO.MN8B2LvaD2FMbwhTVJd3TFEfAEPI9wqFVZAaurSeT2yPXjlz8CQ; path=/; expires=Sun, 14-Dec-25 01:52:17 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=_jTY3hfbwRaJlQM16g29Zh1sG60F54TKzH5oR4Wn1RU-1765675337042-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:17.077866933Z [err]    request_id: 'req_5824ef3c02a8485da016ef6eb4186356',
+2025-12-14T01:22:17.077872658Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:17.077876225Z [err]    error: {
+2025-12-14T01:22:17.077879420Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:17.077884697Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:17.077886761Z [err]      'x-envoy-upstream-service-time': '24',
+2025-12-14T01:22:17.077892800Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:17.077892977Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:17.077897530Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:17.077901791Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:17.077905823Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:17.079617719Z [err]      param: 'max_tokens',
+2025-12-14T01:22:17.079623279Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:17.079628395Z [err]    },
+2025-12-14T01:22:17.079633490Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:17.079638770Z [err]    param: 'max_tokens',
+2025-12-14T01:22:17.079643632Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:17.079648528Z [err]  }
+2025-12-14T01:22:17.079653317Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:17.966995384Z [err]      'openai-processing-ms': '8',
+2025-12-14T01:22:17.967005163Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:17.967029517Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:17.967036056Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:17.967042672Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:17.967050063Z [err]      'cf-ray': '9ad9e3acca8522ea-SJC',
+2025-12-14T01:22:17.967050578Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:17.967056076Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:17.967058788Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:17.967061734Z [err]      'content-length': '245',
+2025-12-14T01:22:17.967067339Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:17.967069638Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:17.967073705Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:17.967076964Z [err]      date: 'Sun, 14 Dec 2025 01:22:17 GMT',
+2025-12-14T01:22:17.967083943Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:17.967087702Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:17.967093249Z [err]    status: 400,
+2025-12-14T01:22:17.967097946Z [err]    headers: {
+2025-12-14T01:22:17.967103654Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:17.967108956Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:17.967113728Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:17.969528150Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:17.969533557Z [err]      server: 'cloudflare',
+2025-12-14T01:22:17.969538662Z [err]      'set-cookie': '__cf_bm=cCjSs0xxVQ8oPjquBc4ReSOyrP.mQ.oB2oV9DqPvQbI-1765675337-1.0.1.1-ZSn8yl0TWy_f.AcQrOWTw6cCFmFTfRN8toIqYu1Vu..ccE0rUP51FmqdyGdQegaf29zZxfdnzsS_IlvLB7rW_VYq2_wskkF_zeJbilBmLxo; path=/; expires=Sun, 14-Dec-25 01:52:17 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=dvG9Y1vsCf3VWrwCoa.K3jrSEOor6SrwY09IWlMwYJc-1765675337810-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:17.969544673Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:17.969549586Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:17.969554934Z [err]      'x-envoy-upstream-service-time': '23',
+2025-12-14T01:22:17.969559797Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:17.969565119Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:17.969571240Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:17.969576455Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:17.969581805Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:17.969587053Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:17.969592721Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:17.969598809Z [err]      'x-request-id': 'req_6395d2679886438a86bf27a2ca15e18f'
+2025-12-14T01:22:17.969605123Z [err]    },
+2025-12-14T01:22:17.969612558Z [err]    request_id: 'req_6395d2679886438a86bf27a2ca15e18f',
+2025-12-14T01:22:17.969633207Z [err]    error: {
+2025-12-14T01:22:17.969638457Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:17.969643769Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:17.969677371Z [err]      param: 'max_tokens',
+2025-12-14T01:22:17.969682446Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:17.969687817Z [err]    },
+2025-12-14T01:22:17.969693156Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:17.969698161Z [err]    param: 'max_tokens',
+2025-12-14T01:22:17.969703635Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:17.969709123Z [err]  }
+2025-12-14T01:22:17.969714233Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:18.458258113Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:18.458266819Z [err]      'cf-ray': '9ad9e3b0cd2b22ea-SJC',
+2025-12-14T01:22:18.458272880Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:18.458278037Z [err]      'content-length': '245',
+2025-12-14T01:22:18.458279705Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:18.458283704Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:18.458285602Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:18.458290522Z [err]      date: 'Sun, 14 Dec 2025 01:22:18 GMT',
+2025-12-14T01:22:18.458292687Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:18.458296462Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:18.458301179Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:18.458302347Z [err]      'openai-processing-ms': '10',
+2025-12-14T01:22:18.458308865Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:18.458309820Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:18.458316570Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:18.458322341Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:18.458327395Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:18.458332613Z [err]    status: 400,
+2025-12-14T01:22:18.458338278Z [err]    headers: {
+2025-12-14T01:22:18.458343211Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:18.458348392Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:18.459513316Z [err]    error: {
+2025-12-14T01:22:18.459520071Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:18.459521263Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:18.459524667Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:18.459526912Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:18.459533085Z [err]      server: 'cloudflare',
+2025-12-14T01:22:18.459535742Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:18.459540563Z [err]      'set-cookie': '__cf_bm=hzmnc31EwVjVTvZcpTbqVuM0AEIbfuDH6t.k6AH_5Bo-1765675338-1.0.1.1-Aj7jzAvISuGJW80v1A.7IWq8EEQAiDUlJ5_vLrR.y_8zW2qQUYML3rcwD72jGBMiAB3E.Jhfgoi9OM_gKP8AKA3ye1PqahwRiNwGuOnwR58; path=/; expires=Sun, 14-Dec-25 01:52:18 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=7pg5EhHUnn3z9A2aJIb1H.2a8irc1hQD1qZHNf190kc-1765675338451-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:18.459544735Z [err]      'x-request-id': 'req_57a9bd34518b41fa976a5bae7008a818'
+2025-12-14T01:22:18.459547133Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:18.459548880Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:18.459552597Z [err]    },
+2025-12-14T01:22:18.459558774Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:18.459559792Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:18.459562703Z [err]    request_id: 'req_57a9bd34518b41fa976a5bae7008a818',
+2025-12-14T01:22:18.459567938Z [err]      'x-envoy-upstream-service-time': '24',
+2025-12-14T01:22:18.459569783Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:18.459575322Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:18.459580248Z [err]      'x-ratelimit-remaining-tokens': '499871',
+2025-12-14T01:22:18.460905461Z [err]      param: 'max_tokens',
+2025-12-14T01:22:18.460912226Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:18.460917745Z [err]    },
+2025-12-14T01:22:18.460931391Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:18.460936979Z [err]    param: 'max_tokens',
+2025-12-14T01:22:18.460942122Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:18.460948442Z [err]  }
+2025-12-14T01:22:18.460953737Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:19.154406420Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:19.154415604Z [err]      'content-length': '245',
+2025-12-14T01:22:19.154421626Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:19.154426732Z [err]      date: 'Sun, 14 Dec 2025 01:22:19 GMT',
+2025-12-14T01:22:19.154432615Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:19.154438174Z [err]      'openai-processing-ms': '7',
+2025-12-14T01:22:19.154513571Z [inf]  [Engine] OPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:19.154522201Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:19.154526603Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:19.154531045Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:19.154534808Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:19.154539196Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:19.154543081Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:19.154548135Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:19.154551939Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:19.154555575Z [err]    status: 400,
+2025-12-14T01:22:19.154559534Z [err]    headers: {
+2025-12-14T01:22:19.154564032Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:19.154567762Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:19.154571372Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:19.154574967Z [err]      'cf-ray': '9ad9e3b5284b22ea-SJC',
+2025-12-14T01:22:19.155881157Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:19.155884696Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:19.155887151Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:19.155891935Z [err]      server: 'cloudflare',
+2025-12-14T01:22:19.155897035Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:19.155897432Z [err]      'set-cookie': '__cf_bm=yHu54FcgazesRvJC.PYx0H39bDRHTCtf1ARY9.r.ONE-1765675339-1.0.1.1-o_tLdJUkSGIs_Q5bmL5ii503JQYQzKse4Rh4fVTo1dJLfefqU96HbwUoeFdoMau2AA3gd9zSJf.IUPXGvRFqCtWl7vEvd.RJQEUGRrqkiig; path=/; expires=Sun, 14-Dec-25 01:52:19 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=PN5ux0aNIEc_3jrpjvVviV1irUjPWRSmOUOf.eyE9G4-1765675339148-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:19.155903651Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:19.155905683Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:19.155912866Z [err]      'x-ratelimit-remaining-tokens': '499873',
+2025-12-14T01:22:19.155913311Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:19.155921325Z [err]      'x-envoy-upstream-service-time': '23',
+2025-12-14T01:22:19.155922693Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:19.155928008Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:19.155929876Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:19.155934949Z [err]      'x-request-id': 'req_193119706db94de5bda15ab650d2f893'
+2025-12-14T01:22:19.155940451Z [err]    },
+2025-12-14T01:22:19.155945658Z [err]    request_id: 'req_193119706db94de5bda15ab650d2f893',
+2025-12-14T01:22:19.155952131Z [err]    error: {
+2025-12-14T01:22:19.155956918Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:19.157902404Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:19.157911387Z [err]    },
+2025-12-14T01:22:19.157916916Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:19.157922394Z [err]    param: 'max_tokens',
+2025-12-14T01:22:19.157927841Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:19.157933458Z [err]  }
+2025-12-14T01:22:19.157974658Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:19.157979790Z [err]      param: 'max_tokens',
+2025-12-14T01:22:19.869981441Z [err]    headers: {
+2025-12-14T01:22:19.869982031Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:19.869992443Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:19.869994432Z [err]      'openai-processing-ms': '8',
+2025-12-14T01:22:19.869999743Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:19.870010146Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:19.870015255Z [err]      'cf-ray': '9ad9e3b91acb22ea-SJC',
+2025-12-14T01:22:19.870020383Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:19.870028120Z [err]      'content-length': '245',
+2025-12-14T01:22:19.870033806Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:19.870038056Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:19.870040149Z [err]      date: 'Sun, 14 Dec 2025 01:22:19 GMT',
+2025-12-14T01:22:19.870045033Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:19.870050980Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:19.870057977Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:19.870063814Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:19.870068847Z [err]    status: 400,
+2025-12-14T01:22:19.870071991Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:19.870088114Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:19.870095780Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:19.870101983Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:19.872900290Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:19.872905733Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:19.872911497Z [err]      server: 'cloudflare',
+2025-12-14T01:22:19.872916426Z [err]      'set-cookie': '__cf_bm=e1Uldd9l4l4kUEUzRJMYXy1mPimc07TVJZ8R3A9iP6Q-1765675339-1.0.1.1-wT2f2En33hEsktOG7p7llAE2oBVCsRf.rTxKjSlG5U8QybZIZD_5nxIpFq1WwWLPm9tllNaOlCejoszzyb.88xIKBkaGuH1j60ArsRwJhXU; path=/; expires=Sun, 14-Dec-25 01:52:19 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=8FKcBYri2xAIRKCzV7YdWXMrElN.GeFViS6GQ0._Gjg-1765675339790-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:19.872920274Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:19.872924557Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:19.872928389Z [err]      'x-envoy-upstream-service-time': '27',
+2025-12-14T01:22:19.872932233Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:19.872936072Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:19.872940314Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:19.872944010Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:19.872948030Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:19.872951931Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:19.872955853Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:19.872959857Z [err]      'x-request-id': 'req_687d652cd4804d4e99248f004be27af9'
+2025-12-14T01:22:19.872963809Z [err]    },
+2025-12-14T01:22:19.872968732Z [err]    request_id: 'req_687d652cd4804d4e99248f004be27af9',
+2025-12-14T01:22:19.872973259Z [err]    error: {
+2025-12-14T01:22:19.872977025Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:19.872980986Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:19.872984892Z [err]      param: 'max_tokens',
+2025-12-14T01:22:19.872988560Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:19.872992005Z [err]    },
+2025-12-14T01:22:19.872996136Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:19.872999867Z [err]    param: 'max_tokens',
+2025-12-14T01:22:19.873003347Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:19.873006849Z [err]  }
+2025-12-14T01:22:50.023065301Z [err]      'cf-ray': '9ad9e4410c5b67f9-SJC',
+2025-12-14T01:22:50.023076720Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.023082520Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.023086138Z [err]      'content-length': '245',
+2025-12-14T01:22:50.023089854Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.023093740Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.023098992Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.023101979Z [err]      date: 'Sun, 14 Dec 2025 01:22:41 GMT',
+2025-12-14T01:22:50.023105895Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.023109597Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.023112883Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.023117068Z [err]      'openai-processing-ms': '12',
+2025-12-14T01:22:50.023124859Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.023135877Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.023142141Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.023147434Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.023152511Z [err]    status: 400,
+2025-12-14T01:22:50.023157854Z [err]    headers: {
+2025-12-14T01:22:50.023166379Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.023172684Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.023178693Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.024550636Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.024554920Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.024558930Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.024562696Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.024567353Z [err]      'x-ratelimit-remaining-tokens': '499871',
+2025-12-14T01:22:50.024573051Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.024578039Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.024583214Z [err]      'x-request-id': 'req_14ec531339dd49c5af0f9109285fd7e2'
+2025-12-14T01:22:50.024588567Z [err]    },
+2025-12-14T01:22:50.024594466Z [err]    request_id: 'req_14ec531339dd49c5af0f9109285fd7e2',
+2025-12-14T01:22:50.024600082Z [err]    error: {
+2025-12-14T01:22:50.024605743Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.024625982Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.024631802Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.024637417Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.024642915Z [err]      'set-cookie': '__cf_bm=7oIgBBBFuq.disncAq3jjcyjLQijcwW6TlEY03ROsCQ-1765675361-1.0.1.1-B.GOkWPcaTYcpVhgS9TUEMimgwUKl_kpPJIenIBbYGFfD6luzkuh8_CBw0JJzGe97gkJBqi_UaWSCDimuoUiRJtGZzCjNLSHiMb3_iWKqG8; path=/; expires=Sun, 14-Dec-25 01:52:41 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=iC2RsJEoMK5i4gmj_5OFclHnhLx7wAtO97NeUDub3C8-1765675361529-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.024648936Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.024655596Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.024660975Z [err]      'x-envoy-upstream-service-time': '27',
+2025-12-14T01:22:50.026446354Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.026447634Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.026454563Z [err]    status: 400,
+2025-12-14T01:22:50.026457978Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.026461228Z [err]    headers: {
+2025-12-14T01:22:50.026466149Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.026466220Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.026473817Z [err]    },
+2025-12-14T01:22:50.026476147Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.026480137Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.026486803Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.026523505Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.026528419Z [err]  }
+2025-12-14T01:22:50.026533247Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.026537444Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.026541798Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.026545708Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.026550434Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.026554788Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.026560063Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.026767988Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.026774595Z [err]      'cf-ray': '9ad9e4450eca67f9-SJC',
+2025-12-14T01:22:50.026781710Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.027968828Z [err]      'content-length': '245',
+2025-12-14T01:22:50.027971770Z [err]      'x-ratelimit-remaining-tokens': '499871',
+2025-12-14T01:22:50.027975583Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.027980906Z [err]      date: 'Sun, 14 Dec 2025 01:22:42 GMT',
+2025-12-14T01:22:50.027983382Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.027986085Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.027991447Z [err]      'openai-processing-ms': '10',
+2025-12-14T01:22:50.027992057Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.027996046Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.028000053Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.028003780Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.028008740Z [err]      'set-cookie': '__cf_bm=PgC5.fiblai2H2ispXLJ62GARqeKlFEPQMfls5G9T9k-1765675362-1.0.1.1-0qN7TeW0yaIGNfdDxutTkPQqeaIYRuAL0u0jze5U.Y0v8HOkHaKYRBHPsd8CCFK7DgeJ.oKoNlvy0eZ2T34g2ZG4y9siGIAcfVfdMCxNRe8; path=/; expires=Sun, 14-Dec-25 01:52:42 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=biZnEv4FoaMl6T1Ni_E2Eg6kd5K4W8NUK8Hh0_cgFD4-1765675362168-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.028013228Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.028017371Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.028021317Z [err]      'x-envoy-upstream-service-time': '22',
+2025-12-14T01:22:50.028025099Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.028028838Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.028032598Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.028036657Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.029869773Z [err]      'x-request-id': 'req_92ff66689407461a88c849150a4e9024'
+2025-12-14T01:22:50.029879003Z [err]    },
+2025-12-14T01:22:50.029880175Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.029885444Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.029887749Z [err]    request_id: 'req_92ff66689407461a88c849150a4e9024',
+2025-12-14T01:22:50.029891104Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.029896840Z [err]    error: {
+2025-12-14T01:22:50.029899333Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.029900166Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.029904245Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.029909015Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.029911955Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.029917677Z [err]  }
+2025-12-14T01:22:50.029921396Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.029925379Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.029929080Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.029933078Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.029936198Z [err]    },
+2025-12-14T01:22:50.029944095Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.029949939Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.029955814Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.029960669Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.031920670Z [err]    status: 400,
+2025-12-14T01:22:50.031931415Z [err]      'x-envoy-upstream-service-time': '24',
+2025-12-14T01:22:50.031933010Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.031933602Z [err]    headers: {
+2025-12-14T01:22:50.031939985Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.031941827Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.031942661Z [err]      'content-length': '245',
+2025-12-14T01:22:50.031945570Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.031950485Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.031951476Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.031956706Z [err]      'cf-ray': '9ad9e44908e567f9-SJC',
+2025-12-14T01:22:50.031958631Z [err]      date: 'Sun, 14 Dec 2025 01:22:42 GMT',
+2025-12-14T01:22:50.031964325Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.031969640Z [err]      'openai-processing-ms': '9',
+2025-12-14T01:22:50.031981415Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.031987118Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.031993350Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.031999876Z [err]      'set-cookie': '__cf_bm=8M9Ui78H.mSH3A9sCSRPgMcNO2UH3NN6Xz9iUiJG_y4-1765675362-1.0.1.1-iQAXTVfccnqwKyel3j2SqVNNuSHoH.z6gVPwLe_X3ZV7N9ung4Q.zaNK0TwrBAzy3x.d21qxRSyGCAu18Uav7yAsLvBHIBadsLIIBCACOXk; path=/; expires=Sun, 14-Dec-25 01:52:42 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=uagPD8rML2svAoQaXhjgxQ30JkCTnfiS0X2AyzD5Y7w-1765675362806-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.032005612Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.032011246Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.033823929Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.033832100Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.033838726Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.033843764Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:50.033848967Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.033853760Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.033858263Z [err]      'x-request-id': 'req_dd79e1f588ae4b029ec8defbfe959c64'
+2025-12-14T01:22:50.033862917Z [err]    },
+2025-12-14T01:22:50.033867602Z [err]    request_id: 'req_dd79e1f588ae4b029ec8defbfe959c64',
+2025-12-14T01:22:50.033872693Z [err]    error: {
+2025-12-14T01:22:50.033879701Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.033885071Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.033891045Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.033897065Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.033902850Z [err]    },
+2025-12-14T01:22:50.033908444Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.033913906Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.033919283Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.033924860Z [err]  }
+2025-12-14T01:22:50.033930752Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.033934858Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.033938574Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.033942419Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.035554934Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.035558903Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.035563522Z [err]      'set-cookie': '__cf_bm=oubTiayGXKX_tAH7WuZmNZ1lzLUE.CIVYoynvPvCJ0Q-1765675363-1.0.1.1-62qOobywju1Kufnrg972kub6LUVQIrP.I_uddM641YX8hZRG2USJqwGRlUUqGyCqTosaxEGjnzseYbdSvvJTcfrqNjmky_lQlgcEs9pThdI; path=/; expires=Sun, 14-Dec-25 01:52:43 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=EFthF2vyafXzqCOpm7HmNwaANFHsXZD4TF4I3M7h1JU-1765675363458-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.035565659Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.035569895Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.035576175Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.035580175Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.035584152Z [err]    status: 400,
+2025-12-14T01:22:50.035587801Z [err]    headers: {
+2025-12-14T01:22:50.035591594Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.035604651Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.035608657Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.035612582Z [err]      'cf-ray': '9ad9e44d1b1067f9-SJC',
+2025-12-14T01:22:50.035617354Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.035622450Z [err]      'content-length': '245',
+2025-12-14T01:22:50.035627379Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.035634665Z [err]      date: 'Sun, 14 Dec 2025 01:22:43 GMT',
+2025-12-14T01:22:50.035639997Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.035646639Z [err]      'openai-processing-ms': '11',
+2025-12-14T01:22:50.035651617Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.035656855Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.037617364Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.037625421Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.037629600Z [err]      'x-envoy-upstream-service-time': '24',
+2025-12-14T01:22:50.037633581Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.037637259Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.037641017Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.037644968Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.037656993Z [err]      'x-ratelimit-remaining-tokens': '499871',
+2025-12-14T01:22:50.037660905Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.037665144Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.037669020Z [err]      'x-request-id': 'req_7438adcb50a64d29b3b1dc2c55c80c5b'
+2025-12-14T01:22:50.037672876Z [err]    },
+2025-12-14T01:22:50.037678623Z [err]    request_id: 'req_7438adcb50a64d29b3b1dc2c55c80c5b',
+2025-12-14T01:22:50.037682543Z [err]    error: {
+2025-12-14T01:22:50.037686405Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.037690255Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.037695108Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.037700999Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.037704773Z [err]    },
+2025-12-14T01:22:50.037708714Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.037712441Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.037716145Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.037719766Z [err]  }
+2025-12-14T01:22:50.037725426Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.037730518Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.040077976Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.040078767Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.040085424Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.040088779Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.040094762Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.040096701Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.040101561Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.040104816Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.040107580Z [err]      'cf-ray': '9ad9e4511df467f9-SJC',
+2025-12-14T01:22:50.040113147Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.040115289Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.040120213Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.040122276Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.040122681Z [err]      'content-length': '245',
+2025-12-14T01:22:50.040131236Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.040131371Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.040132270Z [err]      'openai-processing-ms': '8',
+2025-12-14T01:22:50.040139734Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.040140278Z [err]    status: 400,
+2025-12-14T01:22:50.040141833Z [err]      date: 'Sun, 14 Dec 2025 01:22:44 GMT',
+2025-12-14T01:22:50.040145928Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.040148279Z [err]    headers: {
+2025-12-14T01:22:50.041927202Z [err]      'set-cookie': '__cf_bm=RwZV4_qi3ReWtGcpaiOtphypVlDdeslWh_vroyLxlCc-1765675364-1.0.1.1-hFtPDP2.3Z5aQL39HxAUFTEJK.G1oaf73f.NeXDwCiloNf64ZNkTE_TwzyHIYjZckvvZRvHLIB6_X4pedSfPHhRH6xAhZv8XPLVD5K42ne4; path=/; expires=Sun, 14-Dec-25 01:52:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=sl3cJV8VJFHJ5Mrp5d0Ks6jZAJ89MzyyK6v.odlFUZg-1765675364100-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.041929174Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.041936793Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.041941778Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.041944558Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.041948853Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.041952669Z [err]      'x-envoy-upstream-service-time': '22',
+2025-12-14T01:22:50.041960349Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.041966550Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.041972231Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.041977870Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.041983576Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:50.041988286Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.041992806Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.041997029Z [err]      'x-request-id': 'req_83f7ac1c6dbe475e8b081d28f199fefc'
+2025-12-14T01:22:50.042001569Z [err]    },
+2025-12-14T01:22:50.042006538Z [err]    request_id: 'req_83f7ac1c6dbe475e8b081d28f199fefc',
+2025-12-14T01:22:50.042010482Z [err]    error: {
+2025-12-14T01:22:50.042015877Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.044351074Z [err]    },
+2025-12-14T01:22:50.044359842Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.044365969Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.044498949Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.044503457Z [err]  }
+2025-12-14T01:22:50.044507610Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.044511839Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.044516159Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.044520618Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.044524920Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.044529822Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.044535469Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.044539902Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.044544004Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.044547933Z [err]    status: 400,
+2025-12-14T01:22:50.044551998Z [err]    headers: {
+2025-12-14T01:22:50.044556079Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.044560381Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.044564662Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.044568762Z [err]      'cf-ray': '9ad9e455286167f9-SJC',
+2025-12-14T01:22:50.044573231Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.044577426Z [err]      'content-length': '245',
+2025-12-14T01:22:50.047319487Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.047324181Z [err]      date: 'Sun, 14 Dec 2025 01:22:44 GMT',
+2025-12-14T01:22:50.047697798Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.047703332Z [err]      'openai-processing-ms': '8',
+2025-12-14T01:22:50.047708074Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.047712259Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.047716373Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.047720380Z [err]      'set-cookie': '__cf_bm=Mw77bcvcXv9u_lRz4SNrKLX7e8NuYI44bU2G4hgH.Rc-1765675364-1.0.1.1-uEGcc9nzgeJmTgFxbNb9vZj2FV2Zm1NLUzvT8Hoc3wX_xfTdZ5_nCbWLnl6Ag1OZ2vyyIiHphzO37OgluwQ5XvVf372OurrMgDlN7D6r5.4; path=/; expires=Sun, 14-Dec-25 01:52:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=8XxPLiY.3RzIBYnwt36JhdQySNoEm06NJJEQGaqxry4-1765675364746-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.047725010Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.047728968Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.047732695Z [err]      'x-envoy-upstream-service-time': '24',
+2025-12-14T01:22:50.047736635Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.047740870Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.047744842Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.047748963Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.047753336Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:50.047757572Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.047761794Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.047765672Z [err]      'x-request-id': 'req_8a24b4c8806443b197ab8986e7ee2b15'
+2025-12-14T01:22:50.049321749Z [err]    },
+2025-12-14T01:22:50.049328559Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.049330325Z [err]    request_id: 'req_8a24b4c8806443b197ab8986e7ee2b15',
+2025-12-14T01:22:50.049337125Z [err]    error: {
+2025-12-14T01:22:50.049342622Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.049348567Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.049353684Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.049360567Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.049366388Z [err]    },
+2025-12-14T01:22:50.049371816Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.049377154Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.049382540Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.049387929Z [err]  }
+2025-12-14T01:22:50.049393504Z [inf]  [Engine] LINKUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.049398112Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.049403370Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.049408673Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.049417732Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.049423781Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.049430073Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.049434216Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.051334423Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.051351428Z [err]    status: 400,
+2025-12-14T01:22:50.051361776Z [err]    headers: {
+2025-12-14T01:22:50.051368528Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.051374485Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.051380734Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.051387325Z [err]      'cf-ray': '9ad9e4592a0a67f9-SJC',
+2025-12-14T01:22:50.051394963Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.051401475Z [err]      'content-length': '245',
+2025-12-14T01:22:50.051408727Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.051416036Z [err]      date: 'Sun, 14 Dec 2025 01:22:45 GMT',
+2025-12-14T01:22:50.051422403Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.051429733Z [err]      'openai-processing-ms': '9',
+2025-12-14T01:22:50.051437259Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.051443668Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.051451868Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.051458678Z [err]      'set-cookie': '__cf_bm=xWzanveu0SNk2KFgtiAjO_9SLfS3e8_Z8rbxHG76cGc-1765675365-1.0.1.1-EdD8KBYfx.oPMm7Z66w.GixtaH1LqDpmrz8.j_GCg_zAcQKo4avN92GACMpsA6ivBYvPtev_K1swG1PNY_v9i4xK8jLqOQRAUbl2.iaoLP0; path=/; expires=Sun, 14-Dec-25 01:52:45 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=TDl1AEcX85qDrtWH32c3wS7a96Jd9F4sKG2Z3J6levQ-1765675365389-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.051465747Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.051473072Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.051479584Z [err]      'x-envoy-upstream-service-time': '22',
+2025-12-14T01:22:50.053509813Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.053516742Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.053519852Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.053523046Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.053523960Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.053528753Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.053532846Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.053533560Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.053535499Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.053543747Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:50.053544464Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.053552161Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.053552314Z [err]    },
+2025-12-14T01:22:50.053560559Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.053560865Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.053565508Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.053570978Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.053572678Z [err]      'x-request-id': 'req_6b566d9c3eed43b79a166e415524378b'
+2025-12-14T01:22:50.053577224Z [err]  }
+2025-12-14T01:22:50.053580834Z [err]    },
+2025-12-14T01:22:50.053585544Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.053589615Z [err]    request_id: 'req_6b566d9c3eed43b79a166e415524378b',
+2025-12-14T01:22:50.053594605Z [err]    error: {
+2025-12-14T01:22:50.055505199Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.055515673Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.055522613Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.055531560Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.055537994Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.055543923Z [err]    status: 400,
+2025-12-14T01:22:50.055550171Z [err]    headers: {
+2025-12-14T01:22:50.055556141Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.055563607Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.055569505Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.055575225Z [err]      'cf-ray': '9ad9e45e5c5467f9-SJC',
+2025-12-14T01:22:50.055581231Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.055586696Z [err]      'content-length': '245',
+2025-12-14T01:22:50.055592249Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.055597838Z [err]      date: 'Sun, 14 Dec 2025 01:22:46 GMT',
+2025-12-14T01:22:50.055603679Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.055610344Z [err]      'openai-processing-ms': '7',
+2025-12-14T01:22:50.055616716Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.055622168Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.055627776Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.055638007Z [err]      'set-cookie': '__cf_bm=oDGsA4b6F6bdL9nLP3IOaQcaq89ecZGDg3YmnAfig1Q-1765675366-1.0.1.1-hemGTAtJlvPZRzbPnOZH5Gs93ZVKHMAxO5n4Ln7Hi278v.O4BN6TfUV49JjvHKGcTuLRyO1pqyLpemjpy_TIQhblWGemiGWSqW0bLDkV8kA; path=/; expires=Sun, 14-Dec-25 01:52:46 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=BWNNjp5Y.XN2VlMbO3iBSNjxIzzazBujpWLaGBARjBk-1765675366221-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.057268667Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.057279003Z [err]    error: {
+2025-12-14T01:22:50.057282114Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.057287952Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.057288420Z [err]      'x-envoy-upstream-service-time': '22',
+2025-12-14T01:22:50.057294739Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.057297422Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.057302923Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.057306018Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.057312165Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.057317357Z [err]    },
+2025-12-14T01:22:50.057321948Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.057326108Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.057330703Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.057335040Z [err]  }
+2025-12-14T01:22:50.057339617Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.057345239Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.057351254Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.057358867Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.057364375Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:50.057370259Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.057375767Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.057380962Z [err]      'x-request-id': 'req_3143ea5d609c48919c69db4b18de33a0'
+2025-12-14T01:22:50.057386370Z [err]    },
+2025-12-14T01:22:50.057391544Z [err]    request_id: 'req_3143ea5d609c48919c69db4b18de33a0',
+2025-12-14T01:22:50.059181707Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.059190808Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.059207643Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.059212376Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.059216887Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.059222184Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.059227188Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.059234808Z [err]    status: 400,
+2025-12-14T01:22:50.059240014Z [err]    headers: {
+2025-12-14T01:22:50.059244952Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.059249906Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.059255771Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.059262366Z [err]      'cf-ray': '9ad9e4625e6c67f9-SJC',
+2025-12-14T01:22:50.059271041Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.059280089Z [err]      'content-length': '245',
+2025-12-14T01:22:50.059285497Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.059290388Z [err]      date: 'Sun, 14 Dec 2025 01:22:46 GMT',
+2025-12-14T01:22:50.059295361Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.059301786Z [err]      'openai-processing-ms': '10',
+2025-12-14T01:22:50.059306327Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.059310824Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.059320246Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.062024462Z [err]      'set-cookie': '__cf_bm=k20e4iBU4oDkUCam7pzjeAar9yUsTCnChpXh.hjVhf4-1765675366-1.0.1.1-FqyTBe3qdG3UCNb6dc3UaMKOQ99HnE1AXcbYpuIhSlrJvbiGfgkN1pk9g0idCN3eXyf27gt.TnyqXpwho0rntVGjnf.RKVdIgDIRl5ByIEw; path=/; expires=Sun, 14-Dec-25 01:52:46 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=2Os78IhfkjJR1PbdCCCU_.KRARcJDLW0.Dl9OynYkm4-1765675366898-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.062032794Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.062038772Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.062044256Z [err]      'x-envoy-upstream-service-time': '63',
+2025-12-14T01:22:50.062049118Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.062054843Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.062060087Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.062065945Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.062072782Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:50.062078374Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.062084348Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.062091783Z [err]      'x-request-id': 'req_6f426bd9af364bab82def0b322d8c35a'
+2025-12-14T01:22:50.062097814Z [err]    },
+2025-12-14T01:22:50.062103078Z [err]    request_id: 'req_6f426bd9af364bab82def0b322d8c35a',
+2025-12-14T01:22:50.062107066Z [err]    error: {
+2025-12-14T01:22:50.062111721Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.062116231Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.062120850Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.062125506Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.063865228Z [err]      'cf-ray': '9ad9e469197d67f9-SJC',
+2025-12-14T01:22:50.063876410Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.063876939Z [err]    },
+2025-12-14T01:22:50.063884328Z [err]      'content-length': '245',
+2025-12-14T01:22:50.063886511Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.063892250Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.063897257Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.063902490Z [err]  }
+2025-12-14T01:22:50.063907312Z [inf]  [Engine] SUIUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.063912052Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.063916746Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.063921879Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.063926606Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.063931501Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.063936491Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.063941214Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.063947586Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.063952840Z [err]    status: 400,
+2025-12-14T01:22:50.063957430Z [err]    headers: {
+2025-12-14T01:22:50.063962261Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.063967042Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.063972118Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.066587223Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.066592597Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.066597283Z [err]      date: 'Sun, 14 Dec 2025 01:22:47 GMT',
+2025-12-14T01:22:50.066603154Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.066608060Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.066610105Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.066617302Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.066622189Z [err]      'openai-processing-ms': '8',
+2025-12-14T01:22:50.066624836Z [err]      'x-ratelimit-remaining-tokens': '499871',
+2025-12-14T01:22:50.066630005Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.066631625Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.066638038Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.066638508Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.066645650Z [err]      'x-request-id': 'req_3abab84bb7704b39b0f8fd9bfde3dbbf'
+2025-12-14T01:22:50.066646577Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.066654231Z [err]      'set-cookie': '__cf_bm=okqZXCOaWk_Ry75cb3q5e.yP_sZkk4oaFmG8.zGCDzY-1765675367-1.0.1.1-zfQyPaE8t.9Qp8aEGwxqaxG2tvCFN00Nisd5Gvlt4xlyiR_1GqcDd.GCLLCQpTETL7l1P92W0XCzhS3p2VHet.E4EU3NAO1eaVZ8An1_9AE; path=/; expires=Sun, 14-Dec-25 01:52:47 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=BPlTEv12M0XbmiE68f80IQAHZDgD2XObSeNiV4rJWTM-1765675367937-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.066660015Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.066665215Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.066669654Z [err]      'x-envoy-upstream-service-time': '21',
+2025-12-14T01:22:50.068534738Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.068536498Z [err]    },
+2025-12-14T01:22:50.068544196Z [err]    request_id: 'req_3abab84bb7704b39b0f8fd9bfde3dbbf',
+2025-12-14T01:22:50.068546754Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.068553156Z [err]    error: {
+2025-12-14T01:22:50.068555250Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.068558447Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.068562171Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.068566128Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.068571354Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.068574926Z [err]    },
+2025-12-14T01:22:50.068580683Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.068584426Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.068588110Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.068591580Z [err]  }
+2025-12-14T01:22:50.068595630Z [inf]  [Engine] ARBUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.068601206Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.068605518Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.068609149Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.068613006Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.068616752Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.070801051Z [err]    status: 400,
+2025-12-14T01:22:50.070805287Z [err]    headers: {
+2025-12-14T01:22:50.070809351Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.070813605Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.070818274Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.070822376Z [err]      'cf-ray': '9ad9e46d1baf67f9-SJC',
+2025-12-14T01:22:50.070826270Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.070830012Z [err]      'content-length': '245',
+2025-12-14T01:22:50.070834411Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.070839304Z [err]      date: 'Sun, 14 Dec 2025 01:22:48 GMT',
+2025-12-14T01:22:50.070843029Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.070848153Z [err]      'openai-processing-ms': '10',
+2025-12-14T01:22:50.070852178Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.070856284Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.070860304Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.070864260Z [err]      'set-cookie': '__cf_bm=CdiFlyQRkzxxDV_fnQPmDWsoczEYo9GSjzdcJEiTtyQ-1765675368-1.0.1.1-DTD4WIQj1IhJezCxLrkLovYa49C64mFf4TGgcxbEopTiwCALeKWu9bDN9yiwwSR53sI7iY4sVhiX6D7hsdrq0k8ilxSt7Xv9vx_ry.MKGGo; path=/; expires=Sun, 14-Dec-25 01:52:48 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=Gj2PM1mybWt7m5bbUfplHBFJUv.xACLmiVg756z1GE0-1765675368588-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.070868404Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.070872192Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.070877506Z [err]      'x-envoy-upstream-service-time': '25',
+2025-12-14T01:22:50.070881613Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.073101819Z [err]    request_id: 'req_a4b70d5129fa40359a84a4cfc410c769',
+2025-12-14T01:22:50.073104212Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.073112640Z [err]    error: {
+2025-12-14T01:22:50.073113169Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.073120093Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.073121153Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.073125937Z [err]      'x-ratelimit-remaining-tokens': '499873',
+2025-12-14T01:22:50.073131743Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.073132655Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.073139076Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.073141813Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.073146612Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.073148887Z [err]      'x-request-id': 'req_a4b70d5129fa40359a84a4cfc410c769'
+2025-12-14T01:22:50.073154227Z [err]    },
+2025-12-14T01:22:50.073156313Z [err]    },
+2025-12-14T01:22:50.073161326Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.073166907Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.428892114Z [inf]  [Engine] INJUSDT: No opportunity (score: 0) - skipping full analysis
+2025-12-14T01:22:50.428904258Z [err]  [GPT-Screen] Error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-14T01:22:50.428910817Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-14T01:22:50.428917263Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-14T01:22:50.428922724Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-14T01:22:50.428928934Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-14T01:22:50.428935379Z [err]      at async GPTEngine.quickScreen (/app/bot/dist/services/gpt/engine.js:41:30)
+2025-12-14T01:22:50.428941564Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:211:31)
+2025-12-14T01:22:50.428947083Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:173:21) {
+2025-12-14T01:22:50.428952975Z [err]    status: 400,
+2025-12-14T01:22:50.428958759Z [err]    headers: {
+2025-12-14T01:22:50.428965473Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-14T01:22:50.428971426Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-14T01:22:50.428977769Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-14T01:22:50.428984059Z [err]      'cf-ray': '9ad9e478a87d67f9-SJC',
+2025-12-14T01:22:50.428990549Z [err]      connection: 'keep-alive',
+2025-12-14T01:22:50.428997252Z [err]      'content-length': '245',
+2025-12-14T01:22:50.429003811Z [err]      'content-type': 'application/json',
+2025-12-14T01:22:50.429010158Z [err]      date: 'Sun, 14 Dec 2025 01:22:50 GMT',
+2025-12-14T01:22:50.429015663Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-14T01:22:50.429020804Z [err]      'openai-processing-ms': '8',
+2025-12-14T01:22:50.430957048Z [err]      'x-ratelimit-reset-requests': '120ms',
+2025-12-14T01:22:50.430957549Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-14T01:22:50.430965905Z [err]      'x-ratelimit-reset-tokens': '15ms',
+2025-12-14T01:22:50.430971519Z [err]      'openai-version': '2020-10-01',
+2025-12-14T01:22:50.430972164Z [err]      'x-request-id': 'req_62ecb6550ec343308903d405177dd542'
+2025-12-14T01:22:50.430979149Z [err]      server: 'cloudflare',
+2025-12-14T01:22:50.430980136Z [err]    },
+2025-12-14T01:22:50.430987384Z [err]      'set-cookie': '__cf_bm=2lr986Od9RT8kCkui3FxGrHCKsfRfx9petc_7aK2z90-1765675370-1.0.1.1-VaBDnJ9OWmJ14NILTsbZzHQ9HM.FVTuqx1cUyIHdCk4yooZQKvfwi6rreckoIsycoDrwZFTgV47N4X.4fDSJMssIV.OPDw0_MgvIWaBNVus; path=/; expires=Sun, 14-Dec-25 01:52:50 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=9V5LF_8DKyUbamFwGghiVdBizWZN8t7tEl6WBuFwBF0-1765675370420-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-14T01:22:50.430987480Z [err]    request_id: 'req_62ecb6550ec343308903d405177dd542',
+2025-12-14T01:22:50.430994252Z [err]    error: {
+2025-12-14T01:22:50.430995208Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-14T01:22:50.431002147Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-14T01:22:50.431002627Z [err]      'x-content-type-options': 'nosniff',
+2025-12-14T01:22:50.431010082Z [err]      'x-envoy-upstream-service-time': '22',
+2025-12-14T01:22:50.431015559Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-14T01:22:50.431020645Z [err]      'x-ratelimit-limit-requests': '500',
+2025-12-14T01:22:50.431025456Z [err]      'x-ratelimit-limit-tokens': '500000',
+2025-12-14T01:22:50.431030378Z [err]      'x-ratelimit-remaining-requests': '499',
+2025-12-14T01:22:50.431035928Z [err]      'x-ratelimit-remaining-tokens': '499872',
+2025-12-14T01:22:50.432074873Z [err]      type: 'invalid_request_error',
+2025-12-14T01:22:50.432083877Z [err]      param: 'max_tokens',
+2025-12-14T01:22:50.432090486Z [err]      code: 'unsupported_parameter'
+2025-12-14T01:22:50.432096753Z [err]    },
+2025-12-14T01:22:50.432102638Z [err]    code: 'unsupported_parameter',
+2025-12-14T01:22:50.432108351Z [err]    param: 'max_tokens',
+2025-12-14T01:22:50.432114673Z [err]    type: 'invalid_request_error'
+2025-12-14T01:22:50.432119499Z [err]  }
