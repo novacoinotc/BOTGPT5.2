@@ -127,6 +127,9 @@ export class TradingEngine extends EventEmitter {
     console.log(`[Engine] Account balance: $${this.state.balance.toFixed(2)}`);
     console.log(`[Engine] Available balance: $${this.state.availableBalance.toFixed(2)}`);
 
+    // Calculate today's PnL and trades from historical data
+    this.calculateTodayStats();
+
     // Check existing positions
     const positions = await binanceClient.getPositions();
     for (const pos of positions) {
@@ -169,6 +172,24 @@ export class TradingEngine extends EventEmitter {
     } catch (error) {
       console.error('[Engine] Failed to update balance:', error);
     }
+  }
+
+  private calculateTodayStats(): void {
+    // Get all trades from memory (loaded from database)
+    const allTrades = memorySystem.getRecentTrades(1000);
+
+    // Filter for today's trades (UTC)
+    const today = new Date();
+    today.setUTCHours(0, 0, 0, 0);
+    const todayStart = today.getTime();
+
+    const todayTrades = allTrades.filter(t => t.exitTime >= todayStart);
+
+    // Calculate today's stats
+    this.state.todayTrades = todayTrades.length;
+    this.state.todayPnl = todayTrades.reduce((sum, t) => sum + t.pnlUsd, 0);
+
+    console.log(`[Engine] Today's stats from DB: ${this.state.todayTrades} trades, $${this.state.todayPnl.toFixed(2)} PnL`);
   }
 
   private startBalanceUpdates(): void {
@@ -310,12 +331,9 @@ export class TradingEngine extends EventEmitter {
     const newsSummary = await cryptoPanicClient.getNewsSummary(symbol);
     const fearGreed = await fearGreedIndex.get();
 
-    // Get recent trades and learnings
-    const recentTrades = memorySystem.getTradesBySymbol(symbol, 20);
-    const learnings = memorySystem.getRelevantLearnings({
-      regime: analysis.regime,
-      symbol,
-    });
+    // Get recent trades (more history for better learning) and learnings
+    const recentTrades = memorySystem.getRecentTrades(50); // All recent trades, not just by symbol
+    const learnings = memorySystem.getLearnings(undefined, 15); // More learnings
 
     // Get GPT-5.2 decision with full context
     const decision = await gptEngine.analyze({
