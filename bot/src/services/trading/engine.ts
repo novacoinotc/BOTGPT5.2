@@ -332,8 +332,8 @@ export class TradingEngine extends EventEmitter {
     const fearGreed = await fearGreedIndex.get();
 
     // Get recent trades (more history for better learning) and learnings
-    const recentTrades = memorySystem.getRecentTrades(50); // All recent trades, not just by symbol
-    const learnings = memorySystem.getLearnings(undefined, 15); // More learnings
+    const recentTrades = memorySystem.getRecentTrades(200); // 200 trades for full market context
+    const learnings = memorySystem.getLearnings(undefined, 200); // All learnings for pattern recognition
 
     // Get GPT-5.2 decision with full context
     const decision = await gptEngine.analyze({

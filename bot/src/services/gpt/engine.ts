@@ -367,14 +367,14 @@ Pérdidas consecutivas: ${consecutiveLosses} ${consecutiveLosses >= 3 ? '⚠️ 
 ⚠️ RECORDATORIO FEES: Necesitas +0.25% mínimo en cada trade para ser rentable (0.10% fees)
 PnL Neto estimado: ${((wins * avgWin) - (losses * avgLoss) - (recentTrades.length * 0.10)).toFixed(2)}% (después de fees)
 
-Últimos 5 trades:
-${recentTrades.slice(0, 5).map(t =>
-  `  ${t.pnl > 0 ? '✅' : '❌'} ${t.symbol} ${t.side} @ $${t.entryPrice.toFixed(2)} → ${t.pnl > 0 ? '+' : ''}${t.pnl.toFixed(2)}% ($${t.pnlUsd.toFixed(2)}) [${t.exitReason}]`
+HISTORIAL COMPLETO DE TRADES (${recentTrades.length} trades):
+${recentTrades.map(t =>
+  `  ${t.pnl > 0 ? '✅' : '❌'} ${t.symbol} ${t.side} $${t.entryPrice.toFixed(2)}→$${t.exitPrice.toFixed(2)} ${t.pnl > 0 ? '+' : ''}${t.pnl.toFixed(2)}% ($${t.pnlUsd.toFixed(2)}) [${t.exitReason}]`
 ).join('\n') || '  Sin trades aún'}
 
-🧠 APRENDIZAJES PREVIOS
+🧠 TODOS LOS APRENDIZAJES (${learnings.length} lecciones - ÚSALAS):
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-${learnings.slice(0, 5).map(l => `• ${l}`).join('\n') || '• Aún sin aprendizajes - este es un buen momento para experimentar'}
+${learnings.map(l => `• ${l}`).join('\n') || '• Aún sin aprendizajes - este es un buen momento para experimentar'}
 
 💡 SUGERENCIAS BASADAS EN ATR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

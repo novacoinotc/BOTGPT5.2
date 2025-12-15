@@ -456,11 +456,11 @@ export default function Dashboard() {
             <div className="card-header">
               <h2 className="card-title">Recent Trades</h2>
               <span className="text-sm text-gray-400">
-                {stats?.totalTrades || 0} total
+                {trades.length} total
               </span>
             </div>
 
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto max-h-96 overflow-y-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="text-gray-400 border-b border-gray-800">
@@ -473,7 +473,7 @@ export default function Dashboard() {
                   </tr>
                 </thead>
                 <tbody>
-                  {trades.slice(0, 10).map(trade => (
+                  {trades.map(trade => (
                     <tr key={trade.id} className="border-b border-gray-800/50">
                       <td className="py-2">{trade.symbol}</td>
                       <td>
