@@ -52,7 +52,7 @@ app.get('/api/stats', (req, res) => {
 
 // Get recent trades
 app.get('/api/trades', (req, res) => {
-  const limit = parseInt(req.query.limit as string) || 50;
+  const limit = parseInt(req.query.limit as string) || 200; // Default 200 for full history
   const trades = memorySystem.getRecentTrades(limit);
   res.json(trades);
 });
