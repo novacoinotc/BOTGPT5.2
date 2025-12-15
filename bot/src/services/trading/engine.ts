@@ -178,10 +178,26 @@ export class TradingEngine extends EventEmitter {
     // Get all trades from memory (loaded from database)
     const allTrades = memorySystem.getRecentTrades(1000);
 
-    // Filter for today's trades (UTC)
-    const today = new Date();
-    today.setUTCHours(0, 0, 0, 0);
-    const todayStart = today.getTime();
+    // Filter for today's trades (GDL timezone - UTC-6)
+    // Calculate midnight in GDL: UTC time + 6 hours = GDL time
+    // So GDL midnight = UTC 06:00
+    const now = new Date();
+    const utcHours = now.getUTCHours();
+    const utcDate = now.getUTCDate();
+    const utcMonth = now.getUTCMonth();
+    const utcYear = now.getUTCFullYear();
+
+    // GDL is UTC-6, so GDL midnight = UTC 06:00
+    // If current UTC hour is before 6, we're still in "yesterday" in GDL
+    let todayStart: number;
+    if (utcHours < 6) {
+      // Still yesterday in GDL - use previous day's UTC 06:00
+      const yesterday = new Date(Date.UTC(utcYear, utcMonth, utcDate - 1, 6, 0, 0, 0));
+      todayStart = yesterday.getTime();
+    } else {
+      // Today in GDL - use today's UTC 06:00
+      todayStart = Date.UTC(utcYear, utcMonth, utcDate, 6, 0, 0, 0);
+    }
 
     const todayTrades = allTrades.filter(t => t.exitTime >= todayStart);
 
@@ -189,7 +205,8 @@ export class TradingEngine extends EventEmitter {
     this.state.todayTrades = todayTrades.length;
     this.state.todayPnl = todayTrades.reduce((sum, t) => sum + t.pnlUsd, 0);
 
-    console.log(`[Engine] Today's stats from DB: ${this.state.todayTrades} trades, $${this.state.todayPnl.toFixed(2)} PnL`);
+    const gdlTime = new Date(now.getTime() - 6 * 60 * 60 * 1000);
+    console.log(`[Engine] Today's stats (GDL ${gdlTime.toISOString().slice(0, 10)}): ${this.state.todayTrades} trades, $${this.state.todayPnl.toFixed(2)} PnL`);
   }
 
   private startBalanceUpdates(): void {

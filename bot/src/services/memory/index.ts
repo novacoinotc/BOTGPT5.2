@@ -56,9 +56,9 @@ class MemorySystem {
   private trades: TradeMemory[] = [];
   private patterns: PatternMemory[] = [];
   private learnings: Learning[] = [];
-  private maxTrades = 1000;
-  private maxPatterns = 500;
-  private maxLearnings = 100;
+  private maxTrades = 10000; // Store up to 10k trades in memory (all persist in DB)
+  private maxPatterns = 5000;
+  private maxLearnings = 1000;
   private initialized = false;
 
   // === INITIALIZATION (Load from DB) ===
