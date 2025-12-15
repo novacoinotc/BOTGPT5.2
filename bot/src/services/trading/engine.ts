@@ -274,7 +274,7 @@ export class TradingEngine extends EventEmitter {
   }
 
   private startAnalysisLoop(): void {
-    // COST OPTIMIZED: Analyze every 60 seconds (was 30s)
+    // COST OPTIMIZED: Analyze every 180 seconds (3 minutes) to reduce API costs
     this.analysisInterval = setInterval(async () => {
       if (!this.state.isRunning) return;
 
@@ -285,7 +285,7 @@ export class TradingEngine extends EventEmitter {
           console.error(`[Engine] Analysis error for ${symbol}:`, error);
         }
       }
-    }, 60000); // 60 seconds
+    }, 180000); // 180 seconds (3 minutes)
 
     // Initial analysis after 5 seconds
     setTimeout(() => {
