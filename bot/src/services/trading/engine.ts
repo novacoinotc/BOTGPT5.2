@@ -57,7 +57,7 @@ export class TradingEngine extends EventEmitter {
   private balanceUpdateInterval: NodeJS.Timeout | null = null;
 
   // Configuration - SCALPING MODE (OPTIMIZED FOR PROFITABILITY)
-  private readonly MIN_CONFIDENCE = 60; // Raised from 45 to reduce low-quality trades
+  private readonly MIN_CONFIDENCE = 55; // Allow trades with 55%+ confidence
   private readonly MAX_LEVERAGE = 10; // Max 10x as requested
   private readonly MAX_POSITION_SIZE_PERCENT = 5; // Max 5% of capital per trade (scalping: many small trades)
   private readonly MAX_HOLD_TIME_HOURS = 2; // Reduced to 2 hours for scalping
@@ -389,21 +389,6 @@ export class TradingEngine extends EventEmitter {
         return;
       }
 
-      // Check risk management - reduced from 5 to 3 consecutive losses
-      const consecutiveLosses = memorySystem.getConsecutiveLosses();
-
-      if (consecutiveLosses >= 3) {
-        console.log(`[Engine] ${symbol}: Skipping trade - ${consecutiveLosses} consecutive losses (cooling down)`);
-        return;
-      }
-
-      // Reduce size after 2 consecutive losses
-      let adjustedSizePercent = decision.positionSizePercent;
-      if (consecutiveLosses >= 2) {
-        adjustedSizePercent = Math.max(3, decision.positionSizePercent * 0.5);
-        console.log(`[Engine] ${symbol}: Reduced position size to ${adjustedSizePercent}% due to ${consecutiveLosses} consecutive losses`);
-      }
-
       // Validate decision has required fields
       if (!decision.stopLoss || !decision.takeProfit) {
         console.log(`[Engine] ${symbol}: Missing SL/TP in decision, skipping`);
@@ -426,7 +411,7 @@ export class TradingEngine extends EventEmitter {
 
       // Open new position
       if (config.trading.enabled) {
-        await this.openPosition(symbol, { ...decision, positionSizePercent: adjustedSizePercent }, analysis);
+        await this.openPosition(symbol, decision, analysis);
         // Record trade time for cooldown
         this.lastTradeTime.set(symbol, Date.now());
       } else {
