@@ -1,0 +1,1061 @@
+2025-12-15T18:07:00.714673379Z [err]              _writableState: [WritableState],
+2025-12-15T18:07:00.714678704Z [err]              allowHalfOpen: false,
+2025-12-15T18:07:00.714683146Z [err]              _maxListeners: undefined,
+2025-12-15T18:07:00.714688266Z [err]              _sockname: null,
+2025-12-15T18:07:00.714693194Z [err]              _pendingData: null,
+2025-12-15T18:07:00.714697555Z [err]              _pendingEncoding: '',
+2025-12-15T18:07:00.714702369Z [err]              server: undefined,
+2025-12-15T18:07:00.714706672Z [err]              _server: null,
+2025-12-15T18:07:00.714712843Z [err]              ssl: [TLSWrap],
+2025-12-15T18:07:00.714720147Z [err]              _requestCert: true,
+2025-12-15T18:07:00.714725098Z [err]              _rejectUnauthorized: true,
+2025-12-15T18:07:00.714730151Z [err]              parser: null,
+2025-12-15T18:07:00.714734636Z [err]              _httpMessage: [ClientRequest],
+2025-12-15T18:07:00.714739107Z [err]              timeout: 0,
+2025-12-15T18:07:00.714743839Z [err]              [Symbol(alpncallback)]: null,
+2025-12-15T18:07:00.714748375Z [err]              [Symbol(res)]: [TLSWrap],
+2025-12-15T18:07:00.714752942Z [err]              [Symbol(verified)]: true,
+2025-12-15T18:07:00.714764093Z [err]              [Symbol(pendingSession)]: null,
+2025-12-15T18:07:00.714769807Z [err]              [Symbol(async_id_symbol)]: 320893,
+2025-12-15T18:07:00.714775461Z [err]              [Symbol(kHandle)]: [TLSWrap],
+2025-12-15T18:07:00.714781305Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T18:07:00.714787092Z [err]              [Symbol(timeout)]: null,
+2025-12-15T18:07:00.714792836Z [err]              [Symbol(kBuffer)]: null,
+2025-12-15T18:07:00.714798414Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-15T18:07:00.714803237Z [err]              [Symbol(kBufferGen)]: null,
+2025-12-15T18:07:00.719335347Z [err]              [Symbol(shapeMode)]: true,
+2025-12-15T18:07:00.719342777Z [err]              [Symbol(kCapture)]: false,
+2025-12-15T18:07:00.719347737Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-15T18:07:00.719352599Z [err]        [Symbol(shapeMode)]: false,
+2025-12-15T18:07:00.719353830Z [err]              [Symbol(kSetKeepAlive)]: true,
+2025-12-15T18:07:00.719359391Z [err]              [Symbol(kSetKeepAliveInitialDelay)]: 60,
+2025-12-15T18:07:00.719361822Z [err]        proxy: URL {},
+2025-12-15T18:07:00.719365323Z [err]        [Symbol(kCapture)]: false,
+2025-12-15T18:07:00.719366002Z [err]              [Symbol(kBytesRead)]: 0,
+2025-12-15T18:07:00.719372056Z [err]              [Symbol(kBytesWritten)]: 0,
+2025-12-15T18:07:00.719372487Z [err]        proxyHeaders: {},
+2025-12-15T18:07:00.719376865Z [err]              [Symbol(connect-options)]: [Object]
+2025-12-15T18:07:00.719380649Z [err]        connectOpts: {
+2025-12-15T18:07:00.719382654Z [err]            }
+2025-12-15T18:07:00.719386797Z [err]          ALPNProtocols: [ 'http/1.1' ],
+2025-12-15T18:07:00.719389719Z [err]          ]
+2025-12-15T18:07:00.719394383Z [err]          host: '104.239.37.18',
+2025-12-15T18:07:00.719397068Z [err]        },
+2025-12-15T18:07:00.719400507Z [err]          port: 5670
+2025-12-15T18:07:00.719403812Z [err]        freeSockets: [Object: null prototype] {},
+2025-12-15T18:07:00.719406092Z [err]        },
+2025-12-15T18:07:00.719409117Z [err]        keepAliveMsecs: 1000,
+2025-12-15T18:07:00.719471976Z [err]        keepAlive: false,
+2025-12-15T18:07:00.719476392Z [err]        maxSockets: Infinity,
+2025-12-15T18:07:00.719482683Z [err]        maxFreeSockets: 256,
+2025-12-15T18:07:00.719486713Z [err]        scheduling: 'lifo',
+2025-12-15T18:07:00.719491289Z [err]        maxTotalSockets: Infinity,
+2025-12-15T18:07:00.719495443Z [err]        totalSocketCount: 1,
+2025-12-15T18:07:00.721730970Z [err]      outputData: [],
+2025-12-15T18:07:00.721738660Z [err]      outputSize: 0,
+2025-12-15T18:07:00.721743612Z [err]      writable: true,
+2025-12-15T18:07:00.721748468Z [err]      destroyed: false,
+2025-12-15T18:07:00.721752880Z [err]      _last: true,
+2025-12-15T18:07:00.721764860Z [err]        [Symbol(AgentBaseInternalState)]: { currentSocket: undefined }
+2025-12-15T18:07:00.721771067Z [err]      },
+2025-12-15T18:07:00.721776948Z [err]      params: {
+2025-12-15T18:07:00.721783009Z [err]        timestamp: 1765822007132,
+2025-12-15T18:07:00.721789349Z [err]        signature: '3e556718ca20467908f3c5684468284afdc564aec8c30e6465ff766b5cad9687'
+2025-12-15T18:07:00.721795209Z [err]      },
+2025-12-15T18:07:00.721800432Z [err]      method: 'get',
+2025-12-15T18:07:00.721806797Z [err]      url: '/fapi/v3/positionRisk',
+2025-12-15T18:07:00.721812652Z [err]      allowAbsoluteUrls: true,
+2025-12-15T18:07:00.721820834Z [err]      data: undefined
+2025-12-15T18:07:00.721826723Z [err]    },
+2025-12-15T18:07:00.721832504Z [err]    request: <ref *1> ClientRequest {
+2025-12-15T18:07:00.721838882Z [err]      _events: [Object: null prototype] {
+2025-12-15T18:07:00.721844403Z [err]        abort: [Function (anonymous)],
+2025-12-15T18:07:00.721851408Z [err]        aborted: [Function (anonymous)],
+2025-12-15T18:07:00.721857610Z [err]        connect: [Function (anonymous)],
+2025-12-15T18:07:00.721863231Z [err]        error: [Function (anonymous)],
+2025-12-15T18:07:00.721869182Z [err]        socket: [Function (anonymous)],
+2025-12-15T18:07:00.721875303Z [err]        timeout: [Function (anonymous)],
+2025-12-15T18:07:00.721880964Z [err]        finish: [Function: requestOnFinish]
+2025-12-15T18:07:00.721886582Z [err]      },
+2025-12-15T18:07:00.721892350Z [err]      _eventsCount: 7,
+2025-12-15T18:07:00.721897224Z [err]      _maxListeners: undefined,
+2025-12-15T18:07:00.723989221Z [err]      _onPendingData: [Function: nop],
+2025-12-15T18:07:00.723990500Z [err]      chunkedEncoding: false,
+2025-12-15T18:07:00.723994649Z [err]      _headerSent: true,
+2025-12-15T18:07:00.724000593Z [err]      shouldKeepAlive: false,
+2025-12-15T18:07:00.724002179Z [err]      _closed: false,
+2025-12-15T18:07:00.724007748Z [err]      _header: 'GET /fapi/v3/positionRisk?timestamp=1765822007132&signature=3e556718ca20467908f3c5684468284afdc564aec8c30e6465ff766b5cad9687 HTTP/1.1\r\n' +
+2025-12-15T18:07:00.724009315Z [err]      maxRequestsOnConnectionReached: false,
+2025-12-15T18:07:00.724014548Z [err]        'Accept: application/json, text/plain, */*\r\n' +
+2025-12-15T18:07:00.724016717Z [err]      _defaultKeepAlive: true,
+2025-12-15T18:07:00.724020067Z [err]        'X-MBX-APIKEY: 95Bdwy5fi5C5VLgAvBhbZThDtqS7v16iUAA0urPtbY9zhg6VNw4o5qMfu5UbIQRm\r\n' +
+2025-12-15T18:07:00.724023567Z [err]      useChunkedEncodingByDefault: false,
+2025-12-15T18:07:00.724029154Z [err]        'User-Agent: axios/1.13.2\r\n' +
+2025-12-15T18:07:00.724030216Z [err]      sendDate: false,
+2025-12-15T18:07:00.724034992Z [err]        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+2025-12-15T18:07:00.724039106Z [err]        'Host: fapi.binance.com\r\n' +
+2025-12-15T18:07:00.724043625Z [err]        'Connection: close\r\n' +
+2025-12-15T18:07:00.724047814Z [err]      _removedConnection: false,
+2025-12-15T18:07:00.724049203Z [err]        '\r\n',
+2025-12-15T18:07:00.724053829Z [err]      _keepAliveTimeout: 0,
+2025-12-15T18:07:00.724057753Z [err]      _removedContLen: false,
+2025-12-15T18:07:00.724064384Z [err]      _removedTE: false,
+2025-12-15T18:07:00.724069991Z [err]      strictContentLength: false,
+2025-12-15T18:07:00.724076602Z [err]      _contentLength: 0,
+2025-12-15T18:07:00.724084412Z [err]      _hasBody: true,
+2025-12-15T18:07:00.724090119Z [err]      _trailer: '',
+2025-12-15T18:07:00.724095291Z [err]      finished: true,
+2025-12-15T18:07:00.725663229Z [err]      agent: HttpsProxyAgent {
+2025-12-15T18:07:00.725671359Z [err]        _events: [Object: null prototype] {
+2025-12-15T18:07:00.725678351Z [err]          free: [Function (anonymous)],
+2025-12-15T18:07:00.725683737Z [err]          newListener: [Function: maybeEnableKeylog]
+2025-12-15T18:07:00.725690438Z [err]        },
+2025-12-15T18:07:00.725696156Z [err]        _eventsCount: 2,
+2025-12-15T18:07:00.725716139Z [err]        _maxListeners: undefined,
+2025-12-15T18:07:00.725721994Z [err]        options: { path: undefined },
+2025-12-15T18:07:00.725727849Z [err]        requests: [Object: null prototype] {},
+2025-12-15T18:07:00.725733781Z [err]        sockets: [Object: null prototype] {
+2025-12-15T18:07:00.725738980Z [err]          'fapi.binance.com:443:::::::::::::::::::::': [
+2025-12-15T18:07:00.725748260Z [err]            TLSSocket {
+2025-12-15T18:07:00.725754645Z [err]              _tlsOptions: [Object],
+2025-12-15T18:07:00.725760346Z [err]              _secureEstablished: true,
+2025-12-15T18:07:00.725765654Z [err]              _securePending: false,
+2025-12-15T18:07:00.725770899Z [err]              _newSessionPending: false,
+2025-12-15T18:07:00.725779508Z [err]              _controlReleased: true,
+2025-12-15T18:07:00.725784950Z [err]              secureConnecting: false,
+2025-12-15T18:07:00.725790038Z [err]              _SNICallback: null,
+2025-12-15T18:07:00.725795336Z [err]              servername: 'fapi.binance.com',
+2025-12-15T18:07:00.725800523Z [err]              alpnProtocol: false,
+2025-12-15T18:07:00.725806470Z [err]              authorized: true,
+2025-12-15T18:07:00.725813716Z [err]              authorizationError: null,
+2025-12-15T18:07:00.725819165Z [err]              encrypted: true,
+2025-12-15T18:07:00.725824745Z [err]              _events: [Object: null prototype],
+2025-12-15T18:07:00.725829875Z [err]              _eventsCount: 9,
+2025-12-15T18:07:00.727534457Z [err]              [Symbol(kHandle)]: [TLSWrap],
+2025-12-15T18:07:00.727535383Z [err]              server: undefined,
+2025-12-15T18:07:00.727542946Z [err]              connecting: false,
+2025-12-15T18:07:00.727545750Z [err]              _server: null,
+2025-12-15T18:07:00.727551997Z [err]              ssl: [TLSWrap],
+2025-12-15T18:07:00.727557687Z [err]              _requestCert: true,
+2025-12-15T18:07:00.727563482Z [err]              _rejectUnauthorized: true,
+2025-12-15T18:07:00.727568162Z [err]              parser: null,
+2025-12-15T18:07:00.727573286Z [err]              _httpMessage: [Circular *1],
+2025-12-15T18:07:00.727577581Z [err]              timeout: 0,
+2025-12-15T18:07:00.727582103Z [err]              [Symbol(alpncallback)]: null,
+2025-12-15T18:07:00.727583731Z [err]              _hadError: false,
+2025-12-15T18:07:00.727587492Z [err]              [Symbol(res)]: [TLSWrap],
+2025-12-15T18:07:00.727591722Z [err]              _parent: [Socket],
+2025-12-15T18:07:00.727593054Z [err]              [Symbol(verified)]: true,
+2025-12-15T18:07:00.727598704Z [err]              [Symbol(pendingSession)]: null,
+2025-12-15T18:07:00.727599623Z [err]              _host: null,
+2025-12-15T18:07:00.727609317Z [err]              [Symbol(async_id_symbol)]: 320893,
+2025-12-15T18:07:00.727611968Z [err]              _closeAfterHandlingError: false,
+2025-12-15T18:07:00.727617808Z [err]              _readableState: [ReadableState],
+2025-12-15T18:07:00.727623441Z [err]              _writableState: [WritableState],
+2025-12-15T18:07:00.727629001Z [err]              allowHalfOpen: false,
+2025-12-15T18:07:00.727635418Z [err]              _maxListeners: undefined,
+2025-12-15T18:07:00.727640790Z [err]              _sockname: null,
+2025-12-15T18:07:00.727646365Z [err]              _pendingData: null,
+2025-12-15T18:07:00.727651992Z [err]              _pendingEncoding: '',
+2025-12-15T18:07:00.729707496Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T18:07:00.729715248Z [err]              [Symbol(timeout)]: null,
+2025-12-15T18:07:00.729720523Z [err]              [Symbol(kBuffer)]: null,
+2025-12-15T18:07:00.729726714Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-15T18:07:00.729732087Z [err]              [Symbol(kBufferGen)]: null,
+2025-12-15T18:07:00.729736811Z [err]              [Symbol(shapeMode)]: true,
+2025-12-15T18:07:00.729741810Z [err]              [Symbol(kCapture)]: false,
+2025-12-15T18:07:00.729746148Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-15T18:07:00.729757118Z [err]              [Symbol(kSetKeepAlive)]: true,
+2025-12-15T18:07:00.729762326Z [err]              [Symbol(kSetKeepAliveInitialDelay)]: 60,
+2025-12-15T18:07:00.729766814Z [err]              [Symbol(kBytesRead)]: 0,
+2025-12-15T18:07:00.729772332Z [err]              [Symbol(kBytesWritten)]: 0,
+2025-12-15T18:07:00.729777144Z [err]              [Symbol(connect-options)]: [Object]
+2025-12-15T18:07:00.729782195Z [err]            }
+2025-12-15T18:07:00.729786592Z [err]          ]
+2025-12-15T18:07:00.729792254Z [err]        },
+2025-12-15T18:07:00.729796531Z [err]        freeSockets: [Object: null prototype] {},
+2025-12-15T18:07:00.729800586Z [err]        keepAliveMsecs: 1000,
+2025-12-15T18:07:00.729805025Z [err]        keepAlive: false,
+2025-12-15T18:07:00.729809212Z [err]        maxSockets: Infinity,
+2025-12-15T18:07:00.729813201Z [err]        maxFreeSockets: 256,
+2025-12-15T18:07:00.729817008Z [err]        scheduling: 'lifo',
+2025-12-15T18:07:00.729820846Z [err]        maxTotalSockets: Infinity,
+2025-12-15T18:07:00.729824773Z [err]        totalSocketCount: 1,
+2025-12-15T18:07:00.729829323Z [err]        proxy: URL {},
+2025-12-15T18:07:00.729833349Z [err]        proxyHeaders: {},
+2025-12-15T18:07:00.729837298Z [err]        connectOpts: {
+2025-12-15T18:07:00.731757374Z [err]          end: [ [Function: responseOnEnd], [Function: handleStreamEnd] ],
+2025-12-15T18:07:00.731758108Z [err]          ALPNProtocols: [ 'http/1.1' ],
+2025-12-15T18:07:00.731768105Z [err]          host: '104.239.37.18',
+2025-12-15T18:07:00.731771357Z [err]          readable: undefined,
+2025-12-15T18:07:00.731775182Z [err]          port: 5670
+2025-12-15T18:07:00.731780579Z [err]          aborted: [Function: handlerStreamAborted]
+2025-12-15T18:07:00.731782826Z [err]        },
+2025-12-15T18:07:00.731788450Z [err]        },
+2025-12-15T18:07:00.731792243Z [err]        [Symbol(shapeMode)]: false,
+2025-12-15T18:07:00.731797581Z [err]        _readableState: ReadableState {
+2025-12-15T18:07:00.731800289Z [err]        [Symbol(kCapture)]: false,
+2025-12-15T18:07:00.731805598Z [err]          highWaterMark: 65536,
+2025-12-15T18:07:00.731808534Z [err]        [Symbol(AgentBaseInternalState)]: { currentSocket: undefined }
+2025-12-15T18:07:00.731814709Z [err]      },
+2025-12-15T18:07:00.731820801Z [err]      socketPath: undefined,
+2025-12-15T18:07:00.731826595Z [err]      method: 'GET',
+2025-12-15T18:07:00.731831560Z [err]      maxHeaderSize: undefined,
+2025-12-15T18:07:00.731837919Z [err]      insecureHTTPParser: undefined,
+2025-12-15T18:07:00.731843754Z [err]      joinDuplicateHeaders: undefined,
+2025-12-15T18:07:00.731850720Z [err]      path: '/fapi/v3/positionRisk?timestamp=1765822007132&signature=3e556718ca20467908f3c5684468284afdc564aec8c30e6465ff766b5cad9687',
+2025-12-15T18:07:00.731855461Z [err]      _ended: true,
+2025-12-15T18:07:00.731860789Z [err]      res: IncomingMessage {
+2025-12-15T18:07:00.731865849Z [err]        _events: {
+2025-12-15T18:07:00.731872074Z [err]          close: undefined,
+2025-12-15T18:07:00.731879385Z [err]          error: [Function: handleStreamError],
+2025-12-15T18:07:00.731885214Z [err]          data: [Function: handleStreamData],
+2025-12-15T18:07:00.733732137Z [err]            enableTrace: undefined,
+2025-12-15T18:07:00.733738127Z [err]            pskCallback: undefined,
+2025-12-15T18:07:00.733744384Z [err]            highWaterMark: undefined,
+2025-12-15T18:07:00.733749831Z [err]            onread: undefined,
+2025-12-15T18:07:00.733757055Z [err]            signal: undefined
+2025-12-15T18:07:00.733769624Z [err]          },
+2025-12-15T18:07:00.733775957Z [err]          _secureEstablished: true,
+2025-12-15T18:07:00.733783535Z [err]          _securePending: false,
+2025-12-15T18:07:00.733789469Z [err]          _newSessionPending: false,
+2025-12-15T18:07:00.733802318Z [err]          buffer: [],
+2025-12-15T18:07:00.733811090Z [err]          bufferIndex: 0,
+2025-12-15T18:07:00.733817219Z [err]          length: 0,
+2025-12-15T18:07:00.733822615Z [err]          pipes: [],
+2025-12-15T18:07:00.733828164Z [err]          awaitDrainWriters: null,
+2025-12-15T18:07:00.733834018Z [err]          [Symbol(kState)]: 194779004
+2025-12-15T18:07:00.733839615Z [err]        },
+2025-12-15T18:07:00.733845649Z [err]        _maxListeners: undefined,
+2025-12-15T18:07:00.733850702Z [err]        socket: <ref *3> TLSSocket {
+2025-12-15T18:07:00.733855467Z [err]          _tlsOptions: {
+2025-12-15T18:07:00.733859676Z [err]            allowHalfOpen: undefined,
+2025-12-15T18:07:00.733864635Z [err]            pipe: false,
+2025-12-15T18:07:00.733869095Z [err]            secureContext: SecureContext { context: SecureContext {} },
+2025-12-15T18:07:00.733873433Z [err]            isServer: false,
+2025-12-15T18:07:00.733877329Z [err]            requestCert: true,
+2025-12-15T18:07:00.733881823Z [err]            rejectUnauthorized: true,
+2025-12-15T18:07:00.733885880Z [err]            session: undefined,
+2025-12-15T18:07:00.733890081Z [err]            ALPNProtocols: undefined,
+2025-12-15T18:07:00.733894393Z [err]            requestOCSP: undefined,
+2025-12-15T18:07:00.736777192Z [err]          _controlReleased: true,
+2025-12-15T18:07:00.736783856Z [err]          secureConnecting: false,
+2025-12-15T18:07:00.736788543Z [err]          _SNICallback: null,
+2025-12-15T18:07:00.736792605Z [err]          servername: 'fapi.binance.com',
+2025-12-15T18:07:00.736797177Z [err]          alpnProtocol: false,
+2025-12-15T18:07:00.736801513Z [err]          authorized: true,
+2025-12-15T18:07:00.736805679Z [err]          authorizationError: null,
+2025-12-15T18:07:00.736809837Z [err]          encrypted: true,
+2025-12-15T18:07:00.736814936Z [err]          _events: [Object: null prototype] {
+2025-12-15T18:07:00.736819311Z [err]            close: [
+2025-12-15T18:07:00.736823420Z [err]              [Function: onSocketCloseDestroySSL],
+2025-12-15T18:07:00.736852896Z [err]              [Function: onClose],
+2025-12-15T18:07:00.736857065Z [err]              [Function: socketCloseListener]
+2025-12-15T18:07:00.736862383Z [err]            ],
+2025-12-15T18:07:00.736866757Z [err]            end: [Function: onReadableStreamEnd],
+2025-12-15T18:07:00.736872687Z [err]            error: [Function: socketErrorListener],
+2025-12-15T18:07:00.736876836Z [err]            newListener: [ [Function: keylogNewListener], [Function: newListener] ],
+2025-12-15T18:07:00.736881033Z [err]            secure: [Function: onConnectSecure],
+2025-12-15T18:07:00.736886169Z [err]            free: [Function: onFree],
+2025-12-15T18:07:00.736890326Z [err]            timeout: [ [Function: onTimeout], [Function (anonymous)] ],
+2025-12-15T18:07:00.736894335Z [err]            agentRemove: [Function: onRemove],
+2025-12-15T18:07:00.736899586Z [err]            data: undefined,
+2025-12-15T18:07:00.736903701Z [err]            drain: undefined,
+2025-12-15T18:07:00.736908048Z [err]            finish: [Function: bound onceWrapper] {
+2025-12-15T18:07:00.736911897Z [err]              listener: [Function (anonymous)]
+2025-12-15T18:07:00.739208570Z [err]            }
+2025-12-15T18:07:00.739218004Z [err]          },
+2025-12-15T18:07:00.739223832Z [err]          _eventsCount: 9,
+2025-12-15T18:07:00.739228413Z [err]          connecting: false,
+2025-12-15T18:07:00.739233060Z [err]          _hadError: false,
+2025-12-15T18:07:00.739238431Z [err]          _parent: <ref *2> Socket {
+2025-12-15T18:07:00.739243686Z [err]            connecting: false,
+2025-12-15T18:07:00.739248971Z [err]            _hadError: false,
+2025-12-15T18:07:00.739254910Z [err]            _parent: null,
+2025-12-15T18:07:00.739259795Z [err]            _host: null,
+2025-12-15T18:07:00.739264514Z [err]            _closeAfterHandlingError: false,
+2025-12-15T18:07:00.739269187Z [err]            _events: {
+2025-12-15T18:07:00.739274823Z [err]              close: [Function (anonymous)],
+2025-12-15T18:07:00.739279463Z [err]              error: [Function (anonymous)],
+2025-12-15T18:07:00.739284250Z [err]              prefinish: undefined,
+2025-12-15T18:07:00.739289050Z [err]              finish: undefined,
+2025-12-15T18:07:00.739293198Z [err]              drain: undefined,
+2025-12-15T18:07:00.739299469Z [err]              data: undefined,
+2025-12-15T18:07:00.739304212Z [err]              end: [Function: onReadableStreamEnd],
+2025-12-15T18:07:00.739309451Z [err]              readable: undefined,
+2025-12-15T18:07:00.739316230Z [err]              connect: [Function]
+2025-12-15T18:07:00.739321051Z [err]            },
+2025-12-15T18:07:00.739326264Z [err]            _readableState: ReadableState {
+2025-12-15T18:07:00.739330887Z [err]              highWaterMark: 65536,
+2025-12-15T18:07:00.739335930Z [err]              buffer: [],
+2025-12-15T18:07:00.739340915Z [err]              bufferIndex: 0,
+2025-12-15T18:07:00.739345897Z [err]              length: 0,
+2025-12-15T18:07:00.739350133Z [err]              pipes: [],
+2025-12-15T18:07:00.742006062Z [err]            _maxListeners: undefined,
+2025-12-15T18:07:00.742011909Z [err]              awaitDrainWriters: null,
+2025-12-15T18:07:00.742015119Z [err]            _eventsCount: 4,
+2025-12-15T18:07:00.742022118Z [err]            _sockname: null,
+2025-12-15T18:07:00.742026518Z [err]            _pendingData: null,
+2025-12-15T18:07:00.742030721Z [err]              [Symbol(kState)]: 1583364
+2025-12-15T18:07:00.742031572Z [err]            _pendingEncoding: '',
+2025-12-15T18:07:00.742036258Z [err]            },
+2025-12-15T18:07:00.742038281Z [err]            server: null,
+2025-12-15T18:07:00.742042451Z [err]            _writableState: WritableState {
+2025-12-15T18:07:00.742045128Z [err]            _server: null,
+2025-12-15T18:07:00.742047504Z [err]              highWaterMark: 65536,
+2025-12-15T18:07:00.742052479Z [err]              length: 0,
+2025-12-15T18:07:00.742054820Z [err]            [Symbol(async_id_symbol)]: 317108,
+2025-12-15T18:07:00.742058043Z [err]              corked: 0,
+2025-12-15T18:07:00.742060427Z [err]            [Symbol(kHandle)]: TCP {
+2025-12-15T18:07:00.742062810Z [err]              onwrite: [Function: bound onwrite],
+2025-12-15T18:07:00.742067830Z [err]              reading: [Getter/Setter],
+2025-12-15T18:07:00.742069079Z [err]              writelen: 0,
+2025-12-15T18:07:00.742074174Z [err]              bufferedIndex: 0,
+2025-12-15T18:07:00.742076314Z [err]              onconnection: null,
+2025-12-15T18:07:00.742079465Z [err]              pendingcb: 0,
+2025-12-15T18:07:00.742083473Z [err]              [Symbol(kState)]: 17563908,
+2025-12-15T18:07:00.742086983Z [err]              [Symbol(kBufferedValue)]: null,
+2025-12-15T18:07:00.742090872Z [err]              [Symbol(kWriteCbValue)]: null
+2025-12-15T18:07:00.742094600Z [err]            },
+2025-12-15T18:07:00.742098270Z [err]            allowHalfOpen: false,
+2025-12-15T18:07:00.743883556Z [err]              [Symbol(owner_symbol)]: [Circular *2]
+2025-12-15T18:07:00.743890994Z [err]            },
+2025-12-15T18:07:00.743897183Z [err]            [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T18:07:00.743897843Z [err]          _writableState: WritableState {
+2025-12-15T18:07:00.743902734Z [err]            [Symbol(timeout)]: null,
+2025-12-15T18:07:00.743906931Z [err]            [Symbol(kBuffer)]: null,
+2025-12-15T18:07:00.743911764Z [err]            [Symbol(kBufferCb)]: null,
+2025-12-15T18:07:00.743914266Z [err]            [Symbol(kBytesRead)]: 0,
+2025-12-15T18:07:00.743917456Z [err]            [Symbol(kBufferGen)]: null,
+2025-12-15T18:07:00.743922090Z [err]            [Symbol(kBytesWritten)]: 0
+2025-12-15T18:07:00.743925373Z [err]            [Symbol(shapeMode)]: true,
+2025-12-15T18:07:00.743929083Z [err]          },
+2025-12-15T18:07:00.743933082Z [err]            [Symbol(kCapture)]: false,
+2025-12-15T18:07:00.743934736Z [err]          _host: null,
+2025-12-15T18:07:00.743941655Z [err]            [Symbol(kSetNoDelay)]: false,
+2025-12-15T18:07:00.743942421Z [err]          _closeAfterHandlingError: false,
+2025-12-15T18:07:00.743949216Z [err]            [Symbol(kSetKeepAlive)]: false,
+2025-12-15T18:07:00.743949330Z [err]          _readableState: ReadableState {
+2025-12-15T18:07:00.743955823Z [err]            highWaterMark: 65536,
+2025-12-15T18:07:00.743957591Z [err]            [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-15T18:07:00.743960929Z [err]            buffer: [],
+2025-12-15T18:07:00.743965542Z [err]            bufferIndex: 0,
+2025-12-15T18:07:00.743969884Z [err]            length: 0,
+2025-12-15T18:07:00.743977261Z [err]            pipes: [],
+2025-12-15T18:07:00.743981156Z [err]            awaitDrainWriters: null,
+2025-12-15T18:07:00.743985290Z [err]            [Symbol(kState)]: 60303620
+2025-12-15T18:07:00.743989380Z [err]          },
+2025-12-15T18:07:00.745901044Z [err]            highWaterMark: 65536,
+2025-12-15T18:07:00.745912734Z [err]            length: 0,
+2025-12-15T18:07:00.745919633Z [err]            corked: 0,
+2025-12-15T18:07:00.745925084Z [err]            onwrite: [Function: bound onwrite],
+2025-12-15T18:07:00.745930748Z [err]            writelen: 0,
+2025-12-15T18:07:00.745937296Z [err]            bufferedIndex: 0,
+2025-12-15T18:07:00.745942920Z [err]            pendingcb: 1,
+2025-12-15T18:07:00.745949903Z [err]            [Symbol(kState)]: 1091310852,
+2025-12-15T18:07:00.745955432Z [err]            [Symbol(kBufferedValue)]: null,
+2025-12-15T18:07:00.745962554Z [err]            [Symbol(kWriteCbValue)]: null
+2025-12-15T18:07:00.745968843Z [err]          },
+2025-12-15T18:07:00.745974619Z [err]          allowHalfOpen: false,
+2025-12-15T18:07:00.745982401Z [err]          _maxListeners: undefined,
+2025-12-15T18:07:00.745988293Z [err]          _sockname: null,
+2025-12-15T18:07:00.745993691Z [err]          _pendingData: null,
+2025-12-15T18:07:00.745999031Z [err]          _pendingEncoding: '',
+2025-12-15T18:07:00.746004569Z [err]          server: undefined,
+2025-12-15T18:07:00.746010837Z [err]          _server: null,
+2025-12-15T18:07:00.746016720Z [err]          ssl: TLSWrap {
+2025-12-15T18:07:00.746022251Z [err]            _parent: TCP {
+2025-12-15T18:07:00.746027391Z [err]              reading: [Getter/Setter],
+2025-12-15T18:07:00.746033151Z [err]              onconnection: null,
+2025-12-15T18:07:00.746039194Z [err]              [Symbol(owner_symbol)]: [Socket]
+2025-12-15T18:07:00.746044315Z [err]            },
+2025-12-15T18:07:00.746049702Z [err]            _parentWrap: <ref *2> Socket {
+2025-12-15T18:07:00.746055634Z [err]              connecting: false,
+2025-12-15T18:07:00.746061515Z [err]              _hadError: false,
+2025-12-15T18:07:00.746068245Z [err]              _parent: null,
+2025-12-15T18:07:00.747749528Z [err]              _host: null,
+2025-12-15T18:07:00.747760796Z [err]              _closeAfterHandlingError: false,
+2025-12-15T18:07:00.747767984Z [err]              _events: [Object],
+2025-12-15T18:07:00.747775516Z [err]              _readableState: [ReadableState],
+2025-12-15T18:07:00.747784656Z [err]              _writableState: [WritableState],
+2025-12-15T18:07:00.747791307Z [err]              allowHalfOpen: false,
+2025-12-15T18:07:00.747807362Z [err]              _maxListeners: undefined,
+2025-12-15T18:07:00.747817624Z [err]              _eventsCount: 4,
+2025-12-15T18:07:00.747824190Z [err]              _sockname: null,
+2025-12-15T18:07:00.747830830Z [err]              _pendingData: null,
+2025-12-15T18:07:00.747836550Z [err]              _pendingEncoding: '',
+2025-12-15T18:07:00.747842833Z [err]              server: null,
+2025-12-15T18:07:00.747850625Z [err]              _server: null,
+2025-12-15T18:07:00.747857122Z [err]              [Symbol(async_id_symbol)]: 317108,
+2025-12-15T18:07:00.747863701Z [err]              [Symbol(kHandle)]: [TCP],
+2025-12-15T18:07:00.747870728Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T18:07:00.747876798Z [err]              [Symbol(timeout)]: null,
+2025-12-15T18:07:00.747884263Z [err]              [Symbol(kBuffer)]: null,
+2025-12-15T18:07:00.747897048Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-15T18:07:00.747903204Z [err]              [Symbol(kBufferGen)]: null,
+2025-12-15T18:07:00.747908628Z [err]              [Symbol(shapeMode)]: true,
+2025-12-15T18:07:00.747915041Z [err]              [Symbol(kCapture)]: false,
+2025-12-15T18:07:00.747921514Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-15T18:07:00.747928753Z [err]              [Symbol(kSetKeepAlive)]: false,
+2025-12-15T18:07:00.747942550Z [err]              [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-15T18:07:00.747949000Z [err]              [Symbol(kBytesRead)]: 0,
+2025-12-15T18:07:00.751108759Z [err]              [Symbol(kBytesWritten)]: 0
+2025-12-15T18:07:00.751117619Z [err]            },
+2025-12-15T18:07:00.751123410Z [err]            _secureContext: SecureContext { context: SecureContext {} },
+2025-12-15T18:07:00.751128709Z [err]            reading: true,
+2025-12-15T18:07:00.751133242Z [err]            onkeylog: [Function: onkeylog],
+2025-12-15T18:07:00.751138209Z [err]            onhandshakestart: [Function: noop],
+2025-12-15T18:07:00.751143692Z [err]            onhandshakedone: [Function (anonymous)],
+2025-12-15T18:07:00.751148608Z [err]            onocspresponse: [Function: onocspresponse],
+2025-12-15T18:07:00.751153733Z [err]            onnewsession: [Function: onnewsessionclient],
+2025-12-15T18:07:00.751159124Z [err]            onerror: [Function: onerror],
+2025-12-15T18:07:00.751164488Z [err]            [Symbol(owner_symbol)]: [Circular *3]
+2025-12-15T18:07:00.751169041Z [err]          },
+2025-12-15T18:07:00.751174470Z [err]          _requestCert: true,
+2025-12-15T18:07:00.751179591Z [err]          _rejectUnauthorized: true,
+2025-12-15T18:07:00.751185281Z [err]          parser: null,
+2025-12-15T18:07:00.751190405Z [err]          _httpMessage: [Circular *1],
+2025-12-15T18:07:00.751198546Z [err]          timeout: 0,
+2025-12-15T18:07:00.751204043Z [err]          [Symbol(alpncallback)]: null,
+2025-12-15T18:07:00.751209588Z [err]          [Symbol(res)]: TLSWrap {
+2025-12-15T18:07:00.751215602Z [err]            _parent: TCP {
+2025-12-15T18:07:00.751220484Z [err]              reading: [Getter/Setter],
+2025-12-15T18:07:00.751226069Z [err]              onconnection: null,
+2025-12-15T18:07:00.751231463Z [err]              [Symbol(owner_symbol)]: [Socket]
+2025-12-15T18:07:00.751238759Z [err]            },
+2025-12-15T18:07:00.751244260Z [err]            _parentWrap: <ref *2> Socket {
+2025-12-15T18:07:00.751249348Z [err]              connecting: false,
+2025-12-15T18:07:00.754366257Z [err]              _server: null,
+2025-12-15T18:07:00.754377917Z [err]              [Symbol(async_id_symbol)]: 317108,
+2025-12-15T18:07:00.754385762Z [err]              [Symbol(kHandle)]: [TCP],
+2025-12-15T18:07:00.754389786Z [err]              _hadError: false,
+2025-12-15T18:07:00.754392908Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T18:07:00.754402821Z [err]              [Symbol(timeout)]: null,
+2025-12-15T18:07:00.754403289Z [err]              _parent: null,
+2025-12-15T18:07:00.754411247Z [err]              _host: null,
+2025-12-15T18:07:00.754430619Z [err]              _closeAfterHandlingError: false,
+2025-12-15T18:07:00.754438034Z [err]              _events: [Object],
+2025-12-15T18:07:00.754445432Z [err]              _readableState: [ReadableState],
+2025-12-15T18:07:00.754452298Z [err]              _writableState: [WritableState],
+2025-12-15T18:07:00.754458625Z [err]              allowHalfOpen: false,
+2025-12-15T18:07:00.754465481Z [err]              _maxListeners: undefined,
+2025-12-15T18:07:00.754473711Z [err]              _eventsCount: 4,
+2025-12-15T18:07:00.754479298Z [err]              _sockname: null,
+2025-12-15T18:07:00.754484620Z [err]              _pendingData: null,
+2025-12-15T18:07:00.754490642Z [err]              _pendingEncoding: '',
+2025-12-15T18:07:00.754496752Z [err]              server: null,
+2025-12-15T18:07:00.757003495Z [err]              [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-15T18:07:00.759551885Z [err]              _hadError: false,
+2025-12-15T18:07:00.762107227Z [err]              [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-15T18:07:00.762117345Z [err]              [Symbol(kBytesRead)]: 0,
+2025-12-15T18:07:00.765530343Z [err]          [Symbol(kBytesWritten)]: 0,
+2025-12-15T18:07:00.771291456Z [err]            beforeRedirects: { proxy: [Function: beforeRedirect] },
+2025-12-15T18:07:00.771300125Z [err]            http2Options: undefined,
+2025-12-15T18:07:00.771304765Z [err]            hostname: 'fapi.binance.com',
+2025-12-15T18:07:00.775862698Z [err]            pathname: '/fapi/v3/positionRisk',
+2025-12-15T18:07:00.775872249Z [err]            search: '?timestamp=1765822007132&signature=3e556718ca20467908f3c5684468284afdc564aec8c30e6465ff766b5cad9687',
+2025-12-15T18:07:00.775878874Z [err]            _defaultAgent: Agent {
+2025-12-15T18:07:00.779508873Z [err]            secureEndpoint: true,
+2025-12-15T18:07:00.782476323Z [err]              [Symbol(kCapture)]: false,
+2025-12-15T18:07:00.782488211Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-15T18:07:00.785139217Z [err]          'x-response-time',
+2025-12-15T18:07:00.788208859Z [err]            rejectUnauthorized: true,
+2025-12-15T18:07:00.788218259Z [err]            session: undefined,
+2025-12-15T18:07:00.790549237Z [err]            error: [Function: socketErrorListener],
+2025-12-15T18:07:00.792675850Z [err]              drain: undefined,
+2025-12-15T18:07:00.797380715Z [err]            _maxListeners: undefined,
+2025-12-15T18:07:00.797393016Z [err]            _eventsCount: 4,
+2025-12-15T18:07:00.802014160Z [err]          _closeAfterHandlingError: false,
+2025-12-15T18:07:00.802023550Z [err]          _readableState: ReadableState {
+2025-12-15T18:07:00.802029620Z [err]            highWaterMark: 65536,
+2025-12-15T18:07:00.804638883Z [err]          _server: null,
+2025-12-15T18:07:00.808377455Z [err]              [Symbol(timeout)]: null,
+2025-12-15T18:07:00.808387629Z [err]              [Symbol(kBuffer)]: null,
+2025-12-15T18:07:00.811905331Z [err]              [Symbol(kHandle)]: [TCP],
+2025-12-15T18:07:00.811915132Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T18:07:00.815639470Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T18:07:00.815731232Z [err]              [Symbol(kBytesRead)]: 0,
+2025-12-15T18:07:00.817815009Z [err]          [Symbol(kBuffer)]: null,
+2025-12-15T18:07:00.821015505Z [err]              'X-MBX-APIKEY': '95Bdwy5fi5C5VLgAvBhbZThDtqS7v16iUAA0urPtbY9zhg6VNw4o5qMfu5UbIQRm',
+2025-12-15T18:07:00.824833116Z [err]              maxTotalSockets: Infinity,
+2025-12-15T18:07:00.824842482Z [err]              totalSocketCount: 1,
+2025-12-15T18:07:00.830502574Z [err]              maxSockets: Infinity,
+2025-12-15T18:07:00.830514633Z [err]              maxFreeSockets: 256,
+2025-12-15T18:07:00.830522091Z [err]              scheduling: 'lifo',
+2025-12-15T18:07:00.832863589Z [err]              _pendingEncoding: '',
+2025-12-15T18:07:00.834692720Z [err]        redirects: [],
+2025-12-15T18:07:00.840071087Z [err]      maxHeadersCount: null,
+2025-12-15T18:07:00.840088876Z [err]      reusedSocket: false,
+2025-12-15T18:07:00.840094672Z [err]      host: 'fapi.binance.com',
+2025-12-15T18:07:00.843492268Z [err]              keepAlive: false,
+2025-12-15T18:07:00.845971462Z [err]            _maxListeners: undefined,
+2025-12-15T18:07:00.845979972Z [err]            options: { path: undefined },
+2025-12-15T18:07:00.849377363Z [err]              STATUS_CODES: [Object],
+2025-12-15T18:07:00.853308828Z [err]              get: [Function: get],
+2025-12-15T18:07:00.853321974Z [err]              request: [Function: request]
+2025-12-15T18:07:00.857920388Z [err]      [Symbol(kChunkedBuffer)]: [],
+2025-12-15T18:07:00.857926793Z [err]      [Symbol(kChunkedLength)]: 0,
+2025-12-15T18:07:00.857930824Z [err]      [Symbol(kSocket)]: <ref *3> TLSSocket {
+2025-12-15T18:07:00.863658587Z [err]            highWaterMark: 65536,
+2025-12-15T18:07:00.863677142Z [err]          _hadError: false,
+2025-12-15T18:07:00.863682417Z [err]          _parent: null,
+2025-12-15T18:07:00.866250352Z [err]            length: 0,
+2025-12-15T18:07:00.868875171Z [err]          [Symbol(kBufferGen)]: null,
+2025-12-15T18:07:00.871614965Z [err]          [Symbol(kBufferedValue)]: null,
+2025-12-15T18:07:00.871703400Z [err]              _sockname: null,
+2025-12-15T18:07:00.875273677Z [err]              error: [Function (anonymous)],
+2025-12-15T18:07:00.878071128Z [err]              [Symbol(kWriteCbValue)]: null
+2025-12-15T18:07:00.878082266Z [err]            },
+2025-12-15T18:07:00.880496625Z [err]            [Symbol(kBytesWritten)]: 0
+2025-12-15T18:07:00.884286100Z [err]              _host: null,
+2025-12-15T18:07:00.884297895Z [err]              _closeAfterHandlingError: false,
+2025-12-15T18:07:00.886071041Z [err]              [Symbol(kBytesWritten)]: 0
+2025-12-15T18:07:00.887873769Z [err]            },
+2025-12-15T18:07:00.892446345Z [err]        [Symbol(kHandle)]: TLSWrap {
+2025-12-15T18:07:00.892452833Z [err]          _parent: <ref *4> TCP {
+2025-12-15T18:07:00.894040560Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-15T18:07:00.897256398Z [err]            },
+2025-12-15T18:07:00.899579574Z [err]            server: null,
+2025-12-15T18:07:00.903128603Z [err]          onocspresponse: [Function: onocspresponse],
+2025-12-15T18:07:00.903141493Z [err]          onnewsession: [Function: onnewsessionclient],
+2025-12-15T18:07:00.904291670Z [err]          checkServerIdentity: [Function: checkServerIdentity],
+2025-12-15T18:07:00.907055869Z [err]              maxFreeSockets: 256,
+2025-12-15T18:07:00.908935803Z [err]            requests: [Object: null prototype] {},
+2025-12-15T18:07:00.911294602Z [err]              ClientRequest: [Function: ClientRequest],
+2025-12-15T18:07:00.911798738Z [err]              Server: [Function: Server],
+2025-12-15T18:07:01.508033039Z [err]            }
+2025-12-15T18:07:01.508039916Z [err]          },
+2025-12-15T18:07:01.511224117Z [err]          pathname: '/fapi/v3/positionRisk',
+2025-12-15T18:07:01.511234857Z [err]          search: '?timestamp=1765822007132&signature=3e556718ca20467908f3c5684468284afdc564aec8c30e6465ff766b5cad9687',
+2025-12-15T18:07:01.511241974Z [err]          _defaultAgent: Agent {
+2025-12-15T18:07:01.511247511Z [err]            _events: [Object: null prototype] {
+2025-12-15T18:07:01.511252509Z [err]              free: [Function (anonymous)],
+2025-12-15T18:07:01.511257493Z [err]              newListener: [Function: maybeEnableKeylog]
+2025-12-15T18:07:01.511262411Z [err]            },
+2025-12-15T18:07:01.511269901Z [err]            _eventsCount: 2,
+2025-12-15T18:07:01.511275704Z [err]            _maxListeners: undefined,
+2025-12-15T18:07:01.511281127Z [err]            defaultPort: 443,
+2025-12-15T18:07:01.511292137Z [err]            protocol: 'https:',
+2025-12-15T18:07:01.511297289Z [err]            options: [Object: null prototype] {
+2025-12-15T18:07:01.511302761Z [err]              keepAlive: true,
+2025-12-15T18:07:01.511308690Z [err]              scheduling: 'lifo',
+2025-12-15T18:07:01.511316154Z [err]              timeout: 5000,
+2025-12-15T18:07:01.511322055Z [err]              noDelay: true,
+2025-12-15T18:07:01.511327584Z [err]              path: null
+2025-12-15T18:07:01.511333813Z [err]            },
+2025-12-15T18:07:01.511340830Z [err]            requests: [Object: null prototype] {},
+2025-12-15T18:07:01.511346554Z [err]            sockets: [Object: null prototype] {},
+2025-12-15T18:07:01.511353532Z [err]            freeSockets: [Object: null prototype] {},
+2025-12-15T18:07:01.511358687Z [err]            keepAliveMsecs: 1000,
+2025-12-15T18:07:01.511370502Z [err]            keepAlive: true,
+2025-12-15T18:07:01.511376126Z [err]            maxSockets: Infinity,
+2025-12-15T18:07:01.511423729Z [err]            maxFreeSockets: 256,
+2025-12-15T18:07:01.511435088Z [err]            scheduling: 'lifo',
+2025-12-15T18:07:01.511446371Z [err]            maxTotalSockets: Infinity,
+2025-12-15T18:07:01.511457605Z [err]            totalSocketCount: 0,
+2025-12-15T18:07:01.511468981Z [err]            maxCachedSessions: 100,
+2025-12-15T18:07:01.511469668Z [err]              prefinish: undefined,
+2025-12-15T18:07:01.511479480Z [err]              finish: undefined,
+2025-12-15T18:07:01.511485285Z [err]              drain: undefined,
+2025-12-15T18:07:01.511490546Z [err]              data: undefined,
+2025-12-15T18:07:01.511495676Z [err]              end: [Function: onReadableStreamEnd],
+2025-12-15T18:07:01.511498735Z [err]            _sessionCache: { map: [Object], list: [Array] },
+2025-12-15T18:07:01.511505416Z [err]              readable: undefined,
+2025-12-15T18:07:01.511505515Z [err]            [Symbol(shapeMode)]: false,
+2025-12-15T18:07:01.511515662Z [err]              connect: [Function]
+2025-12-15T18:07:01.511515704Z [err]            [Symbol(kCapture)]: false
+2025-12-15T18:07:01.511521747Z [err]          },
+2025-12-15T18:07:01.511527217Z [err]          servername: 'fapi.binance.com',
+2025-12-15T18:07:01.511529320Z [err]              bufferIndex: 0,
+2025-12-15T18:07:01.511535198Z [err]          secureEndpoint: true,
+2025-12-15T18:07:01.511537397Z [err]              [Symbol(kState)]: 1583364
+2025-12-15T18:07:01.511539615Z [err]              length: 0,
+2025-12-15T18:07:01.511541982Z [err]              bufferedIndex: 0,
+2025-12-15T18:07:01.511543852Z [err]          socket: <ref *2> Socket {
+2025-12-15T18:07:01.511545041Z [err]            },
+2025-12-15T18:07:01.511548791Z [err]              pipes: [],
+2025-12-15T18:07:01.511553423Z [err]            connecting: false,
+2025-12-15T18:07:01.511553574Z [err]              pendingcb: 0,
+2025-12-15T18:07:01.511557318Z [err]              awaitDrainWriters: null,
+2025-12-15T18:07:01.511561708Z [err]              [Symbol(kState)]: 17563908,
+2025-12-15T18:07:01.511566923Z [err]              [Symbol(kBufferedValue)]: null,
+2025-12-15T18:07:01.511572206Z [err]              [Symbol(kWriteCbValue)]: null
+2025-12-15T18:07:01.511575663Z [err]            _hadError: false,
+2025-12-15T18:07:01.511581051Z [err]            _parent: null,
+2025-12-15T18:07:01.511585759Z [err]            _host: null,
+2025-12-15T18:07:01.511591354Z [err]            _closeAfterHandlingError: false,
+2025-12-15T18:07:01.511596174Z [err]            _events: {
+2025-12-15T18:07:01.511601142Z [err]            },
+2025-12-15T18:07:01.511604006Z [err]              close: [Function (anonymous)],
+2025-12-15T18:07:01.511606811Z [err]            _readableState: ReadableState {
+2025-12-15T18:07:01.511609469Z [err]              error: [Function (anonymous)],
+2025-12-15T18:07:01.511613562Z [err]              highWaterMark: 65536,
+2025-12-15T18:07:01.511618798Z [err]              buffer: [],
+2025-12-15T18:07:01.511727999Z [err]            _writableState: WritableState {
+2025-12-15T18:07:01.511735209Z [err]              highWaterMark: 65536,
+2025-12-15T18:07:01.511741430Z [err]              length: 0,
+2025-12-15T18:07:01.511746264Z [err]              corked: 0,
+2025-12-15T18:07:01.511751269Z [err]              onwrite: [Function: bound onwrite],
+2025-12-15T18:07:01.511756076Z [err]              writelen: 0,
+2025-12-15T18:07:01.511797176Z [err]            },
+2025-12-15T18:07:01.511802239Z [err]            allowHalfOpen: false,
+2025-12-15T18:07:01.511806453Z [err]            _maxListeners: undefined,
+2025-12-15T18:07:01.511814171Z [err]            _eventsCount: 4,
+2025-12-15T18:07:01.511819411Z [err]            _sockname: null,
+2025-12-15T18:07:01.511824239Z [err]            _pendingData: null,
+2025-12-15T18:07:01.511829801Z [err]            _pendingEncoding: '',
+2025-12-15T18:07:01.515134622Z [err]            server: null,
+2025-12-15T18:07:01.515146343Z [err]            _server: null,
+2025-12-15T18:07:01.515152826Z [err]            [Symbol(async_id_symbol)]: 317108,
+2025-12-15T18:07:01.515158438Z [err]            [Symbol(kHandle)]: <ref *4> TCP {
+2025-12-15T18:07:01.515164238Z [err]              reading: [Getter/Setter],
+2025-12-15T18:07:01.515169878Z [err]              onconnection: null,
+2025-12-15T18:07:01.515175533Z [err]              [Symbol(owner_symbol)]: [Circular *2]
+2025-12-15T18:07:01.515181112Z [err]            },
+2025-12-15T18:07:01.515186194Z [err]            [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T18:07:01.515192787Z [err]            [Symbol(timeout)]: null,
+2025-12-15T18:07:01.515198225Z [err]            [Symbol(kBuffer)]: null,
+2025-12-15T18:07:01.515206826Z [err]            [Symbol(kBufferCb)]: null,
+2025-12-15T18:07:01.515212612Z [err]            [Symbol(kBufferGen)]: null,
+2025-12-15T18:07:01.515218090Z [err]            [Symbol(shapeMode)]: true,
+2025-12-15T18:07:01.515226130Z [err]            [Symbol(kCapture)]: false,
+2025-12-15T18:07:01.515232004Z [err]            [Symbol(kSetNoDelay)]: false,
+2025-12-15T18:07:01.515238901Z [err]            [Symbol(kSetKeepAlive)]: false,
+2025-12-15T18:07:01.515245667Z [err]            [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-15T18:07:01.515250786Z [err]            [Symbol(kBytesRead)]: 0,
+2025-12-15T18:07:01.515256784Z [err]            [Symbol(kBytesWritten)]: 0
+2025-12-15T18:07:01.515262369Z [err]          },
+2025-12-15T18:07:01.515268140Z [err]          singleUse: true
+2025-12-15T18:07:01.515273434Z [err]        }
+2025-12-15T18:07:01.515279036Z [err]      },
+2025-12-15T18:07:01.515284372Z [err]      [Symbol(kOutHeaders)]: [Object: null prototype] {
+2025-12-15T18:07:01.515302330Z [err]        accept: [ 'Accept', 'application/json, text/plain, */*' ],
+2025-12-15T18:07:01.516149496Z [err]        'x-mbx-apikey': [
+2025-12-15T18:07:01.516157819Z [err]          'X-MBX-APIKEY',
+2025-12-15T18:07:01.516164474Z [err]          '95Bdwy5fi5C5VLgAvBhbZThDtqS7v16iUAA0urPtbY9zhg6VNw4o5qMfu5UbIQRm'
+2025-12-15T18:07:01.516186578Z [err]        ],
+2025-12-15T18:07:01.516192829Z [err]        'user-agent': [ 'User-Agent', 'axios/1.13.2' ],
+2025-12-15T18:07:01.516198945Z [err]        'accept-encoding': [ 'Accept-Encoding', 'gzip, compress, deflate, br' ],
+2025-12-15T18:07:01.516204243Z [err]        host: [ 'Host', 'fapi.binance.com' ]
+2025-12-15T18:07:01.516210242Z [err]      },
+2025-12-15T18:07:01.516217203Z [err]      [Symbol(errored)]: null,
+2025-12-15T18:07:01.516223617Z [err]      [Symbol(kHighWaterMark)]: 65536,
+2025-12-15T18:07:01.516233834Z [err]      [Symbol(kRejectNonStandardBodyWrites)]: false,
+2025-12-15T18:07:01.516239523Z [err]      [Symbol(kUniqueHeaders)]: null
+2025-12-15T18:07:01.516245388Z [err]    },
+2025-12-15T18:07:01.516251090Z [err]    response: {
+2025-12-15T18:07:01.516256616Z [err]      status: 400,
+2025-12-15T18:07:01.516261882Z [err]      statusText: 'Bad Request',
+2025-12-15T18:07:01.516267281Z [err]      headers: Object [AxiosHeaders] {
+2025-12-15T18:07:01.516276514Z [err]        'content-type': 'application/json',
+2025-12-15T18:07:01.516286582Z [err]        'content-length': '79',
+2025-12-15T18:07:01.516292393Z [err]        connection: 'close',
+2025-12-15T18:07:01.516298708Z [err]        date: 'Mon, 15 Dec 2025 18:06:57 GMT',
+2025-12-15T18:07:01.516305302Z [err]        'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
+2025-12-15T18:07:01.516311517Z [err]        server: 'Tengine',
+2025-12-15T18:07:01.516312368Z [err]        'x-mbx-used-weight-1m': '63',
+2025-12-15T18:07:01.516323927Z [err]        'x-response-time': '0ms',
+2025-12-15T18:07:01.516336452Z [err]        'access-control-allow-origin': '*',
+2025-12-15T18:07:01.518336914Z [err]        'x-cache': 'Error from cloudfront',
+2025-12-15T18:07:01.518346276Z [err]        via: '1.1 39bd4dd36d89ac693c6b532053af59d6.cloudfront.net (CloudFront)',
+2025-12-15T18:07:01.518351827Z [err]        'x-amz-cf-pop': 'YUL62-P2',
+2025-12-15T18:07:01.518359001Z [err]        'x-amz-cf-id': 'UQv63zFL7BgctdSCO7AuyoaqPKs7XLIlFH2WOJhAikd0TALkrOi1fA=='
+2025-12-15T18:07:01.518364375Z [err]      },
+2025-12-15T18:07:01.518369718Z [err]      config: {
+2025-12-15T18:07:01.518374533Z [err]        transitional: {
+2025-12-15T18:07:01.518380447Z [err]          silentJSONParsing: true,
+2025-12-15T18:07:01.518386565Z [err]          forcedJSONParsing: true,
+2025-12-15T18:07:01.518393200Z [err]          clarifyTimeoutError: false
+2025-12-15T18:07:01.518399429Z [err]        },
+2025-12-15T18:07:01.518405635Z [err]        adapter: [ 'xhr', 'http', 'fetch' ],
+2025-12-15T18:07:01.518412426Z [err]        transformRequest: [ [Function: transformRequest] ],
+2025-12-15T18:07:01.518419485Z [err]        transformResponse: [ [Function: transformResponse] ],
+2025-12-15T18:07:01.518428338Z [err]        timeout: 0,
+2025-12-15T18:07:01.518432920Z [err]        xsrfCookieName: 'XSRF-TOKEN',
+2025-12-15T18:07:01.518440294Z [err]        xsrfHeaderName: 'X-XSRF-TOKEN',
+2025-12-15T18:07:01.518445375Z [err]        maxContentLength: -1,
+2025-12-15T18:07:01.518449736Z [err]        maxBodyLength: -1,
+2025-12-15T18:07:01.518454977Z [err]        env: {
+2025-12-15T18:07:01.518463166Z [err]          FormData: [Function: FormData] {
+2025-12-15T18:07:01.518468665Z [err]            LINE_BREAK: '\r\n',
+2025-12-15T18:07:01.518472912Z [err]            DEFAULT_CONTENT_TYPE: 'application/octet-stream'
+2025-12-15T18:07:01.518477089Z [err]          },
+2025-12-15T18:07:01.518481283Z [err]          Blob: [class Blob]
+2025-12-15T18:07:01.518485698Z [err]        },
+2025-12-15T18:07:01.518489954Z [err]        validateStatus: [Function: validateStatus],
+2025-12-15T18:07:01.519859235Z [err]        headers: Object [AxiosHeaders] {
+2025-12-15T18:07:01.519867668Z [err]          Accept: 'application/json, text/plain, */*',
+2025-12-15T18:07:01.519873709Z [err]          'Content-Type': undefined,
+2025-12-15T18:07:01.519879453Z [err]          'X-MBX-APIKEY': '95Bdwy5fi5C5VLgAvBhbZThDtqS7v16iUAA0urPtbY9zhg6VNw4o5qMfu5UbIQRm',
+2025-12-15T18:07:01.519885845Z [err]          'User-Agent': 'axios/1.13.2',
+2025-12-15T18:07:01.519891964Z [err]          'Accept-Encoding': 'gzip, compress, deflate, br'
+2025-12-15T18:07:01.519897774Z [err]        },
+2025-12-15T18:07:01.519903041Z [err]        baseURL: 'https://fapi.binance.com',
+2025-12-15T18:07:01.519907818Z [err]        httpsAgent: HttpsProxyAgent {
+2025-12-15T18:07:01.519912723Z [err]          _events: [Object: null prototype] {
+2025-12-15T18:07:01.519919022Z [err]            free: [Function (anonymous)],
+2025-12-15T18:07:01.519924142Z [err]            newListener: [Function: maybeEnableKeylog]
+2025-12-15T18:07:01.519929556Z [err]          },
+2025-12-15T18:07:01.519935543Z [err]          _eventsCount: 2,
+2025-12-15T18:07:01.519941148Z [err]          _maxListeners: undefined,
+2025-12-15T18:07:01.519946683Z [err]          options: { path: undefined },
+2025-12-15T18:07:01.519953445Z [err]          requests: [Object: null prototype] {},
+2025-12-15T18:07:01.519959161Z [err]          sockets: [Object: null prototype] {
+2025-12-15T18:07:01.519965561Z [err]            'fapi.binance.com:443:::::::::::::::::::::': [ [TLSSocket] ]
+2025-12-15T18:07:01.519971634Z [err]          },
+2025-12-15T18:07:01.519977597Z [err]          freeSockets: [Object: null prototype] {},
+2025-12-15T18:07:01.519984244Z [err]          keepAliveMsecs: 1000,
+2025-12-15T18:07:01.520006601Z [err]          keepAlive: false,
+2025-12-15T18:07:01.520012342Z [err]          maxSockets: Infinity,
+2025-12-15T18:07:01.520017777Z [err]          maxFreeSockets: 256,
+2025-12-15T18:07:01.521848346Z [err]          scheduling: 'lifo',
+2025-12-15T18:07:01.521858465Z [err]          maxTotalSockets: Infinity,
+2025-12-15T18:07:01.521869181Z [err]          totalSocketCount: 1,
+2025-12-15T18:07:01.521876895Z [err]          proxy: URL {},
+2025-12-15T18:07:01.521879430Z [err]          aborted: [Function (anonymous)],
+2025-12-15T18:07:01.521884232Z [err]          proxyHeaders: {},
+2025-12-15T18:07:01.521890713Z [err]          [Symbol(AgentBaseInternalState)]: { currentSocket: undefined }
+2025-12-15T18:07:01.521891602Z [err]          connect: [Function (anonymous)],
+2025-12-15T18:07:01.521893964Z [err]          connectOpts: {
+2025-12-15T18:07:01.521900918Z [err]            ALPNProtocols: [ 'http/1.1' ],
+2025-12-15T18:07:01.521902338Z [err]        },
+2025-12-15T18:07:01.521911260Z [err]        params: {
+2025-12-15T18:07:01.521916293Z [err]            host: '104.239.37.18',
+2025-12-15T18:07:01.521920654Z [err]          timestamp: 1765822007132,
+2025-12-15T18:07:01.521924641Z [err]            port: 5670
+2025-12-15T18:07:01.521929577Z [err]          signature: '3e556718ca20467908f3c5684468284afdc564aec8c30e6465ff766b5cad9687'
+2025-12-15T18:07:01.521932270Z [err]          },
+2025-12-15T18:07:01.521939218Z [err]        },
+2025-12-15T18:07:01.521939601Z [err]          [Symbol(shapeMode)]: false,
+2025-12-15T18:07:01.521947724Z [err]        method: 'get',
+2025-12-15T18:07:01.521947899Z [err]          [Symbol(kCapture)]: false,
+2025-12-15T18:07:01.521954174Z [err]        url: '/fapi/v3/positionRisk',
+2025-12-15T18:07:01.521961078Z [err]        allowAbsoluteUrls: true,
+2025-12-15T18:07:01.521969594Z [err]        data: undefined
+2025-12-15T18:07:01.521979696Z [err]      },
+2025-12-15T18:07:01.521986261Z [err]      request: <ref *1> ClientRequest {
+2025-12-15T18:07:01.521991226Z [err]        _events: [Object: null prototype] {
+2025-12-15T18:07:01.521995741Z [err]          abort: [Function (anonymous)],
+2025-12-15T18:07:01.524663075Z [err]          error: [Function (anonymous)],
+2025-12-15T18:07:01.524674056Z [err]          socket: [Function (anonymous)],
+2025-12-15T18:07:01.524680331Z [err]          timeout: [Function (anonymous)],
+2025-12-15T18:07:01.524686358Z [err]        _headerSent: true,
+2025-12-15T18:07:01.524687785Z [err]          finish: [Function: requestOnFinish]
+2025-12-15T18:07:01.524694205Z [err]        _closed: false,
+2025-12-15T18:07:01.524700259Z [err]        _header: 'GET /fapi/v3/positionRisk?timestamp=1765822007132&signature=3e556718ca20467908f3c5684468284afdc564aec8c30e6465ff766b5cad9687 HTTP/1.1\r\n' +
+2025-12-15T18:07:01.524700529Z [err]        },
+2025-12-15T18:07:01.524708279Z [err]        _eventsCount: 7,
+2025-12-15T18:07:01.524714144Z [err]        _maxListeners: undefined,
+2025-12-15T18:07:01.524718925Z [err]        outputData: [],
+2025-12-15T18:07:01.524723619Z [err]        outputSize: 0,
+2025-12-15T18:07:01.524728147Z [err]        writable: true,
+2025-12-15T18:07:01.524745143Z [err]        destroyed: false,
+2025-12-15T18:07:01.524750505Z [err]        _last: true,
+2025-12-15T18:07:01.524755859Z [err]        chunkedEncoding: false,
+2025-12-15T18:07:01.524760378Z [err]        shouldKeepAlive: false,
+2025-12-15T18:07:01.524764846Z [err]        maxRequestsOnConnectionReached: false,
+2025-12-15T18:07:01.524769319Z [err]        _defaultKeepAlive: true,
+2025-12-15T18:07:01.524775105Z [err]        useChunkedEncodingByDefault: false,
+2025-12-15T18:07:01.524781666Z [err]        sendDate: false,
+2025-12-15T18:07:01.524788415Z [err]        _removedConnection: false,
+2025-12-15T18:07:01.524794733Z [err]        _removedContLen: false,
+2025-12-15T18:07:01.524800914Z [err]        _removedTE: false,
+2025-12-15T18:07:01.524809856Z [err]        strictContentLength: false,
+2025-12-15T18:07:01.524817159Z [err]        _contentLength: 0,
+2025-12-15T18:07:01.524824925Z [err]        _hasBody: true,
+2025-12-15T18:07:01.524832123Z [err]        _trailer: '',
+2025-12-15T18:07:01.524839167Z [err]        finished: true,
+2025-12-15T18:07:01.525960102Z [err]          'Accept: application/json, text/plain, */*\r\n' +
+2025-12-15T18:07:01.525973898Z [err]          'X-MBX-APIKEY: 95Bdwy5fi5C5VLgAvBhbZThDtqS7v16iUAA0urPtbY9zhg6VNw4o5qMfu5UbIQRm\r\n' +
+2025-12-15T18:07:01.525980270Z [err]          'User-Agent: axios/1.13.2\r\n' +
+2025-12-15T18:07:01.525986951Z [err]          'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+2025-12-15T18:07:01.525992611Z [err]          keepAlive: false,
+2025-12-15T18:07:01.525994186Z [err]          'Host: fapi.binance.com\r\n' +
+2025-12-15T18:07:01.526002209Z [err]          'Connection: close\r\n' +
+2025-12-15T18:07:01.526003978Z [err]          maxSockets: Infinity,
+2025-12-15T18:07:01.526011672Z [err]          '\r\n',
+2025-12-15T18:07:01.526013567Z [err]            newListener: [Function: maybeEnableKeylog]
+2025-12-15T18:07:01.526018607Z [err]        _keepAliveTimeout: 0,
+2025-12-15T18:07:01.526025547Z [err]        _onPendingData: [Function: nop],
+2025-12-15T18:07:01.526028503Z [err]          },
+2025-12-15T18:07:01.526032440Z [err]        agent: HttpsProxyAgent {
+2025-12-15T18:07:01.526036567Z [err]          _eventsCount: 2,
+2025-12-15T18:07:01.526039973Z [err]          _events: [Object: null prototype] {
+2025-12-15T18:07:01.526045007Z [err]          _maxListeners: undefined,
+2025-12-15T18:07:01.526047510Z [err]            free: [Function (anonymous)],
+2025-12-15T18:07:01.526050809Z [err]          options: { path: undefined },
+2025-12-15T18:07:01.526055644Z [err]          requests: [Object: null prototype] {},
+2025-12-15T18:07:01.526059907Z [err]          sockets: [Object: null prototype] {
+2025-12-15T18:07:01.526063800Z [err]            'fapi.binance.com:443:::::::::::::::::::::': [ [TLSSocket] ]
+2025-12-15T18:07:01.526068219Z [err]          },
+2025-12-15T18:07:01.526072856Z [err]          freeSockets: [Object: null prototype] {},
+2025-12-15T18:07:01.526077748Z [err]          keepAliveMsecs: 1000,
+2025-12-15T18:07:01.527718660Z [err]          maxFreeSockets: 256,
+2025-12-15T18:07:01.527730275Z [err]          scheduling: 'lifo',
+2025-12-15T18:07:01.527737878Z [err]          maxTotalSockets: Infinity,
+2025-12-15T18:07:01.527747968Z [err]          totalSocketCount: 1,
+2025-12-15T18:07:01.527755182Z [err]          proxy: URL {},
+2025-12-15T18:07:01.527762245Z [err]          proxyHeaders: {},
+2025-12-15T18:07:01.527772474Z [err]          connectOpts: {
+2025-12-15T18:07:01.527779919Z [err]            ALPNProtocols: [ 'http/1.1' ],
+2025-12-15T18:07:01.527786168Z [err]            host: '104.239.37.18',
+2025-12-15T18:07:01.527792492Z [err]            port: 5670
+2025-12-15T18:07:01.527798517Z [err]          },
+2025-12-15T18:07:01.527804489Z [err]          [Symbol(shapeMode)]: false,
+2025-12-15T18:07:01.527810678Z [err]          [Symbol(kCapture)]: false,
+2025-12-15T18:07:01.527816950Z [err]          [Symbol(AgentBaseInternalState)]: { currentSocket: undefined }
+2025-12-15T18:07:01.527822886Z [err]        },
+2025-12-15T18:07:01.527828576Z [err]        socketPath: undefined,
+2025-12-15T18:07:01.527834562Z [err]        method: 'GET',
+2025-12-15T18:07:01.527844130Z [err]        maxHeaderSize: undefined,
+2025-12-15T18:07:01.527850718Z [err]        insecureHTTPParser: undefined,
+2025-12-15T18:07:01.527856587Z [err]        joinDuplicateHeaders: undefined,
+2025-12-15T18:07:01.527863556Z [err]        path: '/fapi/v3/positionRisk?timestamp=1765822007132&signature=3e556718ca20467908f3c5684468284afdc564aec8c30e6465ff766b5cad9687',
+2025-12-15T18:07:01.527869285Z [err]        _ended: true,
+2025-12-15T18:07:01.527874769Z [err]        res: IncomingMessage {
+2025-12-15T18:07:01.527881800Z [err]          _events: {
+2025-12-15T18:07:01.527887344Z [err]            close: undefined,
+2025-12-15T18:07:01.527893319Z [err]            error: [Function: handleStreamError],
+2025-12-15T18:07:01.527899486Z [err]            data: [Function: handleStreamData],
+2025-12-15T18:07:01.529843975Z [err]            end: [ [Function: responseOnEnd], [Function: handleStreamEnd] ],
+2025-12-15T18:07:01.529853898Z [err]            readable: undefined,
+2025-12-15T18:07:01.529859727Z [err]            aborted: [Function: handlerStreamAborted]
+2025-12-15T18:07:01.529865415Z [err]          },
+2025-12-15T18:07:01.529873011Z [err]          _readableState: ReadableState {
+2025-12-15T18:07:01.529878795Z [err]            highWaterMark: 65536,
+2025-12-15T18:07:01.529887499Z [err]            buffer: [],
+2025-12-15T18:07:01.529893758Z [err]            bufferIndex: 0,
+2025-12-15T18:07:01.529899798Z [err]            length: 0,
+2025-12-15T18:07:01.529906010Z [err]            pipes: [],
+2025-12-15T18:07:01.529912046Z [err]            awaitDrainWriters: null,
+2025-12-15T18:07:01.529918293Z [err]            [Symbol(kState)]: 194779004
+2025-12-15T18:07:01.529924907Z [err]          },
+2025-12-15T18:07:01.529930923Z [err]          _maxListeners: undefined,
+2025-12-15T18:07:01.529937305Z [err]          socket: <ref *3> TLSSocket {
+2025-12-15T18:07:01.533174929Z [err]              finish: [Function]
+2025-12-15T18:07:01.535226708Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-15T18:07:01.537136105Z [err]              bufferedIndex: 0,
+2025-12-15T18:07:01.539656982Z [err]              onerror: [Function: onerror],
+2025-12-15T18:07:01.539667205Z [err]            _requestCert: true,
+2025-12-15T18:07:01.542416072Z [err]              _secureContext: [SecureContext],
+2025-12-15T18:07:01.544107582Z [err]              checkServerIdentity: [Function: checkServerIdentity],
+2025-12-15T18:07:01.545998321Z [err]          httpVersionMajor: 1,
+2025-12-15T18:07:01.547760113Z [err]            'X-Amz-Cf-Id',
+2025-12-15T18:07:01.549799673Z [err]            },
+2025-12-15T18:07:01.551669335Z [err]            connecting: false,
+2025-12-15T18:07:01.555162502Z [err]              [Symbol(shapeMode)]: true,
+2025-12-15T18:07:01.558615736Z [err]              [Symbol(kState)]: 1091310852,
+2025-12-15T18:07:01.558627403Z [err]              [Symbol(kBufferedValue)]: null,
+2025-12-15T18:07:01.561296176Z [err]            parser: null,
+2025-12-15T18:07:01.564702402Z [err]              onkeylog: [Function: onkeylog],
+2025-12-15T18:07:01.564713129Z [err]              onhandshakestart: [Function: noop],
+2025-12-15T18:07:01.568830271Z [err]              checkServerIdentity: [Function: checkServerIdentity],
+2025-12-15T18:07:01.568853650Z [err]              minDHSize: 1024,
+2025-12-15T18:07:01.570869162Z [err]          _consuming: false,
+2025-12-15T18:07:01.575754802Z [err]          [Symbol(kHeadersCount)]: 26,
+2025-12-15T18:07:01.575766958Z [err]          [Symbol(kTrailers)]: null,
+2025-12-15T18:07:01.575775214Z [err]          [Symbol(kTrailersCount)]: 0
+2025-12-15T18:07:01.577803756Z [err]            length: 0,
+2025-12-15T18:07:01.580205613Z [err]            beforeRedirect: [Function: dispatchBeforeRedirect],
+2025-12-15T18:07:01.582098902Z [err]              [Symbol(AgentBaseInternalState)]: [Object]
+2025-12-15T18:07:01.584517825Z [err]        [Symbol(corked)]: 0,
+2025-12-15T18:07:01.586668467Z [err]          alpnProtocol: false,
+2025-12-15T18:07:01.589052959Z [err]          _parent: <ref *2> Socket {
+2025-12-15T18:07:01.593316933Z [err]              length: 0,
+2025-12-15T18:07:01.593326492Z [err]              corked: 0,
+2025-12-15T18:07:01.598334437Z [err]            [Symbol(kBufferCb)]: null,
+2025-12-15T18:07:01.598346925Z [err]            [Symbol(kBufferGen)]: null,
+2025-12-15T18:07:01.598356069Z [err]            [Symbol(shapeMode)]: true,
+2025-12-15T18:07:01.600494595Z [err]            pendingcb: 1,
+2025-12-15T18:07:01.602519192Z [err]              allowHalfOpen: false,
+2025-12-15T18:07:01.604477116Z [err]            onhandshakestart: [Function: noop],
+2025-12-15T18:07:01.606794863Z [err]              _readableState: [ReadableState],
+2025-12-15T18:07:01.609419136Z [err]            reading: true,
+2025-12-15T18:07:01.611744611Z [err]              _writableState: [WritableState],
+2025-12-15T18:07:01.611755594Z [err]              allowHalfOpen: false,
+2025-12-15T18:07:01.614013700Z [err]            reading: true,
+2025-12-15T18:07:01.617112640Z [err]            checkServerIdentity: [Function: checkServerIdentity],
+2025-12-15T18:07:01.620010052Z [err]              requests: [Object: null prototype] {},
+2025-12-15T18:07:01.620018548Z [err]              sockets: [Object: null prototype],
+2025-12-15T18:07:01.622347735Z [err]              defaultPort: 443,
+2025-12-15T18:07:01.623971307Z [err]              _events: [Object],
+2025-12-15T18:07:01.626787936Z [err]            singleUse: true
+2025-12-15T18:07:01.629603271Z [err]  npm error code 1
+2025-12-15T18:07:01.629686066Z [inf]  [Config] Trading enabled: true
+2025-12-15T18:07:01.632548215Z [inf]  [Memory] Loaded 166 learnings from database
+2025-12-15T18:07:01.913571588Z [inf]  [Memory] Loaded 794 patterns from database
+2025-12-15T18:07:01.913583372Z [inf]  [Memory] Database initialization complete!
+2025-12-15T18:07:01.913596836Z [inf]  [Main] Auto-starting trading bot...
+2025-12-15T18:07:01.913604374Z [inf]  [Engine] Starting trading bot...
+2025-12-15T18:07:01.913612017Z [inf]  [Engine] Min confidence: 45%
+2025-12-15T18:07:01.913662344Z [inf]  [Engine] Max leverage: 10x
+2025-12-15T18:07:01.913673309Z [inf]  [Server] Running on port 3001
+2025-12-15T18:07:02.511354430Z [inf]  [Engine] Today's stats (GDL 2025-12-15): 131 trades, $7.02 PnL
+2025-12-15T18:07:02.511451737Z [inf]  [Engine] Account balance: $4427.27
+2025-12-15T18:07:02.511456092Z [inf]  [Engine] Available balance: $4427.27
+2025-12-15T18:07:03.660806203Z [inf]  [Engine] Found 0 open positions
+2025-12-15T18:07:03.660812118Z [inf]  [Engine] Bot started successfully
+2025-12-15T18:07:03.660818820Z [inf]  
+2025-12-15T18:07:03.660828618Z [inf]  [Main] Bot is ready!
+2025-12-15T18:07:03.660835055Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-15T18:07:03.660840379Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-15T18:07:03.660849797Z [inf]  
+2025-12-15T18:07:04.485460238Z [inf]  [WS] Connected to Binance
+2025-12-15T18:07:10.512609872Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:07:10.512615147Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:07:10.512620210Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:07:10.512624335Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:07:10.512629133Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:07:10.512633676Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:07:10.512638878Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:07:10.512643728Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:07:10.512650540Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:07:10.512655229Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:07:10.512659849Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:07:10.513110829Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:07:17.945653901Z [err]  Railway rate limit of 500 logs/sec reached for replica, update your application to reduce the logging rate. Messages dropped: 2339
+2025-12-15T18:08:09.998736815Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:08:09.998749066Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:08:09.998755425Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:08:09.998760858Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:08:09.998791730Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:08:09.998798320Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:08:11.597288039Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:08:11.597293279Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:08:13.627100843Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:08:13.627104689Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:08:15.694213177Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:08:15.694219614Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:09:15.243008991Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:09:15.243020733Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:09:15.243028244Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:09:15.243034732Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:09:15.243041480Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:09:15.243059296Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:09:15.243069403Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:09:15.243076836Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:09:15.243083001Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:09:15.243090040Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:09:16.156888265Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:09:16.156894376Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:10:06.564101676Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:10:06.564109934Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:10:08.412847841Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:10:08.412855267Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:10:12.657892086Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:10:12.657899791Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:10:15.907647168Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:10:15.907655913Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:10:18.528879381Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:10:18.528886306Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:10:21.818211016Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:10:21.818221704Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:11:11.831313076Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:11:11.831323373Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:11:11.831330347Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:11:11.831336541Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:11:11.831342624Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:11:11.831348636Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:11:12.702221775Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:11:12.702234933Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:11:14.825709756Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:11:14.825718049Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:11:16.864219858Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:11:16.864229587Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:12:07.039929005Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:12:07.039938754Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:12:07.466687756Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:12:07.466694141Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:12:09.971561452Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:12:09.971565264Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:12:11.999879657Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:12:11.999895147Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:12:14.029843886Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:12:14.029850426Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:12:16.074758614Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:12:16.074765810Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:12:20.192840106Z [inf]  prisma:error Error in PostgreSQL connection: Error { kind: Closed, cause: None }
+2025-12-15T18:13:09.583370253Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:13:09.583380395Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:13:09.583386698Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:13:09.583391756Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:13:09.583397317Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:13:09.583401921Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:13:11.645556043Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:13:11.648881004Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:13:13.581846631Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:13:13.581853562Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:13:15.682753532Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:13:15.682762270Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:14:05.791735028Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:14:05.791741673Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:14:07.712129251Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:14:07.712134275Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:14:09.789064935Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:14:09.789070318Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:14:11.684125457Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:14:11.684131384Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:14:13.767961778Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:14:13.767971686Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:14:15.810813539Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:14:15.810822181Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:15:05.988507477Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:15:05.988515794Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:15:07.110641119Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:15:07.110651920Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:15:10.029418220Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:15:10.029425594Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:15:12.016299488Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:15:12.016303293Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:15:13.992098802Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:15:13.992103289Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:15:16.148908882Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:15:16.148913800Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:16:06.210878670Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:16:06.210884264Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:16:07.444067197Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:16:07.444076305Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:16:09.542415149Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:16:09.542438009Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:16:11.632194171Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:16:11.632209230Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:16:13.618272565Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:16:13.618285770Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:16:16.194569005Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:16:16.194577051Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:17:05.773886052Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:17:05.773903854Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:17:07.532069586Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:17:07.532075863Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:17:09.554566009Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:17:09.554571316Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:17:11.421778369Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:17:11.421783710Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:17:13.623231093Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:17:13.623235731Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:17:15.801914889Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:17:15.801922201Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:18:06.039750369Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:18:06.039759103Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:18:07.063962553Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:18:07.063971099Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:18:09.041956067Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:18:09.041962493Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:18:11.230269282Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:18:11.230278078Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:18:13.177746283Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:18:13.177754588Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:18:15.849590626Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:18:15.849596365Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:19:05.461982737Z [inf]  [Engine] BTCUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:19:05.461992809Z [err]  [GPT-Screen] BTCUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:19:07.554741597Z [inf]  [Engine] ETHUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:19:07.554750348Z [err]  [GPT-Screen] ETHUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:19:10.177670396Z [inf]  [Engine] BNBUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:19:10.177679685Z [err]  [GPT-Screen] BNBUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:19:12.197058590Z [inf]  [Engine] SOLUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:19:12.197066538Z [err]  [GPT-Screen] SOLUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:19:14.325151123Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:19:14.325158492Z [err]  [GPT-Screen] XRPUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+2025-12-15T18:19:16.502928033Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 0) - skipping
+2025-12-15T18:19:16.502940709Z [err]  [GPT-Screen] DOGEUSDT Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
