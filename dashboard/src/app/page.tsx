@@ -75,6 +75,15 @@ export default function Dashboard() {
     socketService.connect();
     setConnected(socketService.isConnected());
 
+    // Listen for connection status changes
+    socketService.on('connect', () => {
+      setConnected(true);
+    });
+
+    socketService.on('disconnect', () => {
+      setConnected(false);
+    });
+
     socketService.on('status', (data: any) => {
       setStatus(prev => prev ? { ...prev, ...data } : data);
     });
