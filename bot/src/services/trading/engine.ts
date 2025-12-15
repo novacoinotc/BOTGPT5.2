@@ -64,8 +64,8 @@ export class TradingEngine extends EventEmitter {
   private readonly MAX_TOTAL_EXPOSURE_PERCENT = 80; // Max 80% total capital in all positions
   private readonly COOLDOWN_MINUTES = 10; // Minimum time between trades on same symbol
   private readonly TRADING_FEE_PERCENT = 0.10; // Round trip fee (0.05% × 2)
-  private readonly MIN_TP_PERCENT = 0.5; // Minimum take profit to cover fees
-  private readonly MIN_SL_PERCENT = 1.0; // Minimum stop loss to give trade room
+  private readonly MIN_TP_PERCENT = 0.3; // Minimum take profit (lowered for scalping)
+  private readonly MIN_SL_PERCENT = 0.3; // Minimum stop loss (lowered for scalping)
 
   // Track last trade time per symbol for cooldown
   private lastTradeTime: Map<string, number> = new Map();

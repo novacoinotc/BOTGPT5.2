@@ -1,0 +1,882 @@
+2025-12-15T23:32:57.000000000Z [inf]  Starting Container
+2025-12-15T23:32:57.817651854Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-15T23:32:57.817656665Z [inf]  
+2025-12-15T23:32:57.817661237Z [inf]  > gpt-scalping-bot@1.0.0 start
+2025-12-15T23:32:57.817666509Z [inf]  > npm run start -w bot
+2025-12-15T23:32:57.817670898Z [inf]  
+2025-12-15T23:32:57.817703606Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-15T23:32:57.817708849Z [inf]  
+2025-12-15T23:32:57.817715939Z [inf]  > bot@1.0.0 start
+2025-12-15T23:32:57.817720212Z [inf]  > node dist/index.js
+2025-12-15T23:32:57.817724442Z [inf]  
+2025-12-15T23:32:57.817730133Z [inf]  =========================================
+2025-12-15T23:32:57.817734264Z [inf]      GPT 5.2 SCALPING BOT - v1.0.2
+2025-12-15T23:32:57.817738163Z [inf]  =========================================
+2025-12-15T23:32:57.817742140Z [inf]  
+2025-12-15T23:32:57.817747233Z [inf]  [Config] All required configurations present
+2025-12-15T23:32:57.817751327Z [inf]  [Config] Trading enabled: true
+2025-12-15T23:32:57.817756985Z [inf]  [Config] Max leverage: 10x
+2025-12-15T23:32:57.817763274Z [inf]  [Config] Max position size: 50%
+2025-12-15T23:32:57.817767391Z [inf]  [Config] Min confidence: 45%
+2025-12-15T23:32:57.817771490Z [inf]  [Config] Max hold time: 4h
+2025-12-15T23:32:57.817781185Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-15T23:32:57.817871727Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-15T23:32:58.811776205Z [inf]  [Database] Connected to PostgreSQL (Neon)
+2025-12-15T23:32:58.811783892Z [inf]  [Memory] Loading historical data from database...
+2025-12-15T23:32:59.287308046Z [inf]  [Memory] Loaded 321 trades from database
+2025-12-15T23:32:59.862500995Z [inf]  [Engine] Max leverage: 10x
+2025-12-15T23:32:59.862508924Z [inf]  [Server] Running on port 3001
+2025-12-15T23:32:59.862515585Z [inf]  [Memory] Loaded 169 learnings from database
+2025-12-15T23:32:59.862520978Z [inf]  [Main] Auto-starting trading bot...
+2025-12-15T23:32:59.862527215Z [inf]  [Engine] Starting trading bot...
+2025-12-15T23:32:59.862527242Z [inf]  [Memory] Loaded 906 patterns from database
+2025-12-15T23:32:59.862534369Z [inf]  [Engine] Min confidence: 55%
+2025-12-15T23:32:59.862536991Z [inf]  [Memory] Database initialization complete!
+2025-12-15T23:33:00.197784449Z [inf]  [Engine] Account balance: $4427.24
+2025-12-15T23:33:00.197794775Z [inf]  [Engine] Available balance: $4427.24
+2025-12-15T23:33:00.197799875Z [inf]  [Engine] Today's stats (GDL 2025-12-15): 136 trades, $5.93 PnL
+2025-12-15T23:33:00.788898928Z [inf]  [Engine] Bot started successfully
+2025-12-15T23:33:00.788913753Z [inf]  
+2025-12-15T23:33:00.788921862Z [inf]  [Main] Bot is ready!
+2025-12-15T23:33:00.788929945Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-15T23:33:00.788938851Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-15T23:33:00.788948659Z [inf]  
+2025-12-15T23:33:00.788985027Z [inf]  [Engine] Found 0 open positions
+2025-12-15T23:33:01.785877111Z [inf]  [WS] Connected to Binance
+2025-12-15T23:33:06.828672431Z [inf]  [Socket] Client connected: aNjqJXrPj5dmw3gFAAAB
+2025-12-15T23:33:12.207437854Z [inf]  [GPT-Screen] BTCUSDT: score=72, direction=BUY, hasOpp=true
+2025-12-15T23:33:12.207445266Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 72, direction: BUY)
+2025-12-15T23:33:12.912323667Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-15T23:33:12.912329542Z [inf]  [CryptoPanic] Fetched global sentiment (cached 15 min)
+2025-12-15T23:33:13.954377393Z [inf]  [GPT-Screen] SOLUSDT: score=32, direction=NONE, hasOpp=false
+2025-12-15T23:33:13.954381733Z [inf]  [Engine] SOLUSDT: No opportunity (score: 32) - skipping
+2025-12-15T23:33:14.079262909Z [inf]  [GPT-Screen] ETHUSDT: score=75, direction=SELL, hasOpp=true
+2025-12-15T23:33:14.079274302Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 75, direction: SELL)
+2025-12-15T23:33:14.275566279Z [inf]  [GPT-Screen] BNBUSDT: score=90, direction=BUY, hasOpp=true
+2025-12-15T23:33:14.275575088Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 90, direction: BUY)
+2025-12-15T23:33:15.324877862Z [inf]  [GPT-Screen] DOGEUSDT: score=45, direction=NONE, hasOpp=false
+2025-12-15T23:33:15.324887972Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 45) - skipping
+2025-12-15T23:33:19.064703632Z [inf]  [GPT-Screen] XRPUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-15T23:33:19.064713821Z [inf]  [Engine] XRPUSDT: No opportunity (score: 35) - skipping
+2025-12-15T23:33:28.201058959Z [inf]  [Engine] BTCUSDT: BUY (63%)
+2025-12-15T23:33:28.201069581Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $85750.00 | TP: $86790.00
+2025-12-15T23:33:28.201076710Z [inf]  [Engine] BTCUSDT: SL too tight (0.60% < 1%), skipping
+2025-12-15T23:33:29.264152768Z [inf]  [Engine] BNBUSDT: BUY (67%)
+2025-12-15T23:33:29.264161525Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $848.95 | TP: $862.20
+2025-12-15T23:33:29.264168244Z [inf]  [Engine] BNBUSDT: SL too tight (0.82% < 1%), skipping
+2025-12-15T23:33:30.289948322Z [inf]  [Engine] ETHUSDT: SELL (68%)
+2025-12-15T23:33:30.289952425Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $2986.00 | TP: $2936.00
+2025-12-15T23:33:30.289960694Z [inf]  [Engine] ETHUSDT: SL too tight (0.85% < 1%), skipping
+2025-12-15T23:36:11.078920702Z [inf]  [Socket] Client disconnected: aNjqJXrPj5dmw3gFAAAB
+2025-12-15T23:36:11.078926300Z [inf]  [Socket] Client connected: d3xKlMj20V4Y4yn4AAAD
+2025-12-15T23:36:11.078930695Z [inf]  [GPT-Screen] BTCUSDT: score=58, direction=BUY, hasOpp=true
+2025-12-15T23:36:11.078934978Z [inf]  [Engine] BTCUSDT: No opportunity (score: 58) - skipping
+2025-12-15T23:36:30.584666638Z [inf]  [GPT-Screen] ETHUSDT: score=55, direction=BUY, hasOpp=true
+2025-12-15T23:36:30.584676419Z [inf]  [Engine] ETHUSDT: No opportunity (score: 55) - skipping
+2025-12-15T23:36:30.584683088Z [inf]  [Engine] Stopping trading bot...
+2025-12-15T23:36:30.584689060Z [inf]  [Engine] Bot stopped
+2025-12-15T23:36:30.584701291Z [inf]  [WS] Connection closed
+2025-12-15T23:36:30.584705808Z [inf]  [WS] Reconnecting in 2000ms (attempt 1)
+2025-12-15T23:36:30.584710049Z [inf]  [Engine] Starting trading bot...
+2025-12-15T23:36:30.584714157Z [inf]  [Engine] Min confidence: 55%
+2025-12-15T23:36:30.584717985Z [inf]  [Engine] Max leverage: 10x
+2025-12-15T23:36:30.584722269Z [inf]  [Engine] Account balance: $4427.24
+2025-12-15T23:36:30.584726603Z [inf]  [Engine] Available balance: $4427.24
+2025-12-15T23:36:30.584731367Z [inf]  [Engine] Today's stats (GDL 2025-12-15): 136 trades, $5.93 PnL
+2025-12-15T23:36:31.143736819Z [inf]  [Engine] Found 0 open positions
+2025-12-15T23:36:31.143744636Z [inf]  [Engine] Bot started successfully
+2025-12-15T23:36:32.117405781Z [inf]  [WS] Connected to Binance
+2025-12-15T23:36:32.130040669Z [inf]  [WS] Connected to Binance
+2025-12-15T23:36:32.619365743Z [inf]  [GPT-Screen] BNBUSDT: score=62, direction=SELL, hasOpp=true
+2025-12-15T23:36:32.619375152Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 62, direction: SELL)
+2025-12-15T23:36:33.115540943Z [inf]  [Socket] Client disconnected: d3xKlMj20V4Y4yn4AAAD
+2025-12-15T23:36:33.235214801Z [inf]  [Socket] Client connected: YgMOQh5zeEK3OyVSAAAF
+2025-12-15T23:36:42.535640896Z [inf]  [GPT-Screen] BNBUSDT: score=72, direction=BUY, hasOpp=true
+2025-12-15T23:36:42.535647534Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 72, direction: BUY)
+2025-12-15T23:36:43.218182658Z [inf]  [GPT-Screen] BTCUSDT: score=75, direction=BUY, hasOpp=true
+2025-12-15T23:36:43.218193679Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 75, direction: BUY)
+2025-12-15T23:36:45.232949003Z [inf]  [GPT-Screen] ETHUSDT: score=65, direction=BUY, hasOpp=true
+2025-12-15T23:36:45.232958862Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 65, direction: BUY)
+2025-12-15T23:36:47.177258694Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-15T23:36:47.177264985Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping
+2025-12-15T23:36:48.272850581Z [inf]  [Engine] BNBUSDT: SL too tight (0.64% < 1%), skipping
+2025-12-15T23:36:48.272873338Z [inf]  [GPT-Screen] SOLUSDT: score=58, direction=BUY, hasOpp=true
+2025-12-15T23:36:48.272885102Z [inf]  [Engine] SOLUSDT: No opportunity (score: 58) - skipping
+2025-12-15T23:36:48.272894714Z [inf]  [Engine] BNBUSDT: SELL (62%)
+2025-12-15T23:36:48.272902210Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $862.60 | TP: $851.50
+2025-12-15T23:36:50.368098521Z [inf]  [GPT-Screen] XRPUSDT: Empty content (attempt 1), retrying...
+2025-12-15T23:36:55.763359958Z [inf]  [Engine] BNBUSDT: HOLD (68%)
+2025-12-15T23:36:59.616948314Z [inf]  [Socket] Client disconnected: YgMOQh5zeEK3OyVSAAAF
+2025-12-15T23:37:00.418764882Z [inf]  [Socket] Client connected: n8Mn1L_qI5M3ki2ZAAAH
+2025-12-15T23:37:01.379058722Z [inf]  [Engine] BTCUSDT: HOLD (66%)
+2025-12-15T23:37:02.399738545Z [inf]  [Engine] ETHUSDT: SELL (66%)
+2025-12-15T23:37:02.399743007Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $2972.20 | TP: $2939.80
+2025-12-15T23:37:02.399746908Z [inf]  [Engine] ETHUSDT: SL too tight (0.47% < 1%), skipping
+2025-12-15T23:37:02.474122508Z [inf]  [GPT-Screen] XRPUSDT: Empty content after 2 attempts
+2025-12-15T23:37:02.474131272Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-15T23:37:03.380387075Z [inf]  [GPT-Screen] SOLUSDT: Empty content (attempt 1), retrying...
+2025-12-15T23:37:22.913170712Z [inf]  [GPT-Screen] SOLUSDT: score=54, direction=SELL, hasOpp=true
+2025-12-15T23:37:22.913176735Z [inf]  [Engine] SOLUSDT: No opportunity (score: 54) - skipping
+2025-12-15T23:37:25.664344183Z [inf]  [GPT-Screen] XRPUSDT: Empty content (attempt 1), retrying...
+2025-12-15T23:37:34.971034877Z [inf]  [GPT-Screen] XRPUSDT: score=70, direction=SELL, hasOpp=true
+2025-12-15T23:37:34.971043036Z [inf]  [Engine] XRPUSDT: Opportunity detected! (score: 70, direction: SELL)
+2025-12-15T23:37:54.968599393Z [inf]  [Engine] XRPUSDT: SELL (62%)
+2025-12-15T23:37:54.968606479Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $1.9050 | TP: $1.8750
+2025-12-15T23:37:54.968611128Z [inf]  [Engine] XRPUSDT: SL too tight (0.59% < 1%), skipping
+2025-12-15T23:38:14.961500972Z [inf]  [GPT-Screen] DOGEUSDT: score=50, direction=SELL, hasOpp=false
+2025-12-15T23:38:14.961506962Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 50) - skipping
+2025-12-15T23:39:45.531924786Z [inf]  [GPT-Screen] BTCUSDT: score=57, direction=SELL, hasOpp=true
+2025-12-15T23:39:45.531930141Z [inf]  [Engine] BTCUSDT: No opportunity (score: 57) - skipping
+2025-12-15T23:39:46.333381708Z [inf]  [GPT-Screen] ETHUSDT: score=65, direction=BUY, hasOpp=true
+2025-12-15T23:39:46.333388020Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 65, direction: BUY)
+2025-12-15T23:40:15.909433687Z [inf]  [Engine] ETHUSDT: HOLD (62%)
+2025-12-15T23:40:16.554731051Z [inf]  [GPT-Screen] BNBUSDT: score=78, direction=BUY, hasOpp=true
+2025-12-15T23:40:16.554736408Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 78, direction: BUY)
+2025-12-15T23:40:36.062727184Z [inf]  [Engine] BNBUSDT: HOLD (67%)
+2025-12-15T23:40:41.664180462Z [inf]  [Engine] SOLUSDT: No opportunity (score: 35) - skipping
+2025-12-15T23:40:41.664210148Z [inf]  [GPT-Screen] SOLUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-15T23:40:46.864101553Z [err]  
+2025-12-15T23:40:46.864136381Z [err]  node:internal/process/promises:394
+2025-12-15T23:40:46.864144932Z [err]      triggerUncaughtException(err, true /* fromPromise */);
+2025-12-15T23:40:46.864151610Z [err]      ^
+2025-12-15T23:40:46.876755488Z [err]        silentJSONParsing: true,
+2025-12-15T23:40:46.876770548Z [err]        forcedJSONParsing: true,
+2025-12-15T23:40:46.876779218Z [err]        clarifyTimeoutError: false
+2025-12-15T23:40:46.876787065Z [err]      },
+2025-12-15T23:40:46.876793886Z [err]      adapter: [ 'xhr', 'http', 'fetch' ],
+2025-12-15T23:40:46.876801034Z [err]      transformRequest: [ [Function: transformRequest] ],
+2025-12-15T23:40:46.876807524Z [err]      transformResponse: [ [Function: transformResponse] ],
+2025-12-15T23:40:46.876814178Z [err]      timeout: 0,
+2025-12-15T23:40:46.876820651Z [err]      xsrfCookieName: 'XSRF-TOKEN',
+2025-12-15T23:40:46.876845245Z [err]  AxiosError: Request failed with status code 400
+2025-12-15T23:40:46.876853872Z [err]      at settle (/app/node_modules/axios/dist/node/axios.cjs:2106:12)
+2025-12-15T23:40:46.876864052Z [err]      at IncomingMessage.handleStreamEnd (/app/node_modules/axios/dist/node/axios.cjs:3491:11)
+2025-12-15T23:40:46.876873559Z [err]      at IncomingMessage.emit (node:events:530:35)
+2025-12-15T23:40:46.876881119Z [err]      at endReadableNT (node:internal/streams/readable:1698:12)
+2025-12-15T23:40:46.876888412Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-12-15T23:40:46.876896094Z [err]      at Axios.request (/app/node_modules/axios/dist/node/axios.cjs:4731:41)
+2025-12-15T23:40:46.876903720Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-15T23:40:46.876912767Z [err]      at async BinanceClient.getPositions (/app/bot/dist/services/binance/client.js:96:26)
+2025-12-15T23:40:46.876919856Z [err]      at async Timeout._onTimeout (/app/bot/dist/services/trading/engine.js:231:31) {
+2025-12-15T23:40:46.876929679Z [err]    code: 'ERR_BAD_REQUEST',
+2025-12-15T23:40:46.876936809Z [err]    config: {
+2025-12-15T23:40:46.876944127Z [err]      transitional: {
+2025-12-15T23:40:46.878762482Z [err]        _events: [Object: null prototype] {
+2025-12-15T23:40:46.878773014Z [err]          free: [Function (anonymous)],
+2025-12-15T23:40:46.878781181Z [err]          newListener: [Function: maybeEnableKeylog]
+2025-12-15T23:40:46.878787841Z [err]        },
+2025-12-15T23:40:46.878795112Z [err]        _eventsCount: 2,
+2025-12-15T23:40:46.878801522Z [err]        _maxListeners: undefined,
+2025-12-15T23:40:46.878807575Z [err]        options: { path: undefined },
+2025-12-15T23:40:46.878830176Z [err]      xsrfHeaderName: 'X-XSRF-TOKEN',
+2025-12-15T23:40:46.878836922Z [err]      maxContentLength: -1,
+2025-12-15T23:40:46.878842144Z [err]      maxBodyLength: -1,
+2025-12-15T23:40:46.878850863Z [err]      env: {
+2025-12-15T23:40:46.878857157Z [err]        FormData: [Function: FormData] {
+2025-12-15T23:40:46.878862863Z [err]          LINE_BREAK: '\r\n',
+2025-12-15T23:40:46.878868394Z [err]          DEFAULT_CONTENT_TYPE: 'application/octet-stream'
+2025-12-15T23:40:46.878872910Z [err]        },
+2025-12-15T23:40:46.878880018Z [err]        Blob: [class Blob]
+2025-12-15T23:40:46.878884405Z [err]      },
+2025-12-15T23:40:46.878889004Z [err]      validateStatus: [Function: validateStatus],
+2025-12-15T23:40:46.878900753Z [err]      headers: Object [AxiosHeaders] {
+2025-12-15T23:40:46.878905443Z [err]        Accept: 'application/json, text/plain, */*',
+2025-12-15T23:40:46.878910099Z [err]        'Content-Type': undefined,
+2025-12-15T23:40:46.878914678Z [err]        'X-MBX-APIKEY': '95Bdwy5fi5C5VLgAvBhbZThDtqS7v16iUAA0urPtbY9zhg6VNw4o5qMfu5UbIQRm',
+2025-12-15T23:40:46.878919809Z [err]        'User-Agent': 'axios/1.13.2',
+2025-12-15T23:40:46.878924981Z [err]        'Accept-Encoding': 'gzip, compress, deflate, br'
+2025-12-15T23:40:46.878929203Z [err]      },
+2025-12-15T23:40:46.878933365Z [err]      baseURL: 'https://fapi.binance.com',
+2025-12-15T23:40:46.878938069Z [err]      httpsAgent: HttpsProxyAgent {
+2025-12-15T23:40:46.880959470Z [err]        requests: [Object: null prototype] {},
+2025-12-15T23:40:46.880973262Z [err]        sockets: [Object: null prototype] {
+2025-12-15T23:40:46.880979748Z [err]          'fapi.binance.com:443:::::::::::::::::::::': [
+2025-12-15T23:40:46.880985508Z [err]            TLSSocket {
+2025-12-15T23:40:46.880996992Z [err]              allowHalfOpen: false,
+2025-12-15T23:40:46.880999805Z [err]              _tlsOptions: [Object],
+2025-12-15T23:40:46.881007279Z [err]              _secureEstablished: true,
+2025-12-15T23:40:46.881012378Z [err]              _events: [Object: null prototype],
+2025-12-15T23:40:46.881024938Z [err]              encrypted: true,
+2025-12-15T23:40:46.881025667Z [err]              _closeAfterHandlingError: false,
+2025-12-15T23:40:46.881029870Z [err]              _eventsCount: 9,
+2025-12-15T23:40:46.881040327Z [err]              _readableState: [ReadableState],
+2025-12-15T23:40:46.881041137Z [err]              connecting: false,
+2025-12-15T23:40:46.881052007Z [err]              _writableState: [WritableState],
+2025-12-15T23:40:46.881054545Z [err]              _hadError: false,
+2025-12-15T23:40:46.881054749Z [err]              _securePending: false,
+2025-12-15T23:40:46.881066962Z [err]              _parent: [Socket],
+2025-12-15T23:40:46.881070629Z [err]              _newSessionPending: false,
+2025-12-15T23:40:46.881078471Z [err]              _host: null,
+2025-12-15T23:40:46.881079603Z [err]              _controlReleased: true,
+2025-12-15T23:40:46.881086843Z [err]              secureConnecting: false,
+2025-12-15T23:40:46.881097676Z [err]              _SNICallback: null,
+2025-12-15T23:40:46.881104598Z [err]              servername: 'fapi.binance.com',
+2025-12-15T23:40:46.881110760Z [err]              alpnProtocol: false,
+2025-12-15T23:40:46.881117538Z [err]              authorized: true,
+2025-12-15T23:40:46.881124719Z [err]              authorizationError: null,
+2025-12-15T23:40:46.883760402Z [err]              _maxListeners: undefined,
+2025-12-15T23:40:46.883788867Z [err]              _sockname: null,
+2025-12-15T23:40:46.883794939Z [err]              _pendingData: null,
+2025-12-15T23:40:46.883800006Z [err]              _pendingEncoding: '',
+2025-12-15T23:40:46.883806150Z [err]              server: undefined,
+2025-12-15T23:40:46.883810994Z [err]              _server: null,
+2025-12-15T23:40:46.883816662Z [err]              ssl: [TLSWrap],
+2025-12-15T23:40:46.883822331Z [err]              _requestCert: true,
+2025-12-15T23:40:46.883828370Z [err]              _rejectUnauthorized: true,
+2025-12-15T23:40:46.883834600Z [err]              parser: null,
+2025-12-15T23:40:46.883840365Z [err]              _httpMessage: [ClientRequest],
+2025-12-15T23:40:46.883847363Z [err]              timeout: 0,
+2025-12-15T23:40:46.883852585Z [err]              [Symbol(alpncallback)]: null,
+2025-12-15T23:40:46.883856623Z [err]              [Symbol(res)]: [TLSWrap],
+2025-12-15T23:40:46.883863482Z [err]              [Symbol(verified)]: true,
+2025-12-15T23:40:46.883867862Z [err]              [Symbol(pendingSession)]: null,
+2025-12-15T23:40:46.883872002Z [err]              [Symbol(async_id_symbol)]: 159996,
+2025-12-15T23:40:46.883876613Z [err]              [Symbol(kHandle)]: [TLSWrap],
+2025-12-15T23:40:46.883882351Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T23:40:46.883888482Z [err]              [Symbol(timeout)]: null,
+2025-12-15T23:40:46.883893430Z [err]              [Symbol(kBuffer)]: null,
+2025-12-15T23:40:46.883899264Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-15T23:40:46.883905378Z [err]              [Symbol(kBufferGen)]: null,
+2025-12-15T23:40:46.883911084Z [err]              [Symbol(shapeMode)]: true,
+2025-12-15T23:40:46.883916852Z [err]              [Symbol(kCapture)]: false,
+2025-12-15T23:40:46.883923832Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-15T23:40:46.885847463Z [err]              [Symbol(kSetKeepAlive)]: true,
+2025-12-15T23:40:46.885853858Z [err]        },
+2025-12-15T23:40:46.885857310Z [err]      },
+2025-12-15T23:40:46.885857649Z [err]              [Symbol(kSetKeepAliveInitialDelay)]: 60,
+2025-12-15T23:40:46.885865469Z [err]        [Symbol(shapeMode)]: false,
+2025-12-15T23:40:46.885869524Z [err]              [Symbol(kBytesRead)]: 0,
+2025-12-15T23:40:46.885869697Z [err]      params: {
+2025-12-15T23:40:46.885878371Z [err]              [Symbol(kBytesWritten)]: 0,
+2025-12-15T23:40:46.885880784Z [err]        [Symbol(kCapture)]: false,
+2025-12-15T23:40:46.885883151Z [err]        timestamp: 1765842040966,
+2025-12-15T23:40:46.885884301Z [err]        proxyHeaders: {},
+2025-12-15T23:40:46.885885773Z [err]              [Symbol(connect-options)]: [Object]
+2025-12-15T23:40:46.885889995Z [err]        [Symbol(AgentBaseInternalState)]: { currentSocket: undefined }
+2025-12-15T23:40:46.885892661Z [err]            }
+2025-12-15T23:40:46.885901414Z [err]        connectOpts: {
+2025-12-15T23:40:46.885904475Z [err]          ]
+2025-12-15T23:40:46.885911048Z [err]        },
+2025-12-15T23:40:46.885914125Z [err]          ALPNProtocols: [ 'http/1.1' ],
+2025-12-15T23:40:46.885922047Z [err]          host: '104.239.37.18',
+2025-12-15T23:40:46.885929870Z [err]          port: 5670
+2025-12-15T23:40:46.885932417Z [err]        totalSocketCount: 1,
+2025-12-15T23:40:46.885932813Z [err]        freeSockets: [Object: null prototype] {},
+2025-12-15T23:40:46.885947258Z [err]        proxy: URL {},
+2025-12-15T23:40:46.885948121Z [err]        keepAliveMsecs: 1000,
+2025-12-15T23:40:46.885956152Z [err]        keepAlive: false,
+2025-12-15T23:40:46.885964010Z [err]        maxSockets: Infinity,
+2025-12-15T23:40:46.885973505Z [err]        maxFreeSockets: 256,
+2025-12-15T23:40:46.885985483Z [err]        scheduling: 'lifo',
+2025-12-15T23:40:46.885995334Z [err]        maxTotalSockets: Infinity,
+2025-12-15T23:40:46.887629543Z [err]        finish: [Function: requestOnFinish]
+2025-12-15T23:40:46.887644525Z [err]        signature: '5445d745faf26108671139a00dee26e0e6e4fc6749918b4e59e379c03d296797'
+2025-12-15T23:40:46.887646042Z [err]      },
+2025-12-15T23:40:46.887652542Z [err]      },
+2025-12-15T23:40:46.887654995Z [err]      _eventsCount: 7,
+2025-12-15T23:40:46.887657673Z [err]      method: 'get',
+2025-12-15T23:40:46.887662968Z [err]      _maxListeners: undefined,
+2025-12-15T23:40:46.887664516Z [err]      url: '/fapi/v3/positionRisk',
+2025-12-15T23:40:46.887669848Z [err]      outputData: [],
+2025-12-15T23:40:46.887676610Z [err]      outputSize: 0,
+2025-12-15T23:40:46.887683079Z [err]      writable: true,
+2025-12-15T23:40:46.887689083Z [err]      destroyed: false,
+2025-12-15T23:40:46.887695611Z [err]      _last: true,
+2025-12-15T23:40:46.887701791Z [err]      chunkedEncoding: false,
+2025-12-15T23:40:46.887707006Z [err]      allowAbsoluteUrls: true,
+2025-12-15T23:40:46.887710446Z [err]      shouldKeepAlive: false,
+2025-12-15T23:40:46.887712729Z [err]      data: undefined
+2025-12-15T23:40:46.887719287Z [err]      maxRequestsOnConnectionReached: false,
+2025-12-15T23:40:46.887720915Z [err]    },
+2025-12-15T23:40:46.887727276Z [err]      _defaultKeepAlive: true,
+2025-12-15T23:40:46.887727389Z [err]    request: <ref *1> ClientRequest {
+2025-12-15T23:40:46.887731961Z [err]      _events: [Object: null prototype] {
+2025-12-15T23:40:46.887739193Z [err]        abort: [Function (anonymous)],
+2025-12-15T23:40:46.887743440Z [err]        aborted: [Function (anonymous)],
+2025-12-15T23:40:46.887746971Z [err]        connect: [Function (anonymous)],
+2025-12-15T23:40:46.887751312Z [err]        error: [Function (anonymous)],
+2025-12-15T23:40:46.887787730Z [err]        socket: [Function (anonymous)],
+2025-12-15T23:40:46.887793320Z [err]        timeout: [Function (anonymous)],
+2025-12-15T23:40:46.890912703Z [err]      useChunkedEncodingByDefault: false,
+2025-12-15T23:40:46.890922357Z [err]      sendDate: false,
+2025-12-15T23:40:46.890929014Z [err]      _removedConnection: false,
+2025-12-15T23:40:46.890933674Z [err]      _removedContLen: false,
+2025-12-15T23:40:46.890938507Z [err]      _removedTE: false,
+2025-12-15T23:40:46.890943209Z [err]      strictContentLength: false,
+2025-12-15T23:40:46.890948312Z [err]      _contentLength: 0,
+2025-12-15T23:40:46.890953567Z [err]      _hasBody: true,
+2025-12-15T23:40:46.890959669Z [err]      _trailer: '',
+2025-12-15T23:40:46.891042905Z [err]      finished: true,
+2025-12-15T23:40:46.891048252Z [err]      _headerSent: true,
+2025-12-15T23:40:46.891052900Z [err]      _closed: false,
+2025-12-15T23:40:46.891057703Z [err]      _header: 'GET /fapi/v3/positionRisk?timestamp=1765842040966&signature=5445d745faf26108671139a00dee26e0e6e4fc6749918b4e59e379c03d296797 HTTP/1.1\r\n' +
+2025-12-15T23:40:46.891064559Z [err]        'Accept: application/json, text/plain, */*\r\n' +
+2025-12-15T23:40:46.891072476Z [err]        'X-MBX-APIKEY: 95Bdwy5fi5C5VLgAvBhbZThDtqS7v16iUAA0urPtbY9zhg6VNw4o5qMfu5UbIQRm\r\n' +
+2025-12-15T23:40:46.891091752Z [err]        'User-Agent: axios/1.13.2\r\n' +
+2025-12-15T23:40:46.891096784Z [err]        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+2025-12-15T23:40:46.891102113Z [err]        'Host: fapi.binance.com\r\n' +
+2025-12-15T23:40:46.891107435Z [err]        'Connection: close\r\n' +
+2025-12-15T23:40:46.891112418Z [err]        '\r\n',
+2025-12-15T23:40:46.891134874Z [err]      _keepAliveTimeout: 0,
+2025-12-15T23:40:46.891139591Z [err]      _onPendingData: [Function: nop],
+2025-12-15T23:40:46.891145402Z [err]      agent: HttpsProxyAgent {
+2025-12-15T23:40:46.891150188Z [err]        _events: [Object: null prototype] {
+2025-12-15T23:40:46.891154772Z [err]          free: [Function (anonymous)],
+2025-12-15T23:40:46.893111434Z [err]          newListener: [Function: maybeEnableKeylog]
+2025-12-15T23:40:46.893111909Z [err]              _eventsCount: 9,
+2025-12-15T23:40:46.893125763Z [err]              connecting: false,
+2025-12-15T23:40:46.893134895Z [err]              _hadError: false,
+2025-12-15T23:40:46.893136882Z [err]        },
+2025-12-15T23:40:46.893143552Z [err]        _eventsCount: 2,
+2025-12-15T23:40:46.893144595Z [err]              _parent: [Socket],
+2025-12-15T23:40:46.893149553Z [err]        _maxListeners: undefined,
+2025-12-15T23:40:46.893181435Z [err]        options: { path: undefined },
+2025-12-15T23:40:46.893187688Z [err]        requests: [Object: null prototype] {},
+2025-12-15T23:40:46.893192918Z [err]        sockets: [Object: null prototype] {
+2025-12-15T23:40:46.893198247Z [err]          'fapi.binance.com:443:::::::::::::::::::::': [
+2025-12-15T23:40:46.893203402Z [err]            TLSSocket {
+2025-12-15T23:40:46.893209358Z [err]              _tlsOptions: [Object],
+2025-12-15T23:40:46.893237979Z [err]              _secureEstablished: true,
+2025-12-15T23:40:46.893245418Z [err]              _securePending: false,
+2025-12-15T23:40:46.893250483Z [err]              _newSessionPending: false,
+2025-12-15T23:40:46.893265210Z [err]              _controlReleased: true,
+2025-12-15T23:40:46.893271032Z [err]              secureConnecting: false,
+2025-12-15T23:40:46.893274961Z [err]              _SNICallback: null,
+2025-12-15T23:40:46.893291291Z [err]              servername: 'fapi.binance.com',
+2025-12-15T23:40:46.893296289Z [err]              alpnProtocol: false,
+2025-12-15T23:40:46.893302256Z [err]              authorized: true,
+2025-12-15T23:40:46.893307443Z [err]              authorizationError: null,
+2025-12-15T23:40:46.893312483Z [err]              encrypted: true,
+2025-12-15T23:40:46.893317083Z [err]              _events: [Object: null prototype],
+2025-12-15T23:40:46.895015887Z [err]              _host: null,
+2025-12-15T23:40:46.895018953Z [err]              [Symbol(verified)]: true,
+2025-12-15T23:40:46.895026846Z [err]              _closeAfterHandlingError: false,
+2025-12-15T23:40:46.895029448Z [err]              [Symbol(pendingSession)]: null,
+2025-12-15T23:40:46.895036958Z [err]              _readableState: [ReadableState],
+2025-12-15T23:40:46.895037473Z [err]              [Symbol(async_id_symbol)]: 159996,
+2025-12-15T23:40:46.895045911Z [err]              [Symbol(kHandle)]: [TLSWrap],
+2025-12-15T23:40:46.895045988Z [err]              _writableState: [WritableState],
+2025-12-15T23:40:46.895052307Z [err]              allowHalfOpen: false,
+2025-12-15T23:40:46.895054689Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T23:40:46.895057915Z [err]              _maxListeners: undefined,
+2025-12-15T23:40:46.895063208Z [err]              [Symbol(timeout)]: null,
+2025-12-15T23:40:46.895066595Z [err]              _sockname: null,
+2025-12-15T23:40:46.895071852Z [err]              _pendingData: null,
+2025-12-15T23:40:46.895076275Z [err]              _pendingEncoding: '',
+2025-12-15T23:40:46.895080295Z [err]              server: undefined,
+2025-12-15T23:40:46.895085739Z [err]              _server: null,
+2025-12-15T23:40:46.895090097Z [err]              ssl: [TLSWrap],
+2025-12-15T23:40:46.895094419Z [err]              _requestCert: true,
+2025-12-15T23:40:46.895098675Z [err]              _rejectUnauthorized: true,
+2025-12-15T23:40:46.895102565Z [err]              parser: null,
+2025-12-15T23:40:46.895106615Z [err]              _httpMessage: [Circular *1],
+2025-12-15T23:40:46.895110848Z [err]              timeout: 0,
+2025-12-15T23:40:46.895116992Z [err]              [Symbol(alpncallback)]: null,
+2025-12-15T23:40:46.895121289Z [err]              [Symbol(res)]: [TLSWrap],
+2025-12-15T23:40:46.897512627Z [err]              [Symbol(kBuffer)]: null,
+2025-12-15T23:40:46.897520453Z [err]        totalSocketCount: 1,
+2025-12-15T23:40:46.897527683Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-15T23:40:46.897536489Z [err]              [Symbol(kBufferGen)]: null,
+2025-12-15T23:40:46.897543502Z [err]        proxy: URL {},
+2025-12-15T23:40:46.897546811Z [err]              [Symbol(shapeMode)]: true,
+2025-12-15T23:40:46.897556645Z [err]        proxyHeaders: {},
+2025-12-15T23:40:46.897564776Z [err]        connectOpts: {
+2025-12-15T23:40:46.897571959Z [err]          ALPNProtocols: [ 'http/1.1' ],
+2025-12-15T23:40:46.897578945Z [err]              [Symbol(kCapture)]: false,
+2025-12-15T23:40:46.897582725Z [err]          host: '104.239.37.18',
+2025-12-15T23:40:46.897590085Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-15T23:40:46.897596876Z [err]              [Symbol(kSetKeepAlive)]: true,
+2025-12-15T23:40:46.897603150Z [err]              [Symbol(kSetKeepAliveInitialDelay)]: 60,
+2025-12-15T23:40:46.897608931Z [err]              [Symbol(kBytesRead)]: 0,
+2025-12-15T23:40:46.897614810Z [err]              [Symbol(kBytesWritten)]: 0,
+2025-12-15T23:40:46.897620990Z [err]              [Symbol(connect-options)]: [Object]
+2025-12-15T23:40:46.897627479Z [err]            }
+2025-12-15T23:40:46.897633581Z [err]          ]
+2025-12-15T23:40:46.897640817Z [err]        },
+2025-12-15T23:40:46.897647048Z [err]        freeSockets: [Object: null prototype] {},
+2025-12-15T23:40:46.897653396Z [err]        keepAliveMsecs: 1000,
+2025-12-15T23:40:46.897661222Z [err]        keepAlive: false,
+2025-12-15T23:40:46.897668054Z [err]        maxSockets: Infinity,
+2025-12-15T23:40:46.897674400Z [err]        maxFreeSockets: 256,
+2025-12-15T23:40:46.897680085Z [err]        scheduling: 'lifo',
+2025-12-15T23:40:46.897686134Z [err]        maxTotalSockets: Infinity,
+2025-12-15T23:40:46.898845699Z [err]          end: [ [Function: responseOnEnd], [Function: handleStreamEnd] ],
+2025-12-15T23:40:46.898846546Z [err]          port: 5670
+2025-12-15T23:40:46.898857281Z [err]        },
+2025-12-15T23:40:46.898859277Z [err]          readable: undefined,
+2025-12-15T23:40:46.898865840Z [err]        [Symbol(shapeMode)]: false,
+2025-12-15T23:40:46.898866643Z [err]          aborted: [Function: handlerStreamAborted]
+2025-12-15T23:40:46.898874752Z [err]        },
+2025-12-15T23:40:46.898875722Z [err]        [Symbol(kCapture)]: false,
+2025-12-15T23:40:46.898882188Z [err]        _readableState: ReadableState {
+2025-12-15T23:40:46.898885305Z [err]        [Symbol(AgentBaseInternalState)]: { currentSocket: undefined }
+2025-12-15T23:40:46.898889488Z [err]          highWaterMark: 65536,
+2025-12-15T23:40:46.898894168Z [err]      },
+2025-12-15T23:40:46.898896516Z [err]          buffer: [],
+2025-12-15T23:40:46.898901963Z [err]          bufferIndex: 0,
+2025-12-15T23:40:46.898903957Z [err]      socketPath: undefined,
+2025-12-15T23:40:46.898907427Z [err]          length: 0,
+2025-12-15T23:40:46.898912262Z [err]      method: 'GET',
+2025-12-15T23:40:46.898918940Z [err]      maxHeaderSize: undefined,
+2025-12-15T23:40:46.898925069Z [err]      insecureHTTPParser: undefined,
+2025-12-15T23:40:46.898931165Z [err]      joinDuplicateHeaders: undefined,
+2025-12-15T23:40:46.898936665Z [err]      path: '/fapi/v3/positionRisk?timestamp=1765842040966&signature=5445d745faf26108671139a00dee26e0e6e4fc6749918b4e59e379c03d296797',
+2025-12-15T23:40:46.898942407Z [err]      _ended: true,
+2025-12-15T23:40:46.898950280Z [err]      res: IncomingMessage {
+2025-12-15T23:40:46.898956618Z [err]        _events: {
+2025-12-15T23:40:46.898962963Z [err]          close: undefined,
+2025-12-15T23:40:46.898969652Z [err]          error: [Function: handleStreamError],
+2025-12-15T23:40:46.898976775Z [err]          data: [Function: handleStreamData],
+2025-12-15T23:40:46.900366586Z [err]          pipes: [],
+2025-12-15T23:40:46.900373927Z [err]          awaitDrainWriters: null,
+2025-12-15T23:40:46.900379520Z [err]          [Symbol(kState)]: 194779004
+2025-12-15T23:40:46.900384979Z [err]        },
+2025-12-15T23:40:46.900390231Z [err]        _maxListeners: undefined,
+2025-12-15T23:40:46.900394325Z [err]        socket: <ref *3> TLSSocket {
+2025-12-15T23:40:46.900398301Z [err]          _tlsOptions: {
+2025-12-15T23:40:46.900401998Z [err]            allowHalfOpen: undefined,
+2025-12-15T23:40:46.900405573Z [err]            pipe: false,
+2025-12-15T23:40:46.900409409Z [err]            secureContext: SecureContext { context: SecureContext {} },
+2025-12-15T23:40:46.900413107Z [err]            isServer: false,
+2025-12-15T23:40:46.900417007Z [err]            requestCert: true,
+2025-12-15T23:40:46.900420827Z [err]            rejectUnauthorized: true,
+2025-12-15T23:40:46.900426935Z [err]            session: undefined,
+2025-12-15T23:40:46.900430755Z [err]            ALPNProtocols: undefined,
+2025-12-15T23:40:46.900434437Z [err]            requestOCSP: undefined,
+2025-12-15T23:40:46.900438045Z [err]            enableTrace: undefined,
+2025-12-15T23:40:46.900441857Z [err]            pskCallback: undefined,
+2025-12-15T23:40:46.900445798Z [err]            highWaterMark: undefined,
+2025-12-15T23:40:46.900449398Z [err]            onread: undefined,
+2025-12-15T23:40:46.900452984Z [err]            signal: undefined
+2025-12-15T23:40:46.900456617Z [err]          },
+2025-12-15T23:40:46.900460208Z [err]          _secureEstablished: true,
+2025-12-15T23:40:46.900463973Z [err]          _securePending: false,
+2025-12-15T23:40:46.900467612Z [err]          _newSessionPending: false,
+2025-12-15T23:40:46.900471619Z [err]          _controlReleased: true,
+2025-12-15T23:40:46.900475192Z [err]          secureConnecting: false,
+2025-12-15T23:40:46.900478909Z [err]          _SNICallback: null,
+2025-12-15T23:40:46.902878616Z [err]            }
+2025-12-15T23:40:46.902884594Z [err]          servername: 'fapi.binance.com',
+2025-12-15T23:40:46.902889128Z [err]          },
+2025-12-15T23:40:46.902889464Z [err]            end: [Function: onReadableStreamEnd],
+2025-12-15T23:40:46.902896875Z [err]          _eventsCount: 9,
+2025-12-15T23:40:46.902897644Z [err]          alpnProtocol: false,
+2025-12-15T23:40:46.902901132Z [err]            error: [Function: socketErrorListener],
+2025-12-15T23:40:46.902905839Z [err]          connecting: false,
+2025-12-15T23:40:46.902907196Z [err]          authorized: true,
+2025-12-15T23:40:46.902910273Z [err]            newListener: [ [Function: keylogNewListener], [Function: newListener] ],
+2025-12-15T23:40:46.902915843Z [err]          authorizationError: null,
+2025-12-15T23:40:46.902920007Z [err]            secure: [Function: onConnectSecure],
+2025-12-15T23:40:46.902925897Z [err]            free: [Function: onFree],
+2025-12-15T23:40:46.902928666Z [err]          encrypted: true,
+2025-12-15T23:40:46.902933035Z [err]            timeout: [ [Function: onTimeout], [Function (anonymous)] ],
+2025-12-15T23:40:46.902937396Z [err]          _events: [Object: null prototype] {
+2025-12-15T23:40:46.902940678Z [err]            agentRemove: [Function: onRemove],
+2025-12-15T23:40:46.902945712Z [err]            close: [
+2025-12-15T23:40:46.902948689Z [err]            data: undefined,
+2025-12-15T23:40:46.902953088Z [err]              [Function: onSocketCloseDestroySSL],
+2025-12-15T23:40:46.902957491Z [err]            drain: undefined,
+2025-12-15T23:40:46.902961205Z [err]              [Function: onClose],
+2025-12-15T23:40:46.902965147Z [err]            finish: [Function: bound onceWrapper] {
+2025-12-15T23:40:46.902969219Z [err]              [Function: socketCloseListener]
+2025-12-15T23:40:46.902972537Z [err]              listener: [Function (anonymous)]
+2025-12-15T23:40:46.902977217Z [err]            ],
+2025-12-15T23:40:46.904869978Z [err]          _hadError: false,
+2025-12-15T23:40:46.904879877Z [err]          _parent: <ref *2> Socket {
+2025-12-15T23:40:46.904882860Z [err]              [Symbol(kState)]: 1583364
+2025-12-15T23:40:46.904886360Z [err]            connecting: false,
+2025-12-15T23:40:46.904891432Z [err]            _hadError: false,
+2025-12-15T23:40:46.904894666Z [err]            },
+2025-12-15T23:40:46.904897460Z [err]            _parent: null,
+2025-12-15T23:40:46.904903855Z [err]            _host: null,
+2025-12-15T23:40:46.904904299Z [err]            _writableState: WritableState {
+2025-12-15T23:40:46.904907895Z [err]              end: [Function: onReadableStreamEnd],
+2025-12-15T23:40:46.904909000Z [err]            _closeAfterHandlingError: false,
+2025-12-15T23:40:46.904913641Z [err]            _events: {
+2025-12-15T23:40:46.904918643Z [err]              readable: undefined,
+2025-12-15T23:40:46.904920766Z [err]              close: [Function (anonymous)],
+2025-12-15T23:40:46.904927566Z [err]              error: [Function (anonymous)],
+2025-12-15T23:40:46.904927783Z [err]              connect: [Function]
+2025-12-15T23:40:46.904935077Z [err]              prefinish: undefined,
+2025-12-15T23:40:46.904935169Z [err]            },
+2025-12-15T23:40:46.904942432Z [err]              finish: undefined,
+2025-12-15T23:40:46.904945760Z [err]            _readableState: ReadableState {
+2025-12-15T23:40:46.904948809Z [err]              drain: undefined,
+2025-12-15T23:40:46.904954226Z [err]              data: undefined,
+2025-12-15T23:40:46.904957673Z [err]              highWaterMark: 65536,
+2025-12-15T23:40:46.904962676Z [err]              buffer: [],
+2025-12-15T23:40:46.904968295Z [err]              bufferIndex: 0,
+2025-12-15T23:40:46.904972974Z [err]              length: 0,
+2025-12-15T23:40:46.904978260Z [err]              pipes: [],
+2025-12-15T23:40:46.904983054Z [err]              awaitDrainWriters: null,
+2025-12-15T23:40:46.908625065Z [err]              highWaterMark: 65536,
+2025-12-15T23:40:46.908635573Z [err]              length: 0,
+2025-12-15T23:40:46.908645322Z [err]              corked: 0,
+2025-12-15T23:40:46.908654263Z [err]              onwrite: [Function: bound onwrite],
+2025-12-15T23:40:46.908656744Z [err]            _pendingData: null,
+2025-12-15T23:40:46.908663408Z [err]              writelen: 0,
+2025-12-15T23:40:46.908672897Z [err]              bufferedIndex: 0,
+2025-12-15T23:40:46.908677161Z [err]            _pendingEncoding: '',
+2025-12-15T23:40:46.908687946Z [err]            server: null,
+2025-12-15T23:40:46.908692473Z [err]              pendingcb: 0,
+2025-12-15T23:40:46.908702994Z [err]            _server: null,
+2025-12-15T23:40:46.908705749Z [err]              [Symbol(kState)]: 17563908,
+2025-12-15T23:40:46.908716555Z [err]            [Symbol(async_id_symbol)]: 158028,
+2025-12-15T23:40:46.908717053Z [err]              [Symbol(kBufferedValue)]: null,
+2025-12-15T23:40:46.908728791Z [err]              [Symbol(kWriteCbValue)]: null
+2025-12-15T23:40:46.908730459Z [err]            [Symbol(kHandle)]: TCP {
+2025-12-15T23:40:46.908742300Z [err]            },
+2025-12-15T23:40:46.908744849Z [err]              reading: [Getter/Setter],
+2025-12-15T23:40:46.908754387Z [err]            allowHalfOpen: false,
+2025-12-15T23:40:46.908758424Z [err]              onconnection: null,
+2025-12-15T23:40:46.908769733Z [err]              [Symbol(owner_symbol)]: [Circular *2]
+2025-12-15T23:40:46.908770320Z [err]            _maxListeners: undefined,
+2025-12-15T23:40:46.908779007Z [err]            },
+2025-12-15T23:40:46.908787010Z [err]            _eventsCount: 4,
+2025-12-15T23:40:46.908799180Z [err]            _sockname: null,
+2025-12-15T23:40:46.908806353Z [err]            [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T23:40:46.908813957Z [err]            [Symbol(timeout)]: null,
+2025-12-15T23:40:46.911481036Z [err]            buffer: [],
+2025-12-15T23:40:46.911483558Z [err]            [Symbol(kBuffer)]: null,
+2025-12-15T23:40:46.911493374Z [err]            bufferIndex: 0,
+2025-12-15T23:40:46.911495496Z [err]            [Symbol(kBufferCb)]: null,
+2025-12-15T23:40:46.911502368Z [err]            [Symbol(kBufferGen)]: null,
+2025-12-15T23:40:46.911504838Z [err]            length: 0,
+2025-12-15T23:40:46.911509357Z [err]            [Symbol(shapeMode)]: true,
+2025-12-15T23:40:46.911515823Z [err]            [Symbol(kCapture)]: false,
+2025-12-15T23:40:46.911516440Z [err]            pipes: [],
+2025-12-15T23:40:46.911524440Z [err]            [Symbol(kSetNoDelay)]: false,
+2025-12-15T23:40:46.911526765Z [err]            awaitDrainWriters: null,
+2025-12-15T23:40:46.911534339Z [err]            [Symbol(kSetKeepAlive)]: false,
+2025-12-15T23:40:46.911534648Z [err]            [Symbol(kState)]: 60303620
+2025-12-15T23:40:46.911541922Z [err]            [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-15T23:40:46.911543574Z [err]          },
+2025-12-15T23:40:46.911550139Z [err]            [Symbol(kBytesRead)]: 0,
+2025-12-15T23:40:46.911551427Z [err]          _writableState: WritableState {
+2025-12-15T23:40:46.911557491Z [err]            [Symbol(kBytesWritten)]: 0
+2025-12-15T23:40:46.911559861Z [err]            highWaterMark: 65536,
+2025-12-15T23:40:46.911564713Z [err]          },
+2025-12-15T23:40:46.911569506Z [err]            length: 0,
+2025-12-15T23:40:46.911572566Z [err]          _host: null,
+2025-12-15T23:40:46.911578660Z [err]            corked: 0,
+2025-12-15T23:40:46.911580724Z [err]          _closeAfterHandlingError: false,
+2025-12-15T23:40:46.911587145Z [err]            onwrite: [Function: bound onwrite],
+2025-12-15T23:40:46.911588381Z [err]          _readableState: ReadableState {
+2025-12-15T23:40:46.911594393Z [err]            highWaterMark: 65536,
+2025-12-15T23:40:46.914243096Z [err]            writelen: 0,
+2025-12-15T23:40:46.914272997Z [err]            bufferedIndex: 0,
+2025-12-15T23:40:46.914278925Z [err]            pendingcb: 1,
+2025-12-15T23:40:46.914296065Z [err]            [Symbol(kState)]: 1091310852,
+2025-12-15T23:40:46.914301410Z [err]            [Symbol(kBufferedValue)]: null,
+2025-12-15T23:40:46.914306396Z [err]            [Symbol(kWriteCbValue)]: null
+2025-12-15T23:40:46.914311952Z [err]          },
+2025-12-15T23:40:46.914317741Z [err]          allowHalfOpen: false,
+2025-12-15T23:40:46.914592840Z [err]          _maxListeners: undefined,
+2025-12-15T23:40:46.914606201Z [err]          _sockname: null,
+2025-12-15T23:40:46.914612587Z [err]          _pendingData: null,
+2025-12-15T23:40:46.914619761Z [err]          _pendingEncoding: '',
+2025-12-15T23:40:46.914626429Z [err]          server: undefined,
+2025-12-15T23:40:46.914632445Z [err]          _server: null,
+2025-12-15T23:40:46.914638985Z [err]          ssl: TLSWrap {
+2025-12-15T23:40:46.914645379Z [err]            _parent: TCP {
+2025-12-15T23:40:46.914651806Z [err]              reading: [Getter/Setter],
+2025-12-15T23:40:46.914658529Z [err]              onconnection: null,
+2025-12-15T23:40:46.914683860Z [err]              [Symbol(owner_symbol)]: [Socket]
+2025-12-15T23:40:46.914690294Z [err]            },
+2025-12-15T23:40:46.914699504Z [err]            _parentWrap: <ref *2> Socket {
+2025-12-15T23:40:46.914707536Z [err]              connecting: false,
+2025-12-15T23:40:46.914714555Z [err]              _hadError: false,
+2025-12-15T23:40:46.914725659Z [err]              _parent: null,
+2025-12-15T23:40:46.914734039Z [err]              _host: null,
+2025-12-15T23:40:46.914741238Z [err]              _closeAfterHandlingError: false,
+2025-12-15T23:40:46.914747496Z [err]              _events: [Object],
+2025-12-15T23:40:46.914756187Z [err]              _readableState: [ReadableState],
+2025-12-15T23:40:46.919152679Z [err]              _writableState: [WritableState],
+2025-12-15T23:40:46.919167969Z [err]              allowHalfOpen: false,
+2025-12-15T23:40:46.919200524Z [err]              _maxListeners: undefined,
+2025-12-15T23:40:46.919206873Z [err]              _eventsCount: 4,
+2025-12-15T23:40:46.919212987Z [err]              _sockname: null,
+2025-12-15T23:40:46.919221148Z [err]              _pendingData: null,
+2025-12-15T23:40:46.919230887Z [err]              _pendingEncoding: '',
+2025-12-15T23:40:46.919240856Z [err]              server: null,
+2025-12-15T23:40:46.919248109Z [err]              _server: null,
+2025-12-15T23:40:46.919253224Z [err]              [Symbol(async_id_symbol)]: 158028,
+2025-12-15T23:40:46.919258502Z [err]              [Symbol(kHandle)]: [TCP],
+2025-12-15T23:40:46.919265971Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T23:40:46.919285242Z [err]              [Symbol(timeout)]: null,
+2025-12-15T23:40:46.919292560Z [err]              [Symbol(kBuffer)]: null,
+2025-12-15T23:40:46.919297618Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-15T23:40:46.919303378Z [err]              [Symbol(kBufferGen)]: null,
+2025-12-15T23:40:46.919333594Z [err]              [Symbol(shapeMode)]: true,
+2025-12-15T23:40:46.919339376Z [err]              [Symbol(kCapture)]: false,
+2025-12-15T23:40:46.919346399Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-15T23:40:46.919352933Z [err]              [Symbol(kSetKeepAlive)]: false,
+2025-12-15T23:40:46.919363007Z [err]              [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-15T23:40:46.919393129Z [err]              [Symbol(kBytesRead)]: 0,
+2025-12-15T23:40:46.919400414Z [err]              [Symbol(kBytesWritten)]: 0
+2025-12-15T23:40:46.919407459Z [err]            },
+2025-12-15T23:40:46.919413521Z [err]            _secureContext: SecureContext { context: SecureContext {} },
+2025-12-15T23:40:46.922660724Z [err]            reading: true,
+2025-12-15T23:40:46.922662887Z [err]          [Symbol(alpncallback)]: null,
+2025-12-15T23:40:46.922673424Z [err]            onkeylog: [Function: onkeylog],
+2025-12-15T23:40:46.922674380Z [err]          [Symbol(res)]: TLSWrap {
+2025-12-15T23:40:46.922682067Z [err]            _parent: TCP {
+2025-12-15T23:40:46.922684113Z [err]            onhandshakestart: [Function: noop],
+2025-12-15T23:40:46.922689792Z [err]              reading: [Getter/Setter],
+2025-12-15T23:40:46.922691642Z [err]            onhandshakedone: [Function (anonymous)],
+2025-12-15T23:40:46.922697828Z [err]              onconnection: null,
+2025-12-15T23:40:46.922699940Z [err]            onocspresponse: [Function: onocspresponse],
+2025-12-15T23:40:46.922705033Z [err]              [Symbol(owner_symbol)]: [Socket]
+2025-12-15T23:40:46.922711481Z [err]            onnewsession: [Function: onnewsessionclient],
+2025-12-15T23:40:46.922712517Z [err]            },
+2025-12-15T23:40:46.922719972Z [err]              _closeAfterHandlingError: false,
+2025-12-15T23:40:46.922720562Z [err]            onerror: [Function: onerror],
+2025-12-15T23:40:46.922725495Z [err]            _parentWrap: <ref *2> Socket {
+2025-12-15T23:40:46.922735159Z [err]            [Symbol(owner_symbol)]: [Circular *3]
+2025-12-15T23:40:46.922739648Z [err]              connecting: false,
+2025-12-15T23:40:46.922745346Z [err]          },
+2025-12-15T23:40:46.922752770Z [err]          _requestCert: true,
+2025-12-15T23:40:46.922757453Z [err]              _hadError: false,
+2025-12-15T23:40:46.922758441Z [err]          _rejectUnauthorized: true,
+2025-12-15T23:40:46.922765387Z [err]              _parent: null,
+2025-12-15T23:40:46.922766309Z [err]          parser: null,
+2025-12-15T23:40:46.922773856Z [err]              _host: null,
+2025-12-15T23:40:46.922816111Z [err]          _httpMessage: [Circular *1],
+2025-12-15T23:40:46.922821200Z [err]          timeout: 0,
+2025-12-15T23:40:46.924826593Z [err]              _events: [Object],
+2025-12-15T23:40:46.924837288Z [err]              _readableState: [ReadableState],
+2025-12-15T23:40:46.924844094Z [err]              _writableState: [WritableState],
+2025-12-15T23:40:46.924864913Z [err]              allowHalfOpen: false,
+2025-12-15T23:40:46.924870811Z [err]              _maxListeners: undefined,
+2025-12-15T23:40:46.924891767Z [err]              _eventsCount: 4,
+2025-12-15T23:40:46.924898557Z [err]              _sockname: null,
+2025-12-15T23:40:46.924907942Z [err]              _pendingData: null,
+2025-12-15T23:40:46.924915164Z [err]              _pendingEncoding: '',
+2025-12-15T23:40:46.924921403Z [err]              server: null,
+2025-12-15T23:40:46.924928344Z [err]              _server: null,
+2025-12-15T23:40:46.924958289Z [err]              [Symbol(async_id_symbol)]: 158028,
+2025-12-15T23:40:46.924964837Z [err]              [Symbol(kHandle)]: [TCP],
+2025-12-15T23:40:46.924970544Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T23:40:46.924976524Z [err]              [Symbol(timeout)]: null,
+2025-12-15T23:40:46.924997167Z [err]              [Symbol(kBuffer)]: null,
+2025-12-15T23:40:46.925003452Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-15T23:40:46.925011644Z [err]              [Symbol(kBufferGen)]: null,
+2025-12-15T23:40:46.925017874Z [err]              [Symbol(shapeMode)]: true,
+2025-12-15T23:40:46.925023369Z [err]              [Symbol(kCapture)]: false,
+2025-12-15T23:40:46.927763854Z [err]            _secureContext: SecureContext { context: SecureContext {} },
+2025-12-15T23:40:46.930920168Z [err]              _events: [Object],
+2025-12-15T23:40:46.930934715Z [err]              _readableState: [ReadableState],
+2025-12-15T23:40:46.933186355Z [err]            _secureContext: SecureContext { context: SecureContext {} },
+2025-12-15T23:40:46.936069601Z [err]            checkServerIdentity: [Function: checkServerIdentity],
+2025-12-15T23:40:46.938272339Z [err]              requests: [Object: null prototype] {},
+2025-12-15T23:40:46.940713426Z [err]              defaultPort: 443,
+2025-12-15T23:40:46.940724008Z [err]              freeSockets: [Object: null prototype] {},
+2025-12-15T23:40:46.942717531Z [err]              [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T23:40:46.957926590Z [err]          'X-Amz-Cf-Pop',
+2025-12-15T23:40:46.957932399Z [err]          'YUL62-P4',
+2025-12-15T23:40:46.957937358Z [err]          'X-Amz-Cf-Id',
+2025-12-15T23:40:46.957946001Z [err]          'h6uiXVZoiytYY5QOJkvcQDiTaZjcOriUFOctJQoHt4LflJRmyA7JEQ=='
+2025-12-15T23:40:46.957951035Z [err]        ],
+2025-12-15T23:40:46.957955951Z [err]        rawTrailers: [],
+2025-12-15T23:40:46.957960536Z [err]        joinDuplicateHeaders: undefined,
+2025-12-15T23:40:46.960902477Z [err]            signal: undefined
+2025-12-15T23:40:46.960916348Z [err]          },
+2025-12-15T23:40:46.963006811Z [err]            data: undefined,
+2025-12-15T23:40:46.964637037Z [err]            _pendingEncoding: '',
+2025-12-15T23:40:46.967079613Z [err]            [Symbol(kHandle)]: TCP {
+2025-12-15T23:40:46.970987326Z [err]            [Symbol(kState)]: 60303620
+2025-12-15T23:40:46.970999704Z [err]          },
+2025-12-15T23:40:46.973973416Z [err]              connecting: false,
+2025-12-15T23:40:46.977200585Z [err]              [Symbol(kSetKeepAlive)]: false,
+2025-12-15T23:40:46.977209737Z [err]              [Symbol(kSetKeepAliveInitialDelay)]: 0,
+2025-12-15T23:40:46.978855847Z [err]            },
+2025-12-15T23:40:46.980932978Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-15T23:40:46.983123405Z [err]            _parentWrap: <ref *2> Socket {
+2025-12-15T23:40:46.984993410Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-15T23:40:46.987891450Z [err]            auth: undefined,
+2025-12-15T23:40:46.989460802Z [err]              [Symbol(kCapture)]: false,
+2025-12-15T23:40:46.991933623Z [err]              _sessionCache: [Object],
+2025-12-15T23:40:46.993571478Z [err]              [Symbol(timeout)]: null,
+2025-12-15T23:40:46.995234720Z [err]          connection: 'close',
+2025-12-15T23:40:46.997702715Z [err]          error: [Function: handleRequestError],
+2025-12-15T23:40:46.999099368Z [err]          method: 'GET',
+2025-12-15T23:40:47.001025143Z [err]              proxyHeaders: {},
+2025-12-15T23:40:47.004349402Z [err]            freeSockets: [Object: null prototype] {},
+2025-12-15T23:40:47.006501759Z [err]              ServerResponse: [Function: ServerResponse],
+2025-12-15T23:40:47.009720385Z [err]        _ended: true,
+2025-12-15T23:40:47.009729611Z [err]        _ending: true,
+2025-12-15T23:40:47.011934591Z [err]          isServer: false,
+2025-12-15T23:40:47.013557056Z [err]          ],
+2025-12-15T23:40:47.015205824Z [err]            finish: undefined,
+2025-12-15T23:40:47.017284634Z [err]            [Symbol(kWriteCbValue)]: null
+2025-12-15T23:40:47.022125453Z [err]          [Symbol(kBytesWritten)]: 0
+2025-12-15T23:40:47.022137190Z [err]        },
+2025-12-15T23:40:47.025990601Z [err]        _pendingEncoding: '',
+2025-12-15T23:40:47.026021502Z [err]        server: undefined,
+2025-12-15T23:40:47.030886848Z [err]              [Symbol(timeout)]: null,
+2025-12-15T23:40:47.030900856Z [err]              [Symbol(kBuffer)]: null,
+2025-12-15T23:40:47.030909041Z [err]              [Symbol(kBufferCb)]: null,
+2025-12-15T23:40:47.034034501Z [err]              readable: undefined,
+2025-12-15T23:40:47.036203572Z [err]            _pendingData: null,
+2025-12-15T23:40:47.038828063Z [err]          onhandshakestart: [Function: noop],
+2025-12-15T23:40:47.038838985Z [err]          onhandshakedone: [Function (anonymous)],
+2025-12-15T23:40:47.040836931Z [err]              allowHalfOpen: false,
+2025-12-15T23:40:47.042728544Z [err]            _hadError: false,
+2025-12-15T23:40:47.046578816Z [err]            [Symbol(shapeMode)]: true,
+2025-12-15T23:40:47.048387345Z [err]            [Symbol(owner_symbol)]: <ref *2> Socket {
+2025-12-15T23:40:47.049928032Z [err]              [Symbol(kSetNoDelay)]: false,
+2025-12-15T23:40:47.051358698Z [err]              bufferIndex: 0,
+2025-12-15T23:40:47.052852891Z [err]              reading: [Getter/Setter],
+2025-12-15T23:40:47.059295116Z [err]          [Symbol(owner_symbol)]: [Circular *3]
+2025-12-15T23:40:47.059303516Z [err]        },
+2025-12-15T23:40:47.059309245Z [err]        [Symbol(lastWriteQueueSize)]: 0,
+2025-12-15T23:40:47.062095655Z [err]          protocol: 'https:',
+2025-12-15T23:40:47.065658721Z [err]              proxy: URL {},
+2025-12-15T23:40:47.065680501Z [err]              proxyHeaders: {},
+2025-12-15T23:40:47.067812632Z [err]            freeSockets: [Object: null prototype] {},
+2025-12-15T23:40:47.070261217Z [err]              ServerResponse: [Function: ServerResponse],
+2025-12-15T23:40:47.071833117Z [err]            _events: [Object: null prototype] {
+2025-12-15T23:40:47.073744496Z [err]            [Symbol(shapeMode)]: false,
+2025-12-15T23:40:47.075146669Z [err]              awaitDrainWriters: null,
+2025-12-15T23:40:47.078313853Z [err]        host: [ 'Host', 'fapi.binance.com' ]
+2025-12-15T23:40:47.079698807Z [err]        transitional: {
+2025-12-15T23:40:47.081361452Z [err]          'Accept-Encoding': 'gzip, compress, deflate, br'
+2025-12-15T23:40:47.083457385Z [err]            host: '104.239.37.18',
+2025-12-15T23:40:47.085848006Z [err]        _maxListeners: undefined,
+2025-12-15T23:40:47.088387772Z [err]          'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+2025-12-15T23:40:47.097712091Z [err]          proxy: URL {},
+2025-12-15T23:40:47.097719599Z [err]          proxyHeaders: {},
+2025-12-15T23:40:47.097726820Z [err]          connectOpts: {
+2025-12-15T23:40:47.097732921Z [err]            ALPNProtocols: [ 'http/1.1' ],
+2025-12-15T23:40:47.097739936Z [err]            host: '104.239.37.18',
+2025-12-15T23:40:47.099651936Z [err]          },
+2025-12-15T23:40:47.101987160Z [err]            _secureEstablished: true,
+2025-12-15T23:40:47.103681016Z [err]            _hadError: false,
+2025-12-15T23:40:47.105742347Z [err]              [Symbol(kCapture)]: false,
+2025-12-15T23:40:47.108143876Z [err]              [Symbol(kBufferedValue)]: null,
+2025-12-15T23:40:47.110470131Z [err]            _httpMessage: [Circular *1],
+2025-12-15T23:40:47.111832943Z [err]              onhandshakestart: [Function: noop],
+2025-12-15T23:40:47.114332173Z [err]              checkServerIdentity: [Function: checkServerIdentity],
+2025-12-15T23:40:47.115563853Z [err]          httpVersionMajor: 1,
+2025-12-15T23:40:47.116897961Z [err]            'X-Amz-Cf-Id',
+2025-12-15T23:40:47.119293271Z [err]            connecting: false,
+2025-12-15T23:40:47.120648013Z [err]              highWaterMark: 65536,
+2025-12-15T23:40:47.124634236Z [err]              onhandshakestart: [Function: noop],
+2025-12-15T23:40:47.124648309Z [err]            parser: null,
+2025-12-15T23:40:47.126848060Z [err]              onkeylog: [Function: onkeylog],
+2025-12-15T23:40:47.130737913Z [err]              checkServerIdentity: [Function: checkServerIdentity],
+2025-12-15T23:40:47.130751327Z [err]              minDHSize: 1024,
+2025-12-15T23:40:47.133063166Z [err]          _consuming: false,
+2025-12-15T23:40:47.136253454Z [err]          [Symbol(kHeadersCount)]: 26,
+2025-12-15T23:40:47.139237869Z [err]            length: 0,
+2025-12-15T23:40:47.139252928Z [err]            corked: 0,
+2025-12-15T23:40:47.141371033Z [err]            beforeRedirect: [Function: dispatchBeforeRedirect],
+2025-12-15T23:40:47.143336376Z [err]              [Symbol(AgentBaseInternalState)]: [Object]
+2025-12-15T23:40:47.144853193Z [err]        [Symbol(corked)]: 0,
+2025-12-15T23:40:47.147577130Z [err]          _parent: <ref *2> Socket {
+2025-12-15T23:40:47.149156768Z [err]              length: 0,
+2025-12-15T23:40:47.151354155Z [err]            [Symbol(kBufferCb)]: null,
+2025-12-15T23:40:47.153136385Z [err]            pendingcb: 1,
+2025-12-15T23:40:47.157217819Z [err]              allowHalfOpen: false,
+2025-12-15T23:40:47.157233248Z [err]              _maxListeners: undefined,
+2025-12-15T23:40:47.161257550Z [err]            onhandshakestart: [Function: noop],
+2025-12-15T23:40:47.161278868Z [err]            onhandshakedone: [Function (anonymous)],
+2025-12-15T23:40:47.164142610Z [err]              _readableState: [ReadableState],
+2025-12-15T23:40:47.165942034Z [err]            reading: true,
+2025-12-15T23:40:47.168186147Z [err]              _writableState: [WritableState],
+2025-12-15T23:40:47.170565806Z [err]            reading: true,
+2025-12-15T23:40:47.172046251Z [err]            checkServerIdentity: [Function: checkServerIdentity],
+2025-12-15T23:40:47.174427925Z [err]              requests: [Object: null prototype] {},
+2025-12-15T23:40:47.177011509Z [err]              defaultPort: 443,
+2025-12-15T23:40:47.177041375Z [err]              protocol: 'https:',
+2025-12-15T23:40:47.180272148Z [err]              _events: [Object],
+2025-12-15T23:40:47.182424393Z [err]            singleUse: true
+2025-12-15T23:40:47.850143102Z [err]  npm error command sh -c node dist/index.js
+2025-12-15T23:40:47.850160985Z [err]  npm error code 1
+2025-12-15T23:40:47.850167580Z [err]  npm error path /app/bot
+2025-12-15T23:40:47.850173288Z [err]  npm error workspace bot@1.0.0
+2025-12-15T23:40:47.850178875Z [err]  npm error location /app/bot
+2025-12-15T23:40:47.850184768Z [err]  npm error command failed
+2025-12-15T23:40:48.083676307Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-15T23:40:48.116837796Z [inf]  
+2025-12-15T23:40:48.116843615Z [inf]  > gpt-scalping-bot@1.0.0 start
+2025-12-15T23:40:48.116855248Z [inf]  > npm run start -w bot
+2025-12-15T23:40:48.116860890Z [inf]  
+2025-12-15T23:40:48.762957637Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-15T23:40:48.762999699Z [inf]  > node dist/index.js
+2025-12-15T23:40:48.763008648Z [inf]  
+2025-12-15T23:40:48.763014113Z [inf]  =========================================
+2025-12-15T23:40:48.763018614Z [inf]  =========================================
+2025-12-15T23:40:48.763027702Z [inf]      GPT 5.2 SCALPING BOT - v1.0.2
+2025-12-15T23:40:48.763028613Z [inf]  
+2025-12-15T23:40:48.763039112Z [inf]  [Config] All required configurations present
+2025-12-15T23:40:48.763042829Z [inf]  [Config] Min confidence: 45%
+2025-12-15T23:40:48.763043892Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-15T23:40:48.763048910Z [inf]  [Config] Trading enabled: true
+2025-12-15T23:40:48.763052834Z [inf]  [Config] Max hold time: 4h
+2025-12-15T23:40:48.763058288Z [inf]  
+2025-12-15T23:40:48.763058774Z [inf]  [Config] Max leverage: 10x
+2025-12-15T23:40:48.763064323Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-15T23:40:48.763068251Z [inf]  > bot@1.0.0 start
+2025-12-15T23:40:48.763068528Z [inf]  [Config] Max position size: 50%
+2025-12-15T23:40:49.640824475Z [inf]  [Database] Connected to PostgreSQL (Neon)
+2025-12-15T23:40:49.640832274Z [inf]  [Memory] Loading historical data from database...
+2025-12-15T23:40:49.721999200Z [inf]  [Memory] Loaded 321 trades from database
+2025-12-15T23:40:49.867654105Z [inf]  [Memory] Loaded 169 learnings from database
+2025-12-15T23:40:50.083591907Z [inf]  [Memory] Loaded 912 patterns from database
+2025-12-15T23:40:50.083596657Z [inf]  [Memory] Database initialization complete!
+2025-12-15T23:40:50.083601187Z [inf]  [Main] Auto-starting trading bot...
+2025-12-15T23:40:50.083605580Z [inf]  [Engine] Starting trading bot...
+2025-12-15T23:40:50.083609917Z [inf]  [Engine] Min confidence: 55%
+2025-12-15T23:40:50.083614128Z [inf]  [Engine] Max leverage: 10x
+2025-12-15T23:40:50.097227035Z [inf]  [Server] Running on port 3001
+2025-12-15T23:40:50.699817287Z [inf]  [Engine] Available balance: $4427.24
+2025-12-15T23:40:50.699826457Z [inf]  [Engine] Today's stats (GDL 2025-12-15): 136 trades, $5.93 PnL
+2025-12-15T23:40:50.699860595Z [inf]  [Socket] Client connected: y1jCFie9cT81kKKdAAAB
+2025-12-15T23:40:50.699867102Z [inf]  [Engine] Account balance: $4427.24
+2025-12-15T23:40:51.054778784Z [inf]  [Engine] Found 0 open positions
+2025-12-15T23:40:51.054800564Z [inf]  [Engine] Bot started successfully
+2025-12-15T23:40:51.054811518Z [inf]  
+2025-12-15T23:40:51.054824721Z [inf]  [Main] Bot is ready!
+2025-12-15T23:40:51.054838750Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-15T23:40:51.054854901Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-15T23:40:51.054864785Z [inf]  
+2025-12-15T23:40:51.910805852Z [inf]  [WS] Connected to Binance
+2025-12-15T23:41:00.690099856Z [err]  Railway rate limit of 500 logs/sec reached for replica, update your application to reduce the logging rate. Messages dropped: 2613
+2025-12-15T23:41:11.911887399Z [inf]  [Engine] XRPUSDT: No opportunity (score: 23) - skipping
+2025-12-15T23:41:11.911889187Z [inf]  [GPT-Screen] BTCUSDT: score=70, direction=SELL, hasOpp=true
+2025-12-15T23:41:11.911894931Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 70, direction: SELL)
+2025-12-15T23:41:11.911900597Z [inf]  [GPT-Screen] BNBUSDT: score=72, direction=SELL, hasOpp=true
+2025-12-15T23:41:11.911902823Z [inf]  [GPT-Screen] SOLUSDT: score=62, direction=BUY, hasOpp=true
+2025-12-15T23:41:11.911908695Z [inf]  [Engine] SOLUSDT: Opportunity detected! (score: 62, direction: BUY)
+2025-12-15T23:41:11.911913803Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 72, direction: SELL)
+2025-12-15T23:41:11.911914669Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-15T23:41:11.911919489Z [inf]  [CryptoPanic] Fetched global sentiment (cached 15 min)
+2025-12-15T23:41:11.911926007Z [inf]  [GPT-Screen] ETHUSDT: score=76, direction=BUY, hasOpp=true
+2025-12-15T23:41:11.911930883Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 76, direction: BUY)
+2025-12-15T23:41:11.911935258Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-15T23:41:11.911939755Z [inf]  [CryptoPanic] Fetched global sentiment (cached 15 min)
+2025-12-15T23:41:11.911943712Z [inf]  [GPT-Screen] DOGEUSDT: score=54, direction=BUY, hasOpp=true
+2025-12-15T23:41:11.911948257Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 54) - skipping
+2025-12-15T23:41:11.911953217Z [inf]  [GPT-Screen] XRPUSDT: score=23, direction=NONE, hasOpp=false
+2025-12-15T23:41:17.825458929Z [inf]  [Engine] SOLUSDT: SELL (63%)
+2025-12-15T23:41:17.825465115Z [inf]  [Engine]   └─ Size: 2.5% | Lev: 5x | SL: $127.88 | TP: $126.46
+2025-12-15T23:41:17.825470763Z [inf]  [Engine] SOLUSDT: SL too tight (0.25% < 1%), skipping
+2025-12-15T23:41:21.939638419Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $861.90 | TP: $852.00
+2025-12-15T23:41:21.939649253Z [inf]  [Engine] BNBUSDT: SL too tight (0.39% < 1%), skipping
+2025-12-15T23:41:21.939684037Z [inf]  [Engine] BNBUSDT: SELL (66%)
+2025-12-15T23:41:24.963434810Z [inf]  [Engine] BTCUSDT: SELL (74%)
+2025-12-15T23:41:24.963443755Z [inf]  [Engine]   └─ Size: 3% | Lev: 5x | SL: $87080.00 | TP: $85620.00
+2025-12-15T23:41:24.963450813Z [inf]  [Engine] BTCUSDT: SL too tight (0.79% < 1%), skipping
+2025-12-15T23:41:25.810928952Z [inf]  [Engine] ETHUSDT: SELL (63%)
+2025-12-15T23:41:25.810936817Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $2979.20 | TP: $2936.00
+2025-12-15T23:41:25.810999202Z [inf]  [Engine] ETHUSDT: SL too tight (0.59% < 1%), skipping
+2025-12-15T23:44:05.916752402Z [inf]  [GPT-Screen] BTCUSDT: score=68, direction=SELL, hasOpp=true
+2025-12-15T23:44:05.916758524Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 68, direction: SELL)
+2025-12-15T23:44:14.960789465Z [inf]  [Engine] BTCUSDT: SELL (68%)
+2025-12-15T23:44:14.960795013Z [inf]  [Engine]   └─ Size: 3% | Lev: 4x | SL: $86880.00 | TP: $85720.00
+2025-12-15T23:44:14.960804610Z [inf]  [Engine] BTCUSDT: SL too tight (0.57% < 1%), skipping
+2025-12-15T23:44:23.916084186Z [inf]  [GPT-Screen] ETHUSDT: score=75, direction=BUY, hasOpp=true
+2025-12-15T23:44:23.916090511Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 75, direction: BUY)
+2025-12-15T23:44:30.157519687Z [inf]  [Socket] Client disconnected: y1jCFie9cT81kKKdAAAB
+2025-12-15T23:44:31.192008307Z [inf]  [Socket] Client connected: -NeAJH5xziT8D12cAAAD
