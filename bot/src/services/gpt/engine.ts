@@ -149,6 +149,22 @@ Criterios para oportunidad:
 
 BALANCE ACTUAL: $${accountBalance.toFixed(2)} USDT
 
+=== COSTOS DE TRADING (MUY IMPORTANTE) ===
+⚠️ COMISIONES BINANCE:
+- Taker Fee: 0.05% por operación
+- Round trip (entrada + salida): 0.10% MÍNIMO
+- Con apalancamiento 5x: el fee efectivo es 0.50% del margen
+
+⚠️ FUNDING FEES (cada 8 horas):
+- Si funding es POSITIVO (+0.01%): los LONGS pagan a SHORTS
+- Si funding es NEGATIVO (-0.01%): los SHORTS pagan a LONGS
+- Funding acumulado puede destruir ganancias si mantiene posición mucho tiempo
+
+📊 REGLA DE ORO: El TP MÍNIMO debe cubrir los fees + ganancia
+- TP mínimo recomendado: 0.25% (0.10% fees + 0.15% profit)
+- Con apalancamiento: multiplicar por leverage para el retorno real
+- Si el TP es menor a 0.20%, probablemente NO vale la pena el trade
+
 === TU ROL ===
 Eres el cerebro del bot. TÚ DECIDES TODO:
 - Si entrar o no (BUY/SELL/HOLD)
@@ -160,9 +176,11 @@ Eres el cerebro del bot. TÚ DECIDES TODO:
 === FILOSOFÍA DE TRADING - SCALPING ===
 - SCALPING PURO: MUCHOS trades pequeños durante el día
 - Máximo 5% del capital por trade (para diversificar riesgo)
-- Objetivo: profits de 0.2% a 0.5% por trade
+- Objetivo: profits de 0.3% a 0.8% por trade (después de fees)
+- SIEMPRE calcula: TP debe ser > 0.25% para cubrir fees
 - Múltiples posiciones simultáneas en diferentes pares
-- Entradas y salidas RÁPIDAS
+- Entradas y salidas RÁPIDAS (evitar funding cada 8h)
+- PREFERIR la dirección del funding (si funding negativo, mejor SHORT)
 - Si NO estás seguro, di HOLD. Es mejor no entrar que perder.
 - APRENDE de cada trade. Revisa el historial y NO repitas errores.
 
@@ -174,10 +192,12 @@ STOP LOSS:
 - Coloca el SL detrás de soportes/resistencias importantes
 
 TAKE PROFIT:
+- ⚠️ TP MÍNIMO: 0.25% para cubrir fees (0.10%) + ganancia (0.15%)
 - Define TP basado en próximos niveles de resistencia/soporte
 - Usa el ATR para estimar movimiento probable
-- En tendencia fuerte: TP más amplio
-- En rango: TP más corto (mean reversion)
+- En tendencia fuerte: TP más amplio (0.5-1%)
+- En rango: TP corto pero > 0.25% (si no llega, NO entrar)
+- Si el movimiento esperado < 0.25%, mejor HOLD
 
 APALANCAMIENTO (1-10x):
 - Alta confianza (>70%): 5-10x
@@ -337,15 +357,19 @@ ${news.headlines.slice(0, 5).map(h => `  • ${h}`).join('\n') || '  • Sin not
 
 📊 HISTORIAL DE TRADES (tu rendimiento)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Total trades: ${recentTrades.length}
-Win Rate: ${winRate.toFixed(1)}% ${winRate >= 50 ? '✓' : '⚠️ MEJORAR'}
+Total trades histórico: ${recentTrades.length}
+Win Rate: ${winRate.toFixed(1)}% ${winRate >= 55 ? '✓ BUENO' : winRate >= 50 ? '⚠️ MEJORABLE' : '❌ MALO - CAMBIAR ESTRATEGIA'}
 Promedio ganancia: +${avgWin.toFixed(2)}%
 Promedio pérdida: -${avgLoss.toFixed(2)}%
-Pérdidas consecutivas: ${consecutiveLosses} ${consecutiveLosses >= 3 ? '⚠️ REDUCIR RIESGO' : ''}
+Ratio Win/Loss: ${avgLoss > 0 ? (avgWin / avgLoss).toFixed(2) : 'N/A'}
+Pérdidas consecutivas: ${consecutiveLosses} ${consecutiveLosses >= 3 ? '⚠️ REDUCIR RIESGO - menos trades, más selectivo' : ''}
+
+⚠️ RECORDATORIO FEES: Necesitas +0.25% mínimo en cada trade para ser rentable (0.10% fees)
+PnL Neto estimado: ${((wins * avgWin) - (losses * avgLoss) - (recentTrades.length * 0.10)).toFixed(2)}% (después de fees)
 
 Últimos 5 trades:
 ${recentTrades.slice(0, 5).map(t =>
-  `  ${t.pnl > 0 ? '✅' : '❌'} ${t.side} @ $${t.entryPrice.toFixed(2)} → ${t.pnl > 0 ? '+' : ''}${t.pnl.toFixed(2)}% (${t.exitReason}) [${t.gptConfidence}% conf]`
+  `  ${t.pnl > 0 ? '✅' : '❌'} ${t.symbol} ${t.side} @ $${t.entryPrice.toFixed(2)} → ${t.pnl > 0 ? '+' : ''}${t.pnl.toFixed(2)}% ($${t.pnlUsd.toFixed(2)}) [${t.exitReason}]`
 ).join('\n') || '  Sin trades aún'}
 
 🧠 APRENDIZAJES PREVIOS
