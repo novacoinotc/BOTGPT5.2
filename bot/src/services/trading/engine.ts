@@ -56,12 +56,19 @@ export class TradingEngine extends EventEmitter {
   private positionCheckInterval: NodeJS.Timeout | null = null;
   private balanceUpdateInterval: NodeJS.Timeout | null = null;
 
-  // Configuration - SCALPING MODE
-  private readonly MIN_CONFIDENCE = 45; // Lowered from 65 to allow more learning
+  // Configuration - SCALPING MODE (OPTIMIZED FOR PROFITABILITY)
+  private readonly MIN_CONFIDENCE = 60; // Raised from 45 to reduce low-quality trades
   private readonly MAX_LEVERAGE = 10; // Max 10x as requested
   private readonly MAX_POSITION_SIZE_PERCENT = 5; // Max 5% of capital per trade (scalping: many small trades)
   private readonly MAX_HOLD_TIME_HOURS = 2; // Reduced to 2 hours for scalping
   private readonly MAX_TOTAL_EXPOSURE_PERCENT = 80; // Max 80% total capital in all positions
+  private readonly COOLDOWN_MINUTES = 10; // Minimum time between trades on same symbol
+  private readonly TRADING_FEE_PERCENT = 0.10; // Round trip fee (0.05% × 2)
+  private readonly MIN_TP_PERCENT = 0.5; // Minimum take profit to cover fees
+  private readonly MIN_SL_PERCENT = 1.0; // Minimum stop loss to give trade room
+
+  // Track last trade time per symbol for cooldown
+  private lastTradeTime: Map<string, number> = new Map();
 
   async start(): Promise<void> {
     if (this.state.isRunning) {
@@ -374,18 +381,26 @@ export class TradingEngine extends EventEmitter {
 
     // Execute decision
     if (!hasPosition && decision.action !== 'HOLD' && decision.confidence >= this.MIN_CONFIDENCE) {
-      // Check risk management
+      // Check cooldown - prevent overtrading on same symbol
+      const lastTrade = this.lastTradeTime.get(symbol) || 0;
+      const timeSinceLastTrade = (Date.now() - lastTrade) / 1000 / 60; // minutes
+      if (timeSinceLastTrade < this.COOLDOWN_MINUTES) {
+        console.log(`[Engine] ${symbol}: Cooldown active (${timeSinceLastTrade.toFixed(1)}min < ${this.COOLDOWN_MINUTES}min)`);
+        return;
+      }
+
+      // Check risk management - reduced from 5 to 3 consecutive losses
       const consecutiveLosses = memorySystem.getConsecutiveLosses();
 
-      if (consecutiveLosses >= 5) {
+      if (consecutiveLosses >= 3) {
         console.log(`[Engine] ${symbol}: Skipping trade - ${consecutiveLosses} consecutive losses (cooling down)`);
         return;
       }
 
-      // Reduce size after consecutive losses
+      // Reduce size after 2 consecutive losses
       let adjustedSizePercent = decision.positionSizePercent;
-      if (consecutiveLosses >= 3) {
-        adjustedSizePercent = Math.max(5, decision.positionSizePercent * 0.5);
+      if (consecutiveLosses >= 2) {
+        adjustedSizePercent = Math.max(3, decision.positionSizePercent * 0.5);
         console.log(`[Engine] ${symbol}: Reduced position size to ${adjustedSizePercent}% due to ${consecutiveLosses} consecutive losses`);
       }
 
@@ -395,9 +410,25 @@ export class TradingEngine extends EventEmitter {
         return;
       }
 
+      // Enforce minimum TP/SL to ensure profitability after fees
+      const tpPercent = Math.abs((decision.takeProfit - analysis.price) / analysis.price * 100);
+      const slPercent = Math.abs((decision.stopLoss - analysis.price) / analysis.price * 100);
+
+      if (tpPercent < this.MIN_TP_PERCENT) {
+        console.log(`[Engine] ${symbol}: TP too tight (${tpPercent.toFixed(2)}% < ${this.MIN_TP_PERCENT}%), skipping`);
+        return;
+      }
+
+      if (slPercent < this.MIN_SL_PERCENT) {
+        console.log(`[Engine] ${symbol}: SL too tight (${slPercent.toFixed(2)}% < ${this.MIN_SL_PERCENT}%), skipping`);
+        return;
+      }
+
       // Open new position
       if (config.trading.enabled) {
         await this.openPosition(symbol, { ...decision, positionSizePercent: adjustedSizePercent }, analysis);
+        // Record trade time for cooldown
+        this.lastTradeTime.set(symbol, Date.now());
       } else {
         console.log(`[Engine] ${symbol}: Paper trade - would ${decision.action}`);
         this.emit('paperTrade', { symbol, decision });
@@ -659,13 +690,21 @@ export class TradingEngine extends EventEmitter {
         reduceOnly: true,
       });
 
-      const pnl = this.calculatePnl(position, exitPrice);
+      const pnlBeforeFees = this.calculatePnl(position, exitPrice);
+      // Subtract trading fees from PnL (0.10% round trip)
+      const pnl = pnlBeforeFees - this.TRADING_FEE_PERCENT;
+
       // FIX: Calculate USD P&L directly from price difference (not from leveraged %)
       // pnl already includes leverage (% return on margin), so don't multiply by leverage again
       const priceDiff = position.side === 'LONG'
         ? (exitPrice - position.entryPrice)
         : (position.entryPrice - exitPrice);
-      const pnlUsd = priceDiff * position.quantity;
+      const pnlUsdBeforeFees = priceDiff * position.quantity;
+
+      // Subtract fees in USD: position value × 0.10%
+      const positionValue = position.quantity * position.entryPrice;
+      const feesUsd = positionValue * (this.TRADING_FEE_PERCENT / 100);
+      const pnlUsd = pnlUsdBeforeFees - feesUsd;
 
       // Record trade in memory (persist to database)
       const tradeMemory = await memorySystem.addTrade({
@@ -701,7 +740,7 @@ export class TradingEngine extends EventEmitter {
 
       const emoji = pnl > 0 ? '✅' : '❌';
       console.log(
-        `[Engine] ${emoji} Position closed: ${position.symbol} | PnL: ${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}% ($${pnlUsd.toFixed(2)}) | Reason: ${reason}`
+        `[Engine] ${emoji} Position closed: ${position.symbol} | PnL: ${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}% ($${pnlUsd.toFixed(2)}) | Fees: $${feesUsd.toFixed(2)} | Reason: ${reason}`
       );
     } catch (error: any) {
       console.error(`[Engine] Failed to close position:`, error.message);
