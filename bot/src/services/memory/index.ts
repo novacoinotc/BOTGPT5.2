@@ -1,4 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
 
 export interface TradeMemory {
   id: string;
@@ -7,19 +10,20 @@ export interface TradeMemory {
   entryPrice: number;
   exitPrice: number;
   quantity: number;
+  leverage: number;
   pnl: number; // percentage
   pnlUsd: number;
   entryTime: number;
   exitTime: number;
   exitReason: 'tp' | 'sl' | 'manual' | 'timeout' | 'signal';
   entryConditions: {
-    rsi: number;
-    macdHistogram: number;
-    orderBookImbalance: number;
-    fundingRate: number;
-    regime: string;
-    fearGreed: number;
-    newsScore: number;
+    rsi?: number;
+    macdHistogram?: number;
+    orderBookImbalance?: number;
+    fundingRate?: number;
+    regime?: string;
+    fearGreed?: number;
+    newsScore?: number;
   };
   gptConfidence: number;
   gptReasoning: string;
@@ -69,12 +73,52 @@ class MemorySystem {
 
     this.trades.unshift(newTrade);
 
-    // Keep only recent trades
+    // Keep only recent trades in memory
     if (this.trades.length > this.maxTrades) {
       this.trades = this.trades.slice(0, this.maxTrades);
     }
 
+    // Persist to database (async, don't block)
+    this.persistTradeToDb(newTrade).catch(err => {
+      console.error('[Memory] Failed to persist trade to DB:', err.message);
+    });
+
     return newTrade;
+  }
+
+  private async persistTradeToDb(trade: TradeMemory): Promise<void> {
+    try {
+      await prisma.trade.create({
+        data: {
+          id: trade.id,
+          symbol: trade.symbol,
+          side: trade.side,
+          entryPrice: trade.entryPrice,
+          exitPrice: trade.exitPrice,
+          quantity: trade.quantity,
+          leverage: Math.round(trade.leverage || 1),
+          pnl: trade.pnl,
+          pnlUsd: trade.pnlUsd,
+          entryTime: new Date(trade.entryTime),
+          exitTime: new Date(trade.exitTime),
+          exitReason: trade.exitReason,
+          gptConfidence: trade.gptConfidence,
+          gptReasoning: trade.gptReasoning || '',
+          // Entry conditions
+          rsi: trade.entryConditions?.rsi ?? null,
+          macdHistogram: trade.entryConditions?.macdHistogram ?? null,
+          orderBookImbalance: trade.entryConditions?.orderBookImbalance ?? null,
+          fundingRate: trade.entryConditions?.fundingRate ?? null,
+          regime: trade.entryConditions?.regime ?? null,
+          fearGreedValue: trade.entryConditions?.fearGreed ? Math.round(trade.entryConditions.fearGreed) : null,
+          newsScore: trade.entryConditions?.newsScore ?? null,
+        },
+      });
+      console.log(`[Memory] ✅ Trade ${trade.symbol} persisted to DB (PnL: ${trade.pnl > 0 ? '+' : ''}${trade.pnl.toFixed(2)}%)`);
+    } catch (error: any) {
+      console.error(`[Memory] ❌ Failed to persist trade ${trade.symbol}:`, error.message);
+      throw error;
+    }
   }
 
   getRecentTrades(limit: number = 20): TradeMemory[] {
