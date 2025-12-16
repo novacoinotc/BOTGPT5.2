@@ -7,6 +7,9 @@ import { fearGreedIndex } from '../market/fearGreed.js';
 import { gptEngine, GPTDecision } from '../gpt/engine.js';
 import { memorySystem, TradeMemory } from '../memory/index.js';
 import { config } from '../../config/index.js';
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
 
 interface Position {
   symbol: string;
@@ -190,6 +193,9 @@ export class TradingEngine extends EventEmitter {
   }
 
   private async initialize(): Promise<void> {
+    // Load bot state from database (todayPnl, todayTrades, lastResetDate)
+    await this.loadStateFromDb();
+
     // Get account balance
     await this.updateBalance();
 
@@ -243,10 +249,82 @@ export class TradingEngine extends EventEmitter {
     }
   }
 
+  // === DATABASE PERSISTENCE FOR BOT STATE ===
+
+  private async loadStateFromDb(): Promise<void> {
+    try {
+      // Get or create bot state in database
+      const botState = await prisma.botState.upsert({
+        where: { id: 'main' },
+        create: {
+          id: 'main',
+          isRunning: true,
+          balance: 0,
+          todayPnl: 0,
+          todayTrades: 0,
+          lastResetDate: new Date(),
+          symbols: this.symbols,
+        },
+        update: {},
+      });
+
+      // Check if we need to reset (new day)
+      const today = new Date().toISOString().split('T')[0];
+      const lastResetDay = botState.lastResetDate.toISOString().split('T')[0];
+
+      if (lastResetDay === today) {
+        // Same day - restore values
+        this.state.todayPnl = botState.todayPnl;
+        this.state.todayTrades = botState.todayTrades;
+        this.state.lastResetDate = today;
+        console.log(`[Engine] 📊 Restored from DB: todayPnl=$${this.state.todayPnl.toFixed(2)}, todayTrades=${this.state.todayTrades}`);
+      } else {
+        // New day - reset but keep the last reset date updated
+        this.state.todayPnl = 0;
+        this.state.todayTrades = 0;
+        this.state.lastResetDate = today;
+        console.log(`[Engine] 📊 New day detected - reset todayPnl/todayTrades`);
+        await this.saveStateToDb();
+      }
+    } catch (error: any) {
+      console.error('[Engine] Failed to load state from DB:', error.message);
+      // Continue with default values
+    }
+  }
+
+  private async saveStateToDb(): Promise<void> {
+    try {
+      await prisma.botState.upsert({
+        where: { id: 'main' },
+        create: {
+          id: 'main',
+          isRunning: this.state.isRunning,
+          balance: this.state.balance,
+          todayPnl: this.state.todayPnl,
+          todayTrades: this.state.todayTrades,
+          lastResetDate: new Date(this.state.lastResetDate),
+          symbols: this.symbols,
+        },
+        update: {
+          isRunning: this.state.isRunning,
+          balance: this.state.balance,
+          todayPnl: this.state.todayPnl,
+          todayTrades: this.state.todayTrades,
+          lastResetDate: new Date(this.state.lastResetDate),
+          symbols: this.symbols,
+        },
+      });
+    } catch (error: any) {
+      console.error('[Engine] Failed to save state to DB:', error.message);
+    }
+  }
+
   private startBalanceUpdates(): void {
     this.balanceUpdateInterval = setInterval(async () => {
       if (!this.state.isRunning) return;
       await this.updateBalance();
+      // Persist bot state to DB every balance update cycle
+      await this.saveStateToDb();
     }, 10000); // Update every 10 seconds for faster sync
   }
 
@@ -257,7 +335,7 @@ export class TradingEngine extends EventEmitter {
     }, 60000); // Check every minute
   }
 
-  private checkAndResetDaily(): void {
+  private async checkAndResetDaily(): Promise<void> {
     const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
     if (this.state.lastResetDate !== today) {
       console.log(`[Engine] 🔄 Daily reset: ${this.state.lastResetDate} → ${today}`);
@@ -268,6 +346,9 @@ export class TradingEngine extends EventEmitter {
       this.state.todayPnl = 0;
       this.state.todayTrades = 0;
       this.state.lastResetDate = today;
+
+      // Persist reset to database
+      await this.saveStateToDb();
 
       console.log(`[Engine] ✅ Daily metrics reset for ${today}`);
       this.emit('dailyReset', { date: today });
@@ -589,7 +670,13 @@ export class TradingEngine extends EventEmitter {
         // Calculate weighted average from fills
         const totalQty = order.fills.reduce((sum: number, f: any) => sum + parseFloat(f.qty), 0);
         const totalValue = order.fills.reduce((sum: number, f: any) => sum + parseFloat(f.price) * parseFloat(f.qty), 0);
-        entryPrice = totalValue / totalQty;
+        // FIX: Prevent Infinity when totalQty is 0
+        if (totalQty > 0) {
+          entryPrice = totalValue / totalQty;
+        } else {
+          // Fallback to current market price if fills have no quantity
+          entryPrice = analysis.price;
+        }
       } else {
         // Fallback to current market price
         entryPrice = analysis.price;
@@ -645,8 +732,9 @@ export class TradingEngine extends EventEmitter {
       this.state.currentPositions.set(symbol, position);
       this.state.todayTrades++;
 
-      // Update balance
+      // Update balance and persist state to DB
       await this.updateBalance();
+      await this.saveStateToDb();
 
       this.emit('positionOpened', position);
 
@@ -789,8 +877,9 @@ export class TradingEngine extends EventEmitter {
       this.state.currentPositions.delete(position.symbol);
       this.state.todayPnl += pnlUsd;
 
-      // Update balance
+      // Update balance and persist state to DB
       await this.updateBalance();
+      await this.saveStateToDb();
 
       this.emit('positionClosed', { position, exitPrice, pnl, pnlUsd, reason });
 
@@ -853,8 +942,9 @@ export class TradingEngine extends EventEmitter {
         console.log(`[Engine] 🧠 Learned from external close: ${lesson}`);
       }
 
-      // Update daily PnL
+      // Update daily PnL and persist to DB
       this.state.todayPnl += pnlUsd;
+      await this.saveStateToDb();
 
       const emoji = pnl > 0 ? '✅' : '❌';
       console.log(`[Engine] ${emoji} Position closed externally: ${position.symbol} | PnL: ${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}% ($${pnlUsd.toFixed(2)})`);
