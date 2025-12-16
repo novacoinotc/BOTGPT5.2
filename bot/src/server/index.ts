@@ -51,7 +51,7 @@ app.get('/api/status', async (req, res) => {
         if (positions.length === 0) {
           positions = binancePositions.map((pos: any) => ({
             symbol: pos.symbol,
-            side: parseFloat(pos.positionAmt) > 0 ? 'LONG' : 'SHORT',
+            side: (parseFloat(pos.positionAmt) > 0 ? 'LONG' : 'SHORT') as 'LONG' | 'SHORT',
             entryPrice: parseFloat(pos.entryPrice),
             quantity: Math.abs(parseFloat(pos.positionAmt)),
             leverage: parseInt(pos.leverage) || 1,
