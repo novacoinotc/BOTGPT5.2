@@ -14,16 +14,21 @@ model Trade {
   entryPrice      Float
   exitPrice       Float?
   quantity        Float
-  leverage        Int
+  leverage        Int      @default(1)
   pnl             Float?   // percentage
+  pnlPercent      Float?   // same as pnl, for compatibility
   pnlUsd          Float?
-  entryTime       DateTime
+  entryTime       DateTime @default(now())
   exitTime        DateTime?
+  status          String   @default("OPEN") // OPEN or CLOSED
   exitReason      String?  // tp, sl, manual, timeout, signal
-  gptConfidence   Float
-  gptReasoning    String
+  stopLoss        Float?
+  takeProfit      Float?
+  gptConfidence   Int?     // Changed to Int to match Neon
+  gptReasoning    String?
+  entryConditions Json?    // JSONB field for all entry conditions
 
-  // Entry conditions
+  // Individual entry condition fields for querying
   rsi             Float?
   macdHistogram   Float?
   orderBookImbalance Float?
@@ -38,6 +43,7 @@ model Trade {
   @@index([symbol])
   @@index([entryTime])
   @@index([exitReason])
+  @@index([status])
 }
 
 model Pattern {
