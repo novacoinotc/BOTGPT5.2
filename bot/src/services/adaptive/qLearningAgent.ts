@@ -5,85 +5,63 @@
 
 import { PrismaClient } from '@prisma/client';
 import { stateEncoder, MarketState, ActionType } from './stateEncoder';
+import * as fs from 'fs';
+import * as path from 'path';
 
 const prisma = new PrismaClient();
 
-// Pre-trained Q-values from the 87.95% win rate IA
-const PRETRAINED_Q_VALUES: Record<string, Record<ActionType, number>> = {
-  // Top performing states from the IA
-  'TIA/USDT_SELL_LOW_BEAR_MODERATE_NEUTRAL_HIGH_TC_100_150_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 74.68
-  },
-  'CRV/USDT_SELL_LOW_BEAR_STRONG_NEUTRAL_HIGH_TC_150_500_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 60.00,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 0
-  },
-  'NEAR/USDT_SELL_LOW_SIDEWAYS_MODERATE_NEUTRAL_VERY_HIGH_TC_100_150_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 30.27, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 0
-  },
-  'CRV/USDT_SELL_LOW_BEAR_STRONG_NEUTRAL_VERY_HIGH_TC_150_500_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 29.66
-  },
-  'LTC/USDT_SELL_LOW_BEAR_WEAK_NEUTRAL_VERY_HIGH_TC_150_500_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 27.25
-  },
-  'SEI/USDT_SELL_LOW_BEAR_STRONG_NEUTRAL_VERY_HIGH_TC_150_500_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 21.65
-  },
-  'ETH/USDT_SELL_LOW_BEAR_STRONG_NEUTRAL_VERY_HIGH_TC_150_500_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 16.09,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 0
-  },
-  'ADA/USDT_SELL_LOW_BEAR_STRONG_NEUTRAL_VERY_HIGH_TC_100_150_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 16.00,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 0
-  },
-  'AVAX/USDT_SELL_LOW_BEAR_STRONG_NEUTRAL_VERY_HIGH_TC_50_100_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 14.00, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 0
-  },
-  'LINK/USDT_SELL_LOW_BEAR_MODERATE_NEUTRAL_VERY_HIGH_TC_100_150_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 13.15, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 0
-  },
-  'INJ/USDT_SELL_LOW_BEAR_STRONG_NEUTRAL_VERY_HIGH_TC_100_150_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 10.82
-  },
-  'AVAX/USDT_SELL_NEUTRAL_BEAR_STRONG_NEUTRAL_VERY_HIGH_TC_150_500_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 10.47, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 0
-  },
-  'CRV/USDT_SELL_LOW_BEAR_MODERATE_NEUTRAL_VERY_HIGH_TC_50_100_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 9.59
-  },
-  'BTC/USDT_SELL_NEUTRAL_BEAR_MODERATE_NEUTRAL_VERY_HIGH_TC_150_500_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 6.04, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 7.11
-  },
-  'TON/USDT_SELL_LOW_BEAR_MODERATE_NEUTRAL_VERY_HIGH_TC_100_150_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 6.10, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 0
-  },
-  'TON/USDT_SELL_LOW_BEAR_MODERATE_NEUTRAL_VERY_HIGH_TC_150_500_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 5.88
-  },
-  'ETH/USDT_SELL_LOW_BEAR_MODERATE_NEUTRAL_VERY_HIGH_TC_50_100_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 5.03, 'FUTURES_HIGH': 0
-  },
-  'XRP/USDT_SELL_LOW_BEAR_MODERATE_NEUTRAL_VERY_HIGH_TC_50_100_FG_EXTREME_FEAR_ML_NONE_NEWS_NO_SENT_NEU': {
-    'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 5.17, 'OPEN_AGGRESSIVE': 0,
-    'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 0
-  },
-};
+// Q-table loaded from the IA training data
+let PRETRAINED_Q_VALUES: Record<string, Record<string, number>> = {};
+
+// Load Q-table from JSON file
+function loadQTableFromFile(): void {
+  try {
+    // Try multiple possible paths (with and without spaces in filename)
+    const possiblePaths = [
+      path.join(process.cwd(), 'IA_200_TRADES.json'),
+      path.join(process.cwd(), 'IA 200 TRADES.json'),
+      path.join(process.cwd(), '..', 'IA 200 TRADES.json'),
+      path.join(__dirname, '..', '..', '..', 'IA_200_TRADES.json'),
+      path.join(__dirname, '..', '..', '..', '..', 'IA 200 TRADES.json'),
+    ];
+
+    let jsonData: any = null;
+    let loadedPath = '';
+
+    for (const filePath of possiblePaths) {
+      if (fs.existsSync(filePath)) {
+        const fileContent = fs.readFileSync(filePath, 'utf-8');
+        jsonData = JSON.parse(fileContent);
+        loadedPath = filePath;
+        break;
+      }
+    }
+
+    if (jsonData && jsonData.rl_agent && jsonData.rl_agent.q_table) {
+      const qTable = jsonData.rl_agent.q_table;
+      let stateCount = 0;
+      let actionCount = 0;
+
+      for (const [stateKey, actions] of Object.entries(qTable)) {
+        if (typeof actions === 'object' && actions !== null && Object.keys(actions).length > 0) {
+          PRETRAINED_Q_VALUES[stateKey] = actions as Record<string, number>;
+          stateCount++;
+          actionCount += Object.keys(actions).length;
+        }
+      }
+
+      console.log(`[Q-Learning] ✅ Loaded Q-table from ${loadedPath}`);
+      console.log(`[Q-Learning] ✅ ${stateCount} states with ${actionCount} action values`);
+    } else {
+      console.log('[Q-Learning] ⚠️ No Q-table found in JSON, using empty table');
+    }
+  } catch (error) {
+    console.error('[Q-Learning] ❌ Error loading Q-table from file:', error);
+  }
+}
+
+// Load Q-table on module initialization
+loadQTableFromFile();
 
 export interface QAgentConfig {
   learningRate: number;      // Alpha - how much new info overrides old (0.1)
@@ -111,10 +89,22 @@ export class QLearningAgent {
   }
 
   /**
-   * Get Q-values for a state from database
+   * Get Q-values for a state from database or pre-trained data
    */
   async getQValues(stateKey: string): Promise<Record<ActionType, number>> {
+    // Default zero values
+    const defaultValues: Record<ActionType, number> = {
+      'SKIP': 0,
+      'OPEN_CONSERVATIVE': 0,
+      'OPEN_NORMAL': 0,
+      'OPEN_AGGRESSIVE': 0,
+      'FUTURES_LOW': 0,
+      'FUTURES_MEDIUM': 0,
+      'FUTURES_HIGH': 0
+    };
+
     try {
+      // First check database for learned values
       const state = await prisma.qState.findUnique({
         where: { stateKey }
       });
@@ -131,33 +121,88 @@ export class QLearningAgent {
         };
       }
 
-      // Check pre-trained values
+      // Check pre-trained values (exact match)
       if (PRETRAINED_Q_VALUES[stateKey]) {
-        return PRETRAINED_Q_VALUES[stateKey];
+        const pretrainedValues = PRETRAINED_Q_VALUES[stateKey];
+        return {
+          ...defaultValues,
+          ...pretrainedValues
+        } as Record<ActionType, number>;
       }
 
-      // Return zeros for new state
-      return {
-        'SKIP': 0,
-        'OPEN_CONSERVATIVE': 0,
-        'OPEN_NORMAL': 0,
-        'OPEN_AGGRESSIVE': 0,
-        'FUTURES_LOW': 0,
-        'FUTURES_MEDIUM': 0,
-        'FUTURES_HIGH': 0
-      };
+      // Try fuzzy match: same symbol + signal + regime, ignore other factors
+      const fuzzyMatch = this.findFuzzyMatch(stateKey);
+      if (fuzzyMatch) {
+        return {
+          ...defaultValues,
+          ...fuzzyMatch
+        } as Record<ActionType, number>;
+      }
+
+      return defaultValues;
     } catch (error) {
       console.error('Error getting Q-values:', error);
-      return PRETRAINED_Q_VALUES[stateKey] || {
-        'SKIP': 0,
-        'OPEN_CONSERVATIVE': 0,
-        'OPEN_NORMAL': 0,
-        'OPEN_AGGRESSIVE': 0,
-        'FUTURES_LOW': 0,
-        'FUTURES_MEDIUM': 0,
-        'FUTURES_HIGH': 0
-      };
+
+      // Fallback to pre-trained on error
+      if (PRETRAINED_Q_VALUES[stateKey]) {
+        return {
+          ...defaultValues,
+          ...PRETRAINED_Q_VALUES[stateKey]
+        } as Record<ActionType, number>;
+      }
+
+      return defaultValues;
     }
+  }
+
+  /**
+   * Find a fuzzy match in the Q-table based on key components
+   */
+  private findFuzzyMatch(stateKey: string): Record<string, number> | null {
+    const parts = stateKey.split('_');
+    if (parts.length < 4) return null;
+
+    // Extract key components: SYMBOL_SIGNAL_RSI_REGIME
+    const symbol = parts[0]; // e.g., "BTC/USDT"
+    const signal = parts[1]; // e.g., "SELL"
+    const regime = parts[3]; // e.g., "BEAR"
+
+    let bestMatch: Record<string, number> | null = null;
+    let bestScore = 0;
+
+    for (const [key, values] of Object.entries(PRETRAINED_Q_VALUES)) {
+      const keyParts = key.split('_');
+      if (keyParts.length < 4) continue;
+
+      let score = 0;
+
+      // Symbol match (most important)
+      if (keyParts[0] === symbol) score += 10;
+
+      // Signal match (very important)
+      if (keyParts[1] === signal) score += 5;
+
+      // Regime match
+      if (keyParts[3] === regime) score += 3;
+
+      // RSI zone match
+      if (keyParts[2] === parts[2]) score += 2;
+
+      // Regime strength match
+      if (keyParts[4] === parts[4]) score += 1;
+
+      // Only consider matches with symbol + signal
+      if (score >= 15 && score > bestScore) {
+        bestScore = score;
+        bestMatch = values;
+      }
+    }
+
+    if (bestMatch) {
+      console.log(`[Q-Learning] Fuzzy match found for ${stateKey.slice(0, 30)}... (score: ${bestScore})`);
+    }
+
+    return bestMatch;
   }
 
   /**

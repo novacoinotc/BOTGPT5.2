@@ -1,0 +1,1001 @@
+2025-12-16T18:05:19.725920038Z [inf]    "finish_reason": "stop"
+2025-12-16T18:05:19.725927251Z [inf]  }
+2025-12-16T18:05:19.725933229Z [inf]  [GPT-Screen] LINKUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T18:05:19.725938772Z [inf]  [Engine] LINKUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-16T18:05:26.034990370Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:05:26.938436780Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-16T18:05:26.938443166Z [inf]    "index": 0,
+2025-12-16T18:05:26.938449177Z [inf]    "message": {
+2025-12-16T18:05:26.938455487Z [inf]      "role": "assistant",
+2025-12-16T18:05:26.938461608Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-16T18:05:26.938468112Z [inf]      "refusal": null,
+2025-12-16T18:05:26.938474753Z [inf]      "annotations": []
+2025-12-16T18:05:26.938486129Z [inf]    },
+2025-12-16T18:05:26.938492665Z [inf]    "finish_reason": "stop"
+2025-12-16T18:05:26.938498854Z [inf]  }
+2025-12-16T18:05:26.938506846Z [inf]  [GPT-Screen] AVAXUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T18:05:26.938513285Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-16T18:05:34.048104709Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:05:34.048115200Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:05:34.048134135Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-16T18:05:34.048144419Z [inf]    "index": 0,
+2025-12-16T18:05:34.048151966Z [inf]      "role": "assistant",
+2025-12-16T18:05:34.048164729Z [inf]    "message": {
+2025-12-16T18:05:34.048169571Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:05:34.048179088Z [inf]      "refusal": null,
+2025-12-16T18:05:34.048187383Z [inf]      "annotations": []
+2025-12-16T18:05:34.048195351Z [inf]    },
+2025-12-16T18:05:34.048203032Z [inf]    "finish_reason": "stop"
+2025-12-16T18:05:34.048210830Z [inf]  }
+2025-12-16T18:05:36.032979648Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:05:42.025541410Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-16T18:05:42.025549223Z [inf]    "index": 0,
+2025-12-16T18:05:42.025555525Z [inf]    "message": {
+2025-12-16T18:05:42.025562114Z [inf]      "role": "assistant",
+2025-12-16T18:05:42.025568215Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-16T18:05:42.025574788Z [inf]      "refusal": null,
+2025-12-16T18:05:42.025582533Z [inf]      "annotations": []
+2025-12-16T18:05:42.025594570Z [inf]    },
+2025-12-16T18:05:42.025608143Z [inf]    "finish_reason": "stop"
+2025-12-16T18:05:42.025615310Z [inf]  }
+2025-12-16T18:05:42.025622302Z [inf]  [GPT-Screen] SUIUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T18:05:42.025628109Z [inf]  [Engine] SUIUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-16T18:05:46.269935436Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:05:50.985129840Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-16T18:05:50.985136338Z [inf]    "index": 0,
+2025-12-16T18:05:50.985144334Z [inf]    "message": {
+2025-12-16T18:05:50.985184898Z [inf]      "role": "assistant",
+2025-12-16T18:05:50.985190609Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 40}",
+2025-12-16T18:05:50.985197061Z [inf]      "refusal": null,
+2025-12-16T18:05:50.985202440Z [inf]      "annotations": []
+2025-12-16T18:05:50.985208168Z [inf]    },
+2025-12-16T18:05:50.985213852Z [inf]    "finish_reason": "stop"
+2025-12-16T18:05:50.985220323Z [inf]  }
+2025-12-16T18:05:50.985226488Z [inf]  [GPT-Screen] ARBUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-16T18:05:50.985232281Z [inf]  [Engine] ARBUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-16T18:05:56.102532221Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:05:58.223453879Z [inf]    "message": {
+2025-12-16T18:05:58.223467669Z [inf]      "role": "assistant",
+2025-12-16T18:05:58.223475785Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 15}",
+2025-12-16T18:05:58.223482920Z [inf]      "refusal": null,
+2025-12-16T18:05:58.223490344Z [inf]      "annotations": []
+2025-12-16T18:05:58.223499998Z [inf]    },
+2025-12-16T18:05:58.223506802Z [inf]    "finish_reason": "stop"
+2025-12-16T18:05:58.223704671Z [inf]  }
+2025-12-16T18:05:58.223712833Z [inf]  [GPT-Screen] OPUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-16T18:05:58.223721009Z [inf]  [Engine] OPUSDT: No opportunity (score: 15) - skipping full analysis
+2025-12-16T18:05:58.224411119Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-16T18:05:58.224416845Z [inf]    "index": 0,
+2025-12-16T18:06:06.055730880Z [inf]      "refusal": null,
+2025-12-16T18:06:06.055774858Z [inf]    "index": 0,
+2025-12-16T18:06:06.055780036Z [inf]    "message": {
+2025-12-16T18:06:06.055786774Z [inf]      "role": "assistant",
+2025-12-16T18:06:06.055792543Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 22}",
+2025-12-16T18:06:06.055830267Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:06:06.055843836Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-16T18:06:06.060094104Z [inf]      "annotations": []
+2025-12-16T18:06:06.060103401Z [inf]    },
+2025-12-16T18:06:06.060109245Z [inf]    "finish_reason": "stop"
+2025-12-16T18:06:06.060114589Z [inf]  }
+2025-12-16T18:06:06.060124064Z [inf]  [GPT-Screen] INJUSDT: score=22, direction=NONE, hasOpp=false
+2025-12-16T18:06:06.060129066Z [inf]  [Engine] INJUSDT: No opportunity (score: 22) - skipping full analysis
+2025-12-16T18:06:25.223138000Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:06:26.227272397Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:06:35.589976714Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:06:45.572487964Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:06:55.495353040Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:07:15.496060631Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:07:15.513555887Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:07:35.406881127Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:07:35.406888678Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-16T18:07:35.406896355Z [inf]    "index": 0,
+2025-12-16T18:07:35.406904286Z [inf]    "message": {
+2025-12-16T18:07:35.406912691Z [inf]      "role": "assistant",
+2025-12-16T18:07:35.406920153Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 54}",
+2025-12-16T18:07:35.406926877Z [inf]      "refusal": null,
+2025-12-16T18:07:35.406935570Z [inf]  [Engine] BTCUSDT: Optimizer suggests leverage=1x, TP=0.00%, SL=0.00% (WR: 50.0%)
+2025-12-16T18:07:35.406967637Z [inf]      "annotations": []
+2025-12-16T18:07:35.406974705Z [inf]    },
+2025-12-16T18:07:35.406981090Z [inf]    "finish_reason": "stop"
+2025-12-16T18:07:35.406987076Z [inf]  }
+2025-12-16T18:07:35.406996358Z [inf]  [GPT-Screen] BTCUSDT: score=54, direction=SELL, hasOpp=true
+2025-12-16T18:07:35.407004008Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 54, direction: SELL)
+2025-12-16T18:07:35.407015008Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:07:35.407025162Z [inf]  [Q-Learning] BTCUSDT: Action=SKIP, Confidence=20.0%
+2025-12-16T18:07:35.407033956Z [inf]  [Engine] BTCUSDT: Q-Learning recommends SKIP (20.0% conf)
+2025-12-16T18:07:35.518149128Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:07:55.513824821Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:07:55.513841524Z [inf]  [Engine] BTCUSDT: HOLD (44%)
+2025-12-16T18:07:55.513857686Z [inf]  [Engine] ⚠️ BTCUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 54)
+2025-12-16T18:07:55.513866242Z [inf]  [Engine]   └─ Reason for rejection: Rechazo la señal moderada de SELL porque las confirmaciones están mixtas y el contexto favorece whipsaws en scalping. 1) Régimen: lateral/weak (ADX 21...
+2025-12-16T18:07:55.513873606Z [inf]  [Engine]   └─ Rechazo la señal moderada de SELL porque las confirmaciones están mixtas y el contexto favorece whip...
+2025-12-16T18:07:55.586244929Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:08:14.951161512Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:08:14.951166208Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-16T18:08:14.951170743Z [inf]    "index": 0,
+2025-12-16T18:08:14.951174728Z [inf]    "message": {
+2025-12-16T18:08:14.951178716Z [inf]      "role": "assistant",
+2025-12-16T18:08:14.951183076Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 45}",
+2025-12-16T18:08:14.951187152Z [inf]      "refusal": null,
+2025-12-16T18:08:14.951192643Z [inf]      "annotations": []
+2025-12-16T18:08:14.951196694Z [inf]    },
+2025-12-16T18:08:14.951200868Z [inf]    "finish_reason": "stop"
+2025-12-16T18:08:14.951205142Z [inf]  }
+2025-12-16T18:08:14.951209500Z [inf]  [GPT-Screen] ETHUSDT: score=45, direction=NONE, hasOpp=false
+2025-12-16T18:08:14.951214972Z [inf]  [Engine] ETHUSDT: No opportunity (score: 45) - skipping full analysis
+2025-12-16T18:08:15.743393756Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:08:18.780883798Z [inf]      "role": "assistant",
+2025-12-16T18:08:18.780895630Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 40}",
+2025-12-16T18:08:18.780926527Z [inf]      "refusal": null,
+2025-12-16T18:08:18.780940813Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-16T18:08:18.780951853Z [inf]  [GPT-Screen] BNBUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-16T18:08:18.780956709Z [inf]      "annotations": []
+2025-12-16T18:08:18.780964621Z [inf]    "index": 0,
+2025-12-16T18:08:18.780965445Z [inf]    },
+2025-12-16T18:08:18.780974330Z [inf]    "finish_reason": "stop"
+2025-12-16T18:08:18.780983313Z [inf]    "message": {
+2025-12-16T18:08:18.780985879Z [inf]  }
+2025-12-16T18:08:18.781409182Z [inf]  [Engine] BNBUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-16T18:08:24.765336098Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-16T18:08:24.765343020Z [inf]    "index": 0,
+2025-12-16T18:08:24.765347057Z [inf]    "message": {
+2025-12-16T18:08:24.765351021Z [inf]      "role": "assistant",
+2025-12-16T18:08:24.765355235Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 15}",
+2025-12-16T18:08:24.765359155Z [inf]      "refusal": null,
+2025-12-16T18:08:24.765363317Z [inf]      "annotations": []
+2025-12-16T18:08:24.765367760Z [inf]    },
+2025-12-16T18:08:24.765371913Z [inf]    "finish_reason": "stop"
+2025-12-16T18:08:24.765376173Z [inf]  }
+2025-12-16T18:08:24.765380415Z [inf]  [GPT-Screen] SOLUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-16T18:08:24.765384913Z [inf]  [Engine] SOLUSDT: No opportunity (score: 15) - skipping full analysis
+2025-12-16T18:08:25.757616844Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:08:46.778637031Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:08:46.778643614Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-16T18:08:46.778650458Z [inf]    "index": 0,
+2025-12-16T18:08:46.778657608Z [inf]    "message": {
+2025-12-16T18:08:46.778663506Z [inf]      "role": "assistant",
+2025-12-16T18:08:46.778670530Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 42}",
+2025-12-16T18:08:46.778677662Z [inf]      "refusal": null,
+2025-12-16T18:08:46.778686034Z [inf]      "annotations": []
+2025-12-16T18:08:46.778692594Z [inf]    },
+2025-12-16T18:08:46.778699205Z [inf]    "finish_reason": "stop"
+2025-12-16T18:08:46.778705262Z [inf]  }
+2025-12-16T18:08:46.778711561Z [inf]  [GPT-Screen] XRPUSDT: score=42, direction=SELL, hasOpp=false
+2025-12-16T18:08:46.778718831Z [inf]  [Engine] XRPUSDT: No opportunity (score: 42) - skipping full analysis
+2025-12-16T18:08:46.778725292Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:08:55.563178088Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:09:02.186754348Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-16T18:09:02.186759420Z [inf]    "index": 0,
+2025-12-16T18:09:02.186764516Z [inf]    "message": {
+2025-12-16T18:09:02.186770163Z [inf]      "role": "assistant",
+2025-12-16T18:09:02.186775216Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:09:02.186780477Z [inf]      "refusal": null,
+2025-12-16T18:09:02.186785741Z [inf]      "annotations": []
+2025-12-16T18:09:02.186790952Z [inf]    },
+2025-12-16T18:09:02.186795943Z [inf]    "finish_reason": "stop"
+2025-12-16T18:09:02.186803176Z [inf]  }
+2025-12-16T18:09:02.186808123Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:09:02.186813425Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:09:05.930800894Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:09:06.916547746Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-16T18:09:06.916558994Z [inf]    "index": 0,
+2025-12-16T18:09:06.916566290Z [inf]    "message": {
+2025-12-16T18:09:06.916573888Z [inf]      "role": "assistant",
+2025-12-16T18:09:06.916581534Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:09:06.916587351Z [inf]      "refusal": null,
+2025-12-16T18:09:06.916593894Z [inf]      "annotations": []
+2025-12-16T18:09:06.916600150Z [inf]    },
+2025-12-16T18:09:06.916609309Z [inf]    "finish_reason": "stop"
+2025-12-16T18:09:06.916616580Z [inf]  }
+2025-12-16T18:09:06.916628656Z [inf]  [GPT-Screen] AVAXUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:09:06.916635897Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:09:13.903541316Z [inf]      "annotations": []
+2025-12-16T18:09:13.903551326Z [inf]    },
+2025-12-16T18:09:13.903563005Z [inf]    "finish_reason": "stop"
+2025-12-16T18:09:13.903570682Z [inf]  }
+2025-12-16T18:09:13.903579402Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-16T18:09:13.903579684Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:09:13.903589127Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:09:13.903591060Z [inf]    "index": 0,
+2025-12-16T18:09:13.903591726Z [inf]      "role": "assistant",
+2025-12-16T18:09:13.903598225Z [inf]    "message": {
+2025-12-16T18:09:13.903605077Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:09:13.903618553Z [inf]      "refusal": null,
+2025-12-16T18:09:15.854517629Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:09:21.048021155Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-16T18:09:21.048026323Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-16T18:09:21.048032776Z [inf]  [Engine] SUIUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-16T18:09:21.048037512Z [inf]      "refusal": null,
+2025-12-16T18:09:21.048041360Z [inf]    "index": 0,
+2025-12-16T18:09:21.048047977Z [inf]    "message": {
+2025-12-16T18:09:21.048054212Z [inf]      "annotations": []
+2025-12-16T18:09:21.048056010Z [inf]      "role": "assistant",
+2025-12-16T18:09:21.048062285Z [inf]    },
+2025-12-16T18:09:21.048069145Z [inf]    "finish_reason": "stop"
+2025-12-16T18:09:21.048085269Z [inf]  }
+2025-12-16T18:09:21.048094399Z [inf]  [GPT-Screen] SUIUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T18:09:26.034615286Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:09:31.316517677Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:09:31.316521135Z [inf]      "annotations": []
+2025-12-16T18:09:31.316523284Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:09:31.316527265Z [inf]  [Q-Learning] ARBUSDT: Action=SKIP, Confidence=20.0%
+2025-12-16T18:09:31.316536829Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:09:31.316552872Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-16T18:09:31.316568747Z [inf]    },
+2025-12-16T18:09:31.316577995Z [inf]  [Engine] ARBUSDT: Q-Learning recommends SKIP (20.0% conf)
+2025-12-16T18:09:31.316578591Z [inf]    "index": 0,
+2025-12-16T18:09:31.316585382Z [inf]    "finish_reason": "stop"
+2025-12-16T18:09:31.316589000Z [inf]  [Engine] ARBUSDT: Optimizer suggests leverage=7x, TP=0.62%, SL=0.24% (WR: 50.0%)
+2025-12-16T18:09:31.316590265Z [inf]    "message": {
+2025-12-16T18:09:31.316607380Z [inf]  }
+2025-12-16T18:09:31.316616373Z [inf]  [GPT-Screen] ARBUSDT: score=58, direction=SELL, hasOpp=true
+2025-12-16T18:09:31.316619633Z [inf]      "role": "assistant",
+2025-12-16T18:09:31.316627737Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 58}",
+2025-12-16T18:09:31.316634418Z [inf]      "refusal": null,
+2025-12-16T18:09:31.316657920Z [inf]  [Engine] ARBUSDT: Opportunity detected! (score: 58, direction: SELL)
+2025-12-16T18:09:36.219469525Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:09:43.342319267Z [inf]  [Engine] ARBUSDT: HOLD (46%)
+2025-12-16T18:09:43.342325537Z [inf]  [Engine] ⚠️ ARBUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 58)
+2025-12-16T18:09:43.342331755Z [inf]  [Engine]   └─ Reason for rejection: Rechazo la señal de SELL por conflicto técnico y mala microestructura para scalping. 1) Tendencia: ADX 26 indica tendencia con fuerza y la alineación ...
+2025-12-16T18:09:43.342337887Z [inf]  [Engine]   └─ Rechazo la señal de SELL por conflicto técnico y mala microestructura para scalping. 1) Tendencia: A...
+2025-12-16T18:09:46.299057190Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:09:54.503203366Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-16T18:09:54.503208706Z [inf]    "index": 0,
+2025-12-16T18:09:54.503214959Z [inf]    "message": {
+2025-12-16T18:09:54.503220652Z [inf]      "role": "assistant",
+2025-12-16T18:09:54.503228587Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 56}",
+2025-12-16T18:09:54.503235104Z [inf]      "refusal": null,
+2025-12-16T18:09:54.503243870Z [inf]      "annotations": []
+2025-12-16T18:09:54.503249513Z [inf]    },
+2025-12-16T18:09:54.503255932Z [inf]    "finish_reason": "stop"
+2025-12-16T18:09:54.503261672Z [inf]  }
+2025-12-16T18:09:54.503267666Z [inf]  [GPT-Screen] OPUSDT: score=56, direction=SELL, hasOpp=true
+2025-12-16T18:09:54.503273302Z [inf]  [Engine] OPUSDT: Opportunity detected! (score: 56, direction: SELL)
+2025-12-16T18:09:54.503278953Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:09:54.503284250Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:09:54.503295308Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T18:09:55.453697512Z [inf]  [Q-Learning] OPUSDT: Action=SKIP, Confidence=20.0%
+2025-12-16T18:09:55.453706864Z [inf]  [Engine] OPUSDT: Q-Learning recommends SKIP (20.0% conf)
+2025-12-16T18:09:55.453711736Z [inf]  [Engine] OPUSDT: Optimizer suggests leverage=7x, TP=0.62%, SL=0.24% (WR: 50.0%)
+2025-12-16T18:09:55.505884990Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:10:15.704663667Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:10:15.704671239Z [inf]  [Engine] OPUSDT: HOLD (58%)
+2025-12-16T18:10:15.704678657Z [inf]  [Engine] ⚠️ OPUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 56)
+2025-12-16T18:10:15.704685344Z [inf]  [Engine]   └─ Reason for rejection: Rechazo la señal de SELL por falta de confirmación y por costos/condiciones de ejecución. 1) Régimen: ADX 16.7 indica rango y tendencia débil; en late...
+2025-12-16T18:10:15.704691972Z [inf]  [Engine]   └─ Rechazo la señal de SELL por falta de confirmación y por costos/condiciones de ejecución. 1) Régimen...
+2025-12-16T18:10:15.704698857Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-16T18:10:15.704705215Z [inf]    "index": 0,
+2025-12-16T18:10:15.704711792Z [inf]    "message": {
+2025-12-16T18:10:15.704717727Z [inf]      "role": "assistant",
+2025-12-16T18:10:15.704724013Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:10:15.704730424Z [inf]      "refusal": null,
+2025-12-16T18:10:15.704736662Z [inf]      "annotations": []
+2025-12-16T18:10:15.704743278Z [inf]    },
+2025-12-16T18:10:15.704749986Z [inf]    "finish_reason": "stop"
+2025-12-16T18:10:15.704755844Z [inf]  }
+2025-12-16T18:10:15.704762931Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:10:15.704769819Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:10:15.704775588Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:10:22.462547973Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-16T18:10:22.462555021Z [inf]    "index": 0,
+2025-12-16T18:10:22.462560700Z [inf]    "message": {
+2025-12-16T18:10:22.462566677Z [inf]      "role": "assistant",
+2025-12-16T18:10:22.462572597Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:10:22.462579026Z [inf]      "refusal": null,
+2025-12-16T18:10:22.462584135Z [inf]      "annotations": []
+2025-12-16T18:10:22.462589039Z [inf]    },
+2025-12-16T18:10:22.462594037Z [inf]    "finish_reason": "stop"
+2025-12-16T18:10:22.462599260Z [inf]  }
+2025-12-16T18:10:22.462605166Z [inf]  [GPT-Screen] BTCUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:10:22.462612703Z [inf]  [Engine] BTCUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:10:25.522031827Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:10:45.128496639Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:10:45.128499700Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:10:45.128505274Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-16T18:10:45.128512598Z [inf]    "index": 0,
+2025-12-16T18:10:45.128512997Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:10:45.128521437Z [inf]    "message": {
+2025-12-16T18:10:45.128523953Z [inf]  [Q-Learning] ETHUSDT: Action=SKIP, Confidence=20.0%
+2025-12-16T18:10:45.128528087Z [inf]      "role": "assistant",
+2025-12-16T18:10:45.128533902Z [inf]  [Engine] ETHUSDT: Q-Learning recommends SKIP (20.0% conf)
+2025-12-16T18:10:45.128534964Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 62}",
+2025-12-16T18:10:45.128540479Z [inf]      "refusal": null,
+2025-12-16T18:10:45.128546083Z [inf]  [Engine] ETHUSDT: Optimizer suggests leverage=7x, TP=0.62%, SL=0.24% (WR: 50.0%)
+2025-12-16T18:10:45.128547134Z [inf]      "annotations": []
+2025-12-16T18:10:45.128552096Z [inf]    },
+2025-12-16T18:10:45.128557605Z [inf]    "finish_reason": "stop"
+2025-12-16T18:10:45.128562909Z [inf]  }
+2025-12-16T18:10:45.128567641Z [inf]  [GPT-Screen] ETHUSDT: score=62, direction=SELL, hasOpp=true
+2025-12-16T18:10:45.128572094Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 62, direction: SELL)
+2025-12-16T18:10:45.985857467Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:10:52.959047617Z [inf]  [Engine] ETHUSDT: HOLD (58%)
+2025-12-16T18:10:52.959054459Z [inf]  [Engine] ⚠️ ETHUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 62)
+2025-12-16T18:10:52.959061218Z [inf]  [Engine]   └─ Reason for rejection: Aunque el sesgo inmediato es bajista (precio por debajo de EMA9/EMA21/SMA50 con alineación bajista perfecta y MACD histograma negativo), el contexto N...
+2025-12-16T18:10:52.959067376Z [inf]  [Engine]   └─ Aunque el sesgo inmediato es bajista (precio por debajo de EMA9/EMA21/SMA50 con alineación bajista p...
+2025-12-16T18:10:55.957868812Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:10:59.255564000Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-16T18:10:59.255573064Z [inf]    "index": 0,
+2025-12-16T18:10:59.255581708Z [inf]    "message": {
+2025-12-16T18:10:59.255589967Z [inf]      "role": "assistant",
+2025-12-16T18:10:59.255597571Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:10:59.255605467Z [inf]      "refusal": null,
+2025-12-16T18:10:59.255619439Z [inf]      "annotations": []
+2025-12-16T18:10:59.255636857Z [inf]    },
+2025-12-16T18:10:59.255643541Z [inf]    "finish_reason": "stop"
+2025-12-16T18:10:59.255658235Z [inf]  }
+2025-12-16T18:10:59.255665773Z [inf]  [GPT-Screen] BNBUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:10:59.255675845Z [inf]  [Engine] BNBUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:11:06.405309064Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-16T18:11:06.405322220Z [inf]    "index": 0,
+2025-12-16T18:11:06.405331644Z [inf]    "message": {
+2025-12-16T18:11:06.405340718Z [inf]      "role": "assistant",
+2025-12-16T18:11:06.405349284Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:11:06.412020305Z [inf]      "refusal": null,
+2025-12-16T18:11:06.412034820Z [inf]      "annotations": []
+2025-12-16T18:11:06.412046732Z [inf]    },
+2025-12-16T18:11:06.412053747Z [inf]    "finish_reason": "stop"
+2025-12-16T18:11:06.412060464Z [inf]  }
+2025-12-16T18:11:06.412067498Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:11:06.412074989Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:11:06.412083373Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:11:16.109522766Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:11:19.412206910Z [inf]  [GPT-Screen] XRPUSDT: score=48, direction=SELL, hasOpp=false
+2025-12-16T18:11:19.412216634Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-16T18:11:19.412220988Z [inf]  [Engine] XRPUSDT: No opportunity (score: 48) - skipping full analysis
+2025-12-16T18:11:19.412231613Z [inf]    "index": 0,
+2025-12-16T18:11:19.412237845Z [inf]    "message": {
+2025-12-16T18:11:19.412244550Z [inf]      "role": "assistant",
+2025-12-16T18:11:19.412250164Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 48}",
+2025-12-16T18:11:19.412256562Z [inf]      "refusal": null,
+2025-12-16T18:11:19.412262634Z [inf]      "annotations": []
+2025-12-16T18:11:19.412271697Z [inf]    },
+2025-12-16T18:11:19.412280457Z [inf]    "finish_reason": "stop"
+2025-12-16T18:11:19.412287167Z [inf]  }
+2025-12-16T18:11:25.265350810Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-16T18:11:25.265361842Z [inf]    "index": 0,
+2025-12-16T18:11:25.265367880Z [inf]    "message": {
+2025-12-16T18:11:25.265372523Z [inf]      "role": "assistant",
+2025-12-16T18:11:25.265377160Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:11:25.265382491Z [inf]      "refusal": null,
+2025-12-16T18:11:25.265386919Z [inf]      "annotations": []
+2025-12-16T18:11:25.265391307Z [inf]    },
+2025-12-16T18:11:25.265397334Z [inf]    "finish_reason": "stop"
+2025-12-16T18:11:25.265403554Z [inf]  }
+2025-12-16T18:11:25.265409797Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:11:25.265414834Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:11:26.180927746Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:11:31.224498785Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-16T18:11:31.224503580Z [inf]    "index": 0,
+2025-12-16T18:11:31.224508189Z [inf]    "message": {
+2025-12-16T18:11:31.224512856Z [inf]      "role": "assistant",
+2025-12-16T18:11:31.224517156Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:11:31.224521720Z [inf]      "refusal": null,
+2025-12-16T18:11:31.224526185Z [inf]      "annotations": []
+2025-12-16T18:11:31.224530071Z [inf]    },
+2025-12-16T18:11:31.224534960Z [inf]    "finish_reason": "stop"
+2025-12-16T18:11:31.224539197Z [inf]  }
+2025-12-16T18:11:31.224543720Z [inf]  [GPT-Screen] AVAXUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:11:31.224548818Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:11:36.227905746Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:11:38.261388365Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-16T18:11:38.261395033Z [inf]    "index": 0,
+2025-12-16T18:11:38.261400470Z [inf]    "message": {
+2025-12-16T18:11:38.261406936Z [inf]      "role": "assistant",
+2025-12-16T18:11:38.261413173Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:11:38.261418727Z [inf]      "refusal": null,
+2025-12-16T18:11:38.261425962Z [inf]      "annotations": []
+2025-12-16T18:11:38.261432252Z [inf]    },
+2025-12-16T18:11:38.261437972Z [inf]    "finish_reason": "stop"
+2025-12-16T18:11:38.261443964Z [inf]  }
+2025-12-16T18:11:38.261450340Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:11:38.261456061Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:11:45.517225151Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:11:50.166154949Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-16T18:11:50.166160443Z [inf]    "index": 0,
+2025-12-16T18:11:50.166165872Z [inf]    "message": {
+2025-12-16T18:11:50.166171599Z [inf]      "role": "assistant",
+2025-12-16T18:11:50.166179796Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 54}",
+2025-12-16T18:11:50.166192009Z [inf]      "refusal": null,
+2025-12-16T18:11:50.166197324Z [inf]      "annotations": []
+2025-12-16T18:11:50.166202868Z [inf]    },
+2025-12-16T18:11:50.166208097Z [inf]    "finish_reason": "stop"
+2025-12-16T18:11:50.166216481Z [inf]  }
+2025-12-16T18:11:50.166227993Z [inf]  [GPT-Screen] SUIUSDT: score=54, direction=SELL, hasOpp=true
+2025-12-16T18:11:50.166233180Z [inf]  [Engine] SUIUSDT: Opportunity detected! (score: 54, direction: SELL)
+2025-12-16T18:11:50.166238224Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:11:50.166244384Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:11:50.166249700Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:11:50.271598064Z [inf]  [Q-Learning] SUIUSDT: Action=SKIP, Confidence=20.0%
+2025-12-16T18:11:50.271607807Z [inf]  [Engine] SUIUSDT: Q-Learning recommends SKIP (20.0% conf)
+2025-12-16T18:11:50.271615171Z [inf]  [Engine] SUIUSDT: Optimizer suggests leverage=1x, TP=0.00%, SL=0.00% (WR: 50.0%)
+2025-12-16T18:11:55.506497833Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:12:15.723090140Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:12:15.723096466Z [inf]  [Engine] SUIUSDT: HOLD (58%)
+2025-12-16T18:12:15.723106419Z [inf]  [Engine] ⚠️ SUIUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 54)
+2025-12-16T18:12:15.723113337Z [inf]  [Engine]   └─ Reason for rejection: Rechazo la señal moderada de SELL porque no hay confirmación técnica suficiente para un short de scalping desde el POC.
+2025-12-16T18:12:15.723122525Z [inf]  
+2025-12-16T18:12:15.723129651Z [inf]  1) Contexto/régimen: el merca...
+2025-12-16T18:12:15.723136425Z [inf]  [Engine]   └─ Rechazo la señal moderada de SELL porque no hay confirmación técnica suficiente para un short de sca...
+2025-12-16T18:12:15.723143035Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-16T18:12:15.723149346Z [inf]    "index": 0,
+2025-12-16T18:12:15.723156076Z [inf]    "message": {
+2025-12-16T18:12:15.723163164Z [inf]      "role": "assistant",
+2025-12-16T18:12:15.723175419Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 40}",
+2025-12-16T18:12:15.723187289Z [inf]      "refusal": null,
+2025-12-16T18:12:15.723193551Z [inf]      "annotations": []
+2025-12-16T18:12:15.723199805Z [inf]    },
+2025-12-16T18:12:15.723206093Z [inf]    "finish_reason": "stop"
+2025-12-16T18:12:15.723212456Z [inf]  }
+2025-12-16T18:12:15.723220222Z [inf]  [GPT-Screen] ARBUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-16T18:12:15.723227974Z [inf]  [Engine] ARBUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-16T18:12:15.723233997Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:12:21.509631512Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-16T18:12:21.509637898Z [inf]    "index": 0,
+2025-12-16T18:12:21.509644099Z [inf]    "message": {
+2025-12-16T18:12:21.509649858Z [inf]      "role": "assistant",
+2025-12-16T18:12:21.509655811Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:12:21.509664732Z [inf]      "refusal": null,
+2025-12-16T18:12:21.509669830Z [inf]      "annotations": []
+2025-12-16T18:12:21.509675365Z [inf]    },
+2025-12-16T18:12:21.509682332Z [inf]    "finish_reason": "stop"
+2025-12-16T18:12:21.509688576Z [inf]  }
+2025-12-16T18:12:21.509694786Z [inf]  [GPT-Screen] OPUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:12:21.509700561Z [inf]  [Engine] OPUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:12:25.508260502Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:12:26.396589433Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-16T18:12:26.396596529Z [inf]    "index": 0,
+2025-12-16T18:12:26.396602678Z [inf]    "message": {
+2025-12-16T18:12:26.396609155Z [inf]      "role": "assistant",
+2025-12-16T18:12:26.396621453Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:12:26.396624647Z [inf]  }
+2025-12-16T18:12:26.396630636Z [inf]      "refusal": null,
+2025-12-16T18:12:26.396634494Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:12:26.396637286Z [inf]      "annotations": []
+2025-12-16T18:12:26.396643921Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:12:26.396646904Z [inf]    },
+2025-12-16T18:12:26.396652338Z [inf]    "finish_reason": "stop"
+2025-12-16T18:12:35.701214457Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:12:45.692884225Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:12:55.624324432Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:13:15.847749379Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:13:15.847757568Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:13:25.799602331Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:13:27.455360743Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-16T18:13:27.455367954Z [inf]    "index": 0,
+2025-12-16T18:13:27.455373148Z [inf]    "message": {
+2025-12-16T18:13:27.455378409Z [inf]      "role": "assistant",
+2025-12-16T18:13:27.455384172Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"BUY\", \"score\": 51}",
+2025-12-16T18:13:27.455389003Z [inf]      "refusal": null,
+2025-12-16T18:13:27.455393810Z [inf]      "annotations": []
+2025-12-16T18:13:27.455398616Z [inf]    },
+2025-12-16T18:13:27.455405166Z [inf]    "finish_reason": "stop"
+2025-12-16T18:13:27.455410269Z [inf]  }
+2025-12-16T18:13:27.455415123Z [inf]  [GPT-Screen] BTCUSDT: score=51, direction=BUY, hasOpp=true
+2025-12-16T18:13:27.455419925Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 51, direction: BUY)
+2025-12-16T18:13:27.455428440Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:13:28.533320695Z [inf]  [Engine] BTCUSDT: Q-Learning recommends SKIP (20.0% conf)
+2025-12-16T18:13:28.533326346Z [inf]  [Engine] BTCUSDT: Optimizer suggests leverage=1x, TP=0.00%, SL=0.00% (WR: 50.0%)
+2025-12-16T18:13:28.533379969Z [inf]  [Q-Learning] BTCUSDT: Action=SKIP, Confidence=20.0%
+2025-12-16T18:13:35.701315099Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:13:40.644251037Z [inf]  [Engine] BTCUSDT: HOLD (44%)
+2025-12-16T18:13:40.644254704Z [inf]  [Engine] ⚠️ BTCUSDT: GPT-5.2 said HOLD but screening detected BUY (score: 51)
+2025-12-16T18:13:40.644258403Z [inf]  [Engine]   └─ Reason for rejection: Rechazo la señal moderada de BUY porque la confluencia para scalping no es suficientemente limpia: (1) Régimen y fuerza: ADX 22 indica rango/débil; en...
+2025-12-16T18:13:40.644263049Z [inf]  [Engine]   └─ Rechazo la señal moderada de BUY porque la confluencia para scalping no es suficientemente limpia: (...
+2025-12-16T18:13:45.663038764Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:13:47.866432261Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-16T18:13:47.866437019Z [inf]    "index": 0,
+2025-12-16T18:13:47.866441366Z [inf]    "message": {
+2025-12-16T18:13:47.866445933Z [inf]      "role": "assistant",
+2025-12-16T18:13:47.866450567Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:13:47.866454627Z [inf]      "refusal": null,
+2025-12-16T18:13:47.866458927Z [inf]      "annotations": []
+2025-12-16T18:13:47.866463634Z [inf]    },
+2025-12-16T18:13:47.866468468Z [inf]    "finish_reason": "stop"
+2025-12-16T18:13:47.866472460Z [inf]  }
+2025-12-16T18:13:47.866477274Z [inf]  [GPT-Screen] ETHUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:13:47.866482779Z [inf]  [Engine] ETHUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:13:54.802701165Z [inf]      "refusal": null,
+2025-12-16T18:13:54.802733061Z [inf]      "annotations": []
+2025-12-16T18:13:54.802740073Z [inf]    },
+2025-12-16T18:13:54.802748937Z [inf]    "finish_reason": "stop"
+2025-12-16T18:13:54.802756628Z [inf]  }
+2025-12-16T18:13:54.802758416Z [inf]  [GPT-Screen] BNBUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-16T18:13:54.802781084Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-16T18:13:54.802792243Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:13:54.802803620Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:13:54.802811912Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:13:54.803227292Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-16T18:13:54.803231509Z [inf]    "index": 0,
+2025-12-16T18:13:54.803236297Z [inf]    "message": {
+2025-12-16T18:13:54.803245228Z [inf]      "role": "assistant",
+2025-12-16T18:13:54.803249044Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 60}",
+2025-12-16T18:13:55.877954187Z [inf]  [Q-Learning] BNBUSDT: Action=SKIP, Confidence=20.0%
+2025-12-16T18:13:55.877961628Z [inf]  [Engine] BNBUSDT: Q-Learning recommends SKIP (20.0% conf)
+2025-12-16T18:13:55.877969181Z [inf]  [Engine] BNBUSDT: Optimizer suggests leverage=7x, TP=0.62%, SL=0.24% (WR: 50.0%)
+2025-12-16T18:13:55.877975648Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:14:15.167400909Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:14:15.167411378Z [inf]  [Engine] BNBUSDT: HOLD (55%)
+2025-12-16T18:14:15.167420223Z [inf]  [Engine] ⚠️ BNBUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 60)
+2025-12-16T18:14:15.167426416Z [inf]  [Engine]   └─ Reason for rejection: Rechazo el SELL del screening por falta de confirmación y asimetría pobre en este punto del rango. Contexto técnico mixto: (1) Régimen lateral con ADX...
+2025-12-16T18:14:15.167432472Z [inf]  [Engine]   └─ Rechazo el SELL del screening por falta de confirmación y asimetría pobre en este punto del rango. C...
+2025-12-16T18:14:15.175798246Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-16T18:14:15.175802205Z [inf]    "index": 0,
+2025-12-16T18:14:15.175839367Z [inf]    "message": {
+2025-12-16T18:14:15.175845833Z [inf]      "role": "assistant",
+2025-12-16T18:14:15.175849728Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 15}",
+2025-12-16T18:14:15.175853878Z [inf]      "refusal": null,
+2025-12-16T18:14:15.175859208Z [inf]      "annotations": []
+2025-12-16T18:14:15.175863113Z [inf]    },
+2025-12-16T18:14:15.175866844Z [inf]    "finish_reason": "stop"
+2025-12-16T18:14:15.175871237Z [inf]  }
+2025-12-16T18:14:15.175875106Z [inf]  [GPT-Screen] SOLUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-16T18:14:15.175879280Z [inf]  [Engine] SOLUSDT: No opportunity (score: 15) - skipping full analysis
+2025-12-16T18:14:15.911076012Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:14:22.130787440Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-16T18:14:22.130793406Z [inf]    "index": 0,
+2025-12-16T18:14:22.130798784Z [inf]    "message": {
+2025-12-16T18:14:22.130804340Z [inf]      "role": "assistant",
+2025-12-16T18:14:22.130809619Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:14:22.130814953Z [inf]      "refusal": null,
+2025-12-16T18:14:22.130828835Z [inf]      "annotations": []
+2025-12-16T18:14:22.130834575Z [inf]    },
+2025-12-16T18:14:22.130840406Z [inf]    "finish_reason": "stop"
+2025-12-16T18:14:22.130846123Z [inf]  }
+2025-12-16T18:14:22.130851163Z [inf]  [GPT-Screen] XRPUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:14:22.130856491Z [inf]  [Engine] XRPUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:14:25.935922725Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:14:31.059341481Z [inf]      "role": "assistant",
+2025-12-16T18:14:31.059366627Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-16T18:14:31.059374991Z [inf]      "refusal": null,
+2025-12-16T18:14:31.059383049Z [inf]      "annotations": []
+2025-12-16T18:14:31.059389279Z [inf]    },
+2025-12-16T18:14:31.059396491Z [inf]    "finish_reason": "stop"
+2025-12-16T18:14:31.059461075Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-16T18:14:31.059466976Z [inf]    "index": 0,
+2025-12-16T18:14:31.059473081Z [inf]    "message": {
+2025-12-16T18:14:31.059485629Z [inf]  }
+2025-12-16T18:14:31.059491842Z [inf]  [GPT-Screen] LINKUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T18:14:31.059497850Z [inf]  [Engine] LINKUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-16T18:14:36.421967960Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:14:37.299110594Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-16T18:14:37.299119726Z [inf]    "index": 0,
+2025-12-16T18:14:37.299131943Z [inf]    "message": {
+2025-12-16T18:14:37.299139616Z [inf]      "role": "assistant",
+2025-12-16T18:14:37.299146583Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:14:37.299153194Z [inf]      "refusal": null,
+2025-12-16T18:14:37.299160257Z [inf]      "annotations": []
+2025-12-16T18:14:37.299170463Z [inf]    },
+2025-12-16T18:14:37.299185448Z [inf]    "finish_reason": "stop"
+2025-12-16T18:14:37.299190561Z [inf]  }
+2025-12-16T18:14:37.299196366Z [inf]  [GPT-Screen] AVAXUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:14:37.299201535Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:14:45.363009252Z [inf]      "refusal": null,
+2025-12-16T18:14:45.363020844Z [inf]      "annotations": []
+2025-12-16T18:14:45.363027386Z [inf]    "index": 0,
+2025-12-16T18:14:45.363034646Z [inf]    "message": {
+2025-12-16T18:14:45.363035066Z [inf]    },
+2025-12-16T18:14:45.363043144Z [inf]    "finish_reason": "stop"
+2025-12-16T18:14:45.363052260Z [inf]  }
+2025-12-16T18:14:45.363060913Z [inf]  [GPT-Screen] DOGEUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T18:14:45.363070702Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-16T18:14:45.363074156Z [inf]      "role": "assistant",
+2025-12-16T18:14:45.363080467Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-16T18:14:45.363084130Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-16T18:14:45.524086195Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:14:54.300054357Z [inf]    },
+2025-12-16T18:14:54.300066568Z [inf]    "finish_reason": "stop"
+2025-12-16T18:14:54.300076527Z [inf]  }
+2025-12-16T18:14:54.300086215Z [inf]  [GPT-Screen] SUIUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:14:54.300094875Z [inf]  [Engine] SUIUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:14:54.300170093Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-16T18:14:54.300178053Z [inf]    "index": 0,
+2025-12-16T18:14:54.300184827Z [inf]    "message": {
+2025-12-16T18:14:54.300192006Z [inf]      "role": "assistant",
+2025-12-16T18:14:54.300199535Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:14:54.300206514Z [inf]      "refusal": null,
+2025-12-16T18:14:54.300213838Z [inf]      "annotations": []
+2025-12-16T18:14:55.576175710Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:15:15.586137899Z [inf]  [Engine] ARBUSDT: No opportunity (score: 46) - skipping full analysis
+2025-12-16T18:15:15.586156653Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:15:15.586172196Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-16T18:15:15.586182187Z [inf]    "index": 0,
+2025-12-16T18:15:15.586189790Z [inf]    "message": {
+2025-12-16T18:15:15.586198357Z [inf]      "role": "assistant",
+2025-12-16T18:15:15.586207371Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 46}",
+2025-12-16T18:15:15.586211800Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:15:15.586216480Z [inf]      "refusal": null,
+2025-12-16T18:15:15.586224534Z [inf]      "annotations": []
+2025-12-16T18:15:15.586232297Z [inf]    },
+2025-12-16T18:15:15.586240138Z [inf]    "finish_reason": "stop"
+2025-12-16T18:15:15.586247323Z [inf]  }
+2025-12-16T18:15:15.586254748Z [inf]  [GPT-Screen] ARBUSDT: score=46, direction=NONE, hasOpp=false
+2025-12-16T18:15:22.470622833Z [inf]    "message": {
+2025-12-16T18:15:22.470632066Z [inf]      "role": "assistant",
+2025-12-16T18:15:22.470640123Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"SELL\", \"score\": 20}",
+2025-12-16T18:15:22.470645013Z [inf]      "refusal": null,
+2025-12-16T18:15:22.470650037Z [inf]      "annotations": []
+2025-12-16T18:15:22.470655655Z [inf]    },
+2025-12-16T18:15:22.470661892Z [inf]    "finish_reason": "stop"
+2025-12-16T18:15:22.470666601Z [inf]  }
+2025-12-16T18:15:22.470672940Z [inf]  [GPT-Screen] OPUSDT: score=20, direction=SELL, hasOpp=false
+2025-12-16T18:15:22.470697828Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-16T18:15:22.470701952Z [inf]  [Engine] OPUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:15:22.470703121Z [inf]    "index": 0,
+2025-12-16T18:15:25.588181581Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:15:29.838437567Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-16T18:15:29.838443424Z [inf]    "index": 0,
+2025-12-16T18:15:29.838448946Z [inf]    "message": {
+2025-12-16T18:15:29.838458598Z [inf]      "role": "assistant",
+2025-12-16T18:15:29.838463644Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:15:29.838468701Z [inf]      "refusal": null,
+2025-12-16T18:15:29.838474971Z [inf]      "annotations": []
+2025-12-16T18:15:29.838481835Z [inf]    },
+2025-12-16T18:15:29.838490481Z [inf]    "finish_reason": "stop"
+2025-12-16T18:15:29.838496067Z [inf]  }
+2025-12-16T18:15:29.838502672Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:15:29.838509301Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:15:35.577845815Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:15:55.058915279Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:15:55.766280995Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:16:05.765459570Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:16:25.162644493Z [inf]    },
+2025-12-16T18:16:25.162657332Z [inf]    "finish_reason": "stop"
+2025-12-16T18:16:25.162665549Z [inf]  }
+2025-12-16T18:16:25.162675637Z [inf]  [GPT-Screen] BTCUSDT: score=62, direction=SELL, hasOpp=true
+2025-12-16T18:16:25.162698895Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:16:25.162703285Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-16T18:16:25.162710538Z [inf]    "index": 0,
+2025-12-16T18:16:25.162714954Z [inf]    "message": {
+2025-12-16T18:16:25.162720770Z [inf]      "role": "assistant",
+2025-12-16T18:16:25.162725181Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 62}",
+2025-12-16T18:16:25.162729897Z [inf]      "refusal": null,
+2025-12-16T18:16:25.162734631Z [inf]      "annotations": []
+2025-12-16T18:16:25.162742830Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 62, direction: SELL)
+2025-12-16T18:16:25.162752854Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:16:25.162759156Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:16:25.162767993Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:16:25.861615668Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:16:26.812729059Z [inf]  [Q-Learning] BTCUSDT: Action=SKIP, Confidence=20.0%
+2025-12-16T18:16:26.812736908Z [inf]  [Engine] BTCUSDT: Q-Learning recommends SKIP (20.0% conf)
+2025-12-16T18:16:26.812744325Z [inf]  [Engine] BTCUSDT: Optimizer suggests leverage=7x, TP=0.62%, SL=0.24% (WR: 50.0%)
+2025-12-16T18:16:36.007503747Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:16:39.797913635Z [inf]  [Engine] BTCUSDT: HOLD (58%)
+2025-12-16T18:16:39.797920043Z [inf]  [Engine] ⚠️ BTCUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 62)
+2025-12-16T18:16:39.797927187Z [inf]  [Engine]   └─ Reason for rejection: Rechazo la señal SELL por falta de confirmación técnica y microestructura contradictoria. 1) Tendencia/estructura: el precio está por encima de EMA9 (...
+2025-12-16T18:16:39.797935028Z [inf]  [Engine]   └─ Rechazo la señal SELL por falta de confirmación técnica y microestructura contradictoria. 1) Tendenc...
+2025-12-16T18:16:46.851687868Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:16:54.236486983Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-16T18:16:54.236525869Z [inf]    "index": 0,
+2025-12-16T18:16:54.236533046Z [inf]    "message": {
+2025-12-16T18:16:54.236541841Z [inf]      "role": "assistant",
+2025-12-16T18:16:54.236549395Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 15}",
+2025-12-16T18:16:54.236557130Z [inf]      "refusal": null,
+2025-12-16T18:16:54.236564580Z [inf]      "annotations": []
+2025-12-16T18:16:54.236572240Z [inf]    },
+2025-12-16T18:16:54.236582110Z [inf]    "finish_reason": "stop"
+2025-12-16T18:16:54.236590760Z [inf]  }
+2025-12-16T18:16:54.236598541Z [inf]  [GPT-Screen] ETHUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-16T18:16:54.236606300Z [inf]  [Engine] ETHUSDT: No opportunity (score: 15) - skipping full analysis
+2025-12-16T18:16:56.548777268Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:17:06.221742118Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:17:10.137666831Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-16T18:17:10.137675795Z [inf]    "index": 0,
+2025-12-16T18:17:10.137682607Z [inf]    "message": {
+2025-12-16T18:17:10.137697669Z [inf]      "role": "assistant",
+2025-12-16T18:17:10.137698250Z [inf]      "annotations": []
+2025-12-16T18:17:10.137707823Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 40}",
+2025-12-16T18:17:10.137707941Z [inf]    },
+2025-12-16T18:17:10.137717394Z [inf]    "finish_reason": "stop"
+2025-12-16T18:17:10.137717838Z [inf]      "refusal": null,
+2025-12-16T18:17:10.137724234Z [inf]  }
+2025-12-16T18:17:10.137730203Z [inf]  [GPT-Screen] BNBUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-16T18:17:10.137735861Z [inf]  [Engine] BNBUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-16T18:17:16.126774896Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:17:16.235327568Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-16T18:17:16.235340532Z [inf]    "index": 0,
+2025-12-16T18:17:16.235348387Z [inf]    "message": {
+2025-12-16T18:17:16.235357919Z [inf]      "role": "assistant",
+2025-12-16T18:17:16.235364664Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 18}",
+2025-12-16T18:17:16.235371099Z [inf]      "refusal": null,
+2025-12-16T18:17:16.235377528Z [inf]      "annotations": []
+2025-12-16T18:17:16.235384490Z [inf]    },
+2025-12-16T18:17:16.235390628Z [inf]    "finish_reason": "stop"
+2025-12-16T18:17:16.235396751Z [inf]  }
+2025-12-16T18:17:16.235402727Z [inf]  [GPT-Screen] SOLUSDT: score=18, direction=NONE, hasOpp=false
+2025-12-16T18:17:16.235409303Z [inf]  [Engine] SOLUSDT: No opportunity (score: 18) - skipping full analysis
+2025-12-16T18:17:22.402272026Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-16T18:17:22.402282143Z [inf]    "index": 0,
+2025-12-16T18:17:22.402288329Z [inf]    "message": {
+2025-12-16T18:17:22.402294557Z [inf]      "role": "assistant",
+2025-12-16T18:17:22.402304325Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 18}",
+2025-12-16T18:17:22.402317607Z [inf]      "refusal": null,
+2025-12-16T18:17:22.402323384Z [inf]      "annotations": []
+2025-12-16T18:17:22.402329802Z [inf]    },
+2025-12-16T18:17:22.402335976Z [inf]    "finish_reason": "stop"
+2025-12-16T18:17:22.402340649Z [inf]  }
+2025-12-16T18:17:22.402344813Z [inf]  [GPT-Screen] XRPUSDT: score=18, direction=NONE, hasOpp=false
+2025-12-16T18:17:22.402349418Z [inf]  [Engine] XRPUSDT: No opportunity (score: 18) - skipping full analysis
+2025-12-16T18:17:26.422489872Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:17:29.358375243Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-16T18:17:29.358376495Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-16T18:17:29.358383632Z [inf]    "index": 0,
+2025-12-16T18:17:29.358385231Z [inf]      "refusal": null,
+2025-12-16T18:17:29.358391307Z [inf]  [GPT-Screen] LINKUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T18:17:29.358395142Z [inf]      "annotations": []
+2025-12-16T18:17:29.358398016Z [inf]    "message": {
+2025-12-16T18:17:29.358400998Z [inf]  [Engine] LINKUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-16T18:17:29.358404033Z [inf]    },
+2025-12-16T18:17:29.358407753Z [inf]      "role": "assistant",
+2025-12-16T18:17:29.358411846Z [inf]    "finish_reason": "stop"
+2025-12-16T18:17:29.358418545Z [inf]  }
+2025-12-16T18:17:35.588117136Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:17:36.429623687Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-16T18:17:36.429627802Z [inf]    "index": 0,
+2025-12-16T18:17:36.429632347Z [inf]    "message": {
+2025-12-16T18:17:36.429636792Z [inf]      "role": "assistant",
+2025-12-16T18:17:36.429642637Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 12}",
+2025-12-16T18:17:36.429650400Z [inf]      "refusal": null,
+2025-12-16T18:17:36.429658064Z [inf]      "annotations": []
+2025-12-16T18:17:36.429664407Z [inf]    },
+2025-12-16T18:17:36.429674476Z [inf]    "finish_reason": "stop"
+2025-12-16T18:17:36.429680197Z [inf]  }
+2025-12-16T18:17:36.429685725Z [inf]  [GPT-Screen] AVAXUSDT: score=12, direction=NONE, hasOpp=false
+2025-12-16T18:17:36.429694787Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 12) - skipping full analysis
+2025-12-16T18:17:41.408290003Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-16T18:17:41.408297364Z [inf]    "index": 0,
+2025-12-16T18:17:41.408304747Z [inf]    "message": {
+2025-12-16T18:17:41.408312399Z [inf]      "role": "assistant",
+2025-12-16T18:17:41.408319254Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 15}",
+2025-12-16T18:17:41.408327236Z [inf]      "refusal": null,
+2025-12-16T18:17:41.408333941Z [inf]      "annotations": []
+2025-12-16T18:17:41.408342746Z [inf]    },
+2025-12-16T18:17:41.408348861Z [inf]    "finish_reason": "stop"
+2025-12-16T18:17:41.408354684Z [inf]  }
+2025-12-16T18:17:41.408361126Z [inf]  [GPT-Screen] DOGEUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-16T18:17:41.408367026Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 15) - skipping full analysis
+2025-12-16T18:17:45.591566227Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:17:47.333333786Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-16T18:17:47.333340244Z [inf]    "index": 0,
+2025-12-16T18:17:47.333347043Z [inf]    "message": {
+2025-12-16T18:17:47.333353454Z [inf]      "role": "assistant",
+2025-12-16T18:17:47.333359262Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-16T18:17:47.333365166Z [inf]      "refusal": null,
+2025-12-16T18:17:47.333371843Z [inf]      "annotations": []
+2025-12-16T18:17:47.333377212Z [inf]    },
+2025-12-16T18:17:47.333383369Z [inf]    "finish_reason": "stop"
+2025-12-16T18:17:47.333389289Z [inf]  }
+2025-12-16T18:17:47.333395423Z [inf]  [GPT-Screen] SUIUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T18:17:47.333401093Z [inf]  [Engine] SUIUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-16T18:17:55.319097083Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-16T18:17:55.319103783Z [inf]    "index": 0,
+2025-12-16T18:17:55.319108252Z [inf]    "message": {
+2025-12-16T18:17:55.319113587Z [inf]      "role": "assistant",
+2025-12-16T18:17:55.319118222Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 36}",
+2025-12-16T18:17:55.319123286Z [inf]      "refusal": null,
+2025-12-16T18:17:55.319129313Z [inf]      "annotations": []
+2025-12-16T18:17:55.319134820Z [inf]    },
+2025-12-16T18:17:55.319140100Z [inf]    "finish_reason": "stop"
+2025-12-16T18:17:55.319145419Z [inf]  }
+2025-12-16T18:17:55.319151613Z [inf]  [GPT-Screen] ARBUSDT: score=36, direction=NONE, hasOpp=false
+2025-12-16T18:17:55.319157420Z [inf]  [Engine] ARBUSDT: No opportunity (score: 36) - skipping full analysis
+2025-12-16T18:17:55.517238644Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:18:14.927464457Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:18:14.927471161Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-16T18:18:14.927485155Z [inf]    "index": 0,
+2025-12-16T18:18:14.927491979Z [inf]    "message": {
+2025-12-16T18:18:14.927501688Z [inf]      "role": "assistant",
+2025-12-16T18:18:14.927507937Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 70}",
+2025-12-16T18:18:14.927514111Z [inf]      "refusal": null,
+2025-12-16T18:18:14.927520231Z [inf]      "annotations": []
+2025-12-16T18:18:14.927526029Z [inf]    },
+2025-12-16T18:18:14.927536565Z [inf]    "finish_reason": "stop"
+2025-12-16T18:18:14.927547095Z [inf]  }
+2025-12-16T18:18:14.927553767Z [inf]  [GPT-Screen] OPUSDT: score=70, direction=SELL, hasOpp=true
+2025-12-16T18:18:14.927559732Z [inf]  [Engine] OPUSDT: Opportunity detected! (score: 70, direction: SELL)
+2025-12-16T18:18:14.927566001Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:18:14.927571901Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:18:14.927578342Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:18:14.927585297Z [inf]  [Q-Learning] OPUSDT: Action=SKIP, Confidence=20.0%
+2025-12-16T18:18:14.927590840Z [inf]  [Engine] OPUSDT: Q-Learning recommends SKIP (20.0% conf)
+2025-12-16T18:18:14.927596175Z [inf]  [Engine] OPUSDT: Optimizer suggests leverage=8x, TP=0.62%, SL=0.24% (WR: 50.0%)
+2025-12-16T18:18:15.826455474Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:18:24.684276867Z [inf]  [Engine] OPUSDT: HOLD (44%)
+2025-12-16T18:18:24.684283056Z [inf]  [Engine] ⚠️ OPUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 70)
+2025-12-16T18:18:24.684291999Z [inf]  [Engine]   └─ Reason for rejection: Rechazo la señal de SELL por falta de confirmación y por condiciones microestructurales desfavorables para scalping. 1) Régimen: ADX 15.6 indica rango...
+2025-12-16T18:18:24.684297933Z [inf]  [Engine]   └─ Rechazo la señal de SELL por falta de confirmación y por condiciones microestructurales desfavorable...
+2025-12-16T18:18:25.656957282Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:18:30.715385708Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-16T18:18:30.715389275Z [inf]    "index": 0,
+2025-12-16T18:18:30.715393201Z [inf]    "message": {
+2025-12-16T18:18:30.715397769Z [inf]      "role": "assistant",
+2025-12-16T18:18:30.715401570Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 15}",
+2025-12-16T18:18:30.715405243Z [inf]      "refusal": null,
+2025-12-16T18:18:30.715408830Z [inf]      "annotations": []
+2025-12-16T18:18:30.715413242Z [inf]    },
+2025-12-16T18:18:30.715416752Z [inf]    "finish_reason": "stop"
+2025-12-16T18:18:30.715420211Z [inf]  }
+2025-12-16T18:18:30.715436603Z [inf]  [GPT-Screen] INJUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-16T18:18:30.715441073Z [inf]  [Engine] INJUSDT: No opportunity (score: 15) - skipping full analysis
+2025-12-16T18:18:35.774471811Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:18:55.367439809Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:18:56.144463036Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:19:16.505186906Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:19:16.505195477Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:19:25.804736279Z [inf]  [GPT-Screen] BTCUSDT full response: {
+2025-12-16T18:19:25.804740496Z [inf]    "index": 0,
+2025-12-16T18:19:25.804744528Z [inf]    "message": {
+2025-12-16T18:19:25.804749532Z [inf]      "role": "assistant",
+2025-12-16T18:19:25.804754542Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:19:25.804758811Z [inf]      "refusal": null,
+2025-12-16T18:19:25.804763036Z [inf]      "annotations": []
+2025-12-16T18:19:25.804767334Z [inf]    },
+2025-12-16T18:19:25.804771197Z [inf]    "finish_reason": "stop"
+2025-12-16T18:19:25.804775106Z [inf]  }
+2025-12-16T18:19:25.804779285Z [inf]  [GPT-Screen] BTCUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:19:25.804783288Z [inf]  [Engine] BTCUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:19:25.804789750Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:19:45.346944550Z [inf]    "message": {
+2025-12-16T18:19:45.346955445Z [inf]      "role": "assistant",
+2025-12-16T18:19:45.346962641Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 40}",
+2025-12-16T18:19:45.346969214Z [inf]      "refusal": null,
+2025-12-16T18:19:45.346976508Z [inf]      "annotations": []
+2025-12-16T18:19:45.346983390Z [inf]    },
+2025-12-16T18:19:45.346989046Z [inf]    "finish_reason": "stop"
+2025-12-16T18:19:45.346994996Z [inf]  }
+2025-12-16T18:19:45.347000415Z [inf]  [GPT-Screen] ETHUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-16T18:19:45.347006035Z [inf]  [Engine] ETHUSDT: No opportunity (score: 40) - skipping full analysis
+2025-12-16T18:19:45.347121227Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:19:45.347130047Z [inf]  [GPT-Screen] ETHUSDT full response: {
+2025-12-16T18:19:45.347137574Z [inf]    "index": 0,
+2025-12-16T18:19:46.178929653Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:19:56.066709459Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:19:58.417695619Z [inf]  [GPT-Screen] BNBUSDT full response: {
+2025-12-16T18:19:58.417699878Z [inf]    "index": 0,
+2025-12-16T18:19:58.417705185Z [inf]    "message": {
+2025-12-16T18:19:58.417709219Z [inf]      "role": "assistant",
+2025-12-16T18:19:58.417713450Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:19:58.417717855Z [inf]      "refusal": null,
+2025-12-16T18:19:58.417721737Z [inf]      "annotations": []
+2025-12-16T18:19:58.417726036Z [inf]    },
+2025-12-16T18:19:58.417730559Z [inf]    "finish_reason": "stop"
+2025-12-16T18:19:58.417734456Z [inf]  }
+2025-12-16T18:19:58.417738501Z [inf]  [GPT-Screen] BNBUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:19:58.417742560Z [inf]  [Engine] BNBUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:20:04.508927723Z [inf]  [GPT-Screen] SOLUSDT full response: {
+2025-12-16T18:20:04.508933587Z [inf]    "index": 0,
+2025-12-16T18:20:04.508939089Z [inf]    "message": {
+2025-12-16T18:20:04.508944834Z [inf]      "role": "assistant",
+2025-12-16T18:20:04.508950285Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:20:04.508955760Z [inf]      "refusal": null,
+2025-12-16T18:20:04.508960892Z [inf]      "annotations": []
+2025-12-16T18:20:04.508966682Z [inf]    },
+2025-12-16T18:20:04.508972119Z [inf]    "finish_reason": "stop"
+2025-12-16T18:20:04.508977721Z [inf]  }
+2025-12-16T18:20:04.508986920Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:20:04.508993067Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:20:05.512137581Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:20:27.130402708Z [inf]    "index": 0,
+2025-12-16T18:20:27.130411764Z [inf]    "message": {
+2025-12-16T18:20:27.130420022Z [inf]      "role": "assistant",
+2025-12-16T18:20:27.130428756Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-16T18:20:27.130435739Z [inf]      "refusal": null,
+2025-12-16T18:20:27.130461166Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:20:27.130476526Z [inf]  [GPT-Screen] XRPUSDT full response: {
+2025-12-16T18:20:27.130535441Z [inf]      "annotations": []
+2025-12-16T18:20:27.130545448Z [inf]    },
+2025-12-16T18:20:27.130552894Z [inf]    "finish_reason": "stop"
+2025-12-16T18:20:27.130561817Z [inf]  }
+2025-12-16T18:20:27.130577675Z [inf]  [GPT-Screen] XRPUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T18:20:27.130584794Z [inf]  [Engine] XRPUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-16T18:20:27.130591543Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:20:31.421638466Z [inf]  [GPT-Screen] LINKUSDT full response: {
+2025-12-16T18:20:31.422995640Z [inf]    "index": 0,
+2025-12-16T18:20:31.423005647Z [inf]    "message": {
+2025-12-16T18:20:31.423012520Z [inf]      "role": "assistant",
+2025-12-16T18:20:31.423018663Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-16T18:20:31.423024504Z [inf]      "refusal": null,
+2025-12-16T18:20:31.423031138Z [inf]      "annotations": []
+2025-12-16T18:20:31.423036631Z [inf]    },
+2025-12-16T18:20:31.423042325Z [inf]    "finish_reason": "stop"
+2025-12-16T18:20:31.423047831Z [inf]  }
+2025-12-16T18:20:31.423053526Z [inf]  [GPT-Screen] LINKUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T18:20:31.423063565Z [inf]  [Engine] LINKUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-16T18:20:35.935278151Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:20:36.274561022Z [inf]    },
+2025-12-16T18:20:36.274572280Z [inf]    "finish_reason": "stop"
+2025-12-16T18:20:36.274580491Z [inf]  }
+2025-12-16T18:20:36.274588077Z [inf]  [GPT-Screen] AVAXUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:20:36.274592662Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-16T18:20:36.274595845Z [inf]  [Engine] AVAXUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:20:36.274599432Z [inf]    "index": 0,
+2025-12-16T18:20:36.274604032Z [inf]    "message": {
+2025-12-16T18:20:36.274608772Z [inf]      "role": "assistant",
+2025-12-16T18:20:36.274612681Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:20:36.274618011Z [inf]      "refusal": null,
+2025-12-16T18:20:36.274622065Z [inf]      "annotations": []
+2025-12-16T18:20:43.164557997Z [inf]  }
+2025-12-16T18:20:43.164573104Z [inf]  [GPT-Screen] DOGEUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:20:43.164592134Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:20:43.164606929Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-16T18:20:43.164616624Z [inf]    "index": 0,
+2025-12-16T18:20:43.164623084Z [inf]    "message": {
+2025-12-16T18:20:43.164628884Z [inf]      "role": "assistant",
+2025-12-16T18:20:43.164636082Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:20:43.164642011Z [inf]      "refusal": null,
+2025-12-16T18:20:43.164650844Z [inf]      "annotations": []
+2025-12-16T18:20:43.164657248Z [inf]    },
+2025-12-16T18:20:43.164681261Z [inf]    "finish_reason": "stop"
+2025-12-16T18:20:46.257816587Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:20:50.271875634Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-16T18:20:50.271875636Z [inf]    "finish_reason": "stop"
+2025-12-16T18:20:50.271887468Z [inf]    "index": 0,
+2025-12-16T18:20:50.271887768Z [inf]  }
+2025-12-16T18:20:50.271896594Z [inf]    "message": {
+2025-12-16T18:20:50.271898767Z [inf]  [GPT-Screen] SUIUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T18:20:50.271904279Z [inf]      "role": "assistant",
+2025-12-16T18:20:50.271906468Z [inf]  [Engine] SUIUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T18:20:50.271910442Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T18:20:50.271916476Z [inf]      "refusal": null,
+2025-12-16T18:20:50.271923040Z [inf]      "annotations": []
+2025-12-16T18:20:50.271929413Z [inf]    },
+2025-12-16T18:20:55.513941821Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:20:59.470299792Z [inf]    "finish_reason": "stop"
+2025-12-16T18:20:59.470310510Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-16T18:20:59.470310918Z [inf]  }
+2025-12-16T18:20:59.470319048Z [inf]  [GPT-Screen] ARBUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T18:20:59.470321963Z [inf]    "index": 0,
+2025-12-16T18:20:59.470326361Z [inf]  [Engine] ARBUSDT: No opportunity (score: 30) - skipping full analysis
+2025-12-16T18:20:59.470330479Z [inf]    "message": {
+2025-12-16T18:20:59.470335973Z [inf]      "role": "assistant",
+2025-12-16T18:20:59.470341393Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 30}",
+2025-12-16T18:20:59.470347184Z [inf]      "refusal": null,
+2025-12-16T18:20:59.470352759Z [inf]      "annotations": []
+2025-12-16T18:20:59.470358259Z [inf]    },
+2025-12-16T18:21:05.591266746Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:21:10.208337079Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-16T18:21:10.208343716Z [inf]    "index": 0,
+2025-12-16T18:21:10.208349610Z [inf]    "message": {
+2025-12-16T18:21:10.208355260Z [inf]      "role": "assistant",
+2025-12-16T18:21:10.208366943Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 55}",
+2025-12-16T18:21:10.208374160Z [inf]      "refusal": null,
+2025-12-16T18:21:10.208381354Z [inf]      "annotations": []
+2025-12-16T18:21:10.208388947Z [inf]    },
+2025-12-16T18:21:10.208448360Z [inf]    "finish_reason": "stop"
+2025-12-16T18:21:10.208455038Z [inf]  }
+2025-12-16T18:21:10.208460844Z [inf]  [GPT-Screen] OPUSDT: score=55, direction=SELL, hasOpp=true
+2025-12-16T18:21:10.208466797Z [inf]  [Engine] OPUSDT: Opportunity detected! (score: 55, direction: SELL)
+2025-12-16T18:21:10.208474762Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:21:10.208484546Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T18:21:10.655299928Z [inf]  [Q-Learning] OPUSDT: Action=SKIP, Confidence=20.0%
+2025-12-16T18:21:10.655311542Z [inf]  [Engine] OPUSDT: Q-Learning recommends SKIP (20.0% conf)
+2025-12-16T18:21:10.655318160Z [inf]  [Engine] OPUSDT: Optimizer suggests leverage=7x, TP=0.62%, SL=0.24% (WR: 50.0%)
+2025-12-16T18:21:15.513473808Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:21:20.501378201Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:21:20.501386200Z [inf]  [API] /status - Fetched 0 positions directly from Binance
+2025-12-16T18:21:20.501394037Z [inf]  [Socket] Client connected: E75nPRo42n4s9nA8AAAJ
+2025-12-16T18:21:21.489375543Z [inf]  [Socket] Client disconnected: E75nPRo42n4s9nA8AAAJ
+2025-12-16T18:21:22.449330299Z [inf]  [Socket] Client connected: oB99mDaPlsEJ26gpAAAL
+2025-12-16T18:21:22.449337065Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:21:22.449343715Z [inf]  [API] /status - Fetched 0 positions directly from Binance
+2025-12-16T18:21:23.457803419Z [inf]  [Engine] OPUSDT: HOLD (58%)
+2025-12-16T18:21:23.457809604Z [inf]  [Engine] ⚠️ OPUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 55)
+2025-12-16T18:21:23.457815437Z [inf]  [Engine]   └─ Reason for rejection: Rechazo la señal moderada de SELL porque las condiciones no dan ventaja clara para un scalp en futuros ahora mismo: (1) Spread 0.0342% > 0.03% (regla ...
+2025-12-16T18:21:23.457820889Z [inf]  [Engine]   └─ Rechazo la señal moderada de SELL porque las condiciones no dan ventaja clara para un scalp en futur...
+2025-12-16T18:21:25.711701510Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:21:35.064284810Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-16T18:21:35.064291679Z [inf]    "index": 0,
+2025-12-16T18:21:35.064299626Z [inf]    "message": {
+2025-12-16T18:21:35.064307305Z [inf]      "role": "assistant",
+2025-12-16T18:21:35.064313632Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-16T18:21:35.064321812Z [inf]      "refusal": null,
+2025-12-16T18:21:35.064330748Z [inf]      "annotations": []
+2025-12-16T18:21:35.064338203Z [inf]    },
+2025-12-16T18:21:35.064345232Z [inf]    "finish_reason": "stop"
+2025-12-16T18:21:35.064352025Z [inf]  }
+2025-12-16T18:21:35.064358479Z [inf]  [GPT-Screen] INJUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T18:21:35.064365605Z [inf]  [Engine] INJUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-16T18:21:36.384071276Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:21:45.911429237Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:21:53.335626025Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T18:21:53.335646169Z [inf]  [API] /status - Fetched 0 positions directly from Binance
+2025-12-16T18:21:56.189578933Z [inf]  [Binance] Fetched 0 position records, 0 active
