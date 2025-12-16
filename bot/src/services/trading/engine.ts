@@ -7,7 +7,6 @@ import { fearGreedIndex } from '../market/fearGreed.js';
 import { gptEngine, GPTDecision } from '../gpt/engine.js';
 import { memorySystem, TradeMemory } from '../memory/index.js';
 import { config } from '../../config/index.js';
-import { adaptiveLearning, ActionType } from '../adaptive/index.js';
 
 interface Position {
   symbol: string;
@@ -22,10 +21,6 @@ interface Position {
   gptConfidence: number;
   gptReasoning: string;
   positionSizePercent: number;
-  lastGptUpdate?: number; // Timestamp of last GPT analysis for this position
-  // Adaptive Learning fields
-  stateKey?: string;
-  adaptiveAction?: ActionType;
 }
 
 interface BotState {
@@ -51,31 +46,21 @@ export class TradingEngine extends EventEmitter {
     lastDecision: new Map(),
   };
 
-  // TOP PERFORMERS from 87.95% WR IA + Core pairs
   private symbols: string[] = [
-    // Core pairs (high liquidity)
-    'BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'XRPUSDT',
-    // Top performers from IA (100% WR, high PnL)
-    'CRVUSDT', 'AAVEUSDT', 'LINKUSDT', 'AVAXUSDT', 'SUIUSDT',
-    'DOTUSDT', 'LTCUSDT', 'TIAUSDT', 'INJUSDT'
+    'BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT',
+    'XRPUSDT', 'LINKUSDT', 'AVAXUSDT', 'DOGEUSDT',
+    'SUIUSDT', 'ARBUSDT', 'OPUSDT', 'INJUSDT'
   ];
   private analysisInterval: NodeJS.Timeout | null = null;
   private positionCheckInterval: NodeJS.Timeout | null = null;
   private balanceUpdateInterval: NodeJS.Timeout | null = null;
 
-  // Configuration - ADAPTIVE SCALPING MODE (from 87.95% WR IA)
-  private readonly MIN_CONFIDENCE = 55; // Allow trades with 55%+ confidence (from IA optimization)
-  private readonly MAX_LEVERAGE = 15; // Max 15x (IA used up to 14x aggressive)
-  private readonly MAX_POSITION_SIZE_PERCENT = 12; // Max 12% of capital (from IA: 11.74%)
-  private readonly MAX_HOLD_TIME_HOURS = 2; // 2 hours for scalping
-  private readonly MAX_TOTAL_EXPOSURE_PERCENT = 80; // Max 80% total capital
-  private readonly COOLDOWN_MINUTES = 10; // Minimum time between trades on same symbol
-  private readonly TRADING_FEE_PERCENT = 0.10; // Round trip fee (0.05% × 2)
-  private readonly MIN_TP_PERCENT = 0.3; // Minimum take profit (IA used 0.31% base)
-  private readonly MIN_SL_PERCENT = 0.3; // Minimum stop loss
-
-  // Track last trade time per symbol for cooldown
-  private lastTradeTime: Map<string, number> = new Map();
+  // Configuration - SCALPING MODE
+  private readonly MIN_CONFIDENCE = 45; // Lowered from 65 to allow more learning
+  private readonly MAX_LEVERAGE = 10; // Max 10x as requested
+  private readonly MAX_POSITION_SIZE_PERCENT = 5; // Max 5% of capital per trade (scalping: many small trades)
+  private readonly MAX_HOLD_TIME_HOURS = 2; // Reduced to 2 hours for scalping
+  private readonly MAX_TOTAL_EXPOSURE_PERCENT = 80; // Max 80% total capital in all positions
 
   async start(): Promise<void> {
     if (this.state.isRunning) {
@@ -135,18 +120,11 @@ export class TradingEngine extends EventEmitter {
   }
 
   private async initialize(): Promise<void> {
-    // Initialize Adaptive Learning System (Q-Learning + Parameter Optimizer)
-    console.log('[Engine] Initializing Adaptive Learning System...');
-    await adaptiveLearning.initialize();
-
     // Get account balance
     await this.updateBalance();
 
     console.log(`[Engine] Account balance: $${this.state.balance.toFixed(2)}`);
     console.log(`[Engine] Available balance: $${this.state.availableBalance.toFixed(2)}`);
-
-    // Calculate today's PnL and trades from historical data
-    this.calculateTodayStats();
 
     // Check existing positions
     const positions = await binanceClient.getPositions();
@@ -174,7 +152,6 @@ export class TradingEngine extends EventEmitter {
         gptConfidence: 0,
         gptReasoning: 'Existing position',
         positionSizePercent: 0,
-        lastGptUpdate: Date.now(), // Initialize to now so first update happens after 5 min
       });
     }
 
@@ -190,41 +167,6 @@ export class TradingEngine extends EventEmitter {
     } catch (error) {
       console.error('[Engine] Failed to update balance:', error);
     }
-  }
-
-  private calculateTodayStats(): void {
-    // Get all trades from memory (loaded from database)
-    const allTrades = memorySystem.getRecentTrades(1000);
-
-    // Filter for today's trades (GDL timezone - UTC-6)
-    // Calculate midnight in GDL: UTC time + 6 hours = GDL time
-    // So GDL midnight = UTC 06:00
-    const now = new Date();
-    const utcHours = now.getUTCHours();
-    const utcDate = now.getUTCDate();
-    const utcMonth = now.getUTCMonth();
-    const utcYear = now.getUTCFullYear();
-
-    // GDL is UTC-6, so GDL midnight = UTC 06:00
-    // If current UTC hour is before 6, we're still in "yesterday" in GDL
-    let todayStart: number;
-    if (utcHours < 6) {
-      // Still yesterday in GDL - use previous day's UTC 06:00
-      const yesterday = new Date(Date.UTC(utcYear, utcMonth, utcDate - 1, 6, 0, 0, 0));
-      todayStart = yesterday.getTime();
-    } else {
-      // Today in GDL - use today's UTC 06:00
-      todayStart = Date.UTC(utcYear, utcMonth, utcDate, 6, 0, 0, 0);
-    }
-
-    const todayTrades = allTrades.filter(t => t.exitTime >= todayStart);
-
-    // Calculate today's stats
-    this.state.todayTrades = todayTrades.length;
-    this.state.todayPnl = todayTrades.reduce((sum, t) => sum + t.pnlUsd, 0);
-
-    const gdlTime = new Date(now.getTime() - 6 * 60 * 60 * 1000);
-    console.log(`[Engine] Today's stats (GDL ${gdlTime.toISOString().slice(0, 10)}): ${this.state.todayTrades} trades, $${this.state.todayPnl.toFixed(2)} PnL`);
   }
 
   private startBalanceUpdates(): void {
@@ -285,7 +227,7 @@ export class TradingEngine extends EventEmitter {
   }
 
   private startAnalysisLoop(): void {
-    // COST OPTIMIZED: Analyze every 180 seconds (3 minutes) to reduce API costs
+    // Analyze every 30 seconds
     this.analysisInterval = setInterval(async () => {
       if (!this.state.isRunning) return;
 
@@ -296,7 +238,7 @@ export class TradingEngine extends EventEmitter {
           console.error(`[Engine] Analysis error for ${symbol}:`, error);
         }
       }
-    }, 180000); // 180 seconds (3 minutes)
+    }, 30000);
 
     // Initial analysis after 5 seconds
     setTimeout(() => {
@@ -324,35 +266,21 @@ export class TradingEngine extends EventEmitter {
     }, 10000);
   }
 
-  // Cost optimization: Only update positions with GPT every 5 minutes
-  private readonly POSITION_UPDATE_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
-
   private async analyzeAndDecide(symbol: string): Promise<void> {
     const hasPosition = this.state.currentPositions.has(symbol);
-    const position = this.state.currentPositions.get(symbol);
 
     // Get market analysis
     const analysis = await marketAnalyzer.analyze(symbol);
     this.state.lastAnalysis.set(symbol, analysis);
 
-    // COST OPTIMIZATION: For open positions, only call GPT-5.2 every 5 minutes
-    if (hasPosition && position) {
-      const timeSinceLastUpdate = Date.now() - (position.lastGptUpdate || 0);
-      if (timeSinceLastUpdate < this.POSITION_UPDATE_INTERVAL_MS) {
-        // Skip GPT-5.2 call, just monitor SL/TP with current values
-        return;
-      }
-      console.log(`[Engine] ${symbol}: Position update due (${Math.round(timeSinceLastUpdate / 60000)}min since last GPT analysis)`);
-    }
-
-    // STEP 1: Quick screening with cheap model (gpt-5-mini)
+    // STEP 1: Quick screening with cheap model (gpt-4o-mini)
     // This saves ~90% of API costs by filtering out non-opportunities
     if (!hasPosition) {
       const screening = await gptEngine.quickScreen(analysis);
 
       if (!screening.hasOpportunity) {
         // No opportunity detected - skip expensive GPT-5.2 analysis
-        console.log(`[Engine] ${symbol}: No opportunity (score: ${screening.score}) - skipping`);
+        console.log(`[Engine] ${symbol}: No opportunity (score: ${screening.score}) - skipping full analysis`);
         return;
       }
 
@@ -360,15 +288,18 @@ export class TradingEngine extends EventEmitter {
     }
 
     // STEP 2: Full analysis with premium model (gpt-5.2)
-    // Only called when screening detects opportunity OR position needs update (every 5 min)
+    // Only called when screening detects opportunity OR we have an open position to manage
 
     // Get news and sentiment
     const newsSummary = await cryptoPanicClient.getNewsSummary(symbol);
     const fearGreed = await fearGreedIndex.get();
 
-    // Get recent trades (more history for better learning) and learnings
-    const recentTrades = memorySystem.getRecentTrades(200); // 200 trades for full market context
-    const learnings = memorySystem.getLearnings(undefined, 200); // All learnings for pattern recognition
+    // Get recent trades and learnings
+    const recentTrades = memorySystem.getTradesBySymbol(symbol, 20);
+    const learnings = memorySystem.getRelevantLearnings({
+      regime: analysis.regime,
+      symbol,
+    });
 
     // Get GPT-5.2 decision with full context
     const decision = await gptEngine.analyze({
@@ -383,21 +314,29 @@ export class TradingEngine extends EventEmitter {
     this.state.lastDecision.set(symbol, decision);
     this.emit('analysis', { symbol, analysis, decision });
 
-    // Log decision with dynamic precision for low-price assets
-    const logPrecision = analysis.price < 1 ? 5 : analysis.price < 100 ? 4 : 2;
+    // Log decision with more detail
     console.log(`[Engine] ${symbol}: ${decision.action} (${decision.confidence}%)`);
+    console.log(`[Engine]   └─ ${decision.reasoning.slice(0, 100)}...`);
     if (decision.action !== 'HOLD') {
-      console.log(`[Engine]   └─ Size: ${decision.positionSizePercent}% | Lev: ${decision.leverage}x | SL: $${decision.stopLoss?.toFixed(logPrecision)} | TP: $${decision.takeProfit?.toFixed(logPrecision)}`);
+      console.log(`[Engine]   └─ Size: ${decision.positionSizePercent}% | Leverage: ${decision.leverage}x`);
+      console.log(`[Engine]   └─ SL: $${decision.stopLoss?.toFixed(2)} | TP: $${decision.takeProfit?.toFixed(2)}`);
     }
 
     // Execute decision
     if (!hasPosition && decision.action !== 'HOLD' && decision.confidence >= this.MIN_CONFIDENCE) {
-      // Check cooldown - prevent overtrading on same symbol
-      const lastTrade = this.lastTradeTime.get(symbol) || 0;
-      const timeSinceLastTrade = (Date.now() - lastTrade) / 1000 / 60; // minutes
-      if (timeSinceLastTrade < this.COOLDOWN_MINUTES) {
-        console.log(`[Engine] ${symbol}: Cooldown active (${timeSinceLastTrade.toFixed(1)}min < ${this.COOLDOWN_MINUTES}min)`);
+      // Check risk management
+      const consecutiveLosses = memorySystem.getConsecutiveLosses();
+
+      if (consecutiveLosses >= 5) {
+        console.log(`[Engine] ${symbol}: Skipping trade - ${consecutiveLosses} consecutive losses (cooling down)`);
         return;
+      }
+
+      // Reduce size after consecutive losses
+      let adjustedSizePercent = decision.positionSizePercent;
+      if (consecutiveLosses >= 3) {
+        adjustedSizePercent = Math.max(5, decision.positionSizePercent * 0.5);
+        console.log(`[Engine] ${symbol}: Reduced position size to ${adjustedSizePercent}% due to ${consecutiveLosses} consecutive losses`);
       }
 
       // Validate decision has required fields
@@ -406,25 +345,9 @@ export class TradingEngine extends EventEmitter {
         return;
       }
 
-      // Enforce minimum TP/SL to ensure profitability after fees
-      const tpPercent = Math.abs((decision.takeProfit - analysis.price) / analysis.price * 100);
-      const slPercent = Math.abs((decision.stopLoss - analysis.price) / analysis.price * 100);
-
-      if (tpPercent < this.MIN_TP_PERCENT) {
-        console.log(`[Engine] ${symbol}: TP too tight (${tpPercent.toFixed(2)}% < ${this.MIN_TP_PERCENT}%), skipping`);
-        return;
-      }
-
-      if (slPercent < this.MIN_SL_PERCENT) {
-        console.log(`[Engine] ${symbol}: SL too tight (${slPercent.toFixed(2)}% < ${this.MIN_SL_PERCENT}%), skipping`);
-        return;
-      }
-
       // Open new position
       if (config.trading.enabled) {
-        await this.openPosition(symbol, decision, analysis);
-        // Record trade time for cooldown
-        this.lastTradeTime.set(symbol, Date.now());
+        await this.openPosition(symbol, { ...decision, positionSizePercent: adjustedSizePercent }, analysis);
       } else {
         console.log(`[Engine] ${symbol}: Paper trade - would ${decision.action}`);
         this.emit('paperTrade', { symbol, decision });
@@ -435,7 +358,6 @@ export class TradingEngine extends EventEmitter {
       if (position && decision.takeProfit && decision.stopLoss) {
         position.takeProfit = decision.takeProfit;
         position.stopLoss = decision.stopLoss;
-        position.lastGptUpdate = Date.now(); // Track last GPT update time
         console.log(`[Engine] ${symbol}: Updated SL: $${decision.stopLoss.toFixed(2)} | TP: $${decision.takeProfit.toFixed(2)}`);
       }
     }
@@ -488,28 +410,10 @@ export class TradingEngine extends EventEmitter {
 
       // Get symbol info for precision
       const symbolInfo = await binanceClient.getSymbolInfo(symbol);
+      const quantityPrecision = symbolInfo?.quantityPrecision || 3;
+      const pricePrecision = symbolInfo?.pricePrecision || 2;
 
-      // Use LOT_SIZE filter for proper quantity rounding (handles DOGEUSDT etc)
-      const lotSizeFilter = symbolInfo?.filters?.find((f: any) => f.filterType === 'LOT_SIZE');
-      const stepSize = lotSizeFilter ? parseFloat(lotSizeFilter.stepSize) : 0.001;
-      const minQty = lotSizeFilter ? parseFloat(lotSizeFilter.minQty) : 0.001;
-      const precision = Math.max(0, Math.round(-Math.log10(stepSize)));
-
-      // DEBUG: Log the LOT_SIZE info for troubleshooting
-      if (symbol === 'DOGEUSDT' || !lotSizeFilter) {
-        console.log(`[Engine] ${symbol} LOT_SIZE: stepSize=${stepSize}, minQty=${minQty}, precision=${precision}, hasFilter=${!!lotSizeFilter}`);
-      }
-
-      // Round quantity to valid step size
-      let roundedQty = parseFloat(
-        (Math.floor(quantity / stepSize) * stepSize).toFixed(precision)
-      );
-
-      // Ensure minimum quantity
-      if (roundedQty < minQty) {
-        console.log(`[Engine] ${symbol}: Quantity ${roundedQty} below minimum ${minQty}, skipping`);
-        return;
-      }
+      const roundedQty = parseFloat(quantity.toFixed(quantityPrecision));
 
       // Set leverage for this trade
       await binanceClient.setLeverage(symbol, leverage);
@@ -529,27 +433,7 @@ export class TradingEngine extends EventEmitter {
         quantity: roundedQty,
       });
 
-      // Get entry price from order fills (more reliable than avgPrice for market orders)
-      let entryPrice = 0;
-      if (order.fills && order.fills.length > 0) {
-        // Calculate weighted average price from fills
-        let totalQty = 0;
-        let totalValue = 0;
-        for (const fill of order.fills) {
-          const fillPrice = parseFloat(fill.price);
-          const fillQty = parseFloat(fill.qty);
-          totalValue += fillPrice * fillQty;
-          totalQty += fillQty;
-        }
-        entryPrice = totalQty > 0 ? totalValue / totalQty : 0;
-      }
-
-      // Fallback to avgPrice or analysis price
-      if (!entryPrice || entryPrice <= 0) {
-        entryPrice = parseFloat(order.avgPrice) || analysis.price;
-      }
-
-      console.log(`[Engine] Order filled: avgPrice=${order.avgPrice}, fills=${order.fills?.length || 0}, entryPrice=${entryPrice}`);
+      const entryPrice = parseFloat(order.avgPrice || analysis.price.toString());
 
       // Calculate actual SL and TP prices
       const stopLoss = decision.stopLoss || (decision.action === 'BUY'
@@ -560,7 +444,7 @@ export class TradingEngine extends EventEmitter {
         ? entryPrice * (1 + (decision.takeProfitPercent || 0.5) / 100)
         : entryPrice * (1 - (decision.takeProfitPercent || 0.5) / 100));
 
-      // Store position with adaptive learning data
+      // Store position
       const position: Position = {
         symbol,
         side: decision.action === 'BUY' ? 'LONG' : 'SHORT',
@@ -582,10 +466,6 @@ export class TradingEngine extends EventEmitter {
         gptConfidence: decision.confidence,
         gptReasoning: decision.reasoning,
         positionSizePercent,
-        lastGptUpdate: Date.now(),
-        // Adaptive Learning fields
-        stateKey: decision.stateKey,
-        adaptiveAction: decision.adaptiveAction,
       };
 
       this.state.currentPositions.set(symbol, position);
@@ -596,21 +476,14 @@ export class TradingEngine extends EventEmitter {
 
       this.emit('positionOpened', position);
 
-      // Dynamic precision for logging (more decimals for low-price assets)
-      const logPrecision = entryPrice < 1 ? 5 : entryPrice < 100 ? 4 : 2;
-      console.log(`[Engine] Position opened: ${position.side} ${symbol} @ $${entryPrice.toFixed(logPrecision)}`);
-      console.log(`[Engine]   └─ SL: $${stopLoss.toFixed(logPrecision)} (${((Math.abs(entryPrice - stopLoss) / entryPrice) * 100).toFixed(2)}%)`);
-      console.log(`[Engine]   └─ TP: $${takeProfit.toFixed(logPrecision)} (${((Math.abs(takeProfit - entryPrice) / entryPrice) * 100).toFixed(2)}%)`);
+      console.log(`[Engine] Position opened: ${position.side} ${symbol} @ $${entryPrice.toFixed(2)}`);
+      console.log(`[Engine]   └─ SL: $${stopLoss.toFixed(2)} (${((Math.abs(entryPrice - stopLoss) / entryPrice) * 100).toFixed(2)}%)`);
+      console.log(`[Engine]   └─ TP: $${takeProfit.toFixed(2)} (${((Math.abs(takeProfit - entryPrice) / entryPrice) * 100).toFixed(2)}%)`);
     } catch (error: any) {
       console.error(`[Engine] Failed to open position:`, error.message);
       this.emit('error', { type: 'openPosition', error: error.message, symbol });
     }
   }
-
-  // Auto-close thresholds (from 87.95% WR IA patterns)
-  private readonly AUTO_TP_PERCENT = 2.0; // Auto take profit at 2% (IA's TP2 range)
-  private readonly AUTO_SL_PERCENT = -1.5; // Auto stop loss at -1.5%
-  private readonly TRAILING_ACTIVATION = 1.0; // Start trailing at 1% profit
 
   private async checkPositionExit(position: Position, currentPrice: number): Promise<void> {
     // Skip invalid positions (phantom positions from Binance with entryPrice=0)
@@ -621,70 +494,41 @@ export class TradingEngine extends EventEmitter {
     }
 
     const pnl = this.calculatePnl(position, currentPrice);
-    const hasSLTP = position.stopLoss > 0 && position.takeProfit > 0;
 
-    // === AUTO-CLOSE BY PROFIT % (works even without SL/TP set) ===
-    // This ensures positions close automatically like the old IA
-
-    // Auto Take Profit: Close if profit >= 2%
-    if (pnl >= this.AUTO_TP_PERCENT) {
-      console.log(`[Engine] ${position.symbol}: Auto TP triggered at ${pnl.toFixed(2)}%`);
-      await this.closePosition(position, currentPrice, 'tp');
+    // Check stop loss
+    if (position.side === 'LONG' && currentPrice <= position.stopLoss) {
+      await this.closePosition(position, currentPrice, 'sl');
       return;
-    }
-
-    // Auto Stop Loss: Close if loss >= 1.5%
-    if (pnl <= this.AUTO_SL_PERCENT) {
-      console.log(`[Engine] ${position.symbol}: Auto SL triggered at ${pnl.toFixed(2)}%`);
+    } else if (position.side === 'SHORT' && currentPrice >= position.stopLoss) {
       await this.closePosition(position, currentPrice, 'sl');
       return;
     }
 
-    // === CUSTOM SL/TP (if GPT has set them) ===
-    if (hasSLTP) {
-      // Check stop loss
-      if (position.side === 'LONG' && currentPrice <= position.stopLoss) {
-        await this.closePosition(position, currentPrice, 'sl');
-        return;
-      } else if (position.side === 'SHORT' && currentPrice >= position.stopLoss) {
-        await this.closePosition(position, currentPrice, 'sl');
-        return;
-      }
-
-      // Check take profit
-      if (position.side === 'LONG' && currentPrice >= position.takeProfit) {
-        await this.closePosition(position, currentPrice, 'tp');
-        return;
-      } else if (position.side === 'SHORT' && currentPrice <= position.takeProfit) {
-        await this.closePosition(position, currentPrice, 'tp');
-        return;
-      }
+    // Check take profit
+    if (position.side === 'LONG' && currentPrice >= position.takeProfit) {
+      await this.closePosition(position, currentPrice, 'tp');
+      return;
+    } else if (position.side === 'SHORT' && currentPrice <= position.takeProfit) {
+      await this.closePosition(position, currentPrice, 'tp');
+      return;
     }
 
-    // === TIMEOUT ===
+    // Check timeout (extended to 4 hours)
     const holdTime = Date.now() - position.entryTime;
     if (holdTime > this.MAX_HOLD_TIME_HOURS * 60 * 60 * 1000) {
-      console.log(`[Engine] ${position.symbol}: Timeout after ${this.MAX_HOLD_TIME_HOURS}h`);
       await this.closePosition(position, currentPrice, 'timeout');
       return;
     }
 
-    // === TRAILING STOP (for profitable positions) ===
-    if (pnl >= this.TRAILING_ACTIVATION) {
-      // Trail 0.5% behind current price to lock in profits
-      const trailPercent = 0.005;
+    // Trailing stop logic for profitable positions (optional enhancement)
+    if (pnl > 1.0) { // If profit > 1%
       const newStopLoss = position.side === 'LONG'
-        ? currentPrice * (1 - trailPercent)
-        : currentPrice * (1 + trailPercent);
+        ? Math.max(position.stopLoss, currentPrice * 0.995) // Trail 0.5% behind
+        : Math.min(position.stopLoss, currentPrice * 1.005);
 
-      // Only update if it improves the stop loss
-      const shouldUpdate = position.side === 'LONG'
-        ? newStopLoss > position.stopLoss
-        : (position.stopLoss === 0 || newStopLoss < position.stopLoss);
-
-      if (shouldUpdate) {
+      if (newStopLoss !== position.stopLoss) {
         position.stopLoss = newStopLoss;
-        console.log(`[Engine] ${position.symbol}: Trailing SL → $${newStopLoss.toFixed(2)} (PnL: ${pnl.toFixed(2)}%)`);
+        console.log(`[Engine] ${position.symbol}: Trailing SL updated to $${newStopLoss.toFixed(2)}`);
       }
     }
   }
@@ -717,24 +561,16 @@ export class TradingEngine extends EventEmitter {
         reduceOnly: true,
       });
 
-      const pnlBeforeFees = this.calculatePnl(position, exitPrice);
-      // Subtract trading fees from PnL (0.10% round trip)
-      const pnl = pnlBeforeFees - this.TRADING_FEE_PERCENT;
-
+      const pnl = this.calculatePnl(position, exitPrice);
       // FIX: Calculate USD P&L directly from price difference (not from leveraged %)
       // pnl already includes leverage (% return on margin), so don't multiply by leverage again
       const priceDiff = position.side === 'LONG'
         ? (exitPrice - position.entryPrice)
         : (position.entryPrice - exitPrice);
-      const pnlUsdBeforeFees = priceDiff * position.quantity;
+      const pnlUsd = priceDiff * position.quantity;
 
-      // Subtract fees in USD: position value × 0.10%
-      const positionValue = position.quantity * position.entryPrice;
-      const feesUsd = positionValue * (this.TRADING_FEE_PERCENT / 100);
-      const pnlUsd = pnlUsdBeforeFees - feesUsd;
-
-      // Record trade in memory (persist to database)
-      const tradeMemory = await memorySystem.addTrade({
+      // Record trade in memory
+      const tradeMemory = memorySystem.addTrade({
         symbol: position.symbol,
         side: position.side,
         entryPrice: position.entryPrice,
@@ -750,24 +586,10 @@ export class TradingEngine extends EventEmitter {
         gptReasoning: position.gptReasoning,
       });
 
-      // Learn from trade using GPT
+      // Learn from trade
       const lesson = await gptEngine.learnFromTrade(tradeMemory);
       if (lesson) {
-        console.log(`[Engine] 🧠 GPT Learned: ${lesson}`);
-      }
-
-      // Learn from trade using Adaptive Learning (Q-Learning)
-      if (position.stateKey && position.adaptiveAction) {
-        const duration = (Date.now() - position.entryTime) / 60000; // minutes
-        await adaptiveLearning.learn({
-          stateKey: position.stateKey,
-          action: position.adaptiveAction,
-          pnlPct: pnl,
-          exitReason: reason,
-          leverage: position.leverage,
-          duration
-        });
-        console.log(`[Engine] 🤖 Q-Learning updated: ${position.stateKey.slice(0, 30)}... | Action: ${position.adaptiveAction} | Reward: ${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}%`);
+        console.log(`[Engine] 🧠 Learned: ${lesson}`);
       }
 
       // Update state
@@ -781,72 +603,19 @@ export class TradingEngine extends EventEmitter {
 
       const emoji = pnl > 0 ? '✅' : '❌';
       console.log(
-        `[Engine] ${emoji} Position closed: ${position.symbol} | PnL: ${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}% ($${pnlUsd.toFixed(2)}) | Fees: $${feesUsd.toFixed(2)} | Reason: ${reason}`
+        `[Engine] ${emoji} Position closed: ${position.symbol} | PnL: ${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}% ($${pnlUsd.toFixed(2)}) | Reason: ${reason}`
       );
     } catch (error: any) {
       console.error(`[Engine] Failed to close position:`, error.message);
-
-      // If error is 400 (no position to close), remove from state to stop retrying
-      if (error.response?.status === 400 || error.message?.includes('400')) {
-        console.log(`[Engine] Removing phantom position ${position.symbol} from state (400 error)`);
-        this.state.currentPositions.delete(position.symbol);
-      }
-
       this.emit('error', { type: 'closePosition', error: error.message, symbol: position.symbol });
     }
   }
 
-  private async handlePositionClosed(position: Position): Promise<void> {
+  private handlePositionClosed(position: Position): void {
     // Position was closed externally (liquidation or manual)
-    // We need to record this trade even without knowing exact exit price
-
-    try {
-      // Try to get current price as best estimate for exit price
-      const klines = await binanceClient.getKlines(position.symbol, '1m', 1);
-      const exitPrice = klines.length > 0 ? parseFloat(klines[0].close) : position.entryPrice;
-
-      // Calculate estimated PnL
-      const pnlBeforeFees = this.calculatePnl(position, exitPrice);
-      const pnl = pnlBeforeFees - this.TRADING_FEE_PERCENT;
-
-      const priceDiff = position.side === 'LONG'
-        ? (exitPrice - position.entryPrice)
-        : (position.entryPrice - exitPrice);
-      const pnlUsdBeforeFees = priceDiff * position.quantity;
-      const positionValue = position.quantity * position.entryPrice;
-      const feesUsd = positionValue * (this.TRADING_FEE_PERCENT / 100);
-      const pnlUsd = pnlUsdBeforeFees - feesUsd;
-
-      // Record trade in memory (persist to database)
-      await memorySystem.addTrade({
-        symbol: position.symbol,
-        side: position.side,
-        entryPrice: position.entryPrice,
-        exitPrice,
-        quantity: position.quantity,
-        pnl,
-        pnlUsd,
-        entryTime: position.entryTime,
-        exitTime: Date.now(),
-        exitReason: 'manual', // External close = manual
-        entryConditions: position.entryConditions,
-        gptConfidence: position.gptConfidence,
-        gptReasoning: position.gptReasoning,
-      });
-
-      console.log(`[Engine] ⚠️ Position ${position.symbol} was closed externally - Trade recorded`);
-      console.log(`[Engine]   └─ Estimated PnL: ${pnl.toFixed(2)}% ($${pnlUsd.toFixed(2)})`);
-
-      // Update today's stats
-      this.state.todayPnl += pnl;
-      this.state.todayTrades++;
-
-    } catch (error) {
-      console.error(`[Engine] Error recording externally closed position:`, error);
-    }
-
     this.state.currentPositions.delete(position.symbol);
     this.emit('positionClosed', { position, reason: 'external' });
+    console.log(`[Engine] ⚠️ Position ${position.symbol} was closed externally`);
   }
 
   private calculatePnl(position: Position, currentPrice: number): number {

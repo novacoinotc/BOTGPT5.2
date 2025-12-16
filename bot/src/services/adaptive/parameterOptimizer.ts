@@ -24,10 +24,10 @@ const OPTIMAL_PARAMS = {
   maxRiskPerTrade: 2.89,
   maxPositions: 5,
 
-  // Leverage Settings (capped at 10x for Binance)
+  // Leverage Settings
   conservativeLev: 5,
-  balancedLev: 7,
-  aggressiveLev: 10,
+  balancedLev: 6,
+  aggressiveLev: 14,
 
   // Futures Conditions
   minConfFutures: 75.68,
@@ -446,7 +446,7 @@ export class ParameterOptimizer {
       leverage = Math.max(1, Math.floor(leverage / 2));
     }
 
-    return Math.min(leverage, 10); // Cap at 10x (Binance limit)
+    return Math.min(leverage, 15); // Cap at 15x
   }
 
   /**

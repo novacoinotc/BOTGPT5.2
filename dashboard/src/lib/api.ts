@@ -23,8 +23,8 @@ export const api = {
   // Statistics
   getStats: () => fetchApi<Statistics>('/api/stats'),
 
-  // Trades - get all historical trades
-  getTrades: (limit = 500) => fetchApi<Trade[]>(`/api/trades?limit=${limit}`),
+  // Trades
+  getTrades: (limit = 50) => fetchApi<Trade[]>(`/api/trades?limit=${limit}`),
 
   // Analysis
   getAnalysis: (symbol: string) => fetchApi<Analysis>(`/api/analysis/${symbol}`),
