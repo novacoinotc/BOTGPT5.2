@@ -273,14 +273,14 @@ class MemorySystem {
     return learnings.slice(0, limit).map(l => l.lesson);
   }
 
-  getRelevantLearnings(context: { regime?: string; symbol?: string }): string[] {
+  getRelevantLearnings(context: { regime?: string; symbol?: string }, limit: number = 200): string[] {
     return this.learnings
       .filter(l => {
         if (context.regime && l.context.regime !== context.regime) return false;
         if (context.symbol && l.context.symbol !== context.symbol) return false;
         return true;
       })
-      .slice(0, 5)
+      .slice(0, limit)
       .map(l => l.lesson);
   }
 

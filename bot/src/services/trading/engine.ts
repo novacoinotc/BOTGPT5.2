@@ -316,14 +316,31 @@ export class TradingEngine extends EventEmitter {
     const newsSummary = await cryptoPanicClient.getNewsSummary(symbol);
     const fearGreed = await fearGreedIndex.get();
 
-    // Get recent trades and learnings
-    const recentTrades = memorySystem.getTradesBySymbol(symbol, 20);
+    // Get recent trades and learnings - INCREASED to 200 for better learning
+    const recentTrades = memorySystem.getTradesBySymbol(symbol, 200);
     const learnings = memorySystem.getRelevantLearnings({
       regime: analysis.regime,
       symbol,
-    });
+    }, 200); // Get up to 200 learnings
 
-    // Get GPT-5.2 decision with full context - NOW INCLUDING SCREENING RESULT
+    // Get Q-Learning recommendation from 87.95% win rate IA
+    const totalTradeCount = memorySystem.getStatistics().totalTrades || 0;
+    const qLearningRecommendation = await gptEngine.getQLearningRecommendation(
+      analysis,
+      fearGreed.value,
+      totalTradeCount
+    );
+    console.log(`[Engine] ${symbol}: Q-Learning recommends ${qLearningRecommendation.action} (${qLearningRecommendation.confidence.toFixed(1)}% conf)`);
+
+    // Get optimized parameters from 236-trial optimizer
+    const optimizerParams = gptEngine.getOptimizerRecommendation(
+      analysis,
+      fearGreed.value,
+      screeningResult
+    );
+    console.log(`[Engine] ${symbol}: Optimizer suggests leverage=${optimizerParams.leverage}x, TP=${optimizerParams.tpPct.toFixed(2)}%, SL=${optimizerParams.slPct.toFixed(2)}%`);
+
+    // Get GPT-5.2 decision with full context - NOW INCLUDING Q-LEARNING AND OPTIMIZER
     const decision = await gptEngine.analyze({
       analysis,
       news: newsSummary,
@@ -332,6 +349,8 @@ export class TradingEngine extends EventEmitter {
       learnings,
       accountBalance: this.state.balance,
       screeningResult, // Pass screening result so GPT-5.2 knows what the quick screen detected
+      qLearningRecommendation, // Pass Q-Learning recommendation from 87.95% WR IA
+      optimizerParams, // Pass optimized parameters from 236 trials
     });
 
     this.state.lastDecision.set(symbol, decision);

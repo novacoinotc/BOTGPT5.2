@@ -2,6 +2,9 @@ import OpenAI from 'openai';
 import { config } from '../../config/index.js';
 import { MarketAnalysis } from '../market/analyzer.js';
 import { memorySystem, TradeMemory } from '../memory/index.js';
+import { qLearningAgent } from '../adaptive/qLearningAgent.js';
+import { parameterOptimizer } from '../adaptive/parameterOptimizer.js';
+import { stateEncoder, MarketState, ActionType } from '../adaptive/stateEncoder.js';
 
 export interface GPTDecision {
   action: 'BUY' | 'SELL' | 'HOLD';
@@ -40,6 +43,21 @@ interface MarketContext {
   learnings: string[];
   accountBalance: number;
   screeningResult?: ScreeningResult; // Quick screening result to inform decision
+  qLearningRecommendation?: {
+    action: ActionType;
+    confidence: number;
+    stateKey: string;
+    qValues: Record<ActionType, number>;
+    isExploration: boolean;
+  };
+  optimizerParams?: {
+    shouldTrade: boolean;
+    leverage: number;
+    positionSizePct: number;
+    tpPct: number;
+    slPct: number;
+    reasoning: string;
+  };
 }
 
 export class GPTEngine {
@@ -51,6 +69,81 @@ export class GPTEngine {
     this.client = new OpenAI({
       apiKey: config.openai.apiKey,
     });
+  }
+
+  // Get Q-Learning recommendation for current market state
+  async getQLearningRecommendation(analysis: MarketAnalysis, fearGreed: number, tradeCount: number): Promise<{
+    action: ActionType;
+    confidence: number;
+    stateKey: string;
+    qValues: Record<ActionType, number>;
+    isExploration: boolean;
+  }> {
+    try {
+      // Encode current market state
+      const marketState: MarketState = {
+        symbol: analysis.symbol.replace('USDT', '/USDT'),
+        signal: analysis.orderBook.imbalance > 0.15 ? 'BUY' : analysis.orderBook.imbalance < -0.15 ? 'SELL' : 'NEUTRAL',
+        rsi: analysis.indicators.rsi,
+        regime: analysis.regime === 'trending_up' ? 'BULL' : analysis.regime === 'trending_down' ? 'BEAR' : 'SIDEWAYS',
+        regimeStrength: analysis.indicators.adx > 40 ? 'STRONG' : analysis.indicators.adx > 25 ? 'MODERATE' : 'WEAK',
+        orderbook: analysis.orderBook.imbalance > 0.1 ? 'BULLISH' : analysis.orderBook.imbalance < -0.1 ? 'BEARISH' : 'NEUTRAL',
+        volatility: (analysis.indicators.atr / analysis.price) * 100,
+        tradeCount,
+        fearGreedIndex: fearGreed,
+        mlSignal: 'NONE',
+        sentiment: 'NEUTRAL'
+      };
+
+      // Get Q-Learning recommendation
+      const recommendation = await qLearningAgent.selectAction(marketState, true);
+      console.log(`[Q-Learning] ${analysis.symbol}: Action=${recommendation.action}, Confidence=${recommendation.confidence.toFixed(1)}%`);
+
+      return recommendation;
+    } catch (error) {
+      console.error('[Q-Learning] Error getting recommendation:', error);
+      return {
+        action: 'SKIP',
+        confidence: 0,
+        stateKey: 'error',
+        qValues: { 'SKIP': 0, 'OPEN_CONSERVATIVE': 0, 'OPEN_NORMAL': 0, 'OPEN_AGGRESSIVE': 0, 'FUTURES_LOW': 0, 'FUTURES_MEDIUM': 0, 'FUTURES_HIGH': 0 },
+        isExploration: false
+      };
+    }
+  }
+
+  // Get Parameter Optimizer recommendation
+  getOptimizerRecommendation(analysis: MarketAnalysis, fearGreed: number, screeningResult?: ScreeningResult): {
+    shouldTrade: boolean;
+    leverage: number;
+    positionSizePct: number;
+    tpPct: number;
+    slPct: number;
+    reasoning: string;
+  } {
+    try {
+      const params = parameterOptimizer.getParams();
+
+      return parameterOptimizer.getRecommendation({
+        confidence: screeningResult?.score || 50,
+        regime: analysis.regime === 'trending_up' ? 'BULL' : analysis.regime === 'trending_down' ? 'BEAR' : 'SIDEWAYS',
+        regimeStrength: analysis.indicators.adx > 40 ? 'STRONG' : analysis.indicators.adx > 25 ? 'MODERATE' : 'WEAK',
+        volatility: (analysis.indicators.atr / analysis.price) * 100,
+        fearGreed,
+        rsi: analysis.indicators.rsi,
+        signal: screeningResult?.direction || 'NONE'
+      });
+    } catch (error) {
+      console.error('[Optimizer] Error getting recommendation:', error);
+      return {
+        shouldTrade: false,
+        leverage: 1,
+        positionSizePct: 3,
+        tpPct: 0.3,
+        slPct: 0.3,
+        reasoning: 'Error en optimizer'
+      };
+    }
   }
 
   // STEP 1: Quick screening with cheap model - detects if there's potential opportunity
@@ -222,6 +315,21 @@ TAMAÑO DE POSICIÓN (1-5% del capital) - SCALPING:
 - Rechazo de muros grandes en order book
 - Funding rate extremo (contrarian)
 
+=== SISTEMA Q-LEARNING (87.95% WIN RATE) ===
+Se te proporcionará una RECOMENDACIÓN del sistema Q-Learning entrenado con datos de una IA que logró 87.95% win rate.
+- Q-Learning ha aprendido qué acciones funcionan mejor en cada estado del mercado
+- Las acciones posibles son: SKIP, OPEN_CONSERVATIVE, OPEN_NORMAL, OPEN_AGGRESSIVE, FUTURES_LOW, FUTURES_MEDIUM, FUTURES_HIGH
+- PRIORIZA la recomendación del Q-Learning cuando tenga alta confianza (>60%)
+- Si Q-Learning dice SKIP, considera HOLD a menos que tengas evidencia técnica muy fuerte
+- Si Q-Learning sugiere FUTURES_HIGH, significa que la IA detectó un patrón de alta probabilidad
+
+=== PARÁMETROS OPTIMIZADOS (236 TRIALS) ===
+También recibirás parámetros optimizados del sistema que aprendió de 236 experimentos:
+- TP y SL dinámicos calculados según volatilidad y régimen
+- Leverage óptimo basado en confianza y condiciones
+- Tamaño de posición ajustado a la situación
+- USA ESTOS PARÁMETROS como guía, puedes ajustar ±10% según tu análisis
+
 === CUÁNDO NO OPERAR ===
 - Spread muy alto (>0.03%)
 - Baja liquidez en order book
@@ -229,6 +337,7 @@ TAMAÑO DE POSICIÓN (1-5% del capital) - SCALPING:
 - Fear & Greed en extremos SIN señal técnica
 - Después de 3+ pérdidas consecutivas (reduce tamaño mínimo)
 - Si no tienes al menos 45% de confianza
+- Si Q-Learning recomienda SKIP con alta confianza
 
 === FORMATO DE RESPUESTA (JSON) ===
 {
@@ -348,28 +457,81 @@ Sentimiento noticias: ${(news.sentiment.score * 100).toFixed(0)}% ${news.sentime
 Headlines:
 ${news.headlines.slice(0, 5).map(h => `  • ${h}`).join('\n') || '  • Sin noticias recientes'}
 
-📊 HISTORIAL DE TRADES (tu rendimiento)
+📊 HISTORIAL DE TRADES (tu rendimiento - últimos 200)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Total trades: ${recentTrades.length}
+Total trades analizados: ${recentTrades.length}
 Win Rate: ${winRate.toFixed(1)}% ${winRate >= 50 ? '✓' : '⚠️ MEJORAR'}
 Promedio ganancia: +${avgWin.toFixed(2)}%
 Promedio pérdida: -${avgLoss.toFixed(2)}%
 Pérdidas consecutivas: ${consecutiveLosses} ${consecutiveLosses >= 3 ? '⚠️ REDUCIR RIESGO' : ''}
 
-Últimos 5 trades:
-${recentTrades.slice(0, 5).map(t =>
-  `  ${t.pnl > 0 ? '✅' : '❌'} ${t.side} @ $${t.entryPrice.toFixed(2)} → ${t.pnl > 0 ? '+' : ''}${t.pnl.toFixed(2)}% (${t.exitReason}) [${t.gptConfidence}% conf]`
-).join('\n') || '  Sin trades aún'}
+Resumen por resultado:
+  ✅ Ganadores: ${wins} trades (${(winRate).toFixed(1)}%)
+  ❌ Perdedores: ${losses} trades (${(100 - winRate).toFixed(1)}%)
 
-🧠 APRENDIZAJES PREVIOS
+Últimos 20 trades (más recientes primero):
+${recentTrades.slice(0, 20).map(t =>
+  `  ${t.pnl > 0 ? '✅' : '❌'} ${t.side} ${t.symbol} @ $${t.entryPrice.toFixed(2)} → ${t.pnl > 0 ? '+' : ''}${t.pnl.toFixed(2)}% (${t.exitReason}) [${t.gptConfidence}% conf]`
+).join('\n') || '  Sin trades aún'}
+${recentTrades.length > 20 ? `\n  ... y ${recentTrades.length - 20} trades más en el historial completo` : ''}
+
+🧠 APRENDIZAJES PREVIOS (últimos 200)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-${learnings.slice(0, 5).map(l => `• ${l}`).join('\n') || '• Aún sin aprendizajes - este es un buen momento para experimentar'}
+${learnings.slice(0, 30).map(l => `• ${l}`).join('\n') || '• Aún sin aprendizajes - este es un buen momento para experimentar'}
+${learnings.length > 30 ? `\n... y ${learnings.length - 30} aprendizajes más almacenados` : ''}
 
 💡 SUGERENCIAS BASADAS EN ATR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 SL sugerido: $${suggestedSL.toFixed(2)} (~${((suggestedSL / analysis.price) * 100).toFixed(2)}% del precio)
 TP sugerido: $${suggestedTP.toFixed(2)} (~${((suggestedTP / analysis.price) * 100).toFixed(2)}% del precio)
 (Estos son sugerencias basadas en volatilidad, usa tu criterio)
+
+═══════════════════════════════════════════════════════
+🤖 RECOMENDACIÓN Q-LEARNING (87.95% Win Rate IA)
+═══════════════════════════════════════════════════════
+${context.qLearningRecommendation ? `
+🎯 ACCIÓN RECOMENDADA: ${context.qLearningRecommendation.action}
+📊 Confianza Q-Learning: ${context.qLearningRecommendation.confidence.toFixed(1)}%
+🔍 Estado del mercado: ${context.qLearningRecommendation.stateKey.slice(0, 60)}...
+${context.qLearningRecommendation.isExploration ? '⚠️ MODO EXPLORACIÓN - La IA está probando nuevas estrategias' : '✅ MODO EXPLOTACIÓN - Usando conocimiento aprendido'}
+
+Q-Values por acción (mayor = mejor para este estado):
+${Object.entries(context.qLearningRecommendation.qValues)
+  .sort(([,a], [,b]) => b - a)
+  .slice(0, 5)
+  .map(([action, value]) => `  • ${action}: ${value.toFixed(2)}${action === context.qLearningRecommendation!.action ? ' ⭐ ELEGIDA' : ''}`)
+  .join('\n')}
+
+INTERPRETACIÓN:
+- SKIP: No operar en este estado del mercado
+- OPEN_CONSERVATIVE/NORMAL/AGGRESSIVE: Spot con diferente riesgo
+- FUTURES_LOW/MEDIUM/HIGH: Futuros con leverage bajo/medio/alto
+${context.qLearningRecommendation.action.startsWith('FUTURES') ? '⚡ Q-Learning detectó PATRÓN DE ALTA PROBABILIDAD para futuros' : ''}
+${context.qLearningRecommendation.action === 'SKIP' ? '⛔ Q-Learning recomienda NO OPERAR - considera HOLD' : ''}
+` : `
+Sin datos de Q-Learning disponibles para este símbolo/estado
+`}
+
+═══════════════════════════════════════════════════════
+⚙️ PARÁMETROS OPTIMIZADOS (236 Trials)
+═══════════════════════════════════════════════════════
+${context.optimizerParams ? `
+${context.optimizerParams.shouldTrade ? '✅ CONDICIONES FAVORABLES PARA OPERAR' : '⛔ CONDICIONES NO FAVORABLES'}
+
+📐 Parámetros sugeridos:
+  • Leverage: ${context.optimizerParams.leverage}x
+  • Tamaño posición: ${context.optimizerParams.positionSizePct.toFixed(2)}% del capital
+  • Take Profit: ${context.optimizerParams.tpPct.toFixed(2)}%
+  • Stop Loss: ${context.optimizerParams.slPct.toFixed(2)}%
+
+💡 Razonamiento del optimizer:
+${context.optimizerParams.reasoning}
+
+IMPORTANTE: Estos parámetros están calibrados de 236 experimentos de optimización.
+Puedes ajustar ±10% según tu análisis técnico, pero respétalos en general.
+` : `
+Sin parámetros optimizados disponibles
+`}
 
 ═══════════════════════════════════════════════════════
 🎯 SCREENING PREVIO (modelo rápido)
