@@ -111,3 +111,203 @@ model DailyStats {
 
   @@index([date])
 }
+
+// ============================================
+// ADAPTIVE LEARNING SYSTEM (from 87.95% WR IA)
+// ============================================
+
+// Q-Learning States - Maps market conditions to best actions
+model QState {
+  id              String   @id @default(uuid())
+  stateKey        String   @unique  // Encoded state: SYMBOL_SIGNAL_RSI_REGIME_STRENGTH_ORDERBOOK_VOL_TC_FG_ML_NEWS_SENT
+
+  // Action Q-values (reward scores)
+  skipValue       Float    @default(0)
+  openConservative Float   @default(0)
+  openNormal      Float    @default(0)
+  openAggressive  Float    @default(0)
+  futuresLow      Float    @default(0)
+  futuresMedium   Float    @default(0)
+  futuresHigh     Float    @default(0)
+
+  // Statistics
+  visits          Int      @default(0)
+  lastReward      Float    @default(0)
+  avgReward       Float    @default(0)
+  winCount        Int      @default(0)
+  lossCount       Int      @default(0)
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([stateKey])
+  @@index([visits])
+}
+
+// Dynamic Parameters - Auto-optimizing configuration
+model DynamicParams {
+  id              String   @id @default("active")
+
+  // Trading Thresholds
+  minConfidence   Float    @default(55)
+  profitThreshold Float    @default(1.67)
+
+  // RSI Configuration
+  rsiOversold     Int      @default(26)
+  rsiOverbought   Int      @default(74)
+  rsiPeriod       Int      @default(10)
+
+  // Position Sizing
+  basePositionPct Float    @default(7.43)
+  maxPositionPct  Float    @default(11.74)
+  maxRiskPerTrade Float    @default(2.89)
+  maxPositions    Int      @default(5)
+
+  // Leverage Settings
+  conservativeLev Int      @default(5)
+  balancedLev     Int      @default(6)
+  aggressiveLev   Int      @default(14)
+
+  // Futures Conditions
+  minConfFutures  Float    @default(75.68)
+  minWinrateFutures Float  @default(46.13)
+  maxDrawdownFutures Float @default(6.11)
+  volThresholdFutures Float @default(0.025)
+
+  // Fear & Greed
+  fgExtremeThreshold Int   @default(24)
+  fgOpportunityBoost Float @default(1.85)
+
+  // Take Profit (dynamic, single TP)
+  tpBasePct       Float    @default(0.31)
+  tpDynamicMultiplier Float @default(1.92)
+
+  // Stop Loss
+  slBasePct       Float    @default(0.30)
+
+  // Performance tracking
+  currentWinRate  Float    @default(0)
+  currentROI      Float    @default(0)
+  totalTrials     Int      @default(0)
+  lastOptimization DateTime?
+
+  updatedAt       DateTime @updatedAt
+}
+
+// Parameter Change History - Track what worked
+model ParamChange {
+  id              String   @id @default(uuid())
+
+  changeNumber    Int
+  triggerReason   String   // e.g., "Win rate excellent (85%)"
+  strategy        String   // OPTIMIZATION, EXPLORATION, RECOVERY
+
+  // Performance before change
+  winRateBefore   Float
+  roiBefore       Float
+  drawdownBefore  Float
+
+  // Parameters changed (JSON)
+  paramsChanged   Json
+  reasoning       String
+
+  // Result after change
+  winRateAfter    Float?
+  roiAfter        Float?
+  tradesAfterChange Int    @default(0)
+
+  explorationFactor Float  @default(0.2)
+  totalTradesAtChange Int
+
+  timestamp       DateTime @default(now())
+
+  @@index([timestamp])
+  @@index([strategy])
+}
+
+// Market State Snapshots - For analysis
+model MarketSnapshot {
+  id              String   @id @default(uuid())
+
+  symbol          String
+  signal          String   // BUY, SELL, NEUTRAL
+
+  // Indicators
+  rsi             Float
+  rsiZone         String   // LOW, NEUTRAL, HIGH, OVERSOLD, OVERBOUGHT
+  macdHistogram   Float
+  adx             Float?
+  atr             Float?
+
+  // Market Regime
+  regime          String   // BULL, BEAR, SIDEWAYS
+  regimeStrength  String   // WEAK, MODERATE, STRONG
+
+  // Order Book
+  orderbook       String   // BULLISH, BEARISH, NEUTRAL
+  spread          Float?
+
+  // Volatility
+  volatility      String   // LOW, MEDIUM, HIGH, VERY_HIGH
+  volatilityPct   Float?
+
+  // Sentiment
+  fearGreedIndex  Int?
+  fearGreedZone   String?  // EXTREME_FEAR, FEAR, NEUTRAL, GREED, EXTREME_GREED
+  newsScore       Float?
+
+  // Encoded state key (for Q-table lookup)
+  stateKey        String
+
+  // Action taken
+  actionTaken     String?
+  actionResult    String?  // WIN, LOSS, SKIP
+  reward          Float?
+
+  timestamp       DateTime @default(now())
+
+  @@index([stateKey])
+  @@index([symbol])
+  @@index([timestamp])
+}
+
+// Performance Metrics - Continuous tracking
+model PerformanceMetrics {
+  id              String   @id @default(uuid())
+
+  period          String   // HOURLY, DAILY, WEEKLY
+  periodStart     DateTime
+  periodEnd       DateTime
+
+  // Core metrics
+  totalTrades     Int
+  winningTrades   Int
+  losingTrades    Int
+  skippedSignals  Int      @default(0)
+
+  winRate         Float
+  roi             Float
+  profitFactor    Float?
+  sharpeRatio     Float?
+  maxDrawdown     Float
+
+  // Trade breakdown
+  avgWinPct       Float?
+  avgLossPct      Float?
+  largestWin      Float?
+  largestLoss     Float?
+
+  // Context
+  dominantRegime  String?
+  avgFearGreed    Float?
+  avgVolatility   Float?
+
+  // Costs
+  apiCost         Float    @default(0)
+  tradingFees     Float    @default(0)
+
+  createdAt       DateTime @default(now())
+
+  @@index([period])
+  @@index([periodStart])
+}

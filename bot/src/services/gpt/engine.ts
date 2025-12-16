@@ -2,6 +2,7 @@ import OpenAI from 'openai';
 import { config } from '../../config/index.js';
 import { MarketAnalysis } from '../market/analyzer.js';
 import { memorySystem, TradeMemory } from '../memory/index.js';
+import { adaptiveLearning, MarketState, ActionType } from '../adaptive/index.js';
 
 export interface GPTDecision {
   action: 'BUY' | 'SELL' | 'HOLD';
@@ -18,6 +19,10 @@ export interface GPTDecision {
   timeframe: string;
   patterns: string[];
   marketContext: string;
+  // Adaptive Learning fields
+  adaptiveAction?: ActionType;
+  stateKey?: string;
+  qLearningReasoning?: string;
 }
 
 interface MarketContext {
@@ -108,8 +113,11 @@ Criterios para oportunidad:
 
   // STEP 2: Full analysis with premium model - only called when screening detects opportunity
   async analyze(context: MarketContext): Promise<GPTDecision> {
-    const systemPrompt = this.buildSystemPrompt(context.accountBalance);
-    const userPrompt = this.buildAnalysisPrompt(context);
+    // Get Adaptive Learning recommendation first
+    const adaptiveDecision = await this.getAdaptiveRecommendation(context);
+
+    const systemPrompt = this.buildSystemPrompt(context.accountBalance, adaptiveDecision);
+    const userPrompt = this.buildAnalysisPrompt(context, adaptiveDecision);
 
     try {
       // GPT-5.2 with reasoning_effort for optimized performance
@@ -130,9 +138,29 @@ Criterios para oportunidad:
 
       const decision = JSON.parse(content) as GPTDecision;
 
+      // Apply adaptive learning recommendations if available
+      if (adaptiveDecision.shouldTrade) {
+        // Use adaptive leverage and position size as minimums
+        decision.leverage = Math.max(decision.leverage || 1, adaptiveDecision.leverage);
+        decision.positionSizePercent = Math.max(decision.positionSizePercent || 1, adaptiveDecision.positionSizePct);
+
+        // Use adaptive TP/SL if GPT didn't specify
+        if (!decision.takeProfitPercent && adaptiveDecision.tpPct > 0) {
+          decision.takeProfitPercent = adaptiveDecision.tpPct;
+        }
+        if (!decision.stopLossPercent && adaptiveDecision.slPct > 0) {
+          decision.stopLossPercent = adaptiveDecision.slPct;
+        }
+      }
+
       // Validate and cap values
-      decision.leverage = Math.min(Math.max(1, decision.leverage || 3), 10); // Cap at 10x
-      decision.positionSizePercent = Math.min(Math.max(1, decision.positionSizePercent || 3), 5); // Max 5% for scalping
+      decision.leverage = Math.min(Math.max(1, decision.leverage || 3), 15); // Cap at 15x (from IA)
+      decision.positionSizePercent = Math.min(Math.max(1, decision.positionSizePercent || 3), 12); // Max 12% (from IA)
+
+      // Add adaptive learning metadata
+      decision.adaptiveAction = adaptiveDecision.action;
+      decision.stateKey = adaptiveDecision.stateKey;
+      decision.qLearningReasoning = adaptiveDecision.reasoning;
 
       // Store the analysis for learning
       await this.storeAnalysis(context, decision);
@@ -144,76 +172,190 @@ Criterios para oportunidad:
     }
   }
 
-  private buildSystemPrompt(accountBalance: number): string {
-    return `Eres un TRADER PROFESIONAL de élite con un objetivo claro: 65%+ win rate.
+  // Get recommendation from Adaptive Learning System
+  private async getAdaptiveRecommendation(context: MarketContext): Promise<{
+    shouldTrade: boolean;
+    action: ActionType;
+    confidence: number;
+    leverage: number;
+    positionSizePct: number;
+    tpPct: number;
+    slPct: number;
+    stateKey: string;
+    reasoning: string;
+  }> {
+    try {
+      const { analysis, fearGreed } = context;
+
+      // Determine signal from analysis
+      let signal: 'BUY' | 'SELL' | 'NEUTRAL' = 'NEUTRAL';
+      if (analysis.orderBook.imbalance > 0.15 && analysis.indicators.rsi < 50) {
+        signal = 'BUY';
+      } else if (analysis.orderBook.imbalance < -0.15 && analysis.indicators.rsi > 50) {
+        signal = 'SELL';
+      }
+
+      // Determine regime
+      let regime: 'BULL' | 'BEAR' | 'SIDEWAYS' = 'SIDEWAYS';
+      let regimeStrength: 'WEAK' | 'MODERATE' | 'STRONG' = 'MODERATE';
+
+      if (analysis.regime === 'trending_up') {
+        regime = 'BULL';
+        regimeStrength = analysis.indicators.adx > 30 ? 'STRONG' : analysis.indicators.adx > 20 ? 'MODERATE' : 'WEAK';
+      } else if (analysis.regime === 'trending_down') {
+        regime = 'BEAR';
+        regimeStrength = analysis.indicators.adx > 30 ? 'STRONG' : analysis.indicators.adx > 20 ? 'MODERATE' : 'WEAK';
+      }
+
+      // Determine orderbook pressure
+      let orderbook: 'BULLISH' | 'BEARISH' | 'NEUTRAL' = 'NEUTRAL';
+      if (analysis.orderBook.imbalance > 0.2) orderbook = 'BULLISH';
+      else if (analysis.orderBook.imbalance < -0.2) orderbook = 'BEARISH';
+
+      // Calculate volatility percentage
+      const volatilityPct = (analysis.indicators.atr / analysis.price) * 100;
+
+      // Build market state
+      const marketState: MarketState = {
+        symbol: analysis.symbol,
+        signal,
+        rsi: analysis.indicators.rsi,
+        regime,
+        regimeStrength,
+        orderbook,
+        volatility: volatilityPct,
+        tradeCount: 0, // Will be set by adaptive system
+        fearGreedIndex: fearGreed.value,
+        mlSignal: 'NONE',
+        sentiment: 'NEUTRAL'
+      };
+
+      // Get adaptive decision
+      const decision = await adaptiveLearning.getDecision(marketState, 50);
+
+      console.log(`[Adaptive] ${analysis.symbol}: Action=${decision.action} | Confidence=${decision.confidence}% | ${decision.reasoning}`);
+
+      return {
+        shouldTrade: decision.shouldTrade,
+        action: decision.action,
+        confidence: decision.confidence,
+        leverage: decision.leverage,
+        positionSizePct: decision.positionSizePct,
+        tpPct: decision.tpPct,
+        slPct: decision.slPct,
+        stateKey: decision.stateKey,
+        reasoning: decision.reasoning
+      };
+    } catch (error) {
+      console.error('[Adaptive] Error getting recommendation:', error);
+      return {
+        shouldTrade: false,
+        action: 'SKIP',
+        confidence: 0,
+        leverage: 1,
+        positionSizePct: 0,
+        tpPct: 0,
+        slPct: 0,
+        stateKey: '',
+        reasoning: 'Error en sistema adaptativo'
+      };
+    }
+  }
+
+  private buildSystemPrompt(accountBalance: number, adaptiveRec?: {
+    shouldTrade: boolean;
+    action: ActionType;
+    confidence: number;
+    leverage: number;
+    positionSizePct: number;
+    tpPct: number;
+    slPct: number;
+    reasoning: string;
+  }): string {
+    // Build adaptive recommendation section if available
+    const adaptiveSection = adaptiveRec ? `
+=== 🤖 RECOMENDACIÓN DEL SISTEMA ADAPTATIVO (IA con 87.95% WR) ===
+${adaptiveRec.shouldTrade ? `✅ SEÑAL DETECTADA: ${adaptiveRec.action}
+📊 Confianza Q-Learning: ${adaptiveRec.confidence.toFixed(0)}%
+💪 Leverage sugerido: ${adaptiveRec.leverage}x
+📏 Posición sugerida: ${adaptiveRec.positionSizePct.toFixed(1)}%
+🎯 TP sugerido: ${adaptiveRec.tpPct.toFixed(2)}%
+🛡️ SL sugerido: ${adaptiveRec.slPct.toFixed(2)}%
+💡 Razón: ${adaptiveRec.reasoning}
+
+⚠️ IMPORTANTE: El sistema adaptativo ha identificado un patrón PROBADO con alta probabilidad.
+Considera seguir esta recomendación si el análisis técnico lo confirma.` : `⏸️ Sin señal clara - Sistema recomienda ESPERAR
+💡 Razón: ${adaptiveRec.reasoning}`}
+` : '';
+
+    return `Eres un TRADER PROFESIONAL de élite con un SISTEMA ADAPTATIVO que aprende de cada trade.
 
 💰 CAPITAL: $${accountBalance.toFixed(2)} USDT
-
+${adaptiveSection}
 === TU MISIÓN ===
 🎯 Lograr WIN RATE > 65% siendo selectivo y preciso
-🎯 Maximizar Take Profit en cada trade (entre más alto, mejor)
-🎯 Que tus ganancias superen TODOS los costos (API + comisiones + pérdidas)
+🎯 Maximizar Take Profit en cada trade
+🎯 Aprender y mejorar con cada operación
+🎯 Seguir las señales del sistema adaptativo cuando sean fuertes
 
-=== PATRONES GANADORES PROBADOS (de una IA con 87.95% win rate) ===
+=== PATRONES GANADORES DEL Q-LEARNING (87.95% win rate) ===
 
-📊 CONDICIONES DE ALTA PROBABILIDAD:
-1. SELL en mercado BAJISTA + RSI bajo + Fear & Greed en MIEDO = SHORT con confianza
-2. BUY en mercado ALCISTA + RSI alto + Fear & Greed en CODICIA = Cuidado, posible reversión
-3. Tendencia FUERTE (ADX > 25) + Dirección clara = Seguir la tendencia
-4. SIDEWAYS/RANGO = Evitar o scalp muy corto
-5. Volatilidad MUY ALTA + Tendencia FUERTE = Oportunidad con leverage
+📊 TOP ESTADOS RENTABLES:
+1. SELL + BEAR_MODERATE/STRONG + LOW_RSI + EXTREME_FEAR → FUTURES_HIGH (valor Q: 74+)
+2. SELL + BEAR_STRONG + VERY_HIGH_VOL + EXTREME_FEAR → Oportunidad SHORT
+3. Tendencia FUERTE (ADX > 25) + Fear & Greed EXTREMO = Alta probabilidad
+4. RSI < 30 en mercado BEAR = SHORT con confianza
+5. RSI > 70 en mercado BEAR = Precaución, posible trampa
 
-📊 CUÁNDO USAR LEVERAGE ALTO (5-10x):
-- Tendencia BEAR_STRONG o BULL_STRONG
-- Fear & Greed en EXTREMO (miedo extremo = short, codicia extrema = cuidado)
-- RSI en zona extrema confirmando dirección
-- ADX > 30 (tendencia muy fuerte)
+📊 ACCIONES DISPONIBLES:
+- SKIP: No operar (mercado confuso o sin señal)
+- OPEN_CONSERVATIVE: Posición pequeña, 1x leverage
+- OPEN_NORMAL: Posición estándar, 1x leverage
+- OPEN_AGGRESSIVE: Posición grande, 1x leverage
+- FUTURES_LOW: 5x leverage (conservador)
+- FUTURES_MEDIUM: 6x leverage (balanceado)
+- FUTURES_HIGH: 10-14x leverage (agresivo)
 
-📊 CUÁNDO SER CONSERVADOR (1-3x):
-- Mercado SIDEWAYS o sin dirección
-- Indicadores contradictorios
-- Después de racha de pérdidas
+📊 CUÁNDO SEGUIR AL SISTEMA ADAPTATIVO:
+- Si recomienda FUTURES_HIGH con confianza > 70% → SEGUIR
+- Si recomienda SKIP → Probablemente HOLD
+- Si hay conflicto con tu análisis → Usa tu criterio pero considera la experiencia del sistema
 
-📊 CUÁNDO NO OPERAR (HOLD):
-- RSI neutral (40-60) sin tendencia clara
-- ADX < 20 (sin tendencia)
-- Spread alto (> 0.03%)
-- Fear & Greed neutral sin señales técnicas
-
-=== TAMAÑO DE POSICIÓN ===
-- ALTA convicción (>80%): 4-5% + leverage alto
-- BUENA convicción (65-80%): 3-4% + leverage medio
-- NORMAL (55-65%): 2-3% + leverage bajo
-- NO OPERAR si confianza < 55%
+=== PARÁMETROS ÓPTIMOS (de 236 trials) ===
+- RSI Oversold: 26 | RSI Overbought: 74
+- Min Confianza: 55% | Min Confianza Futuros: 75%
+- Leverage Conservador: 5x | Balanceado: 6x | Agresivo: 14x
+- Fear & Greed Extremo: ≤24 (OPORTUNIDAD SHORT)
 
 === COSTOS A CONSIDERAR ===
 💸 API: ~$0.03 por análisis
 💸 Comisión: 0.10% round trip
-💸 Pérdida = API + comisión + pérdida del trade
-⚠️ Solo entra si la ganancia esperada > todos los costos
+⚠️ Solo entra si ganancia esperada > costos
 
 === RESPUESTA JSON ===
 {
   "action": "BUY" | "SELL" | "HOLD",
   "confidence": 0-100,
-  "reasoning": "Análisis detallado del setup",
+  "reasoning": "Tu análisis + razón de seguir/ignorar sistema adaptativo",
   "entryPrice": precio,
   "stopLoss": precio_sl,
   "stopLossPercent": porcentaje,
   "takeProfit": precio_tp,
   "takeProfitPercent": porcentaje,
-  "positionSizePercent": 1-5,
-  "leverage": 1-10,
+  "positionSizePercent": 1-12,
+  "leverage": 1-15,
   "riskLevel": "low" | "medium" | "high",
-  "timeframe": "1m" | "5m" | "15m" | "1h",
-  "patterns": ["patrón detectado"],
-  "marketContext": "Resumen: tendencia + volatilidad + sentimiento"
-}
-
-IMPORTANTE: Sé específico. ¿Qué combinación de señales ves? ¿Por qué ESTA es una oportunidad?`;
+  "timeframe": "1m" | "5m" | "15m",
+  "patterns": ["patrón"],
+  "marketContext": "Resumen del mercado"
+}`;
   }
 
-  private buildAnalysisPrompt(context: MarketContext): string {
+  private buildAnalysisPrompt(context: MarketContext, adaptiveRec?: {
+    shouldTrade: boolean;
+    action: ActionType;
+    stateKey: string;
+  }): string {
     const { analysis, news, fearGreed, recentTrades, learnings } = context;
 
     // Calculate statistics from recent trades
