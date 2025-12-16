@@ -275,16 +275,18 @@ export class TradingEngine extends EventEmitter {
 
     // STEP 1: Quick screening with cheap model (gpt-4o-mini)
     // This saves ~90% of API costs by filtering out non-opportunities
-    if (!hasPosition) {
-      const screening = await gptEngine.quickScreen(analysis);
+    let screeningResult: { hasOpportunity: boolean; direction: 'BUY' | 'SELL' | 'NONE'; score: number } | undefined;
 
-      if (!screening.hasOpportunity) {
+    if (!hasPosition) {
+      screeningResult = await gptEngine.quickScreen(analysis);
+
+      if (!screeningResult.hasOpportunity) {
         // No opportunity detected - skip expensive GPT-5.2 analysis
-        console.log(`[Engine] ${symbol}: No opportunity (score: ${screening.score}) - skipping full analysis`);
+        console.log(`[Engine] ${symbol}: No opportunity (score: ${screeningResult.score}) - skipping full analysis`);
         return;
       }
 
-      console.log(`[Engine] ${symbol}: Opportunity detected! (score: ${screening.score}, direction: ${screening.direction})`);
+      console.log(`[Engine] ${symbol}: Opportunity detected! (score: ${screeningResult.score}, direction: ${screeningResult.direction})`);
     }
 
     // STEP 2: Full analysis with premium model (gpt-5.2)
@@ -301,7 +303,7 @@ export class TradingEngine extends EventEmitter {
       symbol,
     });
 
-    // Get GPT-5.2 decision with full context
+    // Get GPT-5.2 decision with full context - NOW INCLUDING SCREENING RESULT
     const decision = await gptEngine.analyze({
       analysis,
       news: newsSummary,
@@ -309,6 +311,7 @@ export class TradingEngine extends EventEmitter {
       recentTrades,
       learnings,
       accountBalance: this.state.balance,
+      screeningResult, // Pass screening result so GPT-5.2 knows what the quick screen detected
     });
 
     this.state.lastDecision.set(symbol, decision);
@@ -316,6 +319,16 @@ export class TradingEngine extends EventEmitter {
 
     // Log decision with more detail
     console.log(`[Engine] ${symbol}: ${decision.action} (${decision.confidence}%)`);
+
+    // Warning: Log when GPT-5.2 contradicts the screening
+    if (screeningResult && screeningResult.hasOpportunity && screeningResult.direction !== 'NONE') {
+      if (decision.action === 'HOLD') {
+        console.log(`[Engine] ⚠️ ${symbol}: GPT-5.2 said HOLD but screening detected ${screeningResult.direction} (score: ${screeningResult.score})`);
+        console.log(`[Engine]   └─ Reason for rejection: ${decision.reasoning.slice(0, 150)}...`);
+      } else if (decision.action !== screeningResult.direction) {
+        console.log(`[Engine] ⚠️ ${symbol}: Direction mismatch! Screening: ${screeningResult.direction}, GPT-5.2: ${decision.action}`);
+      }
+    }
     console.log(`[Engine]   └─ ${decision.reasoning.slice(0, 100)}...`);
     if (decision.action !== 'HOLD') {
       console.log(`[Engine]   └─ Size: ${decision.positionSizePercent}% | Leverage: ${decision.leverage}x`);

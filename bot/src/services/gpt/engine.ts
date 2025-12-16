@@ -20,6 +20,12 @@ export interface GPTDecision {
   marketContext: string;
 }
 
+interface ScreeningResult {
+  hasOpportunity: boolean;
+  direction: 'BUY' | 'SELL' | 'NONE';
+  score: number;
+}
+
 interface MarketContext {
   analysis: MarketAnalysis;
   news: {
@@ -33,6 +39,7 @@ interface MarketContext {
   recentTrades: TradeMemory[];
   learnings: string[];
   accountBalance: number;
+  screeningResult?: ScreeningResult; // Quick screening result to inform decision
 }
 
 export class GPTEngine {
@@ -353,12 +360,28 @@ TP sugerido: $${suggestedTP.toFixed(2)} (~${((suggestedTP / analysis.price) * 10
 (Estos son sugerencias basadas en volatilidad, usa tu criterio)
 
 ═══════════════════════════════════════════════════════
+🎯 SCREENING PREVIO (modelo rápido)
+═══════════════════════════════════════════════════════
+${context.screeningResult ? `
+⚡ SEÑAL DETECTADA: ${context.screeningResult.direction}
+📊 Score de oportunidad: ${context.screeningResult.score}/100
+${context.screeningResult.score >= 60 ? '🔥 SEÑAL FUERTE - Considera seguir esta dirección' : context.screeningResult.score >= 50 ? '✅ SEÑAL MODERADA - Evalúa cuidadosamente' : '⚠️ SEÑAL DÉBIL'}
+
+IMPORTANTE: El screening rápido ya identificó una oportunidad de ${context.screeningResult.direction}.
+Tu trabajo es CONFIRMAR o RECHAZAR esta señal con análisis detallado.
+Si confirmas: Usa la dirección sugerida (${context.screeningResult.direction}) con parámetros óptimos.
+Si rechazas: Explica claramente por qué los indicadores contradicen la señal.
+` : `
+Sin screening previo - Posición existente a monitorear
+`}
+
+═══════════════════════════════════════════════════════
 TOMA TU DECISIÓN
 ═══════════════════════════════════════════════════════
 
 Analiza TODO lo anterior y responde en JSON.
-- Si ves oportunidad clara: BUY o SELL con parámetros específicos
-- Si no estás seguro: HOLD (pero analiza para el próximo ciclo)
+- El screening ya sugirió ${context.screeningResult?.direction || 'una dirección'} - CONFÍRMALO si los indicadores lo soportan
+- Si rechazas la señal del screening, JUSTIFICA con datos específicos
 - Mínimo 45% de confianza para entrar
 - Sé ESPECÍFICO en tu reasoning
 `;
