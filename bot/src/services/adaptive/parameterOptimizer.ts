@@ -352,24 +352,44 @@ export class ParameterOptimizer {
   }
 
   /**
-   * Calculate dynamic take profit based on volatility
+   * Calculate dynamic take profit based on volatility and conditions
+   * From IA: TP1=0.31%, TP2=1.20%, TP3=1.45% - we use dynamic single TP
    */
-  calculateDynamicTP(baseTP: number, volatility: number, regime: string): number {
-    let multiplier = this.params.tpDynamicMultiplier;
+  calculateDynamicTP(baseTP: number, volatility: number, regime: string, regimeStrength?: string, fearGreed?: number): number {
+    let tp = baseTP;
 
-    // Adjust for volatility
+    // Base multiplier from params
+    let multiplier = this.params.tpDynamicMultiplier; // 1.92x
+
+    // HIGH VOLATILITY = Higher TP potential (from IA patterns)
     if (volatility > 3) {
-      multiplier *= 1.3; // Higher TP in high volatility
+      multiplier *= 1.5; // Can capture 1.5x more in high vol
+    } else if (volatility > 2) {
+      multiplier *= 1.3;
     } else if (volatility < 1) {
       multiplier *= 0.8; // Lower TP in low volatility
     }
 
-    // Adjust for regime
+    // STRONG TREND = Higher TP (from IA: strong trends captured more)
     if (regime === 'BEAR' || regime === 'BULL') {
-      multiplier *= 1.1; // Trending markets can capture more
+      if (regimeStrength === 'STRONG') {
+        multiplier *= 1.4; // Strong trends = bigger moves
+      } else if (regimeStrength === 'MODERATE') {
+        multiplier *= 1.2;
+      }
     }
 
-    return baseTP * multiplier;
+    // EXTREME FEAR/GREED = Higher TP potential (contrarian moves are strong)
+    if (fearGreed !== undefined) {
+      if (fearGreed <= 20 || fearGreed >= 80) {
+        multiplier *= 1.3; // Extreme sentiment = stronger reversals
+      }
+    }
+
+    tp = baseTP * multiplier;
+
+    // Cap TP between 0.3% and 2.5% (from IA range)
+    return Math.max(0.3, Math.min(2.5, tp));
   }
 
   /**
@@ -502,8 +522,8 @@ export class ParameterOptimizer {
       reasons.push(`RSI sobrecompra (${rsi}) - posible caída`);
     }
 
-    // Calculate TP and SL
-    const tpPct = this.calculateDynamicTP(this.params.tpBasePct, volatility, regime);
+    // Calculate TP and SL with full context for dynamic adjustment
+    const tpPct = this.calculateDynamicTP(this.params.tpBasePct, volatility, regime, regimeStrength, fearGreed);
     const slPct = this.calculateDynamicSL(this.params.slBasePct, volatility / 100, regime);
 
     return {
