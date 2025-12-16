@@ -98,13 +98,17 @@ class MemorySystem {
           quantity: trade.quantity,
           leverage: Math.round(trade.leverage || 1),
           pnl: trade.pnl,
+          pnlPercent: trade.pnl, // Same as pnl (percentage)
           pnlUsd: trade.pnlUsd,
           entryTime: new Date(trade.entryTime),
           exitTime: new Date(trade.exitTime),
+          status: 'CLOSED', // Trade is closed when we persist it
           exitReason: trade.exitReason,
-          gptConfidence: trade.gptConfidence,
+          gptConfidence: Math.round(trade.gptConfidence), // DB expects INTEGER
           gptReasoning: trade.gptReasoning || '',
-          // Entry conditions
+          // Store entry conditions as JSONB
+          entryConditions: trade.entryConditions || {},
+          // Also store individual fields for querying
           rsi: trade.entryConditions?.rsi ?? null,
           macdHistogram: trade.entryConditions?.macdHistogram ?? null,
           orderBookImbalance: trade.entryConditions?.orderBookImbalance ?? null,
