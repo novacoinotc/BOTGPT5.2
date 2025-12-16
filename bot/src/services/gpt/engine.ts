@@ -113,7 +113,7 @@ export class GPTEngine {
   }
 
   // Get Parameter Optimizer recommendation
-  getOptimizerRecommendation(analysis: MarketAnalysis, fearGreed: number, screeningResult?: ScreeningResult): {
+  getOptimizerRecommendation(analysis: MarketAnalysis, fearGreed: number, screeningResult?: ScreeningResult, winRate?: number): {
     shouldTrade: boolean;
     leverage: number;
     positionSizePct: number;
@@ -131,7 +131,8 @@ export class GPTEngine {
         volatility: (analysis.indicators.atr / analysis.price) * 100,
         fearGreed,
         rsi: analysis.indicators.rsi,
-        signal: screeningResult?.direction || 'NONE'
+        signal: screeningResult?.direction || 'NONE',
+        winRate: winRate || 50 // Pass real win rate, default to 50% (conservative)
       });
     } catch (error) {
       console.error('[Optimizer] Error getting recommendation:', error);
@@ -173,7 +174,7 @@ Criterios para oportunidad:
         model: this.screeningModel,
         messages: [{ role: 'user', content: prompt }],
         response_format: { type: 'json_object' },
-        max_completion_tokens: 900, // Increased - reasoning models need space to think
+        max_completion_tokens: 4000, // Reasoning models need more space
       });
 
       // Debug: Log full response structure
@@ -214,7 +215,7 @@ Criterios para oportunidad:
           { role: 'user', content: userPrompt },
         ],
         response_format: { type: 'json_object' },
-        max_completion_tokens: 2000,
+        max_completion_tokens: 8000, // No limit - let GPT think freely
       });
 
       const content = response.choices[0]?.message?.content;
@@ -378,11 +379,16 @@ IMPORTANTE:
       : 0;
     const consecutiveLosses = this.countConsecutiveLosses(recentTrades);
 
-    // Calculate suggested SL/TP based on ATR
+    // Calculate suggested SL/TP DISTANCES based on ATR (not prices)
     const atrMultiplierSL = analysis.regime === 'volatile' ? 2 : 1.5;
     const atrMultiplierTP = analysis.regime === 'trending_up' || analysis.regime === 'trending_down' ? 2.5 : 1.5;
-    const suggestedSL = analysis.indicators.atr * atrMultiplierSL;
-    const suggestedTP = analysis.indicators.atr * atrMultiplierTP;
+    const suggestedSLDistance = analysis.indicators.atr * atrMultiplierSL;
+    const suggestedTPDistance = analysis.indicators.atr * atrMultiplierTP;
+    // Calculate actual prices for LONG and SHORT scenarios
+    const slPriceLong = analysis.price - suggestedSLDistance;
+    const tpPriceLong = analysis.price + suggestedTPDistance;
+    const slPriceShort = analysis.price + suggestedSLDistance;
+    const tpPriceShort = analysis.price - suggestedTPDistance;
 
     return `
 ═══════════════════════════════════════════════════════
@@ -480,11 +486,20 @@ ${recentTrades.length > 20 ? `\n  ... y ${recentTrades.length - 20} trades más 
 ${learnings.slice(0, 30).map(l => `• ${l}`).join('\n') || '• Aún sin aprendizajes - este es un buen momento para experimentar'}
 ${learnings.length > 30 ? `\n... y ${learnings.length - 30} aprendizajes más almacenados` : ''}
 
-💡 SUGERENCIAS BASADAS EN ATR
+💡 SUGERENCIAS DE SL/TP BASADAS EN ATR (PRECIOS REALES)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-SL sugerido: $${suggestedSL.toFixed(2)} (~${((suggestedSL / analysis.price) * 100).toFixed(2)}% del precio)
-TP sugerido: $${suggestedTP.toFixed(2)} (~${((suggestedTP / analysis.price) * 100).toFixed(2)}% del precio)
-(Estos son sugerencias basadas en volatilidad, usa tu criterio)
+Precio actual: $${analysis.price.toFixed(2)}
+Distancia ATR sugerida: SL=${((suggestedSLDistance / analysis.price) * 100).toFixed(2)}%, TP=${((suggestedTPDistance / analysis.price) * 100).toFixed(2)}%
+
+📈 Si decides LONG (BUY):
+  • SL: $${slPriceLong.toFixed(2)} (${((suggestedSLDistance / analysis.price) * 100).toFixed(2)}% abajo)
+  • TP: $${tpPriceLong.toFixed(2)} (${((suggestedTPDistance / analysis.price) * 100).toFixed(2)}% arriba)
+
+📉 Si decides SHORT (SELL):
+  • SL: $${slPriceShort.toFixed(2)} (${((suggestedSLDistance / analysis.price) * 100).toFixed(2)}% arriba)
+  • TP: $${tpPriceShort.toFixed(2)} (${((suggestedTPDistance / analysis.price) * 100).toFixed(2)}% abajo)
+
+USA ESTOS PRECIOS como referencia. Son calculados según la volatilidad actual.
 
 ═══════════════════════════════════════════════════════
 🤖 RECOMENDACIÓN Q-LEARNING (87.95% Win Rate IA)
@@ -645,7 +660,7 @@ Ejemplo: "En RSI>70 con funding alto, esperar confirmación de reversión antes 
       const response = await this.client.chat.completions.create({
         model: this.screeningModel, // Use cheap model for learning extraction
         messages: [{ role: 'user', content: prompt }],
-        max_completion_tokens: 500, // Reasoning models need more tokens
+        max_completion_tokens: 2000, // Enough for learning extraction
       });
 
       const lesson = response.choices[0]?.message?.content?.trim() || '';

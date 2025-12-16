@@ -460,6 +460,7 @@ export class ParameterOptimizer {
     fearGreed: number;
     rsi: number;
     signal: string;
+    winRate?: number; // Real win rate from trading history
   }): {
     shouldTrade: boolean;
     leverage: number;
@@ -468,7 +469,10 @@ export class ParameterOptimizer {
     slPct: number;
     reasoning: string;
   } {
-    const { confidence, regime, regimeStrength, volatility, fearGreed, rsi, signal } = params;
+    const { confidence, regime, regimeStrength, volatility, fearGreed, rsi, signal, winRate = 50 } = params;
+
+    // Use real win rate, default to 50% if not provided (conservative)
+    const actualWinRate = winRate;
 
     // Check minimum confidence
     if (confidence < this.params.minConfidence) {
@@ -498,8 +502,8 @@ export class ParameterOptimizer {
       positionSizePct = (this.params.basePositionPct + this.params.maxPositionPct) / 2;
     }
 
-    // Calculate leverage
-    const leverage = this.calculateOptimalLeverage(confidence, regime, volatility, fearGreed, 60);
+    // Calculate leverage using REAL win rate, not hardcoded
+    const leverage = this.calculateOptimalLeverage(confidence, regime, volatility, fearGreed, actualWinRate);
 
     // Fear & Greed opportunity
     if (fearGreed <= this.params.fgExtremeThreshold) {
