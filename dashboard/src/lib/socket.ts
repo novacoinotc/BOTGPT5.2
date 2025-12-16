@@ -5,6 +5,7 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
 class SocketService {
   private socket: Socket | null = null;
   private listeners: Map<string, Set<Function>> = new Map();
+  private connectionListeners: Set<(connected: boolean) => void> = new Set();
 
   connect(): void {
     if (this.socket?.connected) return;
@@ -17,11 +18,18 @@ class SocketService {
     });
 
     this.socket.on('connect', () => {
-      console.log('[Socket] Connected');
+      console.log('[Socket] Connected to', API_URL);
+      this.notifyConnectionChange(true);
     });
 
     this.socket.on('disconnect', () => {
       console.log('[Socket] Disconnected');
+      this.notifyConnectionChange(false);
+    });
+
+    this.socket.on('connect_error', (error) => {
+      console.error('[Socket] Connection error:', error.message);
+      this.notifyConnectionChange(false);
     });
 
     // Forward all events to registered listeners
@@ -70,6 +78,20 @@ class SocketService {
 
   isConnected(): boolean {
     return this.socket?.connected || false;
+  }
+
+  onConnectionChange(callback: (connected: boolean) => void): void {
+    this.connectionListeners.add(callback);
+    // Immediately notify with current state
+    callback(this.isConnected());
+  }
+
+  offConnectionChange(callback: (connected: boolean) => void): void {
+    this.connectionListeners.delete(callback);
+  }
+
+  private notifyConnectionChange(connected: boolean): void {
+    this.connectionListeners.forEach(callback => callback(connected));
   }
 }
 

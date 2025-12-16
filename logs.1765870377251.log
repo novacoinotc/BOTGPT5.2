@@ -1,0 +1,820 @@
+2025-12-16T07:30:31.000000000Z [inf]  Starting Container
+2025-12-16T07:30:31.224302337Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-16T07:30:31.224306936Z [inf]  
+2025-12-16T07:30:31.224311454Z [inf]  > gpt-scalping-bot@1.0.0 start
+2025-12-16T07:30:31.224316377Z [inf]  > npm run start -w bot
+2025-12-16T07:30:31.224322248Z [inf]  
+2025-12-16T07:30:31.273417038Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-12-16T07:30:31.329562145Z [inf]  
+2025-12-16T07:30:31.329571643Z [inf]  > bot@1.0.0 start
+2025-12-16T07:30:31.329579424Z [inf]  > node dist/index.js
+2025-12-16T07:30:31.329585845Z [inf]  
+2025-12-16T07:30:31.481113296Z [inf]  [Binance] Using proxy: 104.239.37.18
+2025-12-16T07:30:31.492064852Z [inf]  [WS] Proxy configured
+2025-12-16T07:30:31.580137680Z [inf]  =========================================
+2025-12-16T07:30:31.580146208Z [inf]      GPT 5.2 SCALPING BOT - v1.0.1
+2025-12-16T07:30:31.580152914Z [inf]  =========================================
+2025-12-16T07:30:31.580159546Z [inf]  
+2025-12-16T07:30:31.580167566Z [inf]  [Config] All required configurations present
+2025-12-16T07:30:31.580173715Z [inf]  [Config] Trading enabled: true
+2025-12-16T07:30:31.580180332Z [inf]  [Config] Max leverage: 10x
+2025-12-16T07:30:31.580186941Z [inf]  [Config] Max position size: 50%
+2025-12-16T07:30:31.580192769Z [inf]  [Config] Min confidence: 45%
+2025-12-16T07:30:31.580198554Z [inf]  [Config] Max hold time: 4h
+2025-12-16T07:30:31.580204636Z [inf]  [Main] Auto-starting trading bot...
+2025-12-16T07:30:31.580210722Z [inf]  [Engine] Starting trading bot...
+2025-12-16T07:30:31.580217258Z [inf]  [Engine] Min confidence: 45%
+2025-12-16T07:30:31.580221706Z [inf]  [Engine] Max leverage: 10x
+2025-12-16T07:30:31.591575087Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-16T07:30:31.591582350Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-16T07:30:31.591588614Z [inf]  [Server] Running on port 3001
+2025-12-16T07:30:32.040188933Z [inf]  [Engine] Account balance: $4390.74
+2025-12-16T07:30:32.040195245Z [inf]  [Engine] Available balance: $2721.30
+2025-12-16T07:30:32.467831566Z [inf]  [Binance] Fetched 6 position records, 6 active
+2025-12-16T07:30:32.467839361Z [inf]  [Engine] Found 6 open positions
+2025-12-16T07:30:32.467845809Z [inf]  [Engine] Bot started successfully
+2025-12-16T07:30:32.468805637Z [inf]  
+2025-12-16T07:30:32.468812331Z [inf]  [Main] Bot is ready!
+2025-12-16T07:30:32.468817894Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-16T07:30:32.468823372Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-16T07:30:32.468830272Z [inf]  
+2025-12-16T07:30:33.347879956Z [inf]  [WS] Connected to Binance
+2025-12-16T07:30:34.588589571Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:34.919217855Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:34.932221793Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.012209418Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.118966964Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.223509319Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.239250854Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.288310688Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.397820491Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.462469131Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.469662911Z [inf]  [Memory] ✅ Trade XRPUSDT persisted to DB (PnL: -0.21%)
+2025-12-16T07:30:35.594205369Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.700534941Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.746416217Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.746420599Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.776203958Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.849320895Z [inf]  [Memory] ✅ Trade ETHUSDT persisted to DB (PnL: -0.47%)
+2025-12-16T07:30:35.869996053Z [inf]  [Memory] ✅ Trade BTCUSDT persisted to DB (PnL: -0.21%)
+2025-12-16T07:30:35.891959091Z [inf]  [Memory] ✅ Trade SOLUSDT persisted to DB (PnL: -0.31%)
+2025-12-16T07:30:35.901357060Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:35.964124665Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.003020805Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.024934847Z [inf]  [Memory] ✅ Trade BNBUSDT persisted to DB (PnL: -0.29%)
+2025-12-16T07:30:36.123268451Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.123275048Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.123326899Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.128185034Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.138908725Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.253877028Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.253882496Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.253888099Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.253893670Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.254550815Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.254823648Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.263185881Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.263195327Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.263734294Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.289926101Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.295134955Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.305741370Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.326476808Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.346693965Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.357416160Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.357421410Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.357425142Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.358184827Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.396476853Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.432349628Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.447530401Z [inf]  [Memory] ✅ Trade LINKUSDT persisted to DB (PnL: +0.01%)
+2025-12-16T07:30:36.486082497Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.486086634Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.676393884Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.688517648Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.709106167Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.768538729Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.769140874Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.794202619Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.804501089Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.813984635Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.845602324Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.900082422Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:36.900855469Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.054253085Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.064810149Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.085499137Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.085505261Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.285768159Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.318404689Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.318413699Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.349090730Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.388744501Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.388749220Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.581172054Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.639801739Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.691063376Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.697101561Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.736767485Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.769252457Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.769260357Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.813506132Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.868460560Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.868466525Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.872973541Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:37.965541202Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.083689019Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.126032814Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.264163775Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264172527Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264237271Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.264242438Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264246448Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264250038Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264253761Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264257929Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264261546Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264265479Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264269055Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264272724Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264279145Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264285897Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264292060Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.264298868Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.269003826Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.269770456Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.333368215Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.371575109Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.371583466Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.371590714Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.465371137Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:38.486657196Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.491042839Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.628848840Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.731129035Z [err]  [GPT] Analysis error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-16T07:30:38.731133278Z [err]      date: 'Tue, 16 Dec 2025 07:30:38 GMT',
+2025-12-16T07:30:38.731136786Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-16T07:30:38.731142569Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-16T07:30:38.731143610Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-16T07:30:38.731149036Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-16T07:30:38.731151218Z [err]      'openai-processing-ms': '10',
+2025-12-16T07:30:38.731154398Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-16T07:30:38.731159197Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-16T07:30:38.731160043Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:73:30)
+2025-12-16T07:30:38.731165752Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:232:26) {
+2025-12-16T07:30:38.731167036Z [err]      'openai-version': '2020-10-01',
+2025-12-16T07:30:38.731171635Z [err]    status: 400,
+2025-12-16T07:30:38.731178598Z [err]    headers: {
+2025-12-16T07:30:38.731183819Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-16T07:30:38.731188443Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-16T07:30:38.731193103Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-16T07:30:38.731197209Z [err]      'cf-ray': '9aec79ff5a6275ca-SEA',
+2025-12-16T07:30:38.731201439Z [err]      connection: 'keep-alive',
+2025-12-16T07:30:38.731205712Z [err]      'content-length': '245',
+2025-12-16T07:30:38.731211434Z [err]      'content-type': 'application/json',
+2025-12-16T07:30:38.731691107Z [err]      server: 'cloudflare',
+2025-12-16T07:30:38.731702679Z [err]      'set-cookie': '__cf_bm=0AMWPvpfc8Fxdhde0e_x0Y1bEaulHKpC_xuTJn9YDP0-1765870238-1.0.1.1-kbvl3EwPfSkFjADFXrxle8kP9uOkFw2pf97m1tWsJ9UAuxS.Y.filjXgozKMwtJzBTMxUgpLY.iwqQFZ3HTJ5_kceufPIMWiaLLuCJFcGjA; path=/; expires=Tue, 16-Dec-25 08:00:38 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=uQBHJeSvL05ZnE3F6sdHCbi7xZ5FhXnhVSEEWwwnNAU-1765870238708-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-16T07:30:38.731711137Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-16T07:30:38.731719034Z [err]      'x-content-type-options': 'nosniff',
+2025-12-16T07:30:38.731727135Z [err]      'x-envoy-upstream-service-time': '23',
+2025-12-16T07:30:38.731736114Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-16T07:30:38.731741338Z [err]      'x-ratelimit-limit-requests': '5000',
+2025-12-16T07:30:38.731746668Z [err]      'x-ratelimit-limit-tokens': '2000000',
+2025-12-16T07:30:38.731751552Z [err]      'x-ratelimit-remaining-requests': '4999',
+2025-12-16T07:30:38.731756229Z [err]      'x-ratelimit-remaining-tokens': '1997894',
+2025-12-16T07:30:38.731759928Z [err]      'x-ratelimit-reset-requests': '12ms',
+2025-12-16T07:30:38.731763954Z [err]      'x-ratelimit-reset-tokens': '63ms',
+2025-12-16T07:30:38.731769785Z [err]      'x-request-id': 'req_be13b3741cb64f5fa76eb2d81318868f'
+2025-12-16T07:30:38.731776417Z [err]    },
+2025-12-16T07:30:38.731783267Z [err]    request_id: 'req_be13b3741cb64f5fa76eb2d81318868f',
+2025-12-16T07:30:38.731789719Z [err]    error: {
+2025-12-16T07:30:38.731796879Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-16T07:30:38.731805034Z [err]      type: 'invalid_request_error',
+2025-12-16T07:30:38.731816068Z [err]      param: 'max_tokens',
+2025-12-16T07:30:38.732287871Z [err]      code: 'unsupported_parameter'
+2025-12-16T07:30:38.732290695Z [err]      'cf-ray': '9aec79ff4dabd446-SEA',
+2025-12-16T07:30:38.732300648Z [err]    },
+2025-12-16T07:30:38.732301169Z [err]      connection: 'keep-alive',
+2025-12-16T07:30:38.732311006Z [err]    code: 'unsupported_parameter',
+2025-12-16T07:30:38.732312089Z [err]      'content-length': '245',
+2025-12-16T07:30:38.732313335Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:73:30)
+2025-12-16T07:30:38.732317995Z [err]    param: 'max_tokens',
+2025-12-16T07:30:38.732323536Z [err]    type: 'invalid_request_error'
+2025-12-16T07:30:38.732327856Z [err]  }
+2025-12-16T07:30:38.732332694Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:232:26) {
+2025-12-16T07:30:38.732333036Z [inf]  [Engine] BTCUSDT: HOLD (0%)
+2025-12-16T07:30:38.732338417Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:38.732343837Z [err]    status: 400,
+2025-12-16T07:30:38.732347612Z [err]  [GPT] Analysis error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-16T07:30:38.732353044Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-16T07:30:38.732354269Z [err]    headers: {
+2025-12-16T07:30:38.732357938Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-16T07:30:38.732364080Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-16T07:30:38.732364106Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-16T07:30:38.732368589Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-16T07:30:38.732373104Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-16T07:30:38.732380407Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-16T07:30:38.733316804Z [err]      'x-ratelimit-remaining-requests': '4999',
+2025-12-16T07:30:38.733323599Z [err]      'x-ratelimit-remaining-tokens': '1997908',
+2025-12-16T07:30:38.733327779Z [err]      'x-ratelimit-reset-requests': '12ms',
+2025-12-16T07:30:38.733330995Z [err]      'content-type': 'application/json',
+2025-12-16T07:30:38.733332693Z [err]      'x-ratelimit-reset-tokens': '62ms',
+2025-12-16T07:30:38.733338656Z [err]      'x-request-id': 'req_19873d08ff9948579ab5e5ccc9a6f854'
+2025-12-16T07:30:38.733343036Z [err]      date: 'Tue, 16 Dec 2025 07:30:38 GMT',
+2025-12-16T07:30:38.733350807Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-16T07:30:38.733357722Z [err]      'openai-processing-ms': '9',
+2025-12-16T07:30:38.733365928Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-16T07:30:38.733373713Z [err]      'openai-version': '2020-10-01',
+2025-12-16T07:30:38.733380914Z [err]      server: 'cloudflare',
+2025-12-16T07:30:38.733387985Z [err]      'set-cookie': '__cf_bm=7dGXCzv870Z7LzLZ6mCt0qU7_mRayI19sb3ZvJYsOlY-1765870238-1.0.1.1-L02yrKisKW5QGdMPkyI4_NIgRcFPwtZWRdgR20UvIqSIJDOSxCMdJeOwEA.TzW5FNWPDXayEcoccwIfDCN_13zybg.TO.TdlveLvMJoigdM; path=/; expires=Tue, 16-Dec-25 08:00:38 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=pNVB5HAVzMU_Iwx7CFracXRTNcaMtcBAe10Vqc9a4yw-1765870238718-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-16T07:30:38.733395516Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-16T07:30:38.733402939Z [err]      'x-content-type-options': 'nosniff',
+2025-12-16T07:30:38.733410476Z [err]      'x-envoy-upstream-service-time': '24',
+2025-12-16T07:30:38.733418143Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-16T07:30:38.733425181Z [err]      'x-ratelimit-limit-requests': '5000',
+2025-12-16T07:30:38.733432778Z [err]      'x-ratelimit-limit-tokens': '2000000',
+2025-12-16T07:30:38.733808501Z [err]    },
+2025-12-16T07:30:38.733813265Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:232:26) {
+2025-12-16T07:30:38.733816649Z [err]    type: 'invalid_request_error'
+2025-12-16T07:30:38.733825606Z [err]    request_id: 'req_19873d08ff9948579ab5e5ccc9a6f854',
+2025-12-16T07:30:38.733825711Z [err]    status: 400,
+2025-12-16T07:30:38.733827962Z [err]  }
+2025-12-16T07:30:38.733834785Z [inf]  [Engine] SOLUSDT: HOLD (0%)
+2025-12-16T07:30:38.733838189Z [err]    error: {
+2025-12-16T07:30:38.733841102Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:38.733849112Z [err]  [GPT] Analysis error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-16T07:30:38.733849705Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-16T07:30:38.733854623Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-16T07:30:38.733859786Z [err]      type: 'invalid_request_error',
+2025-12-16T07:30:38.733860772Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-16T07:30:38.733866416Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-16T07:30:38.733870042Z [err]      param: 'max_tokens',
+2025-12-16T07:30:38.733872937Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-16T07:30:38.733878028Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:73:30)
+2025-12-16T07:30:38.733880122Z [err]      code: 'unsupported_parameter'
+2025-12-16T07:30:38.733888605Z [err]    },
+2025-12-16T07:30:38.733896241Z [err]    code: 'unsupported_parameter',
+2025-12-16T07:30:38.733903824Z [err]    param: 'max_tokens',
+2025-12-16T07:30:38.734336724Z [err]    headers: {
+2025-12-16T07:30:38.734341183Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-16T07:30:38.734345416Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-16T07:30:38.734349145Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-16T07:30:38.734352868Z [err]      'cf-ray': '9aec79ff5a78753f-SEA',
+2025-12-16T07:30:38.734356760Z [err]      connection: 'keep-alive',
+2025-12-16T07:30:38.734361628Z [err]      'content-length': '245',
+2025-12-16T07:30:38.734365206Z [err]      'content-type': 'application/json',
+2025-12-16T07:30:38.734369149Z [err]      date: 'Tue, 16 Dec 2025 07:30:38 GMT',
+2025-12-16T07:30:38.734373163Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-16T07:30:38.734378313Z [err]      'openai-processing-ms': '8',
+2025-12-16T07:30:38.734382344Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-16T07:30:38.734386192Z [err]      'openai-version': '2020-10-01',
+2025-12-16T07:30:38.734390282Z [err]      server: 'cloudflare',
+2025-12-16T07:30:38.734393948Z [err]      'set-cookie': '__cf_bm=.5l3CwpeK3cFSgQfcE9Q54OYhktbzWDcNmV.YQ.OQQM-1765870238-1.0.1.1-KGoNzMk0UlvNXjy9w1E6DNC5BKAswiWLrXX0t1CbG5brPaPMRQ1F2TTKPoOVpUsZJWnb08YD4P8AUjZUAP_rYfGDIeOEGB5X3wdJSrpA_Sw; path=/; expires=Tue, 16-Dec-25 08:00:38 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=noDWWsd1tdSgznZgrIJxJ1zyIlzjrA.xnZCknODXuS8-1765870238721-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-16T07:30:38.734398345Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-16T07:30:38.734402339Z [err]      'x-content-type-options': 'nosniff',
+2025-12-16T07:30:38.734406519Z [err]      'x-envoy-upstream-service-time': '26',
+2025-12-16T07:30:38.734410497Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-16T07:30:38.734415853Z [err]      'x-ratelimit-limit-requests': '5000',
+2025-12-16T07:30:38.734886752Z [inf]  [Engine] XRPUSDT: HOLD (0%)
+2025-12-16T07:30:38.734888934Z [err]    },
+2025-12-16T07:30:38.734888984Z [err]    request_id: 'req_a3d3aebc5280463a9128939db5e3f220',
+2025-12-16T07:30:38.734898018Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:38.734900986Z [err]    error: {
+2025-12-16T07:30:38.734902982Z [err]    code: 'unsupported_parameter',
+2025-12-16T07:30:38.734904108Z [err]      'x-ratelimit-limit-tokens': '2000000',
+2025-12-16T07:30:38.734910341Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-16T07:30:38.734914491Z [err]    param: 'max_tokens',
+2025-12-16T07:30:38.734919534Z [err]      'x-ratelimit-remaining-requests': '4999',
+2025-12-16T07:30:38.734920579Z [err]      type: 'invalid_request_error',
+2025-12-16T07:30:38.734928624Z [err]    type: 'invalid_request_error'
+2025-12-16T07:30:38.734930160Z [err]      param: 'max_tokens',
+2025-12-16T07:30:38.734931136Z [err]      'x-ratelimit-remaining-tokens': '1997911',
+2025-12-16T07:30:38.734940578Z [err]      code: 'unsupported_parameter'
+2025-12-16T07:30:38.734941164Z [err]  }
+2025-12-16T07:30:38.734942756Z [err]      'x-ratelimit-reset-requests': '12ms',
+2025-12-16T07:30:38.734951596Z [err]      'x-ratelimit-reset-tokens': '62ms',
+2025-12-16T07:30:38.734957541Z [err]      'x-request-id': 'req_a3d3aebc5280463a9128939db5e3f220'
+2025-12-16T07:30:38.734963879Z [err]    },
+2025-12-16T07:30:38.778751116Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.825613646Z [err]  [GPT] Analysis error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-16T07:30:38.825623806Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-16T07:30:38.825629794Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-16T07:30:38.825635191Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-16T07:30:38.825640695Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-16T07:30:38.825647253Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:73:30)
+2025-12-16T07:30:38.825653183Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:232:26) {
+2025-12-16T07:30:38.825659009Z [err]    status: 400,
+2025-12-16T07:30:38.825664576Z [err]    headers: {
+2025-12-16T07:30:38.825669912Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-16T07:30:38.825676192Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-16T07:30:38.825682093Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-16T07:30:38.825686950Z [err]      'cf-ray': '9aec79ffeac3a328-SEA',
+2025-12-16T07:30:38.825691692Z [err]      connection: 'keep-alive',
+2025-12-16T07:30:38.825697208Z [err]      'content-length': '245',
+2025-12-16T07:30:38.825701990Z [err]      'content-type': 'application/json',
+2025-12-16T07:30:38.825707359Z [err]      date: 'Tue, 16 Dec 2025 07:30:38 GMT',
+2025-12-16T07:30:38.825712470Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-16T07:30:38.825716811Z [err]      'openai-processing-ms': '9',
+2025-12-16T07:30:38.825721850Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-16T07:30:38.825728201Z [err]      'openai-version': '2020-10-01',
+2025-12-16T07:30:38.825733757Z [err]      server: 'cloudflare',
+2025-12-16T07:30:38.825738807Z [err]      'set-cookie': '__cf_bm=A2rkredsEi5Vhh8KHuyS0p3VYWdMijuF7qQStosh2qw-1765870238-1.0.1.1-TB4O_.KyDFIdHdYacYFnsd3k.iWC5mL5XHAJ.nYXTueTgnmmKP7CPV5NNdIkH_1iu.v452dzrryPvHffRiKKqEQGD1.lN47VC5w6J6mykmQ; path=/; expires=Tue, 16-Dec-25 08:00:38 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=eG_ZHFQRrGfBqX1AT2Wx_QR4Szpqc_JFibGuAdc4DdQ-1765870238809-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-16T07:30:38.825745646Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-16T07:30:38.825751206Z [err]      'x-content-type-options': 'nosniff',
+2025-12-16T07:30:38.825755641Z [err]      'x-envoy-upstream-service-time': '22',
+2025-12-16T07:30:38.825760578Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-16T07:30:38.825765361Z [err]      'x-ratelimit-limit-requests': '5000',
+2025-12-16T07:30:38.825770038Z [err]      'x-ratelimit-limit-tokens': '2000000',
+2025-12-16T07:30:38.825774670Z [err]      'x-ratelimit-remaining-requests': '4999',
+2025-12-16T07:30:38.825780224Z [err]      'x-ratelimit-remaining-tokens': '1997901',
+2025-12-16T07:30:38.825786456Z [err]      'x-ratelimit-reset-requests': '12ms',
+2025-12-16T07:30:38.825790719Z [err]      'x-ratelimit-reset-tokens': '62ms',
+2025-12-16T07:30:38.825796018Z [err]      'x-request-id': 'req_86628e97c30e4ee3ae7c7f9bb3dc5645'
+2025-12-16T07:30:38.825800608Z [err]    },
+2025-12-16T07:30:38.825804749Z [err]    request_id: 'req_86628e97c30e4ee3ae7c7f9bb3dc5645',
+2025-12-16T07:30:38.825809187Z [err]    error: {
+2025-12-16T07:30:38.825813619Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-16T07:30:38.825818085Z [err]      type: 'invalid_request_error',
+2025-12-16T07:30:38.825822307Z [err]      param: 'max_tokens',
+2025-12-16T07:30:38.826098460Z [err]      code: 'unsupported_parameter'
+2025-12-16T07:30:38.826105509Z [err]    },
+2025-12-16T07:30:38.826111420Z [err]    code: 'unsupported_parameter',
+2025-12-16T07:30:38.826117609Z [err]    param: 'max_tokens',
+2025-12-16T07:30:38.826121899Z [err]    type: 'invalid_request_error'
+2025-12-16T07:30:38.826128537Z [err]  }
+2025-12-16T07:30:38.826133536Z [inf]  [Engine] BNBUSDT: HOLD (0%)
+2025-12-16T07:30:38.826138153Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:38.841426296Z [err]  [GPT] Analysis error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-16T07:30:38.841426663Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-16T07:30:38.841434736Z [err]      'openai-version': '2020-10-01',
+2025-12-16T07:30:38.841435623Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-16T07:30:38.841444862Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-16T07:30:38.841449362Z [err]      'content-length': '245',
+2025-12-16T07:30:38.841455951Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-16T07:30:38.841463904Z [err]      'content-type': 'application/json',
+2025-12-16T07:30:38.841466749Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-16T07:30:38.841474918Z [err]      date: 'Tue, 16 Dec 2025 07:30:38 GMT',
+2025-12-16T07:30:38.841477002Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:73:30)
+2025-12-16T07:30:38.841478174Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-16T07:30:38.841485711Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-16T07:30:38.841487512Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:232:26) {
+2025-12-16T07:30:38.841495494Z [err]      'openai-processing-ms': '8',
+2025-12-16T07:30:38.841497856Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-16T07:30:38.841498709Z [err]    status: 400,
+2025-12-16T07:30:38.841509528Z [err]    headers: {
+2025-12-16T07:30:38.841513033Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-16T07:30:38.841523205Z [err]      'cf-ray': '9aec7a001e10d446-SEA',
+2025-12-16T07:30:38.841538555Z [err]      connection: 'keep-alive',
+2025-12-16T07:30:38.842036278Z [err]      server: 'cloudflare',
+2025-12-16T07:30:38.842045434Z [err]      'set-cookie': '__cf_bm=jtJ2lnepue.wb5xHgdU_t.mQBjcS4P97uNwFv1d0lS8-1765870238-1.0.1.1-Ian61WQnyQEqeY36.Gg9q34n4zYbq7pSPLq76yhwGuszuhjQ5y3iAwb7qtFROPPiqJOqt3PZXbhLeCyW4xyOuA.bEEMBYN0mS34NFGWkdoQ; path=/; expires=Tue, 16-Dec-25 08:00:38 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=qJ0HleUoYo8VO_SLXjzDoBYdWchS5nJTmptOM26WGPI-1765870238834-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-16T07:30:38.842053652Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-16T07:30:38.842061843Z [err]      'x-content-type-options': 'nosniff',
+2025-12-16T07:30:38.842070678Z [err]      'x-envoy-upstream-service-time': '28',
+2025-12-16T07:30:38.842079076Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-16T07:30:38.842087357Z [err]      'x-ratelimit-limit-requests': '5000',
+2025-12-16T07:30:38.842099190Z [err]      'x-ratelimit-limit-tokens': '2000000',
+2025-12-16T07:30:38.842106873Z [err]      'x-ratelimit-remaining-requests': '4999',
+2025-12-16T07:30:38.842114860Z [err]      'x-ratelimit-remaining-tokens': '1997849',
+2025-12-16T07:30:38.842122277Z [err]      'x-ratelimit-reset-requests': '12ms',
+2025-12-16T07:30:38.842128394Z [err]      'x-ratelimit-reset-tokens': '64ms',
+2025-12-16T07:30:38.842134285Z [err]      'x-request-id': 'req_accb1e95c92844c0ae892bad88c8531b'
+2025-12-16T07:30:38.842140807Z [err]    },
+2025-12-16T07:30:38.842147536Z [err]    request_id: 'req_accb1e95c92844c0ae892bad88c8531b',
+2025-12-16T07:30:38.842155227Z [err]    error: {
+2025-12-16T07:30:38.842166111Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-16T07:30:38.842174680Z [err]      type: 'invalid_request_error',
+2025-12-16T07:30:38.842189102Z [err]      param: 'max_tokens',
+2025-12-16T07:30:38.842431312Z [err]      code: 'unsupported_parameter'
+2025-12-16T07:30:38.842439138Z [err]    },
+2025-12-16T07:30:38.842445556Z [err]    code: 'unsupported_parameter',
+2025-12-16T07:30:38.842451228Z [err]    param: 'max_tokens',
+2025-12-16T07:30:38.842457201Z [err]    type: 'invalid_request_error'
+2025-12-16T07:30:38.842463201Z [err]  }
+2025-12-16T07:30:38.842468948Z [inf]  [Engine] LINKUSDT: HOLD (0%)
+2025-12-16T07:30:38.842475380Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:38.871839523Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:38.997128584Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.007161671Z [inf]  [Engine] 🧠 Learned: En señales indefinidas/N/A, no abrir longs; esperar confirmación de momentum o imbalance del order book antes de entrar.
+2025-12-16T07:30:39.049277091Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.125663518Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.150725420Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.266711777Z [err]      'content-type': 'application/json',
+2025-12-16T07:30:39.266723733Z [err]      date: 'Tue, 16 Dec 2025 07:30:39 GMT',
+2025-12-16T07:30:39.266733190Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-16T07:30:39.266744224Z [err]      'openai-processing-ms': '11',
+2025-12-16T07:30:39.266747738Z [err]  [GPT] Analysis error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-16T07:30:39.266759446Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-16T07:30:39.266759514Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-16T07:30:39.266768943Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-16T07:30:39.266773986Z [err]      'openai-version': '2020-10-01',
+2025-12-16T07:30:39.266779209Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-16T07:30:39.266784097Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-16T07:30:39.266789763Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:73:30)
+2025-12-16T07:30:39.266794458Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:232:26) {
+2025-12-16T07:30:39.266801217Z [err]    status: 400,
+2025-12-16T07:30:39.266807058Z [err]    headers: {
+2025-12-16T07:30:39.266813777Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-16T07:30:39.266820516Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-16T07:30:39.266826366Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-16T07:30:39.266832169Z [err]      'cf-ray': '9aec7a023aa2ba24-SEA',
+2025-12-16T07:30:39.266838322Z [err]      connection: 'keep-alive',
+2025-12-16T07:30:39.266844125Z [err]      'content-length': '245',
+2025-12-16T07:30:39.268057841Z [err]    },
+2025-12-16T07:30:39.268067014Z [err]      'x-ratelimit-limit-requests': '5000',
+2025-12-16T07:30:39.268070183Z [err]    request_id: 'req_17bfe5361945451ebbb1776b7f8662fb',
+2025-12-16T07:30:39.268096606Z [err]      'x-ratelimit-limit-tokens': '2000000',
+2025-12-16T07:30:39.268106190Z [err]      server: 'cloudflare',
+2025-12-16T07:30:39.268110895Z [err]      'x-ratelimit-remaining-requests': '4999',
+2025-12-16T07:30:39.268118164Z [err]      'set-cookie': '__cf_bm=jVLlqXyceMAZ9_fjnasp3dunqq_JgHmRRQFJFGfPmxw-1765870239-1.0.1.1-N8omiGTqN5IwCsGOhBx14KLLVVDBjtp0flxG8h4foYDorGQtcqV8k3vyrOLYLHVDV3.s.3JUisoam8vsgIsrLY7E523m0H21ysTEDEi7oMA; path=/; expires=Tue, 16-Dec-25 08:00:39 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=We6afs2thF5zXFH7z1sJFTonPgeWccbX21UKdSh2hqA-1765870239180-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-16T07:30:39.268123467Z [err]      'x-ratelimit-remaining-tokens': '1997788',
+2025-12-16T07:30:39.268130183Z [err]    error: {
+2025-12-16T07:30:39.268133851Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-16T07:30:39.268137435Z [err]      'x-ratelimit-reset-requests': '12ms',
+2025-12-16T07:30:39.268141386Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-16T07:30:39.268149999Z [err]      'x-ratelimit-reset-tokens': '66ms',
+2025-12-16T07:30:39.268155349Z [err]      'x-content-type-options': 'nosniff',
+2025-12-16T07:30:39.268161255Z [err]      'x-request-id': 'req_17bfe5361945451ebbb1776b7f8662fb'
+2025-12-16T07:30:39.268170193Z [err]      'x-envoy-upstream-service-time': '25',
+2025-12-16T07:30:39.268180319Z [err]      code: 'unsupported_parameter'
+2025-12-16T07:30:39.268180945Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-16T07:30:39.268190118Z [err]    },
+2025-12-16T07:30:39.268198871Z [err]    code: 'unsupported_parameter',
+2025-12-16T07:30:39.268207230Z [err]    param: 'max_tokens',
+2025-12-16T07:30:39.268216401Z [err]    type: 'invalid_request_error'
+2025-12-16T07:30:39.268224746Z [err]  }
+2025-12-16T07:30:39.268232073Z [inf]  [Engine] ETHUSDT: HOLD (0%)
+2025-12-16T07:30:39.268240442Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:39.268248042Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.268894724Z [err]      type: 'invalid_request_error',
+2025-12-16T07:30:39.268905816Z [err]      param: 'max_tokens',
+2025-12-16T07:30:39.365648819Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.391230526Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.427426894Z [inf]  [Engine] ❌ Position closed: SOLUSDT | PnL: -0.31% ($-2.51) | Reason: tp
+2025-12-16T07:30:39.427432232Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.486634770Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.617847885Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.639002160Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:39.929066987Z [inf]  [Engine] 🧠 Learned: En ausencia de confirmación (RSI/OB=0%), no entrar long; esperar confirmación de tendencia o prueba de liquidez antes de operar.
+2025-12-16T07:30:39.967474558Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.014642176Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.045908301Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.112481929Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.430951482Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.430979567Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.430980527Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.431018473Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.431020873Z [inf]  [Engine] ❌ Position closed: BTCUSDT | PnL: -0.21% ($-5.85) | Reason: tp
+2025-12-16T07:30:40.582605542Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.582651036Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.624475622Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.624485036Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.649742541Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.702852622Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.702862522Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.784511545Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.804228965Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.865983962Z [inf]  [Engine] 🧠 Learned: En TP muy ajustado y sin confirmación, usar trailing stop o ampliar TP según volatilidad para dejar correr ganancias.
+2025-12-16T07:30:40.870253017Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:40.910398227Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.034134190Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.038283917Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.075548195Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.146894772Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.253162864Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.253169796Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.255099284Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.297149990Z [inf]  [Engine] ✅ Position closed: LINKUSDT | PnL: +0.01% ($0.03) | Reason: tp
+2025-12-16T07:30:41.406440777Z [inf]  [Engine] ❌ Position closed: XRPUSDT | PnL: -0.21% ($-7.04) | Reason: tp
+2025-12-16T07:30:41.425943711Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.435407630Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.536518836Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.536522812Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.544719294Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.619997477Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.625002797Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.695288007Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.833151122Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.857362540Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:41.917416349Z [inf]  [Engine] 🧠 Learned: En OBI=0% y sin indicadores confirmatorios, no entrar; esperar OBI significativo o confirmación técnica.
+2025-12-16T07:30:42.036525783Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:42.131954492Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:42.373130750Z [inf]  [Engine] ❌ Position closed: BNBUSDT | PnL: -0.29% ($-1.76) | Reason: tp
+2025-12-16T07:30:42.547013047Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:42.797053185Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:42.880407678Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:30:43.147233112Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.165915097Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.271165950Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.271195082Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.271203430Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.271209579Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.271304291Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.271311093Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.271317147Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.282765523Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.329490704Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.341971953Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.341979999Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.341987488Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.342607713Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.342613728Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.347179825Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.351692064Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.371759836Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.384792406Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.404033162Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.408473622Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.414489522Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.415958370Z [inf]  [Memory] ✅ Trade ETHUSDT persisted to DB (PnL: -0.48%)
+2025-12-16T07:30:43.420725781Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.431419635Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.440049716Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.444988212Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.458555007Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.479587800Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.479592106Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.490863802Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.511881106Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.522449884Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.528194272Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.533716150Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.538492589Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.553093690Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.572759507Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.730838932Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.751199924Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.809564543Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.809574677Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.814000166Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:43.857009190Z [inf]  [Engine] ❌ Position closed: ETHUSDT | PnL: -0.47% ($-0.65) | Reason: tp
+2025-12-16T07:30:44.090285371Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.284380368Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.284387692Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.298830990Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.309198356Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.309689795Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.314528187Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.323279275Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.333346534Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.353392713Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.357866764Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.368043866Z [inf]      "refusal": null,
+2025-12-16T07:30:44.368050189Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.368053060Z [inf]      "annotations": []
+2025-12-16T07:30:44.368060300Z [inf]    },
+2025-12-16T07:30:44.368062451Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.368068409Z [inf]    "finish_reason": "stop"
+2025-12-16T07:30:44.368071860Z [inf]  [GPT-Screen] DOGEUSDT full response: {
+2025-12-16T07:30:44.368077377Z [inf]  }
+2025-12-16T07:30:44.368080602Z [inf]    "index": 0,
+2025-12-16T07:30:44.368086900Z [inf]  [GPT-Screen] DOGEUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T07:30:44.368088804Z [inf]    "message": {
+2025-12-16T07:30:44.368097143Z [inf]  [Engine] DOGEUSDT: No opportunity (score: 25) - skipping full analysis
+2025-12-16T07:30:44.368097434Z [inf]      "role": "assistant",
+2025-12-16T07:30:44.368106430Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 25}",
+2025-12-16T07:30:44.372778865Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.372782834Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.418472015Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.428496314Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.484658209Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.522803993Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.764025660Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.785104094Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.821736865Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.821743523Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.832818196Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.839016086Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.844089596Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:44.882236754Z [err]  [Engine] Failed to close position: Request failed with status code 400
+2025-12-16T07:30:46.091053797Z [inf]  [GPT-Screen] ARBUSDT full response: {
+2025-12-16T07:30:46.091068980Z [inf]    "index": 0,
+2025-12-16T07:30:46.091077731Z [inf]    "message": {
+2025-12-16T07:30:46.091085748Z [inf]      "role": "assistant",
+2025-12-16T07:30:46.091093223Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 78}",
+2025-12-16T07:30:46.091101165Z [inf]      "refusal": null,
+2025-12-16T07:30:46.091107470Z [inf]      "annotations": []
+2025-12-16T07:30:46.091114093Z [inf]    },
+2025-12-16T07:30:46.091121019Z [inf]    "finish_reason": "stop"
+2025-12-16T07:30:46.091130229Z [inf]  }
+2025-12-16T07:30:46.091138877Z [inf]  [GPT-Screen] ARBUSDT: score=78, direction=SELL, hasOpp=true
+2025-12-16T07:30:46.091146119Z [inf]  [Engine] ARBUSDT: Opportunity detected! (score: 78, direction: SELL)
+2025-12-16T07:30:46.091152759Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T07:30:46.091160114Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T07:30:46.324912798Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T07:30:46.672162171Z [inf]  [GPT-Screen] SUIUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T07:30:46.672173050Z [inf]  [Engine] SUIUSDT: No opportunity (score: 20) - skipping full analysis
+2025-12-16T07:30:46.672213410Z [inf]  [GPT-Screen] SUIUSDT full response: {
+2025-12-16T07:30:46.672217744Z [inf]    "index": 0,
+2025-12-16T07:30:46.672221492Z [inf]    "message": {
+2025-12-16T07:30:46.672225694Z [inf]      "role": "assistant",
+2025-12-16T07:30:46.672229461Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 20}",
+2025-12-16T07:30:46.672233061Z [inf]      "refusal": null,
+2025-12-16T07:30:46.672237590Z [inf]      "annotations": []
+2025-12-16T07:30:46.672241919Z [inf]    },
+2025-12-16T07:30:46.672246583Z [inf]    "finish_reason": "stop"
+2025-12-16T07:30:46.672251259Z [inf]  }
+2025-12-16T07:30:46.797146875Z [err]    status: 400,
+2025-12-16T07:30:46.797156065Z [err]    headers: {
+2025-12-16T07:30:46.797161705Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-16T07:30:46.797166159Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-16T07:30:46.797170700Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-16T07:30:46.797175754Z [err]      'cf-ray': '9aec7a31bc157642-SEA',
+2025-12-16T07:30:46.797180482Z [err]      connection: 'keep-alive',
+2025-12-16T07:30:46.797185368Z [err]      'content-length': '245',
+2025-12-16T07:30:46.797189959Z [err]      'content-type': 'application/json',
+2025-12-16T07:30:46.797194244Z [err]      date: 'Tue, 16 Dec 2025 07:30:46 GMT',
+2025-12-16T07:30:46.797198312Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-16T07:30:46.797202740Z [err]      'openai-processing-ms': '10',
+2025-12-16T07:30:46.797207572Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-16T07:30:46.797212162Z [err]      'openai-version': '2020-10-01',
+2025-12-16T07:30:46.797362933Z [err]  [GPT] Analysis error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-16T07:30:46.797371663Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-16T07:30:46.797379784Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-16T07:30:46.797387189Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-16T07:30:46.797394898Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-16T07:30:46.797402512Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:73:30)
+2025-12-16T07:30:46.797405810Z [err]      server: 'cloudflare',
+2025-12-16T07:30:46.797412135Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:232:26) {
+2025-12-16T07:30:46.797413565Z [err]      'set-cookie': '__cf_bm=.Z.9sqKAcl73mk53vgYKO6bdbSD9_KinMvRihIZlnmQ-1765870246-1.0.1.1-qH15KW.RSHopfDGjG.206SzNT.DonP5f947DlRYiubj0oJtZmLKwg.75jvchPYwjFwRJT5_J2rdGGZWAninXFx0FFME9I6GDit3r6vCf36Y; path=/; expires=Tue, 16-Dec-25 08:00:46 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=yofZtFOnO69bGcLP8qY8CJa_ddDHZeKlRuxUjitnaMI-1765870246775-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-16T07:30:46.797419958Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-16T07:30:46.797427784Z [err]      'x-content-type-options': 'nosniff',
+2025-12-16T07:30:46.797435247Z [err]      'x-envoy-upstream-service-time': '24',
+2025-12-16T07:30:46.797442549Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-16T07:30:46.797448485Z [err]      'x-ratelimit-limit-requests': '5000',
+2025-12-16T07:30:46.797453608Z [err]      'x-ratelimit-limit-tokens': '2000000',
+2025-12-16T07:30:46.797462090Z [err]      'x-ratelimit-remaining-requests': '4999',
+2025-12-16T07:30:46.797466915Z [err]      'x-ratelimit-remaining-tokens': '1997731',
+2025-12-16T07:30:46.797471289Z [err]      'x-ratelimit-reset-requests': '12ms',
+2025-12-16T07:30:46.797475431Z [err]      'x-ratelimit-reset-tokens': '68ms',
+2025-12-16T07:30:46.797480014Z [err]      'x-request-id': 'req_fc511bf8306a4a66a8494c2c9ab0b5f0'
+2025-12-16T07:30:46.797484751Z [err]    },
+2025-12-16T07:30:46.797489810Z [err]    request_id: 'req_fc511bf8306a4a66a8494c2c9ab0b5f0',
+2025-12-16T07:30:46.797495332Z [err]    error: {
+2025-12-16T07:30:46.797499641Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-16T07:30:46.797503342Z [err]      type: 'invalid_request_error',
+2025-12-16T07:30:46.797507209Z [err]      param: 'max_tokens',
+2025-12-16T07:30:46.935515089Z [err]      code: 'unsupported_parameter'
+2025-12-16T07:30:46.935519759Z [err]    },
+2025-12-16T07:30:46.935525711Z [err]    code: 'unsupported_parameter',
+2025-12-16T07:30:46.935530216Z [err]    param: 'max_tokens',
+2025-12-16T07:30:46.935534680Z [err]    type: 'invalid_request_error'
+2025-12-16T07:30:46.935539960Z [err]  }
+2025-12-16T07:30:46.935544293Z [inf]  [Engine] ARBUSDT: HOLD (0%)
+2025-12-16T07:30:46.935548711Z [inf]  [Engine] ⚠️ ARBUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 78)
+2025-12-16T07:30:46.935553055Z [inf]  [Engine]   └─ Reason for rejection: Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:46.935557904Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:48.919563283Z [inf]  [Engine] 🧠 Learned from external close: En ausencia de confirmación de indicadores (RSI/regimen/imbalance), evitar entrar; esperar 2+ señales alineadas
+2025-12-16T07:30:48.919570588Z [inf]  [Engine] ❌ Position closed externally: ETHUSDT | PnL: -0.48% ($-0.66)
+2025-12-16T07:30:51.009805607Z [inf]  [GPT-Screen] OPUSDT full response: {
+2025-12-16T07:30:51.009812904Z [inf]    "index": 0,
+2025-12-16T07:30:51.009819177Z [inf]    "message": {
+2025-12-16T07:30:51.009824317Z [inf]      "role": "assistant",
+2025-12-16T07:30:51.009829360Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 62}",
+2025-12-16T07:30:51.009834709Z [inf]      "refusal": null,
+2025-12-16T07:30:51.009839475Z [inf]      "annotations": []
+2025-12-16T07:30:51.009844278Z [inf]    },
+2025-12-16T07:30:51.009848947Z [inf]    "finish_reason": "stop"
+2025-12-16T07:30:51.009856926Z [inf]  }
+2025-12-16T07:30:51.009864581Z [inf]  [GPT-Screen] OPUSDT: score=62, direction=SELL, hasOpp=true
+2025-12-16T07:30:51.009872782Z [inf]  [Engine] OPUSDT: Opportunity detected! (score: 62, direction: SELL)
+2025-12-16T07:30:51.009880014Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T07:30:51.009887695Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T07:30:51.010072364Z [inf]  [GPT-Screen] INJUSDT full response: {
+2025-12-16T07:30:51.010082411Z [inf]    "index": 0,
+2025-12-16T07:30:51.010091202Z [inf]    "message": {
+2025-12-16T07:30:51.010099556Z [inf]      "role": "assistant",
+2025-12-16T07:30:51.010107026Z [inf]      "content": "{\"hasOpportunity\": false, \"direction\": \"NONE\", \"score\": 45}",
+2025-12-16T07:30:51.010114354Z [inf]      "refusal": null,
+2025-12-16T07:30:51.010122473Z [inf]      "annotations": []
+2025-12-16T07:30:51.010130121Z [inf]    },
+2025-12-16T07:30:51.010138884Z [inf]    "finish_reason": "stop"
+2025-12-16T07:30:51.010146999Z [inf]  }
+2025-12-16T07:30:51.010155452Z [inf]  [GPT-Screen] INJUSDT: score=45, direction=NONE, hasOpp=false
+2025-12-16T07:30:51.010163392Z [inf]  [Engine] INJUSDT: No opportunity (score: 45) - skipping full analysis
+2025-12-16T07:30:51.112029149Z [inf]  [GPT-Screen] AVAXUSDT full response: {
+2025-12-16T07:30:51.112041738Z [inf]    "index": 0,
+2025-12-16T07:30:51.112052053Z [inf]    "message": {
+2025-12-16T07:30:51.112060968Z [inf]      "role": "assistant",
+2025-12-16T07:30:51.112069823Z [inf]      "content": "{\"hasOpportunity\": true, \"direction\": \"SELL\", \"score\": 75}",
+2025-12-16T07:30:51.112078694Z [inf]      "refusal": null,
+2025-12-16T07:30:51.112087503Z [inf]      "annotations": []
+2025-12-16T07:30:51.112095393Z [inf]    },
+2025-12-16T07:30:51.112103645Z [inf]    "finish_reason": "stop"
+2025-12-16T07:30:51.112112279Z [inf]  }
+2025-12-16T07:30:51.112122388Z [inf]  [GPT-Screen] AVAXUSDT: score=75, direction=SELL, hasOpp=true
+2025-12-16T07:30:51.112131737Z [inf]  [Engine] AVAXUSDT: Opportunity detected! (score: 75, direction: SELL)
+2025-12-16T07:30:51.112140989Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T07:30:51.112148990Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T07:30:51.627273461Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-16T07:30:51.627286246Z [err]      'cf-ray': '9aec7a4e5c645802-SEA',
+2025-12-16T07:30:51.627295703Z [err]      connection: 'keep-alive',
+2025-12-16T07:30:51.627305249Z [err]      'content-length': '245',
+2025-12-16T07:30:51.627305453Z [err]      'content-type': 'application/json',
+2025-12-16T07:30:51.627312847Z [err]      date: 'Tue, 16 Dec 2025 07:30:51 GMT',
+2025-12-16T07:30:51.627315921Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-16T07:30:51.627320845Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-16T07:30:51.627322652Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:232:26) {
+2025-12-16T07:30:51.627326973Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-16T07:30:51.627327938Z [err]      'openai-processing-ms': '10',
+2025-12-16T07:30:51.627333856Z [err]    status: 400,
+2025-12-16T07:30:51.627336258Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-16T07:30:51.627337253Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-16T07:30:51.627344116Z [err]    headers: {
+2025-12-16T07:30:51.627344809Z [err]      'openai-version': '2020-10-01',
+2025-12-16T07:30:51.627345976Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:73:30)
+2025-12-16T07:30:51.627353105Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-16T07:30:51.627361195Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-16T07:30:51.627375991Z [err]    },
+2025-12-16T07:30:51.627380943Z [err]  [GPT] Analysis error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-16T07:30:51.627388017Z [err]    request_id: 'req_5588b3f382e14720b742f75a52886d42',
+2025-12-16T07:30:51.627389777Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-16T07:30:51.627402083Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-16T07:30:51.627407246Z [err]      'x-ratelimit-limit-tokens': '2000000',
+2025-12-16T07:30:51.627412227Z [err]      'x-ratelimit-limit-requests': '5000',
+2025-12-16T07:30:51.627431537Z [err]      'x-ratelimit-remaining-requests': '4999',
+2025-12-16T07:30:51.627438085Z [err]      server: 'cloudflare',
+2025-12-16T07:30:51.627439273Z [err]      'x-ratelimit-remaining-tokens': '1997722',
+2025-12-16T07:30:51.627447734Z [err]      'x-ratelimit-reset-requests': '12ms',
+2025-12-16T07:30:51.627452327Z [err]      'set-cookie': '__cf_bm=lhur9BRFILNTt3TMZ6BWc0ipwtqjlkXNYilIK4VtHfg-1765870251-1.0.1.1-2LJOpRea4Cz.56PrlLBfoIunNBh4xgzmGxsVQERcGeEisMGFYLFbmPDVvrTjXojGjZfNb7qbAE3BRIF5RbRAoUtb8jpIIqt20bCqiYCiSfs; path=/; expires=Tue, 16-Dec-25 08:00:51 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=V5XcEtkm9aP2DIalv_bssRTKEM91AXaJUZAlNT88vzM-1765870251351-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-16T07:30:51.627458541Z [err]      'x-ratelimit-reset-tokens': '68ms',
+2025-12-16T07:30:51.627465001Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-16T07:30:51.627467676Z [err]      'x-request-id': 'req_5588b3f382e14720b742f75a52886d42'
+2025-12-16T07:30:51.627475547Z [err]      'x-content-type-options': 'nosniff',
+2025-12-16T07:30:51.627483449Z [err]      'x-envoy-upstream-service-time': '23',
+2025-12-16T07:30:51.627601630Z [err]    error: {
+2025-12-16T07:30:51.627610788Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-16T07:30:51.627616439Z [err]      type: 'invalid_request_error',
+2025-12-16T07:30:51.627622936Z [err]      param: 'max_tokens',
+2025-12-16T07:30:51.912519236Z [err]      code: 'unsupported_parameter'
+2025-12-16T07:30:51.912525688Z [err]    },
+2025-12-16T07:30:51.912532350Z [err]    code: 'unsupported_parameter',
+2025-12-16T07:30:51.912539711Z [err]    param: 'max_tokens',
+2025-12-16T07:30:51.912569698Z [err]    type: 'invalid_request_error'
+2025-12-16T07:30:51.912576620Z [err]  }
+2025-12-16T07:30:51.912583354Z [inf]  [Engine] OPUSDT: HOLD (0%)
+2025-12-16T07:30:51.912593205Z [inf]  [Engine] ⚠️ OPUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 62)
+2025-12-16T07:30:51.912600424Z [inf]  [Engine]   └─ Reason for rejection: Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:51.912605817Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:51.921664943Z [err]  [GPT] Analysis error: BadRequestError: 400 Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.
+2025-12-16T07:30:51.921672833Z [err]      at APIError.generate (/app/node_modules/openai/error.js:45:20)
+2025-12-16T07:30:51.921682531Z [err]      at OpenAI.makeStatusError (/app/node_modules/openai/core.js:302:33)
+2025-12-16T07:30:51.921689894Z [err]      at OpenAI.makeRequest (/app/node_modules/openai/core.js:346:30)
+2025-12-16T07:30:51.921696816Z [err]      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-12-16T07:30:51.921703576Z [err]      at async GPTEngine.analyze (/app/bot/dist/services/gpt/engine.js:73:30)
+2025-12-16T07:30:51.921710399Z [err]      at async TradingEngine.analyzeAndDecide (/app/bot/dist/services/trading/engine.js:232:26) {
+2025-12-16T07:30:51.921717498Z [err]    status: 400,
+2025-12-16T07:30:51.921724944Z [err]    headers: {
+2025-12-16T07:30:51.921732814Z [err]      'access-control-expose-headers': 'X-Request-ID',
+2025-12-16T07:30:51.921740072Z [err]      'alt-svc': 'h3=":443"; ma=86400',
+2025-12-16T07:30:51.921747765Z [err]      'cf-cache-status': 'DYNAMIC',
+2025-12-16T07:30:51.921755304Z [err]      'cf-ray': '9aec7a50f8585802-SEA',
+2025-12-16T07:30:51.921763100Z [err]      connection: 'keep-alive',
+2025-12-16T07:30:51.921770689Z [err]      'content-length': '245',
+2025-12-16T07:30:51.921778207Z [err]      'content-type': 'application/json',
+2025-12-16T07:30:51.921785877Z [err]      date: 'Tue, 16 Dec 2025 07:30:51 GMT',
+2025-12-16T07:30:51.921794235Z [err]      'openai-organization': 'user-sc4mueayvzno2u0bcn1davmt',
+2025-12-16T07:30:51.921801074Z [err]      'openai-processing-ms': '9',
+2025-12-16T07:30:51.921808790Z [err]      'openai-project': 'proj_BKVG8TwStyCR5naH5uObXvzR',
+2025-12-16T07:30:51.921815902Z [err]      'openai-version': '2020-10-01',
+2025-12-16T07:30:51.922477362Z [err]      server: 'cloudflare',
+2025-12-16T07:30:51.922486099Z [err]      'set-cookie': '__cf_bm=CgRssc.yjEgr7MqJjM1KJQ.GiL7GXGXOUFtSJ7u8eR0-1765870251-1.0.1.1-Q0SRh90MAmAFgV4NhY6Duz.towkTiagdiSD0NanmJ8qbh70B60_w1ql78cbe2WjIfPOldk4lyZuNN033dY.5tlTujiNK4Z2HB2vFhMqvOpM; path=/; expires=Tue, 16-Dec-25 08:00:51 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=mtpKUEjwzd_Jk7rAUGw3wQpiig.ccQ9zkLn5CVXtVqc-1765870251763-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+2025-12-16T07:30:51.922491688Z [err]      'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+2025-12-16T07:30:51.922502441Z [err]      'x-content-type-options': 'nosniff',
+2025-12-16T07:30:51.922507499Z [err]      'x-envoy-upstream-service-time': '23',
+2025-12-16T07:30:51.922513317Z [err]      'x-openai-proxy-wasm': 'v0.1',
+2025-12-16T07:30:51.922517949Z [err]      'x-ratelimit-limit-requests': '5000',
+2025-12-16T07:30:51.922528451Z [err]      'x-ratelimit-limit-tokens': '2000000',
+2025-12-16T07:30:51.922532799Z [err]      'x-ratelimit-remaining-requests': '4999',
+2025-12-16T07:30:51.922537488Z [err]      'x-ratelimit-remaining-tokens': '1997734',
+2025-12-16T07:30:51.922542541Z [err]      'x-ratelimit-reset-requests': '12ms',
+2025-12-16T07:30:51.922547980Z [err]      'x-ratelimit-reset-tokens': '67ms',
+2025-12-16T07:30:51.922553298Z [err]      'x-request-id': 'req_4366138d8b644228afe58ffdbfd0b0fa'
+2025-12-16T07:30:51.922557393Z [err]    },
+2025-12-16T07:30:51.922561807Z [err]    request_id: 'req_4366138d8b644228afe58ffdbfd0b0fa',
+2025-12-16T07:30:51.922566089Z [err]    error: {
+2025-12-16T07:30:51.922570196Z [err]      message: "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.",
+2025-12-16T07:30:51.922578613Z [err]      type: 'invalid_request_error',
+2025-12-16T07:30:51.922583270Z [err]      param: 'max_tokens',
+2025-12-16T07:30:51.922587885Z [err]      code: 'unsupported_parameter'
+2025-12-16T07:30:51.922592765Z [err]    },
+2025-12-16T07:30:51.922602075Z [err]    code: 'unsupported_parameter',
+2025-12-16T07:30:51.922607083Z [err]    param: 'max_tokens',
+2025-12-16T07:30:51.922612607Z [err]    type: 'invalid_request_error'
+2025-12-16T07:30:51.922616936Z [err]  }
+2025-12-16T07:30:51.922620997Z [inf]  [Engine] AVAXUSDT: HOLD (0%)
+2025-12-16T07:30:51.922624822Z [inf]  [Engine] ⚠️ AVAXUSDT: GPT-5.2 said HOLD but screening detected SELL (score: 75)
+2025-12-16T07:30:51.922640840Z [inf]  [Engine]   └─ Reason for rejection: Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:51.922645937Z [inf]  [Engine]   └─ Error en análisis, mantener posición por seguridad...
+2025-12-16T07:30:52.895604126Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:31:02.882653912Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:31:22.884974472Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:31:22.894085288Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:31:32.893862261Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:31:52.928579610Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:31:52.928586981Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:32:12.881240527Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:32:12.881962980Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:32:32.879712080Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:32:32.904498486Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:32:52.895389518Z [inf]  [Binance] Fetched 0 position records, 0 active
+2025-12-16T07:32:52.966590430Z [inf]  [Binance] Fetched 0 position records, 0 active

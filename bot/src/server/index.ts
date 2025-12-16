@@ -32,16 +32,61 @@ app.get('/health', (req, res) => {
 });
 
 // Bot status
-app.get('/api/status', (req, res) => {
-  const state = tradingEngine.getState();
-  res.json({
-    isRunning: state.isRunning,
-    balance: state.balance,
-    todayPnl: state.todayPnl,
-    todayTrades: state.todayTrades,
-    openPositions: Array.from(state.currentPositions.values()),
-    symbols: tradingEngine.getSymbols(),
-  });
+app.get('/api/status', async (req, res) => {
+  try {
+    const state = tradingEngine.getState();
+
+    // Get positions from both bot memory AND Binance directly
+    let positions = Array.from(state.currentPositions.values());
+    let balance = state.balance;
+
+    // If bot memory is empty or balance is 0, fetch directly from Binance
+    if (positions.length === 0 || balance === 0) {
+      try {
+        const [binancePositions, balances] = await Promise.all([
+          binanceClient.getPositions(),
+          binanceClient.getBalance(),
+        ]);
+
+        if (positions.length === 0) {
+          positions = binancePositions.map((pos: any) => ({
+            symbol: pos.symbol,
+            side: parseFloat(pos.positionAmt) > 0 ? 'LONG' : 'SHORT',
+            entryPrice: parseFloat(pos.entryPrice),
+            quantity: Math.abs(parseFloat(pos.positionAmt)),
+            leverage: parseInt(pos.leverage) || 1,
+            stopLoss: 0,
+            takeProfit: 0,
+            entryTime: Date.now(),
+            gptConfidence: 0,
+            gptReasoning: 'Synced from Binance',
+            currentPrice: parseFloat(pos.markPrice),
+            pnl: parseFloat(pos.unRealizedProfit) / (parseFloat(pos.entryPrice) * Math.abs(parseFloat(pos.positionAmt))) * 100,
+          })).filter((p: any) => p.entryPrice > 0 && p.quantity > 0);
+          console.log(`[API] /status - Fetched ${positions.length} positions directly from Binance`);
+        }
+
+        if (balance === 0) {
+          const usdtBalance = balances.find((b: any) => b.asset === 'USDT');
+          balance = parseFloat(usdtBalance?.balance || '0');
+        }
+      } catch (binanceError: any) {
+        console.error('[API] Failed to fetch Binance data:', binanceError.message);
+      }
+    }
+
+    res.json({
+      isRunning: state.isRunning,
+      balance,
+      todayPnl: state.todayPnl,
+      todayTrades: state.todayTrades,
+      openPositions: positions,
+      symbols: tradingEngine.getSymbols(),
+    });
+  } catch (error: any) {
+    console.error('[API] /status error:', error.message);
+    res.status(500).json({ error: error.message });
+  }
 });
 
 // Get statistics

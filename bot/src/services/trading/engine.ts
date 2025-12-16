@@ -128,6 +128,8 @@ export class TradingEngine extends EventEmitter {
 
     // Check existing positions
     const positions = await binanceClient.getPositions();
+    console.log(`[Engine] Raw positions from Binance:`, positions.length > 0 ? JSON.stringify(positions, null, 2) : 'NONE');
+
     for (const pos of positions) {
       const entryPrice = parseFloat(pos.entryPrice);
       const quantity = Math.abs(parseFloat(pos.positionAmt));
@@ -137,6 +139,8 @@ export class TradingEngine extends EventEmitter {
         console.log(`[Engine] Skipping invalid position ${pos.symbol}: entryPrice=${entryPrice}, qty=${quantity}`);
         continue;
       }
+
+      console.log(`[Engine] ✓ Loading position: ${pos.symbol} ${parseFloat(pos.positionAmt) > 0 ? 'LONG' : 'SHORT'} @ $${entryPrice}`);
 
       const side = parseFloat(pos.positionAmt) > 0 ? 'LONG' : 'SHORT';
       this.state.currentPositions.set(pos.symbol, {
