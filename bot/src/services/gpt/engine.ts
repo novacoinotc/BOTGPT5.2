@@ -173,7 +173,7 @@ Criterios para oportunidad:
         model: this.screeningModel,
         messages: [{ role: 'user', content: prompt }],
         response_format: { type: 'json_object' },
-        max_completion_tokens: 900, // Increased - reasoning models need space to think
+        max_completion_tokens: 4000, // Reasoning models need more space
       });
 
       // Debug: Log full response structure
@@ -214,7 +214,7 @@ Criterios para oportunidad:
           { role: 'user', content: userPrompt },
         ],
         response_format: { type: 'json_object' },
-        max_completion_tokens: 2000,
+        max_completion_tokens: 8000, // No limit - let GPT think freely
       });
 
       const content = response.choices[0]?.message?.content;
@@ -645,7 +645,7 @@ Ejemplo: "En RSI>70 con funding alto, esperar confirmación de reversión antes 
       const response = await this.client.chat.completions.create({
         model: this.screeningModel, // Use cheap model for learning extraction
         messages: [{ role: 'user', content: prompt }],
-        max_completion_tokens: 500, // Reasoning models need more tokens
+        max_completion_tokens: 2000, // Enough for learning extraction
       });
 
       const lesson = response.choices[0]?.message?.content?.trim() || '';

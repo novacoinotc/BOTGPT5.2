@@ -62,20 +62,62 @@ export class TradingEngine extends EventEmitter {
   private readonly MAX_HOLD_TIME_HOURS = 2; // Reduced to 2 hours for scalping
   private readonly MAX_TOTAL_EXPOSURE_PERCENT = 80; // Max 80% total capital in all positions
 
-  // Quantity precision by symbol (Binance Futures)
+  // Quantity precision by symbol (Binance Futures) - verified from exchange info
   private readonly QUANTITY_PRECISION: Record<string, number> = {
     'BTCUSDT': 3,
     'ETHUSDT': 3,
     'BNBUSDT': 2,
     'SOLUSDT': 0,
-    'XRPUSDT': 1,
+    'XRPUSDT': 0,
     'LINKUSDT': 2,
-    'AVAXUSDT': 1,
+    'AVAXUSDT': 0,
     'DOGEUSDT': 0,
-    'SUIUSDT': 1,
-    'ARBUSDT': 1,
-    'OPUSDT': 1,
+    'SUIUSDT': 0,
+    'ARBUSDT': 0,
+    'OPUSDT': 0,
     'INJUSDT': 1,
+    'ADAUSDT': 0,
+    'MATICUSDT': 0,
+    'DOTUSDT': 1,
+    'LTCUSDT': 3,
+    'ATOMUSDT': 2,
+    'NEARUSDT': 0,
+    'APTUSDT': 1,
+    'FILUSDT': 1,
+    'WLDUSDT': 0,
+    'SEIUSDT': 0,
+    'TIAUSDT': 1,
+    'CRVUSDT': 0,
+    'TONUSDT': 1,
+  };
+
+  // Price precision by symbol (Binance Futures)
+  private readonly PRICE_PRECISION: Record<string, number> = {
+    'BTCUSDT': 1,
+    'ETHUSDT': 2,
+    'BNBUSDT': 2,
+    'SOLUSDT': 2,
+    'XRPUSDT': 4,
+    'LINKUSDT': 3,
+    'AVAXUSDT': 2,
+    'DOGEUSDT': 5,
+    'SUIUSDT': 4,
+    'ARBUSDT': 4,
+    'OPUSDT': 4,
+    'INJUSDT': 3,
+    'ADAUSDT': 4,
+    'MATICUSDT': 4,
+    'DOTUSDT': 3,
+    'LTCUSDT': 2,
+    'ATOMUSDT': 3,
+    'NEARUSDT': 3,
+    'APTUSDT': 3,
+    'FILUSDT': 3,
+    'WLDUSDT': 3,
+    'SEIUSDT': 4,
+    'TIAUSDT': 3,
+    'CRVUSDT': 4,
+    'TONUSDT': 3,
   };
 
   async start(): Promise<void> {
@@ -522,14 +564,20 @@ export class TradingEngine extends EventEmitter {
 
       console.log(`[Engine] Order filled: avgPrice=${order.avgPrice}, fills=${order.fills?.length || 0}, entryPrice=${entryPrice.toFixed(4)}`);
 
-      // Calculate actual SL and TP prices
-      const stopLoss = decision.stopLoss || (decision.action === 'BUY'
+      // Calculate actual SL and TP prices with proper precision
+      const pricePrecision = this.PRICE_PRECISION[symbol] ?? 4;
+
+      const rawStopLoss = decision.stopLoss || (decision.action === 'BUY'
         ? entryPrice * (1 - (decision.stopLossPercent || 1) / 100)
         : entryPrice * (1 + (decision.stopLossPercent || 1) / 100));
 
-      const takeProfit = decision.takeProfit || (decision.action === 'BUY'
+      const rawTakeProfit = decision.takeProfit || (decision.action === 'BUY'
         ? entryPrice * (1 + (decision.takeProfitPercent || 0.5) / 100)
         : entryPrice * (1 - (decision.takeProfitPercent || 0.5) / 100));
+
+      // Round to price precision
+      const stopLoss = parseFloat(rawStopLoss.toFixed(pricePrecision));
+      const takeProfit = parseFloat(rawTakeProfit.toFixed(pricePrecision));
 
       // Store position
       const position: Position = {
