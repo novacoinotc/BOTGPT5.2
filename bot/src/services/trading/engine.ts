@@ -796,11 +796,57 @@ export class TradingEngine extends EventEmitter {
     }
   }
 
-  private handlePositionClosed(position: Position): void {
+  private async handlePositionClosed(position: Position): Promise<void> {
     // Position was closed externally (liquidation or manual)
+    // We need to record this trade even without knowing exact exit price
+
+    try {
+      // Try to get current price as best estimate for exit price
+      const klines = await binanceClient.getKlines(position.symbol, '1m', 1);
+      const exitPrice = klines.length > 0 ? parseFloat(klines[0].close) : position.entryPrice;
+
+      // Calculate estimated PnL
+      const pnlBeforeFees = this.calculatePnl(position, exitPrice);
+      const pnl = pnlBeforeFees - this.TRADING_FEE_PERCENT;
+
+      const priceDiff = position.side === 'LONG'
+        ? (exitPrice - position.entryPrice)
+        : (position.entryPrice - exitPrice);
+      const pnlUsdBeforeFees = priceDiff * position.quantity;
+      const positionValue = position.quantity * position.entryPrice;
+      const feesUsd = positionValue * (this.TRADING_FEE_PERCENT / 100);
+      const pnlUsd = pnlUsdBeforeFees - feesUsd;
+
+      // Record trade in memory (persist to database)
+      await memorySystem.addTrade({
+        symbol: position.symbol,
+        side: position.side,
+        entryPrice: position.entryPrice,
+        exitPrice,
+        quantity: position.quantity,
+        pnl,
+        pnlUsd,
+        entryTime: position.entryTime,
+        exitTime: Date.now(),
+        exitReason: 'manual', // External close = manual
+        entryConditions: position.entryConditions,
+        gptConfidence: position.gptConfidence,
+        gptReasoning: position.gptReasoning,
+      });
+
+      console.log(`[Engine] ⚠️ Position ${position.symbol} was closed externally - Trade recorded`);
+      console.log(`[Engine]   └─ Estimated PnL: ${pnl.toFixed(2)}% ($${pnlUsd.toFixed(2)})`);
+
+      // Update today's stats
+      this.state.todayPnl += pnl;
+      this.state.todayTrades++;
+
+    } catch (error) {
+      console.error(`[Engine] Error recording externally closed position:`, error);
+    }
+
     this.state.currentPositions.delete(position.symbol);
     this.emit('positionClosed', { position, reason: 'external' });
-    console.log(`[Engine] ⚠️ Position ${position.symbol} was closed externally`);
   }
 
   private calculatePnl(position: Position, currentPrice: number): number {
