@@ -186,6 +186,9 @@ class MemorySystem {
 
     // Persist to database
     try {
+      console.log(`[Memory] Attempting to save trade: ${newTrade.symbol} ${newTrade.side}`);
+      console.log(`[Memory] Trade data: entry=${newTrade.entryPrice}, exit=${newTrade.exitPrice}, pnl=${newTrade.pnl}%`);
+
       await prisma.trade.create({
         data: {
           id: newTrade.id,
@@ -211,9 +214,12 @@ class MemorySystem {
           newsScore: newTrade.entryConditions?.newsScore || null,
         },
       });
-      console.log(`[Memory] Trade ${newTrade.id} persisted to database`);
-    } catch (error) {
-      console.error('[Memory] Error persisting trade:', error);
+      console.log(`[Memory] ✅ Trade ${newTrade.id} persisted to database successfully!`);
+    } catch (error: any) {
+      console.error('[Memory] ❌ ERROR persisting trade to database!');
+      console.error('[Memory] Error message:', error.message);
+      console.error('[Memory] Error code:', error.code);
+      console.error('[Memory] Full error:', JSON.stringify(error, null, 2));
     }
 
     return newTrade;

@@ -173,6 +173,51 @@ app.post('/api/memory/import', (req, res) => {
   res.json({ success: true });
 });
 
+// Test database write - for debugging
+app.post('/api/test-db', async (req, res) => {
+  try {
+    console.log('[API] Testing database write...');
+
+    // Try to create a test trade
+    const testTrade = await memorySystem.addTrade({
+      symbol: 'TESTUSDT',
+      side: 'LONG',
+      entryPrice: 100,
+      exitPrice: 101,
+      quantity: 1,
+      pnl: 1.0,
+      pnlUsd: 1.0,
+      entryTime: Date.now() - 60000,
+      exitTime: Date.now(),
+      exitReason: 'manual',
+      entryConditions: {
+        rsi: 50,
+        macdHistogram: 0,
+        orderBookImbalance: 0,
+        fundingRate: 0,
+        regime: 'test',
+        fearGreed: 50,
+        newsScore: 0,
+      },
+      gptConfidence: 75,
+      gptReasoning: 'Test trade for database verification',
+    });
+
+    res.json({
+      success: true,
+      message: 'Test trade created! Check logs for details.',
+      tradeId: testTrade.id,
+    });
+  } catch (error: any) {
+    console.error('[API] Test DB error:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message,
+      code: error.code,
+    });
+  }
+});
+
 // Reset ALL data - fresh start (PROTECTED with confirmation)
 app.post('/api/reset', async (req, res) => {
   try {
