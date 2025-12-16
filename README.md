@@ -4,7 +4,7 @@ Bot de trading inteligente para futuros de Binance, potenciado por GPT 5.2.
 
 ## Arquitectura
 
-```
+```m
 ┌─────────────────────────────────────────────────────────────────┐
 │                        DASHBOARD (Vercel)                        │
 │                     Next.js + Socket.IO Client                   │
