@@ -323,19 +323,17 @@ Sentimiento noticias: ${(news.sentiment.score * 100).toFixed(0)}% ${news.sentime
 Headlines:
 ${news.headlines.slice(0, 5).map(h => `  • ${h}`).join('\n') || '  • Sin noticias recientes'}
 
-📊 TU RENDIMIENTO
+📊 TU HISTORIAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-${recentTrades.length > 0
-  ? `Trades: ${recentTrades.length} | Win Rate: ${winRate.toFixed(1)}% | Ratio G/P: ${avgLoss > 0 ? (avgWin / avgLoss).toFixed(2) : 'N/A'}x`
-  : '🆕 INICIO FRESCO - Sin historial previo. ¡Construye un buen track record!'}
+Trades: ${recentTrades.length} | Win Rate: ${winRate.toFixed(1)}% | Avg Win: +${avgWin.toFixed(2)}% | Avg Loss: -${avgLoss.toFixed(2)}%
 
-${recentTrades.length > 0 ? `📈 ÚLTIMOS TRADES:
-${recentTrades.slice(0, 10).map(t =>
-  `  ${t.pnl > 0 ? '✅' : '❌'} ${t.symbol} ${t.side} ${t.pnl > 0 ? '+' : ''}${t.pnl.toFixed(2)}% [${t.exitReason}]`
-).join('\n')}` : ''}
+📈 ÚLTIMOS TRADES:
+${recentTrades.slice(0, 15).map(t =>
+  `  ${t.pnl > 0 ? '✅' : '❌'} ${t.symbol} ${t.side} ${t.pnl > 0 ? '+' : ''}${t.pnl.toFixed(2)}% ($${t.pnlUsd.toFixed(2)}) [${t.exitReason}]`
+).join('\n') || '  Sin trades aún - construye tu historial'}
 
-${learnings.length > 0 ? `🧠 LECCIONES:
-${learnings.slice(0, 5).map(l => `• ${l}`).join('\n')}` : ''}
+🧠 LECCIONES APRENDIDAS:
+${learnings.slice(0, 8).map(l => `• ${l}`).join('\n') || '• Cada trade es una oportunidad de aprender'}
 
 💡 REFERENCIA ATR:
 SL por volatilidad: ~${((suggestedSL / analysis.price) * 100).toFixed(2)}% | TP: ~${((suggestedTP / analysis.price) * 100).toFixed(2)}%
