@@ -106,8 +106,22 @@ export class AdaptiveLearningSystem {
       aggressiveLev: params.aggressiveLev
     });
 
-    // Build final decision
-    const shouldTrade = qResult.action !== 'SKIP' && paramRec.shouldTrade;
+    // Check if Q-Learning has meaningful data for this state
+    const maxQValue = Math.max(...Object.values(qResult.qValues));
+    const qLearningHasData = maxQValue > 0.5; // Threshold for "meaningful" Q-value
+
+    // Build final decision:
+    // - If Q-Learning has data AND says trade → trade
+    // - If Q-Learning has NO data → let GPT/params decide (shouldTrade based on params)
+    // - If Q-Learning has data AND says SKIP → follow Q-Learning (skip)
+    let shouldTrade: boolean;
+    if (qLearningHasData) {
+      // Q-Learning has experience - follow its recommendation
+      shouldTrade = qResult.action !== 'SKIP' && paramRec.shouldTrade;
+    } else {
+      // Q-Learning has no data - let params/GPT decide
+      shouldTrade = paramRec.shouldTrade;
+    }
 
     // Use Q-Learning action if it recommends trading, otherwise follow params
     const finalLeverage = shouldTrade
@@ -121,10 +135,12 @@ export class AdaptiveLearningSystem {
     // Build reasoning
     const reasoningParts: string[] = [];
 
-    if (qResult.isExploration) {
+    if (!qLearningHasData) {
+      reasoningParts.push('🆕 Estado nuevo - GPT decide');
+    } else if (qResult.isExploration) {
       reasoningParts.push('🔍 Exploración Q-Learning');
     } else {
-      reasoningParts.push(`📊 Q-Action: ${qResult.action} (Q=${Math.max(...Object.values(qResult.qValues)).toFixed(2)})`);
+      reasoningParts.push(`📊 Q-Action: ${qResult.action} (Q=${maxQValue.toFixed(2)})`);
     }
 
     if (paramRec.reasoning) {
