@@ -75,7 +75,7 @@ class MemorySystem {
         take: this.maxTrades,
       });
 
-      this.trades = dbTrades.map(t => ({
+      this.trades = dbTrades.map((t: any) => ({
         id: t.id,
         symbol: t.symbol,
         side: t.side as 'LONG' | 'SHORT',
@@ -108,7 +108,7 @@ class MemorySystem {
         take: this.maxLearnings,
       });
 
-      this.learnings = dbLearnings.map(l => ({
+      this.learnings = dbLearnings.map((l: any) => ({
         id: l.id,
         lesson: l.lesson,
         type: l.type as 'success' | 'failure',
@@ -125,7 +125,7 @@ class MemorySystem {
         take: this.maxPatterns,
       });
 
-      this.patterns = dbPatterns.map(p => ({
+      this.patterns = dbPatterns.map((p: any) => ({
         symbol: p.symbol,
         pattern: p.patternType,
         regime: p.regime,
