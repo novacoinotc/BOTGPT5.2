@@ -173,10 +173,20 @@ app.post('/api/memory/import', (req, res) => {
   res.json({ success: true });
 });
 
-// Reset ALL data - fresh start
+// Reset ALL data - fresh start (PROTECTED with confirmation)
 app.post('/api/reset', async (req, res) => {
   try {
-    console.log('[API] 🗑️ Reset requested - clearing all data...');
+    // Require explicit confirmation to prevent accidental data loss
+    const { confirm } = req.body;
+    if (confirm !== 'DELETE_ALL_DATA') {
+      return res.status(400).json({
+        error: 'Missing confirmation. Send { "confirm": "DELETE_ALL_DATA" } to proceed.',
+        warning: 'This will permanently delete ALL trades, patterns, learnings, and stats!'
+      });
+    }
+
+    console.log('[API] ⚠️ RESET CONFIRMED - clearing all data...');
+    console.log('[API] This action was triggered by explicit user request');
     await memorySystem.clearAllData();
     res.json({ success: true, message: 'All data cleared - fresh start!' });
   } catch (error: any) {
