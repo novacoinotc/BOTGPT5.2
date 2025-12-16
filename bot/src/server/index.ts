@@ -58,8 +58,10 @@ app.get('/api/status', async (req, res) => {
             stopLoss: 0,
             takeProfit: 0,
             entryTime: Date.now(),
+            entryConditions: {},
             gptConfidence: 0,
             gptReasoning: 'Synced from Binance',
+            positionSizePercent: 0,
             currentPrice: parseFloat(pos.markPrice),
             pnl: parseFloat(pos.unRealizedProfit) / (parseFloat(pos.entryPrice) * Math.abs(parseFloat(pos.positionAmt))) * 100,
           })).filter((p: any) => p.entryPrice > 0 && p.quantity > 0);
