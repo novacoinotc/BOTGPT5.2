@@ -187,9 +187,37 @@ export class QLearningAgent {
       selectedAction = this.getBestAction(qValues);
     }
 
-    // Calculate confidence based on Q-value magnitude and visits
-    const maxQ = Math.max(...Object.values(qValues));
-    const confidence = Math.min(100, Math.max(0, maxQ * 10 + 50));
+    // Calculate confidence based on Q-value magnitude, spread, and if we have data
+    const qValuesArray = Object.values(qValues);
+    const maxQ = Math.max(...qValuesArray);
+    const sumQ = qValuesArray.reduce((a, b) => a + b, 0);
+    const nonZeroCount = qValuesArray.filter(v => v > 0).length;
+
+    // If all Q-values are 0, we have NO data for this state = very low confidence
+    if (sumQ === 0) {
+      // No pre-trained data for this state - low confidence
+      return {
+        action: 'SKIP' as ActionType, // Default to SKIP when no data
+        confidence: 20, // Very low confidence
+        isExploration: true,
+        stateKey,
+        qValues
+      };
+    }
+
+    // Calculate confidence based on:
+    // 1. How high is the best Q-value (higher = more certain from experience)
+    // 2. How much spread between best and others (more spread = clearer winner)
+    const sortedQ = [...qValuesArray].sort((a, b) => b - a);
+    const spread = sortedQ[0] - sortedQ[1]; // Difference between 1st and 2nd best
+
+    // Confidence formula:
+    // - Base: maxQ contributes up to 60% (capped at maxQ=50 -> 60%)
+    // - Spread: adds up to 30% for clear winners
+    // - Min 30% if we have some data
+    const baseConfidence = Math.min(60, maxQ * 1.2);
+    const spreadBonus = Math.min(30, spread * 2);
+    const confidence = Math.min(95, Math.max(30, baseConfidence + spreadBonus));
 
     return {
       action: selectedAction,

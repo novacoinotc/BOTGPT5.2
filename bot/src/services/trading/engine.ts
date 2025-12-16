@@ -30,6 +30,7 @@ interface BotState {
   availableBalance: number;
   todayPnl: number;
   todayTrades: number;
+  lastResetDate: string; // YYYY-MM-DD format for daily reset
   lastAnalysis: Map<string, MarketAnalysis>;
   lastDecision: Map<string, GPTDecision>;
 }
@@ -42,9 +43,11 @@ export class TradingEngine extends EventEmitter {
     availableBalance: 0,
     todayPnl: 0,
     todayTrades: 0,
+    lastResetDate: new Date().toISOString().split('T')[0], // Initialize to today
     lastAnalysis: new Map(),
     lastDecision: new Map(),
   };
+  private dailyResetInterval: NodeJS.Timeout | null = null;
 
   private symbols: string[] = [
     'BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT',
@@ -145,6 +148,10 @@ export class TradingEngine extends EventEmitter {
     // Start balance updates
     this.startBalanceUpdates();
 
+    // Start daily reset checker
+    this.checkAndResetDaily(); // Check immediately on start
+    this.startDailyReset();
+
     this.state.isRunning = true;
     this.emit('started');
 
@@ -169,6 +176,11 @@ export class TradingEngine extends EventEmitter {
     if (this.balanceUpdateInterval) {
       clearInterval(this.balanceUpdateInterval);
       this.balanceUpdateInterval = null;
+    }
+
+    if (this.dailyResetInterval) {
+      clearInterval(this.dailyResetInterval);
+      this.dailyResetInterval = null;
     }
 
     binanceWs.disconnect();
@@ -235,7 +247,31 @@ export class TradingEngine extends EventEmitter {
     this.balanceUpdateInterval = setInterval(async () => {
       if (!this.state.isRunning) return;
       await this.updateBalance();
-    }, 60000); // Update every minute
+    }, 10000); // Update every 10 seconds for faster sync
+  }
+
+  private startDailyReset(): void {
+    // Check for daily reset every minute
+    this.dailyResetInterval = setInterval(() => {
+      this.checkAndResetDaily();
+    }, 60000); // Check every minute
+  }
+
+  private checkAndResetDaily(): void {
+    const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+    if (this.state.lastResetDate !== today) {
+      console.log(`[Engine] 🔄 Daily reset: ${this.state.lastResetDate} → ${today}`);
+      console.log(`[Engine]   └─ Yesterday's PnL: $${this.state.todayPnl.toFixed(2)}`);
+      console.log(`[Engine]   └─ Yesterday's trades: ${this.state.todayTrades}`);
+
+      // Reset daily metrics
+      this.state.todayPnl = 0;
+      this.state.todayTrades = 0;
+      this.state.lastResetDate = today;
+
+      console.log(`[Engine] ✅ Daily metrics reset for ${today}`);
+      this.emit('dailyReset', { date: today });
+    }
   }
 
   private connectStreams(): void {
@@ -374,13 +410,16 @@ export class TradingEngine extends EventEmitter {
     );
     console.log(`[Engine] ${symbol}: Q-Learning recommends ${qLearningRecommendation.action} (${qLearningRecommendation.confidence.toFixed(1)}% conf)`);
 
-    // Get optimized parameters from 236-trial optimizer
+    // Get optimized parameters from 236-trial optimizer with REAL win rate
+    const stats = memorySystem.getStatistics();
+    const realWinRate = stats.winRate || 50; // Use real win rate, default to 50%
     const optimizerParams = gptEngine.getOptimizerRecommendation(
       analysis,
       fearGreed.value,
-      screeningResult
+      screeningResult,
+      realWinRate
     );
-    console.log(`[Engine] ${symbol}: Optimizer suggests leverage=${optimizerParams.leverage}x, TP=${optimizerParams.tpPct.toFixed(2)}%, SL=${optimizerParams.slPct.toFixed(2)}%`);
+    console.log(`[Engine] ${symbol}: Optimizer suggests leverage=${optimizerParams.leverage}x, TP=${optimizerParams.tpPct.toFixed(2)}%, SL=${optimizerParams.slPct.toFixed(2)}% (WR: ${realWinRate.toFixed(1)}%)`);
 
     // Get GPT-5.2 decision with full context - NOW INCLUDING Q-LEARNING AND OPTIMIZER
     const decision = await gptEngine.analyze({
@@ -672,11 +711,20 @@ export class TradingEngine extends EventEmitter {
     }
   }
 
+  private closingPositions = new Set<string>(); // Track positions being closed to prevent race conditions
+
   private async closePosition(
     position: Position,
     exitPrice: number,
     reason: 'tp' | 'sl' | 'manual' | 'timeout' | 'signal'
   ): Promise<void> {
+    // Prevent race conditions - don't try to close a position that's already being closed
+    if (this.closingPositions.has(position.symbol)) {
+      console.log(`[Engine] ${position.symbol}: Already closing, skipping duplicate close`);
+      return;
+    }
+    this.closingPositions.add(position.symbol);
+
     try {
       // Get symbol info for correct precision
       const symbolInfo = await binanceClient.getSymbolInfo(position.symbol);
@@ -701,12 +749,15 @@ export class TradingEngine extends EventEmitter {
       });
 
       const pnl = this.calculatePnl(position, exitPrice);
-      // FIX: Calculate USD P&L directly from price difference (not from leveraged %)
-      // pnl already includes leverage (% return on margin), so don't multiply by leverage again
+      // FIX: Calculate USD P&L with commission deduction
+      // Binance Futures taker fee: ~0.04% (0.02% entry + 0.02% exit)
       const priceDiff = position.side === 'LONG'
         ? (exitPrice - position.entryPrice)
         : (position.entryPrice - exitPrice);
-      const pnlUsd = priceDiff * position.quantity;
+      const grossPnlUsd = priceDiff * position.quantity;
+      const positionValue = position.entryPrice * position.quantity;
+      const commissionFee = positionValue * 0.0004; // 0.04% total commission
+      const pnlUsd = grossPnlUsd - commissionFee;
 
       // Record trade in memory AND database
       const tradeMemory = memorySystem.addTrade({
@@ -750,12 +801,21 @@ export class TradingEngine extends EventEmitter {
     } catch (error: any) {
       console.error(`[Engine] Failed to close position:`, error.message);
       this.emit('error', { type: 'closePosition', error: error.message, symbol: position.symbol });
+    } finally {
+      // Always remove from closing set, regardless of success/failure
+      this.closingPositions.delete(position.symbol);
     }
   }
 
   private async handlePositionClosed(position: Position): Promise<void> {
     // Position was closed externally (liquidation or manual)
     // We need to record this trade for learning and statistics
+
+    // Skip if we're currently closing this position (prevents race condition)
+    if (this.closingPositions.has(position.symbol)) {
+      console.log(`[Engine] ${position.symbol}: Detected external close but already closing locally`);
+      return;
+    }
 
     try {
       // Get current price to estimate exit
