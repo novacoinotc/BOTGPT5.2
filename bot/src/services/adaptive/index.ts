@@ -112,15 +112,16 @@ export class AdaptiveLearningSystem {
 
     // Build final decision:
     // - If Q-Learning has data AND says trade → trade
-    // - If Q-Learning has NO data → let GPT/params decide (shouldTrade based on params)
+    // - If Q-Learning has NO data → ALLOW trading (let GPT-5.2 decide via main analysis)
     // - If Q-Learning has data AND says SKIP → follow Q-Learning (skip)
     let shouldTrade: boolean;
     if (qLearningHasData) {
       // Q-Learning has experience - follow its recommendation
       shouldTrade = qResult.action !== 'SKIP' && paramRec.shouldTrade;
     } else {
-      // Q-Learning has no data - let params/GPT decide
-      shouldTrade = paramRec.shouldTrade;
+      // Q-Learning has no data for this state - ALLOW GPT-5.2 to decide
+      // Don't block based on paramRec which uses hardcoded 50 confidence
+      shouldTrade = true;
     }
 
     // Use Q-Learning action if it recommends trading, otherwise follow params
