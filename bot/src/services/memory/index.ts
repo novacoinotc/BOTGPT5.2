@@ -494,6 +494,38 @@ class MemorySystem {
     this.patterns = [];
     this.learnings = [];
   }
+
+  // Clear ALL data from memory AND database - for fresh start
+  async clearAllData(): Promise<void> {
+    console.log('[Memory] 🗑️ Clearing ALL data from memory and database...');
+
+    try {
+      // Clear database tables
+      await prisma.trade.deleteMany({});
+      await prisma.pattern.deleteMany({});
+      await prisma.learning.deleteMany({});
+      await prisma.dailyStats.deleteMany({});
+
+      // Reset bot state
+      await prisma.botState.updateMany({
+        data: {
+          todayPnl: 0,
+          todayTrades: 0,
+          lastResetDate: new Date(),
+        }
+      });
+
+      // Clear memory
+      this.trades = [];
+      this.patterns = [];
+      this.learnings = [];
+
+      console.log('[Memory] ✅ All data cleared successfully - fresh start!');
+    } catch (error) {
+      console.error('[Memory] Error clearing data:', error);
+      throw error;
+    }
+  }
 }
 
 export const memorySystem = new MemorySystem();

@@ -7,6 +7,7 @@ import { fearGreedIndex } from '../market/fearGreed.js';
 import { gptEngine, GPTDecision } from '../gpt/engine.js';
 import { memorySystem, TradeMemory } from '../memory/index.js';
 import { config } from '../../config/index.js';
+import { adaptiveLearning, ActionType } from '../adaptive/index.js';
 
 interface Position {
   symbol: string;
@@ -22,6 +23,9 @@ interface Position {
   gptReasoning: string;
   positionSizePercent: number;
   lastGptUpdate?: number; // Timestamp of last GPT analysis for this position
+  // Adaptive Learning fields
+  stateKey?: string;
+  adaptiveAction?: ActionType;
 }
 
 interface BotState {
@@ -56,16 +60,16 @@ export class TradingEngine extends EventEmitter {
   private positionCheckInterval: NodeJS.Timeout | null = null;
   private balanceUpdateInterval: NodeJS.Timeout | null = null;
 
-  // Configuration - SCALPING MODE (OPTIMIZED FOR PROFITABILITY)
-  private readonly MIN_CONFIDENCE = 55; // Allow trades with 55%+ confidence
-  private readonly MAX_LEVERAGE = 10; // Max 10x as requested
-  private readonly MAX_POSITION_SIZE_PERCENT = 5; // Max 5% of capital per trade (scalping: many small trades)
-  private readonly MAX_HOLD_TIME_HOURS = 2; // Reduced to 2 hours for scalping
-  private readonly MAX_TOTAL_EXPOSURE_PERCENT = 80; // Max 80% total capital in all positions
+  // Configuration - ADAPTIVE SCALPING MODE (from 87.95% WR IA)
+  private readonly MIN_CONFIDENCE = 55; // Allow trades with 55%+ confidence (from IA optimization)
+  private readonly MAX_LEVERAGE = 15; // Max 15x (IA used up to 14x aggressive)
+  private readonly MAX_POSITION_SIZE_PERCENT = 12; // Max 12% of capital (from IA: 11.74%)
+  private readonly MAX_HOLD_TIME_HOURS = 2; // 2 hours for scalping
+  private readonly MAX_TOTAL_EXPOSURE_PERCENT = 80; // Max 80% total capital
   private readonly COOLDOWN_MINUTES = 10; // Minimum time between trades on same symbol
   private readonly TRADING_FEE_PERCENT = 0.10; // Round trip fee (0.05% × 2)
-  private readonly MIN_TP_PERCENT = 0.3; // Minimum take profit (lowered for scalping)
-  private readonly MIN_SL_PERCENT = 0.3; // Minimum stop loss (lowered for scalping)
+  private readonly MIN_TP_PERCENT = 0.3; // Minimum take profit (IA used 0.31% base)
+  private readonly MIN_SL_PERCENT = 0.3; // Minimum stop loss
 
   // Track last trade time per symbol for cooldown
   private lastTradeTime: Map<string, number> = new Map();
@@ -128,6 +132,10 @@ export class TradingEngine extends EventEmitter {
   }
 
   private async initialize(): Promise<void> {
+    // Initialize Adaptive Learning System (Q-Learning + Parameter Optimizer)
+    console.log('[Engine] Initializing Adaptive Learning System...');
+    await adaptiveLearning.initialize();
+
     // Get account balance
     await this.updateBalance();
 
@@ -549,7 +557,7 @@ export class TradingEngine extends EventEmitter {
         ? entryPrice * (1 + (decision.takeProfitPercent || 0.5) / 100)
         : entryPrice * (1 - (decision.takeProfitPercent || 0.5) / 100));
 
-      // Store position
+      // Store position with adaptive learning data
       const position: Position = {
         symbol,
         side: decision.action === 'BUY' ? 'LONG' : 'SHORT',
@@ -571,7 +579,10 @@ export class TradingEngine extends EventEmitter {
         gptConfidence: decision.confidence,
         gptReasoning: decision.reasoning,
         positionSizePercent,
-        lastGptUpdate: Date.now(), // Initialize for new positions too
+        lastGptUpdate: Date.now(),
+        // Adaptive Learning fields
+        stateKey: decision.stateKey,
+        adaptiveAction: decision.adaptiveAction,
       };
 
       this.state.currentPositions.set(symbol, position);
@@ -708,10 +719,24 @@ export class TradingEngine extends EventEmitter {
         gptReasoning: position.gptReasoning,
       });
 
-      // Learn from trade
+      // Learn from trade using GPT
       const lesson = await gptEngine.learnFromTrade(tradeMemory);
       if (lesson) {
-        console.log(`[Engine] 🧠 Learned: ${lesson}`);
+        console.log(`[Engine] 🧠 GPT Learned: ${lesson}`);
+      }
+
+      // Learn from trade using Adaptive Learning (Q-Learning)
+      if (position.stateKey && position.adaptiveAction) {
+        const duration = (Date.now() - position.entryTime) / 60000; // minutes
+        await adaptiveLearning.learn({
+          stateKey: position.stateKey,
+          action: position.adaptiveAction,
+          pnlPct: pnl,
+          exitReason: reason,
+          leverage: position.leverage,
+          duration
+        });
+        console.log(`[Engine] 🤖 Q-Learning updated: ${position.stateKey.slice(0, 30)}... | Action: ${position.adaptiveAction} | Reward: ${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}%`);
       }
 
       // Update state
