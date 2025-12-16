@@ -117,3 +117,105 @@ model DailyStats {
 
   @@index([date])
 }
+
+// Q-Learning state values for adaptive trading
+model QState {
+  id              String   @id @default(uuid())
+  stateKey        String   @unique
+
+  // Q-values for each action type
+  skipValue       Float    @default(0)
+  openConservative Float   @default(0)
+  openNormal      Float    @default(0)
+  openAggressive  Float    @default(0)
+  futuresLow      Float    @default(0)
+  futuresMedium   Float    @default(0)
+  futuresHigh     Float    @default(0)
+
+  // Statistics
+  visits          Int      @default(0)
+  lastReward      Float    @default(0)
+  avgReward       Float    @default(0)
+  winCount        Int      @default(0)
+  lossCount       Int      @default(0)
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([stateKey])
+  @@index([avgReward])
+}
+
+// Market snapshots for analysis and learning
+model MarketSnapshot {
+  id              String   @id @default(uuid())
+  symbol          String
+  signal          String   // BUY, SELL, NEUTRAL
+  rsi             Float
+  rsiZone         String   // LOW, NEUTRAL, HIGH
+  macdHistogram   Float
+  regime          String   // trending_up, trending_down, ranging, volatile
+  regimeStrength  Float
+  orderbook       String   // BUY_PRESSURE, SELL_PRESSURE, NEUTRAL
+  volatility      String   // LOW, MEDIUM, HIGH, VERY_HIGH
+  volatilityPct   Float
+  fearGreedIndex  Int
+  fearGreedZone   String   // EXTREME_FEAR, FEAR, NEUTRAL, GREED, EXTREME_GREED
+  stateKey        String
+  actionTaken     String   // SKIP, OPEN_CONSERVATIVE, etc.
+  actionResult    String?  // WIN, LOSS, SKIP
+  reward          Float?
+
+  timestamp       DateTime @default(now())
+  createdAt       DateTime @default(now())
+
+  @@index([symbol])
+  @@index([stateKey])
+  @@index([timestamp])
+}
+
+// Dynamic parameters for optimization
+model DynamicParams {
+  id                    String   @id @default("main")
+  minConfidence         Float    @default(55)
+  basePositionPct       Float    @default(2)
+  conservativeLev       Int      @default(2)
+  balancedLev           Int      @default(3)
+  aggressiveLev         Int      @default(5)
+  baseTpPct             Float    @default(0.5)
+  baseSlPct             Float    @default(0.3)
+  maxDailyLossPct       Float    @default(5)
+  consecutiveLossLimit  Int      @default(3)
+
+  updatedAt             DateTime @updatedAt
+}
+
+// Parameter change history for auditing
+model ParamChange {
+  id              String   @id @default(uuid())
+  param           String
+  oldValue        Float
+  newValue        Float
+  reason          String
+  strategy        String
+
+  timestamp       DateTime @default(now())
+
+  @@index([param])
+  @@index([timestamp])
+}
+
+// Performance metrics history
+model PerformanceMetrics {
+  id              String   @id @default(uuid())
+  winRate         Float
+  roi             Float
+  maxDrawdown     Float
+  totalTrades     Int
+  avgPnl          Float
+  profitFactor    Float
+
+  timestamp       DateTime @default(now())
+
+  @@index([timestamp])
+}

@@ -590,6 +590,8 @@ export class TradingEngine extends EventEmitter {
         exitPrice,
         quantity: position.quantity,
         leverage: position.leverage,
+        stopLoss: position.stopLoss,
+        takeProfit: position.takeProfit,
         pnl,
         pnlUsd,
         entryTime: position.entryTime,
@@ -625,11 +627,57 @@ export class TradingEngine extends EventEmitter {
     }
   }
 
-  private handlePositionClosed(position: Position): void {
+  private async handlePositionClosed(position: Position): Promise<void> {
     // Position was closed externally (liquidation or manual)
+    // We need to record this trade for learning and statistics
+
+    try {
+      // Get current price to estimate exit
+      const currentPrice = await binanceClient.getPrice(position.symbol);
+
+      const pnl = this.calculatePnl(position, currentPrice);
+      const priceDiff = position.side === 'LONG'
+        ? (currentPrice - position.entryPrice)
+        : (position.entryPrice - currentPrice);
+      const pnlUsd = priceDiff * position.quantity;
+
+      // Record trade in memory AND database
+      const tradeMemory = memorySystem.addTrade({
+        symbol: position.symbol,
+        side: position.side,
+        entryPrice: position.entryPrice,
+        exitPrice: currentPrice,
+        quantity: position.quantity,
+        leverage: position.leverage,
+        stopLoss: position.stopLoss,
+        takeProfit: position.takeProfit,
+        pnl,
+        pnlUsd,
+        entryTime: position.entryTime,
+        exitTime: Date.now(),
+        exitReason: 'manual', // External close (liquidation or manual from exchange)
+        entryConditions: position.entryConditions,
+        gptConfidence: position.gptConfidence,
+        gptReasoning: position.gptReasoning,
+      });
+
+      // Learn from trade (important for liquidations!)
+      const lesson = await gptEngine.learnFromTrade(tradeMemory);
+      if (lesson) {
+        console.log(`[Engine] 🧠 Learned from external close: ${lesson}`);
+      }
+
+      // Update daily PnL
+      this.state.todayPnl += pnlUsd;
+
+      const emoji = pnl > 0 ? '✅' : '❌';
+      console.log(`[Engine] ${emoji} Position closed externally: ${position.symbol} | PnL: ${pnl > 0 ? '+' : ''}${pnl.toFixed(2)}% ($${pnlUsd.toFixed(2)})`);
+    } catch (error: any) {
+      console.error(`[Engine] Failed to record externally closed position:`, error.message);
+    }
+
     this.state.currentPositions.delete(position.symbol);
     this.emit('positionClosed', { position, reason: 'external' });
-    console.log(`[Engine] ⚠️ Position ${position.symbol} was closed externally`);
   }
 
   private calculatePnl(position: Position, currentPrice: number): number {

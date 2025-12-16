@@ -11,6 +11,8 @@ export interface TradeMemory {
   exitPrice: number;
   quantity: number;
   leverage: number;
+  stopLoss?: number;
+  takeProfit?: number;
   pnl: number; // percentage
   pnlUsd: number;
   entryTime: number;
@@ -97,11 +99,13 @@ class MemorySystem {
           exitPrice: trade.exitPrice,
           quantity: trade.quantity,
           leverage: Math.round(trade.leverage || 1),
+          stopLoss: trade.stopLoss ?? null,
+          takeProfit: trade.takeProfit ?? null,
           pnl: trade.pnl,
           pnlPercent: trade.pnl, // Same as pnl (percentage)
           pnlUsd: trade.pnlUsd,
           entryTime: new Date(trade.entryTime),
-          exitTime: new Date(trade.exitTime),
+          exitTime: trade.exitTime ? new Date(trade.exitTime) : null,
           status: 'CLOSED', // Trade is closed when we persist it
           exitReason: trade.exitReason,
           gptConfidence: Math.round(trade.gptConfidence), // DB expects INTEGER
