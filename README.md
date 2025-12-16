@@ -9,7 +9,7 @@ Bot de trading inteligente para futuros de Binance, potenciado por GPT 5.2.
 │                        DASHBOARD (Vercel)                        │
 │                     Next.js + Socket.IO Client                   │
 └─────────────────────────────┬───────────────────────────────────┘
-                              │ WebSocket + REST
+                              │ WebSocket + RESTl
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                         BOT (Railway)                            │
