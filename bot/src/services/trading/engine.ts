@@ -51,10 +51,13 @@ export class TradingEngine extends EventEmitter {
     lastDecision: new Map(),
   };
 
-  // COST OPTIMIZED: Reduced from 12 to 6 main pairs
+  // TOP PERFORMERS from 87.95% WR IA + Core pairs
   private symbols: string[] = [
-    'BTCUSDT', 'ETHUSDT', 'BNBUSDT',
-    'SOLUSDT', 'XRPUSDT', 'DOGEUSDT'
+    // Core pairs (high liquidity)
+    'BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'XRPUSDT',
+    // Top performers from IA (100% WR, high PnL)
+    'CRVUSDT', 'AAVEUSDT', 'LINKUSDT', 'AVAXUSDT', 'SUIUSDT',
+    'DOTUSDT', 'LTCUSDT', 'TIAUSDT', 'INJUSDT'
   ];
   private analysisInterval: NodeJS.Timeout | null = null;
   private positionCheckInterval: NodeJS.Timeout | null = null;
