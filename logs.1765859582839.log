@@ -1,0 +1,649 @@
+2025-12-16T04:01:44.000000000Z [inf]  Starting Container
+2025-12-16T04:01:45.732081948Z [inf]  =========================================
+2025-12-16T04:01:45.732090785Z [inf]      GPT 5.2 SCALPING BOT - v1.0.2
+2025-12-16T04:01:45.732097047Z [inf]  =========================================
+2025-12-16T04:01:45.732101530Z [inf]  
+2025-12-16T04:01:45.732106495Z [inf]  [Config] All required configurations present
+2025-12-16T04:01:45.732111084Z [inf]  [Config] Trading enabled: true
+2025-12-16T04:01:45.732115641Z [inf]  [Config] Max leverage: 10x
+2025-12-16T04:01:45.732120019Z [inf]  [Config] Max position size: 50%
+2025-12-16T04:01:45.732124107Z [inf]  [Config] Min confidence: 45%
+2025-12-16T04:01:45.732128944Z [inf]  [Config] Max hold time: 4h
+2025-12-16T04:01:45.732133253Z [err]  (node:27) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2025-12-16T04:01:45.732137813Z [err]  (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-12-16T04:01:46.277639008Z [inf]  [Database] Connected to PostgreSQL (Neon)
+2025-12-16T04:01:46.277646021Z [inf]  [Memory] Loading historical data from database...
+2025-12-16T04:01:46.277652213Z [inf]  [Memory] Loaded 0 trades from database
+2025-12-16T04:01:46.295697028Z [inf]  [Memory] Loaded 1 learnings from database
+2025-12-16T04:01:46.818868270Z [inf]  [Memory] Loaded 4 patterns from database
+2025-12-16T04:01:46.818872980Z [inf]  [Memory] Database initialization complete!
+2025-12-16T04:01:46.818877285Z [inf]  [Main] Auto-starting trading bot...
+2025-12-16T04:01:46.818884105Z [inf]  [Engine] Starting trading bot...
+2025-12-16T04:01:46.818888972Z [inf]  [Engine] Min confidence: 55%
+2025-12-16T04:01:46.818893278Z [inf]  [Engine] Max leverage: 15x
+2025-12-16T04:01:46.818897938Z [inf]  [Engine] Initializing Adaptive Learning System...
+2025-12-16T04:01:46.818902277Z [inf]  [AdaptiveLearning] Initializing system...
+2025-12-16T04:01:46.818906323Z [inf]  [Server] Running on port 3001
+2025-12-16T04:01:48.008043549Z [inf]  [ParamOptimizer] Parameters initialized from 87.95% WR IA
+2025-12-16T04:01:48.008051014Z [inf]  [Q-Learning] Initializing pre-trained Q-values from 87.95% WR IA...
+2025-12-16T04:01:54.401206499Z [inf]  [Q-Learning] Initialized 18 pre-trained states
+2025-12-16T04:01:54.922416591Z [inf]  [Socket] Client connected: MoC_JvucD2eCCga9AAAB
+2025-12-16T04:01:54.922436602Z [inf]  [AdaptiveLearning] System initialized successfully
+2025-12-16T04:01:54.922445068Z [inf]  [AdaptiveLearning] Total historical trades: 0
+2025-12-16T04:01:55.972520601Z [inf]  [Engine] Account balance: $4418.25
+2025-12-16T04:01:55.972531350Z [inf]  [Engine] Available balance: $4084.09
+2025-12-16T04:01:55.972537615Z [inf]  [Engine] Today's stats (GDL 2025-12-15): 0 trades, $0.00 PnL
+2025-12-16T04:01:57.025816674Z [inf]  [Engine] Found 2 open positions
+2025-12-16T04:01:57.025822260Z [inf]  [Engine] Bot started successfully
+2025-12-16T04:01:57.025827400Z [inf]  
+2025-12-16T04:01:57.025831827Z [inf]  [Main] Bot is ready!
+2025-12-16T04:01:57.025835787Z [inf]  [Main] Dashboard API: http://localhost:3001
+2025-12-16T04:01:57.025840015Z [inf]  [Main] WebSocket: ws://localhost:3001
+2025-12-16T04:01:57.025844166Z [inf]  
+2025-12-16T04:01:57.570776622Z [inf]  [WS] Connected to Binance
+2025-12-16T04:02:19.197720074Z [inf]  [GPT-Screen] INJUSDT: score=18, direction=NONE, hasOpp=false
+2025-12-16T04:02:19.197720732Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:02:19.197727523Z [inf]  [Engine] INJUSDT: No opportunity (score: 18) - skipping
+2025-12-16T04:02:19.197730469Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:02:19.197733380Z [inf]  [GPT-Screen] ETHUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T04:02:19.197737959Z [inf]  [GPT-Screen] DOTUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T04:02:19.197739968Z [inf]  [Engine] ETHUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:02:19.197743821Z [inf]  [Engine] DOTUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:02:19.197747342Z [inf]  [GPT-Screen] SUIUSDT: score=28, direction=NONE, hasOpp=false
+2025-12-16T04:02:19.197749520Z [inf]  [GPT-Screen] LTCUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-16T04:02:19.197753884Z [inf]  [Engine] SUIUSDT: No opportunity (score: 28) - skipping
+2025-12-16T04:02:19.197756353Z [inf]  [Engine] LTCUSDT: No opportunity (score: 40) - skipping
+2025-12-16T04:02:19.197760422Z [inf]  [GPT-Screen] LINKUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-16T04:02:19.197762747Z [inf]  [GPT-Screen] CRVUSDT: score=62, direction=BUY, hasOpp=true
+2025-12-16T04:02:19.197767223Z [inf]  [Engine] LINKUSDT: No opportunity (score: 15) - skipping
+2025-12-16T04:02:19.197769076Z [inf]  [Engine] CRVUSDT: Opportunity detected! (score: 62, direction: BUY)
+2025-12-16T04:02:19.197773042Z [inf]  [GPT-Screen] BNBUSDT: score=55, direction=BUY, hasOpp=true
+2025-12-16T04:02:19.197775252Z [inf]  [GPT-Screen] AAVEUSDT: score=68, direction=SELL, hasOpp=true
+2025-12-16T04:02:19.197779364Z [inf]  [Engine] BNBUSDT: No opportunity (score: 55) - skipping
+2025-12-16T04:02:19.197780799Z [inf]  [Engine] AAVEUSDT: Opportunity detected! (score: 68, direction: SELL)
+2025-12-16T04:02:19.197785266Z [inf]  [CryptoPanic] Rate limited, using neutral sentiment
+2025-12-16T04:02:19.197789184Z [inf]  [CryptoPanic] Fetched global sentiment (cached 15 min)
+2025-12-16T04:02:19.197793399Z [inf]  [CryptoPanic] Fetched global sentiment (cached 15 min)
+2025-12-16T04:02:19.197797469Z [inf]  [Adaptive] AAVEUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:02:19.197801651Z [inf]  [Adaptive] CRVUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:02:19.459770991Z [inf]  [GPT-Screen] TIAUSDT: score=55, direction=SELL, hasOpp=true
+2025-12-16T04:02:19.459776610Z [inf]  [Engine] TIAUSDT: No opportunity (score: 55) - skipping
+2025-12-16T04:02:21.552586223Z [inf]  [GPT-Screen] XRPUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:02:29.864107515Z [inf]  [Engine] CRVUSDT: HOLD (72%)
+2025-12-16T04:02:31.223775391Z [inf]  [Engine] AAVEUSDT: HOLD (66%)
+2025-12-16T04:02:41.169603561Z [inf]  [GPT-Screen] XRPUSDT: Empty content after 2 attempts
+2025-12-16T04:02:41.169609011Z [inf]  [Engine] XRPUSDT: No opportunity (score: 0) - skipping
+2025-12-16T04:05:08.117393650Z [inf]  [Engine] ETHUSDT: No opportunity (score: 58) - skipping
+2025-12-16T04:05:08.117400473Z [inf]  [Socket] Client disconnected: MoC_JvucD2eCCga9AAAB
+2025-12-16T04:05:08.117405549Z [inf]  [Socket] Client connected: 7fZTErRBV06HLHuUAAAD
+2025-12-16T04:05:08.117514854Z [inf]  [GPT-Screen] ETHUSDT: score=58, direction=SELL, hasOpp=true
+2025-12-16T04:05:28.213452614Z [inf]  [GPT-Screen] BNBUSDT: score=28, direction=NONE, hasOpp=false
+2025-12-16T04:05:28.213457281Z [inf]  [Engine] BNBUSDT: No opportunity (score: 28) - skipping
+2025-12-16T04:05:28.213461063Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:05:28.213464968Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:05:48.274956067Z [inf]  [GPT-Screen] XRPUSDT: score=55, direction=SELL, hasOpp=true
+2025-12-16T04:05:48.274960022Z [inf]  [Engine] XRPUSDT: No opportunity (score: 55) - skipping
+2025-12-16T04:05:51.439972791Z [inf]  [GPT-Screen] CRVUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-16T04:05:51.439979588Z [inf]  [Engine] CRVUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-16T04:05:51.591598764Z [inf]  [Adaptive] CRVUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:06:11.349500731Z [inf]  [Engine] CRVUSDT: HOLD (68%)
+2025-12-16T04:06:17.049984032Z [inf]  [GPT-Screen] AAVEUSDT: score=38, direction=SELL, hasOpp=false
+2025-12-16T04:06:17.049987872Z [inf]  [Engine] AAVEUSDT: No opportunity (score: 38) - skipping
+2025-12-16T04:06:25.419282377Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:06:25.419287730Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:06:45.856313007Z [inf]  [GPT-Screen] SUIUSDT: score=22, direction=NONE, hasOpp=false
+2025-12-16T04:06:45.856318564Z [inf]  [Engine] SUIUSDT: No opportunity (score: 22) - skipping
+2025-12-16T04:06:51.900114489Z [inf]  [GPT-Screen] DOTUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-16T04:06:51.900122595Z [inf]  [Engine] DOTUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-16T04:06:51.900127297Z [inf]  [Adaptive] DOTUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:07:12.034416080Z [inf]  [Engine] DOTUSDT: HOLD (71%)
+2025-12-16T04:07:12.034440689Z [inf]  [GPT-Screen] LTCUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:07:12.034445257Z [inf]  [Engine] LTCUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:07:19.763651223Z [inf]  [GPT-Screen] TIAUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T04:07:19.763657462Z [inf]  [Engine] TIAUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:07:26.460306918Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:07:26.460317193Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:08:08.777147530Z [inf]  [Engine] BTCUSDT: Position update due (6min since last GPT analysis)
+2025-12-16T04:08:08.777152444Z [inf]  [Adaptive] BTCUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:08:11.388639557Z [inf]  [Engine] BTCUSDT: HOLD (68%)
+2025-12-16T04:08:18.879013252Z [inf]  [GPT-Screen] ETHUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:08:18.879019277Z [inf]  [Engine] ETHUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:08:28.662189612Z [inf]  [GPT-Screen] BNBUSDT: score=25, direction=SELL, hasOpp=false
+2025-12-16T04:08:28.662199044Z [inf]  [Engine] BNBUSDT: No opportunity (score: 25) - skipping
+2025-12-16T04:08:37.869862806Z [inf]  [GPT-Screen] SOLUSDT: score=65, direction=SELL, hasOpp=true
+2025-12-16T04:08:37.869868395Z [inf]  [Engine] SOLUSDT: Opportunity detected! (score: 65, direction: SELL)
+2025-12-16T04:08:37.869873091Z [inf]  [Adaptive] SOLUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:08:56.383725266Z [inf]  [Engine] SOLUSDT: HOLD (68%)
+2025-12-16T04:09:04.708155059Z [inf]  [GPT-Screen] XRPUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:09:23.160057269Z [inf]  [GPT-Screen] XRPUSDT: score=65, direction=SELL, hasOpp=true
+2025-12-16T04:09:23.160061851Z [inf]  [Engine] XRPUSDT: Opportunity detected! (score: 65, direction: SELL)
+2025-12-16T04:09:23.160067381Z [inf]  [Adaptive] XRPUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:09:26.176061831Z [inf]  [Engine] XRPUSDT: HOLD (68%)
+2025-12-16T04:09:46.223547240Z [inf]  [GPT-Screen] CRVUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-16T04:09:46.223553812Z [inf]  [Engine] CRVUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-16T04:09:46.223558387Z [inf]  [Adaptive] CRVUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:09:46.485835491Z [inf]  [Engine] CRVUSDT: HOLD (72%)
+2025-12-16T04:10:04.818251284Z [inf]  [GPT-Screen] AAVEUSDT: score=65, direction=SELL, hasOpp=true
+2025-12-16T04:10:04.818255108Z [inf]  [Engine] AAVEUSDT: Opportunity detected! (score: 65, direction: SELL)
+2025-12-16T04:10:04.818259876Z [inf]  [Adaptive] AAVEUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:10:07.570120716Z [inf]  [Engine] AAVEUSDT: HOLD (68%)
+2025-12-16T04:10:27.210007617Z [inf]  [GPT-Screen] LINKUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T04:10:27.210013003Z [inf]  [Engine] LINKUSDT: No opportunity (score: 25) - skipping
+2025-12-16T04:10:27.210018217Z [inf]  [Engine] AVAXUSDT: Position update due (8min since last GPT analysis)
+2025-12-16T04:10:27.210022670Z [inf]  [Adaptive] AVAXUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:10:27.210028204Z [inf]  [Socket] Client connected: N6mb37rjh2PuHfFaAAAF
+2025-12-16T04:10:27.210033083Z [inf]  [Socket] Client disconnected: N6mb37rjh2PuHfFaAAAF
+2025-12-16T04:10:29.371083361Z [inf]  [Engine] AVAXUSDT: HOLD (68%)
+2025-12-16T04:10:37.170795687Z [inf]  [Engine] ⚠️ Position AVAXUSDT was closed externally
+2025-12-16T04:10:37.170803442Z [inf]  [Engine] ⚠️ Position BTCUSDT was closed externally
+2025-12-16T04:10:39.386009726Z [inf]  [GPT-Screen] SUIUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T04:10:39.386013958Z [inf]  [Engine] SUIUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:10:49.336618753Z [inf]  [GPT-Screen] DOTUSDT: score=18, direction=NONE, hasOpp=false
+2025-12-16T04:10:49.336623387Z [inf]  [Engine] DOTUSDT: No opportunity (score: 18) - skipping
+2025-12-16T04:11:09.399584542Z [inf]  [GPT-Screen] LTCUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-16T04:11:09.399590388Z [inf]  [Engine] LTCUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-16T04:11:09.399594997Z [inf]  [Adaptive] LTCUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:11:09.399599269Z [inf]  [GPT-Screen] BTCUSDT: score=62, direction=SELL, hasOpp=true
+2025-12-16T04:11:09.399603714Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 62, direction: SELL)
+2025-12-16T04:11:09.399608367Z [inf]  [Adaptive] BTCUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:11:09.399613206Z [inf]  [Engine] LTCUSDT: HOLD (72%)
+2025-12-16T04:11:17.474974467Z [inf]  [GPT-Screen] TIAUSDT: score=28, direction=NONE, hasOpp=false
+2025-12-16T04:11:17.474982365Z [inf]  [Engine] TIAUSDT: No opportunity (score: 28) - skipping
+2025-12-16T04:11:17.474987009Z [inf]  [Engine] BTCUSDT: HOLD (68%)
+2025-12-16T04:11:26.401514062Z [inf]  [GPT-Screen] INJUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T04:11:26.401519958Z [inf]  [Engine] INJUSDT: No opportunity (score: 25) - skipping
+2025-12-16T04:11:46.861649815Z [inf]  [GPT-Screen] ETHUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:11:51.564592913Z [inf]  [GPT-Screen] ETHUSDT: score=69, direction=SELL, hasOpp=true
+2025-12-16T04:11:51.564598412Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 69, direction: SELL)
+2025-12-16T04:11:51.564602522Z [inf]  [Adaptive] ETHUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:12:13.014772487Z [inf]  [Engine] ETHUSDT: HOLD (71%)
+2025-12-16T04:12:17.818468917Z [inf]  [GPT-Screen] BNBUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:12:24.031999392Z [inf]  [GPT-Screen] BNBUSDT: score=38, direction=SELL, hasOpp=false
+2025-12-16T04:12:24.032006335Z [inf]  [Engine] BNBUSDT: No opportunity (score: 38) - skipping
+2025-12-16T04:12:33.430857451Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:12:33.430866814Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:12:53.388594289Z [inf]  [GPT-Screen] XRPUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-16T04:12:53.388603417Z [inf]  [Engine] XRPUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-16T04:12:53.388610750Z [inf]  [Adaptive] XRPUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:13:13.151609406Z [inf]  [Engine] XRPUSDT: SELL (62%)
+2025-12-16T04:13:13.151617538Z [inf]  [Engine]   └─ Size: 4% | Lev: 5x | SL: $1.8950 | TP: $1.8400
+2025-12-16T04:13:13.151623296Z [inf]  [Engine] Opening SELL XRPUSDT:
+2025-12-16T04:13:13.151632893Z [inf]  [Engine]   └─ Quantity: 471.3 @ ~$1.87
+2025-12-16T04:13:13.151637124Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-16T04:13:13.151642855Z [inf]  [Engine]   └─ Capital used: $176.61 (4%)
+2025-12-16T04:13:13.151647344Z [inf]  [Engine]   └─ Position value: $883.05
+2025-12-16T04:13:13.151651201Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=1.8735
+2025-12-16T04:13:13.151655476Z [inf]  [Engine] Position opened: SHORT XRPUSDT @ $1.8735
+2025-12-16T04:13:13.151660065Z [inf]  [Engine]   └─ SL: $1.8950 (1.15%)
+2025-12-16T04:13:13.151664371Z [inf]  [Engine]   └─ TP: $1.8400 (1.79%)
+2025-12-16T04:13:16.549682404Z [inf]  [GPT-Screen] CRVUSDT: score=37, direction=NONE, hasOpp=false
+2025-12-16T04:13:16.549687621Z [inf]  [Engine] CRVUSDT: No opportunity (score: 37) - skipping
+2025-12-16T04:13:37.532400639Z [inf]  [GPT-Screen] AAVEUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:13:39.622223998Z [inf]  [GPT-Screen] AAVEUSDT: score=65, direction=SELL, hasOpp=true
+2025-12-16T04:13:39.622230235Z [inf]  [Engine] AAVEUSDT: Opportunity detected! (score: 65, direction: SELL)
+2025-12-16T04:13:40.671341054Z [inf]  [Adaptive] AAVEUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:14:00.095207034Z [inf]  [Engine] AAVEUSDT: HOLD (66%)
+2025-12-16T04:14:00.903019662Z [inf]  [GPT-Screen] LINKUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T04:14:00.903023886Z [inf]  [Engine] LINKUSDT: No opportunity (score: 25) - skipping
+2025-12-16T04:14:21.999966960Z [inf]  [GPT-Screen] AVAXUSDT: score=70, direction=SELL, hasOpp=true
+2025-12-16T04:14:21.999972797Z [inf]  [Engine] AVAXUSDT: Opportunity detected! (score: 70, direction: SELL)
+2025-12-16T04:14:21.999978997Z [inf]  [Adaptive] AVAXUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:14:21.999982786Z [inf]  [GPT-Screen] BTCUSDT: score=70, direction=BUY, hasOpp=true
+2025-12-16T04:14:21.999986371Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 70, direction: BUY)
+2025-12-16T04:14:21.999990090Z [inf]  [Adaptive] BTCUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:14:26.155132663Z [inf]  [Engine] BTCUSDT: HOLD (62%)
+2025-12-16T04:14:29.291216065Z [inf]  [Engine] AVAXUSDT: SELL (74%)
+2025-12-16T04:14:29.291222841Z [inf]  [Engine]   └─ Size: 6% | Lev: 5x | SL: $12.3700 | TP: $12.0700
+2025-12-16T04:14:33.444088974Z [inf]  [Engine] Opening SELL AVAXUSDT:
+2025-12-16T04:14:33.444095245Z [inf]  [Engine]   └─ Quantity: 103 @ ~$12.25
+2025-12-16T04:14:33.444099335Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-16T04:14:33.444104331Z [inf]  [Engine]   └─ Capital used: $254.33 (6%)
+2025-12-16T04:14:33.444108906Z [inf]  [Engine]   └─ Position value: $1271.65
+2025-12-16T04:14:33.444113511Z [inf]  [GPT-Screen] ETHUSDT: score=28, direction=NONE, hasOpp=false
+2025-12-16T04:14:33.444117644Z [inf]  [Engine] ETHUSDT: No opportunity (score: 28) - skipping
+2025-12-16T04:14:33.444122324Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=12.248
+2025-12-16T04:14:33.965030258Z [inf]  [Engine] Position opened: SHORT AVAXUSDT @ $12.2480
+2025-12-16T04:14:33.965037845Z [inf]  [Engine]   └─ SL: $12.3700 (1.00%)
+2025-12-16T04:14:33.965044185Z [inf]  [Engine]   └─ TP: $12.0700 (1.45%)
+2025-12-16T04:14:42.405167708Z [inf]  [GPT-Screen] SUIUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T04:14:42.405171746Z [inf]  [Engine] SUIUSDT: No opportunity (score: 25) - skipping
+2025-12-16T04:14:44.498060426Z [inf]  [GPT-Screen] BNBUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-16T04:14:44.498066477Z [inf]  [Engine] BNBUSDT: No opportunity (score: 35) - skipping
+2025-12-16T04:14:52.652045599Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:14:52.652052147Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:14:52.916118449Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:14:53.191046353Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:01.617098685Z [inf]  [GPT-Screen] CRVUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T04:15:01.617104488Z [inf]  [Engine] CRVUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:15:03.712165312Z [inf]  [GPT-Screen] DOTUSDT: score=38, direction=SELL, hasOpp=false
+2025-12-16T04:15:03.712171195Z [inf]  [Engine] DOTUSDT: No opportunity (score: 38) - skipping
+2025-12-16T04:15:12.834140449Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:12.834144682Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:12.852615139Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:13.116502026Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:13.267065717Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:13.375785667Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:16.934813926Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:17.525677522Z [inf]  [GPT-Screen] AAVEUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-16T04:15:17.525682631Z [inf]  [Engine] AAVEUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-16T04:15:17.803695954Z [inf]  [Adaptive] AAVEUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:15:18.189658596Z [inf]  [GPT-Screen] LTCUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:15:38.144812807Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144821574Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144827644Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144833745Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144846993Z [inf]  [Engine] AAVEUSDT: HOLD (72%)
+2025-12-16T04:15:38.144852064Z [inf]  [GPT-Screen] LTCUSDT: score=30, direction=BUY, hasOpp=false
+2025-12-16T04:15:38.144856630Z [inf]  [Engine] LTCUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:15:38.144862611Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:15:38.144866565Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:15:38.144871345Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144875649Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144881306Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144885634Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144890072Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144895364Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144899403Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:38.144903132Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:15:42.021310793Z [inf]  [GPT-Screen] TIAUSDT: score=28, direction=NONE, hasOpp=false
+2025-12-16T04:15:42.021316592Z [inf]  [Engine] TIAUSDT: No opportunity (score: 28) - skipping
+2025-12-16T04:15:46.179825262Z [inf]  [GPT-Screen] SUIUSDT: score=80, direction=SELL, hasOpp=true
+2025-12-16T04:15:46.179829207Z [inf]  [Engine] SUIUSDT: Opportunity detected! (score: 80, direction: SELL)
+2025-12-16T04:15:46.312709262Z [inf]  [Adaptive] SUIUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:15:50.504531761Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:15:50.504536102Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:16:09.931364335Z [inf]  [Engine] SUIUSDT: SELL (68%)
+2025-12-16T04:16:09.931372857Z [inf]  [Engine]   └─ Size: 6% | Lev: 5x | SL: $1.4720 | TP: $1.4180
+2025-12-16T04:16:09.931379358Z [inf]  [Engine] Opening SELL SUIUSDT:
+2025-12-16T04:16:09.931383991Z [inf]  [Engine]   └─ Quantity: 823.5 @ ~$1.45
+2025-12-16T04:16:09.931393476Z [inf]  [Engine]   └─ Leverage: 5x
+2025-12-16T04:16:09.931398498Z [inf]  [Engine]   └─ Capital used: $239.17 (6%)
+2025-12-16T04:16:09.931403279Z [inf]  [Engine]   └─ Position value: $1195.84
+2025-12-16T04:16:09.931408080Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=1.4521
+2025-12-16T04:16:09.931412848Z [inf]  [Engine] Position opened: SHORT SUIUSDT @ $1.4521
+2025-12-16T04:16:09.931417304Z [inf]  [Engine]   └─ SL: $1.4720 (1.37%)
+2025-12-16T04:16:09.931421430Z [inf]  [Engine]   └─ TP: $1.4180 (2.35%)
+2025-12-16T04:16:30.586292104Z [inf]  [GPT-Screen] DOTUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-16T04:16:30.586298433Z [inf]  [Engine] DOTUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-16T04:16:30.586304439Z [inf]  [Adaptive] DOTUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:16:49.013425903Z [inf]  [Engine] DOTUSDT: HOLD (72%)
+2025-12-16T04:16:49.148146557Z [inf]  [GPT-Screen] LTCUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T04:16:49.148155502Z [inf]  [Engine] LTCUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:16:57.276932465Z [inf]  [GPT-Screen] TIAUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T04:16:57.276936681Z [inf]  [Engine] TIAUSDT: No opportunity (score: 25) - skipping
+2025-12-16T04:17:16.060497755Z [inf]  [GPT-Screen] BTCUSDT: score=70, direction=SELL, hasOpp=true
+2025-12-16T04:17:16.060508647Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 70, direction: SELL)
+2025-12-16T04:17:16.060513612Z [inf]  [Adaptive] BTCUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:17:16.060518867Z [inf]  [GPT-Screen] INJUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:17:24.662692220Z [inf]  [GPT-Screen] INJUSDT: score=38, direction=NONE, hasOpp=false
+2025-12-16T04:17:24.662699157Z [inf]  [Engine] INJUSDT: No opportunity (score: 38) - skipping
+2025-12-16T04:17:27.799378844Z [inf]  [Engine] BTCUSDT: HOLD (66%)
+2025-12-16T04:17:36.928137320Z [inf]  [GPT-Screen] ETHUSDT: score=45, direction=SELL, hasOpp=false
+2025-12-16T04:17:36.928141624Z [inf]  [Engine] ETHUSDT: No opportunity (score: 45) - skipping
+2025-12-16T04:17:55.565895243Z [inf]  [GPT-Screen] BNBUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-16T04:17:55.565900138Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-16T04:17:55.565904149Z [inf]  [CryptoPanic] Using cached news data
+2025-12-16T04:17:55.565908849Z [inf]  [CryptoPanic] Fetched global sentiment (cached 15 min)
+2025-12-16T04:17:55.565913087Z [inf]  [Adaptive] BNBUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:18:04.465258359Z [inf]  [Engine] BNBUSDT: HOLD (62%)
+2025-12-16T04:18:11.773743146Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:18:11.773749177Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:18:11.773753678Z [inf]  [Engine] XRPUSDT: Position update due (5min since last GPT analysis)
+2025-12-16T04:18:11.773758036Z [inf]  [Adaptive] XRPUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:18:31.824725255Z [inf]  [Engine] XRPUSDT: HOLD (69%)
+2025-12-16T04:18:50.459198591Z [inf]  [GPT-Screen] CRVUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T04:18:50.459203540Z [inf]  [Engine] CRVUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:18:57.278646505Z [inf]  [GPT-Screen] AAVEUSDT: score=62, direction=SELL, hasOpp=true
+2025-12-16T04:18:57.278651393Z [inf]  [Engine] AAVEUSDT: Opportunity detected! (score: 62, direction: SELL)
+2025-12-16T04:18:58.327328228Z [inf]  [Adaptive] AAVEUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:19:18.316332328Z [inf]  [Engine] AAVEUSDT: HOLD (68%)
+2025-12-16T04:19:23.269515780Z [inf]  [GPT-Screen] LINKUSDT: score=38, direction=SELL, hasOpp=false
+2025-12-16T04:19:23.269521880Z [inf]  [Engine] LINKUSDT: No opportunity (score: 38) - skipping
+2025-12-16T04:19:43.016880001Z [inf]  [GPT-Screen] DOTUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-16T04:19:43.016888055Z [inf]  [Engine] DOTUSDT: No opportunity (score: 15) - skipping
+2025-12-16T04:19:43.685513862Z [inf]  [GPT-Screen] LTCUSDT: score=28, direction=NONE, hasOpp=false
+2025-12-16T04:19:43.685520042Z [inf]  [Engine] LTCUSDT: No opportunity (score: 28) - skipping
+2025-12-16T04:20:12.725943066Z [inf]  [GPT-Screen] TIAUSDT: score=70, direction=SELL, hasOpp=true
+2025-12-16T04:20:12.725947236Z [inf]  [Engine] TIAUSDT: Opportunity detected! (score: 70, direction: SELL)
+2025-12-16T04:20:12.725951608Z [inf]  [Adaptive] TIAUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:20:12.725956325Z [inf]  [GPT-Screen] BTCUSDT: score=67, direction=BUY, hasOpp=true
+2025-12-16T04:20:12.725960240Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 67, direction: BUY)
+2025-12-16T04:20:12.725964796Z [inf]  [Adaptive] BTCUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:20:20.633276361Z [inf]  [Engine] TIAUSDT: HOLD (72%)
+2025-12-16T04:20:27.304370849Z [inf]  [Engine] BTCUSDT: HOLD (63%)
+2025-12-16T04:20:28.425829325Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:28.669745014Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:28.882634386Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:29.016320447Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:32.348922451Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:32.348931905Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:32.348939783Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:32.348948913Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:35.022186867Z [inf]  [GPT-Screen] INJUSDT: score=30, direction=SELL, hasOpp=false
+2025-12-16T04:20:35.022196793Z [inf]  [Engine] INJUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:20:36.155197881Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:39.572821116Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:39.698804735Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:43.225285944Z [inf]  [GPT-Screen] ETHUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:20:50.082869972Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:50.082876113Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:50.082880235Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:50.082884471Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:20:50.344674024Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:20:51.630014570Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-16T04:20:51.630107370Z [inf]  [GPT-Screen] ETHUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-16T04:20:52.000233506Z [inf]  [Adaptive] ETHUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:20:55.165733233Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:20:55.298514837Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:20:57.048055783Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:20:57.181058952Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:21:00.058604500Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:21:00.127270598Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:21:00.145838722Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:21:00.215182555Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:21:00.251019718Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:21:00.320293184Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:21:00.389824097Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:21:00.911442156Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:21:07.019983996Z [inf]  [Engine] ETHUSDT: HOLD (69%)
+2025-12-16T04:21:27.804957340Z [inf]  [GPT-Screen] BNBUSDT: score=58, direction=SELL, hasOpp=true
+2025-12-16T04:21:27.804963417Z [inf]  [Engine] BNBUSDT: No opportunity (score: 58) - skipping
+2025-12-16T04:21:27.804967604Z [inf]  [GPT-Screen] SOLUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-16T04:21:27.804971282Z [inf]  [Engine] SOLUSDT: No opportunity (score: 15) - skipping
+2025-12-16T04:21:27.804977016Z [inf]  [Engine] XRPUSDT: Position update due (8min since last GPT analysis)
+2025-12-16T04:21:27.804981836Z [inf]  [Adaptive] XRPUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:21:47.708318689Z [inf]  [Engine] XRPUSDT: HOLD (68%)
+2025-12-16T04:22:07.842843902Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:22:07.842858276Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:07.842869273Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:22:07.842880613Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:07.842903380Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:07.842913574Z [inf]  [Adaptive] CRVUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:22:07.842926625Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:22:07.842933514Z [inf]  [GPT-Screen] CRVUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-16T04:22:07.842939396Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:07.842939811Z [inf]  [Engine] CRVUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-16T04:22:07.842947923Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:22:07.842956347Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:07.842964416Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:22:08.938330466Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:08.938337191Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:08.938341832Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:22:09.459228644Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:22:16.908920337Z [inf]  [Engine] CRVUSDT: HOLD (72%)
+2025-12-16T04:22:21.362034779Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:21.625885314Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:22.179095396Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:22:22.179179347Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:22.179183962Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:22.179187972Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:22:31.466965512Z [inf]  [GPT-Screen] AAVEUSDT: score=75, direction=SELL, hasOpp=true
+2025-12-16T04:22:31.466969607Z [inf]  [Engine] AAVEUSDT: Opportunity detected! (score: 75, direction: SELL)
+2025-12-16T04:22:31.466979439Z [inf]  [Adaptive] AAVEUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:22:51.740234696Z [inf]  [Engine] AAVEUSDT: HOLD (68%)
+2025-12-16T04:22:55.990148418Z [inf]  [GPT-Screen] LINKUSDT: score=40, direction=SELL, hasOpp=false
+2025-12-16T04:22:55.990154452Z [inf]  [Engine] LINKUSDT: No opportunity (score: 40) - skipping
+2025-12-16T04:22:55.990159160Z [inf]  [Engine] AVAXUSDT: Position update due (8min since last GPT analysis)
+2025-12-16T04:22:55.990163351Z [inf]  [Adaptive] AVAXUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:23:15.440591150Z [inf]  [GPT-Screen] BTCUSDT: score=90, direction=SELL, hasOpp=true
+2025-12-16T04:23:15.440599539Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 90, direction: SELL)
+2025-12-16T04:23:15.440605208Z [inf]  [Adaptive] BTCUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:23:15.440610569Z [inf]  [Engine] AVAXUSDT: SELL (68%)
+2025-12-16T04:23:15.440615066Z [inf]  [Engine]   └─ Size: 6% | Lev: 6x | SL: $12.3500 | TP: $11.9700
+2025-12-16T04:23:15.440619628Z [inf]  [Engine] AVAXUSDT: Updated SL: $12.35 | TP: $11.97
+2025-12-16T04:23:15.440623853Z [inf]  [Engine] SUIUSDT: Position update due (7min since last GPT analysis)
+2025-12-16T04:23:15.440628190Z [inf]  [Adaptive] SUIUSDT: Action=OPEN_AGGRESSIVE | Confidence=50% | 🔍 Exploración Q-Learning | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:23:15.440631988Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:23:35.496619382Z [inf]  [Engine] BTCUSDT: HOLD (66%)
+2025-12-16T04:23:35.496625405Z [inf]  [Engine] SUIUSDT: SELL (62%)
+2025-12-16T04:23:35.496630148Z [inf]  [Engine]   └─ Size: 7.43% | Lev: 7x | SL: $1.4620 | TP: $1.4320
+2025-12-16T04:23:35.496634771Z [inf]  [Engine] SUIUSDT: Updated SL: $1.46 | TP: $1.43
+2025-12-16T04:23:39.656790540Z [inf]  [GPT-Screen] DOTUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T04:23:39.656797718Z [inf]  [Engine] DOTUSDT: No opportunity (score: 25) - skipping
+2025-12-16T04:23:44.338203268Z [inf]  [GPT-Screen] ETHUSDT: score=42, direction=SELL, hasOpp=false
+2025-12-16T04:23:44.338209960Z [inf]  [Engine] ETHUSDT: No opportunity (score: 42) - skipping
+2025-12-16T04:24:05.139303482Z [inf]  [GPT-Screen] LTCUSDT: score=38, direction=BUY, hasOpp=false
+2025-12-16T04:24:05.139307725Z [inf]  [Engine] LTCUSDT: No opportunity (score: 38) - skipping
+2025-12-16T04:24:05.139311543Z [inf]  [GPT-Screen] BNBUSDT: score=40, direction=SELL, hasOpp=false
+2025-12-16T04:24:05.139315262Z [inf]  [Engine] BNBUSDT: No opportunity (score: 40) - skipping
+2025-12-16T04:24:05.139319004Z [inf]  [GPT-Screen] SOLUSDT: score=15, direction=NONE, hasOpp=false
+2025-12-16T04:24:05.139324192Z [inf]  [Engine] SOLUSDT: No opportunity (score: 15) - skipping
+2025-12-16T04:24:05.403084148Z [inf]  [Engine] XRPUSDT: Position update due (11min since last GPT analysis)
+2025-12-16T04:24:06.451599699Z [inf]  [Adaptive] XRPUSDT: Action=FUTURES_HIGH | Confidence=50% | 🔍 Exploración Q-Learning | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:24:25.932522358Z [inf]  [GPT-Screen] TIAUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:24:25.932531666Z [inf]  [Engine] XRPUSDT: SELL (66%)
+2025-12-16T04:24:25.932538844Z [inf]  [Engine]   └─ Size: 7.43% | Lev: 10x | SL: $1.8840 | TP: $1.8470
+2025-12-16T04:24:25.932545721Z [inf]  [Engine] XRPUSDT: Updated SL: $1.88 | TP: $1.85
+2025-12-16T04:24:25.932552672Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:24:25.932561656Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:24:30.875649953Z [inf]  [GPT-Screen] TIAUSDT: Empty content after 2 attempts
+2025-12-16T04:24:30.875655950Z [inf]  [Engine] TIAUSDT: No opportunity (score: 0) - skipping
+2025-12-16T04:24:35.037907720Z [inf]  [GPT-Screen] CRVUSDT: score=34, direction=NONE, hasOpp=false
+2025-12-16T04:24:35.037912146Z [inf]  [Engine] CRVUSDT: No opportunity (score: 34) - skipping
+2025-12-16T04:24:39.717295395Z [inf]  [GPT-Screen] INJUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T04:24:39.717301124Z [inf]  [Engine] INJUSDT: No opportunity (score: 25) - skipping
+2025-12-16T04:24:45.079549110Z [inf]  [GPT-Screen] AAVEUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-16T04:24:45.079555589Z [inf]  [Engine] AAVEUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-16T04:24:45.213381123Z [inf]  [Adaptive] AAVEUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:24:51.441235666Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:24:51.441240027Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:24:57.665607572Z [inf]  [Engine] AAVEUSDT: HOLD (72%)
+2025-12-16T04:25:01.822658294Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:25:04.968499229Z [inf]  [GPT-Screen] LINKUSDT: score=18, direction=NONE, hasOpp=false
+2025-12-16T04:25:04.968508613Z [inf]  [Engine] LINKUSDT: No opportunity (score: 18) - skipping
+2025-12-16T04:25:12.723406479Z [inf]  [GPT-Screen] DOTUSDT: score=45, direction=SELL, hasOpp=false
+2025-12-16T04:25:12.723414440Z [inf]  [Engine] DOTUSDT: No opportunity (score: 45) - skipping
+2025-12-16T04:25:32.666497311Z [inf]  [GPT-Screen] LTCUSDT: score=60, direction=BUY, hasOpp=true
+2025-12-16T04:25:32.666503438Z [inf]  [Engine] LTCUSDT: Opportunity detected! (score: 60, direction: BUY)
+2025-12-16T04:25:32.666508148Z [inf]  [Adaptive] LTCUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:25:32.666511935Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.28
+2025-12-16T04:25:32.666516690Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:25:32.666522321Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:25:32.666526675Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:25:38.223655235Z [inf]  [Engine] LTCUSDT: HOLD (71%)
+2025-12-16T04:25:57.803450035Z [inf]  [GPT-Screen] TIAUSDT: score=32, direction=SELL, hasOpp=false
+2025-12-16T04:25:57.803458096Z [inf]  [Engine] TIAUSDT: No opportunity (score: 32) - skipping
+2025-12-16T04:26:00.700926388Z [inf]  [GPT-Screen] INJUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:26:00.700930816Z [inf]  [Engine] INJUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:26:21.387190958Z [inf]  [GPT-Screen] BTCUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:26:25.541389929Z [inf]  [GPT-Screen] BTCUSDT: score=78, direction=SELL, hasOpp=true
+2025-12-16T04:26:25.541394519Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 78, direction: SELL)
+2025-12-16T04:26:25.541399400Z [inf]  [Adaptive] BTCUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:26:27.629198404Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:26:29.985310223Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:26:30.505369644Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:26:36.648955428Z [inf]  [Engine] BTCUSDT: HOLD (66%)
+2025-12-16T04:26:38.918053626Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:26:59.246253298Z [inf]  [GPT-Screen] ETHUSDT: score=58, direction=SELL, hasOpp=true
+2025-12-16T04:26:59.246259068Z [inf]  [Engine] ETHUSDT: No opportunity (score: 58) - skipping
+2025-12-16T04:27:05.137566537Z [inf]  [GPT-Screen] BNBUSDT: score=62, direction=SELL, hasOpp=true
+2025-12-16T04:27:05.137571217Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 62, direction: SELL)
+2025-12-16T04:27:05.137575267Z [inf]  [Adaptive] BNBUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:27:12.253554195Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:27:17.222609945Z [inf]  [Engine] BNBUSDT: HOLD (64%)
+2025-12-16T04:27:23.476604792Z [inf]  [GPT-Screen] SOLUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T04:27:23.476610196Z [inf]  [Engine] SOLUSDT: No opportunity (score: 25) - skipping
+2025-12-16T04:27:29.775413778Z [inf]  [GPT-Screen] CRVUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:27:29.775419338Z [inf]  [Engine] CRVUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:27:50.640739590Z [inf]  [GPT-Screen] AAVEUSDT: score=72, direction=SELL, hasOpp=true
+2025-12-16T04:27:50.640748452Z [inf]  [Engine] AAVEUSDT: Opportunity detected! (score: 72, direction: SELL)
+2025-12-16T04:27:50.640756057Z [inf]  [Adaptive] AAVEUSDT: Action=FUTURES_HIGH | Confidence=50% | 🔍 Exploración Q-Learning | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:27:56.868671365Z [inf]  [Engine] AAVEUSDT: SELL (63%)
+2025-12-16T04:27:56.868675678Z [inf]  [Engine]   └─ Size: 7.43% | Lev: 10x | SL: $188.62 | TP: $182.31
+2025-12-16T04:27:58.958612643Z [inf]  [Engine] Opening SELL AAVEUSDT:
+2025-12-16T04:27:58.958619520Z [inf]  [Engine]   └─ Quantity: 14.9 @ ~$185.65
+2025-12-16T04:27:58.958623988Z [inf]  [Engine]   └─ Leverage: 10x
+2025-12-16T04:27:58.958628556Z [inf]  [Engine]   └─ Capital used: $278.40 (7.43%)
+2025-12-16T04:27:58.958632322Z [inf]  [Engine]   └─ Position value: $2784.01
+2025-12-16T04:27:58.958637540Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=185.65
+2025-12-16T04:27:58.958641579Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.27
+2025-12-16T04:27:58.958645537Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.26
+2025-12-16T04:27:59.091738218Z [inf]  [Engine] Position opened: SHORT AAVEUSDT @ $185.65
+2025-12-16T04:27:59.091743976Z [inf]  [Engine]   └─ SL: $188.62 (1.60%)
+2025-12-16T04:27:59.091747624Z [inf]  [Engine]   └─ TP: $182.31 (1.80%)
+2025-12-16T04:28:05.335735602Z [inf]  [GPT-Screen] LINKUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:28:05.335739772Z [inf]  [Engine] LINKUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:28:13.652554704Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.25
+2025-12-16T04:28:13.652560741Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.24
+2025-12-16T04:28:21.938458234Z [inf]  [GPT-Screen] DOTUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-16T04:28:21.938464910Z [inf]  [Engine] DOTUSDT: No opportunity (score: 35) - skipping
+2025-12-16T04:28:26.096026649Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.23
+2025-12-16T04:28:26.096035722Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.22
+2025-12-16T04:28:26.096041894Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.88
+2025-12-16T04:28:26.096047815Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:26.096053420Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.21
+2025-12-16T04:28:26.096059550Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.20
+2025-12-16T04:28:26.096065159Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:26.096070659Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.19
+2025-12-16T04:28:26.096075951Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:26.096081632Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:26.228230511Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:28:26.228236534Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.18
+2025-12-16T04:28:26.228240854Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.17
+2025-12-16T04:28:26.228245637Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.16
+2025-12-16T04:28:26.228249509Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.15
+2025-12-16T04:28:26.228253115Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.14
+2025-12-16T04:28:26.296888628Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:28:26.430923358Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:26.563783660Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:26.563789068Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.27
+2025-12-16T04:28:26.696730829Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:27.232423017Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.26
+2025-12-16T04:28:28.285375960Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.26
+2025-12-16T04:28:28.548855017Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.26
+2025-12-16T04:28:28.557466658Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:28.691614405Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:28.759510423Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.13
+2025-12-16T04:28:28.759517171Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.12
+2025-12-16T04:28:28.759521554Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.11
+2025-12-16T04:28:28.759526137Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.10
+2025-12-16T04:28:28.759530568Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.09
+2025-12-16T04:28:28.759535083Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.08
+2025-12-16T04:28:28.794131100Z [inf]  [Engine] SUIUSDT: Trailing SL updated to $1.46
+2025-12-16T04:28:28.794136992Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.26
+2025-12-16T04:28:28.928474209Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.07
+2025-12-16T04:28:28.928479515Z [inf]  [Engine] SUIUSDT: Trailing SL updated to $1.46
+2025-12-16T04:28:28.932082759Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.26
+2025-12-16T04:28:29.195430144Z [inf]  [Engine] SUIUSDT: Trailing SL updated to $1.46
+2025-12-16T04:28:29.230069458Z [inf]  [Engine] SUIUSDT: Trailing SL updated to $1.46
+2025-12-16T04:28:29.238612108Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:29.518562351Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.26
+2025-12-16T04:28:30.046568537Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:28:30.180591084Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.06
+2025-12-16T04:28:30.331336067Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.05
+2025-12-16T04:28:30.851708367Z [inf]  [Engine] SUIUSDT: Trailing SL updated to $1.46
+2025-12-16T04:28:30.851714053Z [inf]  [Engine] SUIUSDT: Trailing SL updated to $1.46
+2025-12-16T04:28:30.851718696Z [inf]  [Engine] SUIUSDT: Trailing SL updated to $1.46
+2025-12-16T04:28:30.868908528Z [inf]  [Engine] SUIUSDT: Trailing SL updated to $1.46
+2025-12-16T04:28:34.008133352Z [inf]  [GPT-Screen] LTCUSDT: score=40, direction=NONE, hasOpp=false
+2025-12-16T04:28:34.008139928Z [inf]  [Engine] LTCUSDT: No opportunity (score: 40) - skipping
+2025-12-16T04:28:53.830685123Z [inf]  [GPT-Screen] TIAUSDT: score=25, direction=NONE, hasOpp=false
+2025-12-16T04:28:53.830688736Z [inf]  [Engine] TIAUSDT: No opportunity (score: 25) - skipping
+2025-12-16T04:28:53.830692480Z [inf]  [GPT-Screen] INJUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T04:28:53.830696937Z [inf]  [Engine] INJUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:29:12.496651088Z [inf]  [GPT-Screen] BTCUSDT: score=72, direction=SELL, hasOpp=true
+2025-12-16T04:29:12.496657537Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 72, direction: SELL)
+2025-12-16T04:29:12.496664844Z [inf]  [Adaptive] BTCUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:29:18.718306139Z [inf]  [Engine] BTCUSDT: HOLD (63%)
+2025-12-16T04:29:39.473730889Z [inf]  [GPT-Screen] ETHUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:30:00.046477651Z [inf]  [GPT-Screen] ETHUSDT: score=55, direction=SELL, hasOpp=true
+2025-12-16T04:30:00.046484391Z [inf]  [Engine] ETHUSDT: No opportunity (score: 55) - skipping
+2025-12-16T04:30:07.989183146Z [inf]  [GPT-Screen] BNBUSDT: score=60, direction=SELL, hasOpp=true
+2025-12-16T04:30:07.989189312Z [inf]  [Engine] BNBUSDT: Opportunity detected! (score: 60, direction: SELL)
+2025-12-16T04:30:08.991413083Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.26
+2025-12-16T04:30:09.027246270Z [inf]  [Adaptive] BNBUSDT: Action=FUTURES_MEDIUM | Confidence=50% | 🔍 Exploración Q-Learning | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:30:10.594952002Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:13.176456927Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:13.194337022Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:13.264044438Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:13.337465065Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.26
+2025-12-16T04:30:13.472644228Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:14.241578764Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:15.632075642Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.26
+2025-12-16T04:30:15.632082228Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:30:15.796230968Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:30:18.951593435Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:30:19.437329995Z [inf]  [Engine] BNBUSDT: HOLD (68%)
+2025-12-16T04:30:21.661889886Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:30:22.205644654Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:22.205650417Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:22.205654538Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:22.205658689Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:22.205662654Z [inf]  [Engine] XRPUSDT: Trailing SL updated to $1.87
+2025-12-16T04:30:24.049394816Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:30:24.049398323Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:30:24.049402246Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:30:24.286600544Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.04
+2025-12-16T04:30:24.581633339Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.03
+2025-12-16T04:30:26.839709782Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:30:28.896810252Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.02
+2025-12-16T04:30:28.896816532Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.01
+2025-12-16T04:30:28.896820677Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $186.00
+2025-12-16T04:30:28.896824696Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.99
+2025-12-16T04:30:28.896828615Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.98
+2025-12-16T04:30:29.683065116Z [inf]  [GPT-Screen] SOLUSDT: score=20, direction=NONE, hasOpp=false
+2025-12-16T04:30:29.683070805Z [inf]  [Engine] SOLUSDT: No opportunity (score: 20) - skipping
+2025-12-16T04:30:30.112009813Z [inf]  [Engine] XRPUSDT: Position update due (6min since last GPT analysis)
+2025-12-16T04:30:30.374498311Z [inf]  [Adaptive] XRPUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:30:50.853606861Z [inf]  [Engine] XRPUSDT: HOLD (69%)
+2025-12-16T04:30:51.902390942Z [inf]  [GPT-Screen] CRVUSDT: score=30, direction=NONE, hasOpp=false
+2025-12-16T04:30:51.902396669Z [inf]  [Engine] CRVUSDT: No opportunity (score: 30) - skipping
+2025-12-16T04:31:11.919750426Z [inf]  [GPT-Screen] LINKUSDT: score=35, direction=NONE, hasOpp=false
+2025-12-16T04:31:11.919756927Z [inf]  [Engine] LINKUSDT: No opportunity (score: 35) - skipping
+2025-12-16T04:31:11.919761766Z [inf]  [Engine] AVAXUSDT: Position update due (8min since last GPT analysis)
+2025-12-16T04:31:11.919766295Z [inf]  [Adaptive] AVAXUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:31:31.759800288Z [inf]  [Engine] AVAXUSDT: SELL (72%)
+2025-12-16T04:31:31.759806081Z [inf]  [Engine]   └─ Size: 4% | Lev: 5x | SL: $12.3200 | TP: $12.0400
+2025-12-16T04:31:31.759810477Z [inf]  [Engine] AVAXUSDT: Updated SL: $12.32 | TP: $12.04
+2025-12-16T04:31:31.759814606Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:31:31.759818963Z [inf]  [Engine] SUIUSDT: Position update due (8min since last GPT analysis)
+2025-12-16T04:31:31.759827006Z [inf]  [Adaptive] SUIUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:31:34.643743677Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:31:34.643749487Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:31:37.021530541Z [inf]  [Engine] SUIUSDT: HOLD (63%)
+2025-12-16T04:31:39.109517926Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.97
+2025-12-16T04:31:39.109524225Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.96
+2025-12-16T04:31:39.109529030Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.95
+2025-12-16T04:31:39.109533537Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.94
+2025-12-16T04:31:39.109537879Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.92
+2025-12-16T04:31:39.109542217Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:31:39.109546955Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.91
+2025-12-16T04:31:39.109551612Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.90
+2025-12-16T04:31:39.629704602Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.25
+2025-12-16T04:31:41.724014719Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.89
+2025-12-16T04:31:41.724027255Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.88
+2025-12-16T04:31:41.724036144Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.87
+2025-12-16T04:31:41.724045959Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.86
+2025-12-16T04:31:41.724054402Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.85
+2025-12-16T04:31:41.724063580Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.84
+2025-12-16T04:31:41.724071638Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.83
+2025-12-16T04:31:41.724079259Z [inf]  [Engine] AAVEUSDT: Trailing SL updated to $185.82
+2025-12-16T04:31:41.724087422Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.24
+2025-12-16T04:31:41.724095782Z [inf]  [Engine] AVAXUSDT: Trailing SL updated to $12.24
+2025-12-16T04:32:03.572557079Z [inf]  [GPT-Screen] DOTUSDT: Empty content (attempt 1), retrying...
+2025-12-16T04:32:07.751579620Z [inf]  [GPT-Screen] BTCUSDT: score=75, direction=SELL, hasOpp=true
+2025-12-16T04:32:07.751584915Z [inf]  [Engine] BTCUSDT: Opportunity detected! (score: 75, direction: SELL)
+2025-12-16T04:32:07.751588934Z [inf]  [Adaptive] BTCUSDT: Action=OPEN_NORMAL | Confidence=50% | 🔍 Exploración Q-Learning | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:32:26.981318917Z [inf]  [GPT-Screen] DOTUSDT: score=55, direction=SELL, hasOpp=true
+2025-12-16T04:32:26.981324475Z [inf]  [Engine] DOTUSDT: No opportunity (score: 55) - skipping
+2025-12-16T04:32:26.981328327Z [inf]  [Engine] BTCUSDT: SELL (66%)
+2025-12-16T04:32:26.981333175Z [inf]  [Engine]   └─ Size: 7.43% | Lev: 7x | SL: $85867.13 | TP: $84865.51
+2025-12-16T04:32:26.981338913Z [inf]  [Engine] BTCUSDT: SL too tight (0.30% < 0.3%), skipping
+2025-12-16T04:32:35.280554811Z [inf]  [GPT-Screen] ETHUSDT: score=78, direction=SELL, hasOpp=true
+2025-12-16T04:32:35.280559838Z [inf]  [Engine] ETHUSDT: Opportunity detected! (score: 78, direction: SELL)
+2025-12-16T04:32:35.280564543Z [inf]  [Adaptive] ETHUSDT: Action=SKIP | Confidence=50% | 📊 Q-Action: SKIP (Q=0.00) | Miedo extremo (11) = oportunidad SHORT
+2025-12-16T04:32:42.576538614Z [inf]  [GPT-Screen] LTCUSDT: score=55, direction=BUY, hasOpp=true
+2025-12-16T04:32:42.576542532Z [inf]  [Engine] LTCUSDT: No opportunity (score: 55) - skipping
+2025-12-16T04:32:48.042473176Z [inf]  [Engine] ETHUSDT: SELL (77%)
+2025-12-16T04:32:48.042483324Z [inf]  [Engine]   └─ Size: 5% | Lev: 6x | SL: $2946.00 | TP: $2878.00
+2025-12-16T04:32:50.137281376Z [inf]  [Engine] Opening SELL ETHUSDT:
+2025-12-16T04:32:50.137286595Z [inf]  [Engine]   └─ Quantity: 0.356 @ ~$2918.11
+2025-12-16T04:32:50.137290649Z [inf]  [Engine]   └─ Leverage: 6x
+2025-12-16T04:32:50.137294436Z [inf]  [Engine]   └─ Capital used: $173.53 (5%)
+2025-12-16T04:32:50.137298516Z [inf]  [Engine]   └─ Position value: $1041.20
+2025-12-16T04:32:50.137302429Z [inf]  [Engine] Order filled: avgPrice=0.00, fills=0, entryPrice=2918.11
+2025-12-16T04:32:50.398540062Z [inf]  [Engine] Position opened: SHORT ETHUSDT @ $2918.11
+2025-12-16T04:32:50.398549136Z [inf]  [Engine]   └─ SL: $2946.00 (0.96%)
+2025-12-16T04:32:50.398555648Z [inf]  [Engine]   └─ TP: $2878.00 (1.37%)
+2025-12-16T04:32:51.731155959Z [inf]  [GPT-Screen] TIAUSDT: score=40, direction=SELL, hasOpp=false
+2025-12-16T04:32:51.731162363Z [inf]  [Engine] TIAUSDT: No opportunity (score: 40) - skipping
