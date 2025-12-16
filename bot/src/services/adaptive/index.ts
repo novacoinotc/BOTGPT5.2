@@ -336,7 +336,15 @@ export class AdaptiveLearningSystem {
   async getStats(): Promise<{
     qLearning: ReturnType<QLearningAgent['getStats']>;
     params: ReturnType<ParameterOptimizer['getParams']>;
-    performance: Awaited<ReturnType<typeof this.getPerformanceMetrics>>;
+    performance: {
+      winRate: number;
+      roi: number;
+      maxDrawdown: number;
+      totalTrades: number;
+      recentTrades: number;
+      avgPnl: number;
+      profitFactor: number;
+    };
     totalStates: number;
   }> {
     const totalStates = await prisma.qState.count();
