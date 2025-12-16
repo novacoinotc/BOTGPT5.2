@@ -389,9 +389,21 @@ export class TradingEngine extends EventEmitter {
       // Update TP/SL if GPT suggests new values
       const position = this.state.currentPositions.get(symbol);
       if (position && decision.takeProfit && decision.stopLoss) {
-        position.takeProfit = decision.takeProfit;
-        position.stopLoss = decision.stopLoss;
-        console.log(`[Engine] ${symbol}: Updated SL: $${decision.stopLoss.toFixed(2)} | TP: $${decision.takeProfit.toFixed(2)}`);
+        // Validate SL/TP are correct for position direction
+        const isValidForLong = position.side === 'LONG' &&
+          decision.stopLoss < position.entryPrice &&
+          decision.takeProfit > position.entryPrice;
+        const isValidForShort = position.side === 'SHORT' &&
+          decision.stopLoss > position.entryPrice &&
+          decision.takeProfit < position.entryPrice;
+
+        if (isValidForLong || isValidForShort) {
+          position.takeProfit = decision.takeProfit;
+          position.stopLoss = decision.stopLoss;
+          console.log(`[Engine] ${symbol}: Updated SL: $${decision.stopLoss.toFixed(2)} | TP: $${decision.takeProfit.toFixed(2)}`);
+        } else {
+          console.log(`[Engine] ${symbol}: Rejected invalid SL/TP update (${position.side} @ $${position.entryPrice.toFixed(2)}, SL: $${decision.stopLoss.toFixed(2)}, TP: $${decision.takeProfit.toFixed(2)})`);
+        }
       }
     }
   }
