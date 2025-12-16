@@ -13,12 +13,24 @@ export class BinanceWebSocket extends EventEmitter {
   private streams: Set<string> = new Set();
   private reconnectAttempts = 0;
   private maxReconnectAttempts = 10;
-  private proxyAgent: HttpsProxyAgent<string>;
+  private proxyAgent: HttpsProxyAgent<string> | null = null;
 
   constructor() {
     super();
-    const proxyUrl = `http://${config.proxy.username}:${config.proxy.password}@${config.proxy.host}:${config.proxy.port}`;
-    this.proxyAgent = new HttpsProxyAgent(proxyUrl);
+    // Only configure proxy if all required values are present
+    const hasProxy = config.proxy.host &&
+                     config.proxy.port &&
+                     !isNaN(config.proxy.port) &&
+                     config.proxy.username &&
+                     config.proxy.password;
+
+    if (hasProxy) {
+      const proxyUrl = `http://${config.proxy.username}:${config.proxy.password}@${config.proxy.host}:${config.proxy.port}`;
+      this.proxyAgent = new HttpsProxyAgent(proxyUrl);
+      console.log('[WS] Proxy configured');
+    } else {
+      console.log('[WS] No proxy configured - connecting directly');
+    }
   }
 
   connect(streams: string[]): void {
@@ -27,7 +39,9 @@ export class BinanceWebSocket extends EventEmitter {
     const streamString = Array.from(this.streams).join('/');
     const url = `${config.binance.wsUrl}/stream?streams=${streamString}`;
 
-    this.ws = new WebSocket(url, { agent: this.proxyAgent });
+    // Only use proxy agent if configured
+    const wsOptions = this.proxyAgent ? { agent: this.proxyAgent } : {};
+    this.ws = new WebSocket(url, wsOptions);
 
     this.ws.on('open', () => {
       console.log('[WS] Connected to Binance');
