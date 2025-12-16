@@ -62,6 +62,22 @@ export class TradingEngine extends EventEmitter {
   private readonly MAX_HOLD_TIME_HOURS = 2; // Reduced to 2 hours for scalping
   private readonly MAX_TOTAL_EXPOSURE_PERCENT = 80; // Max 80% total capital in all positions
 
+  // Quantity precision by symbol (Binance Futures)
+  private readonly QUANTITY_PRECISION: Record<string, number> = {
+    'BTCUSDT': 3,
+    'ETHUSDT': 3,
+    'BNBUSDT': 2,
+    'SOLUSDT': 0,
+    'XRPUSDT': 1,
+    'LINKUSDT': 2,
+    'AVAXUSDT': 1,
+    'DOGEUSDT': 0,
+    'SUIUSDT': 1,
+    'ARBUSDT': 1,
+    'OPUSDT': 1,
+    'INJUSDT': 1,
+  };
+
   async start(): Promise<void> {
     if (this.state.isRunning) {
       console.log('[Engine] Already running');
@@ -425,12 +441,13 @@ export class TradingEngine extends EventEmitter {
         return;
       }
 
-      // Get symbol info for precision
-      const symbolInfo = await binanceClient.getSymbolInfo(symbol);
-      const quantityPrecision = symbolInfo?.quantityPrecision || 3;
-      const pricePrecision = symbolInfo?.pricePrecision || 2;
+      // Get symbol info for precision - use our known map first, then API, then default
+      const quantityPrecision = this.QUANTITY_PRECISION[symbol] ?? 3;
 
+      // Round to precision and ensure it's not too small
       const roundedQty = parseFloat(quantity.toFixed(quantityPrecision));
+
+      console.log(`[Engine] Quantity calculation: raw=${quantity}, precision=${quantityPrecision}, rounded=${roundedQty}`);
 
       // Set leverage for this trade
       await binanceClient.setLeverage(symbol, leverage);
