@@ -44,6 +44,7 @@ export class BinanceClient {
   private timeOffset = 0; // Difference between local time and server time
   private lastTimeSync = 0;
   private readonly TIME_SYNC_INTERVAL = 300000; // Sync every 5 minutes
+  private initialized = false;
 
   constructor() {
     const axiosConfig: any = {
@@ -70,6 +71,15 @@ export class BinanceClient {
     }
 
     this.client = axios.create(axiosConfig);
+  }
+
+  // Initialize client - MUST be called before first signed request
+  async init(): Promise<void> {
+    if (this.initialized) return;
+    console.log('[Binance] Initializing client...');
+    await this.syncTime();
+    this.initialized = true;
+    console.log('[Binance] Client initialized');
   }
 
   private sign(params: Record<string, any>): string {
@@ -104,7 +114,12 @@ export class BinanceClient {
   }
 
   private async addSignature(params: Record<string, any>): Promise<Record<string, any>> {
-    // Re-sync time if needed
+    // Ensure client is initialized (first time sync)
+    if (!this.initialized) {
+      await this.init();
+    }
+
+    // Re-sync time if needed (every 5 minutes)
     if (Date.now() - this.lastTimeSync > this.TIME_SYNC_INTERVAL) {
       await this.syncTime();
     }
