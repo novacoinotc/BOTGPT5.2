@@ -607,6 +607,11 @@ export class TradingEngine extends EventEmitter {
     }
   }
 
+  // Auto-close thresholds (from 87.95% WR IA patterns)
+  private readonly AUTO_TP_PERCENT = 2.0; // Auto take profit at 2% (IA's TP2 range)
+  private readonly AUTO_SL_PERCENT = -1.5; // Auto stop loss at -1.5%
+  private readonly TRAILING_ACTIVATION = 1.0; // Start trailing at 1% profit
+
   private async checkPositionExit(position: Position, currentPrice: number): Promise<void> {
     // Skip invalid positions (phantom positions from Binance with entryPrice=0)
     if (!position.entryPrice || position.entryPrice <= 0 || !position.quantity || position.quantity <= 0) {
@@ -616,11 +621,26 @@ export class TradingEngine extends EventEmitter {
     }
 
     const pnl = this.calculatePnl(position, currentPrice);
-
-    // Skip SL/TP checks if they haven't been set by GPT yet (=0)
-    // GPT will set proper SL/TP on first position update (within 5 minutes)
     const hasSLTP = position.stopLoss > 0 && position.takeProfit > 0;
 
+    // === AUTO-CLOSE BY PROFIT % (works even without SL/TP set) ===
+    // This ensures positions close automatically like the old IA
+
+    // Auto Take Profit: Close if profit >= 2%
+    if (pnl >= this.AUTO_TP_PERCENT) {
+      console.log(`[Engine] ${position.symbol}: Auto TP triggered at ${pnl.toFixed(2)}%`);
+      await this.closePosition(position, currentPrice, 'tp');
+      return;
+    }
+
+    // Auto Stop Loss: Close if loss >= 1.5%
+    if (pnl <= this.AUTO_SL_PERCENT) {
+      console.log(`[Engine] ${position.symbol}: Auto SL triggered at ${pnl.toFixed(2)}%`);
+      await this.closePosition(position, currentPrice, 'sl');
+      return;
+    }
+
+    // === CUSTOM SL/TP (if GPT has set them) ===
     if (hasSLTP) {
       // Check stop loss
       if (position.side === 'LONG' && currentPrice <= position.stopLoss) {
@@ -641,22 +661,30 @@ export class TradingEngine extends EventEmitter {
       }
     }
 
-    // Check timeout (extended to 4 hours)
+    // === TIMEOUT ===
     const holdTime = Date.now() - position.entryTime;
     if (holdTime > this.MAX_HOLD_TIME_HOURS * 60 * 60 * 1000) {
+      console.log(`[Engine] ${position.symbol}: Timeout after ${this.MAX_HOLD_TIME_HOURS}h`);
       await this.closePosition(position, currentPrice, 'timeout');
       return;
     }
 
-    // Trailing stop logic for profitable positions (optional enhancement)
-    if (pnl > 1.0) { // If profit > 1%
+    // === TRAILING STOP (for profitable positions) ===
+    if (pnl >= this.TRAILING_ACTIVATION) {
+      // Trail 0.5% behind current price to lock in profits
+      const trailPercent = 0.005;
       const newStopLoss = position.side === 'LONG'
-        ? Math.max(position.stopLoss, currentPrice * 0.995) // Trail 0.5% behind
-        : Math.min(position.stopLoss, currentPrice * 1.005);
+        ? currentPrice * (1 - trailPercent)
+        : currentPrice * (1 + trailPercent);
 
-      if (newStopLoss !== position.stopLoss) {
+      // Only update if it improves the stop loss
+      const shouldUpdate = position.side === 'LONG'
+        ? newStopLoss > position.stopLoss
+        : (position.stopLoss === 0 || newStopLoss < position.stopLoss);
+
+      if (shouldUpdate) {
         position.stopLoss = newStopLoss;
-        console.log(`[Engine] ${position.symbol}: Trailing SL updated to $${newStopLoss.toFixed(2)}`);
+        console.log(`[Engine] ${position.symbol}: Trailing SL → $${newStopLoss.toFixed(2)} (PnL: ${pnl.toFixed(2)}%)`);
       }
     }
   }
