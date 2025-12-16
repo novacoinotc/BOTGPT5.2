@@ -199,12 +199,16 @@ class MemorySystem {
           quantity: newTrade.quantity,
           leverage: 1,
           pnl: newTrade.pnl || 0,
+          pnlPercent: newTrade.pnl || 0,  // Duplicate for compatibility
           pnlUsd: newTrade.pnlUsd || 0,
           entryTime: new Date(newTrade.entryTime),
           exitTime: new Date(newTrade.exitTime),
+          status: 'CLOSED',  // Trades saved here are always closed
           exitReason: newTrade.exitReason || 'manual',
-          gptConfidence: typeof newTrade.gptConfidence === 'number' ? newTrade.gptConfidence : 0,
-          gptReasoning: newTrade.gptReasoning || '',
+          gptConfidence: typeof newTrade.gptConfidence === 'number' ? Math.round(newTrade.gptConfidence) : null,
+          gptReasoning: newTrade.gptReasoning || null,
+          entryConditions: newTrade.entryConditions || null,  // Save as JSON
+          // Also save individual fields for querying
           rsi: newTrade.entryConditions?.rsi || null,
           macdHistogram: newTrade.entryConditions?.macdHistogram || null,
           orderBookImbalance: newTrade.entryConditions?.orderBookImbalance || null,
