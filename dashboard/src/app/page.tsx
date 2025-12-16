@@ -73,7 +73,12 @@ export default function Dashboard() {
   // Socket connection
   useEffect(() => {
     socketService.connect();
-    setConnected(socketService.isConnected());
+
+    // Listen for connection state changes
+    const handleConnectionChange = (isConnected: boolean) => {
+      setConnected(isConnected);
+    };
+    socketService.onConnectionChange(handleConnectionChange);
 
     socketService.on('status', (data: any) => {
       setStatus(prev => prev ? { ...prev, ...data } : data);
@@ -128,6 +133,7 @@ export default function Dashboard() {
     });
 
     return () => {
+      socketService.offConnectionChange(handleConnectionChange);
       socketService.disconnect();
     };
   }, [selectedSymbol]);
