@@ -30,7 +30,12 @@ function loadQTableFromFile(): void {
 
     for (const filePath of possiblePaths) {
       if (fs.existsSync(filePath)) {
-        const fileContent = fs.readFileSync(filePath, 'utf-8');
+        let fileContent = fs.readFileSync(filePath, 'utf-8');
+        // Fix invalid JSON values (Infinity, NaN, -Infinity)
+        fileContent = fileContent
+          .replace(/:\s*Infinity/g, ': 999999')
+          .replace(/:\s*-Infinity/g, ': -999999')
+          .replace(/:\s*NaN/g, ': 0');
         jsonData = JSON.parse(fileContent);
         loadedPath = filePath;
         break;
