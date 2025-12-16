@@ -339,7 +339,7 @@ export class ParameterOptimizer {
           winRateBefore: metrics.winRate,
           roiBefore: metrics.roi,
           drawdownBefore: metrics.maxDrawdown,
-          paramsChanged: changes,
+          paramsChanged: changes.map(c => `${c.param}: ${c.oldValue} → ${c.newValue}`),
           reasoning,
           totalTradesAtChange: metrics.totalTrades
         }
