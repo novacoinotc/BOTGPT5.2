@@ -173,6 +173,17 @@ app.post('/api/memory/import', (req, res) => {
   res.json({ success: true });
 });
 
+// Reset ALL data - fresh start
+app.post('/api/reset', async (req, res) => {
+  try {
+    console.log('[API] 🗑️ Reset requested - clearing all data...');
+    await memorySystem.clearAllData();
+    res.json({ success: true, message: 'All data cleared - fresh start!' });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // === SOCKET.IO ===
 
 io.on('connection', (socket) => {

@@ -325,17 +325,17 @@ ${news.headlines.slice(0, 5).map(h => `  • ${h}`).join('\n') || '  • Sin not
 
 📊 TU RENDIMIENTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Trades totales: ${recentTrades.length} | Win Rate: ${winRate.toFixed(1)}%
-Promedio ganancia: +${avgWin.toFixed(2)}% | Promedio pérdida: -${avgLoss.toFixed(2)}%
-Ratio G/P: ${avgLoss > 0 ? (avgWin / avgLoss).toFixed(2) : 'N/A'}x | Racha: ${consecutiveLosses > 0 ? `${consecutiveLosses} pérdidas` : 'Positiva'}
+${recentTrades.length > 0
+  ? `Trades: ${recentTrades.length} | Win Rate: ${winRate.toFixed(1)}% | Ratio G/P: ${avgLoss > 0 ? (avgWin / avgLoss).toFixed(2) : 'N/A'}x`
+  : '🆕 INICIO FRESCO - Sin historial previo. ¡Construye un buen track record!'}
 
-📈 ÚLTIMOS TRADES:
-${recentTrades.slice(0, 15).map(t =>
-  `  ${t.pnl > 0 ? '✅' : '❌'} ${t.symbol} ${t.side} ${t.pnl > 0 ? '+' : ''}${t.pnl.toFixed(2)}% ($${t.pnlUsd.toFixed(2)}) [${t.exitReason}]`
-).join('\n') || '  Sin trades aún'}
+${recentTrades.length > 0 ? `📈 ÚLTIMOS TRADES:
+${recentTrades.slice(0, 10).map(t =>
+  `  ${t.pnl > 0 ? '✅' : '❌'} ${t.symbol} ${t.side} ${t.pnl > 0 ? '+' : ''}${t.pnl.toFixed(2)}% [${t.exitReason}]`
+).join('\n')}` : ''}
 
-🧠 LECCIONES APRENDIDAS:
-${learnings.slice(0, 8).map(l => `• ${l}`).join('\n') || '• Cada trade es una oportunidad de aprender'}
+${learnings.length > 0 ? `🧠 LECCIONES:
+${learnings.slice(0, 5).map(l => `• ${l}`).join('\n')}` : ''}
 
 💡 REFERENCIA ATR:
 SL por volatilidad: ~${((suggestedSL / analysis.price) * 100).toFixed(2)}% | TP: ~${((suggestedTP / analysis.price) * 100).toFixed(2)}%
