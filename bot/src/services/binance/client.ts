@@ -3,8 +3,47 @@ import axios, { AxiosInstance } from 'axios';
 import { HttpsProxyAgent } from 'https-proxy-agent';
 import { config } from '../../config/index.js';
 
+// Simple rate limiter to prevent API bans
+class RateLimiter {
+  private requestTimestamps: number[] = [];
+  private orderTimestamps: number[] = [];
+  private readonly MAX_REQUESTS_PER_MIN = 1200;
+  private readonly MAX_ORDERS_PER_10S = 300;
+
+  async waitForSlot(isOrder: boolean = false): Promise<void> {
+    const now = Date.now();
+
+    // Clean old timestamps
+    this.requestTimestamps = this.requestTimestamps.filter(t => now - t < 60000);
+    this.orderTimestamps = this.orderTimestamps.filter(t => now - t < 10000);
+
+    // Check request limit (90% threshold)
+    if (this.requestTimestamps.length >= this.MAX_REQUESTS_PER_MIN * 0.9) {
+      const waitTime = 60000 - (now - this.requestTimestamps[0]) + 100;
+      console.warn(`[RateLimit] Approaching request limit, waiting ${waitTime}ms`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+    }
+
+    // Check order limit (90% threshold)
+    if (isOrder && this.orderTimestamps.length >= this.MAX_ORDERS_PER_10S * 0.9) {
+      const waitTime = 10000 - (now - this.orderTimestamps[0]) + 100;
+      console.warn(`[RateLimit] Approaching order limit, waiting ${waitTime}ms`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+    }
+
+    this.requestTimestamps.push(Date.now());
+    if (isOrder) {
+      this.orderTimestamps.push(Date.now());
+    }
+  }
+}
+
 export class BinanceClient {
   private client: AxiosInstance;
+  private rateLimiter = new RateLimiter();
+  private timeOffset = 0; // Difference between local time and server time
+  private lastTimeSync = 0;
+  private readonly TIME_SYNC_INTERVAL = 300000; // Sync every 5 minutes
 
   constructor() {
     const axiosConfig: any = {
@@ -43,9 +82,36 @@ export class BinanceClient {
       .digest('hex');
   }
 
-  private addSignature(params: Record<string, any>): Record<string, any> {
-    const timestamp = Date.now();
-    const paramsWithTimestamp = { ...params, timestamp };
+  // Sync time with Binance server to prevent -1021 timestamp errors
+  async syncTime(): Promise<void> {
+    try {
+      const localBefore = Date.now();
+      const response = await this.client.get('/fapi/v1/time');
+      const localAfter = Date.now();
+
+      const serverTime = response.data.serverTime;
+      const localTime = Math.floor((localBefore + localAfter) / 2); // Average to account for latency
+
+      this.timeOffset = serverTime - localTime;
+      this.lastTimeSync = Date.now();
+
+      if (Math.abs(this.timeOffset) > 1000) {
+        console.log(`[Binance] Time synced: offset=${this.timeOffset}ms (local clock is ${this.timeOffset > 0 ? 'behind' : 'ahead'})`);
+      }
+    } catch (error: any) {
+      console.error('[Binance] Failed to sync time:', error.message);
+    }
+  }
+
+  private async addSignature(params: Record<string, any>): Promise<Record<string, any>> {
+    // Re-sync time if needed
+    if (Date.now() - this.lastTimeSync > this.TIME_SYNC_INTERVAL) {
+      await this.syncTime();
+    }
+
+    // Use corrected timestamp
+    const timestamp = Date.now() + this.timeOffset;
+    const paramsWithTimestamp = { ...params, timestamp, recvWindow: 10000 }; // 10s window for safety
     const signature = this.sign(paramsWithTimestamp);
     return { ...paramsWithTimestamp, signature };
   }
@@ -107,20 +173,23 @@ export class BinanceClient {
   // === ACCOUNT ===
 
   async getAccountInfo(): Promise<any> {
-    const params = this.addSignature({});
+    await this.rateLimiter.waitForSlot();
+    const params = await this.addSignature({});
     const response = await this.client.get('/fapi/v3/account', { params }); // V3 for better performance
     return response.data;
   }
 
   async getBalance(): Promise<any[]> {
-    const params = this.addSignature({});
+    await this.rateLimiter.waitForSlot();
+    const params = await this.addSignature({});
     const response = await this.client.get('/fapi/v3/balance', { params }); // V3 for better performance
     return response.data;
   }
 
   async getPositions(): Promise<any[]> {
     try {
-      const params = this.addSignature({});
+      await this.rateLimiter.waitForSlot();
+      const params = await this.addSignature({});
       const response = await this.client.get('/fapi/v3/positionRisk', { params });
 
       const allPositions = response.data || [];
@@ -143,14 +212,16 @@ export class BinanceClient {
   // === TRADING ===
 
   async setLeverage(symbol: string, leverage: number): Promise<any> {
-    const params = this.addSignature({ symbol, leverage });
+    await this.rateLimiter.waitForSlot();
+    const params = await this.addSignature({ symbol, leverage });
     const response = await this.client.post('/fapi/v1/leverage', null, { params });
     return response.data;
   }
 
   async setMarginType(symbol: string, marginType: 'ISOLATED' | 'CROSSED'): Promise<any> {
     try {
-      const params = this.addSignature({ symbol, marginType });
+      await this.rateLimiter.waitForSlot();
+      const params = await this.addSignature({ symbol, marginType });
       const response = await this.client.post('/fapi/v1/marginType', null, { params });
       return response.data;
     } catch (error: any) {
@@ -196,25 +267,30 @@ export class BinanceClient {
       orderParams.reduceOnly = 'true';
     }
 
-    const signedParams = this.addSignature(orderParams);
+    // Rate limit check for orders (stricter limit)
+    await this.rateLimiter.waitForSlot(true);
+    const signedParams = await this.addSignature(orderParams);
     const response = await this.client.post('/fapi/v1/order', null, { params: signedParams });
     return response.data;
   }
 
   async cancelOrder(symbol: string, orderId: number): Promise<any> {
-    const params = this.addSignature({ symbol, orderId });
+    await this.rateLimiter.waitForSlot(true);
+    const params = await this.addSignature({ symbol, orderId });
     const response = await this.client.delete('/fapi/v1/order', { params });
     return response.data;
   }
 
   async cancelAllOrders(symbol: string): Promise<any> {
-    const params = this.addSignature({ symbol });
+    await this.rateLimiter.waitForSlot(true);
+    const params = await this.addSignature({ symbol });
     const response = await this.client.delete('/fapi/v1/allOpenOrders', { params });
     return response.data;
   }
 
   async getOpenOrders(symbol?: string): Promise<any[]> {
-    const params = this.addSignature(symbol ? { symbol } : {});
+    await this.rateLimiter.waitForSlot();
+    const params = await this.addSignature(symbol ? { symbol } : {});
     const response = await this.client.get('/fapi/v1/openOrders', { params });
     return response.data;
   }

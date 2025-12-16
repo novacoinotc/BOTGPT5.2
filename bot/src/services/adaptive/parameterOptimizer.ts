@@ -73,7 +73,7 @@ export class ParameterOptimizer {
   async loadParams(): Promise<typeof OPTIMAL_PARAMS> {
     try {
       const dbParams = await prisma.dynamicParams.findUnique({
-        where: { id: 'active' }
+        where: { id: 'main' } // FIX: Use 'main' to match schema default
       });
 
       if (dbParams) {
@@ -121,9 +121,9 @@ export class ParameterOptimizer {
   async initializeParams(): Promise<void> {
     try {
       await prisma.dynamicParams.upsert({
-        where: { id: 'active' },
+        where: { id: 'main' }, // FIX: Use 'main' to match schema default
         create: {
-          id: 'active',
+          id: 'main',
           ...OPTIMAL_PARAMS
         },
         update: {} // Don't overwrite if exists
@@ -312,9 +312,9 @@ export class ParameterOptimizer {
     try {
       // Update current parameters
       await prisma.dynamicParams.upsert({
-        where: { id: 'active' },
+        where: { id: 'main' }, // FIX: Use 'main' to match schema default
         create: {
-          id: 'active',
+          id: 'main',
           ...this.params,
           currentWinRate: metrics.winRate,
           currentROI: metrics.roi,
