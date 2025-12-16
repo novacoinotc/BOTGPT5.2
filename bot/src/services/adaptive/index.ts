@@ -218,19 +218,19 @@ export class AdaptiveLearningSystem {
         };
       }
 
-      const completedTrades = trades.filter(t => t.pnl !== null);
-      const wins = completedTrades.filter(t => (t.pnl || 0) > 0);
-      const losses = completedTrades.filter(t => (t.pnl || 0) <= 0);
+      const completedTrades = trades.filter((t: any) => t.pnl !== null);
+      const wins = completedTrades.filter((t: any) => (t.pnl || 0) > 0);
+      const losses = completedTrades.filter((t: any) => (t.pnl || 0) <= 0);
 
       const winRate = completedTrades.length > 0
         ? (wins.length / completedTrades.length) * 100
         : 0;
 
-      const totalPnl = completedTrades.reduce((sum, t) => sum + (t.pnl || 0), 0);
+      const totalPnl = completedTrades.reduce((sum: number, t: any) => sum + (t.pnl || 0), 0);
       const avgPnl = completedTrades.length > 0 ? totalPnl / completedTrades.length : 0;
 
-      const totalWins = wins.reduce((sum, t) => sum + (t.pnl || 0), 0);
-      const totalLosses = Math.abs(losses.reduce((sum, t) => sum + (t.pnl || 0), 0));
+      const totalWins = wins.reduce((sum: number, t: any) => sum + (t.pnl || 0), 0);
+      const totalLosses = Math.abs(losses.reduce((sum: number, t: any) => sum + (t.pnl || 0), 0));
       const profitFactor = totalLosses > 0 ? totalWins / totalLosses : totalWins > 0 ? 999 : 1;
 
       // Calculate max drawdown from recent trades
@@ -247,7 +247,7 @@ export class AdaptiveLearningSystem {
 
       // Count recent trades (last 24h)
       const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
-      const recentTrades = trades.filter(t => t.entryTime > oneDayAgo).length;
+      const recentTrades = trades.filter((t: any) => t.entryTime > oneDayAgo).length;
 
       return {
         winRate,
@@ -371,7 +371,7 @@ export class AdaptiveLearningSystem {
       take: limit
     });
 
-    return states.map(s => {
+    return states.map((s: any) => {
       const values = {
         SKIP: s.skipValue,
         OPEN_CONSERVATIVE: s.openConservative,
