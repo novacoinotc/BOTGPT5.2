@@ -106,9 +106,27 @@ export class BinanceClient {
   }
 
   async getPositions(): Promise<any[]> {
-    const params = this.addSignature({});
-    const response = await this.client.get('/fapi/v3/positionRisk', { params }); // V3 returns only active positions
-    return response.data.filter((p: any) => parseFloat(p.positionAmt) !== 0);
+    try {
+      const params = this.addSignature({});
+      // Try v2 first (more reliable), fallback to v3
+      let response;
+      try {
+        response = await this.client.get('/fapi/v2/positionRisk', { params });
+      } catch {
+        response = await this.client.get('/fapi/v3/positionRisk', { params });
+      }
+
+      const positions = response.data.filter((p: any) => parseFloat(p.positionAmt) !== 0);
+
+      if (positions.length > 0) {
+        console.log(`[Binance] Found ${positions.length} active positions`);
+      }
+
+      return positions;
+    } catch (error: any) {
+      console.error('[Binance] Error fetching positions:', error.message);
+      return [];
+    }
   }
 
   // === TRADING ===
