@@ -155,7 +155,7 @@ model MarketSnapshot {
   rsiZone         String   // LOW, NEUTRAL, HIGH
   macdHistogram   Float
   regime          String   // trending_up, trending_down, ranging, volatile
-  regimeStrength  Float
+  regimeStrength  String   // WEAK, MODERATE, STRONG
   orderbook       String   // BUY_PRESSURE, SELL_PRESSURE, NEUTRAL
   volatility      String   // LOW, MEDIUM, HIGH, VERY_HIGH
   volatilityPct   Float
@@ -174,34 +174,83 @@ model MarketSnapshot {
   @@index([timestamp])
 }
 
-// Dynamic parameters for optimization
+// Dynamic parameters for optimization (from 87.95% WR IA)
 model DynamicParams {
   id                    String   @id @default("main")
+
+  // Trading Thresholds
   minConfidence         Float    @default(55)
-  basePositionPct       Float    @default(2)
-  conservativeLev       Int      @default(2)
-  balancedLev           Int      @default(3)
-  aggressiveLev         Int      @default(5)
+  profitThreshold       Float    @default(1.67)
+
+  // RSI Configuration
+  rsiOversold           Float    @default(26)
+  rsiOverbought         Float    @default(74)
+  rsiPeriod             Int      @default(10)
+
+  // Position Sizing
+  basePositionPct       Float    @default(7.43)
+  maxPositionPct        Float    @default(11.74)
+  maxRiskPerTrade       Float    @default(2.89)
+  maxPositions          Int      @default(5)
+
+  // Leverage Settings
+  conservativeLev       Int      @default(5)
+  balancedLev           Int      @default(6)
+  aggressiveLev         Int      @default(14)
+
+  // Futures Conditions
+  minConfFutures        Float    @default(75.68)
+  minWinrateFutures     Float    @default(46.13)
+  maxDrawdownFutures    Float    @default(6.11)
+  volThresholdFutures   Float    @default(0.025)
+
+  // Fear & Greed
+  fgExtremeThreshold    Float    @default(24)
+  fgOpportunityBoost    Float    @default(1.85)
+
+  // Take Profit / Stop Loss
+  tpBasePct             Float    @default(0.31)
+  tpDynamicMultiplier   Float    @default(1.92)
+  slBasePct             Float    @default(0.30)
   baseTpPct             Float    @default(0.5)
   baseSlPct             Float    @default(0.3)
+
+  // Risk Management
   maxDailyLossPct       Float    @default(5)
   consecutiveLossLimit  Int      @default(3)
+
+  // Performance tracking
+  currentWinRate        Float    @default(0)
+  currentROI            Float    @default(0)
+  totalTrials           Int      @default(0)
+  lastOptimization      DateTime?
 
   updatedAt             DateTime @updatedAt
 }
 
 // Parameter change history for auditing
 model ParamChange {
-  id              String   @id @default(uuid())
-  param           String
-  oldValue        Float
-  newValue        Float
-  reason          String
-  strategy        String
+  id                  String   @id @default(uuid())
+  changeNumber        Int
+  triggerReason       String
+  strategy            String
+  winRateBefore       Float
+  roiBefore           Float
+  drawdownBefore      Float
+  paramsChanged       String[] // Array of parameter names changed
+  reasoning           String
+  totalTradesAtChange Int
 
-  timestamp       DateTime @default(now())
+  // Legacy fields (kept for compatibility)
+  param               String?
+  oldValue            Float?
+  newValue            Float?
+  reason              String?
 
-  @@index([param])
+  timestamp           DateTime @default(now())
+
+  @@index([changeNumber])
+  @@index([strategy])
   @@index([timestamp])
 }
 
