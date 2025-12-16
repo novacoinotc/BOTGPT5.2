@@ -44,8 +44,8 @@ interface MarketContext {
 
 export class GPTEngine {
   private client: OpenAI;
-  private screeningModel = 'gpt-4o-mini'; // Cheap, fast model for quick screening
-  private tradingModel = 'gpt-4o'; // Premium model for trading decisions (latest as of Dec 2025)
+  private screeningModel = 'gpt-5-mini'; // Fast GPT-5 model for quick screening
+  private tradingModel = 'gpt-5.2'; // Latest GPT-5.2 for trading decisions
 
   constructor() {
     this.client = new OpenAI({
