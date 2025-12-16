@@ -69,6 +69,21 @@ class MemorySystem {
     try {
       console.log('[Memory] Loading historical data from database...');
 
+      // First, get total counts from DB for monitoring
+      const [tradeCount, patternCount, learningCount] = await Promise.all([
+        prisma.trade.count(),
+        prisma.pattern.count(),
+        prisma.learning.count()
+      ]);
+
+      console.log(`[Memory] Database counts - Trades: ${tradeCount}, Patterns: ${patternCount}, Learnings: ${learningCount}`);
+
+      // Warning if trade data seems missing
+      if (tradeCount === 0 && (patternCount > 0 || learningCount > 0)) {
+        console.warn('[Memory] ⚠️ WARNING: Trade data is empty but patterns/learnings exist!');
+        console.warn('[Memory] This may indicate data loss. Check database integrity.');
+      }
+
       // Load trades from database
       const dbTrades = await prisma.trade.findMany({
         orderBy: { entryTime: 'desc' },
@@ -496,8 +511,21 @@ class MemorySystem {
   }
 
   // Clear ALL data from memory AND database - for fresh start
+  // DANGER: This deletes ALL historical data permanently!
   async clearAllData(): Promise<void> {
-    console.log('[Memory] 🗑️ Clearing ALL data from memory and database...');
+    // Log the call stack to track who's calling this
+    const stack = new Error().stack;
+    console.log('[Memory] 🗑️ clearAllData() called!');
+    console.log('[Memory] Call stack:', stack?.split('\n').slice(1, 4).join(' <- '));
+
+    // Get current counts before deletion for logging
+    const [tradeCount, patternCount, learningCount] = await Promise.all([
+      prisma.trade.count(),
+      prisma.pattern.count(),
+      prisma.learning.count()
+    ]);
+
+    console.log(`[Memory] ⚠️ DELETING: ${tradeCount} trades, ${patternCount} patterns, ${learningCount} learnings`);
 
     try {
       // Clear database tables
