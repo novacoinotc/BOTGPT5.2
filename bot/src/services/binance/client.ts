@@ -5,19 +5,32 @@ import { config } from '../../config/index.js';
 
 export class BinanceClient {
   private client: AxiosInstance;
-  private proxyAgent: HttpsProxyAgent<string>;
 
   constructor() {
-    const proxyUrl = `http://${config.proxy.username}:${config.proxy.password}@${config.proxy.host}:${config.proxy.port}`;
-    this.proxyAgent = new HttpsProxyAgent(proxyUrl);
-
-    this.client = axios.create({
+    const axiosConfig: any = {
       baseURL: config.binance.baseUrl,
-      httpsAgent: this.proxyAgent,
       headers: {
         'X-MBX-APIKEY': config.binance.apiKey,
       },
-    });
+    };
+
+    // Only use proxy if all proxy settings are configured
+    const hasProxy = config.proxy.host &&
+                     config.proxy.port &&
+                     !isNaN(config.proxy.port) &&
+                     config.proxy.username &&
+                     config.proxy.password;
+
+    if (hasProxy) {
+      const proxyUrl = `http://${config.proxy.username}:${config.proxy.password}@${config.proxy.host}:${config.proxy.port}`;
+      const proxyAgent = new HttpsProxyAgent(proxyUrl);
+      axiosConfig.httpsAgent = proxyAgent;
+      console.log('[Binance] Using proxy:', config.proxy.host);
+    } else {
+      console.log('[Binance] No proxy configured, connecting directly');
+    }
+
+    this.client = axios.create(axiosConfig);
   }
 
   private sign(params: Record<string, any>): string {
