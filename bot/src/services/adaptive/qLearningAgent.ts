@@ -16,19 +16,38 @@ let PRETRAINED_Q_VALUES: Record<string, Record<string, number>> = {};
 // Load Q-table from JSON file
 function loadQTableFromFile(): void {
   try {
-    // Try multiple possible paths (with and without spaces in filename)
+    console.log(`[Q-Learning] Current working directory: ${process.cwd()}`);
+    console.log(`[Q-Learning] __dirname: ${__dirname}`);
+
+    // Try multiple possible paths (Railway runs from root, but -w bot changes context)
     const possiblePaths = [
+      // When cwd is bot/ (npm -w bot context)
       path.join(process.cwd(), 'IA_200_TRADES.json'),
       path.join(process.cwd(), 'IA 200 TRADES.json'),
+      // When cwd is root/ (npm run from root)
+      path.join(process.cwd(), 'bot', 'IA_200_TRADES.json'),
+      path.join(process.cwd(), 'bot', 'IA 200 TRADES.json'),
+      // Root level (if file is at project root)
+      path.join(process.cwd(), '..', 'IA_200_TRADES.json'),
       path.join(process.cwd(), '..', 'IA 200 TRADES.json'),
+      // Relative to compiled code location
       path.join(__dirname, '..', '..', '..', 'IA_200_TRADES.json'),
+      path.join(__dirname, '..', '..', '..', 'IA 200 TRADES.json'),
+      path.join(__dirname, '..', '..', '..', '..', 'IA_200_TRADES.json'),
       path.join(__dirname, '..', '..', '..', '..', 'IA 200 TRADES.json'),
+      path.join(__dirname, '..', '..', '..', '..', 'bot', 'IA_200_TRADES.json'),
+      // Absolute fallback for Railway
+      '/app/bot/IA_200_TRADES.json',
+      '/app/IA_200_TRADES.json',
+      '/app/IA 200 TRADES.json',
     ];
 
     let jsonData: any = null;
     let loadedPath = '';
+    const checkedPaths: string[] = [];
 
     for (const filePath of possiblePaths) {
+      checkedPaths.push(filePath);
       if (fs.existsSync(filePath)) {
         let fileContent = fs.readFileSync(filePath, 'utf-8');
         // Fix invalid JSON values (Infinity, NaN, -Infinity)
@@ -38,8 +57,15 @@ function loadQTableFromFile(): void {
           .replace(/:\s*NaN/g, ': 0');
         jsonData = JSON.parse(fileContent);
         loadedPath = filePath;
+        console.log(`[Q-Learning] ✅ Found Q-table file at: ${filePath}`);
         break;
       }
+    }
+
+    if (!loadedPath) {
+      console.log('[Q-Learning] ⚠️ Q-table file not found at any of these paths:');
+      checkedPaths.slice(0, 8).forEach(p => console.log(`  - ${p}`));
+      console.log('  ... and more');
     }
 
     if (jsonData && jsonData.rl_agent && jsonData.rl_agent.q_table) {
@@ -57,8 +83,12 @@ function loadQTableFromFile(): void {
 
       console.log(`[Q-Learning] ✅ Loaded Q-table from ${loadedPath}`);
       console.log(`[Q-Learning] ✅ ${stateCount} states with ${actionCount} action values`);
+
+      // Log some example states for verification
+      const sampleStates = Object.keys(PRETRAINED_Q_VALUES).slice(0, 3);
+      console.log(`[Q-Learning] Sample states: ${sampleStates.join(', ').slice(0, 100)}...`);
     } else {
-      console.log('[Q-Learning] ⚠️ No Q-table found in JSON, using empty table');
+      console.log('[Q-Learning] ⚠️ No Q-table found in JSON structure, using empty table');
     }
   } catch (error) {
     console.error('[Q-Learning] ❌ Error loading Q-table from file:', error);

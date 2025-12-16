@@ -522,22 +522,42 @@ export class TradingEngine extends EventEmitter {
     console.log(`[Engine] ${symbol}: ${decision.action} (${decision.confidence}%)`);
 
     // Warning: Log when GPT-5.2 contradicts the screening
+    // OVERRIDE: If GPT says HOLD but screening score >= 70, follow screening instead
+    const HIGH_SCORE_OVERRIDE_THRESHOLD = 70;
+    let overriddenDecision = decision;
+
     if (screeningResult && screeningResult.hasOpportunity && screeningResult.direction !== 'NONE') {
       if (decision.action === 'HOLD') {
         console.log(`[Engine] ⚠️ ${symbol}: GPT-5.2 said HOLD but screening detected ${screeningResult.direction} (score: ${screeningResult.score})`);
         console.log(`[Engine]   └─ Reason for rejection: ${decision.reasoning.slice(0, 150)}...`);
+
+        // HIGH SCORE OVERRIDE: Trust screening signals with score >= 70
+        if (screeningResult.score >= HIGH_SCORE_OVERRIDE_THRESHOLD) {
+          console.log(`[Engine] 🔄 ${symbol}: OVERRIDING GPT HOLD - screening score ${screeningResult.score} >= ${HIGH_SCORE_OVERRIDE_THRESHOLD}`);
+          overriddenDecision = {
+            ...decision,
+            action: screeningResult.direction,
+            confidence: Math.min(85, screeningResult.score), // Use screening score as confidence
+            positionSizePercent: 15, // Conservative size for overrides
+            leverage: 3, // Conservative leverage for overrides
+            stopLoss: decision.stopLoss || (analysis?.price ?? 0) * (screeningResult.direction === 'BUY' ? 0.98 : 1.02),
+            takeProfit: decision.takeProfit || (analysis?.price ?? 0) * (screeningResult.direction === 'BUY' ? 1.015 : 0.985),
+            reasoning: `[OVERRIDE] Screening score ${screeningResult.score} triggered override. Original: ${decision.reasoning.slice(0, 100)}`
+          };
+          console.log(`[Engine] 🔄 ${symbol}: Override action: ${overriddenDecision.action} @ ${overriddenDecision.positionSizePercent}% size, ${overriddenDecision.leverage}x`);
+        }
       } else if (decision.action !== screeningResult.direction) {
         console.log(`[Engine] ⚠️ ${symbol}: Direction mismatch! Screening: ${screeningResult.direction}, GPT-5.2: ${decision.action}`);
       }
     }
-    console.log(`[Engine]   └─ ${decision.reasoning.slice(0, 100)}...`);
-    if (decision.action !== 'HOLD') {
-      console.log(`[Engine]   └─ Size: ${decision.positionSizePercent}% | Leverage: ${decision.leverage}x`);
-      console.log(`[Engine]   └─ SL: $${decision.stopLoss?.toFixed(2)} | TP: $${decision.takeProfit?.toFixed(2)}`);
+    console.log(`[Engine]   └─ ${overriddenDecision.reasoning.slice(0, 100)}...`);
+    if (overriddenDecision.action !== 'HOLD') {
+      console.log(`[Engine]   └─ Size: ${overriddenDecision.positionSizePercent}% | Leverage: ${overriddenDecision.leverage}x`);
+      console.log(`[Engine]   └─ SL: $${overriddenDecision.stopLoss?.toFixed(2)} | TP: $${overriddenDecision.takeProfit?.toFixed(2)}`);
     }
 
-    // Execute decision
-    if (!hasPosition && decision.action !== 'HOLD' && decision.confidence >= this.MIN_CONFIDENCE) {
+    // Execute decision (using overriddenDecision which may have been modified)
+    if (!hasPosition && overriddenDecision.action !== 'HOLD' && overriddenDecision.confidence >= this.MIN_CONFIDENCE) {
       // Check risk management
       const consecutiveLosses = memorySystem.getConsecutiveLosses();
 
@@ -547,24 +567,24 @@ export class TradingEngine extends EventEmitter {
       }
 
       // Reduce size after consecutive losses
-      let adjustedSizePercent = decision.positionSizePercent;
+      let adjustedSizePercent = overriddenDecision.positionSizePercent;
       if (consecutiveLosses >= 3) {
-        adjustedSizePercent = Math.max(5, decision.positionSizePercent * 0.5);
+        adjustedSizePercent = Math.max(5, overriddenDecision.positionSizePercent * 0.5);
         console.log(`[Engine] ${symbol}: Reduced position size to ${adjustedSizePercent}% due to ${consecutiveLosses} consecutive losses`);
       }
 
       // Validate decision has required fields
-      if (!decision.stopLoss || !decision.takeProfit) {
+      if (!overriddenDecision.stopLoss || !overriddenDecision.takeProfit) {
         console.log(`[Engine] ${symbol}: Missing SL/TP in decision, skipping`);
         return;
       }
 
       // Open new position
       if (config.trading.enabled) {
-        await this.openPosition(symbol, { ...decision, positionSizePercent: adjustedSizePercent }, analysis);
+        await this.openPosition(symbol, { ...overriddenDecision, positionSizePercent: adjustedSizePercent }, analysis);
       } else {
-        console.log(`[Engine] ${symbol}: Paper trade - would ${decision.action}`);
-        this.emit('paperTrade', { symbol, decision });
+        console.log(`[Engine] ${symbol}: Paper trade - would ${overriddenDecision.action}`);
+        this.emit('paperTrade', { symbol, decision: overriddenDecision });
       }
     } else if (hasPosition) {
       // Update TP/SL if GPT suggests new values
