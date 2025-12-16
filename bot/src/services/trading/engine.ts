@@ -446,7 +446,29 @@ export class TradingEngine extends EventEmitter {
         quantity: roundedQty,
       });
 
-      const entryPrice = parseFloat(order.avgPrice || analysis.price.toString());
+      // FIX: Binance returns avgPrice="0" for unfilled market orders
+      // Use fills array if available, otherwise fallback to analysis.price
+      let entryPrice = 0;
+
+      if (order.avgPrice && parseFloat(order.avgPrice) > 0) {
+        entryPrice = parseFloat(order.avgPrice);
+      } else if (order.fills && order.fills.length > 0) {
+        // Calculate weighted average from fills
+        const totalQty = order.fills.reduce((sum: number, f: any) => sum + parseFloat(f.qty), 0);
+        const totalValue = order.fills.reduce((sum: number, f: any) => sum + parseFloat(f.price) * parseFloat(f.qty), 0);
+        entryPrice = totalValue / totalQty;
+      } else {
+        // Fallback to current market price
+        entryPrice = analysis.price;
+      }
+
+      // Validate entry price
+      if (!entryPrice || entryPrice <= 0) {
+        console.error(`[Engine] ❌ Invalid entry price: ${entryPrice}, order response:`, JSON.stringify(order));
+        throw new Error(`Invalid entry price for ${symbol}`);
+      }
+
+      console.log(`[Engine] Order filled: avgPrice=${order.avgPrice}, fills=${order.fills?.length || 0}, entryPrice=${entryPrice.toFixed(4)}`);
 
       // Calculate actual SL and TP prices
       const stopLoss = decision.stopLoss || (decision.action === 'BUY'
@@ -493,7 +515,11 @@ export class TradingEngine extends EventEmitter {
       console.log(`[Engine]   └─ SL: $${stopLoss.toFixed(2)} (${((Math.abs(entryPrice - stopLoss) / entryPrice) * 100).toFixed(2)}%)`);
       console.log(`[Engine]   └─ TP: $${takeProfit.toFixed(2)} (${((Math.abs(takeProfit - entryPrice) / entryPrice) * 100).toFixed(2)}%)`);
     } catch (error: any) {
-      console.error(`[Engine] Failed to open position:`, error.message);
+      console.error(`[Engine] ❌ Failed to open position ${symbol}:`, error.message);
+      // Log full Binance error details
+      if (error.response?.data) {
+        console.error(`[Engine] Binance error details:`, JSON.stringify(error.response.data));
+      }
       this.emit('error', { type: 'openPosition', error: error.message, symbol });
     }
   }

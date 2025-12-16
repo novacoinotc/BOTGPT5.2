@@ -44,8 +44,8 @@ interface MarketContext {
 
 export class GPTEngine {
   private client: OpenAI;
-  private screeningModel = 'gpt-5-mini'; // Cheap model for quick screening
-  private tradingModel = 'gpt-5.2'; // Premium model for trading decisions
+  private screeningModel = 'gpt-4o-mini'; // Cheap, fast model for quick screening
+  private tradingModel = 'gpt-4o'; // Premium model for trading decisions (latest as of Dec 2025)
 
   constructor() {
     this.client = new OpenAI({
@@ -113,7 +113,7 @@ Criterios para oportunidad:
     const userPrompt = this.buildAnalysisPrompt(context);
 
     try {
-      // GPT-5.2 with reasoning_effort for optimized performance
+      // GPT-4o for trading decisions
       const response = await this.client.chat.completions.create({
         model: this.tradingModel,
         messages: [
@@ -121,8 +121,8 @@ Criterios para oportunidad:
           { role: 'user', content: userPrompt },
         ],
         response_format: { type: 'json_object' },
-        reasoning_effort: 'low', // 'none'|'low'|'medium'|'high' - low for fast scalping
-      } as any);
+        max_tokens: 2000,
+      });
 
       const content = response.choices[0]?.message?.content;
       if (!content) {

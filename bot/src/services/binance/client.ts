@@ -119,9 +119,25 @@ export class BinanceClient {
   }
 
   async getPositions(): Promise<any[]> {
-    const params = this.addSignature({});
-    const response = await this.client.get('/fapi/v3/positionRisk', { params }); // V3 returns only active positions
-    return response.data.filter((p: any) => parseFloat(p.positionAmt) !== 0);
+    try {
+      const params = this.addSignature({});
+      const response = await this.client.get('/fapi/v3/positionRisk', { params });
+
+      const allPositions = response.data || [];
+      const activePositions = allPositions.filter((p: any) => {
+        const amt = parseFloat(p.positionAmt || '0');
+        return amt !== 0;
+      });
+
+      console.log(`[Binance] Fetched ${allPositions.length} position records, ${activePositions.length} active`);
+      return activePositions;
+    } catch (error: any) {
+      console.error('[Binance] ❌ Failed to fetch positions:', error.message);
+      if (error.response?.data) {
+        console.error('[Binance] Error details:', JSON.stringify(error.response.data));
+      }
+      return []; // Return empty array instead of throwing
+    }
   }
 
   // === TRADING ===
