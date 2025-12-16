@@ -227,7 +227,7 @@ export class TradingEngine extends EventEmitter {
   }
 
   private startAnalysisLoop(): void {
-    // Analyze every 30 seconds
+    // Analyze every 3 minutes (180 seconds) - optimized for scalping
     this.analysisInterval = setInterval(async () => {
       if (!this.state.isRunning) return;
 
@@ -238,7 +238,7 @@ export class TradingEngine extends EventEmitter {
           console.error(`[Engine] Analysis error for ${symbol}:`, error);
         }
       }
-    }, 30000);
+    }, 180000);
 
     // Initial analysis after 5 seconds
     setTimeout(() => {
