@@ -594,6 +594,13 @@ export class TradingEngine extends EventEmitter {
     decision: GPTDecision,
     analysis: MarketAnalysis
   ): Promise<void> {
+    // Prevent race conditions - don't try to open a position that's already being opened
+    if (this.openingPositions.has(symbol)) {
+      console.log(`[Engine] ${symbol}: Already opening position, skipping duplicate`);
+      return;
+    }
+    this.openingPositions.add(symbol);
+
     try {
       // Validate input data to prevent NaN/Infinity issues
       if (!this.isValidNumber(analysis.price) || analysis.price <= 0) {
@@ -748,6 +755,9 @@ export class TradingEngine extends EventEmitter {
         console.error(`[Engine] Binance error details:`, JSON.stringify(error.response.data));
       }
       this.emit('error', { type: 'openPosition', error: error.message, symbol });
+    } finally {
+      // Always remove from opening set, regardless of success/failure
+      this.openingPositions.delete(symbol);
     }
   }
 
@@ -800,6 +810,7 @@ export class TradingEngine extends EventEmitter {
   }
 
   private closingPositions = new Set<string>(); // Track positions being closed to prevent race conditions
+  private openingPositions = new Set<string>(); // Track positions being opened to prevent race conditions
 
   private async closePosition(
     position: Position,
@@ -838,13 +849,17 @@ export class TradingEngine extends EventEmitter {
 
       const pnl = this.calculatePnl(position, exitPrice);
       // FIX: Calculate USD P&L with commission deduction
-      // Binance Futures taker fee: ~0.04% (0.02% entry + 0.02% exit)
+      // Binance Futures taker fee: ~0.04% total (0.02% entry + 0.02% exit)
       const priceDiff = position.side === 'LONG'
         ? (exitPrice - position.entryPrice)
         : (position.entryPrice - exitPrice);
       const grossPnlUsd = priceDiff * position.quantity;
-      const positionValue = position.entryPrice * position.quantity;
-      const commissionFee = positionValue * 0.0004; // 0.04% total commission
+      // Calculate commission based on both entry AND exit values
+      const entryValue = position.entryPrice * position.quantity;
+      const exitValue = exitPrice * position.quantity;
+      const entryCommission = entryValue * 0.0002; // 0.02% entry
+      const exitCommission = exitValue * 0.0002;   // 0.02% exit
+      const commissionFee = entryCommission + exitCommission;
       const pnlUsd = grossPnlUsd - commissionFee;
 
       // Record trade in memory AND database
@@ -914,7 +929,12 @@ export class TradingEngine extends EventEmitter {
       const priceDiff = position.side === 'LONG'
         ? (currentPrice - position.entryPrice)
         : (position.entryPrice - currentPrice);
-      const pnlUsd = priceDiff * position.quantity;
+      const grossPnlUsd = priceDiff * position.quantity;
+      // FIX: Add commission deduction for external closes too
+      const entryValue = position.entryPrice * position.quantity;
+      const exitValue = currentPrice * position.quantity;
+      const commissionFee = (entryValue + exitValue) * 0.0002; // 0.02% each side
+      const pnlUsd = grossPnlUsd - commissionFee;
 
       // Record trade in memory AND database
       const tradeMemory = memorySystem.addTrade({

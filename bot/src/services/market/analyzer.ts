@@ -38,19 +38,47 @@ export interface MarketAnalysis {
 
 export class MarketAnalyzer {
   async analyze(symbol: string): Promise<MarketAnalysis> {
-    // Fetch all data in parallel
-    const [klines, orderBook, ticker, fundingRate] = await Promise.all([
-      binanceClient.getKlines(symbol, '15m', 100),
-      binanceClient.getOrderBook(symbol, 20),
-      binanceClient.get24hrTicker(symbol),
-      binanceClient.getFundingRate(symbol),
-    ]);
+    // Fetch all data in parallel with error handling
+    let klines, orderBook, ticker, fundingRate;
+    try {
+      [klines, orderBook, ticker, fundingRate] = await Promise.all([
+        binanceClient.getKlines(symbol, '15m', 100),
+        binanceClient.getOrderBook(symbol, 20),
+        binanceClient.get24hrTicker(symbol),
+        binanceClient.getFundingRate(symbol),
+      ]);
+    } catch (error: any) {
+      console.error(`[Analyzer] Failed to fetch data for ${symbol}:`, error.message);
+      throw error;
+    }
 
-    // Parse OHLCV data
-    const closes = klines.map((k: any) => parseFloat(k[4]));
-    const highs = klines.map((k: any) => parseFloat(k[2]));
-    const lows = klines.map((k: any) => parseFloat(k[3]));
-    const volumes = klines.map((k: any) => parseFloat(k[5]));
+    // Validate we have enough data
+    if (!klines || klines.length < 50) {
+      throw new Error(`[Analyzer] Insufficient kline data for ${symbol}: got ${klines?.length || 0}, need at least 50`);
+    }
+
+    // Parse OHLCV data with validation
+    const closes = klines.map((k: any) => {
+      const val = parseFloat(k[4]);
+      return isNaN(val) ? 0 : val;
+    }).filter(v => v > 0);
+    const highs = klines.map((k: any) => {
+      const val = parseFloat(k[2]);
+      return isNaN(val) ? 0 : val;
+    }).filter(v => v > 0);
+    const lows = klines.map((k: any) => {
+      const val = parseFloat(k[3]);
+      return isNaN(val) ? 0 : val;
+    }).filter(v => v > 0);
+    const volumes = klines.map((k: any) => {
+      const val = parseFloat(k[5]);
+      return isNaN(val) ? 0 : val;
+    });
+
+    // Ensure we still have enough valid data after filtering
+    if (closes.length < 50) {
+      throw new Error(`[Analyzer] Insufficient valid price data for ${symbol}`);
+    }
 
     // Calculate indicators
     const indicators = this.calculateIndicators(closes, highs, lows);
@@ -128,26 +156,53 @@ export class MarketAnalyzer {
     orderBook: { bids: [string, string][]; asks: [string, string][] },
     currentPrice: number
   ) {
+    // Validate order book data
+    if (!orderBook?.bids?.length || !orderBook?.asks?.length) {
+      return {
+        bidPressure: 0.5,
+        askPressure: 0.5,
+        imbalance: 0,
+        spreadPercent: 0.1,
+        bigBuyWalls: [],
+        bigSellWalls: [],
+      };
+    }
+
     const bids = orderBook.bids.map(([price, qty]) => ({
-      price: parseFloat(price),
-      qty: parseFloat(qty),
-    }));
+      price: parseFloat(price) || 0,
+      qty: parseFloat(qty) || 0,
+    })).filter(b => b.price > 0 && b.qty > 0);
     const asks = orderBook.asks.map(([price, qty]) => ({
-      price: parseFloat(price),
-      qty: parseFloat(qty),
-    }));
+      price: parseFloat(price) || 0,
+      qty: parseFloat(qty) || 0,
+    })).filter(a => a.price > 0 && a.qty > 0);
+
+    // Handle empty order book after filtering
+    if (bids.length === 0 || asks.length === 0) {
+      return {
+        bidPressure: 0.5,
+        askPressure: 0.5,
+        imbalance: 0,
+        spreadPercent: 0.1,
+        bigBuyWalls: [],
+        bigSellWalls: [],
+      };
+    }
 
     const bidVolume = bids.reduce((sum, b) => sum + b.qty * b.price, 0);
     const askVolume = asks.reduce((sum, a) => sum + a.qty * a.price, 0);
     const totalVolume = bidVolume + askVolume;
 
-    const bidPressure = bidVolume / totalVolume;
-    const askPressure = askVolume / totalVolume;
-    const imbalance = (bidPressure - askPressure) * 2; // Scale to -1 to 1
+    // Prevent division by zero
+    const bidPressure = totalVolume > 0 ? bidVolume / totalVolume : 0.5;
+    const askPressure = totalVolume > 0 ? askVolume / totalVolume : 0.5;
+    // FIX: bidPressure - askPressure already gives -1 to 1 range (since they sum to 1)
+    const imbalance = bidPressure - askPressure;
 
     const bestBid = bids[0]?.price || 0;
     const bestAsk = asks[0]?.price || 0;
-    const spreadPercent = ((bestAsk - bestBid) / currentPrice) * 100;
+    // Prevent division by zero for spread calculation
+    const spreadPercent = currentPrice > 0 ? ((bestAsk - bestBid) / currentPrice) * 100 : 0;
 
     // Find big walls (orders > 2x average)
     const avgBidSize = bidVolume / bids.length;
