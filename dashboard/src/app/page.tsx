@@ -75,15 +75,6 @@ export default function Dashboard() {
     socketService.connect();
     setConnected(socketService.isConnected());
 
-    // Listen for connection status changes
-    socketService.on('connect', () => {
-      setConnected(true);
-    });
-
-    socketService.on('disconnect', () => {
-      setConnected(false);
-    });
-
     socketService.on('status', (data: any) => {
       setStatus(prev => prev ? { ...prev, ...data } : data);
     });
@@ -465,11 +456,11 @@ export default function Dashboard() {
             <div className="card-header">
               <h2 className="card-title">Recent Trades</h2>
               <span className="text-sm text-gray-400">
-                {trades.length} total
+                {stats?.totalTrades || 0} total
               </span>
             </div>
 
-            <div className="overflow-x-auto max-h-96 overflow-y-auto">
+            <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="text-gray-400 border-b border-gray-800">
@@ -482,7 +473,7 @@ export default function Dashboard() {
                   </tr>
                 </thead>
                 <tbody>
-                  {trades.map(trade => (
+                  {trades.slice(0, 10).map(trade => (
                     <tr key={trade.id} className="border-b border-gray-800/50">
                       <td className="py-2">{trade.symbol}</td>
                       <td>

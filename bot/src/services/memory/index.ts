@@ -1,5 +1,4 @@
 import { v4 as uuidv4 } from 'uuid';
-import { prisma } from '../database/index.js';
 
 export interface TradeMemory {
   id: string;
@@ -56,122 +55,13 @@ class MemorySystem {
   private trades: TradeMemory[] = [];
   private patterns: PatternMemory[] = [];
   private learnings: Learning[] = [];
-  private maxTrades = 10000; // Store up to 10k trades in memory (all persist in DB)
-  private maxPatterns = 5000;
-  private maxLearnings = 1000;
-  private initialized = false;
-
-  // === INITIALIZATION (Load from DB) ===
-
-  async initialize(): Promise<void> {
-    if (this.initialized) return;
-
-    try {
-      console.log('[Memory] Loading historical data from database...');
-
-      // First, get total counts from DB for monitoring
-      const [tradeCount, patternCount, learningCount] = await Promise.all([
-        prisma.trade.count(),
-        prisma.pattern.count(),
-        prisma.learning.count()
-      ]);
-
-      console.log(`[Memory] Database counts - Trades: ${tradeCount}, Patterns: ${patternCount}, Learnings: ${learningCount}`);
-
-      // Warning if trade data seems missing
-      if (tradeCount === 0 && (patternCount > 0 || learningCount > 0)) {
-        console.warn('[Memory] ⚠️ WARNING: Trade data is empty but patterns/learnings exist!');
-        console.warn('[Memory] This may indicate data loss. Check database integrity.');
-      }
-
-      // Load trades from database
-      const dbTrades = await prisma.trade.findMany({
-        orderBy: { entryTime: 'desc' },
-        take: this.maxTrades,
-      });
-
-      this.trades = dbTrades.map((t: any) => ({
-        id: t.id,
-        symbol: t.symbol,
-        side: t.side as 'LONG' | 'SHORT',
-        entryPrice: t.entryPrice,
-        exitPrice: t.exitPrice || 0,
-        quantity: t.quantity,
-        pnl: t.pnl || 0,
-        pnlUsd: t.pnlUsd || 0,
-        entryTime: t.entryTime.getTime(),
-        exitTime: t.exitTime?.getTime() || 0,
-        exitReason: (t.exitReason || 'manual') as TradeMemory['exitReason'],
-        entryConditions: {
-          rsi: t.rsi || 50,
-          macdHistogram: t.macdHistogram || 0,
-          orderBookImbalance: t.orderBookImbalance || 0,
-          fundingRate: t.fundingRate || 0,
-          regime: t.regime || 'unknown',
-          fearGreed: t.fearGreedValue || 50,
-          newsScore: t.newsScore || 0,
-        },
-        gptConfidence: t.gptConfidence,
-        gptReasoning: t.gptReasoning,
-      }));
-
-      console.log(`[Memory] Loaded ${this.trades.length} trades from database`);
-
-      // Load learnings from database
-      const dbLearnings = await prisma.learning.findMany({
-        orderBy: { useCount: 'desc' },
-        take: this.maxLearnings,
-      });
-
-      this.learnings = dbLearnings.map((l: any) => ({
-        id: l.id,
-        lesson: l.lesson,
-        type: l.type as 'success' | 'failure',
-        context: l.context as any,
-        timestamp: l.timestamp.getTime(),
-        useCount: l.useCount,
-      }));
-
-      console.log(`[Memory] Loaded ${this.learnings.length} learnings from database`);
-
-      // Load patterns from database
-      const dbPatterns = await prisma.pattern.findMany({
-        orderBy: { timestamp: 'desc' },
-        take: this.maxPatterns,
-      });
-
-      this.patterns = dbPatterns.map((p: any) => ({
-        symbol: p.symbol,
-        pattern: p.patternType,
-        regime: p.regime,
-        indicators: {
-          rsi: p.rsi,
-          macdHistogram: p.macdHistogram,
-          orderBookImbalance: p.orderBookImbalance,
-          fundingRate: p.fundingRate,
-        },
-        decision: p.decision as 'BUY' | 'SELL',
-        confidence: p.confidence,
-        timestamp: p.timestamp.getTime(),
-        outcome: p.outcome as 'success' | 'failure' | undefined,
-        pnl: p.resultPnl || undefined,
-      }));
-
-      console.log(`[Memory] Loaded ${this.patterns.length} patterns from database`);
-
-      this.initialized = true;
-      console.log('[Memory] Database initialization complete!');
-
-    } catch (error) {
-      console.error('[Memory] Error loading from database:', error);
-      // Continue with empty memory if DB fails
-      this.initialized = true;
-    }
-  }
+  private maxTrades = 1000;
+  private maxPatterns = 500;
+  private maxLearnings = 100;
 
   // === TRADE MEMORY ===
 
-  async addTrade(trade: Omit<TradeMemory, 'id'>): Promise<TradeMemory> {
+  addTrade(trade: Omit<TradeMemory, 'id'>): TradeMemory {
     const newTrade: TradeMemory = {
       ...trade,
       id: uuidv4(),
@@ -179,51 +69,9 @@ class MemorySystem {
 
     this.trades.unshift(newTrade);
 
-    // Keep only recent trades in memory
+    // Keep only recent trades
     if (this.trades.length > this.maxTrades) {
       this.trades = this.trades.slice(0, this.maxTrades);
-    }
-
-    // Persist to database
-    try {
-      console.log(`[Memory] Attempting to save trade: ${newTrade.symbol} ${newTrade.side}`);
-      console.log(`[Memory] Trade data: entry=${newTrade.entryPrice}, exit=${newTrade.exitPrice}, pnl=${newTrade.pnl}%`);
-
-      await prisma.trade.create({
-        data: {
-          id: newTrade.id,
-          symbol: newTrade.symbol,
-          side: newTrade.side,
-          entryPrice: newTrade.entryPrice,
-          exitPrice: newTrade.exitPrice,
-          quantity: newTrade.quantity,
-          leverage: 1,
-          pnl: newTrade.pnl || 0,
-          pnlPercent: newTrade.pnl || 0,  // Duplicate for compatibility
-          pnlUsd: newTrade.pnlUsd || 0,
-          entryTime: new Date(newTrade.entryTime),
-          exitTime: new Date(newTrade.exitTime),
-          status: 'CLOSED',  // Trades saved here are always closed
-          exitReason: newTrade.exitReason || 'manual',
-          gptConfidence: typeof newTrade.gptConfidence === 'number' ? Math.round(newTrade.gptConfidence) : null,
-          gptReasoning: newTrade.gptReasoning || null,
-          entryConditions: newTrade.entryConditions || null,  // Save as JSON
-          // Also save individual fields for querying
-          rsi: newTrade.entryConditions?.rsi || null,
-          macdHistogram: newTrade.entryConditions?.macdHistogram || null,
-          orderBookImbalance: newTrade.entryConditions?.orderBookImbalance || null,
-          fundingRate: newTrade.entryConditions?.fundingRate || null,
-          regime: newTrade.entryConditions?.regime || null,
-          fearGreedValue: newTrade.entryConditions?.fearGreed ? Math.round(newTrade.entryConditions.fearGreed) : null,
-          newsScore: newTrade.entryConditions?.newsScore || null,
-        },
-      });
-      console.log(`[Memory] ✅ Trade ${newTrade.id} persisted to database successfully!`);
-    } catch (error: any) {
-      console.error('[Memory] ❌ ERROR persisting trade to database!');
-      console.error('[Memory] Error message:', error.message);
-      console.error('[Memory] Error code:', error.code);
-      console.error('[Memory] Full error:', JSON.stringify(error, null, 2));
     }
 
     return newTrade;
@@ -278,26 +126,6 @@ class MemorySystem {
     if (this.patterns.length > this.maxPatterns) {
       this.patterns = this.patterns.slice(0, this.maxPatterns);
     }
-
-    // Persist to database
-    try {
-      await prisma.pattern.create({
-        data: {
-          symbol: pattern.symbol,
-          patternType: pattern.pattern,
-          regime: pattern.regime,
-          rsi: pattern.indicators.rsi,
-          macdHistogram: pattern.indicators.macdHistogram,
-          orderBookImbalance: pattern.indicators.orderBookImbalance,
-          fundingRate: pattern.indicators.fundingRate,
-          decision: pattern.decision,
-          confidence: pattern.confidence,
-          timestamp: new Date(pattern.timestamp),
-        },
-      });
-    } catch (error) {
-      console.error('[Memory] Error persisting pattern:', error);
-    }
   }
 
   findSimilarPatterns(current: Partial<PatternMemory>): PatternMemory[] {
@@ -334,21 +162,11 @@ class MemorySystem {
     return (successes / matchingPatterns.length) * 100;
   }
 
-  async updatePatternOutcome(timestamp: number, outcome: 'success' | 'failure', pnl: number): Promise<void> {
+  updatePatternOutcome(timestamp: number, outcome: 'success' | 'failure', pnl: number): void {
     const pattern = this.patterns.find(p => p.timestamp === timestamp);
     if (pattern) {
       pattern.outcome = outcome;
       pattern.pnl = pnl;
-
-      // Update in database
-      try {
-        await prisma.pattern.updateMany({
-          where: { timestamp: new Date(timestamp) },
-          data: { outcome, resultPnl: pnl },
-        });
-      } catch (error) {
-        console.error('[Memory] Error updating pattern outcome:', error);
-      }
     }
   }
 
@@ -367,19 +185,6 @@ class MemorySystem {
     if (existing) {
       existing.useCount++;
       existing.timestamp = Date.now();
-
-      // Update in database
-      try {
-        await prisma.learning.update({
-          where: { id: existing.id },
-          data: {
-            useCount: existing.useCount,
-            timestamp: new Date(existing.timestamp),
-          },
-        });
-      } catch (error) {
-        console.error('[Memory] Error updating learning:', error);
-      }
       return;
     }
 
@@ -393,23 +198,6 @@ class MemorySystem {
     };
 
     this.learnings.unshift(learning);
-
-    // Persist to database
-    try {
-      await prisma.learning.create({
-        data: {
-          id: learning.id,
-          lesson: learning.lesson,
-          type: learning.type,
-          context: learning.context,
-          useCount: learning.useCount,
-          timestamp: new Date(learning.timestamp),
-        },
-      });
-      console.log(`[Memory] Learning persisted to database: "${lesson.substring(0, 50)}..."`);
-    } catch (error) {
-      console.error('[Memory] Error persisting learning:', error);
-    }
 
     // Keep only most relevant learnings
     if (this.learnings.length > this.maxLearnings) {
@@ -490,7 +278,7 @@ class MemorySystem {
     };
   }
 
-  // === PERSISTENCE (Legacy methods kept for compatibility) ===
+  // === PERSISTENCE ===
 
   exportData(): {
     trades: TradeMemory[];
@@ -518,51 +306,6 @@ class MemorySystem {
     this.trades = [];
     this.patterns = [];
     this.learnings = [];
-  }
-
-  // Clear ALL data from memory AND database - for fresh start
-  // DANGER: This deletes ALL historical data permanently!
-  async clearAllData(): Promise<void> {
-    // Log the call stack to track who's calling this
-    const stack = new Error().stack;
-    console.log('[Memory] 🗑️ clearAllData() called!');
-    console.log('[Memory] Call stack:', stack?.split('\n').slice(1, 4).join(' <- '));
-
-    // Get current counts before deletion for logging
-    const [tradeCount, patternCount, learningCount] = await Promise.all([
-      prisma.trade.count(),
-      prisma.pattern.count(),
-      prisma.learning.count()
-    ]);
-
-    console.log(`[Memory] ⚠️ DELETING: ${tradeCount} trades, ${patternCount} patterns, ${learningCount} learnings`);
-
-    try {
-      // Clear database tables
-      await prisma.trade.deleteMany({});
-      await prisma.pattern.deleteMany({});
-      await prisma.learning.deleteMany({});
-      await prisma.dailyStats.deleteMany({});
-
-      // Reset bot state
-      await prisma.botState.updateMany({
-        data: {
-          todayPnl: 0,
-          todayTrades: 0,
-          lastResetDate: new Date(),
-        }
-      });
-
-      // Clear memory
-      this.trades = [];
-      this.patterns = [];
-      this.learnings = [];
-
-      console.log('[Memory] ✅ All data cleared successfully - fresh start!');
-    } catch (error) {
-      console.error('[Memory] Error clearing data:', error);
-      throw error;
-    }
   }
 }
 

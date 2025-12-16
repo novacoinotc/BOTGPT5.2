@@ -52,7 +52,7 @@ app.get('/api/stats', (req, res) => {
 
 // Get recent trades
 app.get('/api/trades', (req, res) => {
-  const limit = parseInt(req.query.limit as string) || 500; // Default 500 for full history
+  const limit = parseInt(req.query.limit as string) || 50;
   const trades = memorySystem.getRecentTrades(limit);
   res.json(trades);
 });
@@ -171,72 +171,6 @@ app.post('/api/memory/import', (req, res) => {
   const data = req.body;
   memorySystem.importData(data);
   res.json({ success: true });
-});
-
-// Test database write - for debugging
-app.post('/api/test-db', async (req, res) => {
-  try {
-    console.log('[API] Testing database write...');
-
-    // Try to create a test trade
-    const testTrade = await memorySystem.addTrade({
-      symbol: 'TESTUSDT',
-      side: 'LONG',
-      entryPrice: 100,
-      exitPrice: 101,
-      quantity: 1,
-      pnl: 1.0,
-      pnlUsd: 1.0,
-      entryTime: Date.now() - 60000,
-      exitTime: Date.now(),
-      exitReason: 'manual',
-      entryConditions: {
-        rsi: 50,
-        macdHistogram: 0,
-        orderBookImbalance: 0,
-        fundingRate: 0,
-        regime: 'test',
-        fearGreed: 50,
-        newsScore: 0,
-      },
-      gptConfidence: 75,
-      gptReasoning: 'Test trade for database verification',
-    });
-
-    res.json({
-      success: true,
-      message: 'Test trade created! Check logs for details.',
-      tradeId: testTrade.id,
-    });
-  } catch (error: any) {
-    console.error('[API] Test DB error:', error);
-    res.status(500).json({
-      success: false,
-      error: error.message,
-      code: error.code,
-    });
-  }
-});
-
-// Reset ALL data - fresh start (PROTECTED with confirmation)
-app.post('/api/reset', async (req, res) => {
-  try {
-    // Require explicit confirmation to prevent accidental data loss
-    const { confirm } = req.body;
-    if (confirm !== 'DELETE_ALL_DATA') {
-      return res.status(400).json({
-        error: 'Missing confirmation. Send { "confirm": "DELETE_ALL_DATA" } to proceed.',
-        warning: 'This will permanently delete ALL trades, patterns, learnings, and stats!'
-      });
-    }
-
-    console.log('[API] ⚠️ RESET CONFIRMED - clearing all data...');
-    console.log('[API] This action was triggered by explicit user request');
-    await memorySystem.clearAllData();
-    res.json({ success: true, message: 'All data cleared - fresh start!' });
-  } catch (error: any) {
-    res.status(500).json({ error: error.message });
-  }
 });
 
 // === SOCKET.IO ===

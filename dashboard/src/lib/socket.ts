@@ -18,20 +18,10 @@ class SocketService {
 
     this.socket.on('connect', () => {
       console.log('[Socket] Connected');
-      // Notify listeners
-      const listeners = this.listeners.get('connect');
-      if (listeners) {
-        listeners.forEach(callback => callback());
-      }
     });
 
     this.socket.on('disconnect', () => {
       console.log('[Socket] Disconnected');
-      // Notify listeners
-      const listeners = this.listeners.get('disconnect');
-      if (listeners) {
-        listeners.forEach(callback => callback());
-      }
     });
 
     // Forward all events to registered listeners
